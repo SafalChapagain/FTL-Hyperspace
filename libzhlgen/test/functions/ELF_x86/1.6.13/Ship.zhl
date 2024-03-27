@@ -1,45 +1,290 @@
-"57565383ec108b4424208b7424248b7c24288b5c242c8b40040fb6db890424e8????????895c242c897c2428897424248944242083c4105b5e5fe9????????9057":
-cleanup __cdecl int Ship::GetSelectedRoomId(Ship *this, int x, int y, bool unk);
-"5589e557565381ec2c0100008b45088b4004890424":
-cleanup __cdecl void Ship::LockdownRoom(Ship *this, int roomId, Pointf pos);
-"538b4424088b5c240c8b90f40200008b88f8020000":
-cleanup __cdecl bool Ship::RoomLocked(Ship *this, int roomId);
-"538b4424088b54240c8b5c24108b48088b400c":
-cleanup __cdecl bool Ship::FullRoom(Ship *this, int roomId, bool intruder);
-"5557565331db83ec1c8b6c24308b4424348b5508":
-cleanup __cdecl int Ship::EmptySlots(Ship *this, int roomId);
-"0fb644240c8b542408894424088b4424048b40088b049089442404e9????????8b442404":
-cleanup __cdecl int Ship::GetAvailableRoomSlot(Ship *this, int roomId, bool intruder);
-"565331db83ec148b7424208b56208b462429d0":
-cleanup __cdecl void Ship::OnRenderBreaches(Ship *this);
-"555731ff565383ec4c8b5c24600fb6442464":
-cleanup __cdecl void Ship::OnRenderWalls(Ship *this, bool forceView, bool doorControlMode);
-"5589e557565381ecfc0101008b45088b5d0c":
-cleanup __cdecl void Ship::OnInit(Ship *this, ShipBlueprint* bp);
-"565331db83ec148b7424208b56088b460c29d0c1f80285c074??8db6000000008b049a83c301890424e8????????8b56088b460c29d0c1f80239c372??83c4145b5ec3908db6000000008dbf00000000565331db83ec14":
-cleanup __cdecl void Ship::OnRenderSparks(Ship *this);
-"0fb644240c8b542408894424088b4424048b40088b049089442404e9????????538b4424088b5c240c":
-cleanup __cdecl void Ship::SetRoomBlackout(Ship *this, int roomId, bool blackout);
-"5557565383ec3c8b5c24508b6c24548b4304":
-cleanup __cdecl void Ship::OnRenderBase(Ship *this, bool unk);
-"565383ec248b5c24308b74243480bbf002000000":
-cleanup __cdecl void Ship::OnRenderFloor(Ship *this, bool unk);
-"5557565383ec5c8b5c24708b4304890424":
-cleanup __cdecl void Ship::OnRenderJump(Ship *this, float progress);
-"565383ec248b7424348b5c24308b86a4010000":
-cleanup __cdecl Globals::Ellipse Ship::GetBaseEllipse(Ship *this);
-"57565331db83ec108b7c24208b7424248b57088b470c":
-cleanup __cdecl void Ship::SetSelectedRoom(Ship *this, int roomId);
-"5589e557565381ec8c0000008b45088b5d0c8db0d4020000":
-cleanup __cdecl void Ship::OnLoop(Ship *this, std::vector<float>& oxygenLevels);
-"5557565383ec5c8b7c24708b742474c7442440????????":
-cleanup __cdecl void Ship::BreachRandomHull(Ship *this, int roomId);
-"5589e557565383ec5c8b5510":
-cleanup __cdecl int Ship::GetAvailableRoom(Ship *this, int preferred, bool intruder);
-"5589e557565383ec4c8b450c8b7d10":
-cleanup __cdecl void Ship::BreachSpecificHull(Ship *this, int grid_x, int grid_y);
-"57565383ec208b7c24348b5c24308b4c2438":
-cleanup __cdecl std::vector<Repairable*> Ship::GetHullBreaches(Ship *this, bool onlyDamaged);
+"80b8f002000000f30f1005????????74??f30f1005????????80b8e402000000":
+//cleanup __cdecl float Ship::GetCloakAlpha(Ship * this, bool complete);
+cleanup __cdecl float Ship::GetCloakAlpha_private(Ship * this, bool complete);
+
+".57565383ec208b7424308b466c":
+//cleanup __cdecl void Ship::~Ship(Ship * this, int __in_chrg);
+cleanup __cdecl void Ship::destructor(Ship * this);
+
+"!.5383ec188b5c2420891c24e8????????895c242083c4185be9????????":
+//cleanup __cdecl void Ship::~Ship(Ship * this, int __in_chrg);
+cleanup __cdecl void Ship::destructor_delete(Ship * this);
+
+".5557565383ec3c8b5c24508d6c242f":
+//cleanup __cdecl void Ship::Ship(Ship * this, int shipId);
+cleanup __cdecl void Ship::constructor(Ship * this, int shipId);
+
+".5383ec488b5c24508b4304":
+cleanup __cdecl void Ship::LoadImages(Ship * this);
+
+".5383ec188b5c24208b436c":
+cleanup __cdecl void Ship::ClearImages(Ship * this);
+
+".56538b4424108b4c240c":
+cleanup __cdecl int Ship::DamageHull(Ship * this, int amount);
+
+"!.8b44240c8b54240889442408":
+cleanup __cdecl void Ship::OnRenderSystem(Ship * this, int roomId, int computerLevel);
+
+".565383ec248b7424348b5c24308b86a4010000":
+cleanup __cdecl Globals::Ellipse Ship::GetBaseEllipse(Ship * this);
+
+".5383ec488b5c24508b93a0000000":
+cleanup __cdecl void Ship::LoadCloakImage(Ship * this);
+
+".5383ec188b5424248b4c2428":
+cleanup __cdecl WeaponMount Ship::GetWeaponMount(Ship * this, int val);
+
+".55575631f65383ec1c8b5c24308b5320":
+cleanup __cdecl void Ship::Restart(Ship * this);
+
+".5631f65383ec148b5c24208b5314":
+cleanup __cdecl void Ship::PauseLoop(Ship * this);
+
+".5589e55731ff565383ec2c":
+cleanup __cdecl std::pair<int, int> Ship::ContainsHullBreach(Ship * this, int roomId);
+
+".5589e55383ec148b450c8b5d088b4004890424e8????????8b5510":
+cleanup __cdecl Pointf Ship::GetRoomCenter(Ship * this, int roomId);
+
+".538b4424088b5c240c8b90f40200008b88f8020000":
+cleanup __cdecl bool Ship::RoomLocked(Ship * this, int roomId);
+
+".5557565383ec1c8b5c24308b7424348b7c24388b4314":
+cleanup __cdecl void Ship::SetHackLevel(Ship * this, int roomId, int hackLevel);
+
+"!.8b442404f30f1044240c":
+cleanup __cdecl void Ship::RoomHacked(Ship * this, int roomId, float hackTime);
+
+"!.8b4424048b542408c744240801000000":
+cleanup __cdecl void Ship::TriggerSparks(Ship * this, int room);
+
+"!.8b44240c8b54240889442408":
+cleanup __cdecl void Ship::SetFireCount(Ship * this, int roomId, int fireId);
+
+".837c2408ff8b442404":
+cleanup __cdecl void Ship::ProjectileStrike(Ship * this, int roomId, float damage);
+
+"!.8b4424048b542408f30f1080e0020000":
+cleanup __cdecl void Ship::SetCloaked(Ship * this, bool value);
+
+".8b5424040fb682a0010000":
+cleanup __cdecl bool Ship::DestroyedDone(Ship * this);
+
+".8b4424048b4c24088b54240c80b8a001000000":
+cleanup __cdecl void Ship::SetDestroyed(Ship * this, bool animation, bool bossAnimation);
+
+".565331db83ec148b7424208b5614":
+cleanup __cdecl void Ship::ResetDoorHealth(Ship * this);
+
+".5557565383ec5c8b5c24708b4304890424":
+cleanup __cdecl void Ship::OnRenderJump(Ship * this, float progress);
+
+".57565383ec408b5c24508b4304":
+cleanup __cdecl void Ship::OnRenderExplosion(Ship * this);
+
+".5383ec188b4424208b5c2424f30f1005????????":
+//cleanup __cdecl float Ship::GetCloakAlpha(Ship * this, bool complete);
+cleanup __cdecl float Ship::GetCloakAlpha_public(Ship * this, bool complete);
+
+".565383ec148b5c24248b7424208b4304":
+cleanup __cdecl Point Ship::GetShipCorner(Ship * this);
+
+".57565383ec108b5c24208b4304890424e8????????8b7848":
+cleanup __cdecl void Ship::OnRenderSimple(Ship * this, float alpha);
+
+".5557565383ec3c8b5c24508b6c24548b4304":
+cleanup __cdecl void Ship::OnRenderBase(Ship * this, bool enginesWorking);
+
+".565331db83ec148b7424208b56088b460c29d0c1f80285c074??8db6000000008b049a83c301890424":
+cleanup __cdecl void Ship::OnRenderHighlight(Ship * this);
+
+".565383ec148b5c24208b7424248b4b0c":
+cleanup __cdecl void Ship::OnRenderFire(Ship * this, bool forceView);
+
+"!.5631f65383ec148b5c24208b430c":
+cleanup __cdecl void Ship::OnRenderBlackout(Ship * this);
+
+".565383ec248b5c24308b74243480bbf002000000":
+cleanup __cdecl void Ship::OnRenderFloor(Ship * this, bool forceView);
+
+"!.5557565383ec1c8b7424308b4c2434":
+cleanup __cdecl void Ship::OnRenderFloorEffects(Ship * this, bool forceView);
+
+".565331db83ec148b7424208b56088b460c29d0c1f80285c074??8db600000000c744240401000000":
+cleanup __cdecl void Ship::HideInterior(Ship * this);
+
+//"565331db83ec148b7424208b56088b460c29d0c1f80285c074??8db6000000008b049a83c301890424e8????????8b56088b460c29d0c1f80239c372??83c4145b5ec3908db6000000008dbf00000000565331db83ec14":
+".565331db83ec148b7424208b56088b460c29d0c1f80285c074??8db6000000008b049a83c301890424":
+cleanup __cdecl void Ship::OnRenderSparks(Ship * this);
+
+".565331db83ec148b7424208b56208b462429d0":
+cleanup __cdecl void Ship::OnRenderBreaches(Ship * this);
+
+".5631f65383ec148b5c24208b4b18":
+cleanup __cdecl void Ship::OnCleanup(Ship * this);
+
+".57565383ec108b7c24208b4f20":
+cleanup __cdecl int Ship::GetHullDamageCount(Ship * this);
+
+".5589e557565331db83ec2c8b7508":
+cleanup __cdecl Repairable * Ship::GetHullBreach(Ship * this, Point world);
+
+".5589e557565331db83ec3c8b7d08":
+cleanup __cdecl Repairable * Ship::GetSpecificHull(Ship * this, int grid_x, int grid_y);
+
+".5589e557565383ec4c8b450c8b7d10":
+cleanup __cdecl bool Ship::BreachSpecificHull(Ship * this, int grid_x, int grid_y);
+
+//"57565383ec108b4424208b7424248b7c24288b5c242c8b40040fb6db890424e8????????895c242c897c2428897424248944242083c4105b5e5fe9????????9057":
+"!.57565383ec108b4424208b7424248b7c24288b5c242c":
+cleanup __cdecl int Ship::GetSelectedRoomId(Ship * this, int x, int y, bool bIncludeWalls);
+
+"!.57565383ec108b4424208b7424248b7c24288b5c242c":
+cleanup __cdecl int Ship::GetSelectedRoomId(Ship * this, Point p, bool bIncludeWalls);
+
+".5589e557565383ec3c8b5d088b7510":
+cleanup __cdecl Door * Ship::GetSelectedDoor(Ship * this, int x, int y, float doorScale);
+
+".5731ff565383ec108b5c24208b742424":
+cleanup __cdecl void Ship::SaveState(Ship * this, int fd);
+
+".5557565383ec3c8b7c24508b5c2454c605????????01":
+cleanup __cdecl void Ship::ManipulateAllDoors(Ship * this, bool open);
+
+".57565383ec108b5c24208b7424248b4c2428":
+cleanup __cdecl void Ship::ManipulateDoors(Ship * this, int roomid, bool open);
+
+".8b5424088b44240485d278??8b4808":
+cleanup __cdecl void Ship::TapRoom(Ship * this, int roomId);
+
+".57565331db83ec108b7c24208b7424248b57088b470c":
+cleanup __cdecl void Ship::SetSelectedRoom(Ship * this, int roomId);
+
+".8b5424088b44240485d278??8b4808":
+cleanup __cdecl void Ship::HighlightRoom(Ship * this, int roomId);
+
+".5589e557565383ec2c8b5510":
+cleanup __cdecl int Ship::IsOuterWall(Ship * this, int grid_x, int grid_y);
+
+//"0fb644240c8b542408894424088b4424048b40088b049089442404e9????????538b4424088b5c240c":
+"!.0fb644240c8b542408":
+cleanup __cdecl void Ship::SetRoomBlackout(Ship * this, int roomId, bool blackout);
+
+".538b4424088b5c240c8b4808":
+cleanup __cdecl bool Ship::GetRoomBlackout(Ship * this, int roomId);
+
+".5731c056538b7c2410":
+cleanup __cdecl void Ship::SetIonedDoors(Ship * this, bool val);
+
+".5731ff565383ec108b5c24208b742424":
+cleanup __cdecl void Ship::SetBlastDoors(Ship * this, int val);
+
+".5589e55383ec148b450c8b5510":
+cleanup __cdecl Globals::Rect Ship::GetRoomRect(Ship * this, int id);
+
+//"0fb644240c8b542408894424088b4424048b40088b049089442404e9????????8b442404":
+"!.0fb644240c8b542408":
+cleanup __cdecl int Ship::GetAvailableRoomSlot(Ship * this, int id, bool intruder);
+
+"!.8b4424048b5424088b40088b0490":
+cleanup __cdecl void Ship::ClearPrimarySlot(Ship * this, int roomId);
+
+"!.8b4424048b54240c8b4008":
+cleanup __cdecl void Ship::SetPrimarySlot(Ship * this, int slotId, int roomId);
+
+"!.8b4424048b54240c8b4008":
+cleanup __cdecl void Ship::SetPrimaryDirection(Ship * this, int dir, int roomId);
+
+"!.8b4424048b5424088b40088b0490":
+cleanup __cdecl bool Ship::IsPrimarySlotFilled(Ship * this, int roomId);
+
+"!.8b4424048b5424088b40088b0490":
+cleanup __cdecl int Ship::GetPrimarySlot(Ship * this, int roomId);
+
+"!.8b4424048b5424088b40088b0490":
+cleanup __cdecl int Ship::GetPrimaryDirection(Ship * this, int roomId);
+
+"!.0fb64424108b54240c":
+cleanup __cdecl void Ship::FillRoomSlot(Ship * this, int slotId, int roomId, bool intruder);
+
+"!.0fb64424108b54240c":
+cleanup __cdecl void Ship::EmptyRoomSlot(Ship * this, int slotId, int roomId, bool intruder);
+
+".5557565331db83ec1c8b6c24308b4424348b5508":
+cleanup __cdecl void Ship::EmptySlots(Ship * this, int roomId);
+
+".538b4424088b542410":
+cleanup __cdecl bool Ship::IsSlotFilled(Ship * this, int slotId, int roomId, bool intruder);
+
+"!.0fb644240c8b542408":
+cleanup __cdecl bool Ship::EmptyRoom(Ship * this, int id, bool intruder);
+
+".538b4424088b54240c8b5c24108b48088b400c":
+cleanup __cdecl bool Ship::FullRoom(Ship * this, int id, bool intruder);
+
+".5589e557565383ec5c8b5510":
+cleanup __cdecl int Ship::GetAvailableRoom(Ship * this, bool intruder);
+
+".8b4424048b5424088b40088b1490":
+cleanup __cdecl void Ship::SetRoomWarning(Ship * this, int roomId, bool warning);
+
+".5557565331db83ec1c8b442430":
+cleanup __cdecl std::vector<Door*> Ship::GetRoomAirlocks(Ship * this, int roomId);
+
+".5589e557565381ecac0000008b45148b7018":
+cleanup __cdecl Path Ship::DFS(Ship * this, int startRoom, Path * lastPath);
+
+".565383ec148b7424208b5c24248b96cc000000":
+cleanup __cdecl bool Ship::UpdateDoorState(Ship * this, int index, Door * door);
+
+".5589e557565381ecac0000008b5d0c":
+cleanup __cdecl void Ship::AddDoorVertices(Ship * this, Door * door, std::vector<GL_ColorTexVertex> * vertices);
+
+".5557565383ec4c8b5c24608b4424648b93c8000000":
+cleanup __cdecl void Ship::UpdateDoorsPrimitive(Ship * this, bool doorControlMode);
+
+".555731ff565383ec4c8b5c24600fb6442464":
+cleanup __cdecl void Ship::OnRenderWalls(Ship * this, bool forceView, bool doorControlMode);
+
+".5589e557565383ec5c8b7d088b4720":
+cleanup __cdecl void Ship::FindOuterWalls(Ship * this);
+
+".5557565381ecbc0100008bb424d4010000":
+cleanup __cdecl bool Ship::Import(Ship * this, std::string * shipName);
+
+".5589e557565383ec7c8b7d088b4704890424e8????????8b750c":
+cleanup __cdecl void Ship::ChoosePrimarySlot(Ship * this, int roomId);
+
+".5589e557565381ec8c0000008b45088b5d0c8db0d4020000":
+cleanup __cdecl void Ship::OnLoop(Ship * this, std::vector<float>& oxygenLevels);
+
+".5557565383ec2c8b7c24448b4424408b4f0c":
+cleanup __cdecl std::vector<const Room*> Ship::GetRoomListConst(Ship * this);
+
+".5557565383ec2c8b7c24448b4424408b4f18":
+cleanup __cdecl std::vector<const Door*> Ship::GetDoorListConst(Ship * this);
+
+".5589e557565381ec2c0200008b450c":
+cleanup __cdecl void Ship::RemoveRoom(Ship * this, int room);
+
+".5557565383ec5c8b7c24708b742474c7442440????????":
+cleanup __cdecl void Ship::BreachRandomHull(Ship * this, int roomId);
+
+".57565383ec208b7c24348b5c24308b4c2438":
+cleanup __cdecl std::vector<Repairable*> Ship::GetHullBreaches(Ship * this, bool onlyDamaged);
+
+".5589e557565381ec2c0100008b45088b4004890424":
+cleanup __cdecl void Ship::LockdownRoom(Ship * this, int roomId, Pointf position);
+
+".5557565381ecdc000000833d????????02":
+cleanup __cdecl void Ship::LoadState(Ship * this, int fd);
+
+".5589e557565381ecfc0101008b45088b5d0c":
+cleanup __cdecl bool Ship::OnInit(Ship * this, ShipBlueprint * blueprint);
+
+"!.5557565383ec3c8b7c24548b742450c744242000000000":
+cleanup __cdecl void Ship::SetWeaponAnimations(Ship * this, std::vector<WeaponAnimation*> * anims);
 
 "!39d07d0b(c6840d74fefeff01)":
 noop void* Global__NOP__Ship_OnInit_0;
@@ -56,11 +301,11 @@ noop void* Global__NOP__Ship_OnInit_5;
 
 
 struct Ship depends (ShipGraph, Globals::Ellipse) {{
-	Pointf GetRoomCenter(int room)
-	{
-		auto graph = ShipGraph::GetShipInfo(this->iShipId);
-		return graph->GetRoomCenter(room);
-	}
+	//Pointf GetRoomCenter(int room)
+	//{
+	//	auto graph = ShipGraph::GetShipInfo(this->iShipId);
+	//	return graph->GetRoomCenter(room);
+	//}
 
 	void RenderEngineAnimation(bool showEngines, float alpha);
 	

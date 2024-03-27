@@ -6729,11 +6729,11 @@ struct OuterHull;
 
 struct Ship : ShipObject
 {
-	Pointf GetRoomCenter(int room)
-	{
-		auto graph = ShipGraph::GetShipInfo(this->iShipId);
-		return graph->GetRoomCenter(room);
-	}
+	//Pointf GetRoomCenter(int room)
+	//{
+	//	auto graph = ShipGraph::GetShipInfo(this->iShipId);
+	//	return graph->GetRoomCenter(room);
+	//}
 
 	void RenderEngineAnimation(bool showEngines, float alpha);
 	
@@ -6754,27 +6754,98 @@ struct Ship : ShipObject
 		int level;
 	};
 	
+	LIBZHL_API void AddDoorVertices(Door *door, std::vector<GL_ColorTexVertex> *vertices);
 	LIBZHL_API void BreachRandomHull(int roomId);
-	LIBZHL_API void BreachSpecificHull(int grid_x, int grid_y);
-	LIBZHL_API int EmptySlots(int roomId);
-	LIBZHL_API bool FullRoom(int roomId, bool intruder);
+	LIBZHL_API bool BreachSpecificHull(int grid_x, int grid_y);
+	LIBZHL_API void ChoosePrimarySlot(int roomId);
+	LIBZHL_API void ClearImages();
+	LIBZHL_API void ClearPrimarySlot(int roomId);
+	LIBZHL_API std::pair<int, int> ContainsHullBreach(int roomId);
+	LIBZHL_API Path DFS(int startRoom, Path *lastPath);
+	LIBZHL_API int DamageHull(int amount);
+	LIBZHL_API bool DestroyedDone();
+	LIBZHL_API bool EmptyRoom(int id, bool intruder);
+	LIBZHL_API void EmptyRoomSlot(int slotId, int roomId, bool intruder);
+	LIBZHL_API void EmptySlots(int roomId);
+	LIBZHL_API void FillRoomSlot(int slotId, int roomId, bool intruder);
+	LIBZHL_API void FindOuterWalls();
+	LIBZHL_API bool FullRoom(int id, bool intruder);
 	LIBZHL_API int GetAvailableRoom(int preferred, bool intruder);
-	LIBZHL_API int GetAvailableRoomSlot(int roomId, bool intruder);
+	LIBZHL_API int GetAvailableRoomSlot(int id, bool intruder);
 	LIBZHL_API Globals::Ellipse GetBaseEllipse();
+	LIBZHL_API float GetCloakAlpha_private(bool complete);
+	LIBZHL_API float GetCloakAlpha_public(bool complete);
+	LIBZHL_API std::vector<const Door*> GetDoorListConst();
+	LIBZHL_API Repairable *GetHullBreach(Point world);
 	LIBZHL_API std::vector<Repairable*> GetHullBreaches(bool onlyDamaged);
-	LIBZHL_API int GetSelectedRoomId(int x, int y, bool unk);
-	LIBZHL_API void LockdownRoom(int roomId, Pointf pos);
-	LIBZHL_API void OnInit(ShipBlueprint &bp);
+	LIBZHL_API int GetHullDamageCount();
+	LIBZHL_API int GetPrimaryDirection(int roomId);
+	LIBZHL_API int GetPrimarySlot(int roomId);
+	LIBZHL_API std::vector<Door*> GetRoomAirlocks(int roomId);
+	LIBZHL_API bool GetRoomBlackout(int roomId);
+	LIBZHL_API Pointf GetRoomCenter(int roomId);
+	LIBZHL_API std::vector<const Room*> GetRoomListConst();
+	LIBZHL_API Globals::Rect GetRoomRect(int id);
+	LIBZHL_API Door *GetSelectedDoor(int x, int y, float doorScale);
+	LIBZHL_API int GetSelectedRoomId(int x, int y, bool bIncludeWalls);
+	LIBZHL_API int GetSelectedRoomId(Point p, bool bIncludeWalls);
+	LIBZHL_API Point GetShipCorner();
+	LIBZHL_API Repairable *GetSpecificHull(int grid_x, int grid_y);
+	LIBZHL_API WeaponMount GetWeaponMount(int val);
+	LIBZHL_API void HideInterior();
+	LIBZHL_API void HighlightRoom(int roomId);
+	LIBZHL_API bool Import(std::string *shipName);
+	LIBZHL_API int IsOuterWall(int grid_x, int grid_y);
+	LIBZHL_API bool IsPrimarySlotFilled(int roomId);
+	LIBZHL_API bool IsSlotFilled(int slotId, int roomId, bool intruder);
+	LIBZHL_API void LoadCloakImage();
+	LIBZHL_API void LoadImages();
+	LIBZHL_API void LoadState(int fd);
+	LIBZHL_API void LockdownRoom(int roomId, Pointf position);
+	LIBZHL_API void ManipulateAllDoors(bool open);
+	LIBZHL_API void ManipulateDoors(int roomid, bool open);
+	LIBZHL_API void OnCleanup();
+	LIBZHL_API bool OnInit(ShipBlueprint *blueprint);
 	LIBZHL_API void OnLoop(std::vector<float> &oxygenLevels);
-	LIBZHL_API void OnRenderBase(bool unk);
+	LIBZHL_API void OnRenderBase(bool enginesWorking);
+	LIBZHL_API void OnRenderBlackout();
 	LIBZHL_API void OnRenderBreaches();
-	LIBZHL_API void OnRenderFloor(bool unk);
+	LIBZHL_API void OnRenderExplosion();
+	LIBZHL_API void OnRenderFire(bool forceView);
+	LIBZHL_API void OnRenderFloor(bool forceView);
+	LIBZHL_API void OnRenderFloorEffects(bool forceView);
+	LIBZHL_API void OnRenderHighlight();
 	LIBZHL_API void OnRenderJump(float progress);
+	LIBZHL_API void OnRenderSimple(float alpha);
 	LIBZHL_API void OnRenderSparks();
+	LIBZHL_API void OnRenderSystem(int roomId, int computerLevel);
 	LIBZHL_API void OnRenderWalls(bool forceView, bool doorControlMode);
+	LIBZHL_API void PauseLoop();
+	LIBZHL_API void ProjectileStrike(int roomId, float damage);
+	LIBZHL_API void RemoveRoom(int room);
+	LIBZHL_API void ResetDoorHealth();
+	LIBZHL_API void Restart();
+	LIBZHL_API void RoomHacked(int roomId, float hackTime);
 	LIBZHL_API bool RoomLocked(int roomId);
+	LIBZHL_API void SaveState(int fd);
+	LIBZHL_API void SetBlastDoors(int val);
+	LIBZHL_API void SetCloaked(bool value);
+	LIBZHL_API void SetDestroyed(bool animation, bool bossAnimation);
+	LIBZHL_API void SetFireCount(int roomId, int fireId);
+	LIBZHL_API void SetHackLevel(int roomId, int hackLevel);
+	LIBZHL_API void SetIonedDoors(bool val);
+	LIBZHL_API void SetPrimaryDirection(int dir, int roomId);
+	LIBZHL_API void SetPrimarySlot(int slotId, int roomId);
 	LIBZHL_API void SetRoomBlackout(int roomId, bool blackout);
+	LIBZHL_API void SetRoomWarning(int roomId, bool warning);
 	LIBZHL_API void SetSelectedRoom(int roomId);
+	LIBZHL_API void TapRoom(int roomId);
+	LIBZHL_API void TriggerSparks(int room);
+	LIBZHL_API bool UpdateDoorState(int index, Door *door);
+	LIBZHL_API void UpdateDoorsPrimitive(bool doorControlMode);
+	LIBZHL_API void constructor(int shipId);
+	LIBZHL_API void destructor();
+	LIBZHL_API void destructor_delete();
 	
 	std::vector<Room*> vRoomList;
 	std::vector<Door*> vDoorList;
