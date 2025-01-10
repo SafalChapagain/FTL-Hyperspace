@@ -3,6 +3,7 @@
 #include "CustomCrewManifest.h"
 #include "ShipZoom.h"
 #include "ScrollingChoiceBox.h"
+#include "RedesignedTooltips.h"
 
 static void OnScrollWheel(float direction)
 {
@@ -12,7 +13,11 @@ static void OnScrollWheel(float direction)
     {
         if (!cApp->menu.bOpen)
         {
-            if (ScrollingChoiceBox::OnScrollWheel(direction))
+            if (ScrollingTooltip::OnScrollWheel(direction))
+            {
+
+            }
+            else if (ScrollingChoiceBox::OnScrollWheel(direction))
             {
 
             }

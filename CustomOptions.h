@@ -75,6 +75,8 @@ public:
 
     Setting<bool> allowRenameInputSpecialCharacters;
 
+    Setting<bool> insertNewlineForMultipleCrewTooltips;
+
     Setting<std::string> dismissSound;
 
     Defaults defaults;
