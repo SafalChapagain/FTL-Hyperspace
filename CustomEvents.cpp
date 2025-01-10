@@ -6290,6 +6290,22 @@ HOOK_METHOD(WorldManager, CheckRequirements, (LocationEvent *event, bool hidden)
 
     if (ret && event)
     {
+        int fuel_cost = event->stuff.fuel + lastLocationEvent->stuff.fuel;
+        if (fuel_cost < 0 && playerShip->shipManager->fuel_count < fuel_cost * -1)
+            return false;
+
+        int missiles_cost = event->stuff.missiles + lastLocationEvent->stuff.missiles;
+        if (missiles_cost < 0 && playerShip->shipManager->GetMissileCount() < missiles_cost * -1)
+            return false;
+
+        int drones_cost = event->stuff.drones + lastLocationEvent->stuff.drones;
+        if (drones_cost < 0 && playerShip->shipManager->GetDroneCount() < drones_cost * -1)
+            return false;
+
+        int scrap_cost = event->stuff.scrap + lastLocationEvent->stuff.scrap;
+        if (scrap_cost < 0 && playerShip->shipManager->currentScrap < scrap_cost * -1)
+            return false;
+
         CustomEvent *customEvent = CustomEventsParser::GetInstance()->GetCustomEvent(event->eventName);
 
         if (customEvent)
