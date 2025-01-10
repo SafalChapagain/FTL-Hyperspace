@@ -123,9 +123,62 @@ void Global::PreInitializeResources(ResourceControl *resources)
             throw "No parent node found in hyperspace.xml";
         }
 
+        bool checkedVersion = false;
+
         // Stuff to parse early
         for (auto node = parentNode->first_node(); node; node = node->next_sibling())
         {
+            if (strcmp(node->name(), "version") == 0)
+            {
+                std::string versionStr = node->value();
+                if(versionStr.find('.') == std::string::npos)
+                {
+                    hs_log_file("Old version check in use. Mod authors please update your hyperspace.xml's version tag!\n");
+                    checkedVersion = boost::lexical_cast<int>(node->value()) == HS_Version.getDeprecatedIntegerVersion();
+                }
+                else
+                {
+                    // Enhanced Hyperspace version check
+                    hs_log_file("Checking version Mod requests version: '%s' vs Hyperspace version: '%s'\n", versionStr.c_str(), HS_Version.toVersionString().c_str());
+
+                    char firstChar = versionStr.front();
+                    if(firstChar == '=' || firstChar == '~' || firstChar == '^')
+                    {
+                        versionStr.erase(0, 1);
+                    }
+
+                    std::vector<std::string> version;
+                    boost::split(version, versionStr, boost::is_any_of("."));
+
+                    if(version.size() != 3)
+                    {
+                        hs_log_file("Invalid version check syntax.\n");
+                        checkedVersion = false;
+                        throw "Invalid/Unknown Hyperspace version check syntax in mod, could not validate hyperspace version matches mod requirements.\nMods may function incorrectly.";
+                    }
+
+                    unsigned int v_major = boost::lexical_cast<unsigned int>(version[0]);
+                    unsigned int v_minor = boost::lexical_cast<unsigned int>(version[1]);
+                    unsigned int v_patch = boost::lexical_cast<unsigned int>(version[2]);
+
+                    switch(firstChar)
+                    {
+                        case '=':
+                            checkedVersion = v_major == HS_Version.major && v_minor == HS_Version.minor && v_patch == HS_Version.patch;
+                            break;
+
+                        case '~':
+                            checkedVersion = v_major == HS_Version.major && v_minor == HS_Version.minor && v_patch <= HS_Version.patch;
+                            break;
+
+                        default:
+                            hs_log_file("No version check case specified, defaulting to '^'.\n");
+                        case '^':
+                            checkedVersion = v_major == HS_Version.major && (v_minor < HS_Version.minor || (v_minor == HS_Version.minor && v_patch <= HS_Version.patch));
+                    }
+                }
+            }
+            
             if (strcmp(node->name(), "defaults") == 0)
             {
                 for (auto child = node->first_node(); child; child = child->next_sibling())
@@ -219,6 +272,11 @@ void Global::PreInitializeResources(ResourceControl *resources)
             customEventParser->ReadCustomEventFiles();
         }
 
+        if (!checkedVersion)
+        {
+            throw "Wrong version of Hyperspace detected. Please check that Hyperspace is installed correctly and you are using the correct version of Hyperspace for all of your mods. You can continue, but mods may function incorrectly.";
+        }
+
         doc.clear();
     }
     catch (rapidxml::parse_error& e)
@@ -259,63 +317,11 @@ void Global::InitializeResources(ResourceControl *resources)
         if (!parentNode)
             throw "No parent node found in hyperspace.xml";
 
-        bool checkedVersion = false;
-
         std::string discordModName = "";
 
         // First Pass
         for (auto node = parentNode->first_node(); node; node = node->next_sibling())
         {
-            if (strcmp(node->name(), "version") == 0)
-            {
-                std::string versionStr = node->value();
-                if(versionStr.find('.') == std::string::npos)
-                {
-                    hs_log_file("Old version check in use. Mod authors please update your hyperspace.xml's version tag!\n");
-                    checkedVersion = boost::lexical_cast<int>(node->value()) == HS_Version.getDeprecatedIntegerVersion();
-                }
-                else
-                {
-                    // Enhanced Hyperspace version check
-                    hs_log_file("Checking version Mod requests version: '%s' vs Hyperspace version: '%s'\n", versionStr.c_str(), HS_Version.toVersionString().c_str());
-
-                    char firstChar = versionStr.front();
-                    if(firstChar == '=' || firstChar == '~' || firstChar == '^')
-                    {
-                        versionStr.erase(0, 1);
-                    }
-
-                    std::vector<std::string> version;
-                    boost::split(version, versionStr, boost::is_any_of("."));
-
-                    if(version.size() != 3)
-                    {
-                        hs_log_file("Invalid version check syntax.\n");
-                        checkedVersion = false;
-                        throw "Invalid/Unknown Hyperspace version check syntax in mod, could not validate hyperspace version matches mod requirements.\nMods may function incorrectly.";
-                    }
-
-                    unsigned int v_major = boost::lexical_cast<unsigned int>(version[0]);
-                    unsigned int v_minor = boost::lexical_cast<unsigned int>(version[1]);
-                    unsigned int v_patch = boost::lexical_cast<unsigned int>(version[2]);
-
-                    switch(firstChar)
-                    {
-                        case '=':
-                            checkedVersion = v_major == HS_Version.major && v_minor == HS_Version.minor && v_patch == HS_Version.patch;
-                            break;
-
-                        case '~':
-                            checkedVersion = v_major == HS_Version.major && v_minor == HS_Version.minor && v_patch <= HS_Version.patch;
-                            break;
-
-                        default:
-                            hs_log_file("No version check case specified, defaulting to '^'.\n");
-                        case '^':
-                            checkedVersion = v_major == HS_Version.major && (v_minor < HS_Version.minor || (v_minor == HS_Version.minor && v_patch <= HS_Version.patch));
-                    }
-                }
-            }
             if (strcmp(node->name(), "hullNumbers") == 0)
             {
                 if (node->first_attribute("enabled"))
@@ -859,12 +865,6 @@ void Global::InitializeResources(ResourceControl *resources)
         {
             auto customEventParser = CustomEventsParser::GetInstance();
             customEventParser->PostProcessCustomEvents();
-        }
-
-
-        if (!checkedVersion)
-        {
-            throw "Wrong version of Hyperspace detected. Please check that Hyperspace is installed correctly and you are using the correct version of Hyperspace for all of your mods. You can continue, but mods may function incorrectly.";
         }
 
         doc.clear();

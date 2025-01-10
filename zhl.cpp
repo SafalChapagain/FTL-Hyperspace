@@ -274,6 +274,13 @@ int FunctionDefinition::Load()
 
 	if(!sig.Scan())
 	{
+	#ifdef _WIN32
+		if (strncmp(_name, "AchievementTracker::", 20) == 0)
+		{
+			snprintf(g_defLastError, 1024, "Failed to find address for function %s\n\nFTL has most likely not been downgraded. If you got FTL from Steam, please run downgrade.bat in your FTL folder and then run FTLGame.exe again. If you obtained FTL elsewhere, please read the Hyperspace instructions for downgrading FTL.", _name);
+			return 0;
+		}
+	#endif // _WIN32
 		snprintf(g_defLastError, 1024, "Failed to find address for function %s", _name);
 		return 0;
 	}
