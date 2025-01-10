@@ -20,6 +20,10 @@ cleanup __amd64 void CrewEquipBox::OnRender(CrewEquipBox *this, bool unk);
 
 struct CrewEquipBox depends (TextInput)
 {{
+	CrewEquipBox()
+	{
+	}
+	
 	CrewEquipBox(Point pos_, ShipManager *ship_, int slot_)
 	{
 		this->constructor(pos_, ship_, slot_);

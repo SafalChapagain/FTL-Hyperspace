@@ -1,2 +1,12 @@
 "534889fb4883ec2080bf6807000000":
 cleanup __amd64 void CrewCustomizeBox::CheckContents(CrewCustomizeBox *this);
+"41554154554889f54989ed":
+cleanup __amd64 void CrewCustomizeBox::constructor(CrewCustomizeBox *this, Point location, ShipManager *shipManager, int slot);
+
+struct CrewCustomizeBox
+{{
+	CrewCustomizeBox(Point location, ShipManager *shipManager, int slot)
+    {
+        this->constructor(location, shipManager, slot);
+    }
+}};

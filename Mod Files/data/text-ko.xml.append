@@ -293,3 +293,5 @@ For: "temporal_tooltip", "temporal_arm_speed", "temporal_arm_slow"
 <text name="shields_5" language="ko">방어막 여섯 장</text>
 <text name="shields_6" language="ko">방어막 일곱 장</text>
 <text name="shields_7" language="ko">방어막 여덟 장</text>
+
+<text name="max_augments" language="ko">보조 장비는 최대 \1개까지 설치할 수 있습니다.</text>

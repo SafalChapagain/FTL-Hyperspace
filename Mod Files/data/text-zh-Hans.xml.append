@@ -302,3 +302,5 @@ For: "temporal_tooltip", "temporal_arm_speed", "temporal_arm_slow"
 <text name="shields_5" language="zh-Hans">六层护盾屏障</text>
 <text name="shields_6" language="zh-Hans">七层护盾屏障</text>
 <text name="shields_7" language="zh-Hans">八层护盾屏障</text>
+
+<text name="max_augments" language="zh-Hans">你的战舰只能装载 \1 个增强部件。</text>

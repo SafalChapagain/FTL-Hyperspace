@@ -186,6 +186,10 @@ cleanup __amd64 int ShipManager::constructor(ShipManager *this, int shipId);
 cleanup __amd64 void ShipManager::destructor(ShipManager *this);
 "!.534889fb":
 cleanup __amd64 void ShipManager::destructor2(ShipManager *this);
+"415741564155415455534889fb4883ec48488b":
+cleanup __amd64 void ShipManager::CreateArmory(ShipManager *this);
+"41544989f455534889fb4883ec108b":
+cleanup __amd64 Drone *ShipManager::CreateDrone(ShipManager *this, DroneBlueprint *drone);
 
 struct ShipManager depends (PowerManager, ShieldPower)
 {{

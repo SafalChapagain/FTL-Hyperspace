@@ -295,3 +295,5 @@ Key : \1</text> <!-- \1 is more info hotkey -->
 <text name="shields_5" language="fr">Six barrières de boucliers</text>
 <text name="shields_6" language="fr">Sept barrières de boucliers</text>
 <text name="shields_7" language="fr">Huit barrières de boucliers</text>
+
+<text name="max_augments" language="fr">Votre vaisseau ne peut pas avoir plus de \1 améliorations.</text>

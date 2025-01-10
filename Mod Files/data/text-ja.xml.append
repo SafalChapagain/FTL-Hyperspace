@@ -285,3 +285,5 @@
 <text name="shields_5" language="ja">6層シールド</text>
 <text name="shields_6" language="ja">7層シールド</text>
 <text name="shields_7" language="ja">8層シールド</text>
+
+<text name="max_augments" language="ja">拡張パーツは\1個までしか持てない！</text>

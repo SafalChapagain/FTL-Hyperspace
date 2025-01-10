@@ -293,3 +293,5 @@ Key: \1</text> <!-- \1 is more info hotkey -->
 <text name="shields_5" language="pl">Sześć warstwy osłony</text>
 <text name="shields_6" language="pl">Siedem warstwy osłony</text>
 <text name="shields_7" language="pl">Osiem warstwy osłony</text>
+
+<text name="max_augments" language="pl">Statek może mieć tylko \1 wspomagania.</text>

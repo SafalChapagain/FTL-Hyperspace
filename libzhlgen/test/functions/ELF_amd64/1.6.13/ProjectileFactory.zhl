@@ -42,3 +42,11 @@ cleanup __amd64 void ProjectileFactory::Fire(ProjectileFactory *this, std::vecto
 cleanup __amd64 void ProjectileFactory::Update(ProjectileFactory *this);
 ".415641554154554889fd534883ec1048c70770??":
 cleanup __amd64 void ProjectileFactory::destructor(ProjectileFactory *this);
+
+struct ProjectileFactory 
+{{
+	ProjectileFactory(const WeaponBlueprint *bp, int shipId)
+	{
+		this->constructor(bp, shipId);
+	}
+}};

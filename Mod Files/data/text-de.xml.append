@@ -280,3 +280,5 @@ Taste: \1</text>
 <text name="shields_5" language="de">Sechs Schildbarrieren</text>
 <text name="shields_6" language="de">Sieben Schildbarrieren</text>
 <text name="shields_7" language="de">Acht Schildbarrieren</text>
+
+<text name="max_augments" language="de">Dein Schiff kann \1 Ausbauten aufnehmen.</text>

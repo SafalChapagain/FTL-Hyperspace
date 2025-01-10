@@ -522,6 +522,8 @@ maxLevel attribute sets the maximum level you can upgrade to
 <overrideCost> sets the price of an individual coloumn specified in the attribute, every other coloumn will follow default scaling
 <artilleryGibMountFix> applies the fix to this ship if not already enabled globally
 <hideHullDuringExplosion> hides the hull of this ship if not already enabled globally
+<augSlots> sets the number of augment slots for custom ship
+<cargoSlots> sets the number of cargo slots for custom ship
 
 
 <empty> in shipOrder means that the slot that the ship would take up is empty instead
@@ -681,6 +683,8 @@ Syntax ->
 		</customReactor>
 		<artilleryGibMountFix/>
 		<hideHullDuringExplosion/>
+		<augSlots>5</augSlots>
+		<cargoSlots>8</cargoSlots>
 	</customShip>
 	
 	<customShip name="ENEMY_SHIP">
@@ -3023,5 +3027,9 @@ In an event definition and under <choice> tag, you can add attribute "color={nam
 <!-- Define an upper limit for system upgrade costs. "threshold" or bigger value will be replaced with the string specified by "replace". Note that this is just a visual fix; player can still purchase the system if they have enough scrap. -->
 
 <systemNoPurchaseThreshold enabled="false" threshold="9999" replace="--"/>
+
+<!-- Allow over capacity box to hold multiple items. Player can select which item they take with them. -->
+
+<multipleOverCapacity enabled="false"/>
 
 </FTL>

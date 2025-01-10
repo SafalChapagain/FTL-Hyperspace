@@ -293,3 +293,5 @@ For: "temporal_tooltip", "temporal_arm_speed", "temporal_arm_slow"
 <text name="shields_5" language="ru">Шесть уровень щита</text>
 <text name="shields_6" language="ru">Семь уровень щита</text>
 <text name="shields_7" language="ru">Восемь уровень щита</text>
+
+<text name="max_augments" language="ru">На ваш корабль можно устанавливать только \1 модуля.</text>

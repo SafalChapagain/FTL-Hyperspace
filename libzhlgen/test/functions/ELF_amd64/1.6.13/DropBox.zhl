@@ -2,3 +2,9 @@
 cleanup __amd64 void DropBox::OnRender(DropBox *this);
 "488b57104889d04885c0":
 cleanup __amd64 int DropBox::GetHeight(DropBox *this);
+"8b0f31c0":
+cleanup __amd64 bool DropBox::Contains(DropBox *this, int x, int y);
+"415455534889fb4883ec30807f40008b":
+cleanup __amd64 int DropBox::GetBodySpaceOffset(DropBox *this);
+"415741564589ce41554989cd41544d89c4":
+cleanup __amd64 void DropBox::OnInit(DropBox *this, Point p, bool isSellBox_, TextString *titleText_, TextString *bodyText_, int bodySpace_, TextString *lowerText_);

@@ -20,3 +20,17 @@ cleanup __amd64 void Equipment::AddWeapon(Equipment *this, WeaponBlueprint *bp, 
 cleanup __amd64 void Equipment::AddToCargo(Equipment *this, const std::string &name);
 ".4157415641554154554889f5534889fb4881ec98000000":
 cleanup __amd64 void Equipment::OnInit(Equipment *this, ShipManager *ship);
+"415531d24189f5":
+cleanup __amd64 bool Equipment::IsCompletelyFull(Equipment *this, int type);
+"534889fb488bbf08020000":
+cleanup __amd64 void Equipment::Jump(Equipment *this);
+"41574189d741564989fe41554154":
+cleanup __amd64 void Equipment::MouseMove(Equipment *this, int mX, int mY);
+"41564155415455534889fb4883ec60":
+cleanup __amd64 void Equipment::OnRender(Equipment *this);
+"41574156415541544989fc55534883ec68":
+cleanup __amd64 void Equipment::SetPosition(Equipment *this, Point p);
+"534889fb4883ec10e8????????488d7b30":
+cleanup __amd64 void Equipment::constructor(Equipment *this);
+"534889fb4883ec10488b8720030000":
+cleanup __amd64 void Equipment::destructor(Equipment *this);

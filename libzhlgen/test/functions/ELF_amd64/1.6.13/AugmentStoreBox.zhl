@@ -1,6 +1,9 @@
 "41544989f4be????????554889d5534889fb":
 cleanup __amd64 void AugmentStoreBox::constructor(AugmentStoreBox *this, ShipManager *ship, const AugmentBlueprint* bp);
-
+"534889fb4883ec30488bbf18010000":
+cleanup __amd64 bool AugmentStoreBox::CanHold(AugmentStoreBox *this);
+"5531c9534889fb488d":
+cleanup __amd64 void AugmentStoreBox::MouseMove(AugmentStoreBox *this, int mX, int mY);
 
 struct AugmentStoreBox
 {{

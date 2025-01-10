@@ -4,3 +4,13 @@ cleanup __amd64 void AugmentEquipBox::RenderIcon(AugmentEquipBox *this);
 cleanup __amd64 void AugmentEquipBox::CheckContents(AugmentEquipBox *this);
 "534889fb4883ec204883bfa800000000743d":
 cleanup __amd64 void AugmentEquipBox::RemoveItem(AugmentEquipBox *this);
+"41554189cd41544989d4ba":
+cleanup __amd64 void AugmentEquipBox::constructor(AugmentEquipBox *this, Point loc, ShipManager *shipManager, int slot);
+
+struct AugmentEquipBox
+{{
+	AugmentEquipBox(Point loc, ShipManager *shipManager, int slot)
+	{
+		this->constructor(loc, shipManager, slot);
+	}
+}};

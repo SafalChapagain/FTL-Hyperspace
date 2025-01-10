@@ -18,3 +18,9 @@ offsetVariable bool* Globals_RNG;
 
 "!488d4c24184889dabe01000000e8????????488b3d(???????\?)":
 offsetVariable FILE* ftl_log_logfile;
+
+struct Globals::Rect
+{{
+    Rect() {}
+    Rect(int _x, int _y, int _w, int _h) : x(_x), y(_y), w(_w), h(_h) {}
+}};

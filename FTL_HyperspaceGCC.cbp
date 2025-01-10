@@ -931,6 +931,9 @@
 		<Unit filename="CustomEquipment.cpp">
 			<Option virtualFolder="Core/Equipment/" />
 		</Unit>
+		<Unit filename="CustomEquipment.h">
+			<Option virtualFolder="Core/Equipment/" />
+		</Unit>
 		<Unit filename="CustomEvents.cpp">
 			<Option virtualFolder="Core/Events/" />
 		</Unit>
@@ -1056,6 +1059,12 @@
 		</Unit>
 		<Unit filename="EnumClassHash.h">
 			<Option virtualFolder="PAL/" />
+		</Unit>
+		<Unit filename="Equipment_Extend.cpp">
+			<Option virtualFolder="Core/Equipment/" />
+		</Unit>
+		<Unit filename="Equipment_Extend.h">
+			<Option virtualFolder="Core/Equipment/" />
 		</Unit>
 		<Unit filename="ErosionEffect.cpp">
 			<Option virtualFolder="Core/Weapons/" />

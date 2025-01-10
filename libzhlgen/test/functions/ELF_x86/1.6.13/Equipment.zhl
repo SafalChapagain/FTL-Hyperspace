@@ -20,3 +20,17 @@ cleanup __cdecl void Equipment::AddAugment(Equipment *this, AugmentBlueprint *bp
 cleanup __cdecl void Equipment::AddToCargo(Equipment *this, const std::string &name);
 "5557565383ec1c8b7424348b7c2430":
 cleanup __cdecl std::vector<std::string> Equipment::GetCargoHold(Equipment *this);
+"5557565331db83ec1c8b7424308b7c24348b":
+cleanup __cdecl bool Equipment::IsCompletelyFull(Equipment *this, int type);
+"5383ec188b5c24208b8328010000":
+cleanup __cdecl void Equipment::Jump(Equipment *this);
+"5557565381ec0c0100008bbc":
+cleanup __cdecl void Equipment::MouseMove(Equipment *this, int mX, int mY);
+"5589e557565381ec9c0000008b5d08e8":
+cleanup __cdecl void Equipment::OnRender(Equipment *this);
+"5557565383ec7c8b9c24900000008b":
+cleanup __cdecl void Equipment::SetPosition(Equipment *this, Point p);
+"565383ec248b5c24308d74241f891c24e8????????8d4324":
+cleanup __cdecl void Equipment::constructor(Equipment *this);
+"565383ec248b5c24308b83e8010000":
+cleanup __cdecl void Equipment::destructor(Equipment *this);

@@ -1,2 +1,12 @@
 "80b9880600000075??80b96e0200000074??c3578d7c240883e4f0ff77fc5589e557565389cb83ec3c8b8984000000":
-__thiscall void CrewCustomizeBox::CheckContents(CrewCustomizeBox *this);
+__thiscall void CrewCustomizeBox::CheckContents(CrewCustomizeBox *this); // 0052aed0
+".578d7c240883e4f0ff77fc5589f889e557565389cb81ecbc000000":
+__thiscall void CrewCustomizeBox::constructor(CrewCustomizeBox *this, Point location, ShipManager *shipManager, int slot); // 0052ea60
+
+struct CrewCustomizeBox
+{{
+	CrewCustomizeBox(Point location, ShipManager *shipManager, int slot)
+    {
+        this->constructor(location, shipManager, slot);
+    }
+}};

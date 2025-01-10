@@ -173,6 +173,8 @@
 <text name="teleporter_instant">No cooldown</text>
 <text name="clonebay_instant_fullheal">Instant clone + Full heal on jump</text>
 
+<text name="max_augments">Your ship can only hold \1 augmentations.</text>
+
 <!-- Tooltips when hovering over deployed drones -->
 
 <text name="defense_asteroid_friendly">Your Defense Drone:\nShoots down asteroids. Will function until destroyed or until you jump away.</text>

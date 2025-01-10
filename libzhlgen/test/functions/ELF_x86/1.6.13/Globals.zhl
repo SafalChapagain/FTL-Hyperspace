@@ -18,3 +18,9 @@ bool* Globals_RNG;
 
 "!8974240c895c2408c744240401000000890424e8????????a1(???????\?)890424":
 FILE* ftl_log_logfile;
+
+struct Globals::Rect
+{{
+    Rect() {}
+    Rect(int _x, int _y, int _w, int _h) : x(_x), y(_y), w(_w), h(_h) {}
+}};

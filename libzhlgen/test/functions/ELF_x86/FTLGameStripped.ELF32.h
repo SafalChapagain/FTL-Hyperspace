@@ -2162,6 +2162,7 @@ struct Equipment
   DropBox overAugImage;
   DropBox sellBox;
   bool bSellingItem;
+  uint8_t gap_ex[2];
   ShipManager *shipManager;
   std__vector_14EquipmentBoxZ1 vEquipmentBoxes;
   std__vector_19ProjectileFactoryZ1 weaponsTrashList;
@@ -4417,7 +4418,7 @@ struct VTable_EquipmentBox
   void (__thiscall *SetPosition)(EquipmentBox *this, Point pos);
   void (__thiscall *OnRender)(EquipmentBox *this, bool empty);
   void (__thiscall *RenderLabels)(EquipmentBox *this, bool empty);
-  void (__thiscall *RenderIcon)(EquipmentBox *this, bool empty);
+  void (__thiscall *RenderIcon)(EquipmentBox *this);
   void (__thiscall *SetShipManager)(EquipmentBox *this, ShipManager *ship);
   void (__thiscall *MouseMove)(EquipmentBox *this, int x, int y);
   void (__thiscall *OnTouch)(EquipmentBox *this);

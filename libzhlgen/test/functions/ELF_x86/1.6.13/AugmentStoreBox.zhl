@@ -1,5 +1,9 @@
 "5557565383ec2c8d44241a8b5c24408d7c241c8b742448":
 cleanup __cdecl void AugmentStoreBox::constructor(AugmentStoreBox *this, ShipManager *ship, const AugmentBlueprint* bp);
+"565383ec348b5c24408b":
+cleanup __cdecl bool AugmentStoreBox::CanHold(AugmentStoreBox *this);
+"5589e557565383ec4c8b45108b5d08c744":
+cleanup __cdecl void AugmentStoreBox::MouseMove(AugmentStoreBox *this, int mX, int mY);
 
 struct AugmentStoreBox
 {{

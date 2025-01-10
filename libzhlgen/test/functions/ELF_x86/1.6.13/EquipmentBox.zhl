@@ -28,10 +28,23 @@ cleanup __cdecl int EquipmentBox::GetItemValue(EquipmentBox *this);
 cleanup __cdecl void EquipmentBox::SetBlueprint(EquipmentBox *this, InfoBox *infoBox, bool detailedBox);
 "8b5424048b425085c0":
 cleanup __cdecl Blueprint* EquipmentBox::GetBlueprint(EquipmentBox *this);
+"5383ec188b5c24208b434c85":
+virtual cleanup __cdecl void EquipmentBox::RenderIcon(EquipmentBox *this);
+"8b5424088b4424048b0a89483c":
+cleanup __cdecl void EquipmentBox::ForceHitBox(EquipmentBox *this, Globals::Rect *newBox);
 
 
 struct EquipmentBox depends (AugmentBlueprint)
 {{
+	EquipmentBox()
+	{
+	}
+
+	EquipmentBox(Point pos, int slot)
+	{
+		this->constructor(pos, slot);
+	}
+
 	bool IsEmpty()
 	{
 		return !item.pWeapon && !item.pDrone && (!item.augment || item.augment->name.empty()) && !item.pCrew;

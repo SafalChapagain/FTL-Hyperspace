@@ -293,3 +293,5 @@ Tecla: \1</text> <!-- \1 is more info hotkey -->
 <text name="shields_5" language="pt">6 Barreiras</text>
 <text name="shields_6" language="pt">7 Barreiras</text>
 <text name="shields_7" language="pt">8 Barreiras</text>
+
+<text name="max_augments" language="pt">Sua nave só pode ter \1 reforços.</text>

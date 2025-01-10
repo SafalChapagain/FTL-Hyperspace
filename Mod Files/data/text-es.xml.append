@@ -293,3 +293,5 @@ tecla: \1</text> <!-- \1 is more info hotkey -->
 <text name="shields_5" language="es">Seis escudos</text>
 <text name="shields_6" language="es">Siete escudos</text>
 <text name="shields_7" language="es">Ocho escudos</text>
+
+<text name="max_augments" language="es">Tu nave solo puede tener instalados \1 aumentos.</text>

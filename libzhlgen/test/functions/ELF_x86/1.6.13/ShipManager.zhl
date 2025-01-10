@@ -186,6 +186,10 @@ cleanup __cdecl bool ShipManager::IsCloaked(ShipManager *this);
 cleanup __cdecl int ShipManager::CountPlayerCrew(ShipManager *this);
 "565383ec148b5c24208b8300":
 cleanup __cdecl void ShipManager::Wait(ShipManager *this);
+"5589e557565383ec4c8b5d088b8300040000":
+cleanup __cdecl void ShipManager::CreateArmory(ShipManager *this);
+"57565383ec208b7c24348b5c24308b4740":
+cleanup __cdecl Drone *ShipManager::CreateDrone(ShipManager *this, DroneBlueprint *drone);
 
 struct ShipManager depends (PowerManager, ShieldPower)
 {{

@@ -1,40 +1,53 @@
 "578d7c240883e4f0ff77fc5589e557565389cb83ec6c8b35????????8b47048b178b4f088d7dd8c703????????c7431c000000008973088b35????????89434c":
 __thiscall void EquipmentBox::constructor(EquipmentBox *this, Point pos, int slot);
 "8b416485c074??8b401cc3908d7426008b416085c075??8b416885c074??":
-__thiscall Blueprint* EquipmentBox::GetBlueprint(EquipmentBox *this);
+__thiscall Blueprint* EquipmentBox::GetBlueprint(EquipmentBox *this); // 0052cde0
 "5731c08d7c240883e4f0ff77fc5589e557565389cb83ec1c80b98100000000":
-__thiscall void EquipmentBox::SetBlueprint(EquipmentBox *this, InfoBox *infoBox, bool detailedBox);
+__thiscall void EquipmentBox::SetBlueprint(EquipmentBox *this, InfoBox *infoBox, bool detailedBox); // 0052ccc0
 
 
 "5589e55389cb83e4f083ec108b4130c701????????890424e8????????8b4334890424":
 virtual __thiscall void EquipmentBox::destructor(EquipmentBox *this);
 ".8b416085c074??85c00f95c0":
-virtual __thiscall bool EquipmentBox::CanHoldWeapon(EquipmentBox *this);
+virtual __thiscall bool EquipmentBox::CanHoldWeapon(EquipmentBox *this); // 0052b0f0
 ".8b416085c08b416474??85c0":
-virtual __thiscall bool EquipmentBox::CanHoldDrone(EquipmentBox *this);
+virtual __thiscall bool EquipmentBox::CanHoldDrone(EquipmentBox *this); // 0052b130
 ".8b51608b44240485d274??3c01":
-virtual __thiscall int EquipmentBox::GetType(EquipmentBox *this);
+virtual __thiscall int EquipmentBox::GetType(EquipmentBox *this);  // 0052b160
 ".578d7c240883e4f0ff77fc5589e557565389cb83ec5c8b37e8????????660fefc0c74424080000000089f7":
-virtual __thiscall void EquipmentBox::OnRender(EquipmentBox *this, bool isEmpty);
+virtual __thiscall void EquipmentBox::OnRender(EquipmentBox *this, bool isEmpty); // 0052b3d0
 ".578d7c240883e4f0ff77fc5589e55756538db560ffffff89cb81ec????????8b07":
-virtual __thiscall void EquipmentBox::UpdateBoxImage(EquipmentBox *this, bool unk);
+virtual __thiscall void EquipmentBox::UpdateBoxImage(EquipmentBox *this, bool unk); // 0052b790
 ".578d7c240883e4f0ff77fc5589e557565389cb81ec????????8b4160":
-virtual __thiscall void EquipmentBox::RenderLabels(EquipmentBox *this, bool unk);
+virtual __thiscall void EquipmentBox::RenderLabels(EquipmentBox *this, bool unk); // 0052c0f0
 
 "538b415031db8b54240839c27e??03415839c27d??8b41543944240c7e??":
-virtual __thiscall void EquipmentBox::MouseMove(EquipmentBox *this, int x, int y);
+virtual __thiscall void EquipmentBox::MouseMove(EquipmentBox *this, int x, int y); // 0052aa50
 ".8b4424048941608b4424088941648b44240c8941688b442410":
-virtual __thiscall void EquipmentBox::AddItem(EquipmentBox *this, EquipmentBoxItem item);
+virtual __thiscall void EquipmentBox::AddItem(EquipmentBox *this, EquipmentBoxItem item); // 0052aac0
 ".660fefc05589e50f1141605d":
-virtual __thiscall void EquipmentBox::Restart(EquipmentBox *this);
+virtual __thiscall void EquipmentBox::Restart(EquipmentBox *this); // 0052aae0 original name: RemoveItem
 "5589e58b55088b450c5d89514889414c895150894154":
-virtual __thiscall void EquipmentBox::SetPosition(EquipmentBox *this, Point pos);
+virtual __thiscall void EquipmentBox::SetPosition(EquipmentBox *this, Point pos); // 0052aa30
+".578d7c240883e4f0ff77fc5589e55783ec248b4160":
+virtual __thiscall void EquipmentBox::RenderIcon(EquipmentBox *this); // 0052af90
+"8b4424048b10895150":
+__thiscall void EquipmentBox::ForceHitBox(EquipmentBox *this, Globals::Rect *newBox); // 0052cc00
 "8b416085c074??8b401c8b4070c366908b416485c075??8b416c85c074??8b500885d2":
-__thiscall int EquipmentBox::GetItemValue(EquipmentBox *this);
+__thiscall int EquipmentBox::GetItemValue(EquipmentBox *this); // 0052cc80
 
 
 struct EquipmentBox depends (AugmentBlueprint)
 {{
+	EquipmentBox()
+	{
+	}
+
+	EquipmentBox(Point pos, int slot)
+	{
+		this->constructor(pos, slot);
+	}
+
 	bool IsEmpty()
 	{
 		return !item.pWeapon && !item.pDrone && (!item.augment || item.augment->name.empty()) && !item.pCrew;

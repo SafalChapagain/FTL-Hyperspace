@@ -1,0 +1,20 @@
+"565383ec548b0d????????8b5c24608d74243c8b4424688b542464894b088b0d????????8943388943408b442470895334894b0c8b0d????????89533c894360":
+cleanup __cdecl void WeaponEquipBox::constructor(WeaponEquipBox *this, Point location, WeaponSystem *sys, int slot);
+".565383ec548b0d????????8b5c24608d74243c8b4424688b542464894b088b0d????????8943388943408b442470895334894b0c8b0d????????89533c894360":
+cleanup __cdecl void DroneEquipBox::constructor(DroneEquipBox *this, Point location, DroneSystem *sys, int slot);
+
+struct WeaponEquipBox
+{{
+	WeaponEquipBox(Point location, WeaponSystem *sys, int slot)
+	{
+		this->constructor(location, sys, slot);
+	}
+}};
+
+struct DroneEquipBox
+{{
+	DroneEquipBox(Point location, DroneSystem *sys, int slot)
+	{
+		this->constructor(location, sys, slot);
+	}
+}};

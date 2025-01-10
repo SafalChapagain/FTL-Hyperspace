@@ -1,5 +1,9 @@
-"578d7c240883e4f0ff77fc5589f889e557565389cb8d4dd083ec4c8b70048d45d88b3fc7442404000000008945d08d45cc":
-__thiscall void AugmentStoreBox::constructor(AugmentStoreBox *this, ShipManager *ship, const AugmentBlueprint* bp);
+"578d7c240883e4f0ff77fc5589e557565383ec4c8b8138010000":
+__thiscall bool AugmentStoreBox::CanHold(AugmentStoreBox *this); // 00506800
+".578d7c240883e4f0ff77fc5589f889e557565389cb8d4dd083ec4c8b70048d45d88b3fc7442404000000008945d08d45cc":
+__thiscall void AugmentStoreBox::constructor(AugmentStoreBox *this, ShipManager *ship, const AugmentBlueprint* bp); // 00507e40
+".578d7c240883e4f0ff77fc5589e557565389cb83c12483":
+__thiscall void  AugmentStoreBox::MouseMove(AugmentStoreBox *this, int mX, int mY); // 0050e370
 
 
 struct AugmentStoreBox

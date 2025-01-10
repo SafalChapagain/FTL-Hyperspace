@@ -28,10 +28,23 @@ cleanup __amd64 int EquipmentBox::GetItemValue(EquipmentBox *this);
 cleanup __amd64 void EquipmentBox::SetBlueprint(EquipmentBox *this, InfoBox *infoBox, bool detailedBox);
 ".488b47784885c07407":
 cleanup __amd64 Blueprint* EquipmentBox::GetBlueprint(EquipmentBox *this);
+"488b47704885c074??488b":
+virtual cleanup __amd64 void EquipmentBox::RenderIcon(EquipmentBox *this);
+"488b0648894760":
+cleanup __amd64 void EquipmentBox::ForceHitBox(EquipmentBox *this, Globals::Rect *newBox);
 
 
 struct EquipmentBox depends (AugmentBlueprint)
 {{
+	EquipmentBox()
+	{
+	}
+
+	EquipmentBox(Point pos, int slot)
+	{
+		this->constructor(pos, slot);
+	}
+	
 	bool IsEmpty()
 	{
 		return !item.pWeapon && !item.pDrone && (!item.augment || item.augment->name.empty()) && !item.pCrew;

@@ -1,0 +1,22 @@
+"578d7c240883e4f0ff77fc5589f889e557565389cb83ec7c8b":
+__thiscall void WeaponEquipBox::constructor(WeaponEquipBox *this, Point location, WeaponSystem *sys, int slot); // 0052ddf0
+".578d7c240883e4f0ff77fc5589f889e557565389cb83ec7c8b":
+__thiscall void DroneEquipBox::constructor(DroneEquipBox *this, Point location, DroneSystem *sys, int slot); // 0052dff0
+
+
+
+struct WeaponEquipBox
+{{
+	WeaponEquipBox(Point location, WeaponSystem *sys, int slot)
+	{
+		this->constructor(location, sys, slot);
+	}
+}};
+
+struct DroneEquipBox
+{{
+	DroneEquipBox(Point location, DroneSystem *sys, int slot)
+	{
+		this->constructor(location, sys, slot);
+	}
+}};

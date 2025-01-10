@@ -1,2 +1,12 @@
 "5589e5565383ec208b5d0880bbfc05000000":
 cleanup __cdecl void CrewCustomizeBox::CheckContents(CrewCustomizeBox *this);
+"5557565383ec7c8b8424a00000008d":
+cleanup __cdecl void CrewCustomizeBox::constructor(CrewCustomizeBox *this, Point location, ShipManager *shipManager, int slot); 
+
+struct CrewCustomizeBox
+{{
+	CrewCustomizeBox(Point location, ShipManager *shipManager, int slot)
+    {
+        this->constructor(location, shipManager, slot);
+    }
+}};

@@ -1,0 +1,20 @@
+"4154554889d5534889fb4889":
+cleanup __amd64 void WeaponEquipBox::constructor(WeaponEquipBox *this, Point location, WeaponSystem *sys, int slot);
+".4154554889d5534889fb4889":
+cleanup __amd64 void DroneEquipBox::constructor(DroneEquipBox *this, Point location, DroneSystem *sys, int slot);
+
+struct WeaponEquipBox
+{{
+	WeaponEquipBox(Point location, WeaponSystem *sys, int slot)
+	{
+		this->constructor(location, sys, slot);
+	}
+}};
+
+struct DroneEquipBox
+{{
+	DroneEquipBox(Point location, DroneSystem *sys, int slot)
+	{
+		this->constructor(location, sys, slot);
+	}
+}};

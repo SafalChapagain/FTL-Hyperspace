@@ -43,3 +43,11 @@ static cleanup __cdecl void ProjectileFactory::SaveProjectile(Projectile *p, int
 static cleanup __cdecl Projectile* ProjectileFactory::LoadProjectile(int fd);
 ".555731ff565383ec1c8b5c????8b74????f30f10":
 cleanup __cdecl void ProjectileFactory::SaveState(ProjectileFactory *this, int fd);
+
+struct ProjectileFactory 
+{{
+	ProjectileFactory(const WeaponBlueprint *bp, int shipId)
+	{
+		this->constructor(bp, shipId);
+	}
+}};

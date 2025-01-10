@@ -293,3 +293,5 @@ Chiave: \1</text> <!-- \1 is more info hotkey -->
 <text name="shields_5" language="it">Sei barriere di scudi</text>
 <text name="shields_6" language="it">Sette barriere di scudi</text>
 <text name="shields_7" language="it">Otto barriere di scudi</text>
+
+<text name="max_augments" language="it">La nave può montare al massimo \1 accessori.</text>
