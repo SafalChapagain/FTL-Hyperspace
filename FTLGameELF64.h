@@ -4910,7 +4910,7 @@ struct Selectable
 
 struct Room;
 
-struct Room : Selectable
+struct Room : Selectable, ShipObject
 {
 	Point GetIntoRoom(Point pos)
 	{
@@ -4959,7 +4959,6 @@ struct Room : Selectable
 	LIBZHL_API void destructor();
 	
 	uint8_t garbage[4];
-	ShipObject _shipObject;
 	Globals::Rect rect;
 	int iRoomId;
 	bool bBlackedOut;
@@ -5106,7 +5105,7 @@ struct ShipGraph
 	std::string shipName;
 };
 
-struct Door : CrewTarget
+struct Door : CrewTarget, Selectable
 {
 public:
 	Point GetCenterPoint()
@@ -5150,7 +5149,6 @@ public:
 	LIBZHL_API void OnLoop();
 	
 	uint8_t garbage[4];
-	Selectable _selectable;
 	int iRoom1;
 	int iRoom2;
 	bool bOpen;
