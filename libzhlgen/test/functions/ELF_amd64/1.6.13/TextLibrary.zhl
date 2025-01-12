@@ -1,5 +1,5 @@
 "41574156415541544989fc5553488d5e384883ec48":
-cleanup __amd64 std::string TextLibrary::GetText(TextLibrary *this, const std::string& name, const std::string& lang);
+cleanup __amd64 std::string TextLibrary::GetText(TextLibrary* this, const std::string& name, const std::string& lang);
 
 
 struct TextLibrary
@@ -9,7 +9,7 @@ struct TextLibrary
 		return TextLibrary::GetText(name, currentLanguage);
 	}
 
-	void SetLanguage(const std::string &language)
+	void SetLanguage(const std::string& language)
 	{
 		currentLanguage = language;
 	}

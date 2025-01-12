@@ -1,8 +1,11 @@
 "578d91f80200008d7c240883e4f0ff77fc5589e557565389cb83ec1c8b81f0020000c701????????39d074??890424":
-__thiscall void ShipBlueprint::destructor(ShipBlueprint *this);
+__thiscall void ShipBlueprint::destructor(ShipBlueprint* this);
 
 
 struct ShipBlueprint
 {{
-	
+    ~ShipBlueprint()
+    {
+        this->destructor();
+    }
 }};

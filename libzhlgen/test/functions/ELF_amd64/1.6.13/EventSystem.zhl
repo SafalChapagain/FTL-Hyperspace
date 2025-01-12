@@ -1,7 +1,7 @@
 "85f6781a488b5718488b4720":
-cleanup __amd64 void EventSystem::AddEvent(EventSystem *this, int id);
+cleanup __amd64 void EventSystem::AddEvent(EventSystem* this, int id);
 "85f6781c488b0f488b5708":
-cleanup __amd64 bool EventSystem::PollEvent(EventSystem *this, int id);
+cleanup __amd64 bool EventSystem::PollEvent(EventSystem* this, int id);
 
 "!488b7b088b348a3bb7700600007e62be06000000bf(???????\?)":
 EventSystem* Global_EventSystem_EventManager;

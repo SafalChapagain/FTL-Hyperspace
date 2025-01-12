@@ -1,6 +1,18 @@
-"554889e54157415641554154534881ec????????4989fce8????????488d05????????4989042449c7442428":
-cleanup __amd64 void MenuScreen::constructor(MenuScreen *this);
-"554889e54157415641554154534881ecb80000004989ff4180bf5803":
-cleanup __amd64 void MenuScreen::OnRender(MenuScreen *this);
-"554889e54157415641554154534883ec684889fbc6430801":
-cleanup __amd64 void MenuScreen::Open(MenuScreen *this);
+// Continue from MantisAnimation::FireShot (hyper efficiency™)
+"!.554889e54157415641554154534881ec????????4989fce8????????488d05????????4989042449c7442428":
+cleanup __amd64 void MenuScreen::constructor(MenuScreen* this);
+".554889e54157415641554154534881ec????????4989ff498b4720":
+cleanup __amd64 void MenuScreen::OnLanguageChange(MenuScreen* this);
+"!.554889e54157415641554154534881ecb80000004989ff4180bf5803":
+cleanup __amd64 void MenuScreen::OnRender(MenuScreen* this);
+"!.554889e54157415641554154534883ec684889fbc6430801":
+cleanup __amd64 void MenuScreen::Open(MenuScreen* this);
+
+
+struct MenuScreen
+{{
+    MenuScreen()
+    {
+        this->constructor();
+    }
+}};

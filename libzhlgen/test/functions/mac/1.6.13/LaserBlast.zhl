@@ -1,15 +1,14 @@
 "554889e553504889fbe8b2f9":
-cleanup __amd64 void LaserBlast::OnUpdate(LaserBlast *this);
-"554889e553504889fbc74340":
-cleanup __amd64 void LaserBlast::OnInit(LaserBlast *this);
+cleanup __amd64 void LaserBlast::OnUpdate(LaserBlast* this);
+".554889e553504889fbc74340":
+cleanup __amd64 void LaserBlast::OnInit(LaserBlast* this);
 
-
-"!0f288d????????e8????????488d05(???????\?)4889c1488d81(???????\?)66480f6ec0488d41??":
+"!.0f288d????????e8????????488d05(???????\?)4889c1488d81(???????\?)66480f6ec0488d41":
 offsetVariable void** VTable_LaserBlast;
 offsetVariable void** VTable_Targetable_LaserBlast;
 
 
 struct LaserBlast
 {{
-	LaserBlast(Pointf _position, int _ownerId, int _targetId, Pointf _target);
+	LaserBlast(Pointf position, int ownerId, int targetId, Pointf target);
 }};

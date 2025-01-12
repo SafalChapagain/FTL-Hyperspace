@@ -1,2 +1,3 @@
-"554889e5415741564155415453504989f64989ff418a06418807498d7f08":
-cleanup __amd64 void ShipEvent::constructor(ShipEvent *this, const ShipEvent& event);
+// Continue from ShipButton::OnRender (hyper efficiency™)
+"!.554889e5415741564155415453504989f64989ff418a06":
+cleanup __amd64 void ShipEvent::constructor(ShipEvent* this, const ShipEvent& _event);

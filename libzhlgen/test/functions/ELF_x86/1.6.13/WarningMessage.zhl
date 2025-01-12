@@ -1,29 +1,29 @@
 "5383ec188b5c2420807b1400":
-cleanup __cdecl void WarningMessage::Start(WarningMessage *this);
+cleanup __cdecl void WarningMessage::Start(WarningMessage* this);
 "5383ec188b5c2420807b1600":
-cleanup __cdecl void WarningMessage::OnRender(WarningMessage *this);
+cleanup __cdecl void WarningMessage::OnRender(WarningMessage* this);
 "5589e557565383ec7c8b5d08807b2800":
-cleanup __cdecl void WarningMessage::RenderWithAlpha(WarningMessage *this, float alpha);
+cleanup __cdecl void WarningMessage::RenderWithAlpha(WarningMessage* this, float alpha);
 "560f57c05383ec248b5c24308d74241ff30f1144240c":
-cleanup __cdecl void WarningMessage::constructor(WarningMessage *this);
+cleanup __cdecl void WarningMessage::constructor(WarningMessage* this);
 "5557565383ec1c8b5c24308b7c24388b6c243c8b442434":
-cleanup __cdecl void WarningMessage::InitImage(WarningMessage *this, const std::string& imageName, Point position, float time, bool flash);
+cleanup __cdecl void WarningMessage::InitImage(WarningMessage* this, const std::string& imageName, Point position, float time, bool flash);
 "5557565383ec1c8b5c24308b4424388b7424348b54243c8b6c2454":
-cleanup __cdecl void WarningMessage::InitText(WarningMessage *this, const TextString& text, Point position, float time, GL_Color textColor, bool centerText, bool flash);
+cleanup __cdecl void WarningMessage::InitText(WarningMessage* this, const TextString& text, Point position, float time, GL_Color textColor, bool centerText, bool flash);
 "565383ec148b5c24208d7304893424":
-cleanup __cdecl void WarningMessage::OnLoop(WarningMessage *this);
+cleanup __cdecl void WarningMessage::OnLoop(WarningMessage* this);
 ".5557565383ec1c8b5c24308b742434807b2800":
-cleanup __cdecl void WarningMessage::SetImage(WarningMessage *this, const std::string& imageName);
+cleanup __cdecl void WarningMessage::SetImage(WarningMessage* this, const std::string& imageName);
 ".5557565383ec1c8b5c24308b742434807b2800":
-cleanup __cdecl void WarningMessage::SetText(WarningMessage *this, const TextString& text);
+cleanup __cdecl void WarningMessage::SetText(WarningMessage* this, const TextString& text);
 ".5557565383ec1c8b5c24308b742434807b2800":
-cleanup __cdecl void WarningMessage::SetText(WarningMessage *this, const TextString& text, GL_Color textColor);
+cleanup __cdecl void WarningMessage::SetText(WarningMessage* this, const TextString& text, GL_Color textColor);
 "8b4424048b5424088b4c240c80782800":
-cleanup __cdecl void WarningMessage::SetPosition(WarningMessage *this, Point position);
+cleanup __cdecl void WarningMessage::SetPosition(WarningMessage* this, Point position);
 "83ec1c0fb6442424c744240800000000":
-cleanup __cdecl void WarningMessage::SetLoop(WarningMessage *this, bool loop);
+cleanup __cdecl void WarningMessage::SetLoop(WarningMessage* this, bool loop);
 "8b442404058c00000089442404":
-cleanup __cdecl void WarningMessage::SetSound(WarningMessage *this, const std::string& sound);
+cleanup __cdecl void WarningMessage::SetSound(WarningMessage* this, const std::string& sound);
 
 
 struct WarningMessage

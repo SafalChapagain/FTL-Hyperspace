@@ -1,31 +1,31 @@
 "5557565383ec3c8b5c????8b44????8b54????f30f1044????c74304000000008b7c????89433c8d??242f8b74????f30f114324":
-cleanup __cdecl void Animation::constructor(Animation *this, const std::string& _image, int _length, float _time, Pointf _position, int _imageWidth, int _imageHeight, int _stripStartX, int _numFrames);
+cleanup __cdecl void Animation::constructor(Animation* this, const std::string& _image, int _length, float _time, Pointf _position, int _imageWidth, int _imageHeight, int _stripStartX, int _numFrames);
 "57565383ec508b4424788b5c246084c089c675??0fb6735cf30f10442464f30f104b708b7b58f30f59442474f30f11442420":
-cleanup __cdecl void Animation::OnRender(Animation *this, float opacity, GL_Color color, bool mirror);
+cleanup __cdecl void Animation::OnRender(Animation* this, float opacity, GL_Color color, bool mirror);
 "5557565383ec4c8b5c24608b4304807b3000f30f2ad0":
-cleanup __cdecl void Animation::Update(Animation *this);
+cleanup __cdecl void Animation::Update(Animation* this);
 "8b4424048b48048d51ff395424080f4e54240885d27e??f30f2ac20f57d2f30f2ad9":
-cleanup __cdecl void Animation::SetCurrentFrame(Animation *this, int frame);
+cleanup __cdecl void Animation::SetCurrentFrame(Animation* this, int frame);
 "5383ec28807c2434008b5c24300f85????????f30f10432c0f57c9c6433200c6433001c6433100f30f5e43240f2ec1":
-cleanup __cdecl void Animation::Start(Animation *this, bool reset);
+cleanup __cdecl void Animation::Start(Animation* this, bool reset);
 "565383ec148b5424248b4424208b74242885d278??8b48608b406429c8c1f802":
-cleanup __cdecl void Animation::AddSoundQueue(Animation *this, int frame, const std::string& sound);
+cleanup __cdecl void Animation::AddSoundQueue(Animation* this, int frame, const std::string& sound);
 "8b4424048b542408391074??89d185c9891074??8b4a0489480889d185c974??8b520889500c":
-cleanup __cdecl void Animation::SetAnimationId(Animation *this, GL_Texture *tex);
+cleanup __cdecl void Animation::SetAnimationId(Animation* this, GL_Texture* tex);
 "5557565383ec2c8d44241f894424048b4424408b40748944240883e80c890424e8????????8b4424408b4c24408b40648b69608944240839e8":
-cleanup __cdecl void Animation::destructor(Animation *this);
+cleanup __cdecl void Animation::destructor(Animation* this);
 "5383ec288b4424348b5c243084c075??f30f10432c0f57c9c6433200c64330010f2ec8":
-cleanup __cdecl void Animation::StartReverse(Animation *this, bool reset);
+cleanup __cdecl void Animation::StartReverse(Animation* this, bool reset);
 "8b4424040f57c0f30f10542408f30f1048248b500480783000f30f59d1f30f2adaf30f11502c":
-cleanup __cdecl void Animation::SetProgress(Animation *this, float progress);
+cleanup __cdecl void Animation::SetProgress(Animation* this, float progress);
 "5383ec08803d????????008b5c241075??e8????????8b4b0499c6433200c6433001c6433100f7f9":
-cleanup __cdecl int Animation::RandomStart(Animation *this);
+cleanup __cdecl int Animation::RandomStart(Animation* this);
 "!565383ec148b5c24208b7424240fb64330":
-cleanup __cdecl void Animation::SaveState(Animation *this, int fd);
+cleanup __cdecl void Animation::SaveState(Animation* this, int fd);
 ".8b54240431c0807a3200":
-cleanup __cdecl bool Animation::Done(Animation *this);
+cleanup __cdecl bool Animation::Done(Animation* this);
 ".565383ec148b7424248b5c2420893424":
-cleanup __cdecl void Animation::LoadState(Animation *this, int fd);
+cleanup __cdecl void Animation::LoadState(Animation* this, int fd);
 
 
 struct Animation 
@@ -33,8 +33,8 @@ struct Animation
 	Animation()
 	{
 	}
-	Animation(const std::string& _image, int _length, float _time, Pointf _position, int _imageWidth, int _imageHeight, int _stripStartX, int _numFrames)
+	Animation(const std::string& image, int length, float time, Pointf position, int imageWidth, int imageHeight, int stripStartX, int numFrames)
 	{
-		this->constructor(_image, _length, _time, _position, _imageWidth, _imageHeight, _stripStartX, _numFrames);
+		this->constructor(image, length, time, position, imageWidth, imageHeight, stripStartX, numFrames);
 	}
 }};

@@ -1,8 +1,8 @@
 "41564889d08d4add48c1e820":
-cleanup __amd64 void SpaceStatus::OnInit(SpaceStatus *this, SpaceManager *space, Point pos);
+cleanup __amd64 void SpaceStatus::OnInit(SpaceStatus* this, SpaceManager* space, Point pos);
 ".415741564155415449bc0000":
-cleanup __amd64 void SpaceStatus::RenderWarningText(SpaceStatus *this, int effect, int textOffset);
+cleanup __amd64 void SpaceStatus::RenderWarningText(SpaceStatus* this, int effect, int textOffset);
 ".41544189d45589f5534889fb4883ec20":
-cleanup __amd64 void SpaceStatus::MouseMove(SpaceStatus *this, int mX, int mY);
+cleanup __amd64 void SpaceStatus::MouseMove(SpaceStatus* this, int mX, int mY);
 ".415455534889fb4883ec10488b7f58e8":
-cleanup __amd64 void SpaceStatus::OnRender(SpaceStatus *this);
+cleanup __amd64 void SpaceStatus::OnRender(SpaceStatus* this);

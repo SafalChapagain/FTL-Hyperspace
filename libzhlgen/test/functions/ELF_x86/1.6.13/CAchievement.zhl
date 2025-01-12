@@ -1,7 +1,7 @@
 "5589e557565381ec9c0000008b45188b7d108b750c8b5d0889458c":
-cleanup __cdecl void CAchievement::OnRender(CAchievement *this, Point pos, int selected, bool showNew);
+cleanup __cdecl void CAchievement::OnRender(CAchievement* this, Point pos, int selected, bool showNew);
 "5557565383ec2c8b5c24408d74241c897424088d7c241a":
-cleanup __cdecl void CAchievement::constructor(CAchievement *this);
+cleanup __cdecl void CAchievement::constructor(CAchievement* this);
 
 struct CAchievement 
 {{

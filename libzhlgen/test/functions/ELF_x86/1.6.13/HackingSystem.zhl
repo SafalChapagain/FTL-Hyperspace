@@ -1,6 +1,6 @@
 "83ec1c8b44242080b8b001000000":
-cleanup __cdecl void HackingSystem::BlowHackingDrone(HackingSystem *this);
+cleanup __cdecl void HackingSystem::BlowHackingDrone(HackingSystem* this);
 "57565383ec308b5c2440891c24e8????????80bbbc01000000":
-cleanup __cdecl void HackingSystem::OnLoop(HackingSystem *this);
+cleanup __cdecl void HackingSystem::OnLoop(HackingSystem* this);
 "5383ec??8b5c????80bb980100000075??83c4??31c05b":
-cleanup __cdecl bool HackingSystem::SoundLoop(HackingSystem *this);
+cleanup __cdecl bool HackingSystem::SoundLoop(HackingSystem* this);

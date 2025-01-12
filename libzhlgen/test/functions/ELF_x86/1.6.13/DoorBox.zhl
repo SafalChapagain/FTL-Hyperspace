@@ -1,10 +1,11 @@
 "5557565383ec5c8b44247c8d74242c8b5c24708d6c242a8b542478":
-cleanup __cdecl void DoorBox::constructor(DoorBox *this, Point pos, ShipSystem* sys, ShipManager* ship);
+cleanup __cdecl void DoorBox::constructor(DoorBox* this, Point _position, ShipSystem* _system, ShipManager* _ship);
+
 
 struct DoorBox
 {{
-	DoorBox(Point pos, ShipSystem* sys, ShipManager *ship)
+	DoorBox(Point position, ShipSystem* system, ShipManager* ship)
 	{
-		this->constructor(pos, sys, ship);
+		this->constructor(position, system, ship);
 	}
 }};

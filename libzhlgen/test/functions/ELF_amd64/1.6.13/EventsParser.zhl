@@ -1,20 +1,20 @@
 /* Note: RandomAmount actually returns on RAX:XMM0 because the first half is INTEGER and the second half of the struct is SSE so this is currently borked */
 "41544989d4554889f5be????????4883c540":
-cleanup __amd64 RandomAmount EventsParser::PullMinMax(EventsParser *this, rapidxml::xml_node<char>* node, const std::string& name);
+cleanup __amd64 RandomAmount EventsParser::PullMinMax(EventsParser* this, rapidxml::xml_node<char>* node, const std::string& name);
 ".41574d89c741564989f64c89c641554989fd4154554889d5534889cb4883ec38":
-cleanup __amd64 ResourcesTemplate EventsParser::ProcessModifyItem(EventsParser *this, ResourcesTemplate& resources, rapidxml::xml_node<char> *node, const std::string& unk);
+cleanup __amd64 ResourcesTemplate EventsParser::ProcessModifyItem(EventsParser* this, ResourcesTemplate& resources, rapidxml::xml_node<char>* node, const std::string& origin);
 ".415741564989d641554989fd41544d8d664055534881ec98030000":
-cleanup __amd64 ShipTemplate EventsParser::ProcessShipEvent(EventsParser *this, rapidxml::xml_node<char> *node);
+cleanup __amd64 ShipTemplate EventsParser::ProcessShipEvent(EventsParser* this, rapidxml::xml_node<char>* node);
 ".415741564989f6be????????41554989cd4154":
-cleanup __amd64 std::string EventsParser::ProcessEvent(EventsParser *this, rapidxml::xml_node<char>* node, const std::string& eventName);
+cleanup __amd64 std::string EventsParser::ProcessEvent(EventsParser* this, rapidxml::xml_node<char>* node, const std::string& eventName);
 ".41554989cd41544989f4":
-cleanup __amd64 std::vector<std::string> EventsParser::ProcessEventList(EventsParser *this, rapidxml::xml_node<char>* node, const std::string& listName);
+cleanup __amd64 std::vector<std::string> EventsParser::ProcessEventList(EventsParser* this, rapidxml::xml_node<char>* node, const std::string& listName);
 ".415741564989fe41554989d54154554889f54c8d7d4053":
-cleanup __amd64 void EventsParser::ProcessBaseNode(EventsParser *this, rapidxml::xml_node<char>* node, EventGenerator& generator);
+cleanup __amd64 void EventsParser::ProcessBaseNode(EventsParser* this, rapidxml::xml_node<char>* node, EventGenerator& generator);
 ".41574989d741564155415455534881ecc8000100":
-cleanup __amd64 void EventsParser::AddEvents(EventsParser *this, EventGenerator& generator, char* file, const std::string& fileName);
+cleanup __amd64 void EventsParser::AddEvents(EventsParser* this, EventGenerator& generator, char* file, const std::string& fileName);
 ".415531d2":
-cleanup __amd64 void EventsParser::AddAllEvents(EventsParser *this);
+cleanup __amd64 void EventsParser::AddAllEvents(EventsParser* this);
 
 "!488d4c24104889c54889c2be????????bf(???????\?)":
 EventsParser* Global_EventsParser_Parser;

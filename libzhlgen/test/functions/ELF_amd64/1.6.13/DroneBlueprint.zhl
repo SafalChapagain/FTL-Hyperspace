@@ -1,2 +1,2 @@
 "4156415541544989fc55534881ec20010000":
-cleanup __amd64 void DroneBlueprint::RenderIcon(DroneBlueprint *this, float scale);
+cleanup __amd64 void DroneBlueprint::RenderIcon(DroneBlueprint* this, float scale);

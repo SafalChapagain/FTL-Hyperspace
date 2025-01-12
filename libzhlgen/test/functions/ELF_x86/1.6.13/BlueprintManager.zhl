@@ -1,37 +1,37 @@
 "5589e557565383ec5c8b5d10e8????????84c08b450c":
-cleanup __cdecl std::vector<std::string> BlueprintManager::GetBlueprintList(BlueprintManager *this, const std::string& name);
+cleanup __cdecl std::vector<std::string> BlueprintManager::GetBlueprintList(BlueprintManager* this, const std::string& name);
 "5589e557565383ec6c8b7d0c8d45d88b75088904248b5d10897c2404":
-cleanup __cdecl ShipBlueprint* BlueprintManager::GetShipBlueprint(BlueprintManager *this, const std::string& name, int sector);
+cleanup __cdecl ShipBlueprint* BlueprintManager::GetShipBlueprint(BlueprintManager* this, const std::string& name, int sector);
 ".5589e557565383ec4c8d7dd78d75d8897c2408":
-cleanup __cdecl DroneBlueprint* BlueprintManager::GetDroneBlueprint(BlueprintManager *this, const std::string& name);
+cleanup __cdecl DroneBlueprint* BlueprintManager::GetDroneBlueprint(BlueprintManager* this, const std::string& name);
 "5589e557565383ec5c8b5d088d434c89c28945b48d435089c7":
-cleanup __cdecl float BlueprintManager::GetAugmentValue(BlueprintManager *this, const std::string& name);
+cleanup __cdecl float BlueprintManager::GetAugmentValue(BlueprintManager* this, const std::string& name);
 "5589e557565383ec5c8b55088b45088bbacc00000005c80000008945b885ff":
-cleanup __cdecl ItemBlueprint* BlueprintManager::GetItemBlueprint(BlueprintManager *this, const std::string& name);
+cleanup __cdecl ItemBlueprint* BlueprintManager::GetItemBlueprint(BlueprintManager* this, const std::string& name);
 ".5589e557565383ec4c8d7dd78d75d8897c2408":
-cleanup __cdecl AugmentBlueprint* BlueprintManager::GetAugmentBlueprint(BlueprintManager *this, const std::string& name);
+cleanup __cdecl AugmentBlueprint* BlueprintManager::GetAugmentBlueprint(BlueprintManager* this, const std::string& name);
 "5589e557565381ec8c0000008b45088b75108d7db0890424":
-cleanup __cdecl WeaponBlueprint BlueprintManager::ProcessWeaponBlueprint(BlueprintManager *this, rapidxml::xml_node<char>* node);
+cleanup __cdecl WeaponBlueprint BlueprintManager::ProcessWeaponBlueprint(BlueprintManager* this, rapidxml::xml_node<char>* node);
 "5589e557565383ec6c8b7d088d5de0895c2408":
-cleanup __cdecl Description BlueprintManager::ProcessDescription(BlueprintManager *this, rapidxml::xml_node<char>* node);
+cleanup __cdecl Description BlueprintManager::ProcessDescription(BlueprintManager* this, rapidxml::xml_node<char>* node);
 "55660fefc089e557565383ec3c8b45088d5ddc":
-cleanup __cdecl EffectsBlueprint BlueprintManager::ProcessEffectsBlueprint(BlueprintManager *this, rapidxml::xml_node<char>* node);
+cleanup __cdecl EffectsBlueprint BlueprintManager::ProcessEffectsBlueprint(BlueprintManager* this, rapidxml::xml_node<char>* node);
 "5589e557565383ec5c8b5d088b7510":
-cleanup __cdecl CrewBlueprint BlueprintManager::GetCrewBlueprint(BlueprintManager *this, const std::string& name);
+cleanup __cdecl CrewBlueprint BlueprintManager::GetCrewBlueprint(BlueprintManager* this, const std::string& name);
 "5589e557565383ec7c8b5d088b750c":
-cleanup __cdecl WeaponBlueprint* BlueprintManager::GetWeaponBlueprint(BlueprintManager *this, const std::string& name);
+cleanup __cdecl WeaponBlueprint* BlueprintManager::GetWeaponBlueprint(BlueprintManager* this, const std::string& name);
 "5589e55383ec240fb655148b450c8b5d08895424108b551089442404891c248954240c8d504c":
-cleanup __cdecl std::vector<AugmentBlueprint*> BlueprintManager::GetRandomAugment(BlueprintManager *this, int count, bool demo_lock);
+cleanup __cdecl std::vector<AugmentBlueprint*> BlueprintManager::GetRandomAugment(BlueprintManager* this, int count, bool demo_lock);
 "5589e557565383ec5c8b55088b45088bbae4000000":
-cleanup __cdecl SystemBlueprint* BlueprintManager::GetSystemBlueprint(BlueprintManager *this, const std::string& name);
+cleanup __cdecl SystemBlueprint* BlueprintManager::GetSystemBlueprint(BlueprintManager* this, const std::string& name);
 "5589e557565383ec3c8b4508c745c415000000":
-cleanup __cdecl std::string BlueprintManager::GetUnusedCrewName(BlueprintManager *this, bool* isMale_ret);
+cleanup __cdecl std::string BlueprintManager::GetUnusedCrewName(BlueprintManager* this, bool* isMale_ret);
 "5557565383ec4c8b5c2464c7442404????????":
-cleanup __cdecl std::string BlueprintManager::GetCrewName(BlueprintManager *this, bool* isMale_ret);
+cleanup __cdecl std::string BlueprintManager::GetCrewName(BlueprintManager* this, bool* isMale_ret);
 "5589e55383ec240fb655148b450c8b5d08895424108b551089442404891c248954240c8d501c":
-cleanup __cdecl std::vector<WeaponBlueprint*> BlueprintManager::GetRandomWeapon(BlueprintManager *this, int count, bool demo_lock);
+cleanup __cdecl std::vector<WeaponBlueprint*> BlueprintManager::GetRandomWeapon(BlueprintManager* this, int count, bool demo_lock);
 "5589e55383ec240fb655148b450c8b5d08895424108b551089442404891c248954240c8d5034":
-cleanup __cdecl std::vector<DroneBlueprint*> BlueprintManager::GetRandomDrone(BlueprintManager *this, int count, bool demo_lock);
+cleanup __cdecl std::vector<DroneBlueprint*> BlueprintManager::GetRandomDrone(BlueprintManager* this, int count, bool demo_lock);
 "5589e557565381ecbc0000008b75088d7da8":
 cleanup __cdecl ShipBlueprint BlueprintManager::ProcessShipBlueprint(BlueprintManager* this, rapidxml::xml_node<char>* node);
 "5589e557565383ec7c8b45088d5da8":

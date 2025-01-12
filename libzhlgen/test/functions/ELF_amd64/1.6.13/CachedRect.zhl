@@ -1,4 +1,4 @@
 "41544189d45589f5533977104889fb":
-cleanup __amd64 void CachedRect::SetPosition(CachedRect *this, int x, int y);
+cleanup __amd64 void CachedRect::SetPosition(CachedRect* this, int x, int y);
 ".41544189d45589f5533977184889fb":
-cleanup __amd64 void CachedRect::SetSize(CachedRect *this, int w, int h);
+cleanup __amd64 void CachedRect::SetSize(CachedRect* this, int w, int h);

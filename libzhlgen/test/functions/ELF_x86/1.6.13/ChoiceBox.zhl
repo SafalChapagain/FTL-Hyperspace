@@ -1,6 +1,6 @@
 "5589e557565381ecdc0100008b7508":
-cleanup __cdecl void ChoiceBox::OnRender(ChoiceBox *this);
+cleanup __cdecl void ChoiceBox::OnRender(ChoiceBox* this);
 "5557565383ec1c8b442430c70424????????":
-cleanup __cdecl void ChoiceBox::MouseMove(ChoiceBox *this, int x, int y);
+cleanup __cdecl void ChoiceBox::MouseMove(ChoiceBox* this, int mX, int mY);
 "833d????????02538b4424088b54240c8b4c2410":
-cleanup __cdecl void ChoiceBox::MouseClick(ChoiceBox *this, int mX, int mY);
+cleanup __cdecl void ChoiceBox::MouseClick(ChoiceBox* this, int mX, int mY);

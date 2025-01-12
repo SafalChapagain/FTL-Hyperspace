@@ -1,7 +1,7 @@
 "5383ec18837c2424018b5c2420":
-cleanup __cdecl void MindSystem::SetArmed(MindSystem *this, int armed);
+cleanup __cdecl void MindSystem::SetArmed(MindSystem* this, int armed);
 "5557565383ec4c8b6c24608b95c0010000":
-cleanup __cdecl void MindSystem::InitiateMindControl(MindSystem *this);
+cleanup __cdecl void MindSystem::InitiateMindControl(MindSystem* this);
 "5557565383ec3c8b5c2450891c24e8????????8b83c0010000":
-cleanup __cdecl void MindSystem::OnLoop(MindSystem *this);
+cleanup __cdecl void MindSystem::OnLoop(MindSystem* this);
 

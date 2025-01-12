@@ -1,31 +1,31 @@
 "57565383ec208b5c24308d4310c7430400000000":
-cleanup __cdecl void ResourceControl::constructor(ResourceControl *this);
+cleanup __cdecl void ResourceControl::constructor(ResourceControl* this);
 "83ec5c8b4424648b8c248800000085c00f84????????89c285d2f30f1074247cf30f10642478f30f106c2474f30f2a542470":
-cleanup __cdecl GL_Primitive* ResourceControl::CreateImagePrimitive(ResourceControl *this, GL_Texture *tex, int unk1, int unk2, int unk3, GL_Color color, float alpha, bool mirror);
+cleanup __cdecl GL_Primitive* ResourceControl::CreateImagePrimitive(ResourceControl* this, GL_Texture* image, int x, int y, int rotation, GL_Color color, float alpha, bool mirror);
 "5383ec188b5c24208b442424c7838800000000000000894354c70424b80b0000":
-cleanup __cdecl void ResourceControl::OnInit(ResourceControl *this, int imageSwappingMode);
+cleanup __cdecl void ResourceControl::OnInit(ResourceControl* this, int imageSwappingMode);
 "555731ff565383ec4c8d44241e8b5c246089442408":
-cleanup __cdecl char* ResourceControl::LoadFile(ResourceControl *this, const std::string& fileName);
+cleanup __cdecl char* ResourceControl::LoadFile(ResourceControl* this, const std::string& fileName);
 ".5531ed57565383ec2c8b442444":
-cleanup __cdecl char* ResourceControl::LoadFromResourceFile(ResourceControl *this, const std::string &fileName, std::size_t &fileSize, const std::string *unused_resourceFile);
+cleanup __cdecl char* ResourceControl::LoadFromResourceFile(ResourceControl* this, const std::string& fileName, std::size_t& fileSize, const std::string* unused_resourceFile);
 "5589e557565383ec5c8d45d4890424":
-cleanup __cdecl GL_Texture* ResourceControl::GetImageId(ResourceControl *this, const std::string& dir);
+cleanup __cdecl GL_Texture* ResourceControl::GetImageId(ResourceControl* this, const std::string& dir);
 "83ec5c8b4424648b8c248800000085c00f84????????89c285d2f30f1074247cf30f10542478f30f105c2474f30f2a442470":
-cleanup __cdecl int ResourceControl::RenderImage(ResourceControl *this, GL_Texture* tex, int x, int y, int rotation, GL_Color color, float opacity, bool mirror);
+cleanup __cdecl int ResourceControl::RenderImage(ResourceControl* this, GL_Texture* tex, int x, int y, int rotation, GL_Color color, float opacity, bool mirror);
 "5383ec588b4424648b9c2488000000894424048b442460890424e8????????f30f104c2474f30f10442478f30f1054247c85c00f84????????89c285d2f30f2a5c2470":
-cleanup __cdecl int ResourceControl::RenderImageString(ResourceControl *this, std::string& tex, int x, int y, int rotation, GL_Color color, float opacity, bool mirror);
+cleanup __cdecl int ResourceControl::RenderImageString(ResourceControl* this, std::string& tex, int x, int y, int rotation, GL_Color color, float opacity, bool mirror);
 "5383ec588b4424648b9c2488000000894424048b442460890424e8????????f30f104c2474f30f10442478f30f1054247c85c00f84????????89c285d2f30f2a6c2470":
-cleanup __cdecl GL_Primitive* ResourceControl::CreateImagePrimitiveString(ResourceControl *this, const std::string& tex, int x, int y, int rotation, GL_Color color, float alpha, bool mirror);
+cleanup __cdecl GL_Primitive* ResourceControl::CreateImagePrimitiveString(ResourceControl* this, const std::string& tex, int x, int y, int rotation, GL_Color color, float alpha, bool mirror);
 "5557565383ec4c8b4424648b5c24608b4c24688d50fa83fa02":
-cleanup __cdecl freetype::font_data &ResourceControl::GetFontData(ResourceControl *this, int size, bool ignoreLanguage);
+cleanup __cdecl freetype::font_data& ResourceControl::GetFontData(ResourceControl* this, int size, bool ignoreLanguage);
 "5531d257565383ec1c8b4424348b7c24388b7034":
-cleanup __cdecl ImageDesc ResourceControl::GetImageData(ResourceControl *this, GL_Texture *tex);
+cleanup __cdecl ImageDesc ResourceControl::GetImageData(ResourceControl* this, GL_Texture* tex);
 ".5589e557565383ec4c8b7d0c":
-cleanup __cdecl bool ResourceControl::ImageExists(ResourceControl *this, const std::string& name);
+cleanup __cdecl bool ResourceControl::ImageExists(ResourceControl* this, const std::string& name);
 "5557565381ec8c0000000fb68424a40000008bbc24a00000008844242f":
-cleanup __cdecl bool ResourceControl::PreloadResources(ResourceControl *this, bool unk);
+cleanup __cdecl bool ResourceControl::PreloadResources(ResourceControl* this, bool preloadPlayerShips);
 "5557565381ec8c0000008b9c24a00000008d6c246e":
-cleanup __cdecl void ResourceControl::RenderLoadingBar(ResourceControl *this, float initialProgress, float finalProgress);
+cleanup __cdecl void ResourceControl::RenderLoadingBar(ResourceControl* this, float initialProgress, float finalProgress);
 
 "!8b45e0890424e8????????c70424(???????\?)":
 ResourceControl* Global_ResourceControl_GlobalResources;
@@ -39,4 +39,9 @@ struct ResourceControl depends (freetype)
 	  SWAP_SHIP_SETS = 0x1,
 	  SWAP_DYNAMIC_SHIPS = 0x2,
 	};
+
+	ResourceControl()
+	{
+		this->constructor();
+	}
 }};

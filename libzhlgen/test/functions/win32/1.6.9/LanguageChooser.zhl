@@ -1,5 +1,5 @@
 "57????????83e4f0ff77fc5589e557565389ce8d4d9081ecac000000":
-__thiscall void LanguageChooser::OnRender(LanguageChooser *this);
+__thiscall void LanguageChooser::OnRender(LanguageChooser* this);
 
 "!83ec1ca1(???????\?)c1e30301d8":
 std::vector<std::string>* Global_OptionsScreen_languageList;

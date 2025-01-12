@@ -1,14 +1,15 @@
 "578d7c240883e4f0ff77fc5589e557565389cb83ec6c8b378b0689f1ff50283b4378740e":
-__thiscall void PDSFire::CollisionCheck(PDSFire *this, Collideable *other);
+__thiscall void PDSFire::CollisionCheck(PDSFire* this, Collideable* other);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec2c80b9b000000000":
-__thiscall void PDSFire::OnUpdate(PDSFire *this);
+__thiscall void PDSFire::OnUpdate(PDSFire* this);
 "578d7c240883e4f0ff77fc5589f889e557565389cf81ec3c010000":
-__thiscall void PDSFire::constructor(PDSFire *this, Point pos, int destinationSpace, Pointf destination);
+__thiscall void PDSFire::constructor(PDSFire* this, Point _position, int _destinationSpace, Pointf _destination);
+
 
 struct PDSFire
 {{
-	PDSFire(Point pos, int destinationSpace, Pointf destination) : LaserBlast(Pointf(pos.x, pos.y), 0, destinationSpace, destination)
+	PDSFire(Point position, int destinationSpace, Pointf destination) : LaserBlast(Pointf(position.x, position.y), 0, destinationSpace, destination)
 	{
-		this->constructor(pos, destinationSpace, destination);
+		this->constructor(position, destinationSpace, destination);
 	}
 }};

@@ -6112,11 +6112,11 @@ HOOK_METHOD(MindSystem, OnLoop, () -> void)
 }
 
 // Mind control resist/telepathy split
-HOOK_METHOD(CombatAI, UpdateMindControl, (bool unk) -> void)
+HOOK_METHOD(CombatAI, UpdateMindControl, (bool hostile) -> void)
 {
     LOG_HOOK("HOOK_METHOD -> CombatAI::UpdateMindControl -> Begin (CustomCrew.cpp)\n")
     isTelepathicMindControl = g_resistsMindControlStat;
-    super(unk);
+    super(hostile);
     isTelepathicMindControl = false;
 }
 

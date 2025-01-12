@@ -338,7 +338,7 @@ struct GlobalConst depends(RandomAmount, CAchievement, Point)
 	  GRAPHICS_COMPARISON_GREATER = 0x7,
 	};
 
-	typedef char *ShaderSourceCallback(GraphicsPrimitiveType, int, int, GraphicsTextureColorType, int, int, int, int, int, GraphicsComparisonType);
+	typedef char* ShaderSourceCallback(GraphicsPrimitiveType, int, int, GraphicsTextureColorType, int, int, int, int, int, GraphicsComparisonType);
 	
 	static void* GetBaseAddress()
 	{
@@ -371,7 +371,7 @@ void PopRenderTarget();
 
 // This will rewind the sigscanner to the beginning and then seek the first instance of this pattern, then assign the result to Random()
 
-"a1????????3d????????0f8c????????3d????????75??b8????????e8????????33c9eb??":
+"a1????????3d????????0f8c????????3d????????75??b8????????e8????????33c9eb":
 unsigned int Random();
 
 // If you don't want the sigscanner to rewind, and want to continue from its current position instead, add a '.' at the beginning of the pattern
@@ -402,7 +402,7 @@ cleanup int SomeFunction2(int a, int b, int c = 4);
 // You will most likely encounter functions will look like the example below, where a pointer to a struct is passed as the first argument (second if it's a member function)
 // and the same pointer is then returned
 
-Vector *GetRenderPosition(Vector *result<esi>, int a, int b);
+Vector* GetRenderPosition(Vector* result<esi>, int a, int b);
 
 // This often means that function did not actually take such an argument in the original source, but returned a new instance of that struct instead
 // In this case, the above function can be declared as follows, which is internally the same thing while being a lot more practical to use in code:
@@ -412,8 +412,8 @@ Vector GetRenderPosition<esi>(int a, int b);
 // Talking about practicality, remember that references and pointers are internally the same thing (also the const modifier is meaningless in reverse engineering)
 // meaning that the two declarations below are internally the same function but one of them is much easier to use than the other
 
-void Msg(std::string *txt);
-void Msg(const std::string &txt);
+void Msg(std::string* txt);
+void Msg(const std::string& txt);
 
 
 // You can also scan for global variables, not just functions!
@@ -424,13 +424,13 @@ void Msg(const std::string &txt);
 // This is highly recommended when scanning for variables
 
 "!68????????e8????????83c40468????????68????????b9(????????)e8????????68????????e8????????83c40468????????68????????b9(????????)e8????????68????????e8????????83c40468????????68????????b9(????????)e8????????68????????e8????????83c40468????????68????????b9(????????)e8????????68????????e8????????83c40468????????68????????b9(????????)e8????????68????????e8????????83c40468????????68????????b9(????????)e8????????68????????e8????????83c40468????????68????????b9(????????)":
-Shader *g_ShaderColorOffset;
-Shader *g_ShaderPixelation;
-Shader *g_ShaderBloom;
-Shader *g_ShaderColorCorrection;
-Shader *g_ShaderHQ4X;
-Shader *g_ShaderShockwave;
-Shader *g_ShaderOldTV;
+Shader* g_ShaderColorOffset;
+Shader* g_ShaderPixelation;
+Shader* g_ShaderBloom;
+Shader* g_ShaderColorCorrection;
+Shader* g_ShaderHQ4X;
+Shader* g_ShaderShockwave;
+Shader* g_ShaderOldTV;
 
 // The above example created pointers to global variables
 // If you want a reference to a global variable instead, maybe because it is an int or a float you'll use often, remove the asterisk and add the keyword "reference" to the beginning of the declaration
@@ -459,7 +459,7 @@ instruction uintptr_t Global__NOP__Ship_OnInit_0;
 // You will probably not run into this need in 32-bit but it's still also supported just in case
 // The "instruction" tag above is not supported while using offsetVariable as offsetVariable implies you want the value and not the instruction's address
 "!f30fc2cf01488bbbf8020000f30f101d(???????\?)f30f5edd":
-offsetVariable GL_Color *Global_COLOR_GREEN;
+offsetVariable GL_Color* Global_COLOR_GREEN;
 
 // Also it can now replace code with NOP statements in a match
 // The no-op mode **can** match matches smaller or larger than 4 bytes (8 hex digits) as it'll simply replace that area with NOP instructions.
@@ -473,12 +473,12 @@ noop void* Global__Ship_OnInit;
 // The Lua code has been tweaked to pass the following values through as a "Calling convention", doing so
 // skips any assembly generation and will ignore any registers specified for arguments.
 // When using these calling convention declaration styles it is *of extreme importance* that all types
-// used for return values & argument values be exactly correct with their original declaration and that your
+// used for return values&  argument values be exactly correct with their original declaration and that your
 // compiler matches the original compiler. As no exceptions are currently made to correct to for example:
 // MSVC "__thiscall" style when compiling with GCC under mingw it will use GCC's MinGW thiscall style not MSVC.
-// Although the Lua & C++ code could theoretically be tweaked to permit a mismatch of compilers if you added even more calling conventions like a "__msvc_thiscall" or something and did the assembly code to rearrange it.
+// Although the Lua&  C++ code could theoretically be tweaked to permit a mismatch of compilers if you added even more calling conventions like a "__msvc_thiscall" or something and did the assembly code to rearrange it.
 // As it is right now, these will be used for non-assembly code generation so that the compiler is directly aware of the calling convention and no assembly is needed.
-// For x86_64 architecture, use __amd64 (since there is no special name for the calling convention, this will trigger skipping the register & assembly generation code) and the default amd64 calling convention for Windows or Linux will be used depending on target
+// For x86_64 architecture, use __amd64 (since there is no special name for the calling convention, this will trigger skipping the register&  assembly generation code) and the default amd64 calling convention for Windows or Linux will be used depending on target
 
 // Windows only
 __stdcall void someFunction();
@@ -494,7 +494,7 @@ __regparm1
 // Windows MSVC x86, Windows MSVC/Clang/ICC x86_64
 __vectorcall
 
-// All x86_64 OSes (just informs parser & C++ code to skip assembly style generation)
+// All x86_64 OSes (just informs parser&  C++ code to skip assembly style generation)
 __amd64 // Will be considered a thiscall automatically if this is the first parameter
 
 // There is also a noHook support (place before everything, even static or virtual) to define a signature and generic function name that will be used
@@ -505,26 +505,27 @@ noHook void DO_NOT_HOOK();
 noHook __amd64 void DO_NOT_HOOK();
 */
 
-"0f28c885ff0f57c07e??393d????????":
-cleanup __amd64 float font_text_width(freetype::font_data& fontData, const char* str, float size);
-
-"554889e548b82d7f954c2df45158":
-__amd64 int random32();
-
-"554889e589f8488905????????":
-cleanup __amd64 void srandom32(unsigned int seed);
-
-"554889e583ff0577??89f8488d0d????????":
+// Continue from GenericButton::MouseMove (hyper efficiency™)
+"554889e583ff0577??89f8488d0d": // 100196660
 cleanup __amd64 float getSkillBonus(int skill, int level);
 
-"554889e5415741564154534883ec104189cc":
-cleanup __amd64 void GetValue(ResourceEvent &ref, const std::string& type, int level, int worldLevel);
+".554889e5415741564154534883ec104189cc": // 1001bc720
+cleanup __amd64 void GetValue(ResourceEvent& ref, const std::string& type, int level, int worldLevel);
 
-"554889e54157415641554154534881ecb8040000":
-cleanup __amd64 void GenerateReward(ResourceEvent &ref, RewardDesc &reward, int worldLevel);
+".554889e54157415641554154534881ecb8040000": // 1001bca10
+cleanup __amd64 void GenerateReward(ResourceEvent& ref, RewardDesc& reward, int worldLevel);
 
-"554889e553504889fb488b3d????????":
-cleanup __amd64 void sys_graphics_set_window_title(char* title);
+".0f28c885ff0f57c07e??393d": // 100200cc0
+cleanup __amd64 float font_text_width(freetype::font_data& fontData, const char* str, float size);
 
-"554889e54883ec2089f8":
+".554889e54883ec2089f8": // 1002030f0
 cleanup __amd64 void graphics_clear(float r, float g, float b, float a, float depth, unsigned int stencil);
+
+".554889e548b82d7f954c2df45158": // 10020a7e0
+__amd64 int random32();
+
+".554889e589f8488905": // 10020aa00
+cleanup __amd64 void srandom32(unsigned int seed);
+
+"!.554889e553504889fb488b3d": // 10023acb0
+cleanup __amd64 void sys_graphics_set_window_title(char* title);

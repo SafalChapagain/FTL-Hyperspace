@@ -1,8 +1,8 @@
 "578d7c240883e4f0ff77fc5589e557565389cb83ec3c8b496c85c97e??8d45d08d75d8ba????????b9????????":
-__thiscall void ReactorButton::Accept(ReactorButton *this);
+__thiscall void ReactorButton::Accept(ReactorButton* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec3c8b4970e8????????03536c83fa180f8f????????807b40000f84????????":
-__thiscall void ReactorButton::OnClick(ReactorButton *this);
+__thiscall void ReactorButton::OnClick(ReactorButton* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec3c8b496c85c97e??807b410075??":
-__thiscall void ReactorButton::OnRightClick(ReactorButton *this);
+__thiscall void ReactorButton::OnRightClick(ReactorButton* this);
 "578d7c240883e4f0ff77fc5589e557565389cf81ec????????898db4fbffffe8????????807f410074??807f40000f85????????":
-__thiscall void ReactorButton::OnRender(ReactorButton *this);
+__thiscall void ReactorButton::OnRender(ReactorButton* this);

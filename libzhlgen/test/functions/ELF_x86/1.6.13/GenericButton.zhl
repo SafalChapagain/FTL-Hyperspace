@@ -1,15 +1,15 @@
 "5756538b4424108b5424148b4c24188b58048b700839da":
-virtual cleanup __cdecl void GenericButton::SetLocation(GenericButton *this, Point pos);
+virtual cleanup __cdecl void GenericButton::SetLocation(GenericButton* this, Point pos);
 "8b5424088b44240484d2885040":
-virtual cleanup __cdecl void GenericButton::SetActive(GenericButton *this, bool active);
+virtual cleanup __cdecl void GenericButton::SetActive(GenericButton* this, bool active);
 "5756538b4424108b5424148b5c24188b74241c":
-virtual cleanup __cdecl void GenericButton::MouseMove(GenericButton *this, int x, int y, bool silent);
+virtual cleanup __cdecl void GenericButton::MouseMove(GenericButton* this, int x, int y, bool silent);
 "f3c36690669066906690669066906690":
 noHook void GenericButton::__DO_NOT_HOOK();
 ".f3c36690669066906690669066906690":
-virtual cleanup __cdecl void GenericButton::OnClick(GenericButton *this);
+virtual cleanup __cdecl void GenericButton::OnClick(GenericButton* this);
 ".f3c36690669066906690669066906690":
-virtual cleanup __cdecl void GenericButton::OnRightClick(GenericButton *this);
+virtual cleanup __cdecl void GenericButton::OnRightClick(GenericButton* this);
 ".f3c36690669066906690669066906690":
-virtual cleanup __cdecl void GenericButton::ResetPrimitives(GenericButton *this);
+virtual cleanup __cdecl void GenericButton::ResetPrimitives(GenericButton* this);
 

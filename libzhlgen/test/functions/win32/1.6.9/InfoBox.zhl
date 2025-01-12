@@ -1,46 +1,41 @@
 "578d7c240883e4f0ff77fc5589e557565389cf81ec????????8b018b91c8000000":
-__thiscall void InfoBox::OnRender(InfoBox *this);
+__thiscall void InfoBox::OnRender(InfoBox* this);
 "578d7c240883e4f0ff77fc5589e55756538d45cc8d75d489cb83c10c":
-__thiscall void InfoBox::Clear(InfoBox *this);
+__thiscall void InfoBox::Clear(InfoBox* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83c10c83ec2c8b378b5708":
-__thiscall void InfoBox::SetDescription(InfoBox *this, Description *desc, int width, int height, InfoBox::ExpandDir dir); 
+__thiscall void InfoBox::SetDescription(InfoBox* this, Description* desc, int width, int height, InfoBox::ExpandDir dir); 
 ".578d7c240883e4f0ff77fc5589e557565389cb81ec????????8b47048b37c78550ffffff00000000c68554ffffff00c68564ffffff01c7856cffffff00000000":
-__thiscall void InfoBox::SetText(InfoBox *this, const std::string& title, const std::string& text, int width, int height, InfoBox::ExpandDir dir); 
+__thiscall void InfoBox::SetText(InfoBox* this, const std::string& title, const std::string& text, int width, int height, InfoBox::ExpandDir dir); 
 "578d7c240883e4f0ff77fc5589e557565389cb8d4d9c81ec????????8b47048b378945948b470cc744240400000000893424894588e8????????8d461c":
-__thiscall void InfoBox::SetBlueprintWeapon(InfoBox *this, const WeaponBlueprint* bp, int status, bool hasWeaponSystem, int yShift); 
+__thiscall void InfoBox::SetBlueprintWeapon(InfoBox* this, const WeaponBlueprint* bp, int status, bool hasWeaponSystem, int yShift); 
 ".578d7c240883e4f0ff77fc5589f889e557565389cf83c10c81ec????????8b50048b30899558fdffff8b50088b400c89b544fdffff899548fdffff898554fdffff8d461c":
-__thiscall void InfoBox::SetBlueprintDrone(InfoBox *this, const DroneBlueprint* bp, int status, bool hasDroneSystem, int yShift); 
+__thiscall void InfoBox::SetBlueprintDrone(InfoBox* this, const DroneBlueprint* bp, int status, bool hasDroneSystem, int yShift); 
 "578d7c240883e4f0ff77fc5589e557565389cb83c10c83ec1c8b378d461c890424":
-__thiscall void InfoBox::SetBlueprint(InfoBox *this, const ItemBlueprint* bp);
+__thiscall void InfoBox::SetBlueprint(InfoBox* this, const ItemBlueprint* bp);
 ".5789ca8d7c240883e4f0ff77fc5589e55756538d720c81ec????????8b078b5f08898d78fdffffc782c000000031010000c782c4000000b6000000c7821c0100004300000089c1":
-__thiscall void InfoBox::SetBlueprintCrew(InfoBox *this, const CrewBlueprint* bp, int yShift, bool detailedCrew);
+__thiscall void InfoBox::SetBlueprintCrew(InfoBox* this, const CrewBlueprint* bp, int yShift, bool detailedCrew);
 ".578d7c240883e4f0ff77fc5589e557565389cb83c10c83ec1c8b378d461c890424":
-__thiscall void InfoBox::SetBlueprintAugment(InfoBox *this, const AugmentBlueprint* bp);
+__thiscall void InfoBox::SetBlueprintAugment(InfoBox* this, const AugmentBlueprint* bp);
 
 "578d7c240883e4f0ff77fc5589e557565389cf81ec????????83b9ac000000010f84????????8b8fd000000085c90f85????????c78500ffffff30000000807f5c00":
-__thiscall int InfoBox::CalcBoxHeight(InfoBox *this);
+__thiscall int InfoBox::CalcBoxHeight(InfoBox* this);
 "83b9b4000000ff74??31c0c38d742600578d7c240883e4f0ff77fc5589e557565389cb83ec4c80792400":
-__thiscall bool InfoBox::IsEmpty(InfoBox *this);
+__thiscall bool InfoBox::IsEmpty(InfoBox* this);
 "578d7c240883e4f0ff77fc5589e5575389cb83ec10c744240400000000c70424????????e8????????8d43148d8bc0000000":
-__thiscall void InfoBox::constructor(InfoBox *this);
+__thiscall void InfoBox::constructor(InfoBox* this);
 
 "578d7c240883e4f0ff77fc5589f889e557565389cb83ec4c8b70048b3f8b50088b480cc783c8000000000000008975bc8b701083ffff8b4014":
-__thiscall void InfoBox::SetSystemId(InfoBox *this, int systemId, int maxPower, int currentLevel, int upgrade, int yShift, int forceSystemWidth);
+__thiscall void InfoBox::SetSystemId(InfoBox* this, int systemId, int maxPower, int currentLevel, int upgrade, int yShift, int forceSystemWidth);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec5c8b378b47048b57088b7f0c85f68945c40f84????????":
-__thiscall void InfoBox::SetSystem(InfoBox *this, ShipSystem *system, int upgrade, int yShift, int forceSystemWidth);
+__thiscall void InfoBox::SetSystem(InfoBox* this, ShipSystem* system, int upgrade, int yShift, int forceSystemWidth);
 
 "!83ec083bb514fdffffba(???????\?)b8(???????\?)":
-GL_Color *Global_InfoBox_detailsBarOn;
-GL_Color *Global_InfoBox_detailsBarOff;
+GL_Color* Global_InfoBox_detailsBarOn;
+GL_Color* Global_InfoBox_detailsBarOff;
 
 
 struct InfoBox 
 {{
-	InfoBox()
-	{
-		this->constructor();
-	}
-
 	enum ExpandDir
 	{
 	  EXPAND_UP = -1,
@@ -48,4 +43,8 @@ struct InfoBox
 	  EXPAND_DOWN = 1,
 	};
 
+	InfoBox()
+	{
+		this->constructor();
+	}
 }};

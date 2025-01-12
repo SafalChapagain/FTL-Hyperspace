@@ -1,15 +1,15 @@
 "578d7c240883e4f0ff77fc5589e557565383ec4c8b4704894dc48b1f8945bc8b47088945c08b470c83f8ff74??803d??????????8904240f85????????e8????????8b7dc48d4f60c6876c01000001c6876d01000000891c24":
-__thiscall LocationEvent *EventGenerator::GetBaseEvent(EventGenerator *this, const std::string& name, int worldLevel, char ignoreUnique, int seed);
+__thiscall LocationEvent* EventGenerator::GetBaseEvent(EventGenerator* this, const std::string& name, int worldLevel, char ignoreUnique, int seed);
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b5f048b37898dc4fcffff899dbcfcffff8b5f088d7944899dacfcffff89342489f9e8????????83ec04":
-__thiscall LocationEvent *EventGenerator::CreateEvent(EventGenerator *this, const std::string& name, int worldLevel, bool ignoreUnique);
+__thiscall LocationEvent* EventGenerator::CreateEvent(EventGenerator* this, const std::string& name, int worldLevel, bool ignoreUnique);
 "578d7c240883e4f0ff77fc5589e557565389ce81ec????????8b078b7f04c744240807690fc789c389851cffffff83c00c":
-__thiscall SectorDescription EventGenerator::GetSpecificSector(EventGenerator *this, const std::string& name);
+__thiscall SectorDescription EventGenerator::GetSpecificSector(EventGenerator* this, const std::string& name);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec2c8b1f8b7f0481c3????????893c2489d9":
-__thiscall std::string EventGenerator::GetImageFromList(EventGenerator *this, const std::string& listName);
+__thiscall std::string EventGenerator::GetImageFromList(EventGenerator* this, const std::string& listName);
 "5789c883c0488d7c240883e4f0ff77fc5589e557565389ce81ec8c0000008b57088b1f894140894d9cc70100000000c74104000000008955a089ca":
-__thiscall SectorDescription EventGenerator::GetSectorDescription(EventGenerator *this, const std::string& type, int level);
+__thiscall SectorDescription EventGenerator::GetSectorDescription(EventGenerator* this, const std::string& type, int level);
 "578d7c240883e4f0ff77fc5589e557565383ec4c8b1f8b7f04c744240807690fc7894dc08d83ec000000":
-__thiscall ShipEvent EventGenerator::GetShipEvent(EventGenerator *this, const std::string& event);
+__thiscall ShipEvent EventGenerator::GetShipEvent(EventGenerator* this, const std::string& event);
 
 "!8b8318120000c744240800000000b9(???????\?)8944240c8b8334080000":
 EventGenerator* Global_EventGenerator_Generator;
@@ -29,7 +29,7 @@ struct EventGenerator depends (SectorDescription, Sector, LocationEvent)
 		}
 	}
 	
-	void ClearUsedEvent(LocationEvent *locEvent)
+	void ClearUsedEvent(LocationEvent* locEvent)
 	{
 		if (locEvent)
 		{

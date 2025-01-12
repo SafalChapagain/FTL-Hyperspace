@@ -1,28 +1,33 @@
 "578d7c240883e4f0ff77fc5589e557565389cb83ec3c8b078bb9d80000008b91d40000008945cc89f829d083f8037e??31f68b0cb285c974??8b01":
-__thiscall void CrewManifest::OnInit(CrewManifest *this, ShipManager *ship);
+__thiscall void CrewManifest::OnInit(CrewManifest* this, ShipManager* ship);
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????e8????????8b831c02000085c078??0f2805????????c70424????????0f2945c8":
-__thiscall void CrewManifest::OnRender(CrewManifest *this);
+__thiscall void CrewManifest::OnRender(CrewManifest* this);
 "578d7c240883e4f0ff77fc5589e557565389cb8d7d948d75d481ec????????e8????????8d4320c703????????89c1898554ffffff":
-__thiscall void CrewManifest::constructor(CrewManifest *this);
+__thiscall void CrewManifest::constructor(CrewManifest* this);
 "578d7c240883e4f0ff77fc5589e55756538d45cc89ceb9????????83ec3cc745cc00000000c745d000000000890424c744240800000000":
-__thiscall void CrewManifest::Update(CrewManifest *this);
+__thiscall void CrewManifest::Update(CrewManifest* this);
 "578d7c240883e4f0ff77fc5589e557565383ec1c8b91d40000008b81d80000008b3729d0c1f80285c074??89cf31db":
-__thiscall void CrewManifest::OnKeyDown(CrewManifest *this, SDLKey key);
+__thiscall void CrewManifest::OnKeyDown(CrewManifest* this, SDLKey key);
 ".578d7c240883e4f0ff77fc5589e557565383ec1c8b91d40000008b81d80000008b3729d0c1f80285c074??":
-__thiscall void CrewManifest::OnKeyUp(CrewManifest *this, SDLKey key);
+__thiscall void CrewManifest::OnKeyUp(CrewManifest* this, SDLKey key);
 ".578d7c240883e4f0ff77fc5589e557565383ec1c8b91d40000008b81d80000008b3729d0c1f80285c074??89cf31db":
-__thiscall void CrewManifest::OnTextInput(CrewManifest *this, SDLKey key);
+__thiscall void CrewManifest::OnTextInput(CrewManifest* this, SDLKey key);
 ".578d7c240883e4f0ff77fc5589e557565383ec1c8b91d40000008b81d80000008b3729d0c1f80285c074??89cf31db":
-__thiscall void CrewManifest::OnTextEvent(CrewManifest *this, CEvent::TextEvent event);
+__thiscall void CrewManifest::OnTextEvent(CrewManifest* this, CEvent::TextEvent event);
 "5589e556538b91d40000008b81d800000031db83e4f089ce29d0c1f80285c075??eb??8b96d40000008b86d800000083c30129d0c1f802":
-__thiscall void CrewManifest::Close(CrewManifest *this);
+__thiscall void CrewManifest::Close(CrewManifest* this);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec1c8b891c0200008b078b570485c978??8d8e2002000089542404890424e8????????83ec08":
-__thiscall void CrewManifest::MouseClick(CrewManifest *this, int mX, int mY);
+__thiscall void CrewManifest::MouseClick(CrewManifest* this, int mX, int mY);
 "578d7c240883e4f0ff77fc5589f889e557565389cf83ec2c8b308b40048945e48d81e000000089c1":
-__thiscall void CrewManifest::MouseMove(CrewManifest *this, int mX, int mY);
+__thiscall void CrewManifest::MouseMove(CrewManifest* this, int mX, int mY);
 
 
 struct CrewManifest
 {{
+	CrewManifest()
+	{
+		this->constructor();
+	}
+	
 	void _HS_MouseUp(int mX, int mY);
 }};

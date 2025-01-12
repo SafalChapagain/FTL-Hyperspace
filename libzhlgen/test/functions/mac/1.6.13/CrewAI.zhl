@@ -1,20 +1,21 @@
-"554889e54157415641554154534883ec18894dc8":
-cleanup __amd64 int CrewAI::PrioritizeIntruderRoom(CrewAI *this, CrewMember *crew, int roomId, int target);
-"554889e54157415641554154534883ec484189f7":
-cleanup __amd64 int CrewAI::DangerRating(CrewAI *this, int roomId, int crewId);
-"554889e5415741564155415453504989fd41c645":
-cleanup __amd64 void CrewAI::CheckForHealing(CrewAI *this);
-"554889e5415741564155415453504189cd4189d4":
-cleanup __amd64 int CrewAI::PrioritizeTask(CrewAI *this, CrewTask task, int crewId);
-"554889e5415741564154534989fe498b46584939":
-cleanup __amd64 void CrewAI::AssignCrewmembers(CrewAI *this);
-"554889e54157415641554154534883ec384863c6":
-cleanup __amd64 void CrewAI::UpdateCrewMember(CrewAI *this, int crewId);
-"554889e5415741564155415453504989ff498b47":
-cleanup __amd64 void CrewAI::UpdateIntruders(CrewAI *this);
-"554889e54157415641554154534883ec684989ff41c6470c":
-cleanup __amd64 void CrewAI::CheckForProblems(CrewAI *this);
-"554889e54157415641554154534883ec584989fe498b4610":
-cleanup __amd64 void CrewAI::UpdateDrones(CrewAI *this);
-"554889e54157415641554154534883ec584989fd498b7500":
-cleanup __amd64 void CrewAI::OnLoop(CrewAI *this);
+// Continue from CreditScreen::OnRender (hyper efficiency™)
+".554889e54157415641554154534883ec584989fd49":
+cleanup __amd64 void CrewAI::OnLoop(CrewAI* this);
+".554889e54157415641554154534883ec684989ff41":
+cleanup __amd64 void CrewAI::CheckForProblems(CrewAI* this);
+"!.554889e54157415641554154534883ec384863":
+cleanup __amd64 void CrewAI::UpdateCrewMember(CrewAI* this, int crewId);
+".554889e54157415641554154534883ec584989fe498b46":
+cleanup __amd64 void CrewAI::UpdateDrones(CrewAI* this);
+".554889e5415741564154534989fe498b46":
+cleanup __amd64 void CrewAI::AssignCrewmembers(CrewAI* this);
+".554889e5415741564155415453504989fd41":
+cleanup __amd64 void CrewAI::CheckForHealing(CrewAI* this);
+".554889e5415741564155415453504989ff498b47":
+cleanup __amd64 void CrewAI::UpdateIntruders(CrewAI* this);
+".554889e5415741564155415453504189cd4189d4":
+cleanup __amd64 int CrewAI::PrioritizeTask(CrewAI* this, CrewTask task, int crewId);
+".554889e54157415641554154534883ec18894dc8":
+cleanup __amd64 int CrewAI::PrioritizeIntruderRoom(CrewAI* this, CrewMember* crew, int roomId, int target);
+".554889e54157415641554154534883ec484189f7":
+cleanup __amd64 int CrewAI::DangerRating(CrewAI* this, int roomId, int crewId);

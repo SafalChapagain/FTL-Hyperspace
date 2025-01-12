@@ -1,9 +1,9 @@
 "578d7c240883e4f0ff77fc5589e557565389cb8d4ddc83ec5cc744240400000000c70424????????e8????????8b45dc8b55e0":
-__thiscall void SystemControl::CreateSystemBoxes(SystemControl *this);
+__thiscall void SystemControl::CreateSystemBoxes(SystemControl* this);
 "8b51088b410c29d0c1f80285c074??5589e557565389ce31db83e4f0eb??66908b4140":
-__thiscall SystemBox* SystemControl::GetSystemBox(SystemControl *this, int systemId);
+__thiscall SystemBox* SystemControl::GetSystemBox(SystemControl* this, int systemId);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec6c8b09e8????????c70424????????8955d489c7e8????????8b7028c70424????????e8????????2b7024":
-__thiscall void SystemControl::RenderPowerBar(SystemControl *this);
+__thiscall void SystemControl::RenderPowerBar(SystemControl* this);
 "8d4c240483e4f0ff71fc5589e5575653518d5dc881ec????????8b41048b1189c78945c08b41088955c88955c4897dcc":
 static cleanup __cdecl SystemControl::PowerBars* SystemControl::GetPowerBars(int width, int height, int gap, bool useShieldGap);
 

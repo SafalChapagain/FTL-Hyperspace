@@ -1,23 +1,22 @@
 "5589e55389cb83e4f083ec10e8????????660fefc0c744240800000000f30f2a450cf30f11442404":
-__thiscall void WindowFrame::Draw(WindowFrame *this, int x, int y);
+__thiscall void WindowFrame::Draw(WindowFrame* this, int x, int y);
 "5589e55389cb83e4f083ec108b4508c70424????????8944240889442404e8????????8b4314890424e8????????":
-__thiscall void WindowFrame::DrawMask(WindowFrame *this, int unk);
+__thiscall void WindowFrame::DrawMask(WindowFrame* this, int stencilBits);
 "578d7c240883e4f0ff77fc5589e55756538d5dd081ec????????8b77048b07898d58ffffff895dc8c745d077696e64c745d46f775f628975a0":
-__thiscall void WindowFrame::constructor(WindowFrame *this, int x, int y, int w, int h);
+__thiscall void WindowFrame::constructor(WindowFrame* this, int _x, int _y, int _w, int _h);
 "5589e55389cb83e4f083ec108b4110890424e8????????8b4314890424e8????????8b4318890424e8????????8b5dfc":
-__thiscall void WindowFrame::destructor(WindowFrame *this);
+__thiscall void WindowFrame::destructor(WindowFrame* this);
 
 
 struct WindowFrame
 {{
-	WindowFrame(int _x, int _y, int _w, int _h) 
+	WindowFrame(int x, int y, int w, int h) 
 	{
-		this->constructor(_x, _y, _w, _h);
+		this->constructor(x, y, w, h);
 	}
 	
 	~WindowFrame()
 	{
 		this->destructor();
 	}
-
 }};

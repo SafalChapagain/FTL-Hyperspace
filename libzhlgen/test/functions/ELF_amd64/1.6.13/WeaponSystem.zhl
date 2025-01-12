@@ -1,6 +1,6 @@
 "31c085f60f88d800000041564155415455534889fb4883ec20":
-cleanup __amd64 void WeaponSystem::RemoveWeapon(WeaponSystem *this, int slot);
+cleanup __amd64 void WeaponSystem::RemoveWeapon(WeaponSystem* this, int slot);
 "!.5589f5534889fb4883ec08e8????????39e8":
-virtual cleanup __amd64 void WeaponSystem::SetBonusPower(WeaponSystem *this, int amount, int permanentPower);
+virtual cleanup __amd64 void WeaponSystem::SetBonusPower(WeaponSystem* this, int amount, int permanentPower);
 ".415741564155415455534889fb4883ec38e8????????488b9350020000":
-cleanup __amd64 void WeaponSystem::OnLoop(WeaponSystem *this);
+cleanup __amd64 void WeaponSystem::OnLoop(WeaponSystem* this);

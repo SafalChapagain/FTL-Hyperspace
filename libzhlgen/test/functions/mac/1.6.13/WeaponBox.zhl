@@ -1,7 +1,7 @@
-"554889e54157415641554154534881ec980000004989fe40":
-cleanup __amd64 void WeaponBox::RenderBox(WeaponBox *this, bool dragging, bool flashPowerBox);
 "554889e541574156534883ec384889f34989fe48":
-cleanup __amd64 std::string WeaponBox::GenerateTooltip(WeaponBox *this);
+cleanup __amd64 std::string WeaponBox::GenerateTooltip(WeaponBox* this);
+"!.554889e54157415641554154534881ec980000004989fe40":
+cleanup __amd64 void WeaponBox::RenderBox(WeaponBox* this, bool dragging, bool flashPowerBox);
 
 
 struct WeaponBox

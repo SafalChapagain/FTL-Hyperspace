@@ -1,11 +1,11 @@
 "415431c9554889d5534889fb4883ec60":
-cleanup __amd64 void MindBox::constructor(MindBox *this, Point pos, MindSystem* sys);
+cleanup __amd64 void MindBox::constructor(MindBox* this, Point _position, MindSystem* _system);
 
 
 struct MindBox
 {{
-	MindBox(Point pos, MindSystem* sys)
+	MindBox(Point position, MindSystem* system)
 	{
-		this->constructor(pos, sys);
+		this->constructor(position, system);
 	}
 }};

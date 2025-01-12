@@ -60,7 +60,7 @@ struct FileHelper
 {{
 	static int fileLength(int fd)
 	{
-        FILE* fp = fdopen(dup(fd), "r"); // Duplicate file descriptor & then open the stream so that we can fclose correctly later on
+        FILE* fp = fdopen(dup(fd), "r"); // Duplicate file descriptor&  then open the stream so that we can fclose correctly later on
         rewind(fp); // TODO: Not sure if we have to rewind before but could it hurt?
         fseek(fp, 0, SEEK_END);
         int lengthOfFile = ftell(fp);

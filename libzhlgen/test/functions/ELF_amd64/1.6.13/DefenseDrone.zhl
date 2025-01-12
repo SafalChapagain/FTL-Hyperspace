@@ -1,10 +1,10 @@
 "4885f60f84b7000000":
-cleanup __amd64 bool DefenseDrone::ValidTargetObject(DefenseDrone *this, Targetable *target);
+cleanup __amd64 bool DefenseDrone::ValidTargetObject(DefenseDrone* this, Targetable* target);
 "55534889fb4883ec4880bf5d02000000":
-cleanup __amd64 void DefenseDrone::PickTarget(DefenseDrone *this);
+cleanup __amd64 void DefenseDrone::PickTarget(DefenseDrone* this);
 "4154554889fd53488b074889f3":
-cleanup __amd64 void DefenseDrone::SetWeaponTarget(DefenseDrone *this, Targetable *target);
+cleanup __amd64 void DefenseDrone::SetWeaponTarget(DefenseDrone* this, Targetable* target);
 "554889f5be????????534889fb4883ec38488d542420":
-cleanup __amd64 std::string DefenseDrone::GetTooltip(DefenseDrone *this);
+cleanup __amd64 std::string DefenseDrone::GetTooltip(DefenseDrone* this);
 "55534889fb4883ec28e8e2a7":
-cleanup __amd64 void DefenseDrone::OnLoop(DefenseDrone *this);
+cleanup __amd64 void DefenseDrone::OnLoop(DefenseDrone* this);

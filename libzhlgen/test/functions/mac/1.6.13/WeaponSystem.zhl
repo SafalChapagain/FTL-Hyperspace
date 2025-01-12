@@ -1,6 +1,7 @@
-"554889e54157415641554154534883ec184989fc85f60f88":
-cleanup __amd64 void WeaponSystem::RemoveWeapon(WeaponSystem *this, int slot);
-"554889e54156534189f64889fbe82e9f":
-virtual cleanup __amd64 void WeaponSystem::SetBonusPower(WeaponSystem *this, int amount, int permanentPower);
-"554889e54157415641554154534883ec184989fee857aeff":
-cleanup __amd64 void WeaponSystem::OnLoop(WeaponSystem *this);
+// Continue from WeaponStoreBox::constructor (hyper efficiency™)
+".554889e54157415641554154534883ec184989fc85f60f88":
+cleanup __amd64 void WeaponSystem::RemoveWeapon(WeaponSystem* this, int slot);
+"!.554889e54156534189f64889fbe82e9f":
+virtual cleanup __amd64 void WeaponSystem::SetBonusPower(WeaponSystem* this, int amount, int permanentPower);
+".554889e54157415641554154534883ec184989fee857aeff":
+cleanup __amd64 void WeaponSystem::OnLoop(WeaponSystem* this);

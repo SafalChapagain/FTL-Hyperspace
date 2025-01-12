@@ -1,25 +1,11 @@
-"554889e54157415653504989fe488d05e????????9890641f68678030000":
-cleanup __amd64 void ShipBlueprint::destructor(ShipBlueprint *this);
-/*	
-TODO: If the first doesn't work try these, keep noHook prefixes intact
+"!554889e54157415653504989fe488d05????????49890641f686":
+cleanup __amd64 void ShipBlueprint::destructor(ShipBlueprint* this);
 
-
-"554889e54157415653504989fe498b4628498b4e304839c175??4889c8eb??bb????????31d2662e0f1f840000000000488b3cd04885ff74??493b":
-noHook __amd64 void ShipBlueprint::DO_NOT_HOOK_1();
-.554889e55de9":
-cleanup __amd64 void ShipBlueprint::destructor(ShipBlueprint *this);
-
-"554889e58b47e85d":
-noHook __amd64 void ShipBlueprint::DO_NOT_HOOK_2();
-".554889e58b47e85d":
-noHook __amd64 void ShipBlueprint::DO_NOT_HOOK_3();
-".554889e58b47e85d":
-noHook __amd64 void ShipBlueprint::DO_NOT_HOOK_4();
-".554889e553504889fbe8????????4889df4883c4??5b5de9":
-cleanup __amd64 void ShipBlueprint::destructor(ShipBlueprint *this); 
- */
 
 struct ShipBlueprint
 {{
-
+    ~ShipBlueprint()
+    {
+        this->destructor();
+    }
 }};

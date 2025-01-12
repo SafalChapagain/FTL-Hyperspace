@@ -1,25 +1,25 @@
 "8b4424040fb680bc010000":
-cleanup __cdecl bool Projectile::ValidTarget(Projectile *this);
+cleanup __cdecl bool Projectile::ValidTarget(Projectile* this);
 ".!b8ffffffffc3":
-cleanup __cdecl int Projectile::ForceRenderLayer(Projectile *this);
+cleanup __cdecl int Projectile::ForceRenderLayer(Projectile* this);
 ".565383ec148b5c24208b7424248d4304":
-cleanup __cdecl CollisionResponse Projectile::CollisionMoving(Projectile *this, Pointf start, Pointf finish, Damage damage, bool raytrace);
+cleanup __cdecl CollisionResponse Projectile::CollisionMoving(Projectile* this, Pointf start, Pointf finish, Damage damage, bool raytrace);
 ".5589e55383ec448b5d0880bbb000000000":
-cleanup __cdecl void Projectile::OnUpdate(Projectile *this);
+cleanup __cdecl void Projectile::OnUpdate(Projectile* this);
 ".5589e557565381ec8c0000008b750c8b5d088b06":
-cleanup __cdecl void Projectile::CollisionCheck(Projectile *this, Collideable *other);
+cleanup __cdecl void Projectile::CollisionCheck(Projectile* this, Collideable* other);
 ".5589e557565381ecec0000008b7d088b450c":
-cleanup __cdecl void Projectile::constructor(Projectile *this, Pointf position, int ownerId, int targetId, Pointf target);
+cleanup __cdecl void Projectile::constructor(Projectile* this, Pointf _position, int _ownerId, int _targetId, Pointf _target);
 ".5589e557565381ecdc0000008b450cc78538ffffff00000000":
-cleanup __cdecl void Projectile::Initialize(Projectile *this, const WeaponBlueprint& bp);
+cleanup __cdecl void Projectile::Initialize(Projectile* this, const WeaponBlueprint& bp);
 ".565383ec248b7424348d442410":
 static cleanup __cdecl Pointf Projectile::RandomSidePoint(int side);
 ".5557565383ec2c8b7424408b86b4010000":
-cleanup __cdecl void Projectile::destructor(Projectile *this);
+cleanup __cdecl void Projectile::destructor(Projectile* this);
 
 
 struct Projectile
 {{
 	void HS_OnUpdate();
-	void HS_CollisionCheck(Collideable *other);
+	void HS_CollisionCheck(Collideable* other);
 }};

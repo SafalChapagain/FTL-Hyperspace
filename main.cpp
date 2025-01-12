@@ -52,7 +52,6 @@ extern "C" BOOL APIENTRY DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpv
     return TRUE; // succesful
 }
 #elif defined(__linux__)
-
 void __attribute__((constructor)) launchHyperspace() {
 
 #ifdef DEBUG
@@ -62,6 +61,18 @@ void __attribute__((constructor)) launchHyperspace() {
      * GOG is trivial, launch it from a terminal.
      */
     printf("Hyperspace.so is loaded\n");
+#endif
+
+            ZHL::SetLogPath("zhl.log");
+            ZHL::Init();
+
+            G_->Initialize();
+}
+#elif defined(__APPLE__)
+void __attribute__((constructor)) launchHyperspace() {
+
+#ifdef DEBUG
+    printf("Hyperspace.dylib is loaded\n");
 #endif
 
             ZHL::SetLogPath("zhl.log");

@@ -1,4 +1,4 @@
 "5557565383ec2c8b4424448b5c244083f801":
-cleanup __cdecl void InputBox::TextEvent(InputBox *this, CEvent::TextEvent event);
+cleanup __cdecl void InputBox::TextEvent(InputBox* this, CEvent::TextEvent event);
 "565383ec348b5c2440c744240800000000":
-cleanup __cdecl void InputBox::StartInput(InputBox *this);
+cleanup __cdecl void InputBox::StartInput(InputBox* this);

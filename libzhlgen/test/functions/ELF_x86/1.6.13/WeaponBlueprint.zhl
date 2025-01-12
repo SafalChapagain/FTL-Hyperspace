@@ -1,23 +1,15 @@
-"565383ec248b5c24308d74241f8d4304c703????????89742408890424":
-noHook void WeaponBlueprint::__DO_NOT_HOOK();
-".565383ec248b5c24308d74241f8d4304c703????????89742408890424":
-noHook void WeaponBlueprint::__DO_NOT_HOOK2();
-".565383ec248b5c24308d74241f8d4304c703????????89742408890424":
-noHook void WeaponBlueprint::__DO_NOT_HOOK3();
-".565383ec248b5c24308d74241f8d4304c703????????89742408890424":
-cleanup __cdecl void WeaponBlueprint::constructor(WeaponBlueprint *this);
-".5557565383ec2c8b7c24408d74241f":
-cleanup __cdecl void WeaponBlueprint::destructor(WeaponBlueprint *this);
+"!57565383ec2c8b7c24408d74241fc707":
+cleanup __cdecl void WeaponBlueprint::destructor(WeaponBlueprint* this);
 "5589e557565381ecac0000008b4510898564ffffff":
-cleanup __cdecl std::string WeaponBlueprint::GetDescription(WeaponBlueprint *this, bool tooltip);
+cleanup __cdecl std::string WeaponBlueprint::GetDescription(WeaponBlueprint* this, bool tooltip);
 "8b442404c7442404????????05cc00000089442408":
-cleanup __cdecl void WeaponBlueprint::RenderIcon(WeaponBlueprint *this, float scale);
+cleanup __cdecl void WeaponBlueprint::RenderIcon(WeaponBlueprint* this, float scale);
 
 
 struct WeaponBlueprint
 {{
-	WeaponBlueprint()
+	~WeaponBlueprint()
 	{
-		this->constructor();
+		this->destructor();
 	}
 }};

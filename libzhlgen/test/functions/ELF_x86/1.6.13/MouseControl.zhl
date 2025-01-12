@@ -1,27 +1,27 @@
 "57565383ec108b7c24248b7424208b07":
-cleanup __cdecl void MouseControl::SetTooltip(MouseControl *this, const std::string& tooltip);
+cleanup __cdecl void MouseControl::SetTooltip(MouseControl* this, const std::string& tooltip);
 "8b4424048b90d80000008b52f485d2":
-cleanup __cdecl void MouseControl::SetTooltipTitle(MouseControl *this, const std::string& tooltip);
+cleanup __cdecl void MouseControl::SetTooltipTitle(MouseControl* this, const std::string& tooltip);
 "5589e557565383ec5c8b7d0c8d45d8890424c744240800000000":
-cleanup __cdecl Point MouseControl::MeasureTooltip(MouseControl *this, int unk);
+cleanup __cdecl Point MouseControl::MeasureTooltip(MouseControl* this, int width);
 "8b4c24048b4424088b54240c8981e8000000":
-cleanup __cdecl void MouseControl::QueueStaticTooltip(MouseControl *this, Point pos);
+cleanup __cdecl void MouseControl::QueueStaticTooltip(MouseControl* this, Point pos);
 "5589e557565383ec7c8b5d088b4d0c8b55108b83d8000000":
-cleanup __cdecl void MouseControl::RenderTooltip(MouseControl *this, Point tooltipPoint, bool staticPos);
+cleanup __cdecl void MouseControl::RenderTooltip(MouseControl* this, Point tooltipPoint, bool staticPos);
 "5383ec188b5c242080bbc800000000":
-cleanup __cdecl void MouseControl::OnLoop(MouseControl *this);
+cleanup __cdecl void MouseControl::OnLoop(MouseControl* this);
 "8b442404c680d400000001":
-cleanup __cdecl void MouseControl::InstantTooltip(MouseControl *this);
+cleanup __cdecl void MouseControl::InstantTooltip(MouseControl* this);
 ".8b442404c7401000000000c7401400000000c7401800000000c780e000000000000000c7402000000000":
-cleanup __cdecl void MouseControl::ResetArmed(MouseControl *this);
+cleanup __cdecl void MouseControl::ResetArmed(MouseControl* this);
 "5557565381ec3c0100008b9c245001000080bbc900000000":
-cleanup __cdecl void MouseControl::OnRender(MouseControl *this);
+cleanup __cdecl void MouseControl::OnRender(MouseControl* this);
 ".5383ec288b5c24308d83c0000000":
-cleanup __cdecl void MouseControl::Reset(MouseControl *this);
+cleanup __cdecl void MouseControl::Reset(MouseControl* this);
 "565383ec148b5c24248b74242083fb01":
-cleanup __cdecl void MouseControl::SetDoor(MouseControl *this, int state);
+cleanup __cdecl void MouseControl::SetDoor(MouseControl* this, int state);
 "5589e557565383ec4c8b750c8d5dd8c7":
-cleanup __cdecl void MouseControl::LoadTooltip(MouseControl *this, const std::string& tooltipName);
+cleanup __cdecl void MouseControl::LoadTooltip(MouseControl* this, const std::string& tooltipName);
 
 "!e8????????e8????????884305c70424(???????\?)":
 MouseControl* Global_MouseControl_Mouse;

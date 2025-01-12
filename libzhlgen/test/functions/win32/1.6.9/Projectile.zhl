@@ -1,19 +1,19 @@
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????8b378b79348b0689f1ff5028":
-__thiscall void Projectile::CollisionCheck(Projectile *this, Collideable *other);
+__thiscall void Projectile::CollisionCheck(Projectile* this, Collideable* other);
 "578d7c240883e4f0ff77fc5589e557565389ce81ec????????8b078b57048b5f088b4f0cc7460805000000c6460c018985f0feffff8995f4feffff8b47108b5714":
-__thiscall void Projectile::constructor(Projectile *this, Pointf position, int ownerId, int targetId, Pointf target);
+__thiscall void Projectile::constructor(Projectile* this, Pointf _position, int _ownerId, int _targetId, Pointf _target);
 ".558d915c02000089e5575653":
-__thiscall void Projectile::destructor(Projectile *this);
+__thiscall void Projectile::destructor(Projectile* this);
 "578d7c240883e4f0ff77fc5589e557565331db81ec????????8b07898dbcfeffffc785c8feffff00000000c785ccfeffff00000000c785d0feffff000000008d8824010000":
-__thiscall void Projectile::Initialize(Projectile *this, const WeaponBlueprint& bp);
+__thiscall void Projectile::Initialize(Projectile* this, const WeaponBlueprint& bp);
 "!0fb6817002000083f001c3":
-__thiscall bool Projectile::ValidTarget(Projectile *this);
+__thiscall bool Projectile::ValidTarget(Projectile* this);
 ".!b8ffffffffc3":
-__thiscall int Projectile::ForceRenderLayer(Projectile *this);
+__thiscall int Projectile::ForceRenderLayer(Projectile* this);
 "80b9b0000000000f85e6000000578d7c240883e4f0ff77fc5589e5575389cb83ec408b41108b51148941188b417039417489511c":
-__thiscall void Projectile::OnUpdate(Projectile *this);
+__thiscall void Projectile::OnUpdate(Projectile* this);
 "578d7c240883e4f0ff77fc5589e557565389ce83c10483ec2c8b1fc741fc00000000c7442404000000cfc70424000000cf":
-__thiscall CollisionResponse Projectile::CollisionMoving(Projectile *this, Pointf start, Pointf finish, Damage damage, bool raytrace);
+__thiscall CollisionResponse Projectile::CollisionMoving(Projectile* this, Pointf start, Pointf finish, Damage damage, bool raytrace);
 "8d4c240483e4f0ff71fc5589e5535183ec208b198d4df0c7442404ffffffffc70424ffffffff":
 static cleanup __cdecl Pointf Projectile::RandomSidePoint(int side);
 
@@ -21,5 +21,5 @@ static cleanup __cdecl Pointf Projectile::RandomSidePoint(int side);
 struct Projectile
 {{
 	void HS_OnUpdate();
-	void HS_CollisionCheck(Collideable *other);
+	void HS_CollisionCheck(Collideable* other);
 }};

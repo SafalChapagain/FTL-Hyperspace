@@ -1,6 +1,7 @@
-"554889e553504889fb83fe01":
-cleanup __amd64 void MindSystem::SetArmed(MindSystem *this, int armed);
-"554889e54157415641554154534881ec8800000048b8ffff":
-cleanup __amd64 void MindSystem::InitiateMindControl(MindSystem *this);
-"554889e54157415641554154534883ec284989ffe807a800":
-cleanup __amd64 void MindSystem::OnLoop(MindSystem *this);
+// Continue from MindBox::constructor (hyper efficiency™)
+".554889e54157415641554154534883ec284989ffe807a800":
+cleanup __amd64 void MindSystem::OnLoop(MindSystem* this);
+"!.554889e54157415641554154534881ec8800000048b8ffff":
+cleanup __amd64 void MindSystem::InitiateMindControl(MindSystem* this);
+".554889e553504889fb83fe01":
+cleanup __amd64 void MindSystem::SetArmed(MindSystem* this, int armed);

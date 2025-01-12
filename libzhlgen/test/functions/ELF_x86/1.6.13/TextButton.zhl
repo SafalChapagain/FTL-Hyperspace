@@ -1,35 +1,35 @@
 "565331db83ec148b7424208b449e48":
-cleanup __cdecl void TextButton::ResetPrimitives(TextButton *this);
+cleanup __cdecl void TextButton::ResetPrimitives(TextButton* this);
 "5589e5565383ec408b5d0880bbc800000000":
-cleanup __cdecl int TextButton::GetIdealButtonWidth(TextButton *this);
+cleanup __cdecl int TextButton::GetIdealButtonWidth(TextButton* this);
 "5589e557565383ec6c8b450c8b5d088b7520":
-cleanup __cdecl void TextButton::OnInit(TextButton *this, Point pos, Point size, int cornerInset, TextString* buttonLabel, int font);
+cleanup __cdecl void TextButton::OnInit(TextButton* this, Point pos, Point size, int cornerInset, TextString* buttonLabel, int font);
 "5589e557565383ec6c8b5d0880bbb400000000":
-cleanup __cdecl void TextButton::OnRender(TextButton *this);
+cleanup __cdecl void TextButton::OnRender(TextButton* this);
 "565383ec248b5c24308b4348":
-cleanup __cdecl void TextButton::destructor(TextButton *this);
+cleanup __cdecl void TextButton::destructor(TextButton* this);
 "5557565383ec2c8b5c24448b74244080bbb400000000":
-cleanup __cdecl Point TextButton::GetSize(TextButton *this);
+cleanup __cdecl Point TextButton::GetSize(TextButton* this);
 "5557565383ec4c8b7424648b5c24608b7c246c":
-cleanup __cdecl void TextButton::OnInitRect(TextButton *this, Globals::Rect& rect, int cornerInset, TextString& buttonLabel, int font);
+cleanup __cdecl void TextButton::OnInitRect(TextButton* this, Globals::Rect& rect, int cornerInset, TextString& buttonLabel, int font);
 "5557565383ec1c8b4424348b5c24308b742438":
-cleanup __cdecl void TextButton::SetBaseImage(TextButton *this, const std::string& name, Point pos, int autoWidthMin);
+cleanup __cdecl void TextButton::SetBaseImage(TextButton* this, const std::string& name, Point pos, int autoWidthMin);
 "538b4c240c8b4424088b5424188b5c2410":
-cleanup __cdecl void TextButton::SetAutoWidth(TextButton *this, bool autoWidth, bool autoRightAlign, int margin, int min);
+cleanup __cdecl void TextButton::SetAutoWidth(TextButton* this, bool autoWidth, bool autoRightAlign, int margin, int min);
 ".5557565383ec2c8b5c244080bbb400000000":
-cleanup __cdecl void TextButton::UpdateAutoWidth(TextButton *this);
+cleanup __cdecl void TextButton::UpdateAutoWidth(TextButton* this);
 "565383ec348b5c24408d4304c703????????8d7324890424":
-cleanup __cdecl void TextButton::constructor(TextButton *this);
+cleanup __cdecl void TextButton::constructor(TextButton* this);
 ".!8b44240480786400":
-cleanup __cdecl void TextButton::SetInactiveColor(TextButton *this, GL_Color color);
+cleanup __cdecl void TextButton::SetInactiveColor(TextButton* this, GL_Color color);
 ".!8b44240480786400":
-cleanup __cdecl void TextButton::SetActiveColor(TextButton *this, GL_Color color);
+cleanup __cdecl void TextButton::SetActiveColor(TextButton* this, GL_Color color);
 ".!8b44240480786400":
-cleanup __cdecl void TextButton::SetSelectedColor(TextButton *this, GL_Color color);
+cleanup __cdecl void TextButton::SetSelectedColor(TextButton* this, GL_Color color);
 ".8b44240480786400":
-cleanup __cdecl void TextButton::SetTextColor(TextButton *this, GL_Color color);
+cleanup __cdecl void TextButton::SetTextColor(TextButton* this, GL_Color color);
 "5557565381eccc0000008bb424e0000000807e6400":
-cleanup __cdecl void TextButton::InitPrimitives(TextButton *this);
+cleanup __cdecl void TextButton::InitPrimitives(TextButton* this);
 
 
 struct TextButton depends (CSurface)

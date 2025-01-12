@@ -1,4 +1,4 @@
 "5589e557565381ecac0000008b7d08893c24":
-cleanup __cdecl void DropBox::OnRender(DropBox *this);
+cleanup __cdecl void DropBox::OnRender(DropBox* this);
 "8b5424048b4a0c89c885c0":
-cleanup __cdecl int DropBox::GetHeight(DropBox *this);
+cleanup __cdecl int DropBox::GetHeight(DropBox* this);

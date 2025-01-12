@@ -1,14 +1,14 @@
 "41554989d541544989f4be":
 noHook __amd64 void WeaponStoreBox::__DO_NOT_HOOK();
 ".41554989d541544989f4be":
-cleanup __amd64 void WeaponStoreBox::constructor(WeaponStoreBox *this, ShipManager *ship, Equipment *equip, const WeaponBlueprint *weaponBp);
+cleanup __amd64 void WeaponStoreBox::constructor(WeaponStoreBox* this, ShipManager* _ship, Equipment* _equipScreen, const WeaponBlueprint* _weaponBp);
 
 
 struct WeaponStoreBox
 {{
-	WeaponStoreBox(ShipManager *_ship, Equipment *_equip, const WeaponBlueprint *_bp)
+	WeaponStoreBox(ShipManager* ship, Equipment* equipScreen, const WeaponBlueprint* weaponBp)
 	{
-		this->constructor(_ship, _equip, _bp);
+		this->constructor(ship, equipScreen, weaponBp);
 	}
 	
 	WeaponStoreBox()

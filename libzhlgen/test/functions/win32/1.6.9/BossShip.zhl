@@ -1,22 +1,22 @@
 "c7813401000000000000c7816001000001000000c6815c01000001c38d742600f30f108144010000f30f5c8140010000f30f100d????????0f2ec876??83b934010000010f95c0":
-__thiscall void BossShip::Restart(BossShip *this);
+__thiscall void BossShip::Restart(BossShip* this);
 ".f30f108144010000f30f5c8140010000f30f100d????????0f2ec876??":
-__thiscall bool BossShip::IncomingFire(BossShip *this);
+__thiscall bool BossShip::IncomingFire(BossShip* this);
 ".578d7c240883e4f0ff77fc5589e5575389cb83ec108b0783c318c744240801000000c744240400000000":
-__thiscall void BossShip::constructor(BossShip *this, SpaceManager *space);
+__thiscall void BossShip::constructor(BossShip* this, SpaceManager* _space);
 ".5589e557565389cf83e4f083ec108b5d088b8134010000891c2489442404":
-__thiscall void BossShip::SaveBoss(BossShip *this, int file);
+__thiscall void BossShip::SaveBoss(BossShip* this, int file);
 ".578d7c240883e4f0ff77fc5589e557565389ce83ec3c8b07890424":
-__thiscall void BossShip::LoadBoss(BossShip *this, int file);
+__thiscall void BossShip::LoadBoss(BossShip* this, int file);
 ".89c88b490885c974??5589e55389c38b01":
-__thiscall void BossShip::ClearLocation(BossShip *this);
+__thiscall void BossShip::ClearLocation(BossShip* this);
 ".83b9340100000374??31c0c38d7426008b490880b99904000000":
-__thiscall bool BossShip::Defeated(BossShip *this);
+__thiscall bool BossShip::Defeated(BossShip* this);
 ".578d7c240883e4f0ff77fc5589e557565389cb83ec4c":
-__thiscall LocationEvent* BossShip::GetSubEvent(BossShip *this);
+__thiscall LocationEvent* BossShip::GetSubEvent(BossShip* this);
 ".578d7c240883e4f0ff77fc5589e557565389ce8dbd20ffffff":
-__thiscall void BossShip::StartStage(BossShip *this);
+__thiscall void BossShip::StartStage(BossShip* this);
 ".578d7c240883e4f0ff77fc5589e557565389cb":
-__thiscall LocationEvent* BossShip::GetEvent(BossShip *this);
+__thiscall LocationEvent* BossShip::GetEvent(BossShip* this);
 ".578d7c240883e4f0ff77fc5589e557565389cb83ec4c":
-__thiscall void BossShip::OnLoop(BossShip *this);
+__thiscall void BossShip::OnLoop(BossShip* this);

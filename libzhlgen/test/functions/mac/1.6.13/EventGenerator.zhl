@@ -1,18 +1,18 @@
-"554889e5415741564155415453504989d74889f34989fe48":
-cleanup __amd64 std::string EventGenerator::GetImageFromList(EventGenerator *this, const std::string& listName);
-"554889e54157415653504989d74889f34989fe4881c35801":
-cleanup __amd64 ShipEvent EventGenerator::GetShipEvent(EventGenerator *this, const std::string& event);
-"554889e54157415641554154534883ec58894dac":
-cleanup __amd64 SectorDescription EventGenerator::GetSectorDescription(EventGenerator *this, const std::string& type, int level);
-"554889e541574156534883ec184889d3":
-cleanup __amd64 SectorDescription EventGenerator::GetSpecificSector(EventGenerator *this, const std::string& name);
-"554889e54157415641554154534881ec48050000":
-cleanup __amd64 LocationEvent *EventGenerator::CreateEvent(EventGenerator *this, const std::string& name, int worldLevel, bool ignoreUnique);
-"554889e5415741564154534189cf4189d64989f4":
-cleanup __amd64 LocationEvent *EventGenerator::GetBaseEvent(EventGenerator *this, const std::string& name, int worldLevel, char ignoreUnique, int seed);
-
 "!48c740080000000048c70000000000488d3d(???????\?)488d75e031d231c9":
 offsetVariable EventGenerator* Global_EventGenerator_Generator;
+
+"!.554889e54157415641554154534881ec48050000":
+cleanup __amd64 LocationEvent* EventGenerator::CreateEvent(EventGenerator* this, const std::string& name, int worldLevel, bool ignoreUnique);
+".554889e5415741564155415453504989d74889f34989fe48":
+cleanup __amd64 std::string EventGenerator::GetImageFromList(EventGenerator* this, const std::string& listName);
+"!.554889e5415741564154534189cf4189d64989f4":
+cleanup __amd64 LocationEvent* EventGenerator::GetBaseEvent(EventGenerator* this, const std::string& name, int worldLevel, char ignoreUnique, int seed);
+".554889e54157415653504989d74889f34989fe4881c35801":
+cleanup __amd64 ShipEvent EventGenerator::GetShipEvent(EventGenerator* this, const std::string& event);
+".554889e541574156534883ec184889d3":
+cleanup __amd64 SectorDescription EventGenerator::GetSpecificSector(EventGenerator* this, const std::string& name);
+"!.554889e54157415641554154534883ec58894dac":
+cleanup __amd64 SectorDescription EventGenerator::GetSectorDescription(EventGenerator* this, const std::string& type, int level);
 
 
 struct EventGenerator depends (SectorDescription, Sector, LocationEvent)
@@ -29,7 +29,7 @@ struct EventGenerator depends (SectorDescription, Sector, LocationEvent)
 		}
 	}
 	
-	void ClearUsedEvent(LocationEvent *locEvent)
+	void ClearUsedEvent(LocationEvent* locEvent)
 	{
 		if (locEvent)
 		{

@@ -1,25 +1,24 @@
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????8b4f0c8b47048b5708f30f1007c703????????f30f114304c643080085c9":
-__thiscall void DamageMessage::constructor(DamageMessage *this, float length, Pointf pos, DamageMessage::MessageType type);
+__thiscall void DamageMessage::constructor(DamageMessage* this, float _length, Pointf _position, DamageMessage::MessageType _type);
 "578d7c240883e4f0ff77fc5589e557565389ce81ec9c0200008b4f108b47088b570cf30f10078b5f04c706????????f30f11460484c9":
-__thiscall void DamageMessage::constructor2(DamageMessage *this, float length, int amount, Pointf pos, bool unk);
+__thiscall void DamageMessage::constructor2(DamageMessage* this, float _length, int _amount, Pointf _position, bool _symbol);
 
 
 struct DamageMessage 
 {{
-
 	enum MessageType
 	{
 	  MISS = 0x0,
 	  RESIST = 0x1,
 	};
 
-	DamageMessage(float length, Pointf pos, MessageType type)
+	DamageMessage(float length, Pointf position, MessageType type)
 	{
-		constructor(length, pos, type);
+		constructor(length, position, type);
 	}
 	
-	DamageMessage(float length, int amount, Pointf pos, bool unk)
+	DamageMessage(float length, int amount, Pointf position, bool symbol)
 	{
-		constructor2(length, amount, pos, unk);
+		constructor2(length, amount, position, symbol);
 	}
 }};

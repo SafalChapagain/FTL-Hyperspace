@@ -1,11 +1,11 @@
-"554889e541574156534881ec????????f30f1155e44189d64189f74889fbe8????????488d05????????66480f6ec0":
-cleanup __amd64 void Missile::constructor(Missile *this, Pointf _position, int _ownerId, int _targetId, Pointf _target, float _heading);
+"554889e541574156534881ec18010000f30f1155e4":
+cleanup __amd64 void Missile::constructor(Missile* this, Pointf _position, int _ownerId, int _targetId, Pointf _target, float _heading);
 
 
 struct Missile
 {{
-	Missile(Pointf _position, int _ownerId, int _targetId, Pointf _target, float _heading)
+	Missile(Pointf position, int ownerId, int targetId, Pointf target, float heading)
 	{
-		this->constructor(_position, _ownerId, _targetId, _target, _heading);
+		this->constructor(position, ownerId, targetId, target, heading);
 	}
 }};

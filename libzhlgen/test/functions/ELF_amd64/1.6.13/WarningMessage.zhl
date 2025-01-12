@@ -1,29 +1,29 @@
 "41570f28f041564155415455534889fb4883ec48":
-cleanup __amd64 void WarningMessage::RenderWithAlpha(WarningMessage *this, float alpha);
+cleanup __amd64 void WarningMessage::RenderWithAlpha(WarningMessage* this, float alpha);
 ".0f57c0534889fb488d7f2831d24883ec20":
-cleanup __amd64 void WarningMessage::constructor(WarningMessage *this);
+cleanup __amd64 void WarningMessage::constructor(WarningMessage* this);
 ".41564189ce415541544989f4554889d5534889fb488dbfa80000004c8d6b604883ec10":
-cleanup __amd64 void WarningMessage::InitImage(WarningMessage *this, const std::string& imageName, Point position, float time, bool flash);
+cleanup __amd64 void WarningMessage::InitImage(WarningMessage* this, const std::string& imageName, Point position, float time, bool flash);
 ".41574589c741564189ce41554154554889f5534889fb488d7f384883ec28":
-cleanup __amd64 void WarningMessage::InitText(WarningMessage *this, const TextString& text, Point position, float time, GL_Color textColor, bool centerText, bool flash);
+cleanup __amd64 void WarningMessage::InitText(WarningMessage* this, const TextString& text, Point position, float time, GL_Color textColor, bool centerText, bool flash);
 ".55488d6f08534889fb4889ef4883ec08":
-cleanup __amd64 void WarningMessage::OnLoop(WarningMessage *this);
+cleanup __amd64 void WarningMessage::OnLoop(WarningMessage* this);
 ".53807f1e004889fb":
-cleanup __amd64 void WarningMessage::OnRender(WarningMessage *this);
+cleanup __amd64 void WarningMessage::OnRender(WarningMessage* this);
 ".4155415455534889fb4883ec08807f3000":
-cleanup __amd64 void WarningMessage::SetImage(WarningMessage *this, const std::string& imageName);
+cleanup __amd64 void WarningMessage::SetImage(WarningMessage* this, const std::string& imageName);
 ".4155415455534889fb4883ec08807f3000":
-cleanup __amd64 void WarningMessage::SetText(WarningMessage *this, const TextString& text);
+cleanup __amd64 void WarningMessage::SetText(WarningMessage* this, const TextString& text);
 ".415741564155415455534889fb4883ec18807f3000":
-cleanup __amd64 void WarningMessage::SetText(WarningMessage *this, const TextString& text, GL_Color textColor);
+cleanup __amd64 void WarningMessage::SetText(WarningMessage* this, const TextString& text, GL_Color textColor);
 ".807f300048897728":
-cleanup __amd64 void WarningMessage::SetPosition(WarningMessage *this, Point position);
+cleanup __amd64 void WarningMessage::SetPosition(WarningMessage* this, Point position);
 "!.0f57c0400fb6f64883c708":
-cleanup __amd64 void WarningMessage::SetLoop(WarningMessage *this, bool loop);
+cleanup __amd64 void WarningMessage::SetLoop(WarningMessage* this, bool loop);
 "!.4881c7b8000000":
-cleanup __amd64 void WarningMessage::SetSound(WarningMessage *this, const std::string& sound);
+cleanup __amd64 void WarningMessage::SetSound(WarningMessage* this, const std::string& sound);
 ".53807f1c004889fb":
-cleanup __amd64 void WarningMessage::Start(WarningMessage *this);
+cleanup __amd64 void WarningMessage::Start(WarningMessage* this);
 
 
 struct WarningMessage

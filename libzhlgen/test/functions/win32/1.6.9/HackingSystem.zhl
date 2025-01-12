@@ -1,6 +1,6 @@
 "80b9d80100000075??c38db6000000005781c1????????8d7c240883e4f0ff77fc5589e55783ec14c70424????????e8????????8b7dfc":
-__thiscall void HackingSystem::BlowHackingDrone(HackingSystem *this);
+__thiscall void HackingSystem::BlowHackingDrone(HackingSystem* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec4ce8????????80bbe4010000000f84????????80bbc0010000000f84????????8b8bac070000":
-__thiscall void HackingSystem::OnLoop(HackingSystem *this);
+__thiscall void HackingSystem::OnLoop(HackingSystem* this);
 "80b9c00100000075??31c0c38d7426005589e55389cb83e4??e8????????83f8??74??":
-__thiscall bool HackingSystem::SoundLoop(HackingSystem *this);
+__thiscall bool HackingSystem::SoundLoop(HackingSystem* this);

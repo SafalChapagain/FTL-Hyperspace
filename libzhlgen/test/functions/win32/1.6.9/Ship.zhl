@@ -1,45 +1,45 @@
 "578d7c240883e4f0ff77fc5589e557565383ec2c8b41048b57048b378b5f08":
-__thiscall int Ship::GetSelectedRoomId(Ship *this, int x, int y, bool unk);
+__thiscall int Ship::GetSelectedRoomId(Ship* this, int x, int y, bool bIncludeWalls);
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????8b078b570889c68985d0feffff8b47048995ccfeffff8985c8feffff8b4104890424":
-__thiscall void Ship::LockdownRoom(Ship *this, int roomId, Pointf pos);
+__thiscall void Ship::LockdownRoom(Ship* this, int roomId, Pointf pos);
 "538b81bc0300008b89c00300008b5c240829c1c1f90469c9????????85c974??3b98ec00000074??05????????31d2eb??05????????3b9810ffffff":
-__thiscall bool Ship::RoomLocked(Ship *this, int roomId);
+__thiscall bool Ship::RoomLocked(Ship* this, int roomId);
 "578d7c240883e4f0ff77fc5589e557565383ec1c8b59088b410c8b178b770429d8":
-__thiscall bool Ship::FullRoom(Ship *this, int roomId, bool intruder);
+__thiscall bool Ship::FullRoom(Ship* this, int roomId, bool intruder);
 "578d7c240883e4f0ff77fc5589f889e557565389cf83ec1c8b008b51088b0c828d1c85????????8b5134":
-__thiscall int Ship::EmptySlots(Ship *this, int roomId);
+__thiscall int Ship::EmptySlots(Ship* this, int roomId);
 "578d7c240883e4f0ff77fc5589e55783ec148b178b41088b0c900fb64704":
-__thiscall int Ship::GetAvailableRoomSlot(Ship *this, int roomId, bool intruder);
+__thiscall int Ship::GetAvailableRoomSlot(Ship* this, int roomId, bool intruder);
 "8b51208b412429d0c1f80285c074??5589e557565389ce31db83e4f0eb??66908b462483c301":
-__thiscall void Ship::OnRenderBreaches(Ship *this);
+__thiscall void Ship::OnRenderBreaches(Ship* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec4c0fb6078b770431ff8845cc8b410c2b4108c1f80285c075??e9????????8b43088b0cb8f30f110424":
-__thiscall void Ship::OnRenderWalls(Ship *this, bool forceView, bool doorControlMode);
+__thiscall void Ship::OnRenderWalls(Ship* this, bool forceView, bool doorControlMode);
 "57b8????????8d7c240883e4f0ff77fc5589e5575653e8????????29c48b0789cb8db5a4fffeff898544fefeffa1????????85c00f84????????8b3d????????85ff":
-__thiscall void Ship::OnInit(Ship *this, ShipBlueprint& bp);
+__thiscall void Ship::OnInit(Ship* this, ShipBlueprint& bp);
 "8b51088b410c29d0c1f80285c074??5589e5565389ce31db83e4f0908d7426008b0c9a83c301":
-__thiscall void Ship::OnRenderSparks(Ship *this);
+__thiscall void Ship::OnRenderSparks(Ship* this);
 "578d7c240883e4f0ff77fc5589e55783ec148b178b41088b0c900fb64704890424e8????????8b7dfc":
-__thiscall void Ship::SetRoomBlackout(Ship *this, int roomId, bool blackout);
+__thiscall void Ship::SetRoomBlackout(Ship* this, int roomId, bool blackout);
 "578d7c240883e4f0ff77fc5589f889e557565389cf83ec5c8b008945d08b4104890424e8????????":
-__thiscall void Ship::OnRenderBase(Ship *this, bool unk);
+__thiscall void Ship::OnRenderBase(Ship* this, bool engineWorking);
 "578d7c240883e4f0ff77fc5589f889e557565389cf83ec2c80b9b803000000":
-__thiscall void Ship::OnRenderFloor(Ship *this, bool unk);
+__thiscall void Ship::OnRenderFloor(Ship* this, bool forceView);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec5c8b4104f30f1027f30f1165d4890424":
-__thiscall void Ship::OnRenderJump(Ship *this, float progress);
+__thiscall void Ship::OnRenderJump(Ship* this, float progress);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec2c8b1f8b83f401000089018b83f80100008941048b83fc0100008941088b830002000089410c":
-__thiscall Globals::Ellipse Ship::GetBaseEllipse(Ship *this);
+__thiscall Globals::Ellipse Ship::GetBaseEllipse(Ship* this);
 "578d7c240883e4f0ff77fc5589e557565383ec2c8b378b790c8b4108894de489fa29c2c1fa02":
-__thiscall void Ship::SetSelectedRoom(Ship *this, int roomId);
+__thiscall void Ship::SetSelectedRoom(Ship* this, int roomId);
 "578d7c240883e4f0ff77fc5589e557568db19c0300005381ec????????894dac8b1f89cf89f1e8????????80bfae0300000074??c70424????????":
-__thiscall void Ship::OnLoop(Ship *this, std::vector<float>& oxygenLevels);
+__thiscall void Ship::OnLoop(Ship* this, std::vector<float>& oxygenLevels);
 "578d7c240883e4f0ff77fc5589e557565383ec5c8b51208b41248b3fc745c400000000c745c800000000c745cc0000000029d0":
-__thiscall void Ship::BreachRandomHull(Ship *this, int roomId);
+__thiscall void Ship::BreachRandomHull(Ship* this, int roomId);
 "578d7c240883e4f0ff77fc5589e557565331db89ce83ec4c8b078b51208945c48b47048945c08b4124":
-__thiscall void Ship::BreachSpecificHull(Ship *this, int grid_x, int grid_y);
+__thiscall void Ship::BreachSpecificHull(Ship* this, int grid_x, int grid_y);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec4c8b0789c68945c08b470483feff8845b8":
-__thiscall int Ship::GetAvailableRoom(Ship *this, int preferred, bool intruder);
+__thiscall int Ship::GetAvailableRoom(Ship* this, int preferred, bool intruder);
 "5589e557565383e4f083ec300fb6450c8b7d08c70100000000c7410400000000c7410800000000894c242c":
-__thiscall std::vector<Repairable*> Ship::GetHullBreaches(Ship *this, bool onlyDamaged);
+__thiscall std::vector<Repairable*> Ship::GetHullBreaches(Ship* this, bool onlyDamaged);
 
 "!1ef7ffff(c6841d5afefeff01)":
 noop void* Global__NOP__Ship_OnInit_0;

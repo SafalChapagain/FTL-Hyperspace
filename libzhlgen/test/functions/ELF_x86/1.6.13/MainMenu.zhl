@@ -1,12 +1,21 @@
 "5589e557565381ecdc0200008b7d08????????????00":
-cleanup __cdecl void MainMenu::OnRender(MainMenu *this);
+cleanup __cdecl void MainMenu::OnRender(MainMenu* this);
 ".5589e557565381ec":
-cleanup __cdecl bool MainMenu::Open(MainMenu *this);
+cleanup __cdecl bool MainMenu::Open(MainMenu* this);
 "5589e557565383ec2c8b7d088b7510":
-cleanup __cdecl void MainMenu::MouseMove(MainMenu *this, int x, int y);
+cleanup __cdecl void MainMenu::MouseMove(MainMenu* this, int x, int y);
 ".5589e557565381ec":
-cleanup __cdecl void MainMenu::OnLoop(MainMenu *this);
+cleanup __cdecl void MainMenu::OnLoop(MainMenu* this);
 ".5589e557565383ec3c8b5d08????????????00":
-cleanup __cdecl void MainMenu::MouseClick(MainMenu *this, int x, int y);
+cleanup __cdecl void MainMenu::MouseClick(MainMenu* this, int x, int y);
 "5557565383ec3c8b5c24508d7424208d432c":
-cleanup __cdecl void MainMenu::constructor(MainMenu *this);
+cleanup __cdecl void MainMenu::constructor(MainMenu* this);
+
+
+struct MainMenu
+{{
+    MainMenu()
+    {
+        this->constructor();
+    }
+}};

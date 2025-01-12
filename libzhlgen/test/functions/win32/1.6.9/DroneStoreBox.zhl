@@ -1,12 +1,14 @@
 "578d7c240883e4f0ff77fc5589f889e557565389cb8d4dd083ec4c8b70088d45d88b178b7f04":
-__thiscall void DroneStoreBox::constructor(DroneStoreBox *this, ShipManager *ship, Equipment *equip, const DroneBlueprint* bp);
+__thiscall void DroneStoreBox::constructor(DroneStoreBox* this, ShipManager* _ship, Equipment* _equipScreen, const DroneBlueprint* _blueprint);
+
+
 
 
 struct DroneStoreBox
 {{
-	DroneStoreBox(ShipManager *_ship, Equipment *_equip, const DroneBlueprint* _bp)
+	DroneStoreBox(ShipManager* ship, Equipment* equipScreen, const DroneBlueprint* blueprint)
 	{
-		this->constructor(_ship, _equip, _bp);
+		this->constructor(ship, equipScreen, blueprint);
 	}
 	
 	DroneStoreBox()

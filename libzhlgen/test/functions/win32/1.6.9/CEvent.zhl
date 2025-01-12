@@ -1,5 +1,5 @@
 "578d7c240883e4f0ff77fc5589e557565383ec4c8b1f8b4304f20f104308f20f1105????????83e80783f81b77??":
-__thiscall void CEvent::OnEvent(CEvent *this, const InputEvent* event);
+__thiscall void CEvent::OnEvent(CEvent* this, const InputEvent* event);
 
 
 struct CEvent

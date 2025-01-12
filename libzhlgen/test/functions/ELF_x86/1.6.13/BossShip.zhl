@@ -1,22 +1,22 @@
 "8b442404c7803401000000000000c7806001000001000000c6805c01000001":
-cleanup __cdecl void BossShip::Restart(BossShip *this);
+cleanup __cdecl void BossShip::Restart(BossShip* this);
 ".8b442404f30f100d????????f30f108044010000f30f5c8040010000":
-cleanup __cdecl bool BossShip::IncomingFire(BossShip *this);
+cleanup __cdecl bool BossShip::IncomingFire(BossShip* this);
 ".!5383ec188b5c24208b442424c744240c01000000":
-cleanup __cdecl void BossShip::constructor(BossShip *this, SpaceManager *space);
+cleanup __cdecl void BossShip::constructor(BossShip* this, SpaceManager* _space);
 ".5383ec188b5c24208b430885c074??8b10":
-cleanup __cdecl void BossShip::ClearLocation(BossShip *this);
+cleanup __cdecl void BossShip::ClearLocation(BossShip* this);
 ".83ec1c31c08b54242083ba3401000003":
-cleanup __cdecl bool BossShip::Defeated(BossShip *this);
+cleanup __cdecl bool BossShip::Defeated(BossShip* this);
 ".5557565383ec3c8b5c2450891c24e8????????84c0":
-cleanup __cdecl LocationEvent* BossShip::GetSubEvent(BossShip *this);
+cleanup __cdecl LocationEvent* BossShip::GetSubEvent(BossShip* this);
 ".5557565381ec1c0100008b8424300100008d5c24588bbc2430010000":
-cleanup __cdecl void BossShip::StartStage(BossShip *this);
+cleanup __cdecl void BossShip::StartStage(BossShip* this);
 ".57565383ec108b7c24208b7424248b873401000089342489442404":
-cleanup __cdecl void BossShip::SaveBoss(BossShip *this, int file);
+cleanup __cdecl void BossShip::SaveBoss(BossShip* this, int file);
 ".5557565381ec0c0100008d742474893424e8????????8b1d????????":
-cleanup __cdecl LocationEvent* BossShip::GetEvent(BossShip *this);
+cleanup __cdecl LocationEvent* BossShip::GetEvent(BossShip* this);
 ".5557565383ec2c8b5c24448b6c2440891c24":
-cleanup __cdecl void BossShip::LoadBoss(BossShip *this, int file);
+cleanup __cdecl void BossShip::LoadBoss(BossShip* this, int file);
 ".5557565383ec2c8b5c2440c6831001000001891c24":
-cleanup __cdecl void BossShip::OnLoop(BossShip *this);
+cleanup __cdecl void BossShip::OnLoop(BossShip* this);

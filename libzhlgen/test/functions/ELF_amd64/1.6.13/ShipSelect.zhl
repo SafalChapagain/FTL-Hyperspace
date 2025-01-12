@@ -1,24 +1,35 @@
 "53ba6e0000004889fbbe700000004883ec10":
-cleanup __amd64 void ShipSelect::constructor(ShipSelect *this);
+cleanup __amd64 void ShipSelect::constructor(ShipSelect* this);
 ".554889fd534883ec08488b4f30488b57284889c84829d048c1f80385c0":
-cleanup __amd64 void ShipSelect::ClearShipButtons(ShipSelect *this);
+cleanup __amd64 void ShipSelect::ClearShipButtons(ShipSelect* this);
 ".415741564155415455534889fb4881ec0801000080bf5005000000":
-cleanup __amd64 void ShipSelect::OnLoop(ShipSelect *this);
+cleanup __amd64 void ShipSelect::OnLoop(ShipSelect* this);
 "!.4881c748050000":
-cleanup __amd64 int ShipSelect::KeyDown(ShipSelect *this, SDLKey key);
+cleanup __amd64 int ShipSelect::KeyDown(ShipSelect* this, SDLKey key);
 "!.5380bf50050000004889fb":
-cleanup __amd64 void ShipSelect::MouseClick(ShipSelect *this);
+cleanup __amd64 void ShipSelect::MouseClick(ShipSelect* this);
 "!.c64758004881c748050000":
-cleanup __amd64 void ShipSelect::Close(ShipSelect *this);
+cleanup __amd64 void ShipSelect::Close(ShipSelect* this);
 "!.8b475cc3":
-cleanup __amd64 int ShipSelect::GetSelectedShip(ShipSelect *this);
+cleanup __amd64 int ShipSelect::GetSelectedShip(ShipSelect* this);
+/* PreSelect is inlined on Mac, luckily both unused - commented out for now
 ".415789f241564989fe4155415455534881eca8020000":
-cleanup __amd64 void ShipSelect::SelectShip(ShipSelect *this, int shipType);
+cleanup __amd64 void ShipSelect::SelectShip(ShipSelect* this, int shipType);
 "!.85f6534889fb":
-cleanup __amd64 void ShipSelect::PreSelectShip(ShipSelect *this, int shipType);
+cleanup __amd64 void ShipSelect::PreSelectShip(ShipSelect* this, int shipType);
+*/
 ".41574189f74156415541544189d4554889fd534881ec18010000":
-cleanup __amd64 void ShipSelect::MouseMove(ShipSelect *this, int x, int y);
+cleanup __amd64 void ShipSelect::MouseMove(ShipSelect* this, int mX, int mY);
 ".41574989ff41564155415455534881ecc8010000":
-cleanup __amd64 void ShipSelect::Open(ShipSelect *this, int currentId, int currentType);
+cleanup __amd64 void ShipSelect::Open(ShipSelect* this, int currentId, int currentType);
 ".41564155415455534889fb4883ec5080bf5005000000":
-cleanup __amd64 void ShipSelect::OnRender(ShipSelect *this);
+cleanup __amd64 void ShipSelect::OnRender(ShipSelect* this);
+
+
+struct ShipSelect
+{{
+    ShipSelect()
+    {
+        this->constructor();
+    }
+}};

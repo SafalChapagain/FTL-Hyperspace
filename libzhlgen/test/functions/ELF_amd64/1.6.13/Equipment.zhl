@@ -1,22 +1,22 @@
 "41544989fc5531ed5331dbe8":
-cleanup __amd64 void Equipment::Open(Equipment *this);
+cleanup __amd64 void Equipment::Open(Equipment* this);
 "!.e99b61000090662e0f1f840000000000":
-cleanup __amd64 void Equipment::Close(Equipment *this);
+cleanup __amd64 void Equipment::Close(Equipment* this);
 ".534889fbe8????????4863831802000083f8ff":
-cleanup __amd64 void Equipment::MouseClick(Equipment *this, int mX, int mY);
+cleanup __amd64 void Equipment::MouseClick(Equipment* this, int mX, int mY);
 ".41554531ed41545531ed534889fb4883ec08":
-cleanup __amd64 void Equipment::OnLoop(Equipment *this);
+cleanup __amd64 void Equipment::OnLoop(Equipment* this);
 ".534889fb4883ec7080bf2402000000":
-cleanup __amd64 void Equipment::MouseUp(Equipment *this, int mX, int mY);
+cleanup __amd64 void Equipment::MouseUp(Equipment* this, int mX, int mY);
 ".41554154554889f5534889fb4883ec4884c9":
-cleanup __amd64 void Equipment::AddDrone(Equipment *this, DroneBlueprint *bp, bool unk1, bool unk2);
+cleanup __amd64 void Equipment::AddDrone(Equipment* this, DroneBlueprint* bp, bool free, bool forceCargo);
 ".4154554889f5488d7608534889fb4883ec60":
-cleanup __amd64 void Equipment::AddAugment(Equipment *this, AugmentBlueprint *bp, bool unk1, bool unk2);
+cleanup __amd64 void Equipment::AddAugment(Equipment* this, AugmentBlueprint* bp, bool free, bool forceCargo);
 ".41554989fd41544989f455534883ec08":
-cleanup __amd64 std::vector<std::string> Equipment::GetCargoHold(Equipment *this);
+cleanup __amd64 std::vector<std::string> Equipment::GetCargoHold(Equipment* this);
 ".415641554989f541545589cd534889fb4883ec5084c9":
-cleanup __amd64 void Equipment::AddWeapon(Equipment *this, WeaponBlueprint *bp, bool unk1, bool unk2);
+cleanup __amd64 void Equipment::AddWeapon(Equipment* this, WeaponBlueprint* bp, bool free, bool forceCargo);
 ".554889fd534889f34883ec38488d7c2420":
-cleanup __amd64 void Equipment::AddToCargo(Equipment *this, std::string &name);
+cleanup __amd64 void Equipment::AddToCargo(Equipment* this, std::string& name);
 ".4157415641554154554889f5534889fb4881ec98000000":
-cleanup __amd64 void Equipment::OnInit(Equipment *this, ShipManager *ship);
+cleanup __amd64 void Equipment::OnInit(Equipment* this, ShipManager* ship);

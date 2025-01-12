@@ -1,17 +1,17 @@
 "5756538b4424108b5424148b4c24188b58048b700839d3":
-cleanup __cdecl void Button::SetLocation(Button *this, const Point pos);
+cleanup __cdecl void Button::SetLocation(Button* this, const Point pos);
 "5557565383ec4c8b6c2464":
-cleanup __cdecl void Button::OnInit(Button *this, const std::string& img, Point pos);
+cleanup __cdecl void Button::OnInit(Button* this, const std::string& img, Point pos);
 "565383ec148b5c24208d4304c703????????8d7324":
-cleanup __cdecl void Button::constructor(Button *this);
+cleanup __cdecl void Button::constructor(Button* this);
 "57565383ec408b5c24508b435485c0":
-cleanup __cdecl void Button::OnRender(Button *this);
+cleanup __cdecl void Button::OnRender(Button* this);
 "8b4424048b542408395048":
-cleanup __cdecl void Button::SetInactiveImage(Button *this, GL_Texture *texture);
+cleanup __cdecl void Button::SetInactiveImage(Button* this, GL_Texture* texture);
 "8b4424048b54240839504c":
-cleanup __cdecl void Button::SetActiveImage(Button *this, GL_Texture *texture);
+cleanup __cdecl void Button::SetActiveImage(Button* this, GL_Texture* texture);
 "5557565383ec2c8b7c24448d5c241c891c248b742440897c2404":
-cleanup __cdecl void Button::SetImageBase(Button *this, const std::string& imageBase);
+cleanup __cdecl void Button::SetImageBase(Button* this, const std::string& imageBase);
 
 
 struct Button depends (CSurface)

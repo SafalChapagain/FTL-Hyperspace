@@ -1,5 +1,5 @@
 "5557565383ec3c8b7424548b5c24508b4604f20f104608":
-cleanup __cdecl void CEvent::OnEvent(CEvent *this, const InputEvent* event);
+cleanup __cdecl void CEvent::OnEvent(CEvent* this, const InputEvent* event);
 
 struct CEvent
 {{

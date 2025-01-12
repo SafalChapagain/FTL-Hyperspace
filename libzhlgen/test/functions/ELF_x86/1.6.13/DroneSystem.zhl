@@ -1,12 +1,12 @@
 "5731c0565383ec108b4c24248b5c242085c9":
-cleanup __cdecl void DroneSystem::RemoveDrone(DroneSystem *this, int slot);
+cleanup __cdecl void DroneSystem::RemoveDrone(DroneSystem* this, int slot);
 "555731ff565383ec2c8b6c24408b85480100008b959c010000":
-cleanup __cdecl void DroneSystem::UpdateBonusPower(DroneSystem *this);
+cleanup __cdecl void DroneSystem::UpdateBonusPower(DroneSystem* this);
 ".565383ec148b5c24208b742424891c24e8????????39f00f4ef0":
-virtual cleanup __cdecl void DroneSystem::SetBonusPower(DroneSystem *this, int amount, int permanentPower);
+virtual cleanup __cdecl void DroneSystem::SetBonusPower(DroneSystem* this, int amount, int permanentPower);
 "5557565383ec3c8b6c2450892c24e8????????892c24":
-cleanup __cdecl void DroneSystem::OnLoop(DroneSystem *this);
+cleanup __cdecl void DroneSystem::OnLoop(DroneSystem* this);
 "55575689d65389c383ec1c84c9":
-cleanup __regparm3 bool DroneSystem::DePowerDrone(DroneSystem *this, Drone *drone, bool unk);
+cleanup __regparm3 bool DroneSystem::DePowerDrone(DroneSystem* this, Drone* drone, bool userDriven);
 ".5383ec188b5c2420c7442404":
-static cleanup __cdecl int DroneSystem::StringToDrone(std::string &name);
+static cleanup __cdecl int DroneSystem::StringToDrone(std::string& name);

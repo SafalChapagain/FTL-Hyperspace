@@ -1,16 +1,16 @@
-"554889e54883ec108bb7b00200008b97b4020000488d7df0":
-cleanup __amd64 Point Door::GetPosition(Door *this);
-"554889e553504889fb80bb4c02000000":
-cleanup __amd64 bool Door::ApplyDamage(Door *this, float amount);
-"554889e5c6472c01":
-cleanup __amd64 void Door::FakeOpen(Door *this);
-"554889e5c6472c00":
-cleanup __amd64 void Door::FakeClose(Door *this);
-"554889e58b4f0831":
-cleanup __amd64 bool Door::IsSealed(Door *this, int shipId);
-"554889e54156534889fb8b83":
-cleanup __amd64 void Door::OnLoop(Door *this);
-
+// Continue from DefenseDrone::OnLoop (hyper efficiency™)
+"!.554889e5c6472c01":
+cleanup __amd64 void Door::FakeOpen(Door* this);
+"!.554889e5c6472c00":
+cleanup __amd64 void Door::FakeClose(Door* this);
+".554889e58b4f0831":
+cleanup __amd64 bool Door::IsSealed(Door* this, int shipId);
+"!.554889e54156534889fb8b83":
+cleanup __amd64 void Door::OnLoop(Door* this);
+".554889e553504889fb80bb4c02000000":
+cleanup __amd64 bool Door::ApplyDamage(Door* this, float amount);
+".554889e54883ec108bb7b00200008b97b4020000488d7df0":
+cleanup __amd64 Point Door::GetPosition(Door* this);
 
 struct Door depends (Point, ShipGraph)
 {{

@@ -1,2 +1,2 @@
 "5383ec188b5c24208b53408b43288b04908b10":
-cleanup __cdecl void TabbedWindow::Close(TabbedWindow *this);
+cleanup __cdecl void TabbedWindow::Close(TabbedWindow* this);

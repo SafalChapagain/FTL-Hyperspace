@@ -1,8 +1,8 @@
 "55575631f65383ec7c8b9c24????????":
-cleanup __cdecl void SpaceStatus::OnInit(SpaceStatus *this, SpaceManager *space, Point pos);
+cleanup __cdecl void SpaceStatus::OnInit(SpaceStatus* this, SpaceManager* space, Point pos);
 "5589e557565381ec9c0000008b55088b":
-cleanup __cdecl void SpaceStatus::RenderWarningText(SpaceStatus *this, int effect, int textOffset);
+cleanup __cdecl void SpaceStatus::RenderWarningText(SpaceStatus* this, int effect, int textOffset);
 "57565383ec208b5c24308b432c890424":
-cleanup __cdecl void SpaceStatus::OnRender(SpaceStatus *this);
+cleanup __cdecl void SpaceStatus::OnRender(SpaceStatus* this);
 "57565383ec208b5c24308b7424348b43":
-cleanup __cdecl void SpaceStatus::MouseMove(SpaceStatus *this, int mX, int mY);
+cleanup __cdecl void SpaceStatus::MouseMove(SpaceStatus* this, int mX, int mY);

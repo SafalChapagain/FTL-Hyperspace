@@ -1,25 +1,26 @@
+#include <complex>
 "0fb6873402000083f001":
-cleanup __amd64 bool Projectile::ValidTarget(Projectile *this);
+cleanup __amd64 bool Projectile::ValidTarget(Projectile* this);
 ".!b8ffffffffc3662e0f1f840000000000f3c3662e0f1f8400000000000f1f40004889b7f0020000":
-forceDetour cleanup __amd64 int Projectile::ForceRenderLayer(Projectile *this);
+forceDetour cleanup __amd64 int Projectile::ForceRenderLayer(Projectile* this);
 ".554889f5534889fb488d7f044883ec18c747fc00000000":
-cleanup __amd64 CollisionResponse Projectile::CollisionMoving(Projectile *this, Pointf start, Pointf finish, Damage damage, bool raytrace);
+cleanup __amd64 CollisionResponse Projectile::CollisionMoving(Projectile* this, Pointf start, Pointf finish, Damage damage, bool raytrace);
 ".534889fb4883ec2080bfc400000000":
-cleanup __amd64 void Projectile::OnUpdate(Projectile *this);
+cleanup __amd64 void Projectile::OnUpdate(Projectile* this);
 ".4154554889f5534889fb4883ec60448b673c488b064889f7":
-cleanup __amd64 void Projectile::CollisionCheck(Projectile *this, Collideable *other);
+cleanup __amd64 void Projectile::CollisionCheck(Projectile* this, Collideable* other);
 ".4157415641554154554889fd534881ecf8000000":
-cleanup __amd64 void Projectile::constructor(Projectile *this, Pointf position, int ownerId, int targetId, Pointf target);
+cleanup __amd64 void Projectile::constructor(Projectile* this, Pointf _position, int _ownerId, int _targetId, Pointf _target);
 ".415731d2415641554c8daed000000041544989f4554889fd5331db4881ec28010000":
-cleanup __amd64 void Projectile::Initialize(Projectile *this, const WeaponBlueprint& bp);
+cleanup __amd64 void Projectile::Initialize(Projectile* this, const WeaponBlueprint& bp);
 ".53baffffffff89fb89d64883ec30488d7c2420":
 static cleanup __amd64 Pointf Projectile::RandomSidePoint(int side);
 ".415641554154554889fd534883ec10488b872802000048c707????????48c74708????????48c78738020000????????488d78e84881ff????????0f8507030000":
-cleanup __amd64 void Projectile::destructor(Projectile *this);
+cleanup __amd64 void Projectile::destructor(Projectile* this);
 
 
 struct Projectile
 {{
 	void HS_OnUpdate();
-	void HS_CollisionCheck(Collideable *other);
+	void HS_CollisionCheck(Collideable* other);
 }};

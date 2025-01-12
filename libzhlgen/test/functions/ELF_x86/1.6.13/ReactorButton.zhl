@@ -1,8 +1,8 @@
 "5589e5565383ec308b5d088b436c85c0":
-cleanup __cdecl void ReactorButton::Accept(ReactorButton *this);
+cleanup __cdecl void ReactorButton::Accept(ReactorButton* this);
 "5589e557565383ec3c8b5d088d75d08b4370":
-cleanup __cdecl void ReactorButton::OnClick(ReactorButton *this);
+cleanup __cdecl void ReactorButton::OnClick(ReactorButton* this);
 "5589e557565383ec3c8b5d088d75d08b436c":
-cleanup __cdecl void ReactorButton::OnRightClick(ReactorButton *this);
+cleanup __cdecl void ReactorButton::OnRightClick(ReactorButton* this);
 "5589e557565381ec0c0300008b4508890424":
-cleanup __cdecl void ReactorButton::OnRender(ReactorButton *this);
+cleanup __cdecl void ReactorButton::OnRender(ReactorButton* this);

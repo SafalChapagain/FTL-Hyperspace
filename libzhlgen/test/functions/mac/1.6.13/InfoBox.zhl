@@ -1,46 +1,41 @@
-"554889e553504889fb31f631d2e8????070048c7":
-cleanup __amd64 void InfoBox::constructor(InfoBox *this);
-"554889e54157415641554154534883ec??448945ac":
-cleanup __amd64 void InfoBox::SetBlueprintWeapon(InfoBox *this, const WeaponBlueprint* bp, int status, bool hasWeaponSystem, int yShift); 
-"554889e54157415641554154534881ec8800000044898574ffffff":
-cleanup __amd64 void InfoBox::SetBlueprintDrone(InfoBox *this, const DroneBlueprint* bp, int status, bool hasDroneSystem, int yShift);
-"554889e54156534883ec??4989f64889fb807b18":
-noHook __amd64 void AchievementTracker::DO_NOT_HOOK_1();
-".554889e54157415653504889f34989fe498d????8d":
-cleanup __amd64 void InfoBox::SetBlueprint(InfoBox *this, const ItemBlueprint* bp);
-"554889e54157415641554154534881ec????????4189cf4889f3":
-cleanup __amd64 void InfoBox::SetBlueprintCrew(InfoBox *this, const CrewBlueprint* bp, int yShift, bool detailedCrew);
-".554889e54157415653504889f34989fe498d????488d????e83d101d00":
-cleanup __amd64 void InfoBox::SetBlueprintAugment(InfoBox *this, const AugmentBlueprint* bp);
-"554889e54156534883ec204889fb83bbcc000000":
-cleanup __amd64 bool InfoBox::IsEmpty(InfoBox *this);
-"554889e54157415641554154534881ecb80000004889fb83":
-cleanup __amd64 int InfoBox::CalcBoxHeight(InfoBox *this);
-"554889e54157415641554154534883ec??4589c5":
-cleanup __amd64 void InfoBox::SetSystemId(InfoBox *this, int systemId, int maxPower, int currentLevel, int upgrade, int yShift, int forceSystemWidth);
-"554889e5415741564155415453504589c74189cc4189d648":
-cleanup __amd64 void InfoBox::SetDescription(InfoBox *this, Description *desc, int width, int height, InfoBox::ExpandDir dir); 
-"554889e54157415641554154534881ecb800000044894dd0":
-cleanup __amd64 void InfoBox::SetText(InfoBox *this, const std::string& title, const std::string& text, int width, int height, InfoBox::ExpandDir dir); 
-"554889e54157415641554154534883ec284589c5":
-cleanup __amd64 void InfoBox::SetSystem(InfoBox *this, ShipSystem *system, int upgrade, int yShift, int forceSystemWidth);
-"554889e541574156534883ec184889fb48c783e0":
-cleanup __amd64 void InfoBox::Clear(InfoBox *this);
-"554889e54157415641554154534881ec080100004889fb44":
-cleanup __amd64 void InfoBox::OnRender(InfoBox *this);
+"554889e553504889fb31f631d2e8":
+noHook __amd64 void InfoBox::DO_NOT_HOOK_FALSE_CONSTRUCTOR();
+".554889e553504889fb31f631d2e8":
+cleanup __amd64 void InfoBox::constructor(InfoBox* this);
+".554889e54157415641554154534883ec284589c5":
+cleanup __amd64 void InfoBox::SetSystem(InfoBox* this, ShipSystem* system, int upgrade, int yShift, int forceSystemWidth);
+".554889e54157415641554154534883ec484589ce":
+cleanup __amd64 void InfoBox::SetSystemId(InfoBox* this, int systemId, int maxPower, int currentLevel, int upgrade, int yShift, int forceSystemWidth);
+".554889e54157415641554154534881ecb80000004889fb83":
+cleanup __amd64 int InfoBox::CalcBoxHeight(InfoBox* this);
+".554889e54157415641554154534883ec78448945ac":
+cleanup __amd64 void InfoBox::SetBlueprintWeapon(InfoBox* this, const WeaponBlueprint* bp, int status, bool hasWeaponSystem, int yShift);
+".554889e54157415641554154534881ec8800000044898574ffffff":
+cleanup __amd64 void InfoBox::SetBlueprintDrone(InfoBox* this, const DroneBlueprint* bp, int status, bool hasDroneSystem, int yShift);
+"!.554889e54157415653504889f34989fe498d7e10488d7320":
+cleanup __amd64 void InfoBox::SetBlueprint(InfoBox* this, const ItemBlueprint* bp);
+".554889e54157415641554154534881ec????????4189cf4889f3":
+cleanup __amd64 void InfoBox::SetBlueprintCrew(InfoBox* this, const CrewBlueprint* bp, int yShift, bool detailedCrew);
+".554889e54157415653504889f3":
+cleanup __amd64 void InfoBox::SetBlueprintAugment(InfoBox* this, const AugmentBlueprint* bp);
+".554889e5415741564155415453504589c74189cc4189d648":
+cleanup __amd64 void InfoBox::SetDescription(InfoBox* this, Description* desc, int width, int height, InfoBox::ExpandDir dir);
+".554889e54157415641554154534881ecb800000044894dd0":
+cleanup __amd64 void InfoBox::SetText(InfoBox* this, const std::string& title, const std::string& text, int width, int height, InfoBox::ExpandDir dir);
+"!.554889e541574156534883ec184889fb48c783e0":
+cleanup __amd64 void InfoBox::Clear(InfoBox* this);
+".554889e54156534883ec204889fb83bbcc000000":
+cleanup __amd64 bool InfoBox::IsEmpty(InfoBox* this);
+".554889e54157415641554154534881ec080100004889fb44":
+cleanup __amd64 void InfoBox::OnRender(InfoBox* this);
 
-"!488b9d????????4939dc488d05(???????\?)488d0d(???????\?)":
-offsetVariable GL_Color *Global_InfoBox_detailsBarOff;
-offsetVariable GL_Color *Global_InfoBox_detailsBarOn;
+"!8b75904489fae8????????488b????????ff4939dc488d05(???????\?)488d0d(???????\?)480f4dc1":
+offsetVariable GL_Color* Global_InfoBox_detailsBarOff;
+offsetVariable GL_Color* Global_InfoBox_detailsBarOn;
 
 
 struct InfoBox 
 {{
-	InfoBox()
-	{
-		this->constructor();
-	}
-
 	enum ExpandDir
 	{
 	  EXPAND_UP = -1,
@@ -48,4 +43,8 @@ struct InfoBox
 	  EXPAND_DOWN = 1,
 	};
 
+	InfoBox()
+	{
+		this->constructor();
+	}
 }};

@@ -1,77 +1,77 @@
 "565383ec14c70424????????8b5c2420":
-cleanup __cdecl bool ShipSystem::DamageOverTime(ShipSystem *this, float unk);
+cleanup __cdecl bool ShipSystem::DamageOverTime(ShipSystem* this, float amount);
 "5557565383ec1c8b5c24308b432c":
-cleanup __cdecl void ShipSystem::CheckForRepower(ShipSystem *this);
+cleanup __cdecl void ShipSystem::CheckForRepower(ShipSystem* this);
 ".5383ec188b5c2420c7442404????????891c24e8????????85c075??83c4185b":
 static cleanup __cdecl int ShipSystem::NameToSystemId(const std::string& name);
 "8b5424048b423485c0":
-cleanup __cdecl int ShipSystem::IsMannedBoost(ShipSystem *this);
+cleanup __cdecl int ShipSystem::IsMannedBoost(ShipSystem* this);
 "5383ec288b4424348b5c243083f811":
 static cleanup __cdecl std::string ShipSystem::SystemIdToName(int systemId);
 "565383ec148b7424208b8614010000":
-cleanup __cdecl void ShipSystem::OnLoop(ShipSystem *this);
+cleanup __cdecl void ShipSystem::OnLoop(ShipSystem* this);
 "555756538b5424148b8214010000":
-cleanup __cdecl bool ShipSystem::Ioned(ShipSystem *this, int num);
+cleanup __cdecl bool ShipSystem::Ioned(ShipSystem* this, int num);
 "5383ec188b5c24208b44242489830c010000":
-cleanup __cdecl int ShipSystem::SetPowerLoss(ShipSystem *this, int power);
+cleanup __cdecl int ShipSystem::SetPowerLoss(ShipSystem* this, int power);
 "5589e557565381ec9c0100008b75088b45148dbdf8feffff":
-cleanup __cdecl void ShipSystem::constructor(ShipSystem *this, int systemId, int roomId, int shipId, int startingPower);
+cleanup __cdecl void ShipSystem::constructor(ShipSystem* this, int _systemId, int _roomId, int _shipId, int _startingPower);
 "8b54240431c08b8a0801000083f907":
-cleanup __cdecl int ShipSystem::GetPowerCap(ShipSystem *this);
+cleanup __cdecl int ShipSystem::GetPowerCap(ShipSystem* this);
 ".5383ec18807c242400":
-cleanup __cdecl bool ShipSystem::BlockedBoosted(ShipSystem *this, bool countLimit);
+cleanup __cdecl bool ShipSystem::BlockedBoosted(ShipSystem* this, bool countLimit);
 "5383ec188b5c24208b442424898308010000":
-cleanup __cdecl void ShipSystem::SetPowerCap(ShipSystem *this, int cap);
+cleanup __cdecl void ShipSystem::SetPowerCap(ShipSystem* this, int cap);
 "8b5424088b44240483fa00":
-cleanup __cdecl void ShipSystem::LockSystem(ShipSystem *this, int lock);
+cleanup __cdecl void ShipSystem::LockSystem(ShipSystem* this, int lock);
 "5557565383ec2c8b6c24408b5c2444":
-cleanup __cdecl bool ShipSystem::ForceDecreasePower(ShipSystem *this, int powerLoss);
+cleanup __cdecl bool ShipSystem::ForceDecreasePower(ShipSystem* this, int powerLoss);
 "8b54240431c98b423485c0":
-cleanup __cdecl int ShipSystem::GetEffectivePower(ShipSystem *this);
+cleanup __cdecl int ShipSystem::GetEffectivePower(ShipSystem* this);
 "538b5424088b4a408b82ec000000":
-cleanup __cdecl int ShipSystem::GetMaxPower(ShipSystem *this);
+cleanup __cdecl int ShipSystem::GetMaxPower(ShipSystem* this);
 "57565383ec108b5c24208b7424248b7c242880bb0401000000":
-cleanup __cdecl void ShipSystem::SetBonusPower(ShipSystem *this, int amount, int permanentPower);
+cleanup __cdecl void ShipSystem::SetBonusPower(ShipSystem* this, int amount, int permanentPower);
 "5557565383ec2c8b7c244080bf0401000000":
-cleanup __cdecl void ShipSystem::CheckMaxPower(ShipSystem *this);
+cleanup __cdecl void ShipSystem::CheckMaxPower(ShipSystem* this);
 "565383ec14c70424????????8b5c2420":
-cleanup __cdecl bool ShipSystem::PartialDamage(ShipSystem *this, float amount);
+cleanup __cdecl bool ShipSystem::PartialDamage(ShipSystem* this, float amount);
 "8b44240483f80c":
 static cleanup __cdecl bool ShipSystem::IsSubsystem(int systemType);
 "8b44240483b80801000007":
-cleanup __cdecl void ShipSystem::ClearStatus(ShipSystem *this);
+cleanup __cdecl void ShipSystem::ClearStatus(ShipSystem* this);
 "5589e557565381ec3c0100008b450c8b7510":
 static cleanup __cdecl std::string ShipSystem::GetLevelDescription(int systemId, int level, bool tooltip);
 "538b5424088b4c240c8b8214010000":
-cleanup __cdecl void ShipSystem::AddLock(ShipSystem *this, int lock);
+cleanup __cdecl void ShipSystem::AddLock(ShipSystem* this, int lock);
 "8b4424048b901401000083faff":
-cleanup __cdecl bool ShipSystem::GetLocked(ShipSystem *this);
+cleanup __cdecl bool ShipSystem::GetLocked(ShipSystem* this);
 ".83ec1c8b4424208b10c6808401000000":
-cleanup __cdecl void ShipSystem::StopHacking(ShipSystem *this);
+cleanup __cdecl void ShipSystem::StopHacking(ShipSystem* this);
 "565383ec148b7424208b5c24248b8608010000":
-cleanup __cdecl void ShipSystem::SaveState(ShipSystem *this, int file);
+cleanup __cdecl void ShipSystem::SaveState(ShipSystem* this, int file);
 "565383ec148b7424248b5c2420893424e8????????898308010000":
-cleanup __cdecl void ShipSystem::LoadState(ShipSystem *this, int file);
+cleanup __cdecl void ShipSystem::LoadState(ShipSystem* this, int file);
 "565383ec148b5c24208b7424248b03891c24ff5010":
-cleanup __cdecl bool ShipSystem::UpgradeSystem(ShipSystem *this, int amount);
+cleanup __cdecl bool ShipSystem::UpgradeSystem(ShipSystem* this, int amount);
 "565383ec148b5c24208b7424288b8314010000":
-cleanup __cdecl bool ShipSystem::IncreasePower(ShipSystem *this, int amount, bool force);
+cleanup __cdecl bool ShipSystem::IncreasePower(ShipSystem* this, int amount, bool force);
 "565383ec148b5c24208b7424240fb68304010000":
-cleanup __cdecl bool ShipSystem::DecreasePower(ShipSystem *this, bool force);
+cleanup __cdecl bool ShipSystem::DecreasePower(ShipSystem* this, bool force);
 "5631c05383ec148b5c24208b7424288b93f0000000":
-cleanup __cdecl bool ShipSystem::PartialRepair(ShipSystem *this, float speed, bool autoRepair);
+cleanup __cdecl bool ShipSystem::PartialRepair(ShipSystem* this, float speed, bool autoRepair);
 "5557565381ec8c0000008bac24a00000000fb68424bc000000":
-cleanup __cdecl int ShipSystem::RenderPowerBoxes(ShipSystem *this, int x, int y, int width, int height, int gap, int heightMod, bool flash);
+cleanup __cdecl int ShipSystem::RenderPowerBoxes(ShipSystem* this, int x, int y, int width, int height, int gap, int heightMod, bool flash);
 "56538b44240c8b88f00000008b90ec000000":
-cleanup __cdecl void ShipSystem::AddDamage(ShipSystem *this, int amount);
+cleanup __cdecl void ShipSystem::AddDamage(ShipSystem* this, int amount);
 "57bf05000000565383ec208b7424308b464c89f3":
-cleanup __cdecl void ShipSystem::destructor(ShipSystem *this);
+cleanup __cdecl void ShipSystem::destructor(ShipSystem* this);
 "55b84000":
 static cleanup __cdecl int ShipSystem::RenderPowerBoxesPlain(int x, int y, int width, int height, int gap, int current, int temp, int max);
 "5589e557565383ec3c8b75108b5d0885":
-cleanup __cdecl void ShipSystem::RenderSystemSymbol(ShipSystem *this, bool forPowerUI, int forceColor);
+cleanup __cdecl void ShipSystem::RenderSystemSymbol(ShipSystem* this, bool forPowerUI, int forceColor);
 "8b5424088b4424048b8a1801":
-cleanup __cdecl TimerHelper ShipSystem::GetLockTimer(ShipSystem *this);
+cleanup __cdecl TimerHelper ShipSystem::GetLockTimer(ShipSystem* this);
 
 "!8b3d(???????\?)84d28b8580010000":
 GL_Primitive** ShipSystem__lockBlue;
@@ -106,7 +106,10 @@ GL_Primitive** ShipSystem__glowWhite;
 
 struct ShipSystem
 {{
-	ShipSystem() { }
+	ShipSystem()
+	{
+		
+	}
 	
 	ShipSystem(int systemId, int roomId, int shipId, int startingPower)
 	{

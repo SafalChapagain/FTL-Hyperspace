@@ -1,27 +1,27 @@
 "578d7c240883e4f0ff77fc5589e557565389ce83ec2c8b3f8b5f0485db":
-__thiscall void MouseControl::SetTooltip(MouseControl *this, const std::string& tooltip);
+__thiscall void MouseControl::SetTooltip(MouseControl* this, const std::string& tooltip);
 "578d7c240883e4f0ff77fc5589e55783ec148b91300100008b0785d2751181c12c010000890424":
-__thiscall void MouseControl::SetTooltipTitle(MouseControl *this, const std::string& tooltip);
+__thiscall void MouseControl::SetTooltipTitle(MouseControl* this, const std::string& tooltip);
 "578d7c240883e4f0ff77fc5589e557565389cb8d4dd883ec4c8b37":
-__thiscall Point MouseControl::MeasureTooltip(MouseControl *this, int unk);
+__thiscall Point MouseControl::MeasureTooltip(MouseControl* this, int width);
 ".5589e58b45088b550c5d898164010000":
-__thiscall void MouseControl::QueueStaticTooltip(MouseControl *this, Point pos);
+__thiscall void MouseControl::QueueStaticTooltip(MouseControl* this, Point pos);
 "5589e55389cb83e4f083ec1080b91c0100000074??f30f1005????????0f2e8318010000":
-__thiscall void MouseControl::OnLoop(MouseControl *this);
+__thiscall void MouseControl::OnLoop(MouseControl* this);
 ".c6812801000001":
-__thiscall void MouseControl::InstantTooltip(MouseControl *this);
+__thiscall void MouseControl::InstantTooltip(MouseControl* this);
 "80b91d010000000f85????????578d7c240883e4f0ff77fc5589e557565389cf81ec????????0fb6411d8b592884c00f84????????":
-__thiscall void MouseControl::OnRender(MouseControl *this);
+__thiscall void MouseControl::OnRender(MouseControl* this);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec1c8b1f83fb0174??":
-__thiscall void MouseControl::SetDoor(MouseControl *this, int state);
+__thiscall void MouseControl::SetDoor(MouseControl* this, int state);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec6c83bb30010000018b078b57048b4f088bbb60010000":
-__thiscall void MouseControl::RenderTooltip(MouseControl *this, Point tooltipPoint, bool staticPos);
+__thiscall void MouseControl::RenderTooltip(MouseControl* this, Point tooltipPoint, bool staticPos);
 "c7411000000000c7411400000000c7411800000000c7815c01000000000000c7412000000000":
-__thiscall void MouseControl::ResetArmed(MouseControl *this);
+__thiscall void MouseControl::ResetArmed(MouseControl* this);
 "578d7c240883e4f0ff77fc5589e5575389cb8d890001000083ec20c78120ffffff00000000":
-__thiscall void MouseControl::Reset(MouseControl *this);
+__thiscall void MouseControl::Reset(MouseControl* this);
 "578d????0883e4f0ff????5589e55756538d??c089cb":
-__thiscall void MouseControl::LoadTooltip(MouseControl *this, const std::string& tooltipName);
+__thiscall void MouseControl::LoadTooltip(MouseControl* this, const std::string& tooltipName);
 
 
 "!e8????????e8????????b9(???????\?)":

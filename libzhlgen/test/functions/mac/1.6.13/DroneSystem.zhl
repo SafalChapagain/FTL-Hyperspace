@@ -1,12 +1,13 @@
-"554889e541574156535089d34989f74989fe498b":
-cleanup __amd64 bool DroneSystem::DePowerDrone(DroneSystem *this, Drone *drone, bool unk);
-"554889e553504889fb488d35????0e00":
-static cleanup __amd64 int DroneSystem::StringToDrone(std::string &name);
-"554889e5415741564154534889fb85f6":
-cleanup __amd64 void DroneSystem::RemoveDrone(DroneSystem *this, int slot);
-"554889e5415741564155415453504989fc498b84":
-cleanup __amd64 void DroneSystem::UpdateBonusPower(DroneSystem *this);
-"554889e54157415641554154534883ec284989fee807cf00":
-cleanup __amd64 void DroneSystem::OnLoop(DroneSystem *this);
-"554889e54156534189f64889fbe86eac":
-virtual cleanup __amd64 void DroneSystem::SetBonusPower(DroneSystem *this, int amount, int permanentPower);
+// Continue from DroneStoreBox::constructor (hyper efficiency™)
+".554889e553504889fb488d35????0e00":
+static cleanup __amd64 int DroneSystem::StringToDrone(std::string& name);
+".554889e541574156535089d34989f74989fe498b":
+cleanup __amd64 bool DroneSystem::DePowerDrone(DroneSystem* this, Drone* drone, bool userDriven);
+".554889e5415741564154534889fb85f6":
+cleanup __amd64 void DroneSystem::RemoveDrone(DroneSystem* this, int slot);
+".554889e54157415641554154534883ec284989fee807cf00":
+cleanup __amd64 void DroneSystem::OnLoop(DroneSystem* this);
+".554889e5415741564155415453504989fc498b84":
+cleanup __amd64 void DroneSystem::UpdateBonusPower(DroneSystem* this);
+"!.554889e54156534189f64889fbe86eac":
+virtual cleanup __amd64 void DroneSystem::SetBonusPower(DroneSystem* this, int amount, int permanentPower);

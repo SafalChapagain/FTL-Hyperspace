@@ -1,19 +1,19 @@
-"554889e5415741564154534889fb807b":
-cleanup __amd64 void AnimationTracker::Update(AnimationTracker *this);
-"554889e54088770c":
-cleanup __amd64 void AnimationTracker::SetLoop(AnimationTracker *this, bool loop, float loopDelay);
-"554889e5c6471400":
-cleanup __amd64 void AnimationTracker::Stop(AnimationTracker *this, bool resetTime);
-"554889e5c647160066c74714":
-cleanup __amd64 void AnimationTracker::Start(AnimationTracker *this, float time);
-"554889e5c6471600c6471401":
-cleanup __amd64 void AnimationTracker::StartReverse(AnimationTracker *this, float time);
 "554889e50f28c880":
-cleanup __amd64 float AnimationTracker::Progress(AnimationTracker *this, float speed);
-"554889e5f30f5947":
-cleanup __amd64 void AnimationTracker::SetProgress(AnimationTracker *this, float time);
-"554889e5f30f104f08f30f10":
-cleanup __amd64 float AnimationTracker::GetAlphaLevel(AnimationTracker *this, bool reverse);
+cleanup __amd64 float AnimationTracker::Progress(AnimationTracker* this, float speed);
+".554889e54088770c":
+cleanup __amd64 void AnimationTracker::SetLoop(AnimationTracker* this, bool loop, float loopDelay);
+".554889e5f30f59":
+cleanup __amd64 void AnimationTracker::SetProgress(AnimationTracker* this, float time); // forceDetour Maybe?
+".554889e5415741564154534889fb807b":
+cleanup __amd64 void AnimationTracker::Update(AnimationTracker* this);
+".554889e5c647160066":
+cleanup __amd64 void AnimationTracker::Start(AnimationTracker* this, float time);
+".554889e5c6471600c6":
+cleanup __amd64 void AnimationTracker::StartReverse(AnimationTracker* this, float time);
+".554889e5c64714":
+cleanup __amd64 void AnimationTracker::Stop(AnimationTracker* this, bool resetTime);
+".554889e5f30f104f08f30f10":
+cleanup __amd64 float AnimationTracker::GetAlphaLevel(AnimationTracker* this, bool reverse);
 
 
 struct AnimationTracker 

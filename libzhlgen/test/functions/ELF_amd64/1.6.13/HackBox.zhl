@@ -1,11 +1,11 @@
 "41554989cd31c94154554889d5534889fb4c8da3180300004883ec68":
-cleanup __amd64 void HackBox::constructor(HackBox *this, Point pos, HackingSystem* sys, ShipManager* ship);
+cleanup __amd64 void HackBox::constructor(HackBox* this, Point _position, HackingSystem* _system, ShipManager* _ship);
 
 
 struct HackBox
 {{
-	HackBox(Point pos, HackingSystem* sys, ShipManager *ship)
+	HackBox(Point position, HackingSystem* system, ShipManager* ship)
 	{
-		this->constructor(pos, sys, ship);
+		this->constructor(position, system, ship);
 	}
 }};

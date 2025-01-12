@@ -1,45 +1,45 @@
 "57565383ec108b4424208b7424248b7c24288b5c242c8b40040fb6db890424e8????????895c242c897c2428897424248944242083c4105b5e5fe9????????9057":
-cleanup __cdecl int Ship::GetSelectedRoomId(Ship *this, int x, int y, bool unk);
+cleanup __cdecl int Ship::GetSelectedRoomId(Ship* this, int x, int y, bool bIncludeWalls);
 "5589e557565381ec2c0100008b45088b4004890424":
-cleanup __cdecl void Ship::LockdownRoom(Ship *this, int roomId, Pointf pos);
+cleanup __cdecl void Ship::LockdownRoom(Ship* this, int roomId, Pointf pos);
 "538b4424088b5c240c8b90f40200008b88f8020000":
-cleanup __cdecl bool Ship::RoomLocked(Ship *this, int roomId);
+cleanup __cdecl bool Ship::RoomLocked(Ship* this, int roomId);
 "538b4424088b54240c8b5c24108b48088b400c":
-cleanup __cdecl bool Ship::FullRoom(Ship *this, int roomId, bool intruder);
+cleanup __cdecl bool Ship::FullRoom(Ship* this, int roomId, bool intruder);
 "5557565331db83ec1c8b6c24308b4424348b5508":
-cleanup __cdecl int Ship::EmptySlots(Ship *this, int roomId);
+cleanup __cdecl int Ship::EmptySlots(Ship* this, int roomId);
 "0fb644240c8b542408894424088b4424048b40088b049089442404e9????????8b442404":
-cleanup __cdecl int Ship::GetAvailableRoomSlot(Ship *this, int roomId, bool intruder);
+cleanup __cdecl int Ship::GetAvailableRoomSlot(Ship* this, int roomId, bool intruder);
 "565331db83ec148b7424208b56208b462429d0":
-cleanup __cdecl void Ship::OnRenderBreaches(Ship *this);
+cleanup __cdecl void Ship::OnRenderBreaches(Ship* this);
 "555731ff565383ec4c8b5c24600fb6442464":
-cleanup __cdecl void Ship::OnRenderWalls(Ship *this, bool forceView, bool doorControlMode);
+cleanup __cdecl void Ship::OnRenderWalls(Ship* this, bool forceView, bool doorControlMode);
 "5589e557565381ecfc0101008b45088b5d0c":
-cleanup __cdecl void Ship::OnInit(Ship *this, ShipBlueprint* bp);
+cleanup __cdecl void Ship::OnInit(Ship* this, ShipBlueprint* bp);
 "565331db83ec148b7424208b56088b460c29d0c1f80285c074??8db6000000008b049a83c301890424e8????????8b56088b460c29d0c1f80239c372??83c4145b5ec3908db6000000008dbf00000000565331db83ec14":
-cleanup __cdecl void Ship::OnRenderSparks(Ship *this);
+cleanup __cdecl void Ship::OnRenderSparks(Ship* this);
 "0fb644240c8b542408894424088b4424048b40088b049089442404e9????????538b4424088b5c240c":
-cleanup __cdecl void Ship::SetRoomBlackout(Ship *this, int roomId, bool blackout);
+cleanup __cdecl void Ship::SetRoomBlackout(Ship* this, int roomId, bool blackout);
 "5557565383ec3c8b5c24508b6c24548b4304":
-cleanup __cdecl void Ship::OnRenderBase(Ship *this, bool unk);
+cleanup __cdecl void Ship::OnRenderBase(Ship* this, bool engineWorking);
 "565383ec248b5c24308b74243480bbf002000000":
-cleanup __cdecl void Ship::OnRenderFloor(Ship *this, bool unk);
+cleanup __cdecl void Ship::OnRenderFloor(Ship* this, bool forceView);
 "5557565383ec5c8b5c24708b4304890424":
-cleanup __cdecl void Ship::OnRenderJump(Ship *this, float progress);
+cleanup __cdecl void Ship::OnRenderJump(Ship* this, float progress);
 "565383ec248b7424348b5c24308b86a4010000":
-cleanup __cdecl Globals::Ellipse Ship::GetBaseEllipse(Ship *this);
+cleanup __cdecl Globals::Ellipse Ship::GetBaseEllipse(Ship* this);
 "57565331db83ec108b7c24208b7424248b57088b470c":
-cleanup __cdecl void Ship::SetSelectedRoom(Ship *this, int roomId);
+cleanup __cdecl void Ship::SetSelectedRoom(Ship* this, int roomId);
 "5589e557565381ec8c0000008b45088b5d0c8db0d4020000":
-cleanup __cdecl void Ship::OnLoop(Ship *this, std::vector<float>& oxygenLevels);
+cleanup __cdecl void Ship::OnLoop(Ship* this, std::vector<float>& oxygenLevels);
 "5557565383ec5c8b7c24708b742474c7442440????????":
-cleanup __cdecl void Ship::BreachRandomHull(Ship *this, int roomId);
+cleanup __cdecl void Ship::BreachRandomHull(Ship* this, int roomId);
 "5589e557565383ec5c8b5510":
-cleanup __cdecl int Ship::GetAvailableRoom(Ship *this, int preferred, bool intruder);
+cleanup __cdecl int Ship::GetAvailableRoom(Ship* this, int preferred, bool intruder);
 "5589e557565383ec4c8b450c8b7d10":
-cleanup __cdecl void Ship::BreachSpecificHull(Ship *this, int grid_x, int grid_y);
+cleanup __cdecl void Ship::BreachSpecificHull(Ship* this, int grid_x, int grid_y);
 "57565383ec208b7c24348b5c24308b4c2438":
-cleanup __cdecl std::vector<Repairable*> Ship::GetHullBreaches(Ship *this, bool onlyDamaged);
+cleanup __cdecl std::vector<Repairable*> Ship::GetHullBreaches(Ship* this, bool onlyDamaged);
 
 "!39d07d0b(c6840d74fefeff01)":
 noop void* Global__NOP__Ship_OnInit_0;

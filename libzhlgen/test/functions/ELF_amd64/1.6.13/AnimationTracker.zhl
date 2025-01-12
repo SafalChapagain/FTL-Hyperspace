@@ -1,19 +1,19 @@
 "53807f14004889fb":
-cleanup __amd64 void AnimationTracker::Update(AnimationTracker *this);
+cleanup __amd64 void AnimationTracker::Update(AnimationTracker* this);
 "4088770c":
-cleanup __amd64 void AnimationTracker::SetLoop(AnimationTracker *this, bool loop, float loopDelay);
+cleanup __amd64 void AnimationTracker::SetLoop(AnimationTracker* this, bool loop, float loopDelay);
 "4084f6c6471400":
-cleanup __amd64 void AnimationTracker::Stop(AnimationTracker *this, bool resetTime);
+cleanup __amd64 void AnimationTracker::Stop(AnimationTracker* this, bool resetTime);
 "c6471600c6471401f30f114710":
-cleanup __amd64 void AnimationTracker::Start(AnimationTracker *this, float time);
+cleanup __amd64 void AnimationTracker::Start(AnimationTracker* this, float time);
 "0f57c9c6471600":
-cleanup __amd64 void AnimationTracker::StartReverse(AnimationTracker *this, float time);
+cleanup __amd64 void AnimationTracker::StartReverse(AnimationTracker* this, float time);
 "807f14000f57c9":
-cleanup __amd64 float AnimationTracker::Progress(AnimationTracker *this, float speed);
+cleanup __amd64 float AnimationTracker::Progress(AnimationTracker* this, float speed);
 "f30f594708":
-cleanup __amd64 void AnimationTracker::SetProgress(AnimationTracker *this, float time);
+cleanup __amd64 void AnimationTracker::SetProgress(AnimationTracker* this, float time);
 "f30f100d????????f30f1015????????f30f594f08":
-cleanup __amd64 float AnimationTracker::GetAlphaLevel(AnimationTracker *this, bool reverse);
+cleanup __amd64 float AnimationTracker::GetAlphaLevel(AnimationTracker* this, bool reverse);
 
 
 struct AnimationTracker 

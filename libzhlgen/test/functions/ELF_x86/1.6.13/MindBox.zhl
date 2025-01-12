@@ -1,10 +1,11 @@
 "5557565383ec7c8b9c24900000008d7c243c":
-cleanup __cdecl void MindBox::constructor(MindBox *this, Point pos, MindSystem* sys);
+cleanup __cdecl void MindBox::constructor(MindBox* this, Point _position, MindSystem* _system);
+
 
 struct MindBox
 {{
-	MindBox(Point pos, MindSystem* sys)
+	MindBox(Point position, MindSystem* system)
 	{
-		this->constructor(pos, sys);
+		this->constructor(position, system);
 	}
 }};

@@ -1,36 +1,36 @@
 "!488b14e9eb??0f1f4000":
 noHook __amd64 void WeaponControl::DO_NOT_HOOK();
 ".534889fbbe":
-cleanup __amd64 TextString WeaponControl::HolderLabel(WeaponControl *this);
+cleanup __amd64 TextString WeaponControl::HolderLabel(WeaponControl* this);
 ".4157be03000000415641554989fd415455498dad3802000053498d9d180300004881ec58030000":
-cleanup __amd64 void WeaponControl::constructor(WeaponControl *this);
+cleanup __amd64 void WeaponControl::constructor(WeaponControl* this);
 ".41545589fd534883ec40":
 static cleanup __amd64 void WeaponControl::RenderBeamAiming(Pointf one, Pointf two, bool bAutoFire);
 ".41574989ff415641554531ed4154555331db4883ec38":
-cleanup __amd64 void WeaponControl::RenderAiming(WeaponControl *this);
+cleanup __amd64 void WeaponControl::RenderAiming(WeaponControl* this);
 ".4157415641554531ed41544989fc555331db4883ec18":
-cleanup __amd64 void WeaponControl::RenderSelfAiming(WeaponControl *this);
+cleanup __amd64 void WeaponControl::RenderSelfAiming(WeaponControl* this);
 ".41554189d54154554889fd534883ec484084f64088b7e0000000":
-cleanup __amd64 void WeaponControl::SetAutofiring(WeaponControl *this, bool on, bool simple);
+cleanup __amd64 void WeaponControl::SetAutofiring(WeaponControl* this, bool on, bool simple);
 ".4155415455534889fb4883ec28488bbfd80000004885ff":
-cleanup __amd64 void WeaponControl::Fire(WeaponControl *this, std::vector<Pointf>& points, int target, bool autoFire);
+cleanup __amd64 void WeaponControl::Fire(WeaponControl* this, std::vector<Pointf>& points, int target, bool autoFire);
 ".4883ec5883c60189742420488d7c2430":
-cleanup __amd64 SDLKey WeaponControl::ArmamentHotkey(WeaponControl *this, unsigned int i);
+cleanup __amd64 SDLKey WeaponControl::ArmamentHotkey(WeaponControl* this, unsigned int i);
 ".41564155415455534889fb4883ec70":
-cleanup __amd64 void WeaponControl::OnLanguageChange(WeaponControl *this);
+cleanup __amd64 void WeaponControl::OnLanguageChange(WeaponControl* this);
 ".41545589f5be03000000534889fb4883ec10488b7f18":
-cleanup __amd64 void WeaponControl::OnRender(WeaponControl *this, bool unk);
+cleanup __amd64 void WeaponControl::OnRender(WeaponControl* this, bool front);
 ".80bf30010000007427530fb69f3101000084db":
-cleanup __amd64 bool WeaponControl::LButton(WeaponControl *this, int x, int y, bool holdingShift);
+cleanup __amd64 bool WeaponControl::LButton(WeaponControl* this, int x, int y, bool holdingShift);
 ".41544189d45589f5534889fb":
-cleanup __amd64 void WeaponControl::MouseMove(WeaponControl *this, int x, int y);
+cleanup __amd64 void WeaponControl::MouseMove(WeaponControl* this, int x, int y);
 ".4155415441bc010000005589f5534889fb4883ec28":
-cleanup __amd64 bool WeaponControl::KeyDown(WeaponControl *this, SDLKey key);
+cleanup __amd64 bool WeaponControl::KeyDown(WeaponControl* this, SDLKey key);
 ".55534889fb4883ec28":
-cleanup __amd64 void WeaponControl::LinkShip(WeaponControl *this, ShipManager *ship);
+cleanup __amd64 void WeaponControl::LinkShip(WeaponControl* this, ShipManager* ship);
 
 struct WeaponControl
 {{
 	void RenderAimingNew(bool player);
-	inline GL_Primitive *GetAimingPrimitive(ProjectileFactory *weapon, int i);
+	inline GL_Primitive* GetAimingPrimitive(ProjectileFactory* weapon, int i);
 }};

@@ -1,10 +1,10 @@
 "5557565381ec4c0100008b8424640100008b9c246c0100008b942468010000":
-cleanup __cdecl void CloneBox::constructor(CloneBox *this, Point pos, CloneSystem* sys);
+cleanup __cdecl void CloneBox::constructor(CloneBox* this, Point _position, CloneSystem* _cloneSystem);
 
 struct CloneBox
 {{
-	CloneBox(Point pos, CloneSystem* sys)
+	CloneBox(Point position, CloneSystem* cloneSystem)
 	{
-		this->constructor(pos, sys);
+		this->constructor(position, cloneSystem);
 	}
 }};

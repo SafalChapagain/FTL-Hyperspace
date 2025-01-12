@@ -1,14 +1,14 @@
 "578d7c240883e4f0ff77fc5589f889e557565389cf81ec2c0100008b70088b50148b5804898decfeffff8b0889b5f4feffff8b700c8b401089542414890c24895c240489f9":
-__thiscall void BombProjectile::constructor(BombProjectile *this, Pointf _position, int _ownerId, int _targetId, Pointf _target);
+__thiscall void BombProjectile::constructor(BombProjectile* this, Pointf _position, int _ownerId, int _targetId, Pointf _target);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec6c8b0789c18945cc8b00ff50283b4378":
-__thiscall void BombProjectile::CollisionCheck(BombProjectile *this, Collideable *other);
+__thiscall void BombProjectile::CollisionCheck(BombProjectile* this, Collideable* other);
 "5589e556538db14c01000089cb83e4f083ec2089f1":
-__thiscall void BombProjectile::OnUpdate(BombProjectile *this);
+__thiscall void BombProjectile::OnUpdate(BombProjectile* this);
 
 struct BombProjectile
 {{
-	BombProjectile(Pointf _position, int _ownerId, int _targetId, Pointf _target)
+	BombProjectile(Pointf position, int ownerId, int targetId, Pointf target)
 	{
-		this->constructor(_position, _ownerId, _targetId, _target);
+		this->constructor(position, ownerId, targetId, target);
 	}
 }};

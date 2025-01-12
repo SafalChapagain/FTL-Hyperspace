@@ -1,24 +1,23 @@
 "565383ec748b8c24900000008b9c24800000008b8424880000008b94248c000000":
-cleanup __cdecl void DamageMessage::constructor(DamageMessage *this, float length, Pointf pos, DamageMessage::MessageType type);
+cleanup __cdecl void DamageMessage::constructor(DamageMessage* this, float _length, Pointf _position, DamageMessage::MessageType _type);
 "5557565381ecec0100008b8c24140200008bac24000200008b84240c0200008b942410020000f30f10842404020000":
-cleanup __cdecl void DamageMessage::constructor2(DamageMessage *this, float length, int amount, Pointf pos, bool unk);
+cleanup __cdecl void DamageMessage::constructor2(DamageMessage* this, float _length, int _amount, Pointf _position, bool _symbol);
 
 struct DamageMessage 
 {{
-
 	enum MessageType
 	{
 	  MISS = 0x0,
 	  RESIST = 0x1,
 	};
 
-	DamageMessage(float length, Pointf pos, MessageType type)
+	DamageMessage(float length, Pointf position, MessageType type)
 	{
-		constructor(length, pos, type);
+		constructor(length, position, type);
 	}
 	
-	DamageMessage(float length, int amount, Pointf pos, bool unk)
+	DamageMessage(float length, int amount, Pointf position, bool symbol)
 	{
-		constructor2(length, amount, pos, unk);
+		constructor2(length, amount, position, symbol);
 	}
 }};

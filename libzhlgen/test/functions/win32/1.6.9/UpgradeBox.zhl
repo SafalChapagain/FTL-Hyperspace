@@ -1,21 +1,21 @@
 "578d51248d7c240883e4f0ff77fc5589f889e557565389cb83c13481ec????????8b378b7f048b40088951e8":
-__thiscall void UpgradeBox::constructorEmpty(UpgradeBox *this, Point pos, bool subsystem);
+__thiscall void UpgradeBox::constructorEmpty(UpgradeBox* this, Point _position, bool _isSubsystem);
 "578d7c240883e4f0ff77fc5589fa89e557565389cb83ec5c8b47048b720c8b52108b0f8b7f08c743140000000089038945ac8d83a0000000":
-__thiscall void UpgradeBox::constructorSystem(UpgradeBox *this, ShipManager *ship, ShipSystem *sys, Point pos, bool subsystem);
+__thiscall void UpgradeBox::constructorSystem(UpgradeBox* this, ShipManager* _ship, ShipSystem* _system, Point _position, bool _isSubsystem);
 "5589e55389cb83e4f083ec108b8110010000890424e8????????8d8ba0000000e8????????8d4b3483c324e8????????8b43f839d874??890424":
-__thiscall void UpgradeBox::destructor(UpgradeBox *this);
+__thiscall void UpgradeBox::destructor(UpgradeBox* this);
 "5589e583e4f083ec1080b90d0100000075??e8????????c9c38db426000000008b8110010000890424e8????????c9":
-__thiscall void UpgradeBox::OnRender(UpgradeBox *this);
+__thiscall void UpgradeBox::OnRender(UpgradeBox* this);
 "578d7c240883e4f0ff77fc5589e55783ec148b078b57048b3985ff74??8b49188b39":
-__thiscall void UpgradeBox::MouseMove(UpgradeBox *this, int mX, int mY);
+__thiscall void UpgradeBox::MouseMove(UpgradeBox* this, int mX, int mY);
 "8b1185d20f84????????8b4118807840000f84????????807841000f84????????8b42540341143b82a00100000f8d????????5783e8018d7c240883e4f0ff77fc5589e557":
-__thiscall void UpgradeBox::MouseClick(UpgradeBox *this, int mX, int mY);
+__thiscall void UpgradeBox::MouseClick(UpgradeBox* this, int mX, int mY);
 "8b1185d20f84????????8b4118807840000f84????????807841000f84????????8b411485c00f8e????????578d7c240883e4f0ff77fc5589e557":
-__thiscall void UpgradeBox::MouseRightClick(UpgradeBox *this, int mX, int mY);
+__thiscall void UpgradeBox::MouseRightClick(UpgradeBox* this, int mX, int mY);
 "8b411485c07e??578d7c240883e4f0ff77fc5589e557565389cb83ec1c8d76008b1331f60342548b53088b8ac4000000":
-__thiscall void UpgradeBox::Undo(UpgradeBox *this);
+__thiscall void UpgradeBox::Undo(UpgradeBox* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec3c8b0985c90f84????????8b4314890424e8????????8b0b83ec04":
-__thiscall void UpgradeBox::Accept(UpgradeBox *this);
+__thiscall void UpgradeBox::Accept(UpgradeBox* this);
 
 
 struct UpgradeBox
@@ -24,14 +24,14 @@ struct UpgradeBox
 	{
 	}
 	
-	UpgradeBox(Point pos, bool subsystem)
+	UpgradeBox(Point position, bool isSubsystem)
 	{
-		this->constructorEmpty(pos, subsystem);
+		this->constructorEmpty(position, isSubsystem);
 	}
 	
-	UpgradeBox(ShipManager *ship, ShipSystem *sys, Point pos, bool subsystem)
+	UpgradeBox(ShipManager* ship, ShipSystem* systen, Point position, bool isSubsystem)
 	{
-		this->constructorSystem(ship, sys, pos, subsystem);
+		this->constructorSystem(ship, systen, position, isSubsystem);
 	}
 	
 	~UpgradeBox()

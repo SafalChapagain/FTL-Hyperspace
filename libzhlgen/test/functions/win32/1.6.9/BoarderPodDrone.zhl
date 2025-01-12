@@ -1,19 +1,19 @@
 "578d7c240883e4f0ff77fc5589fa89e557565389cfbb????????81ec????????8b028b720889c18985acfeffff8b4204890c248974240889f989b5bcfeffff":
-__thiscall void BoarderPodDrone::constructor(BoarderPodDrone *this, int _iShipId, int _selfId, const DroneBlueprint& _bp);
+__thiscall void BoarderPodDrone::constructor(BoarderPodDrone* this, int _iShipId, int _selfId, const DroneBlueprint& _blueprint);
 "578d7c240883e4f0ff77fc5589e5575383ec208b0785c074??8b1089cb89815001000089c1ff521c89434c8b43048d4df0":
-__thiscall void BoarderPodDrone::SetMovementTarget(BoarderPodDrone *this, Targetable *target);
+__thiscall void BoarderPodDrone::SetMovementTarget(BoarderPodDrone* this, Targetable* target);
 ".8b815001000085c074168b108b521881fa????????750cb801000000":
-__thiscall bool BoarderPodDrone::CanBeDeployed(BoarderPodDrone *this);
+__thiscall bool BoarderPodDrone::CanBeDeployed(BoarderPodDrone* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec2c807914008b37":
-__thiscall void BoarderPodDrone::SetDeployed(BoarderPodDrone *this, bool _deployed);
+__thiscall void BoarderPodDrone::SetDeployed(BoarderPodDrone* this, bool deployed);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec4c8b378b470c8b571080be6c04000000":
-__thiscall CollisionResponse BoarderPodDrone::CollisionMoving(BoarderPodDrone *this, Pointf start, Pointf finish, Damage damage, bool raytrace);
+__thiscall CollisionResponse BoarderPodDrone::CollisionMoving(BoarderPodDrone* this, Pointf start, Pointf finish, Damage damage, bool raytrace);
 
 
 struct BoarderPodDrone
 {{
-	BoarderPodDrone(int _iShipId, int _selfId, const DroneBlueprint& _bp)
+	BoarderPodDrone(int iShipId, int selfId, const DroneBlueprint& blueprint)
 	{
-		this->constructor(_iShipId, _selfId, _bp);
+		this->constructor(iShipId, selfId, blueprint);
 	}
 }};

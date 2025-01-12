@@ -1,5 +1,6 @@
-"554889e54157415641554154534883ec284889f34989fe488b430848":
-cleanup __amd64 void CEvent::OnEvent(CEvent *this, const InputEvent* event);
+// Continue from CApp::OnLanguageChange (hyper efficiency™)
+"!.554889e54157415641554154534883ec284889f34989fe488b":
+cleanup __amd64 void CEvent::OnEvent(CEvent* this, const InputEvent* event);
 
 
 struct CEvent

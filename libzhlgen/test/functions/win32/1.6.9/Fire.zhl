@@ -1,6 +1,6 @@
 "578d7c240883e4f0ff77fc5589e557565389cb83ec1c80b9fc0100000075??8b038db3300100008b4028":
-__thiscall void Fire::OnLoop(Fire *this);
+__thiscall void Fire::OnLoop(Fire* this);
 ".5589e5565389cb83e4f083ec108b018b75088b40283d????????0f85????????f30f1041100f2e05????????0f97c084c00f85????????":
-__thiscall void Fire::UpdateStartTimer(Fire *this, int doorLevel);
+__thiscall void Fire::UpdateStartTimer(Fire* this, int doorLevel);
 ".5589e55389cb83e4f083ec108b018b40283d????????0f85????????f30f1041100f2e05????????0f97c084c00f84????????660fefd2f30f104358":
-__thiscall void Fire::UpdateDeathTimer(Fire *this, int connectedFires);
+__thiscall void Fire::UpdateDeathTimer(Fire* this, int connectedFires);

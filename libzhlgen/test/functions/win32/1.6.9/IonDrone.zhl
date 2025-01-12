@@ -1,2 +1,2 @@
 "5589e556538b7508c701????????89cbc7410400000000c741080000000083e4f0c7410c00000000c7411000000000c7411400000000c7411800000000c7411c00000000c6412000c74124ffffffffc74128ffffffffc6412c00c6412d00c6412e01":
-__thiscall Damage IonDrone::GetRoomDamage(IonDrone *this);
+__thiscall Damage IonDrone::GetRoomDamage(IonDrone* this);

@@ -1,17 +1,18 @@
-"554889e553504889fbc64311":
-cleanup __amd64 void TimerHelper::Start(TimerHelper *this, int goal);
-"554889e58a47115d":
-cleanup __amd64 bool TimerHelper::Running(TimerHelper *this);
-"554889e589178977":
-cleanup __amd64 void TimerHelper::ResetMinMax(TimerHelper *this, int min, int max);
-"554889e5f30f104f08f30f5e":
-cleanup __amd64 void TimerHelper::SetMaxTime(TimerHelper *this, float max);
+// Continue from TextLibrary::GetText (hyper efficiency™)
+".554889e553504889fbc64311":
+cleanup __amd64 void TimerHelper::Start(TimerHelper* this, int goal);
+".554889e58a47115d":
+cleanup __amd64 bool TimerHelper::Running(TimerHelper* this);
+".554889e589178977":
+cleanup __amd64 void TimerHelper::ResetMinMax(TimerHelper* this, int min, int max);
+".554889e5f30f104f08f30f5e":
+cleanup __amd64 void TimerHelper::SetMaxTime(TimerHelper* this, float max);
 ".554889e5c64711??5dc3":
-cleanup __amd64 void TimerHelper::Stop(TimerHelper *this);
-"554889e553504889fb807b1100741e48":
-cleanup __amd64 void TimerHelper::Update(TimerHelper *this);
-"554889e553504889fb807b11007433f3":
-cleanup __amd64 bool TimerHelper::Done(TimerHelper *this);
+cleanup __amd64 void TimerHelper::Stop(TimerHelper* this);
+".554889e553504889fb807b1100741e48":
+cleanup __amd64 void TimerHelper::Update(TimerHelper* this);
+".554889e553504889fb807b11007433f3":
+cleanup __amd64 bool TimerHelper::Done(TimerHelper* this);
 
 
 struct TimerHelper

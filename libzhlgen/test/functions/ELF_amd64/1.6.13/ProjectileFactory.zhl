@@ -1,42 +1,56 @@
 "415741564989fe488d7f284d8dbec8000000415541544d8da680000000554889f553498d9e880000004881ec08010000":
-cleanup __amd64 void ProjectileFactory::constructor(ProjectileFactory *this, const WeaponBlueprint* bp, int shipId);
+cleanup __amd64 void ProjectileFactory::constructor(ProjectileFactory* this, const WeaponBlueprint* _blueprint, int _ownerId);
 ".803d????????00534889fb":
-cleanup __amd64 void ProjectileFactory::SelectChargeGoal(ProjectileFactory *this);
+cleanup __amd64 void ProjectileFactory::SelectChargeGoal(ProjectileFactory* this);
 ".488b47208b808401000085c0":
-cleanup __amd64 bool ProjectileFactory::IsChargedGoal(ProjectileFactory *this);
+cleanup __amd64 bool ProjectileFactory::IsChargedGoal(ProjectileFactory* this);
 "!.89b7240600004881c758010000":
-cleanup __amd64 void ProjectileFactory::SetHacked(ProjectileFactory *this, int hacked);
+cleanup __amd64 void ProjectileFactory::SetHacked(ProjectileFactory* this, int hacked);
 ".4839b74801000074274885f6":
-cleanup __amd64 void ProjectileFactory::SetCurrentShip(ProjectileFactory *this, Targetable *ship);
+cleanup __amd64 void ProjectileFactory::SetCurrentShip(ProjectileFactory* this, Targetable* ship);
 ".f30f104f0cf30f5e4f10":
-cleanup __amd64 void ProjectileFactory::SetCooldownModifier(ProjectileFactory *this, float mod);
+cleanup __amd64 void ProjectileFactory::SetCooldownModifier(ProjectileFactory* this, float mod);
 ".5380bff2000000004889fb":
-cleanup __amd64 void ProjectileFactory::ForceCoolup(ProjectileFactory *this);
+cleanup __amd64 void ProjectileFactory::ForceCoolup(ProjectileFactory* this);
 "!.4881c758010000":
-cleanup __amd64 void ProjectileFactory::RenderChargeBar(ProjectileFactory *this, float unk);
+cleanup __amd64 void ProjectileFactory::RenderChargeBar(ProjectileFactory* this, float alpha);
 "!.530f28c8488d9f580100004883ec10":
-cleanup __amd64 void ProjectileFactory::OnRender(ProjectileFactory *this, float alpha, bool forceVisual);
+cleanup __amd64 void ProjectileFactory::OnRender(ProjectileFactory* this, float alpha, bool forceVisual);
 ".488b97f8000000488b87000100004829d048c1f803":
-cleanup __amd64 void ProjectileFactory::ClearAiming(ProjectileFactory *this);
+cleanup __amd64 void ProjectileFactory::ClearAiming(ProjectileFactory* this);
 ".488b87e8050000488987f0050000":
-cleanup __amd64 void ProjectileFactory::ClearProjectiles(ProjectileFactory *this);
+cleanup __amd64 void ProjectileFactory::ClearProjectiles(ProjectileFactory* this);
 ".8b972006000031c085d2":
-cleanup __amd64 bool ProjectileFactory::FireNextShot(ProjectileFactory *this);
+cleanup __amd64 bool ProjectileFactory::FireNextShot(ProjectileFactory* this);
 ".53be????????4889fbe8????????85c0":
 static cleanup __amd64 int ProjectileFactory::StringToWeapon(const std::string& str);
 ".4157415641554154554889fd488dbf58010000534883ec58":
-cleanup __amd64 Projectile* ProjectileFactory::GetProjectile(ProjectileFactory *this);
+cleanup __amd64 Projectile* ProjectileFactory::GetProjectile(ProjectileFactory* this);
 ".55534889fb4883ec288b8708060000":
-cleanup __amd64 int ProjectileFactory::SpendMissiles(ProjectileFactory *this);
+cleanup __amd64 int ProjectileFactory::SpendMissiles(ProjectileFactory* this);
 ".488b472083b88401000001":
-cleanup __amd64 int ProjectileFactory::NumTargetsRequired(ProjectileFactory *this);
+cleanup __amd64 int ProjectileFactory::NumTargetsRequired(ProjectileFactory* this);
 ".5589f5534889fb4883ec08488b07":
-static cleanup __amd64 void ProjectileFactory::SaveProjectile(Projectile *p, int fd);
+static cleanup __amd64 void ProjectileFactory::SaveProjectile(Projectile* p, int fd);
 ".5589fd534883ec58":
 static cleanup __amd64 Projectile* ProjectileFactory::LoadProjectile(int fd);
 ".41544189d4554889f553488b87000100004889fb482b87f800000048c1f80385c0":
-cleanup __amd64 void ProjectileFactory::Fire(ProjectileFactory *this, std::vector<Pointf>& points, int target);
+cleanup __amd64 void ProjectileFactory::Fire(ProjectileFactory* this, std::vector<Pointf>& points, int target);
 ".4157415641554989fd415455534881ec88010000":
-cleanup __amd64 void ProjectileFactory::Update(ProjectileFactory *this);
+cleanup __amd64 void ProjectileFactory::Update(ProjectileFactory* this);
 ".415641554154554889fd534883ec1048c70770??":
-cleanup __amd64 void ProjectileFactory::destructor(ProjectileFactory *this);
+cleanup __amd64 void ProjectileFactory::destructor(ProjectileFactory* this);
+
+
+struct ProjectileFactory
+{{
+    ProjectileFactory(const WeaponBlueprint* blueprint, int ownerId)
+    {
+        this->constructor(blueprint, ownerId);
+    }
+
+    ~ProjectileFactory()
+    {
+        this->destructor();
+    }
+}};

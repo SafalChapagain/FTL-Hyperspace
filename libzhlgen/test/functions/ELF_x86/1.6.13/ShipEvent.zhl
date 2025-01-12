@@ -1,2 +1,2 @@
 "5531ed57565331db83ec1c8b7c24348b7424300fb607":
-cleanup __cdecl void ShipEvent::constructor(ShipEvent *this, const ShipEvent& event);
+cleanup __cdecl void ShipEvent::constructor(ShipEvent* this, const ShipEvent& _event);

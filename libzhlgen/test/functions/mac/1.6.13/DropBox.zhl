@@ -1,4 +1,4 @@
-"554889e54157415641554154534881ecc80000004989fde8":
-cleanup __amd64 void DropBox::OnRender(DropBox *this);
 "554889e5488b47104889c148":
-cleanup __amd64 int DropBox::GetHeight(DropBox *this);
+cleanup __amd64 int DropBox::GetHeight(DropBox* this);
+".554889e54157415641554154534881ecc80000004989fde8":
+cleanup __amd64 void DropBox::OnRender(DropBox* this);

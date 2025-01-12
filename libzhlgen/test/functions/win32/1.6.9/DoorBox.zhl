@@ -1,11 +1,11 @@
 "578d7c240883e4f0ff77fc5589e557565389cb83ec6c8b57048b078b4f088b770c8d7dd0c744240c0100000089542404890424894c2408":
-__thiscall void DoorBox::constructor(DoorBox *this, Point pos, ShipSystem* sys, ShipManager* ship);
+__thiscall void DoorBox::constructor(DoorBox* this, Point _position, ShipSystem* _system, ShipManager* _ship);
 
 
 struct DoorBox
 {{
-	DoorBox(Point pos, ShipSystem* sys, ShipManager *ship)
+	DoorBox(Point position, ShipSystem* system, ShipManager* ship)
 	{
-		this->constructor(pos, sys, ship);
+		this->constructor(position, system, ship);
 	}
 }};

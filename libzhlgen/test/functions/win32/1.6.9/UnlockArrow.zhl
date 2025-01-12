@@ -1,6 +1,15 @@
 "578d7c240883e4f0ff77fc5589f889e557565389cf83ec4c8b10803d??????????8b4808c74708ffffffffc7470cffffffffc74710000000008955c4":
-__thiscall void UnlockArrow::constructor(UnlockArrow *this, Point pos, int unk1, int unk2);
+__thiscall void UnlockArrow::constructor(UnlockArrow* this, Point _position, int _status, int _direction);
 ".8379040374??8b510831c0395424047e??035110395424047d??8b510c395424087e??":
-__thiscall bool UnlockArrow::MouseMove(UnlockArrow *this, int x, int y);
+__thiscall bool UnlockArrow::MouseMove(UnlockArrow* this, int x, int y);
 ".578d7c240883e4f0ff77fc5589e557565389cb83ec6c8b0185c0":
-__thiscall void UnlockArrow::OnRender(UnlockArrow *this);
+__thiscall void UnlockArrow::OnRender(UnlockArrow* this);
+
+
+struct UnlockArrow
+{{
+    UnlockArrow(Point position, int status, int direction)
+    {
+        this->constructor(position, status, direction);
+    }
+}};

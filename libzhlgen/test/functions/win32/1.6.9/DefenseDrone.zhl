@@ -1,10 +1,10 @@
 "5589e55756538b5d0883e4f085db74??8b430483f80274??":
-__thiscall bool DefenseDrone::ValidTargetObject(DefenseDrone *this, Targetable *target);
+__thiscall bool DefenseDrone::ValidTargetObject(DefenseDrone* this, Targetable* target);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec1c8b018b1f8b80a0000000":
-__thiscall void DefenseDrone::SetWeaponTarget(DefenseDrone *this, Targetable *target);
+__thiscall void DefenseDrone::SetWeaponTarget(DefenseDrone* this, Targetable* target);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec5c80b955020000000f84????????0fb6710c":
-__thiscall void DefenseDrone::PickTarget(DefenseDrone *this);
+__thiscall void DefenseDrone::PickTarget(DefenseDrone* this);
 "578d7c240883e4f0ff77fc5589f889e55756538d75a889cfbb0800000083ec7c8b108975a0c745a864656665c745ac6e73655f":
-__thiscall std::string DefenseDrone::GetTooltip(DefenseDrone *this);
+__thiscall std::string DefenseDrone::GetTooltip(DefenseDrone* this);
 "578d????0883e4f0ff????5589e557565389cb83ec4ce8????????660fefd2":
-__thiscall void DefenseDrone::OnLoop(DefenseDrone *this);
+__thiscall void DefenseDrone::OnLoop(DefenseDrone* this);

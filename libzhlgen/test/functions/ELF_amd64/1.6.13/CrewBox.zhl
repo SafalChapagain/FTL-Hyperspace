@@ -1,30 +1,30 @@
 "0fb6477884c0":
-cleanup __amd64 bool CrewBox::MouseClick(CrewBox *this);
+cleanup __amd64 bool CrewBox::MouseClick(CrewBox* this);
 ".534889fb4883ec1080bf4c01000000":
-cleanup __amd64 void CrewBox::OnRenderSkillLevel(CrewBox *this);
+cleanup __amd64 void CrewBox::OnRenderSkillLevel(CrewBox* this);
 "!.55534889fb4883ec18488b7f20488b07":
-cleanup __amd64 void CrewBox::RenderIcon(CrewBox *this);
+cleanup __amd64 void CrewBox::RenderIcon(CrewBox* this);
 ".55534889fb4883ec48488b7720488d7c2420":
-cleanup __amd64 void CrewBox::RenderLabels(CrewBox *this);
+cleanup __amd64 void CrewBox::RenderLabels(CrewBox* this);
 ".80bf3401000000755c488b4720":
-cleanup __amd64 void CrewBox::RenderCloneDying(CrewBox *this);
+cleanup __amd64 void CrewBox::RenderCloneDying(CrewBox* this);
 ".41574889f048c1f8204156415541544189cc554889d5534889fb4c8d6b304881eca8000000":
-cleanup __amd64 void CrewBox::constructor(CrewBox *this, Point pos, CrewMember *crew, int number);
+cleanup __amd64 void CrewBox::constructor(CrewBox* this, Point _position, CrewMember* _crew, int _number);
 ".415641554154554889fd534883ec10488bbf58010000":
-cleanup __amd64 void CrewBox::destructor(CrewBox *this);
+cleanup __amd64 void CrewBox::destructor(CrewBox* this);
 "!.5589f5534889fb4883ec08488b7f20488b07":
-cleanup __amd64 void CrewBox::OnLoop(CrewBox *this, bool selected);
+cleanup __amd64 void CrewBox::OnLoop(CrewBox* this, bool selected);
 ".4157415641554c8daf6803000041544189d431d25589f5":
-cleanup __amd64 CrewMember *CrewBox::GetSelected(CrewBox *this, int mouseX, int mouseY);
+cleanup __amd64 CrewMember* CrewBox::GetSelected(CrewBox* this, int mX, int mY);
 ".415741564155415455534889fb488dbfe0010000":
-cleanup __amd64 void CrewBox::OnRender(CrewBox *this);
+cleanup __amd64 void CrewBox::OnRender(CrewBox* this);
 
 
 struct CrewBox
 {{
-	CrewBox(Point pos_, CrewMember *crew_, int number_)
+	CrewBox(Point position, CrewMember* crew, int number)
 	{
-		this->constructor(pos_, crew_, number_);
+		this->constructor(position, crew, number);
 	}
 	
 	void DestroyCustom();

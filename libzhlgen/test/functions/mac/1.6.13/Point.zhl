@@ -1,14 +1,30 @@
-"554889e58b0f29f1":
-cleanup __amd64 int Point::RelativeDistance(Point *this, Point other);
-"554889e58b0729f0":
-cleanup __amd64 int Point::Distance(Point *this, Point other);
+// Continue from PDSFire::CollisionCheck (hyper efficiency™)
+".554889e58b0f29f1":
+cleanup __amd64 int Point::RelativeDistance(Point* this, Point other);
+".554889e58b0729f0":
+cleanup __amd64 int Point::Distance(Point* this, Point other);
 
 
 struct Point 
 {{
-	Point(int xx, int yy) : x(xx), y(yy)  { }
-	Point() { }
+	Point()
+	{
+		
+	}
+
+	Point(int x, int y)
+	{
+		this->x = x;
+		this->y = y;
+	}
 	
-	friend bool operator==(const Point &a, const Point &b) {return a.x==b.x && a.y==b.y;}
-	friend bool operator!=(const Point &a, const Point &b) {return a.x!=b.x || a.y!=b.y;}
+	friend bool operator==(const Point& a, const Point& b)
+	{
+		return a.x==b.x && a.y==b.y;
+	}
+
+	friend bool operator!=(const Point& a, const Point& b)
+	{
+		return a.x!=b.x || a.y!=b.y;
+	}
 }};

@@ -1,4 +1,5 @@
-"554889e54157415653504189d64189f74889fb44397b107506443973147419488b7b08e8c8ceffff":
-cleanup __amd64 void CachedRect::SetPosition(CachedRect *this, int x, int y);
-"554889e54157415653504189d64189f74889fb44397b1875064439731c7419488b7b08e878ceffff":
-cleanup __amd64 void CachedRect::SetSize(CachedRect *this, int w, int h);
+// Continue from CachedPrimitive::OnRender (hyper efficiency™)
+"!.554889e54157415653504189d64189f74889fb44397b107506443973147419488b7b08e8c8":
+cleanup __amd64 void CachedRect::SetPosition(CachedRect* this, int x, int y);
+"!.554889e54157415653504189d64189f74889fb44397b1875064439731c7419488b7b08e878":
+cleanup __amd64 void CachedRect::SetSize(CachedRect* this, int w, int h);

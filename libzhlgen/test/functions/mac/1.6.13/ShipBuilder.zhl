@@ -1,32 +1,42 @@
-"554889e54156534883ec??4889fb488d7b18":
-cleanup __amd64 void ShipBuilder::constructor(ShipBuilder *this);
-"554889e54157415641554154534881ec98040000":
-cleanup __amd64 void ShipBuilder::MouseMove(ShipBuilder *this, int x, int y);
-"554889e5488b870822000048":
-cleanup __amd64 void ShipBuilder::ClearShipAchievements(ShipBuilder *this);
-"554889e54157415641554154534883ec684889fb488b8308":
-cleanup __amd64 void ShipBuilder::SetupShipAchievements(ShipBuilder *this);
-"554889e54157415641554154534883ec684989fe498d86e8":
-cleanup __amd64 void ShipBuilder::CreateEquipmentBoxes(ShipBuilder *this);
-"554889e54157415641554154534883ec284989ff498b8768":
-cleanup __amd64 void ShipBuilder::CreateSystemBoxes(ShipBuilder *this);
-"554889e54157415641554154534883ec584989fe4180be08":
-cleanup __amd64 void ShipBuilder::OnRender(ShipBuilder *this);
-"554889e5415741564154534883ec604989fc488d":
-cleanup __amd64 void ShipBuilder::OnLoop(ShipBuilder *this);
-"554889e5415741564154534883ec304889fb8bb380140000":
-cleanup __amd64 void ShipBuilder::CheckTypes(ShipBuilder *this);
-"554889e5415741564154534883ec204189d44189":
-cleanup __amd64 void ShipBuilder::SwitchShip(ShipBuilder *this, int shipType, int shipVariant);
-"554889e553504889fb488b3b4885ff7406488b07ff50084889dfe841":
-cleanup __amd64 void ShipBuilder::CycleShipNext(ShipBuilder *this);
-"554889e54156534189f64889fb488b3b4885ff74":
-cleanup __amd64 void ShipBuilder::SwapType(ShipBuilder *this, int variant);
-"554889e553504889fb488b3b4885ff7406488b07ff50084889dfe811":
-cleanup __amd64 void ShipBuilder::CycleShipPrevious(ShipBuilder *this);
-"554889e54157415641554154535089f34989fe41":
-cleanup __amd64 void ShipBuilder::OnKeyDown(ShipBuilder *this, SDLKey key);
-"554889e54157415641554154534883ec384989fd4180bdb0":
-cleanup __amd64 void ShipBuilder::MouseClick(ShipBuilder *this, int x, int y);
-"554889e54157415641554154534881ec08060000":
-cleanup __amd64 void ShipBuilder::Open(ShipBuilder *this);
+// Continue from ShipAI::OnLoop (hyper efficiency™)
+".554889e54156534883ec204889fb488d7b":
+cleanup __amd64 void ShipBuilder::constructor(ShipBuilder* this);
+".554889e54157415641554154534883ec584989fe4180be08":
+cleanup __amd64 void ShipBuilder::OnRender(ShipBuilder* this);
+".554889e5415741564154534883ec604989fc488d":
+cleanup __amd64 void ShipBuilder::OnLoop(ShipBuilder* this);
+"!.554889e54157415641554154534881ec08060000":
+cleanup __amd64 void ShipBuilder::Open(ShipBuilder* this);
+".554889e5415741564154534883ec304889fb8bb380140000":
+cleanup __amd64 void ShipBuilder::CheckTypes(ShipBuilder* this);
+"!.554889e54157415641554154534883ec684989fe498d86e8":
+cleanup __amd64 void ShipBuilder::CreateEquipmentBoxes(ShipBuilder* this);
+"!.554889e54157415641554154534883ec284989ff498b8768":
+cleanup __amd64 void ShipBuilder::CreateSystemBoxes(ShipBuilder* this);
+"!.554889e54157415641554154534883ec684889fb488b8308":
+cleanup __amd64 void ShipBuilder::SetupShipAchievements(ShipBuilder* this);
+".554889e54157415641554154534881ec98040000":
+cleanup __amd64 void ShipBuilder::MouseMove(ShipBuilder* this, int mX, int mY);
+"!.554889e54157415641554154534883ec384989fd4180bdb0":
+cleanup __amd64 void ShipBuilder::MouseClick(ShipBuilder* this, int mX, int mY);
+".554889e5415741564154534883ec204189d44189":
+cleanup __amd64 void ShipBuilder::SwitchShip(ShipBuilder* this, int shipType, int shipVariant);
+"!.554889e553504889fb488b3b4885ff7406488b07ff50084889dfe811":
+cleanup __amd64 void ShipBuilder::CycleShipPrevious(ShipBuilder* this);
+"!.554889e553504889fb488b3b4885ff7406488b07ff50084889dfe841":
+cleanup __amd64 void ShipBuilder::CycleShipNext(ShipBuilder* this);
+"!.554889e54156534189f64889fb488b3b4885ff74":
+cleanup __amd64 void ShipBuilder::SwapType(ShipBuilder* this, int variant);
+"!.554889e54157415641554154535089f34989fe41":
+cleanup __amd64 void ShipBuilder::OnKeyDown(ShipBuilder* this, SDLKey key);
+".554889e5488b870822000048":
+cleanup __amd64 void ShipBuilder::ClearShipAchievements(ShipBuilder* this);
+
+
+struct ShipBuilder
+{{
+    ShipBuilder()
+    {
+        this->constructor();
+    }
+}};

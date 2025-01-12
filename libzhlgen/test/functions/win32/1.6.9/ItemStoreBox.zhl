@@ -1,11 +1,11 @@
 "578d7c240883e4f0ff77fc5589e55756538d45d889cb8d4dd083ec5c8b378b7f048945d0c745d400000000c645d8008b4704":
-__thiscall void ItemStoreBox::constructor(ItemStoreBox *this, ShipManager *ship, const std::string& resourceName);
+__thiscall void ItemStoreBox::constructor(ItemStoreBox* this, ShipManager* _ship, const std::string& _resourceName);
 
 
 struct ItemStoreBox
 {{
-	ItemStoreBox(ShipManager *_ship, const std::string& _resourceName)
+	ItemStoreBox(ShipManager* ship, const std::string& resourceName)
 	{
-		this->constructor(_ship, _resourceName);
+		this->constructor(ship, resourceName);
 	}
 }};

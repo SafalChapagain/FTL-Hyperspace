@@ -1,14 +1,23 @@
 "4154554863eebe02000000534889fb":
-cleanup __amd64 void OxygenSystem::constructor(OxygenSystem *this, int numRooms, int roomId, int shipId, int startingPower);
+cleanup __amd64 void OxygenSystem::constructor(OxygenSystem* this, int _numRooms, int _roomId, int _shipId, int _startingPower);
 ".5380bf24020000004889fb8b8720020000":
-cleanup __amd64 float OxygenSystem::GetRefillSpeed(OxygenSystem *this);
+cleanup __amd64 float OxygenSystem::GetRefillSpeed(OxygenSystem* this);
 ".488b87480200004863f6":
-cleanup __amd64 void OxygenSystem::ModifyRoomOxygen(OxygenSystem *this, int roomId, float value);
+cleanup __amd64 void OxygenSystem::ModifyRoomOxygen(OxygenSystem* this, int roomId, float value);
 ".415541544989fc5589d55389f34883ec38":
-cleanup __amd64 void OxygenSystem::ComputeAirLoss(OxygenSystem *this, int roomId, float value, bool unk);
+cleanup __amd64 void OxygenSystem::ComputeAirLoss(OxygenSystem* this, int roomId, float value, bool silent);
 ".85d289d07e1a":
-cleanup __amd64 void OxygenSystem::UpdateBreach(OxygenSystem *this, int roomId, int hasBreach, bool unk3);
+cleanup __amd64 void OxygenSystem::UpdateBreach(OxygenSystem* this, int roomId, int hasBreach, bool silent);
 ".4154555389d34883ec2085d2":
-cleanup __amd64 void OxygenSystem::UpdateAirlock(OxygenSystem *this, int roomId, int unk);
+cleanup __amd64 void OxygenSystem::UpdateAirlock(OxygenSystem* this, int roomId, int count);
 ".488b87480200004863f6":
-cleanup __amd64 void OxygenSystem::EmptyOxygen(OxygenSystem *this, int roomId);
+cleanup __amd64 void OxygenSystem::EmptyOxygen(OxygenSystem* this, int roomId);
+
+
+struct OxygenSystem
+{{
+    OxygenSystem(int numRooms, int roomId, int shipId, int startingPower)
+    {
+        this->constructor(numRooms, roomId, shipId, startingPower);
+    }
+}};

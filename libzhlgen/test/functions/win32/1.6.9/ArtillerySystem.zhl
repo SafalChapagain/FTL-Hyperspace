@@ -1,4 +1,4 @@
 "578d7c240883e4f0ff77fc5589e557565389cf83ec5c894db0e8????????89f9e8????????85c0":
-__thiscall void ArtillerySystem::OnLoop(ArtillerySystem *this);
+__thiscall void ArtillerySystem::OnLoop(ArtillerySystem* this);
 "8b81c0010000c7400800000000c7802c06000000000000c3":
-__thiscall void ArtillerySystem::Jump(ArtillerySystem *this);
+__thiscall void ArtillerySystem::Jump(ArtillerySystem* this);

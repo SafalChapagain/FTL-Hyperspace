@@ -1,6 +1,6 @@
 "578d7c240883e4f0ff77fc5589e557565389cbb9????????8d7dcc8db31808000081ec????????e8????????8b83880200008b938c020000d99d34ffffff660fefc9":
-__thiscall void OptionsScreen::OnInit(OptionsScreen *this);
+__thiscall void OptionsScreen::OnInit(OptionsScreen* this);
 "57660fefc0660fefc98d7c240883e4f0ff77fc5589e557565389cf83ec7c8b91880200008b8168020000894d9029d0f30f2ac08b818c020000b9????????894594":
-__thiscall void OptionsScreen::OnLoop(OptionsScreen *this);
+__thiscall void OptionsScreen::OnLoop(OptionsScreen* this);
 "57660f76c08d7c240883e4f0ff77fc5589e557565381ec9c0400008b07898d70fbffff0f1181f8090000c681cc02000000":
-__thiscall void OptionsScreen::Open(OptionsScreen *this, bool mainMenu);
+__thiscall void OptionsScreen::Open(OptionsScreen* this, bool mainMenu);

@@ -1,6 +1,7 @@
-"554889e54157415641554154534883ec284989f64989fc41":
-cleanup __amd64 char ShipInfo::AddAugmentation(ShipInfo *this, const std::string& augment); 
-"554889e5415741564154534883ec104989f74989":
-cleanup __amd64 bool ShipInfo::HasAugmentation(ShipInfo *this, const std::string& augment);
-"554889e541574156534883ec584989f7":
-cleanup __amd64 float ShipInfo::GetAugmentationValue(ShipInfo *this, const std::string& augment);
+// Continue from ShipGraph::GetRoomBlackedOut (hyper efficiency™)
+".554889e5415741564154534883ec104989f74989":
+cleanup __amd64 bool ShipInfo::HasAugmentation(ShipInfo* this, const std::string& augId);
+".554889e54157415641554154534883ec284989f64989fc41":
+cleanup __amd64 bool ShipInfo::AddAugmentation(ShipInfo* this, const std::string& augId);
+".554889e541574156534883ec584989f7":
+cleanup __amd64 float ShipInfo::GetAugmentationValue(ShipInfo* this, const std::string& augId);

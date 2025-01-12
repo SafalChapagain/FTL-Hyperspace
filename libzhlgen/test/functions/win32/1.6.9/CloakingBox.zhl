@@ -1,11 +1,11 @@
 "578d7c240883e4f0ff77fc5589f889e557565389cf8d75d083ec6c8b108b58088b4804c744240c00000000891424895c2408894c2404":
-__thiscall void CloakingBox::constructor(CloakingBox *this, Point pos, CloakingSystem* sys);
+__thiscall void CloakingBox::constructor(CloakingBox* this, Point _position, CloakingSystem* _system);
 
 
 struct CloakingBox
 {{
-	CloakingBox(Point pos, CloakingSystem* sys)
+	CloakingBox(Point position, CloakingSystem* system)
 	{
-		this->constructor(pos, sys);
+		this->constructor(position, system);
 	}
 }};

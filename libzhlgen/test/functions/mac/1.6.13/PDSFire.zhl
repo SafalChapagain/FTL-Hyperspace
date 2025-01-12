@@ -1,15 +1,15 @@
-"554889e54156534883ec104889fbe82d":
-cleanup __amd64 void PDSFire::OnUpdate(PDSFire *this);
-"554889e54156534881ec800000004889f34989fe":
-cleanup __amd64 void PDSFire::CollisionCheck(PDSFire *this, Collideable *other);
 "554889e54157415641554154534881ec????????0f2945a0":
-cleanup __amd64 void PDSFire::constructor(PDSFire *this, Point pos, int destinationSpace, Pointf destination);
+cleanup __amd64 void PDSFire::constructor(PDSFire* this, Point _position, int _destinationSpace, Pointf _destination);
+"!.554889e54156534883ec104889fbe82d":
+cleanup __amd64 void PDSFire::OnUpdate(PDSFire* this);
+".554889e54156534881ec800000004889f34989fe":
+cleanup __amd64 void PDSFire::CollisionCheck(PDSFire* this, Collideable* other);
 
 
 struct PDSFire
 {{
-	PDSFire(Point pos, int destinationSpace, Pointf destination) : LaserBlast(Pointf(pos.x, pos.y), 0, destinationSpace, destination)
+	PDSFire(Point position, int destinationSpace, Pointf destination) : LaserBlast(Pointf(position.x, position.y), 0, destinationSpace, destination)
 	{
-		this->constructor(pos, destinationSpace, destination);
+		this->constructor(position, destinationSpace, destination);
 	}
 }};

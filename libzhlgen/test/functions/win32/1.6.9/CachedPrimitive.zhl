@@ -1,7 +1,7 @@
 "5589e55383e4f083ec308b410485c074??8b55080f1002890424660f7ec20f29442420895424048b542424":
-__thiscall void CachedPrimitive::OnRender(CachedPrimitive *this, const GL_Color& color);
+__thiscall void CachedPrimitive::OnRender(CachedPrimitive* this, const GL_Color& color);
 "5589e583e4f083ec108b4104c701????????890424e8????????c9":
-__thiscall void CachedPrimitive::destructor(CachedPrimitive *this);
+__thiscall void CachedPrimitive::destructor(CachedPrimitive* this);
 
 
 struct CachedPrimitive

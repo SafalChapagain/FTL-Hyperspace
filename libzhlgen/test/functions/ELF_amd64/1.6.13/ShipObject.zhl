@@ -1,19 +1,19 @@
 "8b570831c0488b0d????????85d2":
-cleanup __amd64 int ShipObject::GetAugmentationCount(ShipObject *this);
+cleanup __amd64 int ShipObject::GetAugmentationCount(ShipObject* this);
 ".538b570831c085d20f94c0488d14004801c2488d1490":
-cleanup __amd64 void ShipObject::ClearShipInfo(ShipObject *this);
+cleanup __amd64 void ShipObject::ClearShipInfo(ShipObject* this);
 ".415631c04155415455538b56084889fb85d20f94c0488d14004801c2488d1490":
-cleanup __amd64 std::vector<std::string> ShipObject::GetAugmentationList(ShipObject *this);
+cleanup __amd64 std::vector<std::string> ShipObject::GetAugmentationList(ShipObject* this);
 ".415741564155415455534889fb4883ec38488d7c2420":
-cleanup __amd64 int ShipObject::HasAugmentation(ShipObject *this, const std::string& augment);
+cleanup __amd64 int ShipObject::HasAugmentation(ShipObject* this, const std::string& augment);
 ".415741564155415455534889f34883ec68":
-cleanup __amd64 int ShipObject::HasEquipment(ShipObject *this, const std::string& equip);
+cleanup __amd64 int ShipObject::HasEquipment(ShipObject* this, const std::string& equip);
 ".415741564155415455534889fb4883ec58488d7c2430":
-cleanup __amd64 float ShipObject::GetAugmentationValue(ShipObject *this, const std::string& augment);
+cleanup __amd64 float ShipObject::GetAugmentationValue(ShipObject* this, const std::string& augment);
 ".415741564155415455534889fb4883ec58488d7c2430":
-cleanup __amd64 bool ShipObject::AddAugmentation(ShipObject *this, const std::string& augment);
+cleanup __amd64 bool ShipObject::AddAugmentation(ShipObject* this, const std::string& augment);
 ".415741564155415455534889fb4883ec48488d7c2420":
-cleanup __amd64 void ShipObject::RemoveAugmentation(ShipObject *this, const std::string& augment);
+cleanup __amd64 void ShipObject::RemoveAugmentation(ShipObject* this, const std::string& augment);
 
 "!8b570831c0488b0d(???????\?)85d20f94c0488d14004801c2":
 offsetVariable ShipInfo** Global_ShipObject_ShipInfoList;

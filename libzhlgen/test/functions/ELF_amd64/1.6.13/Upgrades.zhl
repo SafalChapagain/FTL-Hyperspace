@@ -1,18 +1,18 @@
 "!41554989fd41544189d45589f55331db4883ec08":
-cleanup __amd64 void Upgrades::MouseMove(Upgrades *this, int mX, int mY);
+cleanup __amd64 void Upgrades::MouseMove(Upgrades* this, int mX, int mY);
 ".415431c94989fc5531ed534883ec20":
-cleanup __amd64 void Upgrades::MouseRightClick(Upgrades *this, int mX, int mY);
+cleanup __amd64 void Upgrades::MouseRightClick(Upgrades* this, int mX, int mY);
 ".41554154554889fd534883ec28807f0800":
-cleanup __amd64 void Upgrades::Close(Upgrades *this);
+cleanup __amd64 void Upgrades::Close(Upgrades* this);
 ".4155415455534889fb4883ec68807f0800":
-cleanup __amd64 void Upgrades::OnLoop(Upgrades *this);
+cleanup __amd64 void Upgrades::OnLoop(Upgrades* this);
 ".415531c941bd????????41544989fc5531ed534883ec28":
-cleanup __amd64 void Upgrades::ConfirmUpgrades(Upgrades *this);
+cleanup __amd64 void Upgrades::ConfirmUpgrades(Upgrades* this);
 ".41554189d541544189f4554889fd5331db4883ec28":
-cleanup __amd64 void Upgrades::MouseClick(Upgrades *this, int mX, int mY);
+cleanup __amd64 void Upgrades::MouseClick(Upgrades* this, int mX, int mY);
 ".41544989fc55534883ec10488b4f30488b57284889c84829d048c1f80385c0":
-cleanup __amd64 void Upgrades::ClearUpgradeBoxes(Upgrades *this);
+cleanup __amd64 void Upgrades::ClearUpgradeBoxes(Upgrades* this);
 ".41574989ff41564155415455534881ecb8000000":
-cleanup __amd64 void Upgrades::OnInit(Upgrades *this, ShipManager *ship);
+cleanup __amd64 void Upgrades::OnInit(Upgrades* this, ShipManager* ship);
 ".415455534889fb4883ec50488b7f20":
-cleanup __amd64 void Upgrades::OnRender(Upgrades *this);
+cleanup __amd64 void Upgrades::OnRender(Upgrades* this);

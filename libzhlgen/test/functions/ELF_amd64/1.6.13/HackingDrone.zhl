@@ -1,6 +1,6 @@
 "554889f5534889fb4883ec184885f60f84b3000000":
-cleanup __amd64 void HackingDrone::SetMovementTarget(HackingDrone *this, Targetable *target);
+cleanup __amd64 void HackingDrone::SetMovementTarget(HackingDrone* this, Targetable* target);
 ".4154554889f5534889fb4883ec60":
-cleanup __amd64 CollisionResponse HackingDrone::CollisionMoving(HackingDrone *this, Pointf start, Pointf finish, Damage damage, bool raytrace);
+cleanup __amd64 CollisionResponse HackingDrone::CollisionMoving(HackingDrone* this, Pointf start, Pointf finish, Damage damage, bool raytrace);
 ".55bd05000000534889fb4883ec48":
-cleanup __amd64 void HackingDrone::OnLoop(HackingDrone *this);
+cleanup __amd64 void HackingDrone::OnLoop(HackingDrone* this);

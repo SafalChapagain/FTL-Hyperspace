@@ -1,11 +1,12 @@
-"554889e54157415641554154534881ec????????89cb4189d7":
-cleanup __amd64 void RepairStoreBox::constructor(RepairStoreBox *this, ShipManager *ship, bool repairAll, int price);
+// Continue from VTable_RepairAnimation (hyper efficiency™)
+".554889e54157415641554154534881ec????????89cb4189d7":
+cleanup __amd64 void RepairStoreBox::constructor(RepairStoreBox* this, ShipManager* _ship, bool _repairAll, int _price);
 
 
 struct RepairStoreBox
 {{
-	RepairStoreBox(ShipManager *_ship, bool _repairAll, int _price)
+	RepairStoreBox(ShipManager* ship, bool repairAll, int price)
 	{
-		this->constructor(_ship, _repairAll, _price);
+		this->constructor(ship, repairAll, price);
 	}
 }};

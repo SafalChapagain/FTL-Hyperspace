@@ -1,7 +1,7 @@
 "83ec048b4424088b4014890424d9042483c404":
-cleanup __cdecl float CFPS::GetSpeedFactor(CFPS *this);
+cleanup __cdecl float CFPS::GetSpeedFactor(CFPS* this);
 "5383ec188b5c2420f20f1015????????":
-cleanup __cdecl void CFPS::OnLoop(CFPS *this);
+cleanup __cdecl void CFPS::OnLoop(CFPS* this);
 
 "!83ec2c8b5d08c70424(???????\?)e8????????e8????????884305":
 CFPS* Global_CFPS_FPSControl;

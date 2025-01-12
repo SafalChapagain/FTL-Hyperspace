@@ -1,6 +1,6 @@
 "5589e557565381ecbc0000008b45088b80cc040000":
-cleanup __cdecl void ControlsScreen::OnInit(ControlsScreen *this);
+cleanup __cdecl void ControlsScreen::OnInit(ControlsScreen* this);
 "5589e557565331db83ec4c8b45088b4d08":
-cleanup __cdecl void ControlsScreen::OnLoop(ControlsScreen *this);
+cleanup __cdecl void ControlsScreen::OnLoop(ControlsScreen* this);
 "5589e557565381ec7c0100008b7508":
-cleanup __cdecl void ControlsScreen::OnRender(ControlsScreen *this);
+cleanup __cdecl void ControlsScreen::OnRender(ControlsScreen* this);

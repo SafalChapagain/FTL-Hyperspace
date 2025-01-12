@@ -1,4 +1,4 @@
 "488b8748020000c7400c00000000":
-cleanup __amd64 void ArtillerySystem::Jump(ArtillerySystem *this);
+cleanup __amd64 void ArtillerySystem::Jump(ArtillerySystem* this);
 ".415455534889fb4883ec70e8????????4889df":
-cleanup __amd64 void ArtillerySystem::OnLoop(ArtillerySystem *this);
+cleanup __amd64 void ArtillerySystem::OnLoop(ArtillerySystem* this);

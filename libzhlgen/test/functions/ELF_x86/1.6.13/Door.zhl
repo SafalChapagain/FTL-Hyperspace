@@ -1,15 +1,15 @@
 "5383ec288b4424348b5c24308b90cc010000":
-cleanup __cdecl Point Door::GetPosition(Door *this);
+cleanup __cdecl Point Door::GetPosition(Door* this);
 ".5383ec188b5c242080bb7001000000":
-cleanup __cdecl bool Door::ApplyDamage(Door *this, float amount);
+cleanup __cdecl bool Door::ApplyDamage(Door* this, float amount);
 ".565383ec148b5c242083bb8c00000004c6432001c783a001000000000000":
-cleanup __cdecl void Door::FakeOpen(Door *this);
+cleanup __cdecl void Door::FakeOpen(Door* this);
 ".565383ec148b5c24200fb64318c6432000":
-cleanup __cdecl void Door::FakeClose(Door *this);
+cleanup __cdecl void Door::FakeClose(Door* this);
 ".8b5424048b82c40100008b4a0485c0":
-cleanup __cdecl bool Door::IsSealed(Door *this, int shipId);
+cleanup __cdecl bool Door::IsSealed(Door* this, int shipId);
 "!.565383ec148b5c24208b83c4010000":
-cleanup __cdecl void Door::OnLoop(Door *this);
+cleanup __cdecl void Door::OnLoop(Door* this);
 
 
 struct Door depends (Point, ShipGraph)

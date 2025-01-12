@@ -1,4 +1,4 @@
 "578d7c240883e4f0ff77fc5589e557565383ec4c8b41308b178b703485f6":
-__thiscall void CombatAI::UpdateMindControl(CombatAI *this, bool unk);
+__thiscall void CombatAI::UpdateMindControl(CombatAI* this, bool hostile);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec1ce8????????8b4b30e8????????84c0":
-__thiscall void CombatAI::OnLoop(CombatAI *this);
+__thiscall void CombatAI::OnLoop(CombatAI* this);

@@ -40,6 +40,7 @@
 #include "hde.h"
 #include <stdexcept>
 #include <cstring>
+#include <string>
 
 #ifdef _WIN32
 #  include <windows.h>

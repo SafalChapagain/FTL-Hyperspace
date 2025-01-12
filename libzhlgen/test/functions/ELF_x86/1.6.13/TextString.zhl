@@ -1,5 +1,5 @@
 "5589e55383ec148b450c8b5d0880780400":
-cleanup __cdecl std::string TextString::GetText(TextString *this);
+cleanup __cdecl std::string TextString::GetText(TextString* this);
 
 
 struct TextString depends (TextLibrary)

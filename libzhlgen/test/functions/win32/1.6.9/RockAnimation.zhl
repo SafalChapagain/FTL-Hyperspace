@@ -1,17 +1,17 @@
 "578d7c240883e4f0ff77fc5589f889e557565381ec????????898de0feffff8b57048b0f8b58108d8520ffffff8b77088b7f0c8995e4feffff898518ffffff":
-__thiscall void RockAnimation::constructor(RockAnimation *this, const std::string& subRace, int iShipId, Pointf position, bool enemy);
+__thiscall void RockAnimation::constructor(RockAnimation* this, const std::string& _subRace, int _iShipId, Pointf _position, bool _enemy);
 "5f5d8d67f85fc20400908d742600e8????????89c1e9????????8d7426000f1040080f114308":
 noHook void RockAnimation::__DO_NOT_HOOK();
 ".5f5d8d67f85fc20400908d742600e8????????89c1e9????????8d7426000f1040080f114308":
 noHook void RockAnimation::__DO_NOT_HOOK2();
 ".578d7c240883e4f0ff77fc5589e557565389cb83ec3c803d??????????0f84????????":
-__thiscall std::string RockAnimation::GetShootingSound(RockAnimation *this);
+__thiscall std::string RockAnimation::GetShootingSound(RockAnimation* this);
 "578d41088d7c240883e4f0ff77fc5589e5575389cb83ec108901":
 noHook void RockAnimation::__DO_NOT_HOOK3();
 ".578d41088d7c240883e4f0ff77fc5589e5575389cb83ec108901":
 noHook void RockAnimation::__DO_NOT_HOOK4();
 ".578d41088d7c240883e4f0ff77fc5589e5575389cb83ec108901":
-__thiscall std::string RockAnimation::GetDeathSound(RockAnimation *this);
+__thiscall std::string RockAnimation::GetDeathSound(RockAnimation* this);
 
 
 struct RockAnimation depends (Pointf)

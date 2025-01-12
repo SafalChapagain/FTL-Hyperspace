@@ -1,5 +1,5 @@
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b07898dacfeffff8985b0feffff8b4704c70424????????":
-__thiscall Animation AnimationControl::GetAnimation(AnimationControl *this, const std::string& animName);
+__thiscall Animation AnimationControl::GetAnimation(AnimationControl* this, const std::string& animName);
 
 "!c70424(???????\?)89c18985ecfeffff":
 AnimationControl* Global_AnimationControl_Animations;

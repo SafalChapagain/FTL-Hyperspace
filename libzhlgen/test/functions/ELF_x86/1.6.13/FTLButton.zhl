@@ -1,4 +1,4 @@
 "5589e557565381ec6c0100008b5d08c744240401000000":
-cleanup __cdecl void FTLButton::OnRender(FTLButton *this);
+cleanup __cdecl void FTLButton::OnRender(FTLButton* this);
 ".55575631f65383ec1c8b5c24308b5424348b4c24388b7c243c8b430c39c2":
-cleanup __cdecl void FTLButton::MouseMove(FTLButton *this, int mX, int mY, bool silent);
+cleanup __cdecl void FTLButton::MouseMove(FTLButton* this, int mX, int mY, bool silent);

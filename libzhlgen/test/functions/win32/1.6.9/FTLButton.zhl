@@ -1,4 +1,4 @@
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????8b89fc000000c70424????????e8????????83ec0485c00f85????????8b8b3c010000e8????????8b8b3c010000":
-__thiscall void FTLButton::OnRender(FTLButton *this);
+__thiscall void FTLButton::OnRender(FTLButton* this);
 "5731d28d7c240883e4f0ff77fc5589e557565383ec2c8b47048b3789c38945e48b47088945dc8b410c39c6":
-__thiscall void FTLButton::MouseMove(FTLButton *this, int mX, int mY, bool silent);
+__thiscall void FTLButton::MouseMove(FTLButton* this, int mX, int mY, bool silent);

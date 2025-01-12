@@ -1,2 +1,3 @@
-"554889e553504889fb8b4368":
-cleanup __amd64 void TabbedWindow::Close(TabbedWindow *this);
+// Continue from SystemStoreBox::Purchase (hyper efficiency™)
+"!.554889e553504889fb8b4368":
+cleanup __amd64 void TabbedWindow::Close(TabbedWindow* this);

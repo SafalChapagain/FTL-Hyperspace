@@ -2601,11 +2601,14 @@ int ShipObject::HS_HasEquipment(const std::string& equip)
     return ret;
 }
 
+bool deathEventActive = false;
 static std::string removeHiddenAug = "";
 
 HOOK_METHOD(WorldManager, CreateChoiceBox, (LocationEvent *event) -> void)
 {
     LOG_HOOK("HOOK_METHOD -> WorldManager::CreateChoiceBox -> Begin (CustomEvents.cpp)\n")
+    if (deathEventActive) return;
+
     auto customEvents = CustomEventsParser::GetInstance();
 
     SetCheckCargo(customEvents->GetCustomEvent(event->eventName));
@@ -4272,6 +4275,8 @@ static bool g_noASBPlanet = false;
 HOOK_METHOD(WorldManager, UpdateLocation, (LocationEvent *loc) -> void)
 {
     LOG_HOOK("HOOK_METHOD -> WorldManager::UpdateLocation -> Begin (CustomEvents.cpp)\n")
+    if (deathEventActive) return;
+
     CustomEvent *customEvent = CustomEventsParser::GetInstance()->GetCustomEvent(loc->eventName);
 
     if (!loadingGame)
@@ -5825,7 +5830,6 @@ HOOK_METHOD_PRIORITY(WorldManager, CreateLocation, 100, (Location *location) -> 
 HOOK_METHOD_PRIORITY(WorldManager, UpdateLocation, 100, (LocationEvent *event) -> void)
 {
     LOG_HOOK("HOOK_METHOD_PRIORITY -> WorldManager::UpdateLocation -> Begin (CustomEvents.cpp)\n")
-
     if (event->stuff.crew < 0)
     {
         ShipManager *ship = G_->GetShipManager(0);
@@ -6178,6 +6182,7 @@ HOOK_METHOD(WorldManager, ModifyStatusEffect, (StatusEffect effect, ShipManager 
     }
 }
 
+/*
 // Death Event
 
 bool deathEventActive = false;
@@ -6195,6 +6200,7 @@ HOOK_METHOD(WorldManager, CreateChoiceBox0, (LocationEvent *event) -> void)
     if (deathEventActive) return CreateChoiceBox(event);
     return super(event);
 }
+*/
 
 HOOK_METHOD(GameOver, OpenText, (const std::string &text) -> void)
 {

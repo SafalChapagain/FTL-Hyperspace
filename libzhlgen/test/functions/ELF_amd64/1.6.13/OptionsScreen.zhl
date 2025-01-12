@@ -1,13 +1,13 @@
 "!8b50f88d4aff8948f889d0ebc2906690":
 noHook __amd64 void OptionsScreen::DO_NOT_HOOK_2();
 ".4157":
-cleanup __amd64 void OptionsScreen::Open(OptionsScreen *this, bool mainMenu);
+cleanup __amd64 void OptionsScreen::Open(OptionsScreen* this, bool mainMenu);
 ".41574156415549bdb76ddbb66ddbb66d4154554889fd":
-cleanup __amd64 void OptionsScreen::OnLoop(OptionsScreen *this);
+cleanup __amd64 void OptionsScreen::OnLoop(OptionsScreen* this);
 "!.8970f889d0e942ffffff900f1f840000000000":
 noHook __amd64 void OptionsScreen::DO_NOT_HOOK_1();
 ".41":
-cleanup __amd64 void OptionsScreen::OnInit(OptionsScreen *this);
+cleanup __amd64 void OptionsScreen::OnInit(OptionsScreen* this);
 
 
 struct OptionsScreen {{

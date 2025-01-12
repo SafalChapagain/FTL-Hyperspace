@@ -1,20 +1,15 @@
-"554889e54157415641554154534883ec5889d348":
-static cleanup __amd64 bool ShipGenerator::UpgradeSystem(ShipManager *ship, std::vector<int> &systemMaxes, unsigned int sysId);
-"554889e54157415641554154534881ecc80100004989d649":
-static cleanup __amd64 std::vector<CrewBlueprint> ShipGenerator::GetPossibleCrewList(ShipManager *ship, const std::string &crewList, unsigned int flags);
-"554889e54157415641554154534881ec880000004589c649":
-static cleanup __amd64 std::vector<WeaponBlueprint*> ShipGenerator::GetPossibleWeaponList(ShipManager *ship, const std::string &weaponList, int scrap, unsigned int flags);
-"554889e54157415641554154534881ecb80000004589cc44":
-static cleanup __amd64 std::vector<DroneBlueprint*> ShipGenerator::GetPossibleDroneList(ShipManager *ship, const std::string &droneList, int scrap, unsigned int flags, bool repeat);
-"554889e54157415641554154534883ec284989f64989fc49":
-static cleanup __amd64 std::vector<int> ShipGenerator::GenerateSystemMaxes(const ShipBlueprint &ship, int level);
-"554889e54157415641554154534881ec????????48895590":
-static cleanup __amd64 std::vector<int> ShipGenerator::GetPossibleSystemUpgrades0(ShipManager *ship, std::vector<int> &systemMaxes, int scrap, int type);
-"NOT LISTED IN GHIDRA":
-static cleanup __amd64 std::vector<int> ShipGenerator::GetPossibleSystemUpgrades1(ShipManager *ship, std::vector<int> &systemMaxes, int scrap, int type); /* Not listed in Ghidra */
-"NOT LISTED IN GHIDRA":
-static cleanup __amd64 std::vector<int> ShipGenerator::GetPossibleSystemUpgrades2(ShipManager *ship, std::vector<int> &systemMaxes, int scrap, int type); /* Not listed in Ghidra */
-"554889e54157415641554154534881ec88070000":
+// Continue from ShipEvent::constructor (hyper efficiency™)
+"!.554889e54157415641554154534881ec88070000":
 static cleanup __amd64 ShipManager* ShipGenerator::CreateShip(const std::string& name, int sector, ShipEvent& event);
-"554889e54157415641554154534881ec9800000048895590":
-static cleanup __amd64 std::vector<int> ShipGenerator::GetPossibleSystemUpgrades(ShipManager *ship, std::vector<int> &systemMaxes, int scrap, int type);
+"!.554889e54157415641554154534883ec284989f64989fc49":
+static cleanup __amd64 std::vector<int> ShipGenerator::GenerateSystemMaxes(const ShipBlueprint& ship, int level);
+"!.554889e54157415641554154534883ec5889d348":
+static cleanup __amd64 bool ShipGenerator::UpgradeSystem(ShipManager* ship, std::vector<int>& systemMaxes, unsigned int sysId);
+"!.554889e54157415641554154534881ec9800000048895590":
+static cleanup __amd64 std::vector<int> ShipGenerator::GetPossibleSystemUpgrades(ShipManager* ship, std::vector<int>& systemMaxes, int scrap, int type);
+"!.554889e54157415641554154534881ec880000004589c649":
+static cleanup __amd64 std::vector<WeaponBlueprint*> ShipGenerator::GetPossibleWeaponList(ShipManager* ship, const std::string& weaponList, int scrap, unsigned int flags);
+"!.554889e54157415641554154534881ecb80000004589cc44":
+static cleanup __amd64 std::vector<DroneBlueprint*> ShipGenerator::GetPossibleDroneList(ShipManager* ship, const std::string& droneList, int scrap, unsigned int flags, bool repeat);
+".554889e54157415641554154534881ecc80100004989d649":
+static cleanup __amd64 std::vector<CrewBlueprint> ShipGenerator::GetPossibleCrewList(ShipManager* ship, const std::string& crewList, unsigned int flags);

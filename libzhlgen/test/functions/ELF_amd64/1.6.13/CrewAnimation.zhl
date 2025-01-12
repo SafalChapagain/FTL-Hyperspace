@@ -1,29 +1,29 @@
 "41574889f841564155415455534883ec68":
-cleanup __amd64 void CrewAnimation::destructor(CrewAnimation *this);
+cleanup __amd64 void CrewAnimation::destructor(CrewAnimation* this);
 ".8b475c83f8ff":
-cleanup __amd64 int CrewAnimation::GetFiringFrame(CrewAnimation *this);
+cleanup __amd64 int CrewAnimation::GetFiringFrame(CrewAnimation* this);
 "!.41554531ed415449bc000000000000803f55":
-cleanup __amd64 void CrewAnimation::OnRenderProps(CrewAnimation *this);
+cleanup __amd64 void CrewAnimation::OnRenderProps(CrewAnimation* this);
 ".41544189f45589d5534889fb4883ec50":
-cleanup __amd64 void CrewAnimation::OnRender(CrewAnimation *this, float scale, int selectedState, bool outlineOnly);
+cleanup __amd64 void CrewAnimation::OnRender(CrewAnimation* this, float scale, int selectedState, bool outlineOnly);
 "!.53488d9fd80800004889df":
-cleanup __amd64 bool CrewAnimation::FireShot(CrewAnimation *this);
+cleanup __amd64 bool CrewAnimation::FireShot(CrewAnimation* this);
 ".4155415455534889fb4881ecf80000004084f6":
-cleanup __amd64 void CrewAnimation::RenderIcon(CrewAnimation *this, bool border);
+cleanup __amd64 void CrewAnimation::RenderIcon(CrewAnimation* this, bool border);
 ".415455534889fb4883ec308b4760":
-cleanup __amd64 void CrewAnimation::OnUpdate(CrewAnimation *this, Pointf position, bool moving, bool fighting, bool repairing, bool dying, bool onFire);
+cleanup __amd64 void CrewAnimation::OnUpdate(CrewAnimation* this, Pointf position, bool moving, bool fighting, bool repairing, bool dying, bool onFire);
 ".534889fb4883ec3080beec09000000":
-cleanup __amd64 std::string CrewAnimation::GetDeathSound(CrewAnimation *this);
+cleanup __amd64 std::string CrewAnimation::GetDeathSound(CrewAnimation* this);
 ".534889fb4883ec30":
-cleanup __amd64 std::string CrewAnimation::GetShootingSound(CrewAnimation *this);
+cleanup __amd64 std::string CrewAnimation::GetShootingSound(CrewAnimation* this);
 ".4157488d87e009000041564889c64155415455534889fb4881ec08020000":
-cleanup __amd64 void CrewAnimation::SetupStrips(CrewAnimation *this);
+cleanup __amd64 void CrewAnimation::SetupStrips(CrewAnimation* this);
 ".415783f20141564155415455534889fb4889f74881ec08010000":
-cleanup __amd64 void CrewAnimation::OnInit(CrewAnimation *this, const std::string& name, Pointf position, bool enemy);
+cleanup __amd64 void CrewAnimation::OnInit(CrewAnimation* this, const std::string& name, Pointf position, bool enemy);
 ".415741564155415455534881ec98000000":
-cleanup __amd64 void CrewAnimation::constructor(CrewAnimation *this, int shipId, const std::string& race, Pointf unk, bool hostile);
+cleanup __amd64 void CrewAnimation::constructor(CrewAnimation* this, int _shipId, const std::string& _race, Pointf _position, bool _enemy);
 ".415741564155415455534889fb4883ec6848897c2430":
-cleanup __amd64 void CrewAnimation::OnUpdateEffects(CrewAnimation *this);
+cleanup __amd64 void CrewAnimation::OnUpdateEffects(CrewAnimation* this);
 
 
 struct CrewAnimation
@@ -32,9 +32,9 @@ struct CrewAnimation
 	{
 	}
 
-	CrewAnimation(int _shipId, const std::string& _race, Pointf _unk, char _hostile)
+	CrewAnimation(int shipId, const std::string& race, Pointf position, bool enemy)
 	{
-		this->constructor(_shipId, _race, _unk, _hostile);
+		this->constructor(shipId, race, position, enemy);
 	}
 
 	bool _HS_CustomDeath();

@@ -1,2 +1,2 @@
 "534889fb4883ec2080bf6807000000":
-cleanup __amd64 void CrewCustomizeBox::CheckContents(CrewCustomizeBox *this);
+cleanup __amd64 void CrewCustomizeBox::CheckContents(CrewCustomizeBox* this);

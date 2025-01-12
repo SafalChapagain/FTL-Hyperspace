@@ -1,15 +1,15 @@
 "565383ec148b5c24208db310010000":
-cleanup __cdecl void BombProjectile::OnUpdate(BombProjectile *this);
+cleanup __cdecl void BombProjectile::OnUpdate(BombProjectile* this);
 ".5589e557565383ec7c8b5d0c8b7508":
-cleanup __cdecl void BombProjectile::CollisionCheck(BombProjectile *this, Collideable *other);
+cleanup __cdecl void BombProjectile::CollisionCheck(BombProjectile* this, Collideable* other);
 ".5589e557565381ecdc0000008b451c8b55208d9d54ffffff":
-cleanup __cdecl void BombProjectile::constructor(BombProjectile *this, Pointf _position, int _ownerId, int _targetId, Pointf _target);
+cleanup __cdecl void BombProjectile::constructor(BombProjectile* this, Pointf _position, int _ownerId, int _targetId, Pointf _target);
 
 
 struct BombProjectile
 {{
-	BombProjectile(Pointf _position, int _ownerId, int _targetId, Pointf _target)
+	BombProjectile(Pointf position, int ownerId, int targetId, Pointf target)
 	{
-		this->constructor(_position, _ownerId, _targetId, _target);
+		this->constructor(position, ownerId, targetId, target);
 	}
 }};

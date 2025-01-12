@@ -1,6 +1,6 @@
 "578d7c240883e4f0ff77fc5589e557565383ec4c8b3f85ff78??":
-__thiscall void WeaponSystem::RemoveWeapon(WeaponSystem *this, int slot);
+__thiscall void WeaponSystem::RemoveWeapon(WeaponSystem* this, int slot);
 "5589e556538b750889cb83e4f0e8????????39f089d90f4fc6":
-virtual __thiscall void WeaponSystem::SetBonusPower(WeaponSystem *this, int amount, int permanentPower);
+virtual __thiscall void WeaponSystem::SetBonusPower(WeaponSystem* this, int amount, int permanentPower);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec4ce8????????8b8ec80100008b86cc01000031d229c8c1f80285c0":
-__thiscall void WeaponSystem::OnLoop(WeaponSystem *this);
+__thiscall void WeaponSystem::OnLoop(WeaponSystem* this);

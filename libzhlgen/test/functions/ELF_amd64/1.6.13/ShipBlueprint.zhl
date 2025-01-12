@@ -1,8 +1,11 @@
 "4154554889fd534883ec10488b874002000048c707":
-cleanup __amd64 void ShipBlueprint::destructor(ShipBlueprint *this);
+cleanup __amd64 void ShipBlueprint::destructor(ShipBlueprint* this);
 
 
 struct ShipBlueprint
 {{
-
+    ~ShipBlueprint()
+    {
+        this->destructor();
+    }
 }};

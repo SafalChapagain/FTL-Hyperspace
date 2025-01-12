@@ -1,6 +1,7 @@
-"554889e54157415641554154534883ec??4989d74889f34989fc":
-cleanup __amd64 std::string TextString::GetText(TextString *this);
-
+/* Missing on Mac
+"NULL":
+cleanup __amd64 std::string TextString::GetText(TextString* this);
+*/
 
 struct TextString depends (TextLibrary)
 {{
@@ -8,4 +9,6 @@ struct TextString depends (TextLibrary)
 	{
 		isLiteral = true;
 	}
+	
+	std::string GetText();
 }};

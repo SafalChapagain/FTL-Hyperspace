@@ -1,8 +1,8 @@
 "578d????0883e4??ff????5589e557565389cb89de81ec????????":
-__thiscall void SpaceStatus::OnInit(SpaceStatus *this, SpaceManager *space, Point pos);
+__thiscall void SpaceStatus::OnInit(SpaceStatus* this, SpaceManager* space, Point pos);
 "578d????0883e4f0ff????5589e557565381ecac0000008b7160":
-__thiscall void SpaceStatus::RenderWarningText(SpaceStatus *this, int effect, int textOffset);
+__thiscall void SpaceStatus::RenderWarningText(SpaceStatus* this, int effect, int textOffset);
 "578d????0883e4f0ff????5589e557565389cb83ec2c8b492c":
-__thiscall void SpaceStatus::OnRender(SpaceStatus *this);
+__thiscall void SpaceStatus::OnRender(SpaceStatus* this);
 "578d????0883e4f0ff????5589e557565389cb83ec4c8b??8b4130":
-__thiscall void SpaceStatus::MouseMove(SpaceStatus *this, int mX, int mY);
+__thiscall void SpaceStatus::MouseMove(SpaceStatus* this, int mX, int mY);

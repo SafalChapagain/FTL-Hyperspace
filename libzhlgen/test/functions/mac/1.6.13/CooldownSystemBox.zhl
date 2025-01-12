@@ -1,14 +1,15 @@
-"554889e54157415641554154534883ec??4189cf4989f4":
-cleanup __amd64 void CooldownSystemBox::constructor(CooldownSystemBox *this, Point pos, ShipSystem *sys, bool roundDown);
-"554889e541574156534883ec384989fe400fb6f6":
-cleanup __amd64 void CooldownSystemBox::OnRender(CooldownSystemBox *this, bool ignoreStatus);
+// Continue from ControlsScreen::OnRender (hyper efficiency™)
+".554889e54157415641554154534883ec584189cf49":
+cleanup __amd64 void CooldownSystemBox::constructor(CooldownSystemBox* this, Point _position, ShipSystem* _system, bool _roundDown);
+".554889e541574156534883ec384989fe40":
+cleanup __amd64 void CooldownSystemBox::OnRender(CooldownSystemBox* this, bool ignoreStatus);
 
 
 struct CooldownSystemBox
 {{
-	CooldownSystemBox(Point pos, ShipSystem *sys, bool roundDown)
+	CooldownSystemBox(Point position, ShipSystem* system, bool roundDown)
 	{
-		this->constructor(pos, sys, roundDown);
+		this->constructor(position, system, roundDown);
 	}
 	
 	CooldownSystemBox() { }

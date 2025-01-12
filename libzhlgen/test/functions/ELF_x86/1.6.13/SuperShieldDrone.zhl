@@ -1,11 +1,12 @@
 "5557565383ec??8b44????8d????1c8b5c????8d????1a8944????":
-cleanup __cdecl void SuperShieldDrone::constructor(SuperShieldDrone *this, int iShipId, int selfId, DroneBlueprint *blueprint);
+cleanup __cdecl void SuperShieldDrone::constructor(SuperShieldDrone* this, int _iShipId, int _selfId, DroneBlueprint* _blueprint);
 "565383ec348b5c2440891c24e8bffcff":
-cleanup __cdecl void SuperShieldDrone::OnLoop(SuperShieldDrone *this);
+cleanup __cdecl void SuperShieldDrone::OnLoop(SuperShieldDrone* this);
+
 
 struct SuperShieldDrone
 {{
-	SuperShieldDrone(int iShipId, int selfId, DroneBlueprint *blueprint)
+	SuperShieldDrone(int iShipId, int selfId, DroneBlueprint* blueprint)
 	{
 		this->constructor(iShipId, selfId, blueprint);
 	}

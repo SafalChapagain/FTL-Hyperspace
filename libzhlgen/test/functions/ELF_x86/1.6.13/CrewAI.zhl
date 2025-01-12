@@ -1,20 +1,20 @@
 "5589e557565381ecbc0000008b5d08c78574ffffff00000000":
-cleanup __cdecl void CrewAI::UpdateDrones(CrewAI *this);
+cleanup __cdecl void CrewAI::UpdateDrones(CrewAI* this);
 "5557565331db83ec1c8b7424308b56308b4634":
-cleanup __cdecl void CrewAI::AssignCrewmembers(CrewAI *this);
+cleanup __cdecl void CrewAI::AssignCrewmembers(CrewAI* this);
 "5557565383ec1c8b6c24408b5c24348b742438":
-cleanup __cdecl int CrewAI::PrioritizeTask(CrewAI *this, CrewTask task, int crewId);
+cleanup __cdecl int CrewAI::PrioritizeTask(CrewAI* this, CrewTask task, int crewId);
 "5557565383ec3c8b6c24508b451c8b5518":
-cleanup __cdecl void CrewAI::UpdateIntruders(CrewAI *this);
+cleanup __cdecl void CrewAI::UpdateIntruders(CrewAI* this);
 "5557565383ec2c8b7c24448b5c24408b7424488b4778":
-cleanup __cdecl int CrewAI::PrioritizeIntruderRoom(CrewAI *this, CrewMember *crew, int roomId, int target);
+cleanup __cdecl int CrewAI::PrioritizeIntruderRoom(CrewAI* this, CrewMember* crew, int roomId, int target);
 "5557565383ec5c8b5c24708b5424748b430c":
-cleanup __cdecl void CrewAI::UpdateCrewMember(CrewAI *this, int crewId);
+cleanup __cdecl void CrewAI::UpdateCrewMember(CrewAI* this, int crewId);
 "5589e557565331db83ec4c8b7d088b4f0c8b4710":
-cleanup __cdecl void CrewAI::CheckForHealing(CrewAI *this);
+cleanup __cdecl void CrewAI::CheckForHealing(CrewAI* this);
 "5589e557565383ec4c8b5d088b0389442404":
-cleanup __cdecl void CrewAI::OnLoop(CrewAI *this);
+cleanup __cdecl void CrewAI::OnLoop(CrewAI* this);
 "5589e557565383ec7c8b7d088b07c6470801":
-cleanup __cdecl void CrewAI::CheckForProblems(CrewAI *this);
+cleanup __cdecl void CrewAI::CheckForProblems(CrewAI* this);
 "5589e557565383ec5c8b75088b4d108b5d0c":
-cleanup __cdecl int CrewAI::DangerRating(CrewAI *this,int roomId,int crewId);
+cleanup __cdecl int CrewAI::DangerRating(CrewAI* this,int roomId,int crewId);

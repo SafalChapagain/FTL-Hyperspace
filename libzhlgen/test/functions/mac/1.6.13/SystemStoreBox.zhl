@@ -1,21 +1,21 @@
-"554889e553504889fb4883bb78010000":
-cleanup __amd64 bool SystemStoreBox::CanHold(SystemStoreBox *this);
-"554889e541574156534883ec184889fb89b3e001":
-cleanup __amd64 void SystemStoreBox::SetExtraData(SystemStoreBox *this, int droneChoice);
-"554889e5534883ec184889fb488bbb78":
-cleanup __amd64 void SystemStoreBox::Activate(SystemStoreBox *this);
 "554889e54157415641554154534881eca80000004189ce4889fb418d46fa":
-cleanup __amd64 void SystemStoreBox::constructor(SystemStoreBox *this, ShipManager *shopper, Equipment *equip, int sys);
-"554889e54156534883ec404889fbe83d":
-cleanup __amd64 void SystemStoreBox::Purchase(SystemStoreBox *this);
-"554889e5415741564154534883ec404189d64189":
-cleanup __amd64 void SystemStoreBox::MouseMove(SystemStoreBox *this, int mX, int mY);
+cleanup __amd64 void SystemStoreBox::constructor(SystemStoreBox* this, ShipManager* _ship, Equipment* _equip, int _system);
+".554889e541574156534883ec184889fb89b3e001":
+cleanup __amd64 void SystemStoreBox::SetExtraData(SystemStoreBox* this, int droneChoice);
+"!.554889e553504889fb4883bb78010000":
+cleanup __amd64 bool SystemStoreBox::CanHold(SystemStoreBox* this);
+".554889e5415741564154534883ec404189d64189":
+cleanup __amd64 void SystemStoreBox::MouseMove(SystemStoreBox* this, int mouseX, int mouseY);
+"!.554889e5534883ec184889fb488bbb78":
+cleanup __amd64 void SystemStoreBox::Activate(SystemStoreBox* this);
+".554889e54156534883ec404889fbe83d":
+cleanup __amd64 void SystemStoreBox::Purchase(SystemStoreBox* this);
 
 
 struct SystemStoreBox
 {{
-	SystemStoreBox(ShipManager *_shopper, Equipment *_equip, int _sys)
+	SystemStoreBox(ShipManager* ship, Equipment* equip, int system)
 	{
-		this->constructor(_shopper, _equip, _sys);
+		this->constructor(ship, equip, system);
 	}
 }};

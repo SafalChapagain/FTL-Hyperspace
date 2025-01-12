@@ -1,15 +1,15 @@
 "5557565383ec3c8b4424588d5c242c8b7424508b7c245c":
-cleanup __cdecl void CombatDrone::constructor(CombatDrone *this, int iShipId, int selfId, const DroneBlueprint* bp);
+cleanup __cdecl void CombatDrone::constructor(CombatDrone* this, int _iShipId, int _selfId, const DroneBlueprint* _blueprint);
 "565383ec148b7424248b5c242085f674??8b0389742404":
-cleanup __cdecl void CombatDrone::SetWeaponTarget(CombatDrone *this, Targetable *target);
+cleanup __cdecl void CombatDrone::SetWeaponTarget(CombatDrone* this, Targetable* target);
 "5589e55383ec248b5d088b03":
-cleanup __cdecl void CombatDrone::PickTarget(CombatDrone *this);
+cleanup __cdecl void CombatDrone::PickTarget(CombatDrone* this);
 
 
 struct CombatDrone depends (DroneBlueprint)
 {{
-	CombatDrone(int shipId, int self, const DroneBlueprint* bp)
+	CombatDrone(int iShipId, int selfId, const DroneBlueprint* blueprint)
 	{
-		this->constructor(shipId, self, bp);
+		this->constructor(iShipId, selfId, blueprint);
 	}
 }};

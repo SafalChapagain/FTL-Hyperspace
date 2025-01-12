@@ -1,2 +1,3 @@
-"554889e54156534883ec204889fb80bbd8070000":
-cleanup __amd64 void CrewCustomizeBox::CheckContents(CrewCustomizeBox *this);
+// Continue from CrewControl::KeyDown (hyper efficiency™)
+".554889e54156534883ec204889fb80bbd8":
+cleanup __amd64 void CrewCustomizeBox::CheckContents(CrewCustomizeBox* this);

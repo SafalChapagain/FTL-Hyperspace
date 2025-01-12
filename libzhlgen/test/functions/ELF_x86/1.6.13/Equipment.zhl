@@ -1,22 +1,22 @@
 "565331db83ec148b742420893424":
-cleanup __cdecl void Equipment::Open(Equipment *this);
+cleanup __cdecl void Equipment::Open(Equipment* this);
 "!.e97b660000908d76008dbc2700000000":
-cleanup __cdecl void Equipment::Close(Equipment *this);
+cleanup __cdecl void Equipment::Close(Equipment* this);
 "5557565381ec8c0000008bac24a00000008bb5200100008b8d1c010000":
-cleanup __cdecl void Equipment::OnInit(Equipment *this, ShipManager *ship);
+cleanup __cdecl void Equipment::OnInit(Equipment* this, ShipManager* ship);
 "55575631f65383ec2c8b5c24408b83140100002b8310010000":
-cleanup __cdecl void Equipment::OnLoop(Equipment *this);
+cleanup __cdecl void Equipment::OnLoop(Equipment* this);
 "5383ec188b4424288b5c242089442408":
-cleanup __cdecl void Equipment::MouseClick(Equipment *this, int mX, int mY);
+cleanup __cdecl void Equipment::MouseClick(Equipment* this, int mX, int mY);
 "565383ec548b5c246080bb3c01000000":
-cleanup __cdecl void Equipment::MouseUp(Equipment *this, int mX, int mY);
+cleanup __cdecl void Equipment::MouseUp(Equipment* this, int mX, int mY);
 "5557565383ec4c8b44246c8b5c2460":
-cleanup __cdecl void Equipment::AddWeapon(Equipment *this, WeaponBlueprint *bp, bool unk1, bool unk2);
+cleanup __cdecl void Equipment::AddWeapon(Equipment* this, WeaponBlueprint* bp, bool free, bool forceCargo);
 "57565383ec30807c244c00":
-cleanup __cdecl void Equipment::AddDrone(Equipment *this, DroneBlueprint *bp, bool unk1, bool unk2);
+cleanup __cdecl void Equipment::AddDrone(Equipment* this, DroneBlueprint* bp, bool free, bool forceCargo);
 "5557565383ec4c8b7c24648d742430":
-cleanup __cdecl void Equipment::AddAugment(Equipment *this, AugmentBlueprint *bp, bool unk1, bool unk2);
+cleanup __cdecl void Equipment::AddAugment(Equipment* this, AugmentBlueprint* bp, bool free, bool forceCargo);
 "5557565383ec3c8b7424548d5c242c":
-cleanup __cdecl void Equipment::AddToCargo(Equipment *this, std::string &name);
+cleanup __cdecl void Equipment::AddToCargo(Equipment* this, std::string& name);
 "5557565383ec1c8b7424348b7c2430":
-cleanup __cdecl std::vector<std::string> Equipment::GetCargoHold(Equipment *this);
+cleanup __cdecl std::vector<std::string> Equipment::GetCargoHold(Equipment* this);

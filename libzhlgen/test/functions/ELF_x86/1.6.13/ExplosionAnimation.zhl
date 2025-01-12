@@ -1,2 +1,2 @@
 "5557565381ec6c0100008b84248c0100008bb424800100008bac2484010000":
-cleanup __cdecl void ExplosionAnimation::OnInit(ExplosionAnimation *this, rapidxml::xml_node<char>* node, const std::string& name, Point glowOffset);
+cleanup __cdecl void ExplosionAnimation::OnInit(ExplosionAnimation* this, rapidxml::xml_node<char>* node, const std::string& name, Point glowOffset);

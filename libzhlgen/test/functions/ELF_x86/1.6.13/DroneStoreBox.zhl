@@ -1,11 +1,14 @@
 "5557565383ec2c8d44241a8b5c24408d7c241c8b74244c89442408c7442404????????893c24e8????????8b442448897c2404891c248944240c":
-cleanup __cdecl void DroneStoreBox::constructor(DroneStoreBox *this, ShipManager *ship, Equipment *equip, const DroneBlueprint* bp);
+cleanup __cdecl void DroneStoreBox::constructor(DroneStoreBox* this, ShipManager* _ship, Equipment* _equipScreen, const DroneBlueprint* _blueprint);
+
+
+
 
 struct DroneStoreBox
 {{
-	DroneStoreBox(ShipManager *_ship, Equipment *_equip, const DroneBlueprint* _bp)
+	DroneStoreBox(ShipManager* ship, Equipment* equipScreen, const DroneBlueprint* blueprint)
 	{
-		this->constructor(_ship, _equip, _bp);
+		this->constructor(ship, equipScreen, blueprint);
 	}
 	
 	DroneStoreBox()

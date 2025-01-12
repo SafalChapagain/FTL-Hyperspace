@@ -1,7 +1,8 @@
-"554889e54156534989f64889fb488b7b":
-cleanup __amd64 void CachedPrimitive::OnRender(CachedPrimitive *this, const GL_Color& color);
-"!554889e553504889fb488d05????????488903488b7b08":
-cleanup __amd64 void CachedPrimitive::destructor(CachedPrimitive *this);
+// Continue from CachedImage::destructor (hyper efficiency™)
+"!.554889e5488d05????1e00488907488b7f085de918":
+cleanup __amd64 void CachedPrimitive::destructor(CachedPrimitive* this);
+"!.554889e54156534989f64889fb488b7b":
+cleanup __amd64 void CachedPrimitive::OnRender(CachedPrimitive* this, const GL_Color& color);
 
 
 struct CachedPrimitive

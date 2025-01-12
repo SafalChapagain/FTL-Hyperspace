@@ -1,7 +1,7 @@
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????8b078b57048b77088b7f0c898568ffffff895584":
-__thiscall void CAchievement::OnRender(CAchievement *this, Point pos, int selected, bool showNew);
+__thiscall void CAchievement::OnRender(CAchievement* this, Point pos, int selected, bool showNew);
 "578d41088d7c240883e4f0ff77fc5589e557565389cf8d75d08d5dd883ec3c8901":
-__thiscall void CAchievement::constructor(CAchievement *this);
+__thiscall void CAchievement::constructor(CAchievement* this);
 
 
 struct CAchievement 

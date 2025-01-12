@@ -1,30 +1,30 @@
 "578d7c240883e4f0ff77fc5589f889e557565389cf81ec????????8b70088b088b50048b580c":
-__thiscall void CrewBox::constructor(CrewBox *this, Point pos, CrewMember *crew, int number);
+__thiscall void CrewBox::constructor(CrewBox* this, Point _position, CrewMember* _crew, int _number);
 "578d7c240883e4f0ff77fc5589e557565389cb81c1????????83ec6ce8????????8d8b74020000e8????????":
-__thiscall void CrewBox::OnRender(CrewBox *this);
+__thiscall void CrewBox::OnRender(CrewBox* this);
 "578d7c240883e4f0ff77fc5589f889e557565389cf81ec????????8b308b4004c744240c00000000":
-__thiscall CrewMember *CrewBox::GetSelected(CrewBox *this, int mouseX, int mouseY);
+__thiscall CrewMember* CrewBox::GetSelected(CrewBox* this, int mX, int mY);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec1c8b49208b378b11":
-__thiscall void CrewBox::OnLoop(CrewBox *this, bool selected);
+__thiscall void CrewBox::OnLoop(CrewBox* this, bool selected);
 "578d7c240883e4f0ff77fc5589e5575389cb83ec3080b9300100000075??8b43048d4de8":
-__thiscall void CrewBox::OnRenderSkillLevel(CrewBox *this);
+__thiscall void CrewBox::OnRenderSkillLevel(CrewBox* this);
 "5589e557565389ce83e4f083ec208b813c010000894c2418890424e8????????8b8640010000890424e8????????8b8644010000890424e8????????8b8648010000890424":
-__thiscall void CrewBox::destructor(CrewBox *this);
+__thiscall void CrewBox::destructor(CrewBox* this);
 "5589e5530fb6596883e4f084db74130fb6596984db740b8b49208b01ff90c400000089d88b5dfcc9":
-__thiscall bool CrewBox::MouseClick(CrewBox *this);
+__thiscall bool CrewBox::MouseClick(CrewBox* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec3c8b49208b01ff90c80000003c0119f6":
-__thiscall void CrewBox::RenderIcon(CrewBox *this);
+__thiscall void CrewBox::RenderIcon(CrewBox* this);
 "578d7c240883e4f0ff77fc5589e55756538d5dd089ce83ec6c8b412089d9890424":
-__thiscall void CrewBox::RenderLabels(CrewBox *this);
+__thiscall void CrewBox::RenderLabels(CrewBox* this);
 "80b91c010000000f859b0000008b4120f30f1080f00600000f2e05????????0f868300000055660fefd2660fefc989e583e4f083ec308b4108":
-__thiscall void CrewBox::RenderCloneDying(CrewBox *this);
+__thiscall void CrewBox::RenderCloneDying(CrewBox* this);
 
 
 struct CrewBox
 {{
-	CrewBox(Point pos_, CrewMember *crew_, int number_)
+	CrewBox(Point position, CrewMember* crew, int number)
 	{
-		this->constructor(pos_, crew_, number_);
+		this->constructor(position, crew, number);
 	}
 	
 	void DestroyCustom();

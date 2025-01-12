@@ -1,6 +1,15 @@
 "41564155415455534889fb488d6b784881ece0000000":
-cleanup __amd64 void MenuScreen::constructor(MenuScreen *this);
+cleanup __amd64 void MenuScreen::constructor(MenuScreen* this);
 ".41564155415455534889fb4881eca000000080bf0803000000":
-cleanup __amd64 void MenuScreen::OnRender(MenuScreen *this);
+cleanup __amd64 void MenuScreen::OnRender(MenuScreen* this);
 ".415641554989fd488d7f7841":
-cleanup __amd64 void MenuScreen::Open(MenuScreen *this);
+cleanup __amd64 void MenuScreen::Open(MenuScreen* this);
+
+
+struct MenuScreen
+{{
+    MenuScreen()
+    {
+        this->constructor();
+    }
+}};

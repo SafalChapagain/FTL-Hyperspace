@@ -9,9 +9,9 @@ struct GL_Color {{
 	static GL_Color FromHSV(float fH, float fS, float fV, float fA)
 	{
 		float fR, fB, fG;
-		float fC = fV * fS; // Chroma
+		float fC = fV*  fS; // Chroma
 		float fHPrime = fmod(fH / 60.0, 6);
-		float fX = fC * (1 - fabs(fmod(fHPrime, 2) - 1));
+		float fX = fC*  (1 - fabs(fmod(fHPrime, 2) - 1));
 		float fM = fV - fC;
 		
 		if (0 <= fHPrime && fHPrime < 1) 

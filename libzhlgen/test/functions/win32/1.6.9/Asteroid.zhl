@@ -1,12 +1,12 @@
 "578d7c240883e4f0ff77fc5589e5575389cb83ec4080b9b0000000007415c783a402000000000000":
-__thiscall void Asteroid::OnUpdate(Asteroid *this);
+__thiscall void Asteroid::OnUpdate(Asteroid* this);
 "578d7c240883e4f0ff77fc5589e557565381ec5c010000898dc0feffff8d8d18ffffff":
-__thiscall void Asteroid::constructor(Asteroid *this, Pointf pos, int destinationSpace);
+__thiscall void Asteroid::constructor(Asteroid* this, Pointf _position, int _destinationSpace);
 
 struct Asteroid
 {{
-	Asteroid(Pointf pos, int destinationSpace)
+	Asteroid(Pointf position, int destinationSpace)
 	{
-		this->constructor(pos, destinationSpace);
+		this->constructor(position, destinationSpace);
 	}
 }};

@@ -16,52 +16,52 @@ static cleanup uint64_t freetype::easy_printCenter_DO_NOT_USE_DIRECTLY(int fontS
 static cleanup __cdecl void freetype::easy_printAutoShrink(int fontId, float x, float y, int maxWidth, bool centered, const std::string& text);
 
 "55660fefc9660fefc089e55389cb83e4f083ec20":
-__thiscall void freetype::font_data::init(freetype::font_data *this, const void *buffer, int bufferSize, unsigned int h, bool glow);
+__thiscall void freetype::font_data::init(freetype::font_data* this, const void* buffer, int bufferSize, unsigned int h, bool glow);
 "5589e583e4f083ec108b4104890424e8????????c9c3":
-__thiscall void freetype::font_data::clean(freetype::font_data *this);
+__thiscall void freetype::font_data::clean(freetype::font_data* this);
 "5589e5565383e4f083ec308b4d08f30f104d0c85c97e??3b0d????????7d??803d????????008b15????????74??8b1d????????39d97c??8d349d000000008b143285d274??89c829d88db60000000039c389c17f??8b143229d885d275??660fefc0eb??8b1c8a660fefc085db74??0f2ec173??0f2ec876??0f2e4b247a??75??f30f10432c":
 cleanup __cdecl float font_baseline(int font_id, float size);
 "5589e5565383e4f083ec308b4d08f30f104d0c85c97e??3b0d????????7d??803d????????008b15????????74??8b1d????????39d97c??8d349d000000008b143285d274??89c829d88db60000000039c389c17f??8b143229d885d275??660fefc0eb??8b1c8a660fefc085db74??0f2ec173??0f2ec876??0f2e4b247a??75??f30f104328":
 cleanup __cdecl float font_height(int font_id, float size);
 
 "!89108b559cc705(???????\?)000000408950048b55a0":
-float *Global_freetype_sil_freetype_outline;
+float* Global_freetype_sil_freetype_outline;
 
 struct freetype
 {{
 	static Pointf easy_measurePrintLines(int fontSize, float x, float y, int line_length, const std::string& text)
 	{
         uint64_t ret = freetype::easy_measurePrintLines_DO_NOT_USE_DIRECTLY(fontSize, x, y, line_length, text);
-        return *((Pointf*) &ret);
+        return* ((Pointf*)& ret);
 	}
 	
 	static Pointf easy_print(int fontSize, float x, float y, const std::string& text)
 	{
         uint64_t ret = freetype::easy_print_DO_NOT_USE_DIRECTLY(fontSize, x, y, text);
-        return *((Pointf*) &ret);
+        return* ((Pointf*)& ret);
 	}
 	
     static Pointf easy_printRightAlign(int fontSize, float x, float y, const std::string& text)
     {
         uint64_t ret = freetype::easy_printRightAlign_DO_NOT_USE_DIRECTLY(fontSize, x, y, text);
-        return *((Pointf*) &ret);
+        return* ((Pointf*)& ret);
     }
     
     static Pointf easy_printNewlinesCentered(int fontSize, float x, float y, int line_length, const std::string& text)
     {
         uint64_t ret = freetype::easy_printNewlinesCentered_DO_NOT_USE_DIRECTLY(fontSize, x, y, line_length, text);
-        return *((Pointf*) &ret);
+        return* ((Pointf*)& ret);
     }
     
     static Pointf easy_printAutoNewlines(int fontSize, float x, float y, int line_length, const std::string& text)
     {
         uint64_t ret = freetype::easy_printAutoNewlines_DO_NOT_USE_DIRECTLY(fontSize, x, y, line_length, text);
-        return *((Pointf*) &ret);
+        return* ((Pointf*)& ret);
     }
     
     static Pointf easy_printCenter(int fontSize, float x, float y, const std::string& text)
     {
         uint64_t ret = freetype::easy_printCenter_DO_NOT_USE_DIRECTLY(fontSize, x, y, text);
-        return *((Pointf*) &ret);
+        return* ((Pointf*)& ret);
     }
 }};

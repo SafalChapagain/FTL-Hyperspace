@@ -1,12 +1,21 @@
 "41570f57c04156415541544c8d673855534889fb4c8dbbe80100004c8db378020000488dab08030000":
-cleanup __amd64 void MainMenu::constructor(MainMenu *this);
+cleanup __amd64 void MainMenu::constructor(MainMenu* this);
 ".415741564155415455534889fb4881ecf8040000":
-cleanup __amd64 void MainMenu::OnRender(MainMenu *this);
+cleanup __amd64 void MainMenu::OnRender(MainMenu* this);
 ".415741564155415455534889fb488dbfa02200004881ec08020000":
-cleanup __amd64 bool MainMenu::Open(MainMenu *this);
+cleanup __amd64 bool MainMenu::Open(MainMenu* this);
 ".4155415455534889fb4883ec3880bf????000000":
-cleanup __amd64 void MainMenu::MouseMove(MainMenu *this, int x, int y);
+cleanup __amd64 void MainMenu::MouseMove(MainMenu* this, int x, int y);
 ".415741564155415455534889fb4881ec????0000":
-cleanup __amd64 void MainMenu::OnLoop(MainMenu *this);
+cleanup __amd64 void MainMenu::OnLoop(MainMenu* this);
 ".534889fb4883ec5080bf????000000":
-cleanup __amd64 void MainMenu::MouseClick(MainMenu *this, int x, int y);
+cleanup __amd64 void MainMenu::MouseClick(MainMenu* this, int x, int y);
+
+
+struct MainMenu
+{{
+    MainMenu()
+    {
+        this->constructor();
+    }
+}};

@@ -1,31 +1,31 @@
-"4157415641554989fd415455534883ec18488b8798000000":
-cleanup __amd64 void Animation::destructor(Animation *this);
-"554889e54157415641554154534883ec3844894dd0":
-cleanup __amd64 void Animation::constructor(Animation *this, const std::string& _image, int _length, float _time, Pointf _position, int _imageWidth, int _imageHeight, int _stripStartX, int _numFrames);
-"554889e54156534189f64889fb0fb673":
-cleanup __amd64 void Animation::SaveState(Animation *this, int fd);
-"554889e5f30f1057":
-cleanup __amd64 void Animation::SetProgress(Animation *this, float progress);
-"554889e58b47088d":
-cleanup __amd64 void Animation::SetCurrentFrame(Animation *this, int frame);
-"554889e5807f3e00":
-cleanup __amd64 bool Animation::Done(Animation *this);
-"554889e54157415641554154534883ec184989fd418b5d08":
-cleanup __amd64 void Animation::Update(Animation *this);
-"554889e553504889fb488d05??????008038007407e8????1700eb05":
-cleanup __amd64 int Animation::RandomStart(Animation *this);
-"554889e548393774":
-cleanup __amd64 void Animation::SetAnimationId(Animation *this, GL_Texture *tex);
-"554889e553504889fb0f57c04084f675":
-cleanup __amd64 void Animation::Start(Animation *this, bool reset);
-"554889e54156534189f64889fb4489f7e81bf800":
-cleanup __amd64 void Animation::LoadState(Animation *this, int fd);
-"554889e553504889fb4084f67422c643":
-cleanup __amd64 void Animation::StartReverse(Animation *this, bool reset);
-"85f6784f":
-cleanup __amd64 void Animation::AddSoundQueue(Animation *this, int frame, const std::string& sound);
-"554889e5415741564154534883ec504889fb41b6":
-cleanup __amd64 void Animation::OnRender(Animation *this, float opacity, GL_Color color, bool mirror);
+"554889e5415741564155415453504889fbf6":
+cleanup __amd64 void Animation::destructor(Animation* this);
+"!.554889e54157415641554154534883ec3844894d":
+cleanup __amd64 void Animation::constructor(Animation* this, const std::string& image, int length, float time, Pointf position, int imageWidth, int imageHeight, int stripStartX, int numFrames);
+"!.554889e54156534189f64889fb0fb673":
+cleanup __amd64 void Animation::SaveState(Animation* this, int fd);
+".554889e54156534189f64889fb4489f7e81b":
+cleanup __amd64 void Animation::LoadState(Animation* this, int fd);
+".554889e553504889fb0f57c040":
+cleanup __amd64 void Animation::Start(Animation* this, bool reset);
+".554889e5f30f1057":
+cleanup __amd64 void Animation::SetProgress(Animation* this, float progress);
+".554889e58b47088d":
+cleanup __amd64 void Animation::SetCurrentFrame(Animation* this, int frame);
+".554889e5807f3e":
+cleanup __amd64 bool Animation::Done(Animation* this);
+".554889e54157415641554154534883ec184989fd418b":
+cleanup __amd64 void Animation::Update(Animation* this);
+".554889e553504889fb488d05??????008038007407e8??????00eb05e8????0c":
+cleanup __amd64 int Animation::RandomStart(Animation* this);
+".554889e5483937":
+cleanup __amd64 void Animation::SetAnimationId(Animation* this, GL_Texture* tex);
+"!.554889e5415741564154534883ec504889fb41":
+cleanup __amd64 void Animation::OnRender(Animation* this, float opacity, GL_Color color, bool mirror);
+"!.85f6784f":
+cleanup __amd64 void Animation::AddSoundQueue(Animation* this, int frame, const std::string& sound);
+".554889e553504889fb4084f67422":
+cleanup __amd64 void Animation::StartReverse(Animation* this, bool reset);
 
 
 struct Animation 
@@ -34,8 +34,8 @@ struct Animation
 	{
 	}
 
-	Animation(const std::string& _image, int _length, float _time, Pointf _position, int _imageWidth, int _imageHeight, int _stripStartX, int _numFrames)
+	Animation(const std::string& image, int length, float time, Pointf position, int imageWidth, int imageHeight, int stripStartX, int numFrames)
 	{
-		this->constructor(_image, _length, _time, _position, _imageWidth, _imageHeight, _stripStartX, _numFrames);
+		this->constructor(image, length, time, position, imageWidth, imageHeight, stripStartX, numFrames);
 	}
 }};

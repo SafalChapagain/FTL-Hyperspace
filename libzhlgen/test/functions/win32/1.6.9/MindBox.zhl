@@ -1,11 +1,11 @@
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????8b078b77088b5704c744240c000000008d7db4890424":
-__thiscall void MindBox::constructor(MindBox *this, Point pos, MindSystem* sys);
+__thiscall void MindBox::constructor(MindBox* this, Point _position, MindSystem* _system);
 
 
 struct MindBox
 {{
-	MindBox(Point pos, MindSystem* sys)
+	MindBox(Point position, MindSystem* system)
 	{
-		this->constructor(pos, sys);
+		this->constructor(position, system);
 	}
 }};

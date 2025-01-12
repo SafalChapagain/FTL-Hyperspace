@@ -1,17 +1,17 @@
 "5589e55653c6411101c741080000000083e4f0837d08ff74??660fefc0f30f2a4508f30f11410c":
-__thiscall void TimerHelper::Start(TimerHelper *this, int goal);
+__thiscall void TimerHelper::Start(TimerHelper* this, int goal);
 ".0fb64111":
-__thiscall bool TimerHelper::Running(TimerHelper *this);
+__thiscall bool TimerHelper::Running(TimerHelper* this);
 ".8b44240889018b442404894104":
-__thiscall void TimerHelper::ResetMinMax(TimerHelper *this, int min, int max);
+__thiscall void TimerHelper::ResetMinMax(TimerHelper* this, int min, int max);
 ".f30f104108f30f5e410cf30f104c2404f30f11490cf30f59c1":
-__thiscall void TimerHelper::SetMaxTime(TimerHelper *this, float max);
+__thiscall void TimerHelper::SetMaxTime(TimerHelper* this, float max);
 ".c6411100":
-__thiscall void TimerHelper::Stop(TimerHelper *this);
+__thiscall void TimerHelper::Stop(TimerHelper* this);
 ".8079110075??c389f68dbc27000000005589e55389cbb9????????83e4f0":
-__thiscall void TimerHelper::Update(TimerHelper *this);
+__thiscall void TimerHelper::Update(TimerHelper* this);
 ".0fb6411184c074??f30f1041080f2e410c76??5589e55756530fb6711083e4f0":
-__thiscall bool TimerHelper::Done(TimerHelper *this);
+__thiscall bool TimerHelper::Done(TimerHelper* this);
 
 
 struct TimerHelper

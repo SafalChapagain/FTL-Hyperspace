@@ -1,4 +1,4 @@
 "8b44240480781000":
-cleanup __cdecl void FocusWindow::MouseClick(FocusWindow *this, int x, int y);
+cleanup __cdecl void FocusWindow::MouseClick(FocusWindow* this, int x, int y);
 ".56538b44240c8b4c24108b7424148b500883faff":
-cleanup __cdecl void FocusWindow::MouseMove(FocusWindow *this, int x, int y);
+cleanup __cdecl void FocusWindow::MouseMove(FocusWindow* this, int x, int y);

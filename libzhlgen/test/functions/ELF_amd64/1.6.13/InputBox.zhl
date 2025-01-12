@@ -1,4 +1,4 @@
 "4155415455534889fb4883ec1883fe01":
-cleanup __amd64 void InputBox::TextEvent(InputBox *this, CEvent::TextEvent event);
+cleanup __amd64 void InputBox::TextEvent(InputBox* this, CEvent::TextEvent event);
 "534889fb488d7f3831d2":
-cleanup __amd64 void InputBox::StartInput(InputBox *this);
+cleanup __amd64 void InputBox::StartInput(InputBox* this);

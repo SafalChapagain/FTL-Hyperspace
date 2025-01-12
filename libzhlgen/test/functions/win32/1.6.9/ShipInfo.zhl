@@ -1,6 +1,6 @@
 "578d7c240883e4f0ff77fc5589e557565389ce8d560483ec5c894dbc8b0f89d3894db4890c24":
-__thiscall char ShipInfo::AddAugmentation(ShipInfo *this, const std::string& augment); 
+__thiscall bool ShipInfo::AddAugmentation(ShipInfo* this, const std::string& augId); 
 "578d7c240883e4f0ff77fc5589e557565389ce8d560483ec4c894dc88b0f89d3894dc4890c2489cf":
-__thiscall bool ShipInfo::HasAugmentation(ShipInfo *this, const std::string& augment);
+__thiscall bool ShipInfo::HasAugmentation(ShipInfo* this, const std::string& augId);
 "578d7c240883e4f0ff77fc5589e55756538d55a881ec????????8b07894d8c8955a08b308b580489458089f001d874??":
-__thiscall float ShipInfo::GetAugmentationValue(ShipInfo *this, const std::string& augment);
+__thiscall float ShipInfo::GetAugmentationValue(ShipInfo* this, const std::string& augId);

@@ -1,15 +1,15 @@
 "f3c3660f1f44000053be????????4889fb4883ec10488d54240fe8????????4883c4104889d85bc353be????????4889fb4883ec10":
 noHook __amd64 void RockAnimation::__DO_NOT_HOOK_1();
 ".53be????????4889fb4883ec10488d54240f":
-cleanup __amd64 std::string RockAnimation::GetDeathSound(RockAnimation *this);
+cleanup __amd64 std::string RockAnimation::GetDeathSound(RockAnimation* this);
 ".534889fb4883ec30803d????????007577e8????????89c1":
 noHook __amd64 void RockAnimation::__DO_NOT_HOOK_2();
 ".534889fb4883ec30803d????????007577e8????????89c1":
 noHook __amd64 void RockAnimation::__DO_NOT_HOOK_3();
 ".534889fb4883ec30803d????????007577e8????????89c1":
-cleanup __amd64 std::string RockAnimation::GetShootingSound(RockAnimation *this);
+cleanup __amd64 std::string RockAnimation::GetShootingSound(RockAnimation* this);
 ".41544189cc5589d5534889fb4883ec50":
-cleanup __amd64 void RockAnimation::constructor(RockAnimation *this, const std::string& subRace, int iShipId, Pointf position, bool enemy);
+cleanup __amd64 void RockAnimation::constructor(RockAnimation* this, const std::string& _subRace, int _iShipId, Pointf _position, bool _enemy);
 
 
 struct RockAnimation depends (Pointf)

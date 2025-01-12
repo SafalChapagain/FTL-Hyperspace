@@ -1,11 +1,12 @@
 "578d????0883e4??ff????5589e557565389cb8d??d883ec??8b????8b??8b????8d??d0":
-__thiscall void SuperShieldDrone::constructor(SuperShieldDrone *this, int iShipId, int selfId, DroneBlueprint *blueprint);
+__thiscall void SuperShieldDrone::constructor(SuperShieldDrone* this, int _iShipId, int _selfId, DroneBlueprint* _blueprint);
 "578d????0883e4f0ff????5589e557565389ce83ec4ce8????????8b16":
-__thiscall void SuperShieldDrone::OnLoop(SuperShieldDrone *this);
+__thiscall void SuperShieldDrone::OnLoop(SuperShieldDrone* this);
+
 
 struct SuperShieldDrone
 {{
-	SuperShieldDrone(int iShipId, int selfId, DroneBlueprint *blueprint)
+	SuperShieldDrone(int iShipId, int selfId, DroneBlueprint* blueprint)
 	{
 		this->constructor(iShipId, selfId, blueprint);
 	}

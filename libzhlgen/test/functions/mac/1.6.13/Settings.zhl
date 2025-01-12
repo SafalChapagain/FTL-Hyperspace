@@ -1,19 +1,16 @@
-"803d8a5e1e00":
+"803d??????0000741455":
 static __amd64 bool Settings::GetDlcEnabled();
-"554889e54157415641554154534883ec684989ff488d9d78":
-static cleanup __amd64 std::string Settings::GetHotkeyName(const std::string& name);
-"554889e54157415641554154534883ec2848897db8488d47":
-static cleanup __amd64 SDLKey Settings::GetHotkey(const std::string& hotkeyName);
-"554889e54157415641554154534883ec684189f5":
-static cleanup __amd64 void Settings::SetHotkey(const std::string& hotkeyName, SDLKey key);
-"554889e54157415641554154534881ec58010000488dbdf0":
-static cleanup __amd64 void Settings::SaveSettings();
-"554889e58a05????????5d":
-static __amd64 char Settings::GetCommandConsole();
-"554889e54156534881ec8009":
+".554889e54156534881ec8009":
 static cleanup __amd64 void Settings::ResetHotkeys();
-"554889e54157415641554154534881ec18020000488b05??":
+".554889e54157415641554154534883ec684989ff488d9d78":
+static cleanup __amd64 std::string Settings::GetHotkeyName(const std::string& name);
+".554889e54157415641554154534883ec2848897db8488d47":
+static cleanup __amd64 SDLKey Settings::GetHotkey(const std::string& hotkeyName);
+".554889e54157415641554154534883ec684189f5":
+static cleanup __amd64 void Settings::SetHotkey(const std::string& hotkeyName, SDLKey key);
+".554889e54157415641554154534881ec58010000488dbdf0":
+static cleanup __amd64 void Settings::SaveSettings();
+".554889e58a05????????5d":
+static __amd64 char Settings::GetCommandConsole();
+"!.554889e54157415641554154534881ec18020000488b05":
 static cleanup __amd64 void Settings::LoadSettings();
-
-"!c6832002000000488d05(???????\?)8378??0348895d??":
-offsetVariable SettingValues* Global_Settings_Settings;

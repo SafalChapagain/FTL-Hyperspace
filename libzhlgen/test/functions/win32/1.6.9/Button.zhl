@@ -1,17 +1,17 @@
 "578d7c240883e4f0ff77fc5589e55783ec148b078b570489042489542404e8????????8b7dfc83ec08c98d67f85fc20800909090909090909090909090909090f3c39090909090909090909090909090c20800":
-__thiscall void Button::SetLocation(Button *this, const Point pos);
+__thiscall void Button::SetLocation(Button* this, const Point pos);
 "578d7c240883e4f0ff77fc5589e55756538d55a881ec????????8b47048b1f894d948955a08945908b47088b3b":
-__thiscall void Button::OnInit(Button *this, const std::string& img, Point pos);
+__thiscall void Button::OnInit(Button* this, const std::string& img, Point pos);
 "578d7c240883e4f0ff77fc5589e557565389cb8d49048d732483ec2c":
-__thiscall void Button::constructor(Button *this);
+__thiscall void Button::constructor(Button* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec5c8b4154":
-__thiscall void Button::OnRender(Button *this);
+__thiscall void Button::OnRender(Button* this);
 "5589e5565383e4f083ec108b450839414874??8941488b018b40303d????????75??8d59548d71608b03":
-__thiscall void Button::SetInactiveImage(Button *this, GL_Texture *texture);
+__thiscall void Button::SetInactiveImage(Button* this, GL_Texture* texture);
 ".5589e5565383e4f083ec108b450839414c74??89414c8b018b40303d????????75??8d59548d7160":
-__thiscall void Button::SetActiveImage(Button *this, GL_Texture *texture);
+__thiscall void Button::SetActiveImage(Button* this, GL_Texture* texture);
 "578d7c240883e4f0ff77fc5589e55756538d45a889cb83ec7c8b3f8945a08b178b770489d0":
-__thiscall void Button::SetImageBase(Button *this, const std::string& imageBase);
+__thiscall void Button::SetImageBase(Button* this, const std::string& imageBase);
 
 
 struct Button depends (CSurface)

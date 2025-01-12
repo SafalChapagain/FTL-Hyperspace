@@ -1,32 +1,41 @@
 "5557565383ec2c8b6c2440c7442408010000008b85580f00008db578090000":
-cleanup __cdecl void ShipBuilder::CheckTypes(ShipBuilder *this);
+cleanup __cdecl void ShipBuilder::CheckTypes(ShipBuilder* this);
 "5557565383ec3c8b74245080beac15000000":
-cleanup __cdecl void ShipBuilder::MouseClick(ShipBuilder *this, int x, int y);
+cleanup __cdecl void ShipBuilder::MouseClick(ShipBuilder* this, int mX, int mY);
 "5589e557565383ec2c8b5d088b45108b7d0c":
-cleanup __cdecl void ShipBuilder::SwitchShip(ShipBuilder *this, int shipType, int shipVariant);
+cleanup __cdecl void ShipBuilder::SwitchShip(ShipBuilder* this, int shipType, int shipVariant);
 "5557565383ec5c8b5c24708b8b340e0000":
-cleanup __cdecl void ShipBuilder::CreateEquipmentBoxes(ShipBuilder *this);
+cleanup __cdecl void ShipBuilder::CreateEquipmentBoxes(ShipBuilder* this);
 "5557565383ec3c8b6c24508b8dc80e0000":
-cleanup __cdecl void ShipBuilder::CreateSystemBoxes(ShipBuilder *this);
+cleanup __cdecl void ShipBuilder::CreateSystemBoxes(ShipBuilder* this);
 "5589e557565383ec4c8b75088d7dd88d5db8":
-cleanup __cdecl void ShipBuilder::SetupShipAchievements(ShipBuilder *this);
+cleanup __cdecl void ShipBuilder::SetupShipAchievements(ShipBuilder* this);
 "8b4424048b9058170000c78064170000ffffffff":
-cleanup __cdecl void ShipBuilder::ClearShipAchievements(ShipBuilder *this);
+cleanup __cdecl void ShipBuilder::ClearShipAchievements(ShipBuilder* this);
 "5383ec188b5c24208b0385c0":
-cleanup __cdecl void ShipBuilder::SwapType(ShipBuilder *this, int variant);
+cleanup __cdecl void ShipBuilder::SwapType(ShipBuilder* this, int variant);
 "575631f65383ec108b7c24208b8700170000":
-cleanup __cdecl void ShipBuilder::CycleShipNext(ShipBuilder *this);
+cleanup __cdecl void ShipBuilder::CycleShipNext(ShipBuilder* this);
 "5756be020000005383ec108b7c24208b8700170000":
-cleanup __cdecl void ShipBuilder::CycleShipPrevious(ShipBuilder *this);
+cleanup __cdecl void ShipBuilder::CycleShipPrevious(ShipBuilder* this);
 "5589e557565381ec2c0300008b4508c6808c17000000":
-cleanup __cdecl void ShipBuilder::Open(ShipBuilder *this);
+cleanup __cdecl void ShipBuilder::Open(ShipBuilder* this);
 "5589e557565381ecbc0000008b5d0880bb4410000000":
-cleanup __cdecl void ShipBuilder::OnRender(ShipBuilder *this);
+cleanup __cdecl void ShipBuilder::OnRender(ShipBuilder* this);
 "5589e557565383ec5c8b5d08c70424????????":
-cleanup __cdecl void ShipBuilder::OnLoop(ShipBuilder *this);
+cleanup __cdecl void ShipBuilder::OnLoop(ShipBuilder* this);
 "565383ec348b5c24408d74242c8d430c":
-cleanup __cdecl void ShipBuilder::constructor(ShipBuilder *this);
+cleanup __cdecl void ShipBuilder::constructor(ShipBuilder* this);
 "5589e557565381ecac0000008b7d088d873c0e0000":
-cleanup __cdecl void ShipBuilder::MouseMove(ShipBuilder *this, int x, int y);
+cleanup __cdecl void ShipBuilder::MouseMove(ShipBuilder* this, int mX, int mY);
 "5557565383ec1c8b7424308b44243480be4410000000":
-cleanup __cdecl void ShipBuilder::OnKeyDown(ShipBuilder *this, SDLKey key);
+cleanup __cdecl void ShipBuilder::OnKeyDown(ShipBuilder* this, SDLKey key);
+
+
+struct ShipBuilder
+{{
+    ShipBuilder()
+    {
+        this->constructor();
+    }
+}};

@@ -1,2 +1,2 @@
 "5589e557565381ecfc0000008b5d08e8":
-cleanup __cdecl void DroneBlueprint::RenderIcon(DroneBlueprint *this, float scale);
+cleanup __cdecl void DroneBlueprint::RenderIcon(DroneBlueprint* this, float scale);

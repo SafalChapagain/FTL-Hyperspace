@@ -1,7 +1,7 @@
 "8b5424088b44240485d278??8b480c":
-cleanup __cdecl void EventSystem::AddEvent(EventSystem *this, int id);
+cleanup __cdecl void EventSystem::AddEvent(EventSystem* this, int id);
 "538b4c240c8b44240885c9":
-cleanup __cdecl bool EventSystem::PollEvent(EventSystem *this, int id);
+cleanup __cdecl bool EventSystem::PollEvent(EventSystem* this, int id);
 
 "!c74424040c000000c70424(???????\?)e8????????31c0":
 EventSystem* Global_EventSystem_EventManager;

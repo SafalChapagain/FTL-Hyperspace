@@ -1,12 +1,13 @@
-"554889e5415741564154534881ecc000":
-cleanup __amd64 void ShipStatus::RenderHealth(ShipStatus *this, bool unk);
-"554889e54157415641554154534881ec880100004989fef3":
-cleanup __amd64 void ShipStatus::OnInit(ShipStatus *this, Point unk, float unk2);
-"554889e5415741564154534883ec504889fb4084":
-cleanup __amd64 void ShipStatus::RenderEvadeOxygen(ShipStatus *this, bool unk);
-"554889e553504889fbe87208":
-cleanup __amd64 void ShipStatus::OnRender(ShipStatus *this);
-"554889e5415741564155415453504989fe4084f6":
-cleanup __amd64 void ShipStatus::RenderShields(ShipStatus *this, bool renderText);
-"554889e5415741564154534881ec6001":
-cleanup __amd64 void ShipStatus::OnLoop(ShipStatus *this);
+// Continue from ShipSelect::Open (hyper efficiency™)
+".554889e54157415641554154534881ec880100004989fef3":
+cleanup __amd64 void ShipStatus::OnInit(ShipStatus* this, Point location, float size);
+".554889e5415741564154534881ec6001":
+cleanup __amd64 void ShipStatus::OnLoop(ShipStatus* this);
+"!.554889e553504889fbe87208":
+cleanup __amd64 void ShipStatus::OnRender(ShipStatus* this);
+".554889e5415741564154534881ecc000":
+cleanup __amd64 void ShipStatus::RenderHealth(ShipStatus* this, bool renderText);
+"!.554889e5415741564155415453504989fe4084f6":
+cleanup __amd64 void ShipStatus::RenderShields(ShipStatus* this, bool renderText);
+".554889e5415741564154534883ec504889fb4084":
+cleanup __amd64 void ShipStatus::RenderEvadeOxygen(ShipStatus* this, bool renderText);

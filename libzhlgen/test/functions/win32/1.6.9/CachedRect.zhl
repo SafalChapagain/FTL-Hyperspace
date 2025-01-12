@@ -1,4 +1,4 @@
 "5589e557565383e4f083ec108b75083971088b7d0c74??8b410489cb890424":
-__thiscall void CachedRect::SetPosition(CachedRect *this, int x, int y);
+__thiscall void CachedRect::SetPosition(CachedRect* this, int x, int y);
 ".5589e557565383e4f083ec108b75083971108b7d0c74??8b410489cb890424":
-__thiscall void CachedRect::SetSize(CachedRect *this, int w, int h);
+__thiscall void CachedRect::SetSize(CachedRect* this, int w, int h);

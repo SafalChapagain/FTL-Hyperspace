@@ -1,24 +1,35 @@
-"5589e557565389c381ec8c010000":
-cleanup __regparm2 void ShipSelect::SelectShip(ShipSelect *this, int shipType);
 "565383ec248b5c24308d74241fc74424086e000000":
-cleanup __cdecl void ShipSelect::constructor(ShipSelect *this);
+cleanup __cdecl void ShipSelect::constructor(ShipSelect* this);
 "565383ec148b7424208b4e208b561c89c829d083f8037e??31db8db600000000":
-cleanup __cdecl void ShipSelect::ClearShipButtons(ShipSelect *this);
+cleanup __cdecl void ShipSelect::ClearShipButtons(ShipSelect* this);
 "5589e557565381ecac0000008b450880b84404000000":
-cleanup __cdecl void ShipSelect::MouseMove(ShipSelect *this, int x, int y);
+cleanup __cdecl void ShipSelect::MouseMove(ShipSelect* this, int mX, int mY);
 "5589e557565381ecac0000008b5d0880bb4404000000":
-cleanup __cdecl void ShipSelect::OnLoop(ShipSelect *this);
+cleanup __cdecl void ShipSelect::OnLoop(ShipSelect* this);
 "8b442404054004000089442404":
-cleanup __cdecl int ShipSelect::KeyDown(ShipSelect *this, SDLKey key);
+cleanup __cdecl int ShipSelect::KeyDown(ShipSelect* this, SDLKey key);
 "5383ec188b5c242080bb4404000000":
-cleanup __cdecl void ShipSelect::MouseClick(ShipSelect *this);
+cleanup __cdecl void ShipSelect::MouseClick(ShipSelect* this);
+/* PreSelect is inlined on Mac, luckily both unused - commented out for now
+"5589e557565389c381ec8c010000":
+cleanup __regparm2 void ShipSelect::SelectShip(ShipSelect* this, int shipType);
 "5383ec188b5424248b5c242085d2":
-cleanup __cdecl void ShipSelect::PreSelectShip(ShipSelect *this, int shipType);
+cleanup __cdecl void ShipSelect::PreSelectShip(ShipSelect* this, int shipType);
+*/
 "!8b442404c64034000540040000":
-cleanup __cdecl void ShipSelect::Close(ShipSelect *this);
+cleanup __cdecl void ShipSelect::Close(ShipSelect* this);
 ".8b4424048b4038":
-cleanup __cdecl int ShipSelect::GetSelectedShip(ShipSelect *this);
+cleanup __cdecl int ShipSelect::GetSelectedShip(ShipSelect* this);
 "5589e557565381ec8c0100008b4508833d????????02":
-cleanup __cdecl void ShipSelect::Open(ShipSelect *this, int currentId, int currentType);
+cleanup __cdecl void ShipSelect::Open(ShipSelect* this, int currentId, int currentType);
 "5589e557565383ec5c8b5d0880bb4404000000":
-cleanup __cdecl void ShipSelect::OnRender(ShipSelect *this);
+cleanup __cdecl void ShipSelect::OnRender(ShipSelect* this);
+
+
+struct ShipSelect
+{{
+    ShipSelect()
+    {
+        this->constructor();
+    }
+}};

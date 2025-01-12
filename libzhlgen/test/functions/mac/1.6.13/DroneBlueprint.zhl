@@ -1,2 +1,3 @@
-"554889e54157415641554154534881ec580100004889fbe8":
-cleanup __amd64 void DroneBlueprint::RenderIcon(DroneBlueprint *this, float scale);
+// Continue from DoorBox::constructor (hyper efficiency™)
+".554889e54157415641554154534881ec580100004889fbe8":
+cleanup __amd64 void DroneBlueprint::RenderIcon(DroneBlueprint* this, float scale);

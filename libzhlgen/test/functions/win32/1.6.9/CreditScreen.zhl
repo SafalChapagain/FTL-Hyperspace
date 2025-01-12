@@ -1,8 +1,8 @@
 "578d7c240883e4f0ff77fc5589e557565389ce8d7dd881ec????????e8????????b9????????e8????????8d45d88d4dd0c744240400000000":
-__thiscall void CreditScreen::OnRender(CreditScreen *this);
+__thiscall void CreditScreen::OnRender(CreditScreen* this);
 "8d410cc7410800000000c6410c00c7412000000000c64124008941048d4124c7413400000000c7413c00000000c741400000000089411cc7414400000000c7414800000000":
-__thiscall void CreditScreen::constructor(CreditScreen *this);
+__thiscall void CreditScreen::constructor(CreditScreen* this);
 "578d7c240883e4f0ff77fc5589f889e557565389cf8d9d20ffffff81ec????????8b088b4004c744240400000000899d18ffffffc78500ffffff100000008985b8feffff8d8500ffffff":
-__thiscall void CreditScreen::Start(CreditScreen *this, const std::string& shipName, const std::vector<std::string>& crewNames);
+__thiscall void CreditScreen::Start(CreditScreen* this, const std::string& shipName, const std::vector<std::string>& crewNames);
 "55660fefc089e553bb????????83e4f083ec108b51402b513cc1fa0369d2????????89d0f7e3b8????????d1ea8d1492c1e20329d0f30f2ac00f2e01":
-__thiscall bool CreditScreen::Done(CreditScreen *this);
+__thiscall bool CreditScreen::Done(CreditScreen* this);

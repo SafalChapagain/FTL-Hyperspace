@@ -2,7 +2,7 @@
 #include "Resources.h"
 #include <chrono>
 
-#if defined(__linux__)
+#if defined(__linux__) || defined (__APPLE__)
 #include <SDL2/SDL_messagebox.h>
 #endif // defined
 
@@ -91,7 +91,7 @@ void ErrorMessage(const char *msg)
     #ifdef _WIN32
         std::wstring utf16String = ConvertToUtf16(msg, CP_UTF8);
         MessageBoxW(NULL, utf16String.c_str(), L"Error", MB_ICONERROR | MB_SETFOREGROUND);
-    #elif defined(__linux__)
+    #elif defined(__linux__) || defined (__APPLE__)
         SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "Error", msg, NULL);
         fprintf(stderr, "%s", msg);
     #endif

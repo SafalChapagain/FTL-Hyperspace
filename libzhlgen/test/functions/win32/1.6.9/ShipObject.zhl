@@ -1,21 +1,21 @@
 "5789ca8d7c240883e4f0ff77fc5589e55756538d4dd883ec5c8b07894dd08b308b580489f0":
-__thiscall int ShipObject::HasAugmentation(ShipObject *this, const std::string& augment);
+__thiscall int ShipObject::HasAugmentation(ShipObject* this, const std::string& augment);
 "5789ca8d7c240883e4f0ff77fc5589e55756538d4d9081ec????????8b07894d888b308b5804":
-__thiscall float ShipObject::GetAugmentationValue(ShipObject *this, const std::string& augment);
+__thiscall float ShipObject::GetAugmentationValue(ShipObject* this, const std::string& augment);
 ".5789ca8d7c240883e4f0ff77fc5589e55756538d4d9081ec????????8b07894d888b308b580489f001d874??85f675??c70424????????e8????????8d74260083fb0f895dd00f87????????":
-__thiscall void ShipObject::RemoveAugmentation(ShipObject *this, const std::string& augment);
+__thiscall void ShipObject::RemoveAugmentation(ShipObject* this, const std::string& augment);
 "578d7c240883e4f0ff77fc5589e55756538d75a881ec????????8b3f898d70ffffff8975a0":
-__thiscall int ShipObject::HasEquipment(ShipObject *this, const std::string& equip);
+__thiscall int ShipObject::HasEquipment(ShipObject* this, const std::string& equip);
 "578d7c240883e4f0ff77fc5589f889e557565389cf83ec4c8b008b400485c0":
-__thiscall std::vector<std::string> ShipObject::GetAugmentationList(ShipObject *this);
+__thiscall std::vector<std::string> ShipObject::GetAugmentationList(ShipObject* this);
 "5789ca8d7c240883e4f0ff77fc5589e55756538d75d883ec4c8b078975d0":
-__thiscall bool ShipObject::AddAugmentation(ShipObject *this, const std::string& augment);
+__thiscall bool ShipObject::AddAugmentation(ShipObject* this, const std::string& augment);
 "89b5a4feffffe9????????c70424????????e8????????89c60fb68590feffff89f1894424088b8594feffff894424048b858cfeffff890424":
 noHook void ShipObject::__DO_NOT_HOOK();
 ".8b510431c085d20f94c06bc0340305????????8b4030":
-__thiscall int ShipObject::GetAugmentationCount(ShipObject *this);
+__thiscall int ShipObject::GetAugmentationCount(ShipObject* this);
 "578d7c240883e4f0ff77fc5589e557565331db83ec2c8b410485c00f94c36bdb34":
-__thiscall void ShipObject::ClearShipInfo(ShipObject *this);
+__thiscall void ShipObject::ClearShipInfo(ShipObject* this);
 
 "!6bc0340305(???????\?)8b4030c3":
 ShipInfo** Global_ShipObject_ShipInfoList;

@@ -1,29 +1,29 @@
 "578d7c240883e4f0ff77fc5589f889e557565389cb83ec4c8b3f8b40048945c0e8????????84c08d87f4000000":
-__thiscall std::vector<std::string> BlueprintManager::GetBlueprintList(BlueprintManager *this, const std::string& name);
+__thiscall std::vector<std::string> BlueprintManager::GetBlueprintList(BlueprintManager* this, const std::string& name);
 "578d7c240883e4f0ff77fc5589e55756538d45d883ec5c8b1f8945d08b77048d7dd0894db48b038b5304":
-__thiscall ShipBlueprint* BlueprintManager::GetShipBlueprint(BlueprintManager *this, const std::string& name, int sector);
+__thiscall ShipBlueprint* BlueprintManager::GetShipBlueprint(BlueprintManager* this, const std::string& name, int sector);
 ".578d7c240883e4f0ff77fc5589e557565389cb8d4dd083ec4c8b378dbbf4000000c70424????????e8????????":
-__thiscall DroneBlueprint* BlueprintManager::GetDroneBlueprint(BlueprintManager *this, const std::string& name);
+__thiscall DroneBlueprint* BlueprintManager::GetDroneBlueprint(BlueprintManager* this, const std::string& name);
 "578d7c240883e4f0ff77fc5589e55756538d714c89cb83c35083ec2c8b3f89f1":
-__thiscall float BlueprintManager::GetAugmentValue(BlueprintManager *this, const std::string& name);
+__thiscall float BlueprintManager::GetAugmentValue(BlueprintManager* this, const std::string& name);
 ".578d7c240883e4f0ff77fc5589e557565389cb8d4dd083ec4c8b378dbbf4000000":
-__thiscall AugmentBlueprint* BlueprintManager::GetAugmentBlueprint(BlueprintManager *this, const std::string& name);
+__thiscall AugmentBlueprint* BlueprintManager::GetAugmentBlueprint(BlueprintManager* this, const std::string& name);
 "578d91c80000008d7c240883e4f0ff77fc5589e557565383ec3c8b99cc000000894dcc":
-__thiscall ItemBlueprint* BlueprintManager::GetItemBlueprint(BlueprintManager *this, const std::string& name);
+__thiscall ItemBlueprint* BlueprintManager::GetItemBlueprint(BlueprintManager* this, const std::string& name);
 "578d7c240883e4f0ff77fc5589f889e557565389cf81ec????????8b18899d14ffffff8b5804e8????????8b8514ffffff8d8d4cffffff8b7318895c2404890424e8????????8d954cffffff83ec088d4f1c":
-__thiscall WeaponBlueprint BlueprintManager::ProcessWeaponBlueprint(BlueprintManager *this, rapidxml::xml_node<char>* node);
+__thiscall WeaponBlueprint BlueprintManager::ProcessWeaponBlueprint(BlueprintManager* this, rapidxml::xml_node<char>* node);
 "578d7c240883e4f0ff77fc5589e557565383ec7c8b5f04894d94e8????????8b5b1885db0f84????????8d75cce9????????895c2404893424e8????????":
-__thiscall Description BlueprintManager::ProcessDescription(BlueprintManager *this, rapidxml::xml_node<char>* node);
+__thiscall Description BlueprintManager::ProcessDescription(BlueprintManager* this, rapidxml::xml_node<char>* node);
 "57660fefc08d7c240883e4f0ff77fc5589f889e557565389cf83ec5c8b308b58040f11018d41300f1141100f114120":
-__thiscall EffectsBlueprint BlueprintManager::ProcessEffectsBlueprint(BlueprintManager *this, rapidxml::xml_node<char>* node);
+__thiscall EffectsBlueprint BlueprintManager::ProcessEffectsBlueprint(BlueprintManager* this, rapidxml::xml_node<char>* node);
 "578d7c240883e4f0ff77fc5589f889e557565389cb83ec6c8b3f8b7004e8????????8d47648d5768":
-__thiscall CrewBlueprint BlueprintManager::GetCrewBlueprint(BlueprintManager *this, const std::string& name);
+__thiscall CrewBlueprint BlueprintManager::GetCrewBlueprint(BlueprintManager* this, const std::string& name);
 "578d7c240883e4f0ff77fc5589e557565389cb8d4dd083ec4c8b378dbbf4000000c70424????????e8????????83ec04":
-__thiscall WeaponBlueprint* BlueprintManager::GetWeaponBlueprint(BlueprintManager *this, const std::string& name);
+__thiscall WeaponBlueprint* BlueprintManager::GetWeaponBlueprint(BlueprintManager* this, const std::string& name);
 "578d7c240883e4f0ff77fc5589e5575389cb83ec108b078b57040fb64f08895424088d504c":
 __thiscall std::vector<AugmentBlueprint*> BlueprintManager::GetRandomAugment(BlueprintManager* this, int count, bool demo_lock);
 "578d91e00000008d7c240883e4f0ff77fc5589e557565383ec3c8b99e4000000894dcc8b378955d085db0f84????????8955d489df":
-__thiscall SystemBlueprint* BlueprintManager::GetSystemBlueprint(BlueprintManager *this, const std::string& name);
+__thiscall SystemBlueprint* BlueprintManager::GetSystemBlueprint(BlueprintManager* this, const std::string& name);
 "578d7c240883e4f0ff77fc5589e557565383ec5c8b07894db4c7410400000000c6410800c745a815000000":
 __thiscall std::string BlueprintManager::GetUnusedCrewName(BlueprintManager* this, bool* isMale_ret);
 "578d7c240883e4f0ff77fc5589e557565389ce8d5dd083ec4c8b178b47048b0d????????8945c08d427c8955bc8945c4":

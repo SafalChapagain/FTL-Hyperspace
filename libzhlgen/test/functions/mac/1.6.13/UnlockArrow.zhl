@@ -1,6 +1,16 @@
-"554889e54157415641554154534883ec??4989f64889fb4d89f7":
-cleanup __amd64 void UnlockArrow::constructor(UnlockArrow *this, Point pos, int unk1, int unk2);
-"554889e5837f0403":
-cleanup __amd64 bool UnlockArrow::MouseMove(UnlockArrow *this, int x, int y);
-"554889e54156534883ec204889fb8b03":
-cleanup __amd64 void UnlockArrow::OnRender(UnlockArrow *this);
+// Continue from Global_TutorialManager_Tutorial (hyper efficiency™)
+".554889e54157415641554154534883ec??4989f64889fb4d89f7":
+cleanup __amd64 void UnlockArrow::constructor(UnlockArrow* this, Point _position, int _status, int _direction);
+".554889e5837f0403":
+cleanup __amd64 bool UnlockArrow::MouseMove(UnlockArrow* this, int mouseX, int mouseY);
+".554889e54156534883ec204889fb8b03":
+cleanup __amd64 void UnlockArrow::OnRender(UnlockArrow* this);
+
+
+struct UnlockArrow
+{{
+    UnlockArrow(Point position, int status, int direction)
+    {
+        this->constructor(position, status, direction);
+    }
+}};

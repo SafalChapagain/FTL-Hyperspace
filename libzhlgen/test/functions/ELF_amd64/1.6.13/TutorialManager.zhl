@@ -1,9 +1,18 @@
 "!534889fb488d7f084883ec10c647f800":
-cleanup __amd64 void TutorialManager::constructor(TutorialManager *this);
+cleanup __amd64 void TutorialManager::constructor(TutorialManager* this);
 "!.0fb607c3":
-cleanup __amd64 bool TutorialManager::Running(TutorialManager *this);
+cleanup __amd64 bool TutorialManager::Running(TutorialManager* this);
 ".415455534889fb4883ec404889b790010000":
-cleanup __amd64 void TutorialManager::OnInit(TutorialManager *this, ShipManager *ship, CommandGui *gui, CrewControl *crewControl, Upgrades *upgradesScreen, CombatControl *combatControl, SystemControl *sysControl, TabbedWindow *unk);
+cleanup __amd64 void TutorialManager::OnInit(TutorialManager* this, ShipManager* ship, CommandGui* gui, CrewControl* crewControl, Upgrades* upgradesScreen, CombatControl* combatControl, SystemControl* sysControl, TabbedWindow* tabbed);
 
 "!498b07488b7810488b07ff908000000084c00f84????????bf(???????\?)":
 TutorialManager* Global_TutorialManager_Tutorial;
+
+
+struct TutorialManager
+{{
+    TutorialManager()
+    {
+        this->constructor();
+    }
+}};

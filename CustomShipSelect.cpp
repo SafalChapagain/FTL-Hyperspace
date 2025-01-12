@@ -2113,7 +2113,7 @@ HOOK_METHOD(ShipBuilder, MouseClick, (int x, int y) -> void)
 
     if (customSel->Initialized() && customSel->GetSelection() != -1)
     {
-        currentShip->destructor2();
+        currentShip->~ShipManager();
 
         customSel->SwitchShip(this, customSel->GetSelectedId(), shipSelect.currentType, true);
         customSel->ClearSelection();
@@ -2150,7 +2150,7 @@ HOOK_METHOD(ShipBuilder, CycleShipNext, () -> void)
 
     if (currentShipId >= 100)
     {
-        currentShip->destructor2();
+        currentShip->~ShipManager();
 
         customSel->SwitchShip(this, customSel->CycleShipNext(currentShipId, currentType), currentType);
     }
@@ -2167,7 +2167,7 @@ HOOK_METHOD(ShipBuilder, CycleShipPrevious, () -> void)
 
     if (currentShipId >= 100)
     {
-        currentShip->destructor2();
+        currentShip->~ShipManager();
 
         customSel->SwitchShip(this, customSel->CycleShipPrevious(currentShipId, currentType), currentType);
     }
@@ -2215,7 +2215,7 @@ HOOK_METHOD(ShipBuilder, MouseClick, (int x, int y) -> void)
             {
                 auto randomShip = unlocked[random32() % unlocked.size()];
 
-                currentShip->destructor2();
+                currentShip->~ShipManager();
 
                 customSel->SwitchShip(this, randomShip.first, randomShip.second, true);
             }
@@ -3178,7 +3178,7 @@ HOOK_METHOD(ShipBuilder, Open, () -> void)
 
     if (customSel->hideFirstPage)
     {
-        currentShip->destructor2();
+        currentShip->~ShipManager();
 
         customSel->SwitchShip(this, customSel->GetShipButtonIdFromName(customSel->customShipOrder[0]) + 100, 0);
     }

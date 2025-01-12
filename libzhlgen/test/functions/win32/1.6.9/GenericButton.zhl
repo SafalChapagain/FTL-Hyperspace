@@ -1,12 +1,12 @@
 "5589e557568b4508538b59048b550c83e4f08b710839d874??89c78941048b0129df89d301790c29f3015910895108ff50308d65f45b5e5f5dc20800":
-virtual __thiscall void GenericButton::SetLocation(GenericButton *this, Point pos);
+virtual __thiscall void GenericButton::SetLocation(GenericButton* this, Point pos);
 "8b44240484c088414075??c6414200c6414300c204008d76008dbc27000000005589e583e4f083ec10":
-virtual __thiscall void GenericButton::SetActive(GenericButton *this, bool active);
+virtual __thiscall void GenericButton::SetActive(GenericButton* this, bool active);
 "578d7c240883e4f0ff77fc5589e5575383ec108b178b410c8b5f048b7f0839c27e??03411439c27c??c6414100":
-virtual __thiscall void GenericButton::MouseMove(GenericButton *this, int x, int y, bool silent);
+virtual __thiscall void GenericButton::MouseMove(GenericButton* this, int x, int y, bool silent);
 "f3c39090909090909090909090909090":
-virtual __thiscall void GenericButton::OnRightClick(GenericButton *this);
+virtual __thiscall void GenericButton::OnRightClick(GenericButton* this);
 ".f3c39090909090909090909090909090":
-virtual __thiscall void GenericButton::ResetPrimitives(GenericButton *this);
+virtual __thiscall void GenericButton::ResetPrimitives(GenericButton* this);
 ".f3c39090909090909090909090909090":
-virtual __thiscall void GenericButton::OnClick(GenericButton *this);
+virtual __thiscall void GenericButton::OnClick(GenericButton* this);

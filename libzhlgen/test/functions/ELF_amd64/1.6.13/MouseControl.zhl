@@ -1,27 +1,27 @@
 "5380bf0c010000004889fb":
-cleanup __amd64 void MouseControl::OnLoop(MouseControl *this);
+cleanup __amd64 void MouseControl::OnLoop(MouseControl* this);
 "!.c6872001000001c3":
-cleanup __amd64 void MouseControl::InstantTooltip(MouseControl *this);
+cleanup __amd64 void MouseControl::InstantTooltip(MouseControl* this);
 ".c7471000000000c7471400000000c7471800000000c7873801000000000000c7472000000000":
-cleanup __amd64 void MouseControl::ResetArmed(MouseControl *this);
+cleanup __amd64 void MouseControl::ResetArmed(MouseControl* this);
 ".41550f57c941544189f40f28c155534889fb4883ec48":
-cleanup __amd64 Point MouseControl::MeasureTooltip(MouseControl *this, int unk);
+cleanup __amd64 Point MouseControl::MeasureTooltip(MouseControl* this, int width);
 "!.4889b740010000c3":
-cleanup __amd64 void MouseControl::QueueStaticTooltip(MouseControl *this, Point pos);
+cleanup __amd64 void MouseControl::QueueStaticTooltip(MouseControl* this, Point pos);
 ".41574989f749c1ff2041564989f641554189f5":
-cleanup __amd64 void MouseControl::RenderTooltip(MouseControl *this, Point tooltipPoint, bool staticPos);
+cleanup __amd64 void MouseControl::RenderTooltip(MouseControl* this, Point tooltipPoint, bool staticPos);
 ".41574989ff41564155415455534881ecc801000080bf0d01000000":
-cleanup __amd64 void MouseControl::OnRender(MouseControl *this);
+cleanup __amd64 void MouseControl::OnRender(MouseControl* this);
 ".534889fb488dbf0001000031d2":
-cleanup __amd64 void MouseControl::Reset(MouseControl *this);
+cleanup __amd64 void MouseControl::Reset(MouseControl* this);
 ".415541544989fc55534889f34883ec38":
-cleanup __amd64 void MouseControl::LoadTooltip(MouseControl *this, const std::string& tooltipName);
+cleanup __amd64 void MouseControl::LoadTooltip(MouseControl* this, const std::string& tooltipName);
 ".41544989f4554889fd53488b06488b58e84885db":
-cleanup __amd64 void MouseControl::SetTooltip(MouseControl *this, const std::string& tooltip);
+cleanup __amd64 void MouseControl::SetTooltip(MouseControl* this, const std::string& tooltip);
 ".488b8728010000488378e800":
-cleanup __amd64 void MouseControl::SetTooltipTitle(MouseControl *this, const std::string& tooltip);
+cleanup __amd64 void MouseControl::SetTooltipTitle(MouseControl* this, const std::string& tooltip);
 ".554889fd5389f34883ec0883fe01":
-cleanup __amd64 void MouseControl::SetDoor(MouseControl *this, int state);
+cleanup __amd64 void MouseControl::SetDoor(MouseControl* this, int state);
 
 "!0f85570400008b85a401000083f8ff740abf(???????\?)":
 MouseControl* Global_MouseControl_Mouse;

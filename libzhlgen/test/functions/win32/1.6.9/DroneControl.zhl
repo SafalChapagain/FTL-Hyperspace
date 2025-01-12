@@ -1,6 +1,6 @@
 "8d510883ec2089c8c7410864726f6ec7410c65735f6c8911c741106162656cc741040c000000c6411400c641180083c420":
-__thiscall TextString DroneControl::HolderLabel(DroneControl *this);
+__thiscall TextString DroneControl::HolderLabel(DroneControl* this);
 ".578d7c240883e4f0ff77fc5589e55756538d8d60ffffff81ec4c0100008b1f":
-__thiscall SDLKey DroneControl::ArmamentHotkey(DroneControl *this, unsigned int i);
+__thiscall SDLKey DroneControl::ArmamentHotkey(DroneControl* this, unsigned int i);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec2c8b490cc7042404000000":
-__thiscall void DroneControl::OnLoop(DroneControl *this);
+__thiscall void DroneControl::OnLoop(DroneControl* this);

@@ -12,10 +12,12 @@
 
 #ifdef _WIN32
     #define OUR_OWN_FUNCTIONS_CALLEE_DOES_CLEANUP 1
-#elif defined(__linux__)
+#elif defined(__linux__) || defined(__APPLE__)
     #define OUR_OWN_FUNCTIONS_CALLEE_DOES_CLEANUP 0
     #define USE_STACK_ALIGNMENT
     #define STACK_ALIGNMENT_SIZE 0x10
+	#include <SDL2/SDL_messagebox.h>
+	#include <cstdlib>
 #else
     #define "Unknown OS"
 #endif
@@ -47,7 +49,8 @@ void ZHL::Init()
 #ifdef _WIN32
 		MessageBox(0, FunctionDefinition::GetLastError(), "Error", MB_ICONERROR);
 		ExitProcess(1);
-#elif defined(__linux__)
+#elif defined(__linux__) || defined(__APPLE__)
+		SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "Fatal Error", FunctionDefinition::GetLastError(), NULL);
         fprintf(stderr, "Fatal Error %s:", FunctionDefinition::GetLastError());
         exit(1);
 #endif
@@ -58,7 +61,8 @@ void ZHL::Init()
 #ifdef _WIN32
 		MessageBox(0, FunctionHook_private::GetLastError(), "Error", MB_ICONERROR);
 		ExitProcess(1);
-#elif defined(__linux__)
+#elif defined(__linux__) || defined(__APPLE__)
+		SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "Fatal Error", FunctionHook_private::GetLastError(), NULL);
         fprintf(stderr, "Fatal Error %s:", FunctionHook_private::GetLastError());
         exit(1);
 #endif

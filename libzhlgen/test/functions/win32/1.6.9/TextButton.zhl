@@ -1,37 +1,37 @@
 "5589e55756538d79548d594889ce83e4f083ec108b0383c304890424e8????????c743fc0000000039fb75??":
-__thiscall void TextButton::ResetPrimitives(TextButton *this);
+__thiscall void TextButton::ResetPrimitives(TextButton* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec5c80b9dc000000000f85????????8d81c40000008d7dd0":
-__thiscall int TextButton::GetIdealButtonWidth(TextButton *this);
+__thiscall int TextButton::GetIdealButtonWidth(TextButton* this);
 ".83c30439f375??8d65f85b5e5dc204008d742600ffd08d65f85b":
 noHook void TextButton::__DO_NOT_HOOK();
 ".578d7c240883e4f0ff77fc5589e557565389cb8d49048d7324":
-__thiscall void TextButton::constructor(TextButton *this);
+__thiscall void TextButton::constructor(TextButton* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec3c8b4f0c8b078b57148b7704894dd08b4f108945c88b4708":
-__thiscall void TextButton::OnInit(TextButton *this, Point pos, Point size, int cornerInset, TextString* buttonLabel, int font);
+__thiscall void TextButton::OnInit(TextButton* this, Point pos, Point size, int cornerInset, TextString* buttonLabel, int font);
 "578d7c240883e4f0ff77fc5589e557565389cf81ec????????80b9b4000000000f85????????8b474885c0":
-__thiscall void TextButton::OnRender(TextButton *this);
+__thiscall void TextButton::OnRender(TextButton* this);
 "5589e55389cb81c3????????83e4f083ec108b4148c701????????890424e8????????8b4380890424e8????????8b4384890424e8????????8b4394890424":
-__thiscall void TextButton::destructor(TextButton *this);
+__thiscall void TextButton::destructor(TextButton* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec5c80b9b40000000075??8b83a80000008b93ac000000":
-__int64 TextButton::GetSize_DO_NOT_USE_DIRECTLY(TextButton *this<ecx>);
+__int64 TextButton::GetSize_DO_NOT_USE_DIRECTLY(TextButton* this<ecx>);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec5c8b378b47088b57048b4e0c8945b88b470c8955b4894c24048b4e08":
-__thiscall void TextButton::OnInitRect(TextButton *this, Globals::Rect& rect, int cornerInset, TextString& buttonLabel, int font);
+__thiscall void TextButton::OnInitRect(TextButton* this, Globals::Rect& rect, int cornerInset, TextString& buttonLabel, int font);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec2c8b57048b078b4f088b5f0c8955e08b5004894de485d275??":
-__thiscall void TextButton::SetBaseImage(TextButton *this, const std::string& name, Point pos, int autoWidthMin);
+__thiscall void TextButton::SetBaseImage(TextButton* this, const std::string& name, Point pos, int autoWidthMin);
 "8b5424048b4424108891b40000008b54240885c08891c00000008b54240c8991b80000007e??8981bc000000":
-__thiscall void TextButton::SetAutoWidth(TextButton *this, bool autoWidth, bool autoRightAlign, int margin, int min);
+__thiscall void TextButton::SetAutoWidth(TextButton* this, bool autoWidth, bool autoRightAlign, int margin, int min);
 ".80b9b400000000":
-__thiscall void TextButton::UpdateAutoWidth(TextButton *this);
+__thiscall void TextButton::UpdateAutoWidth(TextButton* this);
 "5589e557565389cb83e4f083ec10807964000f85????????f30f1005????????c6416401f30f100d????????c781840000000000803ff30f1015????????f30f5ec8c781940000000000803f":
-__thiscall void TextButton::SetInactiveColor(TextButton *this, GL_Color color);
+__thiscall void TextButton::SetInactiveColor(TextButton* this, GL_Color color);
 ".5589e557565389cb83e4f083ec10807964000f85????????f30f1005????????c6416401f30f100d????????c741740000803ff30f1015????????":
-__thiscall void TextButton::SetActiveColor(TextButton *this, GL_Color color);
+__thiscall void TextButton::SetActiveColor(TextButton* this, GL_Color color);
 ".5589e557565389cb83e4f083ec10807964000f85????????f30f1005????????c6416401f30f100d????????c741740000803ff30f1015????????f30f5ec8c781840000000000803f":
-__thiscall void TextButton::SetSelectedColor(TextButton *this, GL_Color color);
+__thiscall void TextButton::SetSelectedColor(TextButton* this, GL_Color color);
 ".807964000f85????????f30f1005????????c6416401f30f100d????????c741740000803ff30f1015????????f30f5ec8c781840000000000803ff30f101d????????c781940000000000803ff30f5ed0f30f114970f30f100d????????":
-__thiscall void TextButton::SetTextColor(TextButton *this, GL_Color color);
+__thiscall void TextButton::SetTextColor(TextButton* this, GL_Color color);
 "578d7c240883e4f0ff77fc5589e557565389cf81ec????????807964000f84????????8b4704c745c000000000c745c400000000c745c8000000008945b08b4708":
-__thiscall void TextButton::InitPrimitives(TextButton *this);
+__thiscall void TextButton::InitPrimitives(TextButton* this);
 
 
 struct TextButton depends (CSurface)
@@ -44,7 +44,7 @@ public:
 	Point GetSize()
 	{
 		__int64 ret = GetSize_DO_NOT_USE_DIRECTLY();
-		return *((Point*)&ret);
+		return* ((Point*)&ret);
 	}
 	
 	~TextButton()

@@ -1,6 +1,15 @@
 "578d7c240883e4f0ff77fc5589e557565381ec????????80b9c0020000000f84????????":
-__thiscall void MenuScreen::OnRender(MenuScreen *this);
+__thiscall void MenuScreen::OnRender(MenuScreen* this);
 "578d7c240883e4f0ff77fc5589e557565389cb8db564ffffff81ec????????e8????????8d4b44c703????????c7432000000000c7432800000000c7432c00000000":
-__thiscall void MenuScreen::constructor(MenuScreen *this);
+__thiscall void MenuScreen::constructor(MenuScreen* this);
 "578d7c240883e4f0ff77fc5589e557565389cf83c14c8d75d883ec5cc641b801":
-__thiscall void MenuScreen::Open(MenuScreen *this);
+__thiscall void MenuScreen::Open(MenuScreen* this);
+
+
+struct MenuScreen
+{{
+    MenuScreen()
+    {
+        this->constructor();
+    }
+}};

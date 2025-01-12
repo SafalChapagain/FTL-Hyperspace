@@ -1,57 +1,57 @@
 "5531c057565381ec1c01000083bc243801000002":
-cleanup __cdecl bool ScoreKeeper::GetShipUnlocked(ScoreKeeper *this, int shipId, int shipVariant);
+cleanup __cdecl bool ScoreKeeper::GetShipUnlocked(ScoreKeeper* this, int shipId, int shipVariant);
 "5383ec188b4424288b5c2420??????????????89442404":
-cleanup __cdecl std::string ScoreKeeper::GetShipBlueprint(ScoreKeeper *this, int index);
+cleanup __cdecl std::string ScoreKeeper::GetShipBlueprint(ScoreKeeper* this, int index);
 "5589e557565381ec9c0000008b5d08c744240400000000":
-cleanup __cdecl void ScoreKeeper::OnInit(ScoreKeeper *this);
+cleanup __cdecl void ScoreKeeper::OnInit(ScoreKeeper* this);
 "5589e557565383ec6c8b5d08c70424????????":
-cleanup __cdecl void ScoreKeeper::Save(ScoreKeeper *this, bool newHighScore);
+cleanup __cdecl void ScoreKeeper::Save(ScoreKeeper* this, bool newHighScore);
 "5589e557565381ec0c0200008b5d088b450c":
-cleanup __cdecl void ScoreKeeper::OnRender(ScoreKeeper *this, bool lastPlaythrough);
+cleanup __cdecl void ScoreKeeper::OnRender(ScoreKeeper* this, bool lastPlaythrough);
 "555789cf5689c65389d383ec3c85d2":
-cleanup __regparm3 void ScoreKeeper::UnlockShip(ScoreKeeper *this, int shipType, int shipVariant, bool save, bool hidePopup);
+cleanup __regparm3 void ScoreKeeper::UnlockShip(ScoreKeeper* this, int shipType, int shipVariant, bool save, bool hidePopup);
 "8b5424088b44240484d28890e4000000":
-cleanup __cdecl void ScoreKeeper::SetVictory(ScoreKeeper *this, bool victory);
+cleanup __cdecl void ScoreKeeper::SetVictory(ScoreKeeper* this, bool victory);
 "5557565383ec4c8b442460c70000000000":
-cleanup __cdecl void ScoreKeeper::constructor(ScoreKeeper *this);
+cleanup __cdecl void ScoreKeeper::constructor(ScoreKeeper* this);
 "55575653bb????????83ec3c8b6c2458c744241800000000":
-cleanup __cdecl std::pair<int, int> ScoreKeeper::GetShipId(ScoreKeeper *this, const std::string& blueprintName);
+cleanup __cdecl std::pair<int, int> ScoreKeeper::GetShipId(ScoreKeeper* this, const std::string& blueprintName);
 "5589e557565381ec8c0000008b4d108b45088b7d0c":
-cleanup __cdecl void ScoreKeeper::LoadVersionFour(ScoreKeeper *this, int file, int version);
+cleanup __cdecl void ScoreKeeper::LoadVersionFour(ScoreKeeper* this, int file, int version);
 "5557565383ec3c8b4c24508b442454":
-cleanup __cdecl void ScoreKeeper::WipeProfile(ScoreKeeper *this, bool permanent);
+cleanup __cdecl void ScoreKeeper::WipeProfile(ScoreKeeper* this, bool permanent);
 "565383ec148b5c242080bb0809000000":
-cleanup __cdecl void ScoreKeeper::MouseClick(ScoreKeeper *this, int x, int y);
+cleanup __cdecl void ScoreKeeper::MouseClick(ScoreKeeper* this, int x, int y);
 "5589e557565383ec5c8b5d088d75c8":
-cleanup __cdecl void ScoreKeeper::SetupTopShip(ScoreKeeper *this, int variant);
+cleanup __cdecl void ScoreKeeper::SetupTopShip(ScoreKeeper* this, int variant);
 "5557565383ec2c8b6c2440c7442408010000008b85c4080000":
-cleanup __cdecl void ScoreKeeper::CheckTypes(ScoreKeeper *this);
+cleanup __cdecl void ScoreKeeper::CheckTypes(ScoreKeeper* this);
 "5589e55789c7565389d381ec9c000000":
-cleanup __regparm3 void ScoreKeeper::AddTopScoreType(ScoreKeeper *this, TopScore& topScore, int type);
+cleanup __regparm3 void ScoreKeeper::AddTopScoreType(ScoreKeeper* this, TopScore& topScore, int type);
 "5557565383ec4c8b5c24688b6c24648b4304":
-cleanup __cdecl int ScoreKeeper::AddTopScoreList(ScoreKeeper *this, TopScore& score, std::vector<TopScore>& topScoreList);
+cleanup __cdecl int ScoreKeeper::AddTopScoreList(ScoreKeeper* this, TopScore& score, std::vector<TopScore>& topScoreList);
 "5589e557565381eccc0100008b4510":
-cleanup __cdecl void ScoreKeeper::RenderTopScores(ScoreKeeper *this, const std::vector<TopScore>& topScoreList, Point position, int newHighScore);
+cleanup __cdecl void ScoreKeeper::RenderTopScores(ScoreKeeper* this, const std::vector<TopScore>& topScoreList, Point position, int newHighScore);
 "56be090000005383ec14":
-cleanup __cdecl void ScoreKeeper::CycleLeft(ScoreKeeper *this);
+cleanup __cdecl void ScoreKeeper::CycleLeft(ScoreKeeper* this);
 "5631f65383ec148b5c2420908d74??00":
-cleanup __cdecl void ScoreKeeper::CycleRight(ScoreKeeper *this);
+cleanup __cdecl void ScoreKeeper::CycleRight(ScoreKeeper* this);
 "5557565381ec9c0000008b9c24b0000000c74424080d000000":
-cleanup __cdecl void ScoreKeeper::Open(ScoreKeeper *this, bool fromGameOver);
+cleanup __cdecl void ScoreKeeper::Open(ScoreKeeper* this, bool fromGameOver);
 "565383ec148b5c24208b7424240fb68308090000":
-cleanup __cdecl bool ScoreKeeper::KeyDown(ScoreKeeper *this, SDLKey key);
+cleanup __cdecl bool ScoreKeeper::KeyDown(ScoreKeeper* this, SDLKey key);
 "565383ec24c70424????????8b5c24308b742434":
-cleanup __cdecl void ScoreKeeper::AddScrapCollected(ScoreKeeper *this, int scrap);
+cleanup __cdecl void ScoreKeeper::AddScrapCollected(ScoreKeeper* this, int scrap);
 "55575631f65383ec4c8b442468":
-cleanup __cdecl void ScoreKeeper::SaveScores(ScoreKeeper *this, int file, std::vector<TopScore>& topScores);
+cleanup __cdecl void ScoreKeeper::SaveScores(ScoreKeeper* this, int file, std::vector<TopScore>& topScores);
 "!57565331db83ec10a1????????8b7424248b7c242089442404893424":
-cleanup __cdecl void ScoreKeeper::SaveGame(ScoreKeeper *this, int fd);
+cleanup __cdecl void ScoreKeeper::SaveGame(ScoreKeeper* this, int fd);
 ".5589e557565383ec2c8b750c8b7d08893424":
-cleanup __cdecl void ScoreKeeper::LoadGame(ScoreKeeper *this, int fd);
+cleanup __cdecl void ScoreKeeper::LoadGame(ScoreKeeper* this, int fd);
 ".5557565383ec2c8b5c24408b7c24448b6c2448":
-cleanup __cdecl void ScoreKeeper::MouseMove(ScoreKeeper *this, int mX, int mY);
+cleanup __cdecl void ScoreKeeper::MouseMove(ScoreKeeper* this, int mX, int mY);
 "8b4424048b542408c7401000000000":
-cleanup __cdecl void ScoreKeeper::SetSector(ScoreKeeper *this, int sector);
+cleanup __cdecl void ScoreKeeper::SetSector(ScoreKeeper* this, int sector);
 
 "!c744240401000000c70424(???????\?)e8????????89742408":
 ScoreKeeper* Global_ScoreKeeper_Keeper;

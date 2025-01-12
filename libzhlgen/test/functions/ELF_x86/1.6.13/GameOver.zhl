@@ -1,6 +1,6 @@
 "5589e557565381ec2c0100008b7d088b450cc6470401":
-cleanup __cdecl void GameOver::OpenText(GameOver *this, const std::string& text);
+cleanup __cdecl void GameOver::OpenText(GameOver* this, const std::string& text);
 "5589e557565381ec3c0100008b5d0880bb9000000000":
-cleanup __cdecl void GameOver::OnRender(GameOver *this);
+cleanup __cdecl void GameOver::OnRender(GameOver* this);
 "5557565383ec4cc70424????????8b742460e8????????":
-cleanup __cdecl void GameOver::OnLoop(GameOver *this);
+cleanup __cdecl void GameOver::OnLoop(GameOver* this);

@@ -1,30 +1,30 @@
 "5557565381ec8c0000008bbc24a00000008b8424a40000008b9c24ac000000":
-cleanup __cdecl void CrewBox::constructor(CrewBox *this, Point pos, CrewMember *crew, int number);
+cleanup __cdecl void CrewBox::constructor(CrewBox* this, Point _position, CrewMember* _crew, int _number);
 "5589e557565383ec6c8b5d088d8380010000":
-cleanup __cdecl void CrewBox::OnRender(CrewBox *this);
+cleanup __cdecl void CrewBox::OnRender(CrewBox* this);
 "5589e557565381ecdc0200008b4508":
-cleanup __cdecl CrewMember *CrewBox::GetSelected(CrewBox *this, int mouseX, int mouseY);
+cleanup __cdecl CrewMember* CrewBox::GetSelected(CrewBox* this, int mX, int mY);
 "565383ec148b5c24208b7424248b4320":
-cleanup __cdecl void CrewBox::OnLoop(CrewBox *this, bool selected);
+cleanup __cdecl void CrewBox::OnLoop(CrewBox* this, bool selected);
 "5383ec288b5c243080bb1c01000000":
-cleanup __cdecl void CrewBox::OnRenderSkillLevel(CrewBox *this);
+cleanup __cdecl void CrewBox::OnRenderSkillLevel(CrewBox* this);
 "5557565383ec2c8b7424408b8628010000890424":
-cleanup __cdecl void CrewBox::destructor(CrewBox *this);
+cleanup __cdecl void CrewBox::destructor(CrewBox* this);
 "83ec1c8b5424200fb64268":
-cleanup __cdecl bool CrewBox::MouseClick(CrewBox *this);
+cleanup __cdecl bool CrewBox::MouseClick(CrewBox* this);
 "565383ec348b5c24408b4320":
-cleanup __cdecl void CrewBox::RenderIcon(CrewBox *this);
+cleanup __cdecl void CrewBox::RenderIcon(CrewBox* this);
 "5589e557565383ec5c8b75088d5dd4":
-cleanup __cdecl void CrewBox::RenderLabels(CrewBox *this);
+cleanup __cdecl void CrewBox::RenderLabels(CrewBox* this);
 "83ec3c8b44244080b80801000000":
-cleanup __cdecl void CrewBox::RenderCloneDying(CrewBox *this);
+cleanup __cdecl void CrewBox::RenderCloneDying(CrewBox* this);
 
 
 struct CrewBox
 {{
-	CrewBox(Point pos_, CrewMember *crew_, int number_)
+	CrewBox(Point position, CrewMember* crew, int number)
 	{
-		this->constructor(pos_, crew_, number_);
+		this->constructor(position, crew, number);
 	}
 	
 	void DestroyCustom();

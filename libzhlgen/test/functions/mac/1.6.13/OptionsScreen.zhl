@@ -1,13 +1,18 @@
-"554889e54157415641554154534881ecf8070000":
-cleanup __amd64 void OptionsScreen::Open(OptionsScreen *this, bool mainMenu);
-"554889e5415741564154534989fc488d3d":
-cleanup __amd64 void OptionsScreen::OnLoop(OptionsScreen *this);
-"554889e54157415641554154534881ec????????4989fc488d1d":
-cleanup __amd64 void OptionsScreen::OnInit(OptionsScreen *this);
+// Continue from MouseControl::SetTooltipTitle (hyper efficiency™)
+".554889e553504889fb48c74358":
+noHook __amd64 void OptionsScreen::DO_NOT_HOOK_1();
+".554889e54157415641":
+cleanup __amd64 void OptionsScreen::OnInit(OptionsScreen* this);
+".554889e54157415641554154534881ecf8070000":
+cleanup __amd64 void OptionsScreen::Open(OptionsScreen* this, bool mainMenu);
+".554889e5415741564154534989fc":
+cleanup __amd64 void OptionsScreen::OnLoop(OptionsScreen* this);
 
 
-struct OptionsScreen {{
-    struct Steam1613OptionsScreenStructAdditions {
+struct OptionsScreen
+{{
+    struct Steam1613OptionsScreenStructAdditions
+    {
         bool showSyncAchievements;
         TextButton syncAchievementsButton;
     };

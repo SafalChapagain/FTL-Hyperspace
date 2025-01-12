@@ -1,11 +1,12 @@
-"554889e5415741564154534883ec??4989d64989f74889fb488d35":
-cleanup __amd64 void ItemStoreBox::constructor(ItemStoreBox *this, ShipManager *ship, const std::string& resourceName);
+// Continue from IonDroneAnimation::constructor (hyper efficiency™)
+".554889e5415741564154534883ec??4989d64989f74889fb488d35":
+cleanup __amd64 void ItemStoreBox::constructor(ItemStoreBox* this, ShipManager* _ship, const std::string& _resourceName);
 
 
 struct ItemStoreBox
 {{
-	ItemStoreBox(ShipManager *_ship, const std::string& _resourceName)
+	ItemStoreBox(ShipManager* ship, const std::string& resourceName)
 	{
-		this->constructor(_ship, _resourceName);
+		this->constructor(ship, resourceName);
 	}
 }};

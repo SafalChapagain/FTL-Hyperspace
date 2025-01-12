@@ -1,33 +1,33 @@
 "5557565383ec4c8b4424748b4c2460":
-cleanup __cdecl void CrewAnimation::constructor(CrewAnimation *this, int shipId, const std::string& race, Pointf unk, bool hostile);
+cleanup __cdecl void CrewAnimation::(CrewAnimation* this, int _shipId, const std::string& _race, Pointf _position, bool _enemy);
 "5589e557565381ec0c0100008b450c80b87409000000":
-cleanup __cdecl std::string CrewAnimation::GetDeathSound(CrewAnimation *this);
+cleanup __cdecl std::string CrewAnimation::GetDeathSound(CrewAnimation* this);
 "5557565381ec0c010000803d????????00":
 noHook void DO_NOT_HOOK_MANTISANIMATIONSHOOTINGSOUND();
 ".5557565381ec0c010000803d????????00":
 noHook void DO_NOT_HOOK_ROCKANIMATIONSHOOTINGSOUND();
 ".5557565381ec0c010000803d????????00":
-cleanup __cdecl std::string CrewAnimation::GetShootingSound(CrewAnimation *this);
+cleanup __cdecl std::string CrewAnimation::GetShootingSound(CrewAnimation* this);
 "565383ec648b5c24708b74247c8b430485c0":
-cleanup __cdecl void CrewAnimation::OnRender(CrewAnimation *this, float scale, int selectedState, bool outlineOnly);
+cleanup __cdecl void CrewAnimation::OnRender(CrewAnimation* this, float scale, int selectedState, bool outlineOnly);
 "5631f65383ec348b5c2440":
-cleanup __cdecl void CrewAnimation::OnRenderProps(CrewAnimation *this);
+cleanup __cdecl void CrewAnimation::OnRenderProps(CrewAnimation* this);
 "5589e557565381eccc0000008b45188b5d08":
-cleanup __cdecl void CrewAnimation::OnInit(CrewAnimation *this, const std::string& name, Pointf position, bool enemy);
+cleanup __cdecl void CrewAnimation::OnInit(CrewAnimation* this, const std::string& name, Pointf position, bool enemy);
 "5589e557565381ec2c0100008b7d088d876c090000":
-cleanup __cdecl void CrewAnimation::SetupStrips(CrewAnimation *this);
+cleanup __cdecl void CrewAnimation::SetupStrips(CrewAnimation* this);
 "5589e557565383ec3c8b45248b5d088b4d148b7518":
-cleanup __cdecl void CrewAnimation::OnUpdate(CrewAnimation *this, Pointf position, bool moving, bool fighting, bool repairing, bool dying, bool onFire);
+cleanup __cdecl void CrewAnimation::OnUpdate(CrewAnimation* this, Pointf position, bool moving, bool fighting, bool repairing, bool dying, bool onFire);
 "5557565383ec5c8b442470c700????????8b807809000085c074??890424e8????????8b4424708b806c0900008d48f481f9????????0f85????????":
-cleanup __cdecl void CrewAnimation::destructor(CrewAnimation *this);
+cleanup __cdecl void CrewAnimation::destructor(CrewAnimation* this);
 "5383ec188b4424208d989c080000":
-cleanup __cdecl bool CrewAnimation::FireShot(CrewAnimation *this);
+cleanup __cdecl bool CrewAnimation::FireShot(CrewAnimation* this);
 "8b5424048b423483f8ff":
-cleanup __cdecl int CrewAnimation::GetFiringFrame(CrewAnimation *this);
+cleanup __cdecl int CrewAnimation::GetFiringFrame(CrewAnimation* this);
 "57565381ecd00000008b9c24e0000000":
-cleanup __cdecl void CrewAnimation::RenderIcon(CrewAnimation *this, bool border);
+cleanup __cdecl void CrewAnimation::RenderIcon(CrewAnimation* this, bool border);
 "5557565383ec5c8b44247083c040890424":
-cleanup __cdecl void CrewAnimation::OnUpdateEffects(CrewAnimation *this);
+cleanup __cdecl void CrewAnimation::OnUpdateEffects(CrewAnimation* this);
 
 
 struct CrewAnimation
@@ -36,11 +36,10 @@ struct CrewAnimation
 	{
 	}
 
-	CrewAnimation(int _shipId, const std::string& _race, Pointf _unk, char _hostile)
+	CrewAnimation(int shipId, const std::string& race, Pointf position, bool enemy)
 	{
-		this->constructor(_shipId, _race, _unk, _hostile);
+		this->constructor(shipId, race, position, enemy);
 	}
 
 	bool _HS_CustomDeath();
-
 }};

@@ -1,29 +1,29 @@
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b57048b078b5f088b770c894da0":
-__thiscall void CrewAnimation::constructor(CrewAnimation *this, int shipId, const std::string& race, Pointf unk, bool hostile);
+__thiscall void CrewAnimation::constructor(CrewAnimation* this, int _shipId, const std::string& _race, Pointf _position, bool _enemy);
 "578d7c240883e4f0ff77fc5589e5575389cb83ec308b0780b8c40900000074??803d??????????0f85????????":
-__thiscall std::string CrewAnimation::GetDeathSound(CrewAnimation *this);
+__thiscall std::string CrewAnimation::GetDeathSound(CrewAnimation* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec3c803d??????????0f84????????e8????????89c189c8ba????????8d75d0f7ea":
-__thiscall std::string CrewAnimation::GetShootingSound(CrewAnimation *this);
+__thiscall std::string CrewAnimation::GetShootingSound(CrewAnimation* this);
 "578d7c240883e4f0ff77fc5589f889e557565383ec7c8b59048b7008f30f102f8b7f04":
-__thiscall void CrewAnimation::OnRender(CrewAnimation *this, float scale, int selectedState, bool outlineOnly);
+__thiscall void CrewAnimation::OnRender(CrewAnimation* this, float scale, int selectedState, bool outlineOnly);
 "578d7c240883e4f0ff77fc5589e557565389cb31f683ec3ce8????????8b93900800008b8394080000":
-__thiscall void CrewAnimation::OnRenderProps(CrewAnimation *this);
+__thiscall void CrewAnimation::OnRenderProps(CrewAnimation* this);
 "578d7c240883e4f0ff77fc5589e557565389ce81ec????????8b078b570889c18985dcfeffff":
-__thiscall void CrewAnimation::OnInit(CrewAnimation *this, const std::string& name, Pointf position, bool enemy);
+__thiscall void CrewAnimation::OnInit(CrewAnimation* this, const std::string& name, Pointf position, bool enemy);
 "578d7c240883e4f0ff77fc5589e557568d8578feffff5389cf81ec????????898570feffff8b91ac0900008b81a80900008d8d70feffff":
-__thiscall void CrewAnimation::SetupStrips(CrewAnimation *this);
+__thiscall void CrewAnimation::SetupStrips(CrewAnimation* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec4c8b078b57048b4f088b770c8945c08b47108955c48b57148b7f188945bc8b433883f8060f84????????84d20f85????????80bbec09000000":
-__thiscall void CrewAnimation::OnUpdate(CrewAnimation *this, Pointf position, bool moving, bool fighting, bool repairing, bool dying, bool onFire);
+__thiscall void CrewAnimation::OnUpdate(CrewAnimation* this, Pointf position, bool moving, bool fighting, bool repairing, bool dying, bool onFire);
 "5589e557565383e4f083ec308b81c8090000c701????????894c242085c074??890424e8????????8b4c24208b81a80900008d91b009000039d074??890424":
-__thiscall void CrewAnimation::destructor(CrewAnimation *this);
+__thiscall void CrewAnimation::destructor(CrewAnimation* this);
 "5589e5538d999c08000083e4f089d9e8????????89d9e8????????8b5dfc":
-__thiscall bool CrewAnimation::FireShot(CrewAnimation *this);
+__thiscall bool CrewAnimation::FireShot(CrewAnimation* this);
 "8b413483f8ff74??8b513c89d183e1fd83f90174??83fa0274??83f8010f94c00fb6c083c001c389f68dbc270000000083f8020f94c0":
-__thiscall int CrewAnimation::GetFiringFrame(CrewAnimation *this);
+__thiscall int CrewAnimation::GetFiringFrame(CrewAnimation* this);
 "578d7c240883e4f0ff77fc5589e55756538db51cffffff89cb81ec1c010000803f008b41088b00":
-__thiscall void CrewAnimation::RenderIcon(CrewAnimation *this, bool border);
+__thiscall void CrewAnimation::RenderIcon(CrewAnimation* this, bool border);
 "578d7c240883e4f0ff77fc5589e557565389ce83c14083ec2ce8????????8b8e900800008b8694080000":
-__thiscall void CrewAnimation::OnUpdateEffects(CrewAnimation *this);
+__thiscall void CrewAnimation::OnUpdateEffects(CrewAnimation* this);
 
 
 struct CrewAnimation
@@ -32,11 +32,10 @@ struct CrewAnimation
 	{
 	}
 
-	CrewAnimation(int _shipId, const std::string& _race, Pointf _unk, char _hostile)
+	CrewAnimation(int shipId, const std::string& race, Pointf position, bool enemy)
 	{
-		this->constructor(_shipId, _race, _unk, _hostile);
+		this->constructor(shipId, race, position, enemy);
 	}
 
 	bool _HS_CustomDeath();
-
 }};

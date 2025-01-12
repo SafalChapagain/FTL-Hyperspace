@@ -1,6 +1,6 @@
 "5589e55389cb83e4f0837d080174??c783cc010000000000008b5dfcc9c2040080b9c80100000074??":
-__thiscall void MindSystem::SetArmed(MindSystem *this, int armed);
+__thiscall void MindSystem::SetArmed(MindSystem* this, int armed);
 "578d7c240883e4f0ff77fc5589e557565383ec5c8b81ec0100008bb1e8010000894dbc89c329f389d8c1f80285c0":
-__thiscall void MindSystem::InitiateMindControl(MindSystem *this);
+__thiscall void MindSystem::InitiateMindControl(MindSystem* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec4ce8????????8b83ec0100003983e8010000740789d9":
-__thiscall void MindSystem::OnLoop(MindSystem *this);
+__thiscall void MindSystem::OnLoop(MindSystem* this);

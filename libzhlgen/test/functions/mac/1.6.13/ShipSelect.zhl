@@ -1,24 +1,36 @@
-"554889e553504889fbbe????????ba????????e8????????488d":
-cleanup __amd64 void ShipSelect::constructor(ShipSelect *this);
+// Continue from Global_ShipObject_ShipInfoList (hyper efficiency™)
+".554889e553504889fbbe":
+cleanup __amd64 void ShipSelect::constructor(ShipSelect* this);
 ".554889e54156534989fe498b4628":
-cleanup __amd64 void ShipSelect::ClearShipButtons(ShipSelect *this);
-"554889e5415741564154534881ec800000004889fb80bb20":
-cleanup __amd64 void ShipSelect::OnLoop(ShipSelect *this);
-"554889e54881c7180600005d":
-cleanup __amd64 int ShipSelect::KeyDown(ShipSelect *this, SDLKey key);
-"554889e553504889fb80bb20":
-cleanup __amd64 void ShipSelect::MouseClick(ShipSelect *this);
-"554889e5c6475800":
-cleanup __amd64 void ShipSelect::Close(ShipSelect *this);
-"554889e58b475c":
-cleanup __amd64 int ShipSelect::GetSelectedShip(ShipSelect *this);
-"554889e54157415641554154534881ecc8020000":
-cleanup __amd64 void ShipSelect::SelectShip(ShipSelect *this, int shipType);
-"554889e54157415641554154534881ec????????89f1":
-cleanup __amd64 void ShipSelect::PreSelectShip(ShipSelect *this, int shipType);
-"554889e54157415641554154534881ec980000004189f548":
-cleanup __amd64 void ShipSelect::MouseMove(ShipSelect *this, int x, int y);
-"554889e54157415641554154534881ec280200004989fe41":
-cleanup __amd64 void ShipSelect::Open(ShipSelect *this, int currentId, int currentType);
-"554889e54157415641554154534883ec384989fc4180bc24":
-cleanup __amd64 void ShipSelect::OnRender(ShipSelect *this);
+cleanup __amd64 void ShipSelect::ClearShipButtons(ShipSelect* this);
+"!.554889e54157415641554154534881ec980000004189f548":
+cleanup __amd64 void ShipSelect::MouseMove(ShipSelect* this, int mX, int mY);
+/* Inlined into SelectShip - luckily both unused
+"NULL":
+cleanup __amd64 void ShipSelect::PreSelectShip(ShipSelect* this, int shipType);
+".554889e54157415641554154534881ecc8020000":
+cleanup __amd64 void ShipSelect::SelectShip(ShipSelect* this, int shipType);
+*/
+"!.554889e5415741564154534881ec800000004889fb80bb20":
+cleanup __amd64 void ShipSelect::OnLoop(ShipSelect* this);
+"!.554889e54881c7180600005d":
+cleanup __amd64 int ShipSelect::KeyDown(ShipSelect* this, SDLKey key);
+"!.554889e553504889fb80bb20":
+cleanup __amd64 void ShipSelect::MouseClick(ShipSelect* this);
+"!.554889e5c6475800":
+cleanup __amd64 void ShipSelect::Close(ShipSelect* this);
+".554889e58b475c":
+cleanup __amd64 int ShipSelect::GetSelectedShip(ShipSelect* this);
+".554889e54157415641554154534883ec384989fc4180bc24":
+cleanup __amd64 void ShipSelect::OnRender(ShipSelect* this);
+"!.554889e54157415641554154534881ec280200004989fe41":
+cleanup __amd64 void ShipSelect::Open(ShipSelect* this, int currentId, int currentType);
+
+
+struct ShipSelect
+{{
+    ShipSelect()
+    {
+        this->constructor();
+    }
+}};

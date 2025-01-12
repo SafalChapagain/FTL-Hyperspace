@@ -1,2 +1,2 @@
 "5589e5538b51408b412889cb83e4f08b0c908b01ff501089d9e8????????8b5dfcc9c3":
-__thiscall void TabbedWindow::Close(TabbedWindow *this);
+__thiscall void TabbedWindow::Close(TabbedWindow* this);

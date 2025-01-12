@@ -1,7 +1,7 @@
 "5589e55383ec448b5d0880bbb00000000074??8d8310010000":
-cleanup __cdecl void LaserBlast::OnUpdate(LaserBlast *this);
+cleanup __cdecl void LaserBlast::OnUpdate(LaserBlast* this);
 "5383ec188b5c24208b4374394370c7433801000000":
-cleanup __cdecl void LaserBlast::OnInit(LaserBlast *this);
+cleanup __cdecl void LaserBlast::OnInit(LaserBlast* this);
 
 
 "!e8????????8b8d3cfffffff30f108538ffffff8b4174394170c701(???????\?)c74104(???????\?)":
@@ -11,5 +11,5 @@ void** VTable_Targetable_LaserBlast;
 
 struct LaserBlast
 {{
-	LaserBlast(Pointf _position, int _ownerId, int _targetId, Pointf _target);
+	LaserBlast(Pointf position, int ownerId, int targetId, Pointf target);
 }};

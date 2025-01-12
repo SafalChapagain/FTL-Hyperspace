@@ -1,17 +1,21 @@
 "5531c057565383ec3c8b5424548b742450":
-cleanup __cdecl void CrewBlueprint::RandomSkills(CrewBlueprint *this, int worldLevel);
+cleanup __cdecl void CrewBlueprint::RandomSkills(CrewBlueprint* this, int worldLevel);
 "5557565383ec7c8b8424900000008b9424a40000008bbc24940000008bac24980000008b4864":
-cleanup __cdecl void CrewBlueprint::RenderSkill(CrewBlueprint *this, int x, int y, int length, int height, int skill);
+cleanup __cdecl void CrewBlueprint::RenderSkill(CrewBlueprint* this, int x, int y, int length, int height, int skill);
 "5589e557565381eccc0100008b4508":
-cleanup __cdecl void CrewBlueprint::RenderIcon(CrewBlueprint *this, float opacity);
+cleanup __cdecl void CrewBlueprint::RenderIcon(CrewBlueprint* this, float opacity);
 "5557565383ec2c8b7424408b467c":
-cleanup __cdecl void CrewBlueprint::destructor(CrewBlueprint *this);
+cleanup __cdecl void CrewBlueprint::destructor(CrewBlueprint* this);
 "5589e557565383ec3c8b5d0c807b4800":
 cleanup __cdecl std::string CrewBlueprint::GetNameShort(CrewBlueprint* this);
 "8b5424088b4c240c8b4424048b52648d14ca":
-cleanup __cdecl GL_Color CrewBlueprint::GetCurrentSkillColor(CrewBlueprint *this, int skill);
+cleanup __cdecl GL_Color CrewBlueprint::GetCurrentSkillColor(CrewBlueprint* this, int skill);
 
 
 struct CrewBlueprint
 {{
+    CrewBlueprint()
+    {
+        this->destructor();
+    }
 }};

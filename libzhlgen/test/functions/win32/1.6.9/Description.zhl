@@ -1,8 +1,8 @@
 "578d7c240883e4f0ff77fc5589e5575389cb83ec10c70424????????e8????????8d4b1c83ec04c6431801c70424????????e8????????8d4b3883ec04c6433401c70424????????e8????????8d4b68":
-__thiscall void Description::constructor(Description *this);
+__thiscall void Description::constructor(Description* this);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec1c8b1f891c24e8????????0fb643188d4e1c83ec048846188d431c890424e8????????0fb643348d4e3883ec04":
-__thiscall Description& Description::copy_assign_1(Description *this, Description& other);
+__thiscall Description& Description::copy_assign_1(Description* this, Description& other);
 ".578d7c240883e4f0ff77fc5589e557565389ce83ec1c8b1f891c24e8????????0fb643188d4e1c83ec048846188d431c890424e8????????0fb643348d4e3883ec04":
-__thiscall Description& Description::copy_assign_2(Description *this, const Description& other);
+__thiscall Description& Description::copy_assign_2(Description* this, const Description& other);
 "558d918c00000089e55389cb83e4f083ec108b818400000039d074??890424e8????????8b43688d537039d074??890424e8????????8b43388d534039d0":
-__thiscall void Description::destructor(Description *this);
+__thiscall void Description::destructor(Description* this);

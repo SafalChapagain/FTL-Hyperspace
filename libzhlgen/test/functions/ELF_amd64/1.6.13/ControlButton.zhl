@@ -1,2 +1,2 @@
 "415455534889fb4883ec608b4730":
-cleanup __amd64 void ControlButton::OnRender(ControlButton *this);
+cleanup __amd64 void ControlButton::OnRender(ControlButton* this);

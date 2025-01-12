@@ -1,31 +1,31 @@
 "8d4118f30f1005????????c7410401000000c7410800000000f30f11411089018d4134c7410c00000000c7411400000000f30f11412c89411c8d4150c7411800000000c7412001000000f30f1141488941388d4164c7412400000000c741280000000089415c":
-__thiscall void ResourceControl::constructor(ResourceControl *this);
+__thiscall void ResourceControl::constructor(ResourceControl* this);
 "5589e583e4f083ec408b45088b552c85c00f84????????660fefe489c185c9f30f104d20f30f106d1cf30f104518f30f2a6514":
-__thiscall GL_Primitive* ResourceControl::CreateImagePrimitive(ResourceControl *this, GL_Texture *tex, int unk1, int unk2, int unk3, GL_Color color, float alpha, bool mirror);
+__thiscall GL_Primitive* ResourceControl::CreateImagePrimitive(ResourceControl* this, GL_Texture* image, int x, int y, int rotation, GL_Color color, float alpha, bool mirror);
 ".5589e55389cb":
-__thiscall void ResourceControl::OnInit(ResourceControl *this, int imageSwappingMode);
+__thiscall void ResourceControl::OnInit(ResourceControl* this, int imageSwappingMode);
 "5589e557565389cf31db83e4f083ec408d442430c744240c10000000c744240800000000c744243064617461c74424342e646174894424288b4508":
-__thiscall char* ResourceControl::LoadFile(ResourceControl *this, const std::string& fileName);
+__thiscall char* ResourceControl::LoadFile(ResourceControl* this, const std::string& fileName);
 "5589e557565389ce31db83e4f083ec208b45088b7d0cc744240c10000000c7442408000000008b00894424048b81c8000000890424":
-__thiscall char* ResourceControl::LoadFromResourceFile(ResourceControl *this, const std::string &fileName, std::size_t &fileSize, const std::string *unused_resourceFile);
+__thiscall char* ResourceControl::LoadFromResourceFile(ResourceControl* this, const std::string& fileName, std::size_t& fileSize, const std::string* unused_resourceFile);
 "578d7c240883e4f0ff77fc5589e55756538d459081ec????????8b1f8b3d????????":
-__thiscall GL_Texture* ResourceControl::GetImageId(ResourceControl *this, const std::string& dir);
+__thiscall GL_Texture* ResourceControl::GetImageId(ResourceControl* this, const std::string& dir);
 "5589e583e4f083ec408b45088b552c85c00f84????????660fefd289c185c9f30f104d20f30f106d1cf30f104518":
-__thiscall int ResourceControl::RenderImage(ResourceControl *this, GL_Texture* tex, int x, int y, int rotation, GL_Color color, float opacity, bool mirror);
+__thiscall int ResourceControl::RenderImage(ResourceControl* this, GL_Texture* tex, int x, int y, int rotation, GL_Color color, float opacity, bool mirror);
 "578d7c240883e4f0ff77fc5589e557565383ec5c8b570c8b07f30f1077208b5f048b7708f30f1175d08955d48b5724":
-__thiscall int ResourceControl::RenderImageString(ResourceControl *this, std::string& tex, int x, int y, int rotation, GL_Color color, float opacity, bool mirror);
+__thiscall int ResourceControl::RenderImageString(ResourceControl* this, std::string& tex, int x, int y, int rotation, GL_Color color, float opacity, bool mirror);
 ".578d7c240883e4f0ff77fc5589e557565383ec5c8b570c8b07f30f1077208b5f048b7708f30f1175d08955d48b5724890424":
-__thiscall GL_Primitive* ResourceControl::CreateImagePrimitiveString(ResourceControl *this, const std::string& tex, int x, int y, int rotation, GL_Color color, float alpha, bool mirror);
+__thiscall GL_Primitive* ResourceControl::CreateImagePrimitiveString(ResourceControl* this, const std::string& tex, int x, int y, int rotation, GL_Color color, float alpha, bool mirror);
 "57????????83e4f0ff77fc5589e557565389cb83ec4c8b37897dc08b4f048d46fa83f8020f87????????c70709000000b809000000ba01000000be09000000":
-__thiscall freetype::font_data &ResourceControl::GetFontData(ResourceControl *this, int size, bool ignoreLanguage);
+__thiscall freetype::font_data& ResourceControl::GetFontData(ResourceControl* this, int size, bool ignoreLanguage);
 "5731d28d7c240883e4f0ff77fc5589f889e557565389ce83ec2c8b0f897dd8":
-__thiscall ImageDesc ResourceControl::GetImageData(ResourceControl *this, GL_Texture *tex);
+__thiscall ImageDesc ResourceControl::GetImageData(ResourceControl* this, GL_Texture* tex);
 "578d7c240883e4f0ff77fc5589e557565389ce81ec1c0200000fb6078885effdffffe8????????8b86cc000000":
-__thiscall bool ResourceControl::PreloadResources(ResourceControl *this, bool unk);
+__thiscall bool ResourceControl::PreloadResources(ResourceControl* this, bool preloadPlayerShips);
 "578d7c240883e4f0ff77fc5589e557565389ce81ec8c0000008b89d0000000f30f1017f30f104f048d7dd085c9":
-__thiscall void ResourceControl::RenderLoadingBar(ResourceControl *this, float initialProgress, float finalProgress);
+__thiscall void ResourceControl::RenderLoadingBar(ResourceControl* this, float initialProgress, float finalProgress);
 "578d7c240883e4f0ff77fc5589e55756538d5dd083ec4c8b378d7dd8894dc489d9c745d400000000897dd0c645d8008b460483c004890424":
-__thiscall bool ResourceControl::ImageExists(ResourceControl *this, const std::string& name);
+__thiscall bool ResourceControl::ImageExists(ResourceControl* this, const std::string& name);
 
 
 "!8b45b8890424e8????????b9(???????\?)":
@@ -41,4 +41,8 @@ struct ResourceControl depends (freetype)
 	  SWAP_DYNAMIC_SHIPS = 0x2,
 	};
 
+	ResourceControl()
+	{
+		this->constructor();
+	}
 }};

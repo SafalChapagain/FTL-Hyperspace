@@ -1,7 +1,7 @@
 "5557565383ec4c8b7424608b442464":
-cleanup __cdecl void LocationEvent::ClearEvent(LocationEvent *this, bool force);
+cleanup __cdecl void LocationEvent::ClearEvent(LocationEvent* this, bool force);
 "565383ec248b5c24308d74241f89742408":
-cleanup __cdecl void LocationEvent::constructor(LocationEvent *this);
+cleanup __cdecl void LocationEvent::constructor(LocationEvent* this);
 
 struct LocationEvent
 {{

@@ -1,21 +1,22 @@
-"554889e54157415641554154534883ec484989fe4180be69":
-cleanup __amd64 void UpgradeBox::OnRender(UpgradeBox *this);
-"554889e548833f00":
-cleanup __amd64 void UpgradeBox::MouseMove(UpgradeBox *this, int mX, int mY);
-"554889e5534883ec184889fb488b0b48":
-cleanup __amd64 void UpgradeBox::MouseClick(UpgradeBox *this, int mX, int mY);
-"554889e5534883ec184889fb488b0348":
-cleanup __amd64 void UpgradeBox::MouseRightClick(UpgradeBox *this, int mX, int mY);
-"554889e553504889fb8b4320":
-cleanup __amd64 void UpgradeBox::Undo(UpgradeBox *this);
-"554889e5534883ec384889fb488b3b48":
-cleanup __amd64 void UpgradeBox::Accept(UpgradeBox *this);
-"554889e5415741564154534883ec204189d44989":
-cleanup __amd64 void UpgradeBox::constructorEmpty(UpgradeBox *this, Point pos, bool subsystem);
-"554889e54157415641554154534883ec684589c6":
-cleanup __amd64 void UpgradeBox::constructorSystem(UpgradeBox *this, ShipManager *ship, ShipSystem *sys, Point pos, bool subsystem);
-"554889e553504889fb488bbb70010000":
-cleanup __amd64 void UpgradeBox::destructor(UpgradeBox *this);
+// Continue from UnlockArrow::OnRender (hyper efficiency™)
+"!.554889e553504889fb488bbb????????e8????????488dbb":
+cleanup __amd64 void UpgradeBox::destructor(UpgradeBox* this);
+".554889e5534883ec384889fb488b3b48":
+cleanup __amd64 void UpgradeBox::Accept(UpgradeBox* this);
+"!.554889e54157415641554154534883ec484989fe4180be69":
+cleanup __amd64 void UpgradeBox::OnRender(UpgradeBox* this);
+".554889e548833f00":
+cleanup __amd64 void UpgradeBox::MouseMove(UpgradeBox* this, int mouseX, int mouseY);
+".554889e5534883ec184889fb488b0b48":
+cleanup __amd64 void UpgradeBox::MouseClick(UpgradeBox* this, int mouseX, int mouseY);
+".554889e5534883ec184889fb488b0348":
+cleanup __amd64 void UpgradeBox::MouseRightClick(UpgradeBox* this, int mouseX, int mouseY);
+".554889e553504889fb8b4320":
+cleanup __amd64 void UpgradeBox::Undo(UpgradeBox* this);
+".554889e5415741564154534883ec204189d44989f6":
+cleanup __amd64 void UpgradeBox::constructorEmpty(UpgradeBox* this, Point _position, bool _isSubsystem);
+".554889e54157415641554154534883ec684589c6":
+cleanup __amd64 void UpgradeBox::constructorSystem(UpgradeBox* this, ShipManager* _ship, ShipSystem* _system, Point _position, bool _isSubsystem);
 
 
 struct UpgradeBox
@@ -24,14 +25,14 @@ struct UpgradeBox
 	{
 	}
 	
-	UpgradeBox(Point pos, bool subsystem)
+	UpgradeBox(Point position, bool isSubsystem)
 	{
-		this->constructorEmpty(pos, subsystem);
+		this->constructorEmpty(position, isSubsystem);
 	}
 	
-	UpgradeBox(ShipManager *ship, ShipSystem *sys, Point pos, bool subsystem)
+	UpgradeBox(ShipManager* ship, ShipSystem* systen, Point position, bool isSubsystem)
 	{
-		this->constructorSystem(ship, sys, pos, subsystem);
+		this->constructorSystem(ship, systen, position, isSubsystem);
 	}
 	
 	~UpgradeBox()

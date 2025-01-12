@@ -1,44 +1,39 @@
 "5589e557565381ecbc0100008b7d088b078b7764":
-cleanup __cdecl void InfoBox::OnRender(InfoBox *this);
+cleanup __cdecl void InfoBox::OnRender(InfoBox* this);
 "57565383ec208b5c24308d7424188d7c2417":
-cleanup __cdecl void InfoBox::Clear(InfoBox *this);
+cleanup __cdecl void InfoBox::Clear(InfoBox* this);
 "5557565383ec2c8b5c24408b7424448b7c24488b6c244c":
-cleanup __cdecl void InfoBox::SetDescription(InfoBox *this, Description *desc, int width, int height, InfoBox::ExpandDir dir); 
+cleanup __cdecl void InfoBox::SetDescription(InfoBox* this, Description* desc, int width, int height, InfoBox::ExpandDir dir); 
 "5557565383ec7c8d7c24378b9c24900000008d7424388bac24a0000000":
-cleanup __cdecl void InfoBox::SetText(InfoBox *this, const std::string& title, const std::string& text, int width, int height, InfoBox::ExpandDir dir); 
+cleanup __cdecl void InfoBox::SetText(InfoBox* this, const std::string& title, const std::string& text, int width, int height, InfoBox::ExpandDir dir); 
 "5589e557565383ec4c8b7d0c8d75d8":
-cleanup __cdecl void InfoBox::SetBlueprintWeapon(InfoBox *this, const WeaponBlueprint* bp, int status, bool hasWeaponSystem, int yShift); 
+cleanup __cdecl void InfoBox::SetBlueprintWeapon(InfoBox* this, const WeaponBlueprint* bp, int status, bool hasWeaponSystem, int yShift); 
 "5589e557565381ec3c0100008b45148b7508":
-cleanup __cdecl void InfoBox::SetBlueprintDrone(InfoBox *this, const DroneBlueprint* bp, int status, bool hasDroneSystem, int yShift); 
+cleanup __cdecl void InfoBox::SetBlueprintDrone(InfoBox* this, const DroneBlueprint* bp, int status, bool hasDroneSystem, int yShift); 
 ".57565383ec208b7424348b5c24308d4608894424048d430c890424":
-cleanup __cdecl void InfoBox::SetBlueprint(InfoBox *this, const ItemBlueprint* bp);
+cleanup __cdecl void InfoBox::SetBlueprint(InfoBox* this, const ItemBlueprint* bp);
 "5589e557565381ec8c0000008b45148b4d088945808b4508":
-cleanup __cdecl void InfoBox::SetBlueprintCrew(InfoBox *this, const CrewBlueprint* bp, int yShift, bool detailedCrew);
+cleanup __cdecl void InfoBox::SetBlueprintCrew(InfoBox* this, const CrewBlueprint* bp, int yShift, bool detailedCrew);
 ".57565383ec208b7424348b5c24308d4608894424048d430c890424":
-cleanup __cdecl void InfoBox::SetBlueprintAugment(InfoBox *this, const AugmentBlueprint* bp);
+cleanup __cdecl void InfoBox::SetBlueprintAugment(InfoBox* this, const AugmentBlueprint* bp);
 "5589e557565383ec3c8b5d08837b50ff":
-cleanup __cdecl bool InfoBox::IsEmpty(InfoBox *this);
+cleanup __cdecl bool InfoBox::IsEmpty(InfoBox* this);
 "5589e557565383ec6c8b7d08837f4801":
-cleanup __cdecl int InfoBox::CalcBoxHeight(InfoBox *this);
+cleanup __cdecl int InfoBox::CalcBoxHeight(InfoBox* this);
 "565383ec248b5c24308d74241fc744240800000000c744240400000000":
-cleanup __cdecl void InfoBox::constructor(InfoBox *this);
+cleanup __cdecl void InfoBox::constructor(InfoBox* this);
 "5589e557565383ec3c8b5d088b45188b7d0c":
-cleanup __cdecl void InfoBox::SetSystemId(InfoBox *this, int systemId, int maxPower, int currentLevel, int upgrade, int yShift, int forceSystemWidth);
+cleanup __cdecl void InfoBox::SetSystemId(InfoBox* this, int systemId, int maxPower, int currentLevel, int upgrade, int yShift, int forceSystemWidth);
 "5557565383ec3c8b7424548b5c245085f6":
-cleanup __cdecl void InfoBox::SetSystem(InfoBox *this, ShipSystem *system, int upgrade, int yShift, int forceSystemWidth);
+cleanup __cdecl void InfoBox::SetSystem(InfoBox* this, ShipSystem* system, int upgrade, int yShift, int forceSystemWidth);
 
 "!b8(???????\?)89fa84d2ba(???????\?)":
-GL_Color *Global_InfoBox_detailsBarOn;
-GL_Color *Global_InfoBox_detailsBarOff;
+GL_Color* Global_InfoBox_detailsBarOn;
+GL_Color* Global_InfoBox_detailsBarOff;
 
 
 struct InfoBox 
 {{
-	InfoBox()
-	{
-		this->constructor();
-	}
-
 	enum ExpandDir
 	{
 	  EXPAND_UP = -1,
@@ -46,4 +41,8 @@ struct InfoBox
 	  EXPAND_DOWN = 1,
 	};
 
+	InfoBox()
+	{
+		this->constructor();
+	}
 }};

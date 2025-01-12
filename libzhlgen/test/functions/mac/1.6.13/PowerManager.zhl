@@ -1,4 +1,5 @@
-"554889e54157415641554154534883ec184189fe":
+// Continue from Pointf::Normalize (hyper efficiency™)
+"!.554889e54157415641554154534883ec184189fe":
 static cleanup __amd64 PowerManager* PowerManager::GetPowerManager(int iShipId);
 
 

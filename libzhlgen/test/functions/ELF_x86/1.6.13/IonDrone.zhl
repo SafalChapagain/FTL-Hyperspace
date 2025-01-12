@@ -1,2 +1,2 @@
 "565383ec148b7424248b5c24208b869c000000":
-cleanup __cdecl Damage IonDrone::GetRoomDamage(IonDrone *this);
+cleanup __cdecl Damage IonDrone::GetRoomDamage(IonDrone* this);

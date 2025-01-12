@@ -1,11 +1,11 @@
 "5589e557565381ecfc0000008b5d18":
-cleanup __cdecl void IonDroneAnimation::constructor(IonDroneAnimation *this, int iShipId, Pointf position, bool enemy);
+cleanup __cdecl void IonDroneAnimation::constructor(IonDroneAnimation* this, int _iShipId, Pointf _position, bool _enemy);
 
 
 struct IonDroneAnimation
 {{
-	IonDroneAnimation(int _shipId, Pointf _position, bool _hostile)
+	IonDroneAnimation(int iShipId, Pointf position, bool enemy)
 	{
-		this->constructor(_shipId, _position, _hostile);
+		this->constructor(iShipId, position, enemy);
 	}
 }};

@@ -1,19 +1,19 @@
 "578d7c240883e4f0ff77fc5589f889e557565389cb83ec7c8b5008":
-__thiscall void ConfirmWindow::SetText(ConfirmWindow *this, const TextString& text_, int minWidth, bool autoCenter, const TextString& yesText_, const TextString& noText_);
+__thiscall void ConfirmWindow::SetText(ConfirmWindow* this, const TextString& text, int minWidth, bool autoCenter, const TextString& yesText, const TextString& noText);
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????8b8184000000":
-__thiscall void ConfirmWindow::OnRender(ConfirmWindow *this);
+__thiscall void ConfirmWindow::OnRender(ConfirmWindow* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec3c8b078b570489042489542404e8????????8b838400000083ec08":
-__thiscall void ConfirmWindow::SetPosition(ConfirmWindow *this, Point pos);
+__thiscall void ConfirmWindow::SetPosition(ConfirmWindow* this, Point position);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec3ce8????????807b7c000f84????????8b938000000089d085c00f84????????8b52088b03":
-__thiscall void ConfirmWindow::Open(ConfirmWindow *this);
+__thiscall void ConfirmWindow::Open(ConfirmWindow* this);
 "8079040074??5589e55389cb83e4f083ec1080b9c80000000075??80bbb80100000074??80bbb90100000074??8b03":
-__thiscall void ConfirmWindow::MouseClick(ConfirmWindow *this, int mX, int mY);
+__thiscall void ConfirmWindow::MouseClick(ConfirmWindow* this, int mX, int mY);
 "578d7c240883e4f0ff77fc5589e557565383ec1c807904008b378b7f0474??89cb":
-__thiscall void ConfirmWindow::MouseMove(ConfirmWindow *this, int mX, int mY);
+__thiscall void ConfirmWindow::MouseMove(ConfirmWindow* this, int mX, int mY);
 "5589e55389cb83e4f0e8????????8d43248d8b88000000c703????????c7432000000000c643240089431c8d434cc6433401c7433800000000c7434000000000894344":
-__thiscall void ConfirmWindow::constructor(ConfirmWindow *this);
+__thiscall void ConfirmWindow::constructor(ConfirmWindow* this);
 "5589e55389cb83e4f083ec108b8184000000890424e8????????c783840000000000000089d9e8????????8b5dfc":
-__thiscall void ConfirmWindow::Close(ConfirmWindow *this);
+__thiscall void ConfirmWindow::Close(ConfirmWindow* this);
 
 
 struct ConfirmWindow

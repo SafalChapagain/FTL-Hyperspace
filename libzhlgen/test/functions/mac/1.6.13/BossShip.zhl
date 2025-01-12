@@ -1,22 +1,24 @@
-"554889e5c787ec01":
-cleanup __amd64 void BossShip::Restart(BossShip *this);
-"554889e5f30f1087fc010000":
-cleanup __amd64 bool BossShip::IncomingFire(BossShip *this);
-".554889e553504889fb31d2b901000000e8":
-cleanup __amd64 void BossShip::constructor(BossShip *this, SpaceManager *space);
-"554889e553504889fb488b7b104885ff740e488b":
-cleanup __amd64 void BossShip::ClearLocation(BossShip *this);
-"554889e583bfec01":
-cleanup __amd64 bool BossShip::Defeated(BossShip *this);
-"554889e54156534883ec404989fee8":
-cleanup __amd64 LocationEvent* BossShip::GetSubEvent(BossShip *this);
-"554889e54157415641554154534881ec880000004989fc41":
-cleanup __amd64 void BossShip::StartStage(BossShip *this);
-"554889e54157415653504189f64989ff418bb7ec":
-cleanup __amd64 void BossShip::SaveBoss(BossShip *this, int file);
-"554889e5534883ec38488db7":
-cleanup __amd64 LocationEvent* BossShip::GetEvent(BossShip *this);
-"554889e54157415641554154534883ec284189f54889fb44":
-cleanup __amd64 void BossShip::LoadBoss(BossShip *this, int file);
-"554889e5415741564154534883ec504989fc41c6":
-cleanup __amd64 void BossShip::OnLoop(BossShip *this);
+"!554889e553504889fb31d2b9":
+noHook __amd64 void BossShip::DO_NOT_HOOK_FALSE_CONSTRUCTOR();
+"!.554889e553504889fb31d2b9":
+cleanup __amd64 void BossShip::constructor(BossShip* this, SpaceManager* _space);
+".554889e54157415653504189f64989ff418b":
+cleanup __amd64 void BossShip::SaveBoss(BossShip* this, int fd);
+".554889e54157415641554154534883ec284189f54889fb44":
+cleanup __amd64 void BossShip::LoadBoss(BossShip* this, int fd);
+".554889e5534883ec38488d":
+cleanup __amd64 LocationEvent* BossShip::GetEvent(BossShip* this);
+".554889e553504889fb488b7b104885ff740e":
+cleanup __amd64 void BossShip::ClearLocation(BossShip* this);
+"!.554889e583bfec":
+cleanup __amd64 bool BossShip::Defeated(BossShip* this);
+".554889e54156534883ec404989fee8":
+cleanup __amd64 LocationEvent* BossShip::GetSubEvent(BossShip* this);
+".554889e54157415641554154534881ec880000004989fc41":
+cleanup __amd64 void BossShip::StartStage(BossShip* this);
+".554889e5c787ec":
+cleanup __amd64 void BossShip::Restart(BossShip* this);
+".554889e5f30f1087fc":
+cleanup __amd64 bool BossShip::IncomingFire(BossShip* this);
+"!.554889e5415741564154534883ec504989fc":
+cleanup __amd64 void BossShip::OnLoop(BossShip* this);

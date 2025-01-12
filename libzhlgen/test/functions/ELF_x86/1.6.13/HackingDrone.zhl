@@ -1,6 +1,6 @@
 "565383ec248b7424348b5c243085f6":
-cleanup __cdecl void HackingDrone::SetMovementTarget(HackingDrone *this, Targetable *target);
+cleanup __cdecl void HackingDrone::SetMovementTarget(HackingDrone* this, Targetable* target);
 ".5589e557565383ec7c8b750c8b5d088b55548b7d34":
-cleanup __cdecl CollisionResponse HackingDrone::CollisionMoving(HackingDrone *this, Pointf start, Pointf finish, Damage damage, bool raytrace);
+cleanup __cdecl CollisionResponse HackingDrone::CollisionMoving(HackingDrone* this, Pointf start, Pointf finish, Damage damage, bool raytrace);
 ".5589e55756be050000005383ec7c8b5d08891c24":
-cleanup __cdecl void HackingDrone::OnLoop(HackingDrone *this);
+cleanup __cdecl void HackingDrone::OnLoop(HackingDrone* this);

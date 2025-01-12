@@ -1,6 +1,6 @@
 "41574156415541544989fc55534881ece80000004883bf3006000000":
-cleanup __amd64 void ControlsScreen::OnInit(ControlsScreen *this);
+cleanup __amd64 void ControlsScreen::OnInit(ControlsScreen* this);
 "41564155415449bcb76ddbb66ddbb66d554889fd534883ec4048638728060000":
-cleanup __amd64 void ControlsScreen::OnLoop(ControlsScreen *this);
+cleanup __amd64 void ControlsScreen::OnLoop(ControlsScreen* this);
 "415741564155415455534889fb4881ec1802000080bf7001000000":
-cleanup __amd64 void ControlsScreen::OnRender(ControlsScreen *this);
+cleanup __amd64 void ControlsScreen::OnRender(ControlsScreen* this);

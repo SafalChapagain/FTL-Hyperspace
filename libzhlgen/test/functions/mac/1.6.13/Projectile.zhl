@@ -1,25 +1,27 @@
-"554889e580bfc4020000000f":
-cleanup __amd64 bool Projectile::ValidTarget(Projectile *this);
+"554889e580bfc4020000000f94c05dc3":
+cleanup __amd64 bool Projectile::ValidTarget(Projectile* this);
 ".554889e5b8ffffffff5d":
-forceDetour cleanup __amd64 int Projectile::ForceRenderLayer(Projectile *this); /* Not listed in Ghidra */
-"554889e54156534883ec104989f64889fb0f134d":
-cleanup __amd64 CollisionResponse Projectile::CollisionMoving(Projectile *this, Pointf start, Pointf finish, Damage damage, bool raytrace);
-"554889e5534883ec284889fb80bbc400":
-cleanup __amd64 void Projectile::OnUpdate(Projectile *this);
-"554889e54157415641554154534881ecc80000004989f549":
-cleanup __amd64 void Projectile::CollisionCheck(Projectile *this, Collideable *other);
-"554889e54157415641554154534881ec????????4889fbc74310????????66c74314":
-cleanup __amd64 void Projectile::constructor(Projectile *this, Pointf position, int ownerId, int targetId, Pointf target);
-"554889e5415741564154534881ec700100004989f64889fb":
-cleanup __amd64 void Projectile::Initialize(Projectile *this, const WeaponBlueprint& bp);
-"554889e5535089fb488d7df0":
+cleanup __amd64 int Projectile::ForceRenderLayer(Projectile* this);
+".554889e54157415641554154534881ec????????4889fbc74310????????66c74314":
+cleanup __amd64 void Projectile::constructor(Projectile* this, Pointf _position, int _ownerId, int _targetId, Pointf _target);
+".554889e54157415641554154534881ecc80000004989f549":
+cleanup __amd64 void Projectile::CollisionCheck(Projectile* this, Collideable* other);
+".554889e5415741564154534881ec700100004989f6":
+cleanup __amd64 void Projectile::Initialize(Projectile* this, const WeaponBlueprint& bp);
+".554889e54156534883ec104989f64889fb0f134d":
+cleanup __amd64 CollisionResponse Projectile::CollisionMoving(Projectile* this, Pointf start, Pointf finish, Damage damage, bool raytrace);
+".554889e5534883ec284889fb80bbc400":
+cleanup __amd64 void Projectile::OnUpdate(Projectile* this);
+".554889e5535089fb488d7df0":
 static cleanup __amd64 Pointf Projectile::RandomSidePoint(int side);
-"554889e553504889fb488d05????????66480f6ec0":
-cleanup __amd64 void Projectile::destructor(Projectile *this);
+"!.554889e553504889fb488d05????????66480f6ec0":
+noHook __amd64 void Projectile::DO_NOT_HOOK_FALSE_DESTRUCTOR();
+"!.554889e553504889fb488d05????????66480f6ec0":
+cleanup __amd64 void Projectile::destructor(Projectile* this);
 
 
 struct Projectile
 {{
 	void HS_OnUpdate();
-	void HS_CollisionCheck(Collideable *other);
+	void HS_CollisionCheck(Collideable* other);
 }};

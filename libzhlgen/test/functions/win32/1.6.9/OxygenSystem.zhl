@@ -1,14 +1,23 @@
 "578d7c240883e4f0ff77fc5589e5575383ec108b47048b1f8b570885c07e??":
-__thiscall void OxygenSystem::UpdateBreach(OxygenSystem *this, int roomId, int hasBreach, bool unk3);
+__thiscall void OxygenSystem::UpdateBreach(OxygenSystem* this, int roomId, int hasBreach, bool silent);
 "578d7c240883e4f0ff77fc5589e557565383ec4c8b5f048b1785db7e??8b81c4010000":
-__thiscall void OxygenSystem::UpdateAirlock(OxygenSystem *this, int roomId, int unk);
+__thiscall void OxygenSystem::UpdateAirlock(OxygenSystem* this, int roomId, int count);
 ".8b81c40100008b542404c70490????????":
-__thiscall void OxygenSystem::EmptyOxygen(OxygenSystem *this, int roomId);
+__thiscall void OxygenSystem::EmptyOxygen(OxygenSystem* this, int roomId);
 "8b81c40100008b5424048d0490f30f1000f30f58442408f30f1100":
-__thiscall void OxygenSystem::ModifyRoomOxygen(OxygenSystem *this, int roomId, float value);
+__thiscall void OxygenSystem::ModifyRoomOxygen(OxygenSystem* this, int roomId, float value);
 ".578d7c240883e4f0ff77fc5589f889e557565389cf83ec3c8b18f30f106804":
-__thiscall void OxygenSystem::ComputeAirLoss(OxygenSystem *this, int roomId, float value, bool unk);
+__thiscall void OxygenSystem::ComputeAirLoss(OxygenSystem* this, int roomId, float value, bool silent);
 "5589e55389cb83e4f083ec1083b9a8010000017e??80b9ac0100000074??b9????????e8????????d95c240c8b5dfcf30f1044240cf30f5905????????f30f1144240c":
-__thiscall float OxygenSystem::GetRefillSpeed(OxygenSystem *this);
+__thiscall float OxygenSystem::GetRefillSpeed(OxygenSystem* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec3c8b4f0c8b47048b57088b37c70424????????894c240c8944240489d989542408e8????????":
-__thiscall void OxygenSystem::constructor(OxygenSystem *this, int numRooms, int roomId, int shipId, int startingPower);
+__thiscall void OxygenSystem::constructor(OxygenSystem* this, int _numRooms, int _roomId, int _shipId, int _startingPower);
+
+
+struct OxygenSystem
+{{
+    OxygenSystem(int numRooms, int roomId, int shipId, int startingPower)
+    {
+        this->constructor(numRooms, roomId, shipId, startingPower);
+    }
+}};

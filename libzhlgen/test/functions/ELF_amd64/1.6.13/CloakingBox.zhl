@@ -1,11 +1,11 @@
 "415431c9554889d5534889fb4883ec50":
-cleanup __amd64 void CloakingBox::constructor(CloakingBox *this, Point pos, CloakingSystem* sys);
+cleanup __amd64 void CloakingBox::constructor(CloakingBox* this, Point _position, CloakingSystem* _system);
 
 
 struct CloakingBox
 {{
-	CloakingBox(Point pos, CloakingSystem* sys)
+	CloakingBox(Point position, CloakingSystem* system)
 	{
-		this->constructor(pos, sys);
+		this->constructor(position, system);
 	}
 }};
