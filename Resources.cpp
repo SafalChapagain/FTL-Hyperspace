@@ -200,16 +200,7 @@ void Global::PreInitializeResources(ResourceControl *resources)
             // Perform custom text color registration before event parsing.
             if (strcmp(node->name(), "customChoiceColors") == 0)
             {
-                auto enableCustomChoiceColors = node->first_attribute("enabled")->value();
-                customOptions->enableCustomChoiceColors.defaultValue = EventsParser::ParseBoolean(enableCustomChoiceColors);
-                customOptions->enableCustomChoiceColors.currentValue = EventsParser::ParseBoolean(enableCustomChoiceColors);
-                for (auto child = node->first_node(); child; child = child->next_sibling())
-                {
-                    if (strcmp(child->name(), "choiceColor") == 0)
-                    {
-                        ParseChoiceColorNode(child);
-                    }
-                }
+                ParseChoiceColorsNode(node);
             }
         }
 

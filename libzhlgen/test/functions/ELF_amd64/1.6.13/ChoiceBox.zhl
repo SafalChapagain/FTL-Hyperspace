@@ -1,9 +1,12 @@
 "41554189d541544989fcbf":
-cleanup __amd64 void ChoiceBox::MouseMove(ChoiceBox *this, int x, int y);
+cleanup __amd64 void ChoiceBox::MouseMove(ChoiceBox *this, int x, int y); // 004e53b0
 ".833d????????0274??8b4770":
-cleanup __amd64 void ChoiceBox::MouseClick(ChoiceBox *this, int mX, int mY);
+cleanup __amd64 void ChoiceBox::MouseClick(ChoiceBox *this, int mX, int mY); // 004e55b0
 ".41574989ff41564155415455534881ec68020000":
 cleanup __amd64 void ChoiceBox::OnRender(ChoiceBox *this);
+".4157410fb6c1":
+cleanup __amd64 ResourceBoxDesc ChoiceBox::PrintResourceBox(ChoiceBox *this, ResourceEvent *resources, int x, int y, GL_Color border, bool choice); // 004e8b10
+
 struct ChoiceBox
 {{
     std::vector<ChoiceText*> GetChoices()

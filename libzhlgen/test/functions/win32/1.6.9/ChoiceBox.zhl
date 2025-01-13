@@ -4,6 +4,9 @@ __thiscall void ChoiceBox::OnRender(ChoiceBox *this);
 __thiscall void ChoiceBox::MouseMove(ChoiceBox *this, int x, int y);
 "578d7c240883e4f0ff77fc5589e55783ec14833d????????028b078b5704":
 __thiscall void ChoiceBox::MouseClick(ChoiceBox *this, int mX, int mY);
+"578d7c240883e4f0ff77fc5589e557565381ec4c020000":
+__thiscall ResourceBoxDesc ChoiceBox::PrintResourceBox(ChoiceBox *this, ResourceEvent *resources, int x, int y, GL_Color border, bool choice);
+
 struct ChoiceBox
 {{
     std::vector<ChoiceText*> GetChoices()

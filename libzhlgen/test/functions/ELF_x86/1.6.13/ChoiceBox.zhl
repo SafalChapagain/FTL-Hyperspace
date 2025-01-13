@@ -4,6 +4,9 @@ cleanup __cdecl void ChoiceBox::OnRender(ChoiceBox *this);
 cleanup __cdecl void ChoiceBox::MouseMove(ChoiceBox *this, int x, int y);
 "833d????????02538b4424088b54240c8b4c2410":
 cleanup __cdecl void ChoiceBox::MouseClick(ChoiceBox *this, int mX, int mY);
+"5589e557565381ec5c0100008b":
+cleanup __cdecl ResourceBoxDesc ChoiceBox::PrintResourceBox(ChoiceBox *this, ResourceEvent *resources, int x, int y, GL_Color border, bool choice);
+
 struct ChoiceBox
 {{
     std::vector<ChoiceText*> GetChoices()

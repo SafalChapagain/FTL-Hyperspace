@@ -6177,3 +6177,10 @@ struct VTable_CrewTarget
   bool (__thiscall *IsDrone)(CrewTarget *this);
 };
 
+struct ResourceBoxDesc
+{
+  int w;
+  int h;
+  Point row1;
+  Point row2;
+};
