@@ -2977,7 +2977,7 @@ HOOK_METHOD(ShipBuilder, MouseMove, (int x, int y) -> void)
         }
     }
 
-    if (reactorInfoButton)
+    if (reactorInfoButton && CustomOptionsManager::GetInstance()->showReactor.currentValue)
     {
         reactorInfoButton->MouseMove(x,y,false);
         if (reactorInfoButton->bHover)
