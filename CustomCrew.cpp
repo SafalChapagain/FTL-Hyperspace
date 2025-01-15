@@ -8,6 +8,7 @@
 #include "CustomDamage.h"
 #include "ShipUnlocks.h"
 #include "CustomEvents.h"
+#include "CustomSystems.h"
 
 #include <boost/lexical_cast.hpp>
 #include <boost/algorithm/string.hpp>
@@ -5260,9 +5261,17 @@ HOOK_METHOD(CrewAI, PrioritizeIntruderRoom, (CrewMember *crew, int roomId, int t
     return super(crew, roomId, target);
 }
 
-HOOK_METHOD(CrewMember, Clone, () -> void)
+HOOK_METHOD_PRIORITY(CrewMember, Clone, -9999, () -> void)
 {
     LOG_HOOK("HOOK_METHOD -> CrewMember::Clone -> Begin (CustomCrew.cpp)\n")
+
+    // lua callback
+    auto context = Global::GetInstance()->getLuaContext();
+
+    SWIG_NewPointerObj(context->GetLua(), this, context->getLibScript()->types.pCrewMember, 0);
+    context->getLibScript()->call_on_internal_event_callbacks(InternalEvents::CREW_CLONE, 1);
+    lua_pop(context->GetLua(), 1);
+
     bool cloneLoseSkills = false;
     CustomCrewManager *custom = CustomCrewManager::GetInstance();
     auto def = custom->GetDefinition(this->species);
@@ -5275,6 +5284,18 @@ HOOK_METHOD(CrewMember, Clone, () -> void)
     bDead = false;
     fStunTime = 0.f;
     Restart();
+
+    CloneSystem* sys = G_->GetShipManager(iShipId)->cloneSystem;
+    if (sys != nullptr)
+    {
+        CustomCloneSystem::CloneLevel& level = CustomCloneSystem::GetLevel(sys, false);
+
+        if (level.cloneHPPercent > 0)
+        {
+            health.first = static_cast<float>(level.cloneHPPercent)/100.0 * health.second;
+            if (health.first < 1) health.first = 1; // Small safety for our beloved crew
+        }
+    }
 
     crewAnim->status = 6;
     crewAnim->direction = 0;

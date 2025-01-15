@@ -43,6 +43,8 @@ struct InternalEvents
         
         // function crew_loop(CrewMember& crew)
         CREW_LOOP,
+        // function crew_clone(CrewMember& crew)
+        CREW_CLONE,
         // function ship_loop(ShipManager& ship)
         SHIP_LOOP,
 

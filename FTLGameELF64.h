@@ -3863,7 +3863,13 @@ struct CloneBox : CooldownSystemBox
 
 struct CloneSystem : ShipSystem
 {
+	LIBZHL_API CrewMember *CloneReady();
+	LIBZHL_API static int __stdcall GetCloneTime(int level);
+	LIBZHL_API float GetDeathProgress();
+	LIBZHL_API static int __stdcall GetJumpHealth(int level);
+	LIBZHL_API float GetProgress();
 	LIBZHL_API void OnLoop();
+	LIBZHL_API void OnRenderFloor();
 	
 	float fTimeToClone;
 	CrewMember *clone;
@@ -6968,6 +6974,7 @@ struct ShipManager : ShipObject
 	LIBZHL_API void CheckVision();
 	LIBZHL_API void ClearStatusAll();
 	LIBZHL_API void ClearStatusSystem(int system);
+	LIBZHL_API void CloneHealing();
 	LIBZHL_API CollisionResponse CollisionMoving(Pointf start, Pointf finish, Damage damage, bool raytrace);
 	LIBZHL_API CollisionResponse CollisionShield(Pointf start, Pointf finish, Damage damage, bool raytrace);
 	LIBZHL_API bool CommandCrewMoveRoom(CrewMember *crew, int roomId);

@@ -118,6 +118,8 @@ cleanup __cdecl void ShipManager::CheckSpreadDamage(ShipManager *this);
 cleanup __cdecl bool ShipManager::ForceDecreaseSystemPower(ShipManager *this, int sys);
 "8b5424088b4424048b524485d2":
 cleanup __cdecl ShieldPower ShipManager::GetShieldPower(ShipManager *this);
+"5589c557565383ec1c":
+cleanup __cdecl void ShipManager::CloneHealing(ShipManager *this);
 "538b4424088b9000040000837a0cff":
 cleanup __cdecl int ShipManager::AddWeapon(ShipManager *this, const WeaponBlueprint* bp, int slot);
 "5557565331db83ec3c8b4424548d74242c":

@@ -2,6 +2,8 @@
 cleanup __amd64 bool ShipManager::IsCloaked(ShipManager *this);
 ".488b87800000004885c0741c":
 cleanup __amd64 ShieldPower ShipManager::GetShieldPower(ShipManager *this);
+".41554154":
+cleanup __amd64 void ShipManager::CloneHealing(ShipManager *this);
 ".415483fe054989fc5553":
 cleanup __amd64 bool ShipManager::CanFitSystem(ShipManager *this, int systemId);
 ".41544989fc5553488b5728488b47304829d0":

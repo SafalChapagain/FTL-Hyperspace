@@ -1,2 +1,14 @@
-"5589e557565381ec4c0100008b4508890424":
+"5589e557565383ec6c8b????83bbb4010000ff":
+cleanup __cdecl void CloneSystem::OnRenderFloor(CloneSystem *this);
+".8b44??f30f2c04??????????":
+static cleanup __cdecl int CloneSystem::GetCloneTime(int level);
+".8b442404":
+static cleanup __cdecl int CloneSystem::GetJumpHealth(int level);
+".83ec040f57c98b44????":
+cleanup __cdecl float CloneSystem::GetDeathProgress(CloneSystem *this);
+".5383ec188b5c????891c??e8????????0f57c085c0":
+cleanup __cdecl float CloneSystem::GetProgress(CloneSystem *this);
+".5383ec188b44????8b989c010000":
+cleanup __cdecl CrewMember* CloneSystem::CloneReady(CloneSystem *this);
+".5589e557565381ec4c0100008b4508890424":
 cleanup __cdecl void CloneSystem::OnLoop(CloneSystem *this);

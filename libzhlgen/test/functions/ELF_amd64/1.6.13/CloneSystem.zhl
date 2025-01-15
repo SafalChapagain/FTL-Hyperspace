@@ -1,2 +1,14 @@
-"415741564155415455534889fb4881ec88010000":
+"??55??545553??89fb??83ec3883bf70020000ff":
+cleanup __amd64 void CloneSystem::OnRenderFloor(CloneSystem *this);
+".??63fff30f1004??????????":
+static cleanup __amd64 int CloneSystem::GetCloneTime(int level);
+".??63ff8b04??????????":
+static cleanup __amd64 int CloneSystem::GetJumpHealth(int level);
+".0f57c9f30f108754020000":
+cleanup __amd64 float CloneSystem::GetDeathProgress(CloneSystem *this);
+".53??89fbe8????????85c0":
+cleanup __amd64 float CloneSystem::GetProgress(CloneSystem *this);
+".53??8b9f48020000":
+cleanup __amd64 CrewMember* CloneSystem::CloneReady(CloneSystem *this);
+".415741564155415455534889fb4881ec88010000":
 cleanup __amd64 void CloneSystem::OnLoop(CloneSystem *this);

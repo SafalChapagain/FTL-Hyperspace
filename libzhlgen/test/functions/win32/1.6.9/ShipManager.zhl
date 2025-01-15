@@ -184,6 +184,9 @@ __thiscall void ShipManager::UpgradeSystem(ShipManager *this, int id, int amount
 __thiscall int ShipManager::CountPlayerCrew(ShipManager *this);
 "578d????0883e4f0ff????5589e557565389cb83ec1c8b81c8040000":
 __thiscall void ShipManager::Wait(ShipManager *this);
+"578d7c240883e4f0ff77fc5589e557565389ce83ec2c8b????e8":
+__thiscall void ShipManager::CloneHealing(ShipManager *this);
+
 struct ShipManager depends (PowerManager, ShieldPower)
 {{
 	ShipManager(int shipId) 

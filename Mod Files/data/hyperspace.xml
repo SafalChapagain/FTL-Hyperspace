@@ -1382,6 +1382,21 @@ Syntax ->
 		<level damageBoost="1.25" healthBoost="15.0" duration="20.0" lock="4" count="1"/>
 		<level damageBoost="2.0" healthBoost="30.0" duration="28.0" lock="4" count="1"/>  
 	</system>
+
+	<!--
+		jumpHP: Flat health gained on jump.
+		jumpHPPercent: % of health gained on jump, calculated before jumpHP, 0-100.
+		cloneHPPercent: % of health of newly created clone, 0-100.
+		skillLossPercent: % of skill lost on cloning, 0-100.
+		cloneSpeed: The time it takes to clone a new crew, in seconds. Cannot be above 0 for levels 4 and above.
+		deathSpeed: The time it takes to kill a crew clone when the system is unpowered, in seconds.
+	-->
+	<system id="clone">
+		<level jumpHP="8" jumpHPPercent="0" cloneHPPercent="100" skillLossPercent="10" cloneSpeed="12" deathSpeed="3"/>
+		<level jumpHP="16" jumpHPPercent="0" cloneHPPercent="100" skillLossPercent="10" cloneSpeed="9" deathSpeed="3"/>
+		<level jumpHP="25" jumpHPPercent="0" cloneHPPercent="100" skillLossPercent="10" cloneSpeed="7" deathSpeed="3"/>
+		<level jumpHP="36" jumpHPPercent="0" cloneHPPercent="100" skillLossPercent="10" cloneSpeed="0" deathSpeed="3"/>
+	</system>
 </customSystems>
 
 <!-- Stat boosts

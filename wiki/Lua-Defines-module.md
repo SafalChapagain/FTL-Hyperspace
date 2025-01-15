@@ -89,6 +89,8 @@ _**NOTE:** Currently internal events do not expect any arguments or return value
 | 1.10.0 | WEAPON_RENDERBOX | `ProjectileFactory weapon`, `int cooldown`, `int maxCooldown`, `string firstLine`, `string secondLine` | `string firstLine`, `string secondLine` | Change the text displayed for the player weapon cooldown timers |
 | 1.11.0 | PRE_CREATE_CHOICEBOX | `LocationEvent event` | `None` | Called before the creation of a `ChoiceBox` by a `LocationEvent` |
 | 1.11.0 | POST_CREATE_CHOICEBOX | `ChoiceBox choiceBox`, `LocationEvent event` | `None` | Called after the creation of a `ChoiceBox` by a `LocationEvent` |
+| 1.16.0 | CREW_CLONE | `CrewMember crew` | `None` | Called at the start of creating a `CrewMember` after the cloning process |
+
 
 ## Other predefined values
 
