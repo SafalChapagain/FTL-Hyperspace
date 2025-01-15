@@ -3,6 +3,7 @@
 
 struct RenderEvents
 {
+    // DO NOT FORGET TO UPDATE RenderEventNames as well
     enum Identifiers {
         UNKNOWN, // Must always be first, used to check for bounds of enum input value
 
@@ -66,5 +67,30 @@ struct RenderEvents
         UNKNOWN_MAX // Must always be last, used to check for bounds of enum input value
     };
 };
+
+// You update RenderEvents and not this with a code change and YOU_WILL_BE_FIRED
+constexpr const char* RenderEventNames[] = {
+    "UNKNOWN",
+    "MAIN_MENU",
+    "GUI_CONTAINER",
+    "LAYER_BACKGROUND",
+    "LAYER_FOREGROUND",
+    "LAYER_ASTEROIDS",
+    "LAYER_PLAYER",
+    "SHIP",
+    "SHIP_MANAGER",
+    "SHIP_JUMP",
+    "SHIP_HULL",
+    "SHIP_ENGINES",
+    "SHIP_FLOOR",
+    "SHIP_BREACHES",
+    "SHIP_SPARKS",
+    "CREW_MEMBER_HEALTH",
+    "LAYER_FRONT",
+    "FTL_BUTTON",
+    "SPACE_STATUS",
+    "MOUSE_CONTROL",
+    "UNKNOWN_MAX",
+}
 
 #endif // RENDEREVENTS_H

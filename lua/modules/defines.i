@@ -8,6 +8,9 @@
 %nodefaultctor RenderEvents;
 %nodefaultdtor RenderEvents;
 
+%ignore InternalEventNames;
+%ignore RenderEventNames;
+
 %{
 #include "InternalEvents.h"
 #include "RenderEvents.h"

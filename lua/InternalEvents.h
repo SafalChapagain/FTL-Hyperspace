@@ -11,6 +11,7 @@
 */
 struct InternalEvents
 {
+    // DO NOT FORGET TO UPDATE InternalEventNames as well
     enum Identifiers {
         UNKNOWN, // Must always be first, used to check for bounds of enum input value
 
@@ -173,6 +174,77 @@ struct InternalEvents
 
         UNKNOWN_MAX // Must always be last, used to check for bounds of enum input value
     };
+};
+
+// You update InternalEvents and not this with a code change and YOU_WILL_BE_FIRED
+constexpr const char* InternalEventNames[] = {
+    "UNKNOWN",
+    "ON_TICK",
+    "MAIN_MENU",
+    "GET_RUN_SEED",
+    "ON_KEY_DOWN",
+    "ON_KEY_UP",
+    "ON_MOUSE_MOVE",
+    "ON_MOUSE_L_BUTTON_DOWN",
+    "ON_MOUSE_L_BUTTON_UP",
+    "ON_MOUSE_R_BUTTON_DOWN",
+    "ON_MOUSE_R_BUTTON_UP",
+    "ON_MOUSE_M_BUTTON_DOWN",
+    "GUI_MOUSE_MOVE",
+    "CREW_LOOP",
+    "CREW_CLONE",
+    "SHIP_LOOP",
+    "HAS_EQUIPMENT",
+    "HAS_AUGMENTATION",
+    "GET_AUGMENTATION_VALUE",
+    "GET_DODGE_FACTOR",
+    "SET_BONUS_POWER",
+    "SELECT_ARMAMENT_PRE",
+    "SELECT_ARMAMENT_POST",
+    "PROJECTILE_INITIALIZE",
+    "PROJECTILE_FIRE",
+    "PROJECTILE_PRE",
+    "PROJECTILE_POST",
+    "PROJECTILE_UPDATE_PRE",
+    "PROJECTILE_UPDATE_POST",
+    "WEAPON_STATBOX",
+    "WEAPON_DESCBOX",
+    "WEAPON_RENDERBOX",
+    "DRONE_FIRE",
+    "DRONE_COLLISION",
+    "PROJECTILE_COLLISION",
+    "SHIELD_COLLISION_PRE",
+    "SHIELD_COLLISION",
+    "DAMAGE_AREA",
+    "DAMAGE_AREA_HIT",
+    "DAMAGE_BEAM",
+    "DAMAGE_SYSTEM",
+    "SYSTEM_ADD_DAMAGE",
+    "ACTIVATE_POWER",
+    "PREPARE_POWER",
+    "CANCEL_POWER",
+    "POWER_ON_UPDATE",
+    "POWER_RESOURCE_ON_UPDATE",
+    "POWER_ENABLE_INIT",
+    "POWER_RESOURCE_ENABLE_INIT",
+    "POWER_REQ",
+    "POWER_READY",
+    "POWER_TOOLTIP",
+    "GENERATOR_CREATE_SHIP",
+    "GENERATOR_CREATE_SHIP_POST",
+    "PRE_CREATE_CHOICEBOX",
+    "POST_CREATE_CHOICEBOX",
+    "JUMP_ARRIVE",
+    "JUMP_LEAVE",
+    "ON_WAIT",
+    "CONSTRUCT_CREWMEMBER",
+    "CONSTRUCT_SPACEDRONE",
+    "CONSTRUCT_PROJECTILE_FACTORY",
+    "CONSTRUCT_PROJECTILE",
+    "CONSTRUCT_ROOM",
+    "CONSTRUCT_SHIP_MANAGER",
+    "CONSTRUCT_SHIP_SYSTEM",
+    "UNKNOWN_MAX",
 };
 
 // TODO: Maybe we store an array using the Identifiers as the index and store the additional call data in there? Like number of arguments etc...?

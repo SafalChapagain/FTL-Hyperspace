@@ -712,6 +712,8 @@ int LuaLibScript::l_on_render_event(lua_State* lua)
     return 0;
 }
 
+static_assert(sizeof(RenderEventNames) / sizeof(RenderEventNames[0]) - 1 == RenderEvents::UNKNOWN_MAX, "You need to update RenderEventNames with a change of RenderEvents.");
+
 // Pre callback calls from highest priority to lowest priority, can return chain to stop the loop, returns index of last callback called plus 1.
 // If pre-empt is signalled then returns a negative index.
 // Absolute value of the pre_callbacks return is passed to the post_callbacks method.
@@ -735,7 +737,7 @@ int LuaLibScript::call_on_render_event_pre_callbacks(RenderEvents::Identifiers i
             lua_pushvalue(this->m_Lua, -1-nArg);
         }
         if(lua_pcall(this->m_Lua, nArg, 1, 0) != 0) {
-            hs_log_file("Failed to call the before callback for RenderEvent %u!\n %s\n", id, lua_tostring(this->m_Lua, -1)); // TODO: Maybe map RenderEvents to a readable string also?
+            hs_log_file("Failed to call the before callback for RenderEvent %s!\n %s\n", RenderEventNames[id], lua_tostring(this->m_Lua, -1)); // TODO: Maybe map RenderEvents to a readable string also?
             lua_pop(this->m_Lua, 1);
             continue;
         }
@@ -778,7 +780,7 @@ void LuaLibScript::call_on_render_event_post_callbacks(RenderEvents::Identifiers
             lua_pushvalue(this->m_Lua, -1-nArg);
         }
         if(lua_pcall(this->m_Lua, nArg, 0, 0) != 0) {
-            hs_log_file("Failed to call the after callback for RenderEvent %u!\n %s\n", id, lua_tostring(this->m_Lua, -1)); // TODO: Maybe map RenderEvents to a readable string also?
+            hs_log_file("Failed to call the after callback for RenderEvent %s!\n %s\n", RenderEventNames[id], lua_tostring(this->m_Lua, -1)); // TODO: Maybe map RenderEvents to a readable string also?
             lua_pop(this->m_Lua, 1);
             continue;
         }
@@ -824,6 +826,8 @@ int LuaLibScript::l_on_internal_event(lua_State* lua)
     return 0;
 }
 
+static_assert(sizeof(InternalEventNames) / sizeof(InternalEventNames[0]) - 1 == InternalEvents::UNKNOWN_MAX, "You need to update InternalEventNames with a change of InternalEvents.");
+
 // TODO: This might need to be a varargs in the future to allow calling with the arguments from the hook & also passing that infromation via the enum so we can check at registration time above if the function has the correct number of arguments and if the correct number were passed here.
 int LuaLibScript::call_on_internal_event_callbacks(InternalEvents::Identifiers id, int nArg, int nRet)
 {
@@ -844,7 +848,7 @@ int LuaLibScript::call_on_internal_event_callbacks(InternalEvents::Identifiers i
             lua_pushvalue(this->m_Lua, -1-nArg);
         }
         if(lua_pcall(this->m_Lua, nArg, nRet, 0) != 0) {
-            hs_log_file("Failed to call the callback for InternalEvent %u!\n %s\n", id, lua_tostring(this->m_Lua, -1)); // Also TODO: Maybe map RenderEvents to a readable string also?
+            hs_log_file("Failed to call the callback for InternalEvent %s!\n %s\n", InternalEventNames[id], lua_tostring(this->m_Lua, -1)); // Also TODO: Maybe map RenderEvents to a readable string also?
             lua_pop(this->m_Lua, 1);
             continue;
         }
@@ -889,7 +893,7 @@ bool LuaLibScript::call_on_internal_chain_event_callbacks(InternalEvents::Identi
         }
         if(lua_pcall(this->m_Lua, nArg, nRet+1, 0) != 0) {
             // if the pcall fails then we just continue
-            hs_log_file("Failed to call the callback for InternalEvent %u!\n %s\n", id, lua_tostring(this->m_Lua, -1)); // Also TODO: Maybe map RenderEvents to a readable string also?
+            hs_log_file("Failed to call the callback for InternalEvent %s!\n %s\n", InternalEventNames[id], lua_tostring(this->m_Lua, -1)); // Also TODO: Maybe map RenderEvents to a readable string also?
             lua_pop(this->m_Lua, 1);
             continue;
         }
