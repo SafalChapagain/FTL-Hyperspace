@@ -16,3 +16,5 @@ __thiscall void Upgrades::OnRender(Upgrades *this);
 __thiscall void Upgrades::Close(Upgrades *this);
 "578d7c240883e4f0ff77fc5589e557565331f68d7dd883ec4c8b51248b4120894dc489d129c1c1f902":
 __thiscall void Upgrades::ConfirmUpgrades(Upgrades *this);
+"578d????0883e4f0ff????5589e5575389cb83ec10e8????????8b432c89d9":
+__thiscall void Upgrades::Open(Upgrades *this);

@@ -904,6 +904,15 @@ playerVariableType playerVariables;
 %rename("%s") SpaceManager::gamePaused; // Not sure how this differs from CommandGui's pause information.
 %immutable SpaceManager::gamePaused;
 
+%rename("%s") WindowFrame;
+%rename("%s") WindowFrame::Draw;
+%rename("%s") WindowFrame::DrawMask;
+
+%rename("%s") WindowFrame::rect;
+%rename("%s") WindowFrame::outline;
+%rename("%s") WindowFrame::mask;
+%rename("%s") WindowFrame::pattern;
+
 %nodefaultctor AsteroidGenerator;
 %rename("%s") AsteroidGenerator;
 %rename("%s") AsteroidGenerator::bRunning;

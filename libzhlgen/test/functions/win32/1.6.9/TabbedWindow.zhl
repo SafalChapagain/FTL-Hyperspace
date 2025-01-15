@@ -1,2 +1,10 @@
 "5589e5538b51408b412889cb83e4f08b0c908b01ff501089d9e8????????8b5dfcc9c3":
 __thiscall void TabbedWindow::Close(TabbedWindow *this);
+"578d????0883e4f0ff????5589e557565389cb83ec3c8b????8b??85c974??8b01":
+__thiscall void TabbedWindow::AddWindow(TabbedWindow *this,const std::string& name,Button *button,FocusWindow *window);
+"578d????0883e4f0ff????5589f889e557565389cf81ecac0000008b??8b":
+__thiscall void TabbedWindow::SetTab(TabbedWindow *this, unsigned int tab);
+"5589e557565389ce83e4f083ec20e8":
+__thiscall void TabbedWindow::OnRender(TabbedWindow *this);
+"578d????0883e4f0ff????5589f889e557565389cf83ec2c8b??2b9138010000":
+__thiscall void TabbedWindow::MouseMove(TabbedWindow *this,int mX,int mY);

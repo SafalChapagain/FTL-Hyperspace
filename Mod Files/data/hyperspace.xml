@@ -371,6 +371,21 @@ If the chance attribute is set to 1 or above, every time the main menu is loaded
 
 <allowRenameInputSpecialCharacters enabled="false"/>
 
+<!-- Allows for the existence of additional tabs in the upgrade menu, be wary that they are to be used with lua to have any utility 
+name: name of the tab, will be used to find the icon_[name] for the tab in the img\upgradeUI\Equipment\tabButtons folder
+windowPath: path for the background of the new tab, do not include the extension
+hasUndo: whether the tab has an undo button or not, this button will call the event TABBED_WINDOW_UNDO when pressed
+
+You can use the RenderEvent TABBED_WINDOW for your lua rendering
+The internal event TABBED_WINDOW_CONFIRM dictate all event where the user left the tab, gives the tab id as a parameter
+The internal event TABBED_WINDOW_UNDO when the UNDO button is pressed, hasUndo needs to be enabled
+
+-->
+<customTabs enabled="false">
+	<tab name="newTab" windowPath="path/to/image" hasUndo="true"/>
+    <tab name="newTab2" windowPath="path/to/image" hasUndo="true"/>
+</customTabs>
+
 <!-- Enables command console in game - press \ to use
 
 

@@ -35,6 +35,7 @@
 #include "CustomAchievements.h"
 #include "HSVersion.h"
 #include "CustomUpgrades.h"
+#include "CustomTabbedWindow.h"
 
 #include <boost/lexical_cast.hpp>
 #include <boost/algorithm/string/replace.hpp>
@@ -587,6 +588,15 @@ void Global::InitializeResources(ResourceControl *resources)
                     {
                         AlternateOxygenManager::GetInstance()->CreateDefaultGradient();
                     }
+                }
+            }
+
+            if (strcmp(node->name(), "customTabs") == 0)
+            {
+                auto enabled = node->first_attribute("enabled")->value();
+                if (EventsParser::ParseBoolean(enabled))
+                {
+                    CustomTabbedWindow::GetInstance()->ParseWindowNode(node);
                 }
             }
 

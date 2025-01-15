@@ -20,6 +20,8 @@ __thiscall void CrewManifest::Close(CrewManifest *this);
 __thiscall void CrewManifest::MouseClick(CrewManifest *this, int mX, int mY);
 "578d7c240883e4f0ff77fc5589f889e557565389cf83ec2c8b308b40048945e48d81e000000089c1":
 __thiscall void CrewManifest::MouseMove(CrewManifest *this, int mX, int mY);
+"5589e55389cb83e4f0e8????????8d8be0000000e8????????":
+__thiscall void CrewManifest::Open(CrewManifest *this);
 
 
 struct CrewManifest

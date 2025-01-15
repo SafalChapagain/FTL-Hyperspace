@@ -2,3 +2,19 @@
 __thiscall void FocusWindow::MouseClick(FocusWindow *this, int x, int y);
 "578d7c240883e4f0ff77fc5589e5575383ec108b41088b1f8b7f0483f8ff":
 __thiscall void FocusWindow::MouseMove(FocusWindow *this, int x, int y);
+"578d7c240883e4f0ff77fc5589e5575389cb8d490883ec10c741f8????????c6":
+__thiscall void FocusWindow::constructor(FocusWindow *this);
+"5589e58b????8b????5d894114":
+__thiscall void FocusWindow::SetPosition(FocusWindow *this, Point p);
+".c6410400":
+__thiscall void FocusWindow::Close(FocusWindow *this);
+".c6410401":
+__thiscall void FocusWindow::Open(FocusWindow *this);
+
+struct FocusWindow
+{{
+	FocusWindow() 
+	{
+		this->constructor();
+	}
+}};

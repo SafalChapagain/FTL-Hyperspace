@@ -111,6 +111,8 @@ target_sources(
     CustomColors.h
     CustomCommandGui.cpp
     CustomCommandGui.h
+    CustomTabbedWindow.cpp
+    CustomTabbedWindow.h
     CustomCrew.cpp
     CustomCrew.h
     CustomCrewCommon.h

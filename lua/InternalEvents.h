@@ -135,6 +135,10 @@ struct InternalEvents
         PRE_CREATE_CHOICEBOX,
         // function post_create_choicebox(choiceBox &choiceBox, LocationEvent &event)
         POST_CREATE_CHOICEBOX,
+        // function tabbed_window_confirm(currentTab)
+        TABBED_WINDOW_CONFIRM,
+        // function tabbed_window_undo(currentTab)
+        TABBED_WINDOW_UNDO,
 
         // CREW_EQUIPMENT_BOX_REMOVE_ITEM, // CrewEquipBox::RemoveItem
 

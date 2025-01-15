@@ -895,6 +895,12 @@
 		<Unit filename="CustomCommandGui.h">
 			<Option virtualFolder="Core/CommandGui/" />
 		</Unit>
+		<Unit filename="CustomTabbedWindow.cpp">
+			<Option virtualFolder="Core/CommandGui/" />
+		</Unit>
+		<Unit filename="CustomTabbedWindow.h">
+			<Option virtualFolder="Core/CommandGui/" />
+		</Unit>
 		<Unit filename="CustomCrew.cpp">
 			<Option virtualFolder="Core/Crew/" />
 		</Unit>
