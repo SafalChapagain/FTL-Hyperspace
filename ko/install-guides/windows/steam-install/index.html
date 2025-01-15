@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/FTL-Hyperspace/ko/assets/css/style.css?v=">
+    <link rel="stylesheet" type="text/css" media="screen" href="/FTL-Hyperspace/ko/assets/css/custom-styles.css?v=">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.4/css/flag-icons.min.css" integrity="sha512-uvXdJud8WaOlQFjlz9B15Yy2Au/bMAvz79F7Xa6OakCl2jvQPdHD0hb3dEqZRdSwG4/sknePXlE7GiarwA/9Wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Steam Windows Hyperspace Install Instructions | FTL Hyperspace</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Steam Windows Hyperspace Install Instructions" />
+<meta property="og:locale" content="ko" />
+<meta name="description" content="A binary mod for FTL: Faster Than Light" />
+<meta property="og:description" content="A binary mod for FTL: Faster Than Light" />
+<link rel="canonical" href="https://github.com/FTL-Hyperspace/ko/install-guides/windows/steam-install/" />
+<meta property="og:url" content="https://github.com/FTL-Hyperspace/ko/install-guides/windows/steam-install/" />
+<meta property="og:site_name" content="FTL Hyperspace" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Steam Windows Hyperspace Install Instructions" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"A binary mod for FTL: Faster Than Light","headline":"Steam Windows Hyperspace Install Instructions","url":"https://github.com/FTL-Hyperspace/ko/install-guides/windows/steam-install/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/FTL-Hyperspace/ko/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+    <style type="text/css">
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+        }
+        nav.selector-list {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+        }
+        nav.selector-list > * {
+            display: block;
+            color: white;
+            padding: 0.2em 1em;
+        }
+        nav.selector-list > a:hover {
+            text-decoration: none;
+            background-color: #575757;
+        }
+        nav.selector-list > .active {
+            background-color: #f2f2f2;
+            color: #222222;
+            margin-bottom: -1px;
+        }
+        img.banner {
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+            border: none;
+            display: block;
+            max-width: 100%;
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          
+            <a id="forkme_banner" href="https://github.com/FTL-Hyperspace/FTL-Hyperspace">View on GitHub</a>
+          
+
+          <img class="banner" src="/FTL-Hyperspace/ko/assets/img/hyperspace_banner.png" alt="FTL Hyperspace" />
+          <!-- <h1 id="project_title">FTL Hyperspace</h1> -->
+          <!-- <h2 id="project_tagline">A binary mod for FTL: Faster Than Light</h2> -->
+
+          
+        </header>
+        <div class="nav-bar">
+            <nav class="selector-list nav-selector">
+                
+                    <a href="/FTL-Hyperspace/ko/">홈</a>
+                
+            </nav>
+            <nav class="selector-list language-selector">
+                
+                    
+                    
+                    
+                    
+                        <a href="/FTL-Hyperspace/install-guides/windows/steam-install/"><span class="fi fi-us"></span> English</a>
+                    
+                
+                    
+                    
+                    
+                    
+                        <a href="/FTL-Hyperspace/de/install-guides/windows/steam-install/"><span class="fi fi-de"></span> Deutsch</a>
+                    
+                
+                    
+                    
+                    
+                    
+                        <span class="active">
+                            <span class="fi fi-kr"></span> 한국어
+                        </span>
+                    
+                
+            </nav>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><strong>진행하기 전에 먼저 다른 FTL 모드를 전부 제거한 뒤 진행하세요!</strong></p>
+
+<h2 id="다운그레이드-및-하이퍼스페이스-라이브러리-설치하기">다운그레이드 및 하이퍼스페이스 라이브러리 설치하기</h2>
+
+<p>본 가이드의 다운그레이더는 Steam 1.6.14 버전에만 작동합니다. 만약 Steam 외 다른 플랫폼에서 FTL 을 설치했다면, <a href="/FTL-Hyperspace/install-guides/windows/">플랫폼에 맞는 가이드를 참조하셔야 합니다</a>.</p>
+
+<ol>
+  <li>FTL 을 실행합니다. 메인 메뉴 우측 하단에 <strong>반드시</strong> <code class="language-plaintext highlighter-rouge">Steam Version: 1.6.14</code> 라고 적혀 있어야 합니다. 만약 <code class="language-plaintext highlighter-rouge">1.6.9</code> 라고 표시되어 있으면 이미 다운그레이드가 끝난 것이고, 그도 아니라 아예 다른 내용이 적혀있다면 다른 모드가 아직 설치되어 있는 것일 수 있습니다!</li>
+  <li><a href="https://github.com/FTL-Hyperspace/FTL-Hyperspace/releases/latest">여기서 <code class="language-plaintext highlighter-rouge">FTL-Hyperspace.x.x.x.zip</code></a> 파일을 받습니다.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">x.x.x</code> 는 하이퍼스페이스 버전입니다.</li>
+      <li><code class="language-plaintext highlighter-rouge">Source code (zip)</code> 혹은 <code class="language-plaintext highlighter-rouge">Source code (tar.gz)</code> 는 <strong>받지 마세요</strong>. 여러분이 원하는 게 아닙니다.</li>
+    </ul>
+  </li>
+  <li>Steam 에서 FTL 을 찾아 로컬 파일 보기를 선택합니다. <img src="https://user-images.githubusercontent.com/1423894/173640622-7c442fc2-89a2-418f-ba28-354568381263.png" alt="image" /></li>
+  <li>로컬 파일이 아래와 같이 표시될 것입니다: (Windows 의 언어 표시 차이가 있을 수 있습니다)
+    <ul>
+      <li><em>파일 목록과 __파일 크기__가 반드시 일치해야 합니다</em></li>
+      <li><img src="https://user-images.githubusercontent.com/1423894/173657085-225a9560-411e-4a20-b707-b836ba36e551.png" alt="image" /></li>
+    </ul>
+  </li>
+  <li>다운로드 한 <code class="language-plaintext highlighter-rouge">FTL-Hyperspace.x.x.x.zip</code> 압축 파일을 엽니다.</li>
+  <li>
+    <p>압축 파일의 <code class="language-plaintext highlighter-rouge">Windows - Extract these files into where FTLGame.exe is</code> 폴더를 엽니다.
+<img src="https://user-images.githubusercontent.com/1423894/173667147-1cc5f424-7d9b-455b-a5db-83c2b9aba2a4.png" alt="FT1" /></p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Windows - Extract these files into where FTLGame.exe is</code> 폴더의 모든 파일/폴더 내용물을 <code class="language-plaintext highlighter-rouge">FTLGame.exe</code> 파일이 있는 위치로 추출합니다.
+    <ul>
+      <li><em>zip 파일 전체를 추출하지 마세요. Windows 폴더의 내용물만 필요합니다.</em></li>
+      <li><strong>참고:</strong> Hyperspace 1.2.0 이후부터는 <code class="language-plaintext highlighter-rouge">lua.dll</code> 파일이 추가되었지만, 이하 스크린샷에는 표시되어 있지 않습니다.</li>
+      <li><img src="https://user-images.githubusercontent.com/1423894/173667301-421fb58e-57c8-43e9-8339-7a01490fd18a.png" alt="FT2" /></li>
+    </ul>
+  </li>
+  <li>이 시점에서 게임 설치 폴더는 아래와 같은 모습이 되어야 합니다:
+    <ul>
+      <li>여기에 추가로 <code class="language-plaintext highlighter-rouge">crashlogs</code> 폴더 및 몇몇 log 파일이 있을 수도 있습니다. 하지만 그 외에는 추가적인 파일이 있어서는 안됩니다. 특히 .ftl 파일이나 .zip 파일은 있어서는 안됩니다.</li>
+      <li><strong>참고:</strong> Hyperspace 1.2.0 이후부터는 <code class="language-plaintext highlighter-rouge">lua.dll</code> 파일이 추가되었지만, 이하 스크린샷에는 표시되어 있지 않습니다.</li>
+      <li><code class="language-plaintext highlighter-rouge">ftl.dat</code> 파일의 크기는 <strong>아래 스크린샷과 일치하거나 매우 비슷해야 합니다</strong>. 만약 <code class="language-plaintext highlighter-rouge">ftl.dat</code> 파일의 크기가 다르다면 아직 다른 모드가 설치되어 있다는 뜻입니다.</li>
+      <li><img src="https://user-images.githubusercontent.com/1423894/173661274-86382f69-9141-4ff9-a23f-f7cbd0c8aec0.png" alt="image" /></li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">downgrade.bat</code> 파일을 더블클릭합니다.</li>
+  <li>다운그레이드가 끝나면 아래와 같은 모습이 되어야 합니다.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">FTLGame_orig.exe</code> 파일이 있어야 합니다. 또한 <strong><code class="language-plaintext highlighter-rouge">FTLGame.exe</code> 파일의 크기에 주목하세요</strong>. 만약 <code class="language-plaintext highlighter-rouge">FTLGame.exe</code> 파일이 <code class="language-plaintext highlighter-rouge">122MB</code> 가 아니라면 다운그레이드가 실패한 것입니다.</li>
+      <li><img src="https://user-images.githubusercontent.com/1423894/173661659-51d293fa-7f33-4292-8a13-80b7050e5e9d.png" alt="image" /></li>
+    </ul>
+  </li>
+  <li>이제 하이퍼스페이스가 <strong>절반 정도</strong> 설치되었습니다! 이제 하이퍼스페이스를 사용하는 모드를 설치할 단계입니다.</li>
+</ol>
+
+<h2 id="슬립스트림-모드-매니저로-하이퍼스페이스-기반-모드-설치하기">슬립스트림 모드 매니저로 하이퍼스페이스 기반 모드 설치하기</h2>
+<h3 id="슬립스트림-모드-매니저-설치하기">슬립스트림 모드 매니저 설치하기</h3>
+
+<ol>
+  <li>슬립스트림 모드 매니저를 설치하거나 업데이트 하기 전에, 먼저 바닐라 FTL 이 설치된 상태인지 확인하세요.
+    <ul>
+      <li>FTL 설치 폴더의 <code class="language-plaintext highlighter-rouge">ftl.dat</code> 파일의 크기를 확인하세요. 270 MB 부근이어야 합니다. (GoG 의 경우 212 MB) 만약 이보다 훨씬 크다면 이미 모드가 설치되어 있는 것이고, 따라서 바닐라로 먼저 되돌려놓아야 합니다!</li>
+      <li>슬립스트림 1.9.1 은 <code class="language-plaintext highlighter-rouge">ftl.dat</code> 파일이 바닐라인지 아닌지 똑똑하게 판단하지 못합니다. 따라서 첫 실행을 할 때 설치 폴더에 있는 <code class="language-plaintext highlighter-rouge">ftl.dat</code> 파일을 바닐라라고 간주할 것입니다. (따라서 만약 모드가 설치된 상태라면 슬립스트림은 모드가 설치된 상태의 <code class="language-plaintext highlighter-rouge">ftl.dat</code> 파일을 바닐라로 간주해버립니다!)</li>
+      <li><em>다시 강조하지만 바닐라 ftl.dat 인지 확인하시기 바랍니다. 이를 확인하는 것만으로도 수많은 설치 관련 문제를 방지할 수 있습니다.</em></li>
+    </ul>
+  </li>
+  <li><a href="https://subsetgames.com/forum/viewtopic.php?f=12&amp;t=17102">슬립스트림 모드 매니저 1.9.1</a> 을 받습니다.</li>
+  <li>원하는 곳에 압축 해제합니다. <strong><em>압축 해제를 하지 않은 상태로 zip 파일 안에서 직접 실행하지 마십시오.</em></strong></li>
+  <li>Java 가 설치되어 있어야 합니다 (대부분의 사람들에게 이미 설치되어 있을 것입니다).</li>
+</ol>
+
+<h3 id="슬립스트림으로-패치하기">슬립스트림으로 패치하기</h3>
+
+<ol>
+  <li>원하는 하이퍼스페이스 기반 모드를 받습니다.</li>
+  <li>슬립스트림 모드 매니저를 실행합니다.</li>
+  <li><code class="language-plaintext highlighter-rouge">Open mods/</code> 버튼을 클릭합니다.
+    <ul>
+      <li><img src="https://user-images.githubusercontent.com/1423894/173680447-24bdb0df-0a50-44a9-ad79-1f9a6a38f61d.png" alt="image" /></li>
+    </ul>
+  </li>
+  <li>받은 모드 (<code class="language-plaintext highlighter-rouge">.ftl</code> 혹은 <code class="language-plaintext highlighter-rouge">.zip</code> 파일) 를 이 mods 폴더 안에 넣습니다.</li>
+  <li>모드를 다시 스캔합니다.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">file</code> -&gt; <code class="language-plaintext highlighter-rouge">Re-Scan mods/</code> 를 선택합니다.</li>
+      <li><img src="https://user-images.githubusercontent.com/1423894/173680307-c9d1da5f-9a7e-43af-a933-d53431da27ad.png" alt="image" /></li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="multiverse-외-대부분의-하이퍼스페이스-기반-모드의-경우">(Multiverse 외) 대부분의 하이퍼스페이스 기반 모드의 경우</h4>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">Hyperspace</code> 를 목록의 최상단으로 설정합니다.</li>
+  <li><code class="language-plaintext highlighter-rouge">Hyperspace</code> 와 원하는 하이퍼스페이스 기반 모드를 체크합니다.
+    <ul>
+      <li><img src="https://user-images.githubusercontent.com/1423894/173682067-297f466c-bfad-4493-904c-0c27c836657b.png" alt="image" /></li>
+      <li><strong><em>단 Multiverse 는 이렇게 설치하면 안 됩니다.</em></strong> 아래 Multiverse 전용 가이드를 참조하세요.</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Patch</code> 를 선택합니다.</li>
+  <li>FTL 을 실행합니다.</li>
+  <li><a href="#설치-확인">제대로 설치되었는지 확인합니다.</a></li>
+</ol>
+
+<h4 id="multiverse-의-경우">Multiverse 의 경우</h4>
+<ol>
+  <li>슬립스트림이 .zip 파일도 모드로 인식하도록 설정합니다.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">File</code> -&gt; <code class="language-plaintext highlighter-rouge">Preferences</code> 를 선택합니다.</li>
+      <li><img src="https://user-images.githubusercontent.com/1423894/173679563-2f5dbe3d-dabf-4278-b8c0-f26351426021.png" alt="image" /></li>
+      <li><code class="language-plaintext highlighter-rouge">allow_zip</code> 을 체크합니다.</li>
+      <li><img src="https://user-images.githubusercontent.com/1423894/173679698-b2f5d369-182e-41a1-939c-39c40b6a0bd5.png" alt="image" /></li>
+    </ul>
+  </li>
+  <li>모드를 다시 스캔합니다.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">file</code> -&gt; <code class="language-plaintext highlighter-rouge">Re-Scan mods/</code> 를 선택합니다.</li>
+      <li><img src="https://user-images.githubusercontent.com/1423894/173680307-c9d1da5f-9a7e-43af-a933-d53431da27ad.png" alt="image" /></li>
+    </ul>
+  </li>
+  <li>Multiverse 를 패치합니다.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">FTL-Multiverse</code> 를 <strong>목록의 첫 번째로 체크합니다</strong>.</li>
+      <li><strong>Hyperspace 를 체크하지 마세요</strong></li>
+      <li>FTL Multiverse 호환 모드가 있다면 그 뒤에 배치하고 체크합니다.</li>
+      <li>FTL Multiverse 호환 모드를 제외하면 <strong>선택하지 마세요</strong>. 거의 대부분의 경우L Multiverse 와 충돌합니다. (아주 단순한 UI 모드조차도 충돌하는 경우가 잦습니다. 만약 특정 모드가 호환되는지 알고 싶다면 MV 디스코드에서 질문하실 수 있습니다)</li>
+      <li>예제: <img src="https://user-images.githubusercontent.com/1423894/173681032-76e9b056-ede6-42f5-ad5a-ffa0fece384a.png" alt="image" /></li>
+      <li><code class="language-plaintext highlighter-rouge">Patch</code> 를 선택합니다.</li>
+    </ul>
+  </li>
+  <li><a href="#설치-확인">제대로 설치되었는지 확인합니다.</a></li>
+</ol>
+
+<h3 id="설치-확인">설치 확인</h3>
+
+<ul>
+  <li>하이퍼스페이스의 DLL 이 제대로 설치되어 있다면, 로딩이 반쯤 진행된 순간부터 FTL 의 우상단에 작은 메시지가 표시될 것입니다: (버전에 따라 내용이 조금씩 다릅니다):
+    <ul>
+      <li><img src="https://user-images.githubusercontent.com/1423894/173682629-6aa843d8-bb36-4a3b-afad-bd6b23463a8a.png" alt="image" /></li>
+    </ul>
+  </li>
+  <li>
+    <p>또한 슬립스트림 모드 매니저로 모드를 제대로 설치되었다면, 별도의 에러 메시지 없이 모드의 메인 메뉴를 볼 수 있을 것입니다.</p>
+  </li>
+  <li>아래는 Multiverse 5.2.3 이 설치된 모습입니다:
+    <ul>
+      <li><img src="https://user-images.githubusercontent.com/1423894/173683306-2b92a3e2-d0d2-4bff-ac19-33ff6ef0a749.png" alt="image" /></li>
+    </ul>
+  </li>
+  <li>아래는 FTL Strawberry Edition 이 설치된 모습입니다:
+    <ul>
+      <li><img src="https://user-images.githubusercontent.com/1423894/173683567-598bc5fe-a7f8-4bad-8dd1-2b6ff161d695.png" alt="image" /></li>
+    </ul>
+  </li>
+  <li>아래는 별도의 모드 없이 FTL Hyperspace 만 설치된 모습입니다:
+    <ul>
+      <li><img src="https://user-images.githubusercontent.com/1423894/173684224-64a24d41-e5ae-4c52-b45f-82fafb42abea.png" alt="image" /></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="잘못-설치된-경우">잘못 설치된 경우</h3>
+
+<ul>
+  <li>
+    <p>만약 모드의 메인 메뉴는 떴지만 우상단에 버전 정보가 없다면, DLL 설치가 잘못된 것입니다.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">AcheivementTracker</code> 에러가 뜬다면 FTL 을 1.6.9 로 성공적으로 다운그레이드하지 못한 것입니다.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">hyperspace.xml</code> 이 없다는 에러가 뜬다면 <code class="language-plaintext highlighter-rouge">Hyperspace.ftl</code> 도 <code class="language-plaintext highlighter-rouge">Multiverse</code> 도 전부 슬립스트림으로 패치하지 않은 것입니다. (둘 중 하나가 설치되어 있어야 합니다)</p>
+  </li>
+  <li>
+    <p>Multiverse 와 Hyperspace 를 동시에 패치했다는 에러가 뜬다면, 슬립스트림에서 두 개를 동시에 체크했거나, 혹은 <code class="language-plaintext highlighter-rouge">ftl.dat</code> 파일이 바닐라가 아닌 상태로 슬립스트림이 설치되어 잘못된 데이터를 기준으로 패치된 것일 가능성이 높습니다.</p>
+  </li>
+</ul>
+
+<h4 id="감사드릴-분">감사드릴 분</h4>
+<p>다수의 Windows 설치 관련 스크린샷을 제공해주신 Cedric 에게 감사드립니다.</p>
+
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">FTL Hyperspace maintained by <a href="https://github.com/FTL-Hyperspace">FTL-Hyperspace</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <p>Site last updated: 15 January 2025</p>
+      </footer>
+    </div>
+  </body>
+</html>
