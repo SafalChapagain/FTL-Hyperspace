@@ -13,6 +13,11 @@
 #include "RenderEvents.h"
 #include "luaDefines.h"
 %}
+%ignore InternalEvents::GetEventInfo;
+
+%include "EventEnums.h"
 %include "InternalEvents.h"
 %include "RenderEvents.h"
 %include "luaDefines.h"
+
+

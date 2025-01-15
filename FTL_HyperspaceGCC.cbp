@@ -1328,6 +1328,9 @@
 		<Unit filename="lua/InternalEvents.h">
 			<Option virtualFolder="Scripting/" />
 		</Unit>
+		<Unit filename="lua/EventEnums.h">
+			<Option virtualFolder="Scripting/" />
+		</Unit>
 		<Unit filename="lua/LuaLibScript.h">
 			<Option virtualFolder="Scripting/" />
 		</Unit>

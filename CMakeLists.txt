@@ -259,6 +259,7 @@ target_sources(
     zhl_internal.h
     zhl_private.h
     lua/InternalEvents.h
+    lua/EventEnums.h
     lua/LuaLibScript.h
     lua/LuaScriptInit.cpp
     lua/LuaScriptInit.h

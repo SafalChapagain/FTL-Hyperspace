@@ -1,9 +1,11 @@
 #ifndef RENDEREVENTS_H
 #define RENDEREVENTS_H
+#include "EventEnums.h"
 
 struct RenderEvents
 {
-    enum Identifiers {
+
+    NAMED_ENUM(Identifiers,
         UNKNOWN, // Must always be first, used to check for bounds of enum input value
 
         ////LANGUAGE_CHOOSER, // LanguageChooser::OnRender
@@ -62,9 +64,7 @@ struct RenderEvents
         ////FPS, // CFPS::OnRender (not hooked yet)
         
         ////SHIELD_BASE, // Shields::RenderBase
-
         UNKNOWN_MAX // Must always be last, used to check for bounds of enum input value
-    };
+    )
 };
-
 #endif // RENDEREVENTS_H
