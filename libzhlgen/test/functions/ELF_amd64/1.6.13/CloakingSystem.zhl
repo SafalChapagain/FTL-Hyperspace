@@ -1,4 +1,4 @@
 "55534889fb4883ec08e8????????488dbb68020000":
-cleanup __amd64 void CloakingSystem::OnLoop(CloakingSystem *this);
+cleanup __amd64 void CloakingSystem::OnLoop(CloakingSystem* this);
 "534889fbbe????????4883ec30488d54241e":
-cleanup __amd64 void CloakingSystem::FiredWeapon(CloakingSystem *this);
+cleanup __amd64 void CloakingSystem::FiredWeapon(CloakingSystem* this);

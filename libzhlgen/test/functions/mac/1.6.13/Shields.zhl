@@ -1,25 +1,26 @@
-"554889e54156534883ec204889fbe83d":
-cleanup __amd64 void Shields::Jump(Shields *this);
-"554889e54157415641554154534883ec684989fde8776500":
-cleanup __amd64 void Shields::OnLoop(Shields *this);
-"554889e5415741564154534883ec??4d89c6":
-cleanup __amd64 void Shields::constructor(Shields *this, int roomId, int shipId, int startingPower, const std::string& shieldFile);
-"554889e54157415653504989f64889fb8b839802":
-cleanup __amd64 void Shields::AddSuperShield(Shields *this, Point pos);
-"554889e5f30f118778020000":
-cleanup __amd64 void Shields::SetBaseEllipse(Shields *this, Globals::Ellipse ellipse);
-"554889e541574156534883ec184989ffe8cb5d00":
-cleanup __amd64 void Shields::InstantCharge(Shields *this);
-"554889e54156534883ec300f294dc048":
-cleanup __amd64 void Shields::RenderBase(Shields *this, float alpha, float superShieldOverwrite);
-"554889e54156534883ec10f30f114de8":
-cleanup __amd64 CollisionResponse Shields::CollisionTest(Shields *this, float x, float y, Damage damage);
-"554889e5534883ec384889fb8b454089":
-cleanup __amd64 CollisionResponse Shields::CollisionReal(Shields *this, float x, float y, Damage damage, bool force);
-
-"!48894d??85d2488d0d(???????\?)488d55a8":
-offsetVariable GL_Color *Global_COLOR_GREEN;
-
+// Continue from Global_Settings_Settings (hyper efficiency™)
+".554889e5415741564154534883ec??4d89c6":
+cleanup __amd64 void Shields::constructor(Shields* this, int _roomId, int _shipId, int _startingPower, const std::string& _shieldFile);
+".554889e54157415653504989f64889fb8b839802":
+cleanup __amd64 void Shields::AddSuperShield(Shields* this, Point position);
+".554889e54156534883ec204889fbe83d":
+cleanup __amd64 void Shields::Jump(Shields* this);
+".554889e5f30f118778020000":
+cleanup __amd64 void Shields::SetBaseEllipse(Shields* this, Globals::Ellipse ellipse);
+".554889e541574156534883ec184989ffe8cb5d00":
+cleanup __amd64 void Shields::InstantCharge(Shields* this);
+".554889e5534883ec384889fb8b454089":
+cleanup __amd64 CollisionResponse Shields::CollisionReal(Shields* this, float x, float y, Damage damage, bool force);
+".554889e54156534883ec10f30f114de8":
+cleanup __amd64 CollisionResponse Shields::CollisionTest(Shields* this, float x, float y, Damage damage);
+".554889e54157415641554154534883ec684989fde8776500":
+cleanup __amd64 void Shields::OnLoop(Shields* this);
+"!.554889e54156534883ec300f294dc048":
+cleanup __amd64 void Shields::RenderBase(Shields* this, float alpha, float superShieldOverwrite);
+/*	Why even hook this? This isn't even used
+"!4531ff660f1f4400004939df7d4b488d05????????80785800488d0519261500(???????\?)": // Not working!
+offsetVariable GL_Color* Global_COLOR_GREEN;
+*/
 
 struct Shields
 {{

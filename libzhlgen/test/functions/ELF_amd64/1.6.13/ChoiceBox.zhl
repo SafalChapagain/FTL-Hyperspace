@@ -1,6 +1,6 @@
 "41554189d541544989fcbf":
-cleanup __amd64 void ChoiceBox::MouseMove(ChoiceBox *this, int x, int y);
+cleanup __amd64 void ChoiceBox::MouseMove(ChoiceBox* this, int mX, int mY);
 ".833d????????0274??8b4770":
-cleanup __amd64 void ChoiceBox::MouseClick(ChoiceBox *this, int mX, int mY);
+cleanup __amd64 void ChoiceBox::MouseClick(ChoiceBox* this, int mX, int mY);
 ".41574989ff41564155415455534881ec68020000":
-cleanup __amd64 void ChoiceBox::OnRender(ChoiceBox *this);
+cleanup __amd64 void ChoiceBox::OnRender(ChoiceBox* this);

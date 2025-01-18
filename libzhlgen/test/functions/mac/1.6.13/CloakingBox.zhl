@@ -1,11 +1,12 @@
-"554889e54157415641554154534883ec684889d34989fd31":
-cleanup __amd64 void CloakingBox::constructor(CloakingBox *this, Point pos, CloakingSystem* sys);
+// Continue from ChoiceBox::MouseClick (hyper efficiency™)
+".554889e54157415641554154534883ec684889d34989fd31":
+cleanup __amd64 void CloakingBox::constructor(CloakingBox* this, Point _position, CloakingSystem* _system);
 
 
 struct CloakingBox
 {{
-	CloakingBox(Point pos, CloakingSystem* sys)
+	CloakingBox(Point position, CloakingSystem* system)
 	{
-		this->constructor(pos, sys);
+		this->constructor(position, system);
 	}
 }};

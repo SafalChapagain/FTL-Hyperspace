@@ -1,5 +1,5 @@
 "578d7c240883e4f0ff77fc5589e557565383ec4c8b07894dc889c18945bc8b47048b59208d511c":
-__thiscall std::string TextLibrary::GetText(TextLibrary *this, const std::string& name, const std::string& lang);
+__thiscall std::string TextLibrary::GetText(TextLibrary* this, const std::string& name, const std::string& lang);
 
 
 struct TextLibrary
@@ -9,7 +9,7 @@ struct TextLibrary
         return TextLibrary::GetText(name, currentLanguage);
 	}
 
-	void SetLanguage(const std::string &language)
+	void SetLanguage(const std::string& language)
 	{
 		currentLanguage = language;
 	}

@@ -1,11 +1,11 @@
 "415541544989fc55534883ec38803f000f84c8000000":
-cleanup __amd64 void SoundControl::StopPlaylist(SoundControl *this, int fadeOut);
+cleanup __amd64 void SoundControl::StopPlaylist(SoundControl* this, int fadeOut);
 ".41574156415541544989fc55534883ec58803f004889742420":
-cleanup __amd64 void SoundControl::StartPlaylist(SoundControl *this, std::vector<std::string> &playlist);
+cleanup __amd64 void SoundControl::StartPlaylist(SoundControl* this, std::vector<std::string>& playlist);
 ".415731c04156415541544989fc55534883ec48803f00":
-cleanup __amd64 int SoundControl::PlaySoundMix(SoundControl *this, const std::string& soundName, float volume, bool loop);
+cleanup __amd64 int SoundControl::PlaySoundMix(SoundControl* this, const std::string& soundName, float volume, bool loop);
 ".4157415641554154554889fd534883ec38":
-cleanup __amd64 void SoundControl::UpdateSoundLoop(SoundControl *this, const std::string& loopId, float count);
+cleanup __amd64 void SoundControl::UpdateSoundLoop(SoundControl* this, const std::string& loopId, float count);
 
 "!488b8360020000488378e80074cf4881c36002000031d2bf(???????\?)":
 SoundControl* Global_SoundControl_Sounds;

@@ -1,6 +1,6 @@
 "554889f5534889fb4883ec08e8????????0fb64508488d7510488d7b10884308e8????????0fb64518488d7520488d7b20884318e8????????0fb64528488d7548488d7b488843288b45308943308b45348943348b45388943388b453c89433c0fb64540884340e8????????0fb64550488d7558":
-cleanup __amd64 Description& Description::copy_assign_2(Description *this, Description& other);
+cleanup __amd64 Description& Description::copy_assign_2(Description* this, Description& other);
 ".554889f5534889fb4883ec08e8????????0fb64508488d7510488d7b10884308e8????????0fb64518488d7520488d7b20884318e8????????0fb64528488d7548488d7b488843288b45308943308b45348943348b45388943388b453c89433c0fb64540884340e8????????0fb64550488d7558":
-cleanup __amd64 Description& Description::copy_assign_1(Description *this, const Description& other);
+cleanup __amd64 Description& Description::copy_assign_1(Description* this, const Description& other);
 "534889fb4883ec10488b4758488d78e8":
-cleanup __amd64 void Description::destructor(Description *this);
+cleanup __amd64 void Description::destructor(Description* this);

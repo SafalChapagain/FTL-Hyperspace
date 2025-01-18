@@ -1,4 +1,4 @@
-"554889e553504889fb488d05????????488903f683b800000001":
-cleanup __amd64 void Blueprint::destructor(Blueprint *this);
 "554889e553504889fb807e58":
 cleanup __amd64 std::string Blueprint::GetNameShort(Blueprint* this);
+"!.554889e553504889fb488d05????33":
+cleanup __amd64 void Blueprint::destructor(Blueprint* this);

@@ -1,8 +1,8 @@
 "5383ec188b5c24200fb68391000000":
-cleanup __cdecl bool WeaponAnimation::StartFire(WeaponAnimation *this);
+cleanup __cdecl bool WeaponAnimation::StartFire(WeaponAnimation* this);
 "8b442404f30f104424088b5004":
-cleanup __cdecl void WeaponAnimation::SetFireTime(WeaponAnimation *this, float time);
+cleanup __cdecl void WeaponAnimation::SetFireTime(WeaponAnimation* this, float time);
 "565383ec148b5c2424c74424":
-cleanup __cdecl Pointf WeaponAnimation::GetSlide(WeaponAnimation *this);
+cleanup __cdecl Pointf WeaponAnimation::GetSlide(WeaponAnimation* this);
 "5557565383ec2c8b5c24408b7b5880bb9100000000":
-cleanup __cdecl void WeaponAnimation::Update(WeaponAnimation *this);
+cleanup __cdecl void WeaponAnimation::Update(WeaponAnimation* this);

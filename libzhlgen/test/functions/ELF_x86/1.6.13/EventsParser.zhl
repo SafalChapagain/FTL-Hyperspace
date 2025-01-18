@@ -1,19 +1,19 @@
 "5557565383ec4c8d5c243c8d7c2420895c24088d6c2430":
-cleanup __cdecl RandomAmount EventsParser::PullMinMax(EventsParser *this, rapidxml::xml_node<char>* node, const std::string& name);
+cleanup __cdecl RandomAmount EventsParser::PullMinMax(EventsParser* this, rapidxml::xml_node<char>* node, const std::string& name);
 "55ba????????89e557565381ec3c0100008b4510":
-cleanup __cdecl std::string EventsParser::ProcessEvent(EventsParser *this, rapidxml::xml_node<char>* node, const std::string& eventName);
+cleanup __cdecl std::string EventsParser::ProcessEvent(EventsParser* this, rapidxml::xml_node<char>* node, const std::string& eventName);
 "5589e557565381ec5c0200008d8508feffff89442408":
-cleanup __cdecl ShipTemplate EventsParser::ProcessShipEvent(EventsParser *this, rapidxml::xml_node<char> *node);
+cleanup __cdecl ShipTemplate EventsParser::ProcessShipEvent(EventsParser* this, rapidxml::xml_node<char>* node);
 "5589e557565383ec5c8b45188d7de48b5d10":
-cleanup __cdecl ResourcesTemplate EventsParser::ProcessModifyItem(EventsParser *this, ResourcesTemplate& resources, rapidxml::xml_node<char> *node, const std::string& unk);
+cleanup __cdecl ResourcesTemplate EventsParser::ProcessModifyItem(EventsParser* this, ResourcesTemplate& resources, rapidxml::xml_node<char>* node, const std::string& origin);
 "5557565383ec3c8d5c241c8d6c241ac744240800000000":
-cleanup __cdecl void EventsParser::AddAllEvents(EventsParser *this);
+cleanup __cdecl void EventsParser::AddAllEvents(EventsParser* this);
 "5589e557565381ecac0001008b45088b7510":
-cleanup __cdecl void EventsParser::AddEvents(EventsParser *this, EventGenerator& generator, char* file, const std::string& fileName);
+cleanup __cdecl void EventsParser::AddEvents(EventsParser* this, EventGenerator& generator, char* file, const std::string& fileName);
 "55ba????????89e557565383ec2c8b4508c70000000000c7400400000000c74008000000008b451083c018e8????????85c089c60f84????????8db6000000008b4514":
-cleanup __cdecl std::vector<std::string> EventsParser::ProcessEventList(EventsParser *this, rapidxml::xml_node<char>* node, const std::string& listName);
+cleanup __cdecl std::vector<std::string> EventsParser::ProcessEventList(EventsParser* this, rapidxml::xml_node<char>* node, const std::string& listName);
 "5589e557bf????????565381ecdc0000008b450c":
-cleanup __cdecl void EventsParser::ProcessBaseNode(EventsParser *this, rapidxml::xml_node<char>* node, EventGenerator& generator);
+cleanup __cdecl void EventsParser::ProcessBaseNode(EventsParser* this, rapidxml::xml_node<char>* node, EventGenerator& generator);
 
 "!c70424(???????\?)89442408898554ffffff":
 EventsParser* Global_EventsParser_Parser;

@@ -1,7 +1,7 @@
 "83ec04f30f104118f30f110424d9042483c404c39090909090909090909090905589e583e4f083ec10a1????????85c074??890424e8????????a1????????85c074??":
-__thiscall float CFPS::GetSpeedFactor(CFPS *this);
+__thiscall float CFPS::GetSpeedFactor(CFPS* this);
 "578d7c240883e4f0ff77fc5589e55756538d7dd889ce8d5de083ec5ca1????????f20f1015????????893c24f20f5851088945c4":
-__thiscall void CFPS::OnLoop(CFPS *this);
+__thiscall void CFPS::OnLoop(CFPS* this);
 
 "!5589e557565389cbb9(???????\?)83ec4c":
 CFPS* Global_CFPS_FPSControl;

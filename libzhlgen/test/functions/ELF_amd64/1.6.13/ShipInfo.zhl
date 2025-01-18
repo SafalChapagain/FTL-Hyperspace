@@ -1,6 +1,6 @@
 "415731c041564155415455534889fb4883ec48837f6002":
-cleanup __amd64 char ShipInfo::AddAugmentation(ShipInfo *this, const std::string& augment); 
+cleanup __amd64 bool ShipInfo::AddAugmentation(ShipInfo* this, const std::string& augId); 
 "4157488d47084989f7415641554989fd4154554889c5534883ec28":
-cleanup __amd64 bool ShipInfo::HasAugmentation(ShipInfo *this, const std::string& augment);
+cleanup __amd64 bool ShipInfo::HasAugmentation(ShipInfo* this, const std::string& augId);
 ".4157415641554989fd415455534883ec48488d7c2430":
-cleanup __amd64 float ShipInfo::GetAugmentationValue(ShipInfo *this, const std::string& augment);
+cleanup __amd64 float ShipInfo::GetAugmentationValue(ShipInfo* this, const std::string& augId);

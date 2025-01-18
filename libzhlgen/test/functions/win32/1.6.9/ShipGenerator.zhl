@@ -1,20 +1,14 @@
 "8d4c240483e4f0ff71fc5589e55756535131db81ec????????8b01c7850cfbffff00000000c78510fbffff00000000c78514fbffff000000008985f0faffff8b4104898500fbffff8b4108":
 static cleanup __cdecl ShipManager* ShipGenerator::CreateShip(const std::string& name, int sector, ShipEvent& event);
 "8d4c240483e4f0ff71fc5589e55756535183ec488b018b79048b59088945d4c70000000000c7400400000000c7400800000000":
-static cleanup __cdecl std::vector<int> ShipGenerator::GenerateSystemMaxes(const ShipBlueprint &ship, int level);
+static cleanup __cdecl std::vector<int> ShipGenerator::GenerateSystemMaxes(const ShipBlueprint& ship, int level);
 "8d4c240483e4f0ff71fc5589e55756535183ec388b41088b318b790489042489f18945e4":
-static cleanup __cdecl bool ShipGenerator::UpgradeSystem(ShipManager *ship, std::vector<int> &systemMaxes, unsigned int sysId);
+static cleanup __cdecl bool ShipGenerator::UpgradeSystem(ShipManager* ship, std::vector<int>& systemMaxes, unsigned int sysId);
 "8d4c240483e4f0ff71fc5589e55756535183ec688b018b71048b7910c745c8000000008945c08975b8c70000000000c7400400000000c74008000000008b710831c0897dbc":
-static cleanup __cdecl std::vector<int> ShipGenerator::GetPossibleSystemUpgrades(ShipManager *ship, std::vector<int> &systemMaxes, int scrap, int type);
-"578d7c240883e4f0ff77fc5589e557565389ce83ec6c8945c0c70000000000c7400400000000c740080000000031c08955bcc745c8000000008db42600000000":
-static cleanup __regparm3 std::vector<int> ShipGenerator::GetPossibleSystemUpgrades0(ShipManager *ship, std::vector<int> &systemMaxes, int scrap, int type);
-"578d7c240883e4f0ff77fc5589e557565389ce83ec6c8945c0c70000000000c7400400000000c740080000000031c08955bcc745c800000000eb1c":
-static cleanup __regparm3 std::vector<int> ShipGenerator::GetPossibleSystemUpgrades1(ShipManager *ship, std::vector<int> &systemMaxes, int scrap, int type);
-"578d7c240883e4f0ff77fc5589e557565389ce83ec6c8945c0c70000000000c7400400000000c740080000000031c08955bcc745c800000000eb1f":
-static cleanup __regparm3 std::vector<int> ShipGenerator::GetPossibleSystemUpgrades2(ShipManager *ship, std::vector<int> &systemMaxes, int scrap, int type);
+static cleanup __cdecl std::vector<int> ShipGenerator::GetPossibleSystemUpgrades(ShipManager* ship, std::vector<int>& systemMaxes, int scrap, int type);
 "8d4c240483e4f0ff71fc5589c889e55756535181ec880000008b198b78088b49048b4010895da0897d9489459c":
-static cleanup __cdecl std::vector<WeaponBlueprint*> ShipGenerator::GetPossibleWeaponList(ShipManager *ship, const std::string &weaponList, int scrap, unsigned int flags);
+static cleanup __cdecl std::vector<WeaponBlueprint*> ShipGenerator::GetPossibleWeaponList(ShipManager* ship, const std::string& weaponList, int scrap, unsigned int flags);
 "8d4c240483e4f0ff71fc5589e55756535181ec880000008b0189c78945988b410489c68945a08b41088945908b411089458c0fb6411489f188459f":
-static cleanup __cdecl std::vector<DroneBlueprint*> ShipGenerator::GetPossibleDroneList(ShipManager *ship, const std::string &droneList, int scrap, unsigned int flags, bool repeat);
+static cleanup __cdecl std::vector<DroneBlueprint*> ShipGenerator::GetPossibleDroneList(ShipManager* ship, const std::string& droneList, int scrap, unsigned int flags, bool repeat);
 "8d4c240483e4f0ff71fc5589c889e55756535181eca80100008b398b49048b5808c70700000000c7470400000000c747080000000089bd60feffff":
-static cleanup __cdecl std::vector<CrewBlueprint> ShipGenerator::GetPossibleCrewList(ShipManager *ship, const std::string &crewList, unsigned int flags);
+static cleanup __cdecl std::vector<CrewBlueprint> ShipGenerator::GetPossibleCrewList(ShipManager* ship, const std::string& crewList, unsigned int flags);

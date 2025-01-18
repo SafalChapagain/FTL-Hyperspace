@@ -1,2 +1,2 @@
 "415641554989f5488d760841544989fc488d7f08":
-cleanup __amd64 void ShipEvent::constructor(ShipEvent *this, const ShipEvent& event);
+cleanup __amd64 void ShipEvent::constructor(ShipEvent* this, const ShipEvent& _event);

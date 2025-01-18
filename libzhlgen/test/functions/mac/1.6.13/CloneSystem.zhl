@@ -1,2 +1,3 @@
-"554889e54157415641554154534881eca80100004989fce8":
-cleanup __amd64 void CloneSystem::OnLoop(CloneSystem *this);
+// Continue from CloneBox::constructor (hyper efficiency™)
+".554889e54157415641554154534881eca80100004989fc":
+cleanup __amd64 void CloneSystem::OnLoop(CloneSystem* this);

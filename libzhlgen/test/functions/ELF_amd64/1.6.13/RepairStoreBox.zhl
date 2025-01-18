@@ -1,11 +1,11 @@
 "4157415641554189cd41544989f4":
-cleanup __amd64 void RepairStoreBox::constructor(RepairStoreBox *this, ShipManager *ship, bool repairAll, int price);
+cleanup __amd64 void RepairStoreBox::constructor(RepairStoreBox* this, ShipManager* _ship, bool _repairAll, int _price);
 
 
 struct RepairStoreBox
 {{
-	RepairStoreBox(ShipManager *_ship, bool _repairAll, int _price)
+	RepairStoreBox(ShipManager* ship, bool repairAll, int price)
 	{
-		this->constructor(_ship, _repairAll, _price);
+		this->constructor(ship, repairAll, price);
 	}
 }};

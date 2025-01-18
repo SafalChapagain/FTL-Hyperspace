@@ -1,197 +1,201 @@
 "488b8758060000837828ff7413488b4750":
-cleanup __amd64 bool ShipManager::IsCloaked(ShipManager *this);
+cleanup __amd64 bool ShipManager::IsCloaked(ShipManager* this);
 ".488b87800000004885c0741c":
-cleanup __amd64 ShieldPower ShipManager::GetShieldPower(ShipManager *this);
+cleanup __amd64 ShieldPower ShipManager::GetShieldPower(ShipManager* this);
 ".415483fe054989fc5553":
-cleanup __amd64 bool ShipManager::CanFitSystem(ShipManager *this, int systemId);
+cleanup __amd64 bool ShipManager::CanFitSystem(ShipManager* this, int systemId);
 ".41544989fc5553488b5728488b47304829d0":
-cleanup __amd64 bool ShipManager::CanFitSubsystem(ShipManager *this, int systemId);
+cleanup __amd64 bool ShipManager::CanFitSubsystem(ShipManager* this, int systemId);
 ".41544189d45589f553488b074889fb":
-cleanup __amd64 int ShipManager::DamageHull(ShipManager *this, int dmg, bool force);
+cleanup __amd64 int ShipManager::DamageHull(ShipManager* this, int dmg, bool force);
 ".41545589f5534889fb4883ec3085f6":
-cleanup __amd64 void ShipManager::ModifyScrapCount(ShipManager *this, int scrap, bool income);
+cleanup __amd64 void ShipManager::ModifyScrapCount(ShipManager* this, int scrap, bool income);
 ".4156415541544989fc5589f553488bb7c8000000":
-cleanup __amd64 CrewMember* ShipManager::GetCrewmember(ShipManager *this, int slot, bool present);
+cleanup __amd64 CrewMember* ShipManager::GetCrewmember(ShipManager* this, int slot, bool present);
 ".415731c931d2":
-cleanup __amd64 CrewMember* ShipManager::FindCrew(ShipManager *this, const CrewBlueprint *bp);
+cleanup __amd64 CrewMember* ShipManager::FindCrew(ShipManager* this, const CrewBlueprint* bp);
 ".8b05????????c787700600001e00000083f801":
-cleanup __amd64 void ShipManager::ResetScrapLevel(ShipManager *this);
+cleanup __amd64 void ShipManager::ResetScrapLevel(ShipManager* this);
 ".41564989fe415541545553488b87c800":   
-cleanup __amd64 int ShipManager::CountPlayerCrew(ShipManager *this); 
+cleanup __amd64 int ShipManager::CountPlayerCrew(ShipManager* this); 
 ".41574989ff41564155415455534883ec08488b8fc0000000":
-cleanup __amd64 int ShipManager::CountCrew(ShipManager *this, bool boarders);
+cleanup __amd64 int ShipManager::CountCrew(ShipManager* this, bool boarders);
 ".415741564989fe4155415455534883ec18488b87c8000000":
-cleanup __amd64 int ShipManager::CountCrewShipId(ShipManager *this, int roomId, int shipId);
+cleanup __amd64 int ShipManager::CountCrewShipId(ShipManager* this, int roomId, int shipId);
 ".538b470831f64889fb":
-cleanup __amd64 bool ShipManager::IsCrewOverFull(ShipManager *this);
+cleanup __amd64 bool ShipManager::IsCrewOverFull(ShipManager* this);
 ".538b470831f64889fb":
-cleanup __amd64 bool ShipManager::IsCrewFull(ShipManager *this);
+cleanup __amd64 bool ShipManager::IsCrewFull(ShipManager* this);
 ".4883ec08488b87580600004863401c83f8ff":
-cleanup __amd64 bool ShipManager::DoSensorsProvide(ShipManager *this, int vision);
+cleanup __amd64 bool ShipManager::DoSensorsProvide(ShipManager* this, int vision);
 "!.5531c94889fd5331db4883ec08488b5728":
-cleanup __amd64 void ShipManager::SetDestroyed(ShipManager *this);
+cleanup __amd64 void ShipManager::SetDestroyed(ShipManager* this);
 ".415431c055534889fb4883ec2083af1006000001":
-cleanup __amd64 void ShipManager::JumpLeave(ShipManager *this);
+cleanup __amd64 void ShipManager::JumpLeave(ShipManager* this);
 ".4156415541545553807c245e004889f3":
-cleanup __amd64 bool ShipManager::DamageCrew(ShipManager *this, CrewMember *crew, Damage dmg);
+cleanup __amd64 bool ShipManager::DamageCrew(ShipManager* this, CrewMember* crew, Damage dmg);
 ".55534889fb4883ec08488b875806000083780cff":
-cleanup __amd64 void ShipManager::Wait(ShipManager *this);
+cleanup __amd64 void ShipManager::Wait(ShipManager* this);
 ".55534889fb488dbf200600004883ec28":
-cleanup __amd64 void ShipManager::JumpArrive(ShipManager *this);
+cleanup __amd64 void ShipManager::JumpArrive(ShipManager* this);
 ".53488b87580600004889fb48630083f8ff":
-cleanup __amd64 void ShipManager::InstantPowerShields(ShipManager *this);
+cleanup __amd64 void ShipManager::InstantPowerShields(ShipManager* this);
 ".41574989ff41564155415455534883ec28488b4f28":
-cleanup __amd64 void ShipManager::CheckSpreadDamage(ShipManager *this);
+cleanup __amd64 void ShipManager::CheckSpreadDamage(ShipManager* this);
 ".488b87580600004863f6486304b083f8ff740d":
-cleanup __amd64 int ShipManager::GetSystemPower(ShipManager *this, int systemId);
+cleanup __amd64 int ShipManager::GetSystemPower(ShipManager* this, int systemId);
 ".415741564155415455534889fb4883ec28488b8758060000":
-cleanup __amd64 void ShipManager::CheckVision(ShipManager *this);
+cleanup __amd64 void ShipManager::CheckVision(ShipManager* this);
 "!.5531c94889fd5331db4883ec08488b5728":
-cleanup __amd64 void ShipManager::ClearStatusAll(ShipManager *this);
+cleanup __amd64 void ShipManager::ClearStatusAll(ShipManager* this);
 ".83fe11743383feff7426":
-cleanup __amd64 void ShipManager::ClearStatusSystem(ShipManager *this, int system);
+cleanup __amd64 void ShipManager::ClearStatusSystem(ShipManager* this, int system);
 ".83fe11743b83feff742e":
 noHook __amd64 void ShipManager::DO_NOT_HOOK();
 ".83fe11743b83feff742e":
-cleanup __amd64 void ShipManager::SetSystemPowerLoss(ShipManager *this, int systemId, int powerLoss);
+cleanup __amd64 void ShipManager::SetSystemPowerLoss(ShipManager* this, int systemId, int powerLoss);
 ".83feff743b488b87580600004863f6486304b083f8ff7428488b5728488b3cc24885ff741b488b07be01000000488b8008010000":
-cleanup __amd64 bool ShipManager::ForceDecreaseSystemPower(ShipManager *this, int sys);
+cleanup __amd64 bool ShipManager::ForceDecreaseSystemPower(ShipManager* this, int sys);
 ".415531d24989fd41545589f55331db4883ec08488b4f28":
-cleanup __amd64 ShipSystem *ShipManager::GetSystemInRoom(ShipManager *this, int roomId);
+cleanup __amd64 ShipSystem* ShipManager::GetSystemInRoom(ShipManager* this, int roomId);
 ".83feff7433488b87580600004863f6":
-cleanup __amd64 int ShipManager::GetSystemRoom(ShipManager *this, int sysId);
+cleanup __amd64 int ShipManager::GetSystemRoom(ShipManager* this, int sysId);
 ".83feff7423488b87580600004863f6":
-cleanup __amd64 ShipSystem* ShipManager::GetSystem(ShipManager *this, int systemId);
+cleanup __amd64 ShipSystem* ShipManager::GetSystem(ShipManager* this, int systemId);
 ".53488b87580600004889fb4863402083f8ff":
-cleanup __amd64 bool ShipManager::DoorsFunction(ShipManager *this);
+cleanup __amd64 bool ShipManager::DoorsFunction(ShipManager* this);
 ".488b87580600004863f6486304b083f8ff7415":
-cleanup __amd64 bool ShipManager::SystemFunctions(ShipManager *this, int systemId);
+cleanup __amd64 bool ShipManager::SystemFunctions(ShipManager* this, int systemId);
 ".534889fb4883ec10488b9758060000":
-cleanup __amd64 int ShipManager::GetDodgeFactor(ShipManager *this);
+cleanup __amd64 int ShipManager::GetDodgeFactor(ShipManager* this);
 ".415455534889fb4883ec20807f1c00":
-cleanup __amd64 bool ShipManager::GetDodged(ShipManager *this);
+cleanup __amd64 bool ShipManager::GetDodged(ShipManager* this);
 ".83fe11741b488b8758060000":
-cleanup __amd64 bool ShipManager::HasSystem(ShipManager *this, int systemId);
+cleanup __amd64 bool ShipManager::HasSystem(ShipManager* this, int systemId);
 ".488b87580600004863f6486304b083f8ff740d":
-cleanup __amd64 int ShipManager::GetSystemPowerMax(ShipManager *this, int systemId);
+cleanup __amd64 int ShipManager::GetSystemPowerMax(ShipManager* this, int systemId);
 ".55534889fb4883ec1883fe11":
-cleanup __amd64 void ShipManager::UpgradeSystem(ShipManager *this, int id, int amount);
+cleanup __amd64 void ShipManager::UpgradeSystem(ShipManager* this, int id, int amount);
 ".83fe117453":
-cleanup __amd64 int ShipManager::CanUpgrade(ShipManager *this, int systemId, int amount);
+cleanup __amd64 int ShipManager::CanUpgrade(ShipManager* this, int systemId, int amount);
 "!.4889f731c989d6baffffffff":
-cleanup __amd64 bool ShipManager::CommandCrewMoveRoom(ShipManager *this, CrewMember *crew, int roomId);
+cleanup __amd64 bool ShipManager::CommandCrewMoveRoom(ShipManager* this, CrewMember* crew, int roomId);
 ".415741564989fe41554189d5415455534883ec38":
-cleanup __amd64 CrewMember* ShipManager::GetSelectedCrewPoint(ShipManager *this, int x, int y, bool intruder);
+cleanup __amd64 CrewMember* ShipManager::GetSelectedCrewPoint(ShipManager* this, int x, int y, bool intruder);
 ".415741564989fe41554189cd41544989f4":
-cleanup __amd64 std::string ShipManager::GetTooltip(ShipManager *this, int x, int y);
+cleanup __amd64 std::string ShipManager::GetTooltip(ShipManager* this, int x, int y);
 ".41545553488b86580600004889fb83780cff":
-cleanup __amd64 std::vector<ProjectileFactory*> ShipManager::GetWeaponList(ShipManager *this);
+cleanup __amd64 std::vector<ProjectileFactory*> ShipManager::GetWeaponList(ShipManager* this);
 ".488b8758060000837810ff7413":
-cleanup __amd64 int ShipManager::GetDroneCount(ShipManager *this);
+cleanup __amd64 int ShipManager::GetDroneCount(ShipManager* this);
 ".488b8758060000837810ff7523":
-cleanup __amd64 void ShipManager::ModifyDroneCount(ShipManager *this, int drones);
+cleanup __amd64 void ShipManager::ModifyDroneCount(ShipManager* this, int drones);
 ".488b8758060000837808ff742b":
-cleanup __amd64 int ShipManager::GetOxygenPercentage(ShipManager *this);
+cleanup __amd64 int ShipManager::GetOxygenPercentage(ShipManager* this);
 ".41574156415541544989f455534889fb4883ec48":
-cleanup __amd64 void ShipManager::RemoveItem(ShipManager *this, const std::string& name); 
+cleanup __amd64 void ShipManager::RemoveItem(ShipManager* this, const std::string& name); 
 ".488b875806000083780cff7413":
-cleanup __amd64 int ShipManager::AddWeapon(ShipManager *this, const WeaponBlueprint* bp, int slot);
+cleanup __amd64 int ShipManager::AddWeapon(ShipManager* this, const WeaponBlueprint* bp, int slot);
 ".488b875806000083780cff7523":
-cleanup __amd64 void ShipManager::ModifyMissileCount(ShipManager *this, int missiles);
+cleanup __amd64 void ShipManager::ModifyMissileCount(ShipManager* this, int missiles);
 ".488b875806000083780cff7413":
-cleanup __amd64 int ShipManager::GetMissileCount(ShipManager *this);
+cleanup __amd64 int ShipManager::GetMissileCount(ShipManager* this);
 ".41545553488b86580600004889fb837810ff":
-cleanup __amd64 std::vector<Drone*> ShipManager::GetDroneList(ShipManager *this);
+cleanup __amd64 std::vector<Drone*> ShipManager::GetDroneList(ShipManager* this);
 ".83fe11741b488b87580600004863d6":
-cleanup __amd64 int ShipManager::IsSystemHacked(ShipManager *this, int systemId);
+cleanup __amd64 int ShipManager::IsSystemHacked(ShipManager* this, int systemId);
 ".4157415641554154554889fd5389f34883ec28":
-cleanup __amd64 void ShipManager::ExportBattleState(ShipManager *this, int file);
+cleanup __amd64 void ShipManager::ExportBattleState(ShipManager* this, int file);
 "!.4881c7d8000000":
-cleanup __amd64 void ShipManager::StartFire(ShipManager *this, int roomId);
+cleanup __amd64 void ShipManager::StartFire(ShipManager* this, int roomId);
 "!.4881c7d8000000":
-cleanup __amd64 int ShipManager::GetFireCount(ShipManager *this, int roomId);
+cleanup __amd64 int ShipManager::GetFireCount(ShipManager* this, int roomId);
 ".5589d5534889fb4889f74883ec184889742408":
-cleanup __amd64 void ShipManager::AddCrewMember(ShipManager *this, CrewMember *crew, int roomId);
+cleanup __amd64 void ShipManager::AddCrewMember(ShipManager* this, CrewMember* crew, int roomId);
 ".4157415641554989fd41544989f455534883ec18":
-cleanup __amd64 std::vector<CrewMember*> ShipManager::TeleportCrew(ShipManager *this, int roomId, bool intruders);
+cleanup __amd64 std::vector<CrewMember*> ShipManager::TeleportCrew(ShipManager* this, int roomId, bool intruders);
 ".415631c941554989f541544989fc5589d553":
-cleanup __amd64 std::vector<CrewMember*> ShipManager::GetLeavingCrew(ShipManager *this, bool intruders);
+cleanup __amd64 std::vector<CrewMember*> ShipManager::GetLeavingCrew(ShipManager* this, bool intruders);
 ".41574989ff415641554589cd4154554889f5":
-cleanup __amd64 CrewMember *ShipManager::AddCrewMemberFromBlueprint(ShipManager *this, CrewBlueprint* bp, int slot, bool init, int roomId, bool intruder);
+cleanup __amd64 CrewMember* ShipManager::AddCrewMemberFromBlueprint(ShipManager* this, CrewBlueprint* bp, int slot, bool init, int roomId, bool intruder);
 ".41574989ff4156415541545589f5534883ec48":
-cleanup __amd64 void ShipManager::DamageSystem(ShipManager *this, int systemId, Damage damage);
+cleanup __amd64 void ShipManager::DamageSystem(ShipManager* this, int systemId, Damage damage);
 ".4157be????????4156415541544989fc55534883ec68":
-cleanup __amd64 void ShipManager::CheckCrystalAugment(ShipManager *this, Pointf pos);
+cleanup __amd64 void ShipManager::CheckCrystalAugment(ShipManager* this, Pointf position);
 ".415741564155415455534889fb4881ec980000004883bf0006000000":
-cleanup __amd64 void ShipManager::PrepareSuperBarrage(ShipManager *this);
+cleanup __amd64 void ShipManager::PrepareSuperBarrage(ShipManager* this);
 ".415531d2bf????????415455534883ec684889e6":
-cleanup __amd64 bool ShipManager::RestoreCrewPositions(ShipManager *this);
+cleanup __amd64 bool ShipManager::RestoreCrewPositions(ShipManager* this);
 ".4157488d87d800000041564989fe4889c74155415455534883ec78":
-cleanup __amd64 void ShipManager::UpdateEnvironment(ShipManager *this);
+cleanup __amd64 void ShipManager::UpdateEnvironment(ShipManager* this);
 ".41574156415541544989fc554889cd534883ec68":
-cleanup __amd64 CrewBlueprint ShipManager::SelectRandomCrew(ShipManager *this, int seed, const std::string& racePref);
+cleanup __amd64 CrewBlueprint ShipManager::SelectRandomCrew(ShipManager* this, int seed, const std::string& racePref);
 ".415741564189d641554154554889f5534889fb4881ece8000000":
-cleanup __amd64 CollisionResponse ShipManager::CollisionShield(ShipManager *this, Pointf start, Pointf finish, Damage damage, bool raytrace);
+cleanup __amd64 CollisionResponse ShipManager::CollisionShield(ShipManager* this, Pointf start, Pointf finish, Damage damage, bool raytrace);
 ".41574989ff488d7f044156415541544189d4554889f5534881ec08010000":
-cleanup __amd64 CollisionResponse ShipManager::CollisionMoving(ShipManager *this, Pointf start, Pointf finish, Damage damage, bool raytrace);
+cleanup __amd64 CollisionResponse ShipManager::CollisionMoving(ShipManager* this, Pointf start, Pointf finish, Damage damage, bool raytrace);
 ".4157b901000000415641554189f5415455534889fb4881ecc8000000":
-cleanup __amd64 bool ShipManager::DamageArea(ShipManager *this, Pointf location, Damage dmg, bool forceHit);
+cleanup __amd64 bool ShipManager::DamageArea(ShipManager* this, Pointf location, Damage dmg, bool forceHit);
 ".415741564155415455534889fb4883ec58488b87b8090000":
-cleanup __amd64 void ShipManager::PrepareSuperDrones(ShipManager *this);
+cleanup __amd64 void ShipManager::PrepareSuperDrones(ShipManager* this);
 ".4155415455534889fb4883ec388b5708":
-cleanup __amd64 void ShipManager::RenderChargeBars(ShipManager *this);
+cleanup __amd64 void ShipManager::RenderChargeBars(ShipManager* this);
 ".41574156415541544c8da718010000554889fd4c89e7534883ec68":
-cleanup __amd64 void ShipManager::RenderWeapons(ShipManager *this);
+cleanup __amd64 void ShipManager::RenderWeapons(ShipManager* this);
 ".4157415641554989fd4154555389f34881ec98000000":
-cleanup __amd64 void ShipManager::OnRender(ShipManager *this, bool showInterior, bool doorControlMode);
+cleanup __amd64 void ShipManager::OnRender(ShipManager* this, bool showInterior, bool doorControlMode);
 ".55534889fb4883ec188b4670":
-cleanup __amd64 CrewDrone *ShipManager::CreateCrewDrone(ShipManager *this, const DroneBlueprint *bp);
+cleanup __amd64 CrewDrone* ShipManager::CreateCrewDrone(ShipManager* this, const DroneBlueprint* bp);
 ".41554154554889f5534883ec38837e7007":
-cleanup __amd64 SpaceDrone *ShipManager::CreateSpaceDrone(ShipManager *this, const DroneBlueprint *bp);
+cleanup __amd64 SpaceDrone* ShipManager::CreateSpaceDrone(ShipManager* this, const DroneBlueprint* bp);
 ".4155415455534889fb4883ec18488b8758060000":
-cleanup __amd64 Drone* ShipManager::AddDrone(ShipManager *this, const DroneBlueprint *bp, int slot);
+cleanup __amd64 Drone* ShipManager::AddDrone(ShipManager* this, const DroneBlueprint* bp, int slot);
 ".415641554154554889f5534883ec30":
-cleanup __amd64 void ShipManager::AddEquipmentFromList(ShipManager *this, std::vector<std::string> *equipmentList);
+cleanup __amd64 void ShipManager::AddEquipmentFromList(ShipManager* this, std::vector<std::string>* equipmentList);
 ".415741564155415455534889fb4881ece8000000":
-cleanup __amd64 int ShipManager::AddSystem(ShipManager *this, int systemId);
+cleanup __amd64 int ShipManager::AddSystem(ShipManager* this, int systemId);
 ".4154488d8fb007000055534889fb4883ec20":
-cleanup __amd64 int ShipManager::CreateSystems(ShipManager *this);
+cleanup __amd64 int ShipManager::CreateSystems(ShipManager* this);
 ".4157415641554154554889fd534881ece8000000":
-cleanup __amd64 bool ShipManager::DamageBeam(ShipManager *this, Pointf location1, Pointf location2, Damage dmg);
+cleanup __amd64 bool ShipManager::DamageBeam(ShipManager* this, Pointf location1, Pointf location2, Damage dmg);
 ".415731c94156415541544989fc555331db4881ec38010000":
-cleanup __amd64 void ShipManager::UpdateCrewMembers(ShipManager *this);
+cleanup __amd64 void ShipManager::UpdateCrewMembers(ShipManager* this);
 ".41554154554889fd534883ec08488b87":
-cleanup __amd64 bool ShipManager::PowerDrone(ShipManager *this, Drone *drone, int roomId, bool userDriven, bool force);
+cleanup __amd64 bool ShipManager::PowerDrone(ShipManager* this, Drone* drone, int roomId, bool userDriven, bool force);
 "!.4157415641554154554889fd5389f34883ec18":
-cleanup __amd64 void ShipManager::ImportBattleState(ShipManager *this, int file);
+cleanup __amd64 void ShipManager::ImportBattleState(ShipManager* this, int file);
 ".41574989ffbe????????41564155415455534881ec48010000":
-cleanup __amd64 void ShipManager::OnLoop(ShipManager *this);
+cleanup __amd64 void ShipManager::OnLoop(ShipManager* this);
 ".41574989ff415641554154555389f3488db75807000089df4881ec78010000":
-cleanup __amd64 void ShipManager::ExportShip(ShipManager *this, int file);
+cleanup __amd64 void ShipManager::ExportShip(ShipManager* this, int file);
 ".415741564589c641554154554889fd534881ec58020000":
-cleanup __amd64 CrewMember *ShipManager::AddCrewMemberFromString(ShipManager *this, const std::string& name, const std::string& race, bool intruder, int roomId, bool init, bool male);
+cleanup __amd64 CrewMember* ShipManager::AddCrewMemberFromString(ShipManager* this, const std::string& name, const std::string& race, bool intruder, int roomId, bool init, bool male);
 ".41574156415541544989f4be????????554889fd534881ec88010000":
-cleanup __amd64 void ShipManager::AddInitialCrew(ShipManager *this, std::vector<CrewBlueprint>& blueprints);
+cleanup __amd64 void ShipManager::AddInitialCrew(ShipManager* this, std::vector<CrewBlueprint>& blueprints);
 ".415641554154554889fd534883ec208b4708":
-cleanup __amd64 void ShipManager::Restart(ShipManager *this);
+cleanup __amd64 void ShipManager::Restart(ShipManager* this);
 ".4157415641554189d54154554889f5534889fb4883ec48":
-cleanup __amd64 ShipBlueprint ShipManager::SaveToBlueprint(ShipManager *this, bool unk);
+cleanup __amd64 ShipBlueprint ShipManager::SaveToBlueprint(ShipManager* this, bool overwrite);
 ".4156415541544c8da7800600005589d5534889fb4c89e74883ec50":
-cleanup __amd64 int ShipManager::OnInit(ShipManager *this, ShipBlueprint *bp, int shipLevel);
+cleanup __amd64 int ShipManager::OnInit(ShipManager* this, ShipBlueprint* bp, int shipLevel);
 ".415741564189f64155415455534889fb4c8dab800600004c8dbb880700004881ec18040000":
-cleanup __amd64 void ShipManager::ImportShip(ShipManager *this, int file);
+cleanup __amd64 void ShipManager::ImportShip(ShipManager* this, int file);
 ".415741564989fe488dbfd800000041554154555389f34881ec98000000":
-cleanup __amd64 int ShipManager::constructor(ShipManager *this, int shipId);
+cleanup __amd64 int ShipManager::constructor(ShipManager* this, int _shipId);
 ".415641554989fd4154555348c707":
-cleanup __amd64 void ShipManager::destructor(ShipManager *this);
-"!.534889fb":
-cleanup __amd64 void ShipManager::destructor2(ShipManager *this);
+cleanup __amd64 void ShipManager::destructor(ShipManager* this);
+
 
 struct ShipManager depends (PowerManager, ShieldPower)
 {{
 	ShipManager(int shipId) 
 	{
 		this->constructor(shipId);
+	}
+	
+	~ShipManager()
+	{
+		this->destructor();
 	}
 	
 	Pointf GetRandomRoomCenter()
@@ -207,16 +211,10 @@ struct ShipManager depends (PowerManager, ShieldPower)
 		return ship.GetRoomCenter(roomId);
 	}
 	
-	~ShipManager()
-	{
-		this->destructor2();
-	}
-	
 	std::pair<int, int> GetAvailablePower()
 	{
-		PowerManager *powerMan = PowerManager::GetPowerManager(iShipId);
+		PowerManager* powerMan = PowerManager::GetPowerManager(iShipId);
 		
 		return std::pair<int, int>(powerMan->currentPower.second, powerMan->currentPower.second - powerMan->currentPower.first);
 	}
-
 }};

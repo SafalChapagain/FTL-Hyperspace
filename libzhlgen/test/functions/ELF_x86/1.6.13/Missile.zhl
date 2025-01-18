@@ -1,10 +1,11 @@
 "5589e557565381ecdc0000008b451c8b55208b4d088b75148b5d18":
-cleanup __cdecl void Missile::constructor(Missile *this, Pointf _position, int _ownerId, int _targetId, Pointf _target, float _heading);
+cleanup __cdecl void Missile::constructor(Missile* this, Pointf _position, int _ownerId, int _targetId, Pointf _target, float _heading);
+
 
 struct Missile
 {{
-	Missile(Pointf _position, int _ownerId, int _targetId, Pointf _target, float _heading)
+	Missile(Pointf position, int ownerId, int targetId, Pointf target, float heading)
 	{
-		this->constructor(_position, _ownerId, _targetId, _target, _heading);
+		this->constructor(position, ownerId, targetId, target, heading);
 	}
 }};

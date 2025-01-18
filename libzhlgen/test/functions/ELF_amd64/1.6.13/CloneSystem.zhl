@@ -1,2 +1,2 @@
 "415741564155415455534889fb4881ec88010000":
-cleanup __amd64 void CloneSystem::OnLoop(CloneSystem *this);
+cleanup __amd64 void CloneSystem::OnLoop(CloneSystem* this);

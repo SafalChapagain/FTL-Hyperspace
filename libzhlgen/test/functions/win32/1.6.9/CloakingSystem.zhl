@@ -1,4 +1,4 @@
 "578d7c240883e4f0ff77fc5589e557565389cb83ec1ce8????????8d8bf0010000e8????????83bba8010000017e??80bbac0100000074??c70424????????":
-__thiscall void CloakingSystem::OnLoop(CloakingSystem *this);
+__thiscall void CloakingSystem::OnLoop(CloakingSystem* this);
 "57ba524500008d7c240883e4f0ff77fc5589e55756538d45d08d75d889cb83c10883ec3c668955e08975d0890424c745d8434c4f41c745dc4b5f4649c745d40a000000c645e200":
-__thiscall void CloakingSystem::FiredWeapon(CloakingSystem *this);
+__thiscall void CloakingSystem::FiredWeapon(CloakingSystem* this);

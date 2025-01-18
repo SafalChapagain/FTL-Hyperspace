@@ -1,41 +1,41 @@
 "5557565383ec1c8b5c24308b4424348b7c24388b6c243c":
-cleanup __cdecl void Store::OnInit(Store *this, ShipManager *shopper, Equipment *equip, int worldLevel);
+cleanup __cdecl void Store::OnInit(Store* this, ShipManager* shopper, Equipment* equip, int worldLevel);
 "5589e557565383ec7c8b750c8b7d08":
-cleanup __cdecl void Store::CreateStoreBoxes(Store *this, int type, Equipment *equip);
+cleanup __cdecl void Store::CreateStoreBoxes(Store* this, int type, Equipment* equip);
 "5383ec188b5c24208b542424":
-cleanup __cdecl bool Store::KeyDown(Store *this, SDLKey key);
+cleanup __cdecl bool Store::KeyDown(Store* this, SDLKey key);
 "565331db83ec148b7424208b9660030000":
-cleanup __cdecl void Store::OnLoop(Store *this);
+cleanup __cdecl void Store::OnLoop(Store* this);
 "5383ec188b5c24208b839c040000":
-cleanup __cdecl void Store::Close(Store *this);
+cleanup __cdecl void Store::Close(Store* this);
 "5589e557565381ec2c0100008b5d088b450c8b7d10":
-cleanup __cdecl void Store::MouseMove(Store *this, int x, int y);
+cleanup __cdecl void Store::MouseMove(Store* this, int x, int y);
 "5557565383ec2c8b5c24408d7c241f891c24":
-cleanup __cdecl void Store::constructor(Store *this);
+cleanup __cdecl void Store::constructor(Store* this);
 "5557565383ec1c8b5c24308b7424348b8384040000":
-cleanup __cdecl void Store::SaveStore(Store *this, int file);
+cleanup __cdecl void Store::SaveStore(Store* this, int file);
 "5557565331db83ec1c8b6c24308b7424348b7c24388b9560030000":
-cleanup __cdecl void Store::RelinkShip(Store *this, ShipManager *ship, Equipment *equip);
+cleanup __cdecl void Store::RelinkShip(Store* this, ShipManager* ship, Equipment* equip);
 "8b5424048b442408398288040000":
-cleanup __cdecl bool Store::HasType(Store *this, int type);
+cleanup __cdecl bool Store::HasType(Store* this, int type);
 "565383ec148b7424208b8e64030000":
-cleanup __cdecl void Store::Clear(Store *this);
+cleanup __cdecl void Store::Clear(Store* this);
 "5557565383ec4c8d5c24388b742460":
-cleanup __cdecl void Store::InitHeading(Store *this, int index, Point pos);
+cleanup __cdecl void Store::InitHeading(Store* this, int index, Point position);
 "5589e557565383ec4c8d45db8d5de4":
 static cleanup __cdecl void Store::DrawBuySellTabText();
 "5589e557565383ec4c8b45108b5d0889442408":
-cleanup __cdecl void Store::MouseClick(Store *this, int x, int y);
+cleanup __cdecl void Store::MouseClick(Store* this, int x, int y);
 "5589e557565381ec8c0100008b5d08":
-cleanup __cdecl void Store::OnRender(Store *this);
+cleanup __cdecl void Store::OnRender(Store* this);
 "555731ff565381ec8c0000008b9c24a00000008d742470":
-cleanup __cdecl void Store::SetPositions(Store *this);
+cleanup __cdecl void Store::SetPositions(Store* this);
 "5589e557565383ec7c8b7d088b8f64030000":
-cleanup __cdecl void Store::LoadStore(Store *this, int file, int worldLevel);
+cleanup __cdecl void Store::LoadStore(Store* this, int file, int worldLevel);
 "5383ec188b5c24208b4424248b542428891c24":
-cleanup __cdecl void Store::SetPosition(Store *this, Point pos);
+cleanup __cdecl void Store::SetPosition(Store* this, Point position);
 "55575631f65383ec2c8b5c24408b8b64030000":
-cleanup __cdecl void Store::destructor(Store *this);
+cleanup __cdecl void Store::destructor(Store* this);
 
 
 struct Store
@@ -43,5 +43,10 @@ struct Store
 	Store()
 	{
 		this->constructor();
+	}
+
+	~Store()
+	{
+		this->destructor();
 	}
 }};

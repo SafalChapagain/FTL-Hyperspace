@@ -1,7 +1,7 @@
 "578d7c240883e4f0ff77fc5589e5575389cb83ec108b070fb657040fb6c089042489542404":
-__thiscall void WeaponBox::RenderBox(WeaponBox *this, bool dragging, bool flashPowerBox);
+__thiscall void WeaponBox::RenderBox(WeaponBox* this, bool dragging, bool flashPowerBox);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec4c8b3f8b078b40083d????????0f85????????8b87bc01000085c00f94c084c00f85????????c744240401000000":
-__thiscall std::string WeaponBox::GenerateTooltip(WeaponBox *this);
+__thiscall std::string WeaponBox::GenerateTooltip(WeaponBox* this);
 
 
 struct WeaponBox

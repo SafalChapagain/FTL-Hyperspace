@@ -1,2 +1,2 @@
 "578d7c240883e4f0ff77fc5589f889e557565389cf81ec8c0100008b70048b1889b594feffff8b70088b400c89b580feffff89857cfeffff8b412085c0":
-__thiscall void ExplosionAnimation::OnInit(ExplosionAnimation *this, rapidxml::xml_node<char>* node, const std::string& name, Point glowOffset);
+__thiscall void ExplosionAnimation::OnInit(ExplosionAnimation* this, rapidxml::xml_node<char>* node, const std::string& name, Point glowOffset);

@@ -1,18 +1,18 @@
 "578d7c240883e4f0ff77fc5589e557565389cb8d75bc81ec????????8b07c64105018d7dd489412c8945888b4118894424048b41148d4dcc":
-__thiscall void Upgrades::OnInit(Upgrades *this, ShipManager *ship);
+__thiscall void Upgrades::OnInit(Upgrades* this, ShipManager* ship);
 "5589e557565389cf83e4f083ec108b51208b492489c829d083f8037e??31f6908b1cb285db":
-__thiscall void Upgrades::ClearUpgradeBoxes(Upgrades *this);
+__thiscall void Upgrades::ClearUpgradeBoxes(Upgrades* this);
 "578d7c240883e4f0ff77fc5589f889e557565389cf83ec2c8b3089f38975e48b7004891c24":
-__thiscall void Upgrades::MouseMove(Upgrades *this, int mX, int mY);
+__thiscall void Upgrades::MouseMove(Upgrades* this, int mX, int mY);
 "807904000f84????????578d7c240883e4f0ff77fc5589e557565381ec????????8b818c0100008b71208b592485c00f9fc2":
-__thiscall void Upgrades::OnLoop(Upgrades *this);
+__thiscall void Upgrades::OnLoop(Upgrades* this);
 "578d7c240883e4f0ff77fc5589e557565389cb31f683ec4c8b078b7f04890424897c2404":
-__thiscall void Upgrades::MouseClick(Upgrades *this, int mX, int mY);
+__thiscall void Upgrades::MouseClick(Upgrades* this, int mX, int mY);
 "578d7c240883e4f0ff77fc5589e557565331ff8d75d883ec4c8b41248b5120894dc0":
-__thiscall void Upgrades::MouseRightClick(Upgrades *this, int mX, int mY);
+__thiscall void Upgrades::MouseRightClick(Upgrades* this, int mX, int mY);
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????8b511c0f2825????????89d085c00f2965c80f84????????":
-__thiscall void Upgrades::OnRender(Upgrades *this);
+__thiscall void Upgrades::OnRender(Upgrades* this);
 "8079040075??c389f68dbc2700000000578d7c240883e4f0ff77fc5589e557565389cf31db8d75d883ec4c":
-__thiscall void Upgrades::Close(Upgrades *this);
+__thiscall void Upgrades::Close(Upgrades* this);
 "578d7c240883e4f0ff77fc5589e557565331f68d7dd883ec4c8b51248b4120894dc489d129c1c1f902":
-__thiscall void Upgrades::ConfirmUpgrades(Upgrades *this);
+__thiscall void Upgrades::ConfirmUpgrades(Upgrades* this);

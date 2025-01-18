@@ -1,6 +1,6 @@
 "5531c089e557565383ec6c8b5508837a3002":
-cleanup __cdecl char ShipInfo::AddAugmentation(ShipInfo *this, const std::string& augment); 
+cleanup __cdecl bool ShipInfo::AddAugmentation(ShipInfo* this, const std::string& augId); 
 "5589e557565383ec5c8b450883c00489c78945b8":
-cleanup __cdecl bool ShipInfo::HasAugmentation(ShipInfo *this, const std::string& augment);
+cleanup __cdecl bool ShipInfo::HasAugmentation(ShipInfo* this, const std::string& augId);
 ".5589e557565383ec6c8b450c894424048d45c8890424":
-cleanup __cdecl float ShipInfo::GetAugmentationValue(ShipInfo *this, const std::string& augment);
+cleanup __cdecl float ShipInfo::GetAugmentationValue(ShipInfo* this, const std::string& augId);

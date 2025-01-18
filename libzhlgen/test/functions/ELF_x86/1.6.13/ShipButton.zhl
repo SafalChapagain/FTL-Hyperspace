@@ -1,17 +1,17 @@
 "5589e557565381ecbc0100008b5d088d??????????":
-cleanup __cdecl void ShipButton::constructor(ShipButton *this, int shipType, int shipVariant);
+cleanup __cdecl void ShipButton::constructor(ShipButton* this, int _shipId, int _type);
 "5383ec188b5c24208b5424288b44242c807b7000":
-cleanup __cdecl void ShipButton::OnInit(ShipButton *this, const std::string& imgName, Point pos);
+cleanup __cdecl void ShipButton::OnInit(ShipButton* this, const std::string& imgName, Point position);
 "5557565383ec2c8b5c24408b742444807b7000":
-cleanup __cdecl void ShipButton::MouseMove(ShipButton *this, int x, int y);
+cleanup __cdecl void ShipButton::MouseMove(ShipButton* this, int x, int y);
 "5589e557565383ec7c8b5d08807b7000":
-cleanup __cdecl void ShipButton::OnRender(ShipButton *this);
+cleanup __cdecl void ShipButton::OnRender(ShipButton* this);
 
 
 struct ShipButton
 {{
-	ShipButton(int x, int y)
+	ShipButton(int shipId, int type)
 	{
-		this->constructor(x, y);
+		this->constructor(shipId, type);
 	}
 }};

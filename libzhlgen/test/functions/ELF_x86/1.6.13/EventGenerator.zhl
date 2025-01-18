@@ -1,15 +1,15 @@
 "5557565383ec1c8b4424408b5c24308b7424348b7c2438":
-cleanup __cdecl LocationEvent *EventGenerator::GetBaseEvent(EventGenerator *this, const std::string& name, int worldLevel, char ignoreUnique, int seed);
+cleanup __cdecl LocationEvent* EventGenerator::GetBaseEvent(EventGenerator* this, const std::string& name, int worldLevel, char ignoreUnique, int seed);
 "5589e557565381ecdc0100008b45148b5d0c":
-cleanup __cdecl LocationEvent *EventGenerator::CreateEvent(EventGenerator *this, const std::string& name, int worldLevel, bool ignoreUnique);
+cleanup __cdecl LocationEvent* EventGenerator::CreateEvent(EventGenerator* this, const std::string& name, int worldLevel, bool ignoreUnique);
 "5589e557565381ecac0000008b75108b450c":
-cleanup __cdecl SectorDescription EventGenerator::GetSpecificSector(EventGenerator *this, const std::string& name);
+cleanup __cdecl SectorDescription EventGenerator::GetSpecificSector(EventGenerator* this, const std::string& name);
 "5589e557565383ec3c8b450c8b7d108b5d08":
-cleanup __cdecl std::string EventGenerator::GetImageFromList(EventGenerator *this, const std::string& listName);
+cleanup __cdecl std::string EventGenerator::GetImageFromList(EventGenerator* this, const std::string& listName);
 "5589e557565383ec5c8b45088b5d108d7dc4":
-cleanup __cdecl SectorDescription EventGenerator::GetSectorDescription(EventGenerator *this, const std::string& type, int level);
+cleanup __cdecl SectorDescription EventGenerator::GetSectorDescription(EventGenerator* this, const std::string& type, int level);
 "5589e557565383ec2c8b450c8b75108b5d08":
-cleanup __cdecl ShipEvent EventGenerator::GetShipEvent(EventGenerator *this, const std::string& event);
+cleanup __cdecl ShipEvent EventGenerator::GetShipEvent(EventGenerator* this, const std::string& event);
 
 "!c74424080000000089742404c70424(???????\?)e8????????8b54242c8d4af4":
 EventGenerator* Global_EventGenerator_Generator;
@@ -29,7 +29,7 @@ struct EventGenerator depends (SectorDescription, Sector, LocationEvent)
 		}
 	}
 	
-	void ClearUsedEvent(LocationEvent *locEvent)
+	void ClearUsedEvent(LocationEvent* locEvent)
 	{
 		if (locEvent)
 		{

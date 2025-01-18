@@ -1,20 +1,20 @@
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b510c8b4110c745940000000029d0c1f80285c00f84????????89cfeb??":
-__thiscall void CrewAI::UpdateDrones(CrewAI *this);
+__thiscall void CrewAI::UpdateDrones(CrewAI* this);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec2c8b49308b463429c8c1f80269c0????????":
-__thiscall void CrewAI::AssignCrewmembers(CrewAI *this);
+__thiscall void CrewAI::AssignCrewmembers(CrewAI* this);
 "578d7c240883e4f0ff77fc5589f889e557565389cf83ec2c8b700c8b188b50048b4008":
-__thiscall int CrewAI::PrioritizeTask(CrewAI *this, CrewTask task, int crewId);
+__thiscall int CrewAI::PrioritizeTask(CrewAI* this, CrewTask task, int crewId);
 "8b511c8b411839d00f84????????5729c2c1fa028d7c240883e4f0ff77fc5589e557565331db89ce83ec3c":
-__thiscall void CrewAI::UpdateIntruders(CrewAI *this);
+__thiscall void CrewAI::UpdateIntruders(CrewAI* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec3c8b078b77048b7f088945e4897dd889c78b4078c70424????????":
-__thiscall int CrewAI::PrioritizeIntruderRoom(CrewAI *this, CrewMember *crew, int roomId, int target);
+__thiscall int CrewAI::PrioritizeIntruderRoom(CrewAI* this, CrewMember* crew, int roomId, int target);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec5c8b410c8b178b3c908b87a80100008b9fa4010000":
-__thiscall void CrewAI::UpdateCrewMember(CrewAI *this, int crewId);
+__thiscall void CrewAI::UpdateCrewMember(CrewAI* this, int crewId);
 "8b510c8b4110c641070029d0c1f80285c00f84????????578d7c240883e4f0ff77fc5589e557565389ce31db83ec3c":
-__thiscall void CrewAI::CheckForHealing(CrewAI *this);
+__thiscall void CrewAI::CheckForHealing(CrewAI* this);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec6c8b018d4dd0890424e8????????8b55d08b460c":
-__thiscall void CrewAI::OnLoop(CrewAI *this);
+__thiscall void CrewAI::OnLoop(CrewAI* this);
 "578d7c240883e4f0ff77fc5589e557565389cf83ec7c8b01c64108018b4004890424":
-__thiscall void CrewAI::CheckForProblems(CrewAI *this);
+__thiscall void CrewAI::CheckForProblems(CrewAI* this);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec5c8b47048b1f89c18945a88b460c8b0488f30f105028":
-__thiscall int CrewAI::DangerRating(CrewAI *this,int roomId,int crewId);
+__thiscall int CrewAI::DangerRating(CrewAI* this,int roomId,int crewId);

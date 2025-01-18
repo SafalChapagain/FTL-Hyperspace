@@ -2,4 +2,4 @@
 offsetVariable std::vector<std::string>* Global_OptionsScreen_languageList;
 
 ".4157bef001000041564155":
-cleanup __amd64 void LanguageChooser::OnRender(LanguageChooser *this);
+cleanup __amd64 void LanguageChooser::OnRender(LanguageChooser* this);

@@ -1,10 +1,10 @@
-"554889e54157415653504189f74989fe498b4620":
-cleanup __amd64 bool ArmamentControl::KeyDown(ArmamentControl *this, SDLKey key);
-"554889e553504889fb83bbb0":
-cleanup __amd64 bool ArmamentControl::Dragging(ArmamentControl *this);
-"554889e5415741564154534883ec604989ffbf20":
-cleanup __amd64 void ArmamentControl::CreateHolderTab(ArmamentControl *this);
-"554889e54156534989fe4139":
-cleanup __amd64 void ArmamentControl::SetPosition(ArmamentControl *this, Point loc);
-"554889e54157415641554154534883ec484989fd49897518":
-cleanup __amd64 void ArmamentControl::LinkShip(ArmamentControl *this, ShipManager *ship);
+"554889e5415741564154534883ec604989ff":
+cleanup __amd64 void ArmamentControl::CreateHolderTab(ArmamentControl* this);
+".554889e553504889fb83bb":
+cleanup __amd64 bool ArmamentControl::Dragging(ArmamentControl* this);
+".554889e54157415653504189f74989fe49":
+cleanup __amd64 bool ArmamentControl::KeyDown(ArmamentControl* this, SDLKey key);
+".554889e54157415641554154534883ec484989fd4989":
+cleanup __amd64 void ArmamentControl::LinkShip(ArmamentControl* this, ShipManager* ship);
+".554889e54156534989fe4139":
+cleanup __amd64 void ArmamentControl::SetPosition(ArmamentControl* this, Point loc);

@@ -1,24 +1,24 @@
 "578d7c240883e4f0ff77fc5589e557565389ce83c10481ec????????8b47408b1ff30f105f04c741fc00000000f30f105708":
-__thiscall CollisionResponse Shields::CollisionReal(Shields *this, float x, float y, Damage damage, bool force);
+__thiscall CollisionResponse Shields::CollisionReal(Shields* this, float x, float y, Damage damage, bool force);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec7c8b57048b078b4f088b770cc70424????????8954240889442404894c240c89d9":
-__thiscall void Shields::constructor(Shields *this, int roomId, int shipId, int startingPower, const std::string& shieldFile);
+__thiscall void Shields::constructor(Shields* this, int _roomId, int _shipId, int _startingPower, const std::string& _shieldFile);
 "5589e5f30f104d108b4508f30f1045148b550cf30f1181d8010000f30f5ec1f30f1189d40100008981cc0100008991d00100005df30f1181c0010000":
-__thiscall void Shields::SetBaseEllipse(Shields *this, Globals::Ellipse ellipse);
+__thiscall void Shields::SetBaseEllipse(Shields* this, Globals::Ellipse ellipse);
 "578d7c240883e4f0ff77fc5589e557565389cb8db33802000083ec3ce8????????89c289f1c70424????????c1ea1f01d0d1f8":
-__thiscall void Shields::InstantCharge(Shields *this);
+__thiscall void Shields::InstantCharge(Shields* this);
 "578d7c240883e4f0ff77fc5589e557565389cb8d7dd883ec3ce8????????f30f1015????????8b83040200000f28ca8d4b08f30f108314020000897dd0":
-__thiscall void Shields::Jump(Shields *this);
+__thiscall void Shields::Jump(Shields* this);
 "578d7c240883e4f0ff77fc5589e557565389ce8d7dd083ec4ce8????????8d45d8893c24c745d8454e4552c745dc47595f53c745e04849454c8945d0":
-__thiscall void Shields::OnLoop(Shields *this);
+__thiscall void Shields::OnLoop(Shields* this);
 "57ba????????8d7c240883e4f0ff77fc5589e557565383ec1c8b81f40100008b378b7f0483c001":
-__thiscall void Shields::AddSuperShield(Shields *this, Point pos);
+__thiscall void Shields::AddSuperShield(Shields* this, Point position);
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????8b81ec010000f30f103ff30f117dc485c0f30f105f040f85????????8b410c":
-__thiscall void Shields::RenderBase(Shields *this, float alpha, float superShieldOverwrite);
+__thiscall void Shields::RenderBase(Shields* this, float alpha, float superShieldOverwrite);
 "578d7c240883e4f0ff77fc5589e557565389cb83c10483ec2c8b37c741fc00000000f30f106704":
-__thiscall CollisionResponse Shields::CollisionTest(Shields *this, float x, float y, Damage damage);
+__thiscall CollisionResponse Shields::CollisionTest(Shields* this, float x, float y, Damage damage);
 
 "!f30f1015(???????\?)f30f5ee6":
-GL_Color *Global_COLOR_GREEN;
+GL_Color* Global_COLOR_GREEN;
 
 
 struct Shields

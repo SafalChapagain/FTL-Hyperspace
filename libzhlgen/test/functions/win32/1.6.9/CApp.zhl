@@ -1,58 +1,56 @@
 "578d7c240883e4f0ff77fc5589e5575389cb83ec1080b9f734000000":
-__thiscall void CApp::OnInputFocus(CApp *this);
+__thiscall void CApp::OnInputFocus(CApp* this);
 ".5789c88d7c240883e4f0ff77fc5589e5575383ec10c681f7340000008b4908803d??????????":
-__thiscall void CApp::OnInputBlur(CApp *this);
+__thiscall void CApp::OnInputBlur(CApp* this);
 ".578d7c240883e4f0ff77fc5589e5575389cb83ec10e8????????c70424????????":
-__thiscall void CApp::OnExit(CApp *this);
+__thiscall void CApp::OnExit(CApp* this);
 ".80b9bc3400000074??c208008d74260080791000":
-__thiscall void CApp::OnMButtonDown(CApp *this, int x, int y);
+__thiscall void CApp::OnMButtonDown(CApp* this, int mX, int mY);
 ".578d7c240883e4f0ff77fc55":
-__thiscall void CApp::OnTextEvent(CApp *this, CEvent::TextEvent textEvent);
+__thiscall void CApp::OnTextEvent(CApp* this, CEvent::TextEvent textEvent);
 ".578d7c240883e4f0ff77fc5589e55783ec1480b9bc34000000":
-__thiscall void CApp::OnTextInput(CApp *this, int ch);
+__thiscall void CApp::OnTextInput(CApp* this, SDLKey key);
 ".578d7c240883e4f0ff77fc5589e5575389cb83ec108b490885c974??8b430c":
-__thiscall void CApp::OnRequestExit(CApp *this);
+__thiscall void CApp::OnRequestExit(CApp* this);
 ".57660fefc08d7c240883e4f0ff77fc5589e557565389cb83ec2c8b072b81103500008b5704":
-__thiscall void CApp::OnMouseMove(CApp *this, int x, int y, int xdiff, int ydiff, bool holdingLMB, bool holdingRMB, bool holdingMMB);
+__thiscall void CApp::OnMouseMove(CApp* this, int mX, int mY, int relX, int relY, bool holdingLeft, bool holdingRight, bool holdingMiddle);
 ".57660fefc08d7c240883e4f0ff77fc5589e5575389cb83ec208b072b81103500008b5704":
-__thiscall void CApp::OnRButtonUp(CApp *this, int x, int y);
+__thiscall void CApp::OnRButtonUp(CApp* this, int mX, int mY);
 ".57660fefc08d7c240883e4f0ff77fc5589e557":
-__thiscall void CApp::OnLButtonUp(CApp *this, int x, int y);
+__thiscall void CApp::OnLButtonUp(CApp* this, int mX, int mY);
 ".57660fefc08d7c240883e4f0ff77fc5589e55753":
-__thiscall void CApp::OnRButtonDown(CApp *this, int x, int y);
+__thiscall void CApp::OnRButtonDown(CApp* this, int mX, int mY);
 ".57660fefc08d7c240883e4f0ff77fc5589e5":
-__thiscall void CApp::OnLButtonDown(CApp *this, int x, int y);
+__thiscall void CApp::OnLButtonDown(CApp* this, int mX, int mY);
 ".578d7c240883e4f0ff77fc5589e55756":
-__thiscall void CApp::OnLanguageChange(CApp *this);
+__thiscall void CApp::OnLanguageChange(CApp* this);
 ".578d7c240883e4f0ff77fc5589e557565383ec4c":
-__thiscall void CApp::OnKeyUp(CApp *this, SDLKey key);
+__thiscall void CApp::OnKeyUp(CApp* this, SDLKey key);
 ".578d7c240883e4f0ff77fc5589e5575653":
-__thiscall void CApp::OnKeyDown(CApp *this, SDLKey key);
+__thiscall void CApp::OnKeyDown(CApp* this, SDLKey key);
 ".5589e55389cb83e4f0e8":
-__thiscall void CApp::constructor(CApp *this);
-".555789cd565383ec04c68541350000008b5424188b4c241c83fa017e??":
-__thiscall void CApp::ParseArgs(CApp *this, int argc, const char** argv);
+__thiscall void CApp::constructor(CApp* this);
 ".578d7c240883e4f0ff77fc5589e557565389cbb9????????83ec4ce8????????":
-__thiscall void CApp::OnLoop(CApp *this);
+__thiscall void CApp::OnLoop(CApp* this);
 ".5589e55389cb83e4f0":
-__thiscall int CApp::SetupWindow(CApp *this);
+__thiscall int CApp::SetupWindow(CApp* this);
 ".5589e5565389cb83e4f083ec10":
-__thiscall void CApp::OnCleanup(CApp *this);
+__thiscall void CApp::OnCleanup(CApp* this);
 ".578d7c240883e4f0ff77fc5589e5575389cb":
-__thiscall void CApp::GenInputEvents(CApp *this);
+__thiscall void CApp::GenInputEvents(CApp* this);
 ".578d7c240883e4f0ff77fc5589e557":
-__thiscall void CApp::OnSuspend(CApp *this);
+__thiscall void CApp::OnSuspend(CApp* this);
 "!.80b9bc3400000075??8079100074??c35589e55389cb8b4908":
-__thiscall void CApp::OnResume(CApp *this);
+__thiscall void CApp::OnResume(CApp* this);
 ".57660fefc08d7c240883e4f0ff77fc5589e55783ec248b072b8110350000":
-__thiscall Point CApp::TranslateMouse(CApp *this, int x, int y);
+__thiscall Point CApp::TranslateMouse(CApp* this, int mX, int mY);
 ".803d??????????74??c38db6000000005589e5575653":
-__thiscall void CApp::UpdateFullScreen(CApp *this);
+__thiscall void CApp::UpdateFullScreen(CApp* this);
 ".80b90c35000000c781ec34000000000000c781f034000000000000c7811035000000000000":
-__thiscall void CApp::UpdateWindowSettings(CApp *this);
+__thiscall void CApp::UpdateWindowSettings(CApp* this);
 ".578d7c240883e4f0ff77fc5589e55756":
-__thiscall void CApp::OnRender(CApp *this);
+__thiscall void CApp::OnRender(CApp* this);
 ".578d7c240883e4f0ff77fc5589e557":
-__thiscall int CApp::OnInit(CApp *this);
+__thiscall int CApp::OnInit(CApp* this);
 ".578d7c240883e4f0ff77fc5589e557565389cfb9????????81ec????????c70424????????e8????????89f9":
-__thiscall int CApp::OnExecute(CApp *this);
+__thiscall int CApp::OnExecute(CApp* this);

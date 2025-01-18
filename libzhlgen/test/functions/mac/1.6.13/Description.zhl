@@ -1,8 +1,8 @@
-/* TODO: These may not be used, if the copy assign is it will need to be re-implemented
-"NOT FOUND IN SIGNATURE DATA":
-cleanup __amd64 Description& Description::copy_assign_2(Description *this, Description& other);
-"NOT FOUND IN SIGNATURE DATA":
-cleanup __amd64 Description& Description::copy_assign_1(Description *this, const Description& other);
-"NOT FOUND IN SIGNATURE DATA":
-cleanup __amd64 void Description::destructor(Description *this);
+/* TODO: These may not be used, if the copy assign is it will need to be re-implemented - Not used in Hyperspace at all right now!
+"DOESNT EXIST IN MAC":
+cleanup __amd64 Description& Description::copy_assign_2(Description* this, Description& other);
+"DOESNT EXIST IN MAC":
+cleanup __amd64 Description& Description::copy_assign_1(Description* this, const Description& other);
+"DOESNT EXIST IN MAC":
+cleanup __amd64 void Description::destructor(Description* this);
 */

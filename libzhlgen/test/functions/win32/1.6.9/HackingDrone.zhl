@@ -1,6 +1,6 @@
 "578d7c240883e4f0ff77fc5589e557565389cb83ec6ce8????????":
-__thiscall void HackingDrone::OnLoop(HackingDrone *this);
+__thiscall void HackingDrone::OnLoop(HackingDrone* this);
 "578d7c240883e4f0ff77fc5589e557565383ec2c8b3785f60f84????????89cb89b150010000c6815c03000000c6815d030000008d897c030000c7042400000000":
-__thiscall void HackingDrone::SetMovementTarget(HackingDrone *this, Targetable *target);
+__thiscall void HackingDrone::SetMovementTarget(HackingDrone* this, Targetable* target);
 "578d7c240883e4f0ff77fc5589e557565389cb81ec9c0000008b378b47048b57088b4f48":
-__thiscall CollisionResponse HackingDrone::CollisionMoving(HackingDrone *this, Pointf start, Pointf finish, Damage damage, bool raytrace);
+__thiscall CollisionResponse HackingDrone::CollisionMoving(HackingDrone* this, Pointf start, Pointf finish, Damage damage, bool raytrace);

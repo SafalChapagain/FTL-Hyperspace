@@ -22,6 +22,10 @@ lua/swigluarun.h
 # KDE Dolphin
 *.directory
 
+# CLion config directory
+/.idea
+/cmake-build-debug
+
 # Doxygen
 docs/*
 
@@ -55,3 +59,4 @@ build-*/
 
 # Mac
 .DS_Store
+/vcpkg_installed

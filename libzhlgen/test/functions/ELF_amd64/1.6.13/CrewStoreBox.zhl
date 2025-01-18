@@ -1,18 +1,18 @@
 "488bbf1801000031c0":
-cleanup __amd64 bool CrewStoreBox::CanHold(CrewStoreBox *this);
+cleanup __amd64 bool CrewStoreBox::CanHold(CrewStoreBox* this);
 ".41574989ff415641554154554889f5":
-cleanup __amd64 void CrewStoreBox::constructor(CrewStoreBox *this, ShipManager *ship, int worldLevel, const std::string& type);
+cleanup __amd64 void CrewStoreBox::constructor(CrewStoreBox* this, ShipManager* _ship, int _worldLevel, const std::string& _type);
 ".415741564531f641554989fd4154555331db4881ec18010000":
-cleanup __amd64 void CrewStoreBox::Purchase(CrewStoreBox *this);
+cleanup __amd64 void CrewStoreBox::Purchase(CrewStoreBox* this);
 ".534889fb488d7f1831c94883ec30e8????f7ff80":
-cleanup __amd64 void CrewStoreBox::MouseMove(CrewStoreBox *this, int mX, int mY);
+cleanup __amd64 void CrewStoreBox::MouseMove(CrewStoreBox* this, int mX, int mY);
 
 
 struct CrewStoreBox
 {{
-	CrewStoreBox(ShipManager *_ship, int _worldLevel, const std::string& _type)
+	CrewStoreBox(ShipManager* ship, int worldLevel, const std::string& type)
 	{
-		this->constructor(_ship, _worldLevel, _type);
+		this->constructor(ship, worldLevel, type);
 	}
 	
 	CrewStoreBox()

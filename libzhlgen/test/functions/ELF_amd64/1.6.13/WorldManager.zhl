@@ -1,48 +1,44 @@
 "534889fb488d7f104883ec10":
-cleanup __amd64 void WorldManager::constructor(WorldManager *this);
+cleanup __amd64 void WorldManager::constructor(WorldManager* this);
 ".415455488d6f10534889fb4889ef":
-cleanup __amd64 int WorldManager::OnInit(WorldManager *this);
+cleanup __amd64 int WorldManager::OnInit(WorldManager* this);
 ".554889f5534889fb4883ec08488bb6d0040000":
-cleanup __amd64 void WorldManager::CreateStore(WorldManager *this, LocationEvent* event);
+cleanup __amd64 void WorldManager::CreateStore(WorldManager* this, LocationEvent* event);
 ".415455534889f34883ec204885f6":
-cleanup __amd64 bool WorldManager::CheckRequirements(WorldManager *this, LocationEvent* event, bool hidden);
+cleanup __amd64 bool WorldManager::CheckRequirements(WorldManager* this, LocationEvent* event, bool hidden);
 ".4154554889fd534883ec20488b07488b5010":
-cleanup __amd64 bool WorldManager::AddBoarders(WorldManager *this, BoardingEvent& boardingEvent);
+cleanup __amd64 bool WorldManager::AddBoarders(WorldManager* this, BoardingEvent& boardingEvent);
 ".534889fb488d7f10":
-cleanup __amd64 bool WorldManager::HostileEnvironment(WorldManager *this);
+cleanup __amd64 bool WorldManager::HostileEnvironment(WorldManager* this);
 ".83fe01534889fb":
-cleanup __amd64 void WorldManager::ModifyEnvironment(WorldManager *this, int envFlag, int envTarget);
+cleanup __amd64 void WorldManager::ModifyEnvironment(WorldManager* this, int envFlag, int envTarget);
 ".41554889d04989fd48c1f82041544989cc4889f148c1f920":
-cleanup __amd64 void WorldManager::ModifyStatusEffect(WorldManager *this, StatusEffect effect, ShipManager *target, int targetType); /* StatusEffect is in RSI:RDX */
+cleanup __amd64 void WorldManager::ModifyStatusEffect(WorldManager* this, StatusEffect effect, ShipManager* target, int targetType); /* StatusEffect is in RSI:RDX */
 ".41574989f7488db65803000041564d8db78803000041554154554889fd534881ecd8020000":
-cleanup __amd64 LocationEvent* WorldManager::ModifyResources(WorldManager *this, LocationEvent *event);
+cleanup __amd64 LocationEvent* WorldManager::ModifyResources(WorldManager* this, LocationEvent* event);
 "!.415741564989fe41554531ed41544c8da7001500005531ed534889f34883ec08":
-cleanup __amd64 void WorldManager::CheckStatusEffects(WorldManager *this, std::vector<StatusEffect>& vec);
+cleanup __amd64 void WorldManager::CheckStatusEffects(WorldManager* this, std::vector<StatusEffect>& vec);
 ".4157488d87501500004989ff41564889c741554154554889f5534889c34881ec08030000":
-cleanup __amd64 void WorldManager::CreateChoiceBox(WorldManager *this, LocationEvent* event);
-".554889f5534889fb4883ec08488b07488b7810488b17":
-cleanup __amd64 void WorldManager::CreateChoiceBox0(WorldManager *this, LocationEvent* event);
+cleanup __amd64 void WorldManager::CreateChoiceBox(WorldManager* this, LocationEvent* event);
 ".4156415541544989fc55534881ec60030000":
-cleanup __amd64 CompleteShip* WorldManager::CreateShip(WorldManager *this, ShipEvent* shipEvent, bool boss);
+cleanup __amd64 CompleteShip* WorldManager::CreateShip(WorldManager* this, ShipEvent* shipEvent, bool boss);
 ".41574156415541544989f455534889fb4881ecf8030000":
-cleanup __amd64 void WorldManager::CreateLocation(WorldManager *this, Location *loc);
+cleanup __amd64 void WorldManager::CreateLocation(WorldManager* this, Location* loc);
 ".4157415641554154554889fd534889f34881ec88030000":
-cleanup __amd64 void WorldManager::UpdateLocation(WorldManager *this, LocationEvent* event);
-".554889f5534889fb4883ec08488b07488b7810488b17":
-cleanup __amd64 void WorldManager::UpdateLocation0(WorldManager *this, LocationEvent* event);
+cleanup __amd64 void WorldManager::UpdateLocation(WorldManager* this, LocationEvent* event);
 ".415741564155415455534889fb488d7f104881ec68020000":
-cleanup __amd64 void WorldManager::ClearLocation(WorldManager *this);
+cleanup __amd64 void WorldManager::ClearLocation(WorldManager* this);
 ".415741564155415455534889fb4881ece8010000":
-cleanup __amd64 void WorldManager::LoadGame(WorldManager *this, const std::string& fileName);
+cleanup __amd64 void WorldManager::LoadGame(WorldManager* this, const std::string& fileName);
 ".415455534889fb4883ec20488bbfb8110000":
-cleanup __amd64 void WorldManager::SaveGame(WorldManager *this);
+cleanup __amd64 void WorldManager::SaveGame(WorldManager* this);
 ".554889fd5331db4883ec28488b07488b78104881c718010000":
-cleanup __amd64 void WorldManager::CreateNewGame(WorldManager *this);
+cleanup __amd64 void WorldManager::CreateNewGame(WorldManager* this);
 ".4154554889f5534889fb4883ec20":
-cleanup __amd64 void WorldManager::StartGame(WorldManager *this, ShipManager *ship);
+cleanup __amd64 void WorldManager::StartGame(WorldManager* this, ShipManager* ship);
 "!.534889fbe8????????e8????????e8":
-cleanup __amd64 void WorldManager::Restart(WorldManager *this);
+cleanup __amd64 void WorldManager::Restart(WorldManager* this);
 ".415731f64989ff41564155415455534881ecf8000000":
-cleanup __amd64 void WorldManager::OnLoop(WorldManager *this);
+cleanup __amd64 void WorldManager::OnLoop(WorldManager* this);
 ".41554154554889fd534883ec28488b3f":
-cleanup __amd64 void WorldManager::PauseLoop(WorldManager *this);
+cleanup __amd64 void WorldManager::PauseLoop(WorldManager* this);

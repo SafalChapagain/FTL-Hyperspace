@@ -1,21 +1,21 @@
 "578d7c240883e4f0ff77fc5589e557565383ec4c837904048b0789819001000074??":
-__thiscall void SystemStoreBox::SetExtraData(SystemStoreBox *this, int droneChoice);
+__thiscall void SystemStoreBox::SetExtraData(SystemStoreBox* this, int droneChoice);
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????8b078b57048945808b470889c7894584":
-__thiscall void SystemStoreBox::constructor(SystemStoreBox *this, ShipManager *shopper, Equipment *equip, int sys);
+__thiscall void SystemStoreBox::constructor(SystemStoreBox* this, ShipManager* _ship, Equipment* _equip, int _system);
 "8b913801000031c085d274??578d7c240883e4f0ff77fc5589e5575389cb83ec108b4104890424e8????????":
-__thiscall bool SystemStoreBox::CanHold(SystemStoreBox *this);
+__thiscall bool SystemStoreBox::CanHold(SystemStoreBox* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec5c8b81300100008b378b7f0485c07e??":
-__thiscall void SystemStoreBox::MouseMove(SystemStoreBox *this, int mX, int mY);
+__thiscall void SystemStoreBox::MouseMove(SystemStoreBox* this, int mX, int mY);
 "578d7c240883e4f0ff77fc5589e5575389cb83ec308b89380100008b81d40400003983e8000000":
-__thiscall void SystemStoreBox::Activate(SystemStoreBox *this);
+__thiscall void SystemStoreBox::Activate(SystemStoreBox* this);
 "578d7c240883e4f0ff77fc5589e557565389cb8d75d883ec4c":
-__thiscall void SystemStoreBox::Purchase(SystemStoreBox *this);
+__thiscall void SystemStoreBox::Purchase(SystemStoreBox* this);
 
 
 struct SystemStoreBox
 {{
-	SystemStoreBox(ShipManager *_shopper, Equipment *_equip, int _sys)
+	SystemStoreBox(ShipManager* ship, Equipment* equip, int system)
 	{
-		this->constructor(_shopper, _equip, _sys);
+		this->constructor(ship, equip, system);
 	}
 }};

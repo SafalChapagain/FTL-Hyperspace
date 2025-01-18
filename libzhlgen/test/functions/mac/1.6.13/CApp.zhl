@@ -1,60 +1,60 @@
-"554889e553504889fb488b7b104885ff74504883":
-cleanup __amd64 void CApp::OnRequestExit(CApp *this);
-"554889e553504889fbe8????1600488d":
-cleanup __amd64 void CApp::OnExit(CApp *this);
-"554889e580bf????0000007506807f20":
-cleanup __amd64 void CApp::OnMButtonDown(CApp *this, int x, int y);
-"554889e553504889fb80bb????000000752e488d":
-cleanup __amd64 void CApp::OnInputFocus(CApp *this);
-"554889e54156534889fbc683????000000488b7b":
-cleanup __amd64 void CApp::OnInputBlur(CApp *this);
-"554889e553504889fb2bb3????????":
-cleanup __amd64 void CApp::OnLButtonUp(CApp *this, int x, int y);
-".554889e553504889fb2bb3????????":
-cleanup __amd64 void CApp::OnLButtonDown(CApp *this, int x, int y);
-".554889e553504889fb2bb3????????":
-cleanup __amd64 void CApp::OnRButtonDown(CApp *this, int x, int y);
-".554889e553504889fb2bb3????????":
-cleanup __amd64 void CApp::OnRButtonUp(CApp *this, int x, int y);
-".554889e553504889fb2bb3????????":
-cleanup __amd64 void CApp::OnMouseMove(CApp *this, int x, int y, int xdiff, int ydiff, bool holdingLMB, bool holdingRMB, bool holdingMMB);
-"554889e541574156534883ec384189f7":
-cleanup __amd64 void CApp::OnKeyUp(CApp *this, SDLKey key);
-"554889e5415741564154534883ec304989fc4c8d":
-cleanup __amd64 void CApp::OnLanguageChange(CApp *this);
-"554889e541574156534883ec584189f7":
-cleanup __amd64 void CApp::OnKeyDown(CApp *this, SDLKey key);
-".!554889e580bf484100000074":
-cleanup __amd64 void CApp::OnTextInput(CApp *this, int ch);
-".!554889e580bf484100000074":
-cleanup __amd64 void CApp::OnTextEvent(CApp *this, CEvent::TextEvent textEvent);
-"554889e553504889fbe8????????488d05????????488903c6":
-cleanup __amd64 void CApp::constructor(CApp *this);
-"554889e55d":
-noHook __amd64 void CApp::DO_NOT_HOOK_1();
-".554889e55d":
-cleanup __amd64 void CApp::ParseArgs(CApp *this, int argc, const char** argv);
-"554889e5415741564154534883ec304989fc488d":
-cleanup __amd64 void CApp::OnLoop(CApp *this);
-"554889e54157415653504889fb488d3d":
-cleanup __amd64 int CApp::SetupWindow(CApp *this);
-"554889e54156534889fb488b7b18e8??":
-cleanup __amd64 void CApp::OnCleanup(CApp *this);
-"554889e54156534989fee8????1f0031":
-cleanup __amd64 void CApp::GenInputEvents(CApp *this);
-"554889e553504889fbe8????1600488b":
-cleanup __amd64 void CApp::OnSuspend(CApp *this);
-"554889e553504889fb80bb????0000007513807b":
-cleanup __amd64 void CApp::OnResume(CApp *this);
-"554889e54883ec102bb7????":
-cleanup __amd64 Point CApp::TranslateMouse(CApp *this, int x, int y);
-"554889e5415741564155415453504989fe488d1d":
-cleanup __amd64 void CApp::UpdateFullScreen(CApp *this);
-"554889e548c787????00000000000048c787????00000000000048b8":
-cleanup __amd64 void CApp::UpdateWindowSettings(CApp *this);
-"554889e54156534883ec404889fbe86d":
-cleanup __amd64 void CApp::OnRender(CApp *this);
-"554889e541574156534883ec384989fe31ffe8??":
-cleanup __amd64 int CApp::OnInit(CApp *this);
-"554889e54157415641554154534881ecb80000004889fb488d3d????":
-cleanup __amd64 int CApp::OnExecute(CApp *this);
+"554889e553504889fbe8??????00488d05????32":
+noHook __amd64 void CApp::DO_NOT_HOOK_FALSE_CONSTRUCTOR();
+".554889e553504889fbe8??????00488d05????32":
+cleanup __amd64 void CApp::constructor(CApp* this);
+".554889e553504889fb80bb????000000752e":
+cleanup __amd64 void CApp::OnInputFocus(CApp* this);
+".554889e54156534889fbc683????00000048":
+cleanup __amd64 void CApp::OnInputBlur(CApp* this);
+"!.554889e54157415641554154534881ecb80000004889fb488d3d": // Placed ! to prevent scaning RET making it possible to hook the offsetVar
+cleanup __amd64 int CApp::OnExecute(CApp* this);
+"!.304c8d2d(???????\?)":
+offsetVariable CFPS* Global_CFPS_FPSControl;
+".554889e541574156534883ec384989fe31":
+cleanup __amd64 int CApp::OnInit(CApp* this);
+".554889e54156534989fee8????1f":
+cleanup __amd64 void CApp::GenInputEvents(CApp* this);
+"!.554889e5415741564154534883ec304989fc48":
+cleanup __amd64 void CApp::OnLoop(CApp* this);
+".554889e54156534883ec404889fbe86d":
+cleanup __amd64 void CApp::OnRender(CApp* this);
+".554889e5415741564155415453504989fe488d1d":
+cleanup __amd64 void CApp::UpdateFullScreen(CApp* this);
+".554889e548c787????00000000000048c787????00000000000048b8":
+cleanup __amd64 void CApp::UpdateWindowSettings(CApp* this);
+".554889e54157415653504889fb488d3d":
+cleanup __amd64 int CApp::SetupWindow(CApp* this);
+"!.554889e54156534889fb488b7b18":
+cleanup __amd64 void CApp::OnCleanup(CApp* this);
+"!.554889e553504889fbe8????1600488b7b10":
+cleanup __amd64 void CApp::OnSuspend(CApp* this);
+"!.554889e553504889fb80bb????0000007513":
+cleanup __amd64 void CApp::OnResume(CApp* this);
+"!.554889e553504889fb488b7b104885ff7450":
+cleanup __amd64 void CApp::OnRequestExit(CApp* this);
+".554889e553504889fbe8????1600488d":
+cleanup __amd64 void CApp::OnExit(CApp* this);
+".554889e54883ec102b":
+cleanup __amd64 Point CApp::TranslateMouse(CApp* this, int mX, int mY);
+"!.554889e580bf????0000007506":
+cleanup __amd64 void CApp::OnMButtonDown(CApp* this, int mX, int mY);
+".554889e553504889fb2b":
+cleanup __amd64 void CApp::OnLButtonUp(CApp* this, int mX, int mY);
+".554889e553504889fb2b":
+cleanup __amd64 void CApp::OnLButtonDown(CApp* this, int mX, int mY);
+".554889e54157415653504889fb2b":
+cleanup __amd64 void CApp::OnMouseMove(CApp* this, int mX, int mY, int relX, int relY, bool holdingLeft, bool holdingRight, bool holdingMiddle);
+".554889e553504889fb2b":
+cleanup __amd64 void CApp::OnRButtonDown(CApp* this, int mX, int mY);
+".554889e553504889fb2b":
+cleanup __amd64 void CApp::OnRButtonUp(CApp* this, int mX, int mY);
+".554889e541574156534883ec384189f7":
+cleanup __amd64 void CApp::OnKeyUp(CApp* this, SDLKey key);
+".554889e541574156534883ec584189f7":
+cleanup __amd64 void CApp::OnKeyDown(CApp* this, SDLKey key);
+"!.554889e580bf????00000074025dc3807f":
+cleanup __amd64 void CApp::OnTextInput(CApp* this, SDLKey key);
+"!.554889e580bf????00000074025dc3807f":
+cleanup __amd64 void CApp::OnTextEvent(CApp* this, CEvent::TextEvent textEvent);
+".554889e5415741564154534883ec304989fc4c":
+cleanup __amd64 void CApp::OnLanguageChange(CApp* this);

@@ -1,11 +1,11 @@
 "578d7c240883e4f0ff77fc5589e557565389ce8d4dcc81ec????????8b47048b1fc745b014000000898504ffffff8b47088d7dd4c744240400000000":
-__thiscall void RepairStoreBox::constructor(RepairStoreBox *this, ShipManager *ship, bool repairAll, int price);
+__thiscall void RepairStoreBox::constructor(RepairStoreBox* this, ShipManager* _ship, bool _repairAll, int _price);
 
 
 struct RepairStoreBox
 {{
-	RepairStoreBox(ShipManager *_ship, bool _repairAll, int _price)
+	RepairStoreBox(ShipManager* ship, bool repairAll, int price)
 	{
-		this->constructor(_ship, _repairAll, _price);
+		this->constructor(ship, repairAll, price);
 	}
 }};

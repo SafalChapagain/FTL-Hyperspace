@@ -1,43 +1,42 @@
-"!554889e54156534989fe498b7e10498b4e184839f975054889ca":
-noHook __amd64 void CrewMemberFactory::DO_NOT_HOOK_1();
-".!554889e54156534989fe498b7e10498b4e184839f975054889ca":
-cleanup __amd64 void CrewMemberFactory::destructor(CrewMemberFactory *this);
-"554889e54157415653504989fe498b4610498b56":
-cleanup __amd64 void CrewMemberFactory::Restart(CrewMemberFactory *this);
-"554889e5415741564155415453504189f64989fc498b4424104531ff":
-cleanup __amd64 int CrewMemberFactory::CountCloneReadyCrew(CrewMemberFactory *this, bool player);
-"554889e54157415641554154534883ec2889d348":
-cleanup __amd64 void CrewMemberFactory::GetCrewPortraitList(CrewMemberFactory *this, std::vector<CrewMember*>* vec, int teamId);
-"554889e54157415641554154534883ec288955d44989f548":
-cleanup __amd64 void CrewMemberFactory::GetCrewList(CrewMemberFactory *this, std::vector<CrewMember*>* vec, int unk, bool unk2);
-"554889e58b075d":
-cleanup __amd64 int CrewMemberFactory::GetPlayerCrewCount(CrewMemberFactory *this);
+// Continue from CrewMember::CanMan (hyper efficiency™)
+"!.554889e54156534989fe498b7e10498b4e184839f975054889ca99999999":
+cleanup __amd64 void CrewMemberFactory::destructor(CrewMemberFactory* this);
+".554889e54157415653504989fe498b4610498b56":
+cleanup __amd64 void CrewMemberFactory::Restart(CrewMemberFactory* this);
+"!.554889e5415741564154534989ff498b47104939":
+cleanup __amd64 void CrewMemberFactory::RemoveExcessCrew(CrewMemberFactory* this);
+".554889e54157415641554154534881ec880000004889fb48c7030000":
+cleanup __amd64 void CrewMemberFactory::OnLoop(CrewMemberFactory* this);
+".554889e54157415641554154534881ec980000004989d548":
+cleanup __amd64 std::pair<std::string, bool> CrewMemberFactory::GetRandomFriendlyName(CrewMemberFactory* this, const std::string& race);
+".554889e54157415641554154534883ec184989f44989fe49c7461000":
+cleanup __amd64 std::vector<std::string> CrewMemberFactory::GetCrewNames(CrewMemberFactory* this);
+"!.554889e54157415641554154534883ec284189d74989f649":
+cleanup __amd64 void CrewMemberFactory::GetCloneReadyList(CrewMemberFactory* this, std::vector<CrewMember*>& vec, bool player);
+".554889e5415741564155415453504189f64989fc498b4424104531ff":
+cleanup __amd64 int CrewMemberFactory::CountCloneReadyCrew(CrewMemberFactory* this, bool player);
+"!.554889e54157415641554154534883ec2889d348":
+cleanup __amd64 void CrewMemberFactory::GetCrewPortraitList(CrewMemberFactory* this, std::vector<CrewMember*>* vec, int teamId);
+"!.554889e54157415641554154534883ec288955d44989f548":
+cleanup __amd64 void CrewMemberFactory::GetCrewList(CrewMemberFactory* this, std::vector<CrewMember*>* vec, int player, bool drones);
+".554889e58b075d":
+cleanup __amd64 int CrewMemberFactory::GetPlayerCrewCount(CrewMemberFactory* this);
 ".554889e58b47085dc3":
-cleanup __amd64 int CrewMemberFactory::GetEnemyCloneCount(CrewMemberFactory *this);
-"554889e5488d4704":
-cleanup __amd64 int CrewMemberFactory::GetCrewCount(CrewMemberFactory *this, bool enemy);
-"554889e58b47045d":
-cleanup __amd64 int CrewMemberFactory::GetEnemyCrewCount(CrewMemberFactory *this);
-"554889e54156534889fb488d35????26":
+cleanup __amd64 int CrewMemberFactory::GetEnemyCloneCount(CrewMemberFactory* this);
+".554889e5488d4704":
+cleanup __amd64 int CrewMemberFactory::GetCrewCount(CrewMemberFactory* this, bool enemy);
+".554889e58b47045d":
+cleanup __amd64 int CrewMemberFactory::GetEnemyCrewCount(CrewMemberFactory* this);
+".554889e54156534889fb488d35????26":
 static cleanup __amd64 bool CrewMemberFactory::IsRace(const std::string& species);
-"554889e54157415641554154534883ec184989d64189f749":
-cleanup __amd64 BoarderDrone* CrewMemberFactory::CreateBoarderDrone(CrewMemberFactory *this, int shipId, const DroneBlueprint* bp);
-"554889e54157415641554154534883ec184989d74189f649":
-cleanup __amd64 BattleDrone* CrewMemberFactory::CreateBattleDrone(CrewMemberFactory *this, int shipId, const DroneBlueprint* bp);
-"554889e54157415641554154534883ec284189d74989f649":
-cleanup __amd64 void CrewMemberFactory::GetCloneReadyList(CrewMemberFactory *this, std::vector<CrewMember*>& vec, bool player);
-"554889e54157415641554154534883ec384989d74189f549":
-cleanup __amd64 RepairDrone* CrewMemberFactory::CreateRepairDrone(CrewMemberFactory *this, int shipId, const DroneBlueprint* bp);
-"554889e54157415641554154534881ec980000004989d548":
-cleanup __amd64 std::pair<std::string, bool> CrewMemberFactory::GetRandomFriendlyName(CrewMemberFactory *this, const std::string& race);
-"554889e54157415641554154534883ec184989f44989fe49c7461000":
-cleanup __amd64 std::vector<std::string> CrewMemberFactory::GetCrewNames(CrewMemberFactory *this);
-"554889e54157415641554154534881ec880000004889fb48c7030000":
-cleanup __amd64 void CrewMemberFactory::OnLoop(CrewMemberFactory *this);
-"554889e5415741564154534989ff498b47104939":
-cleanup __amd64 void CrewMemberFactory::RemoveExcessCrew(CrewMemberFactory *this);
-"554889e54157415641554154534881ecb80100004189cd41":
-cleanup __amd64 CrewMember* CrewMemberFactory::CreateCrewMember(CrewMemberFactory *this, CrewBlueprint* bp, int shipId, bool intruder);
+"!.554889e54157415641554154534881ecb80100004189cd41":
+cleanup __amd64 CrewMember* CrewMemberFactory::CreateCrewMember(CrewMemberFactory* this, CrewBlueprint* bp, int shipId, bool intruder);
+"!.554889e54157415641554154534883ec184989d64189f749":
+cleanup __amd64 BoarderDrone* CrewMemberFactory::CreateBoarderDrone(CrewMemberFactory* this, int shipId, const DroneBlueprint* bp);
+"!.554889e54157415641554154534883ec384989d74189f549":
+cleanup __amd64 RepairDrone* CrewMemberFactory::CreateRepairDrone(CrewMemberFactory* this, int shipId, const DroneBlueprint* bp);
+"!.554889e54157415641554154534883ec184989d74189f649":
+cleanup __amd64 BattleDrone* CrewMemberFactory::CreateBattleDrone(CrewMemberFactory* this, int shipId, const DroneBlueprint* bp);
 
 "!807b2800400f94c6488d3d(???????\?)e8????????4189c6807b2800":
 offsetVariable CrewMemberFactory* Global_CrewMemberFactory_Factory;
@@ -45,11 +44,16 @@ offsetVariable CrewMemberFactory* Global_CrewMemberFactory_Factory;
 
 struct CrewMemberFactory
 {{
-	void SwapCrewMembers(CrewMember *_first, CrewMember *_second);
-	void MoveCrewMemberToEnd(CrewMember *crew);
-	void MoveCrewMemberBefore(CrewMember *crew, CrewMember *other);
-	void MoveCrewMemberAfter(CrewMember *crew, CrewMember *other);
-	void MoveCrewMemberToSpot(CrewMember *crew, CrewMember *other);
+	~CrewMemberFactory()
+	{
+		this->destructor();
+	}
+
+	void SwapCrewMembers(CrewMember* _first, CrewMember* _second);
+	void MoveCrewMemberToEnd(CrewMember* crew);
+	void MoveCrewMemberBefore(CrewMember* crew, CrewMember* other);
+	void MoveCrewMemberAfter(CrewMember* crew, CrewMember* other);
+	void MoveCrewMemberToSpot(CrewMember* crew, CrewMember* other);
 	
 	float GetCrewCapacityUsed();
 }};

@@ -1,6 +1,6 @@
 "55534889fb4883ec0880bfd801000000":
-cleanup __amd64 void Fire::OnLoop(Fire *this);
+cleanup __amd64 void Fire::OnLoop(Fire* this);
 ".5589f5534889fb4883ec18488b07ff505084c0":
-cleanup __amd64 void Fire::UpdateDeathTimer(Fire *this, int connectedFires);
+cleanup __amd64 void Fire::UpdateDeathTimer(Fire* this, int connectedFires);
 ".5589f5534889fb4883ec18488b07ff505084c0":
-cleanup __amd64 void Fire::UpdateStartTimer(Fire *this, int doorLevel);
+cleanup __amd64 void Fire::UpdateStartTimer(Fire* this, int doorLevel);

@@ -1,14 +1,25 @@
-"554889e5415741564154534189f64989ffbe0200":
-cleanup __amd64 void OxygenSystem::constructor(OxygenSystem *this, int numRooms, int roomId, int shipId, int startingPower);
-"554889e553504889fb80bb44":
-cleanup __amd64 float OxygenSystem::GetRefillSpeed(OxygenSystem *this);
-"554889e54863c6488b8f68020000f30f580481f3":
-cleanup __amd64 void OxygenSystem::ModifyRoomOxygen(OxygenSystem *this, int roomId, float value);
-"554889e54157415641554154534883ec288955d4f30f1145":
-cleanup __amd64 void OxygenSystem::ComputeAirLoss(OxygenSystem *this, int roomId, float value, bool unk);
-"554889e585d27e15":
-cleanup __amd64 void OxygenSystem::UpdateBreach(OxygenSystem *this, int roomId, int hasBreach, bool unk3);
-"554889e541574156534883ec1889d341":
-cleanup __amd64 void OxygenSystem::UpdateAirlock(OxygenSystem *this, int roomId, int unk);
-"554889e54863c6488b8f68020000c704":
-cleanup __amd64 void OxygenSystem::EmptyOxygen(OxygenSystem *this, int roomId);
+"!554889e5415741564154534189f64989ffbe0200":
+noHook __amd64 void OxygenSystem::DO_NOT_HOOK_FALSE_CONSTRUCTOR();
+"!.554889e5415741564154534189f64989ffbe0200":
+cleanup __amd64 void OxygenSystem::constructor(OxygenSystem* this, int _numRooms, int _roomId, int _shipId, int _startingPower);
+".554889e553504889fb80bb44":
+cleanup __amd64 float OxygenSystem::GetRefillSpeed(OxygenSystem* this);
+".554889e54863c6488b8f68020000f30f580481f3":
+cleanup __amd64 void OxygenSystem::ModifyRoomOxygen(OxygenSystem* this, int roomId, float value);
+"!.554889e585d27e15":
+cleanup __amd64 void OxygenSystem::UpdateBreach(OxygenSystem* this, int roomId, int hasBreach, bool silent);
+".554889e54157415641554154534883ec288955d4f30f1145":
+cleanup __amd64 void OxygenSystem::ComputeAirLoss(OxygenSystem* this, int roomId, float value, bool silent);
+".554889e541574156534883ec1889d341":
+cleanup __amd64 void OxygenSystem::UpdateAirlock(OxygenSystem* this, int roomId, int count);
+".554889e54863c6488b8f68020000c704":
+cleanup __amd64 void OxygenSystem::EmptyOxygen(OxygenSystem* this, int roomId);
+
+
+struct OxygenSystem
+{{
+    OxygenSystem(int numRooms, int roomId, int shipId, int startingPower)
+    {
+        this->constructor(numRooms, roomId, shipId, startingPower);
+    }
+}};

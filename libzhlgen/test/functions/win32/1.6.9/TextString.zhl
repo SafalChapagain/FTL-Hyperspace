@@ -1,5 +1,5 @@
 "578d7c240883e4f0ff77fc5589e557565389cb83ec2c8b17807a1800":
-__thiscall std::string TextString::GetText(TextString *this);
+__thiscall std::string TextString::GetText(TextString* this);
 
 
 struct TextString depends (TextLibrary)

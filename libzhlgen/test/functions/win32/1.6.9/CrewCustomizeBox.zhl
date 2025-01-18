@@ -1,2 +1,2 @@
 "80b9880600000075??80b96e0200000074??c3578d7c240883e4f0ff77fc5589e557565389cb83ec3c8b8984000000":
-__thiscall void CrewCustomizeBox::CheckContents(CrewCustomizeBox *this);
+__thiscall void CrewCustomizeBox::CheckContents(CrewCustomizeBox* this);

@@ -1,8 +1,8 @@
 "530fb687c10000004889fb84c0":
-cleanup __amd64 bool WeaponAnimation::StartFire(WeaponAnimation *this);
+cleanup __amd64 bool WeaponAnimation::StartFire(WeaponAnimation* this);
 "8b470889c22b97c8000000":
-cleanup __amd64 void WeaponAnimation::SetFireTime(WeaponAnimation *this, float time);
+cleanup __amd64 void WeaponAnimation::SetFireTime(WeaponAnimation* this, float time);
 "534889fb488dbff8":
-cleanup __amd64 Pointf WeaponAnimation::GetSlide(WeaponAnimation *this);
+cleanup __amd64 Pointf WeaponAnimation::GetSlide(WeaponAnimation* this);
 "415455534889fb4883ec1080bfc100000000":
-cleanup __amd64 void WeaponAnimation::Update(WeaponAnimation *this);
+cleanup __amd64 void WeaponAnimation::Update(WeaponAnimation* this);

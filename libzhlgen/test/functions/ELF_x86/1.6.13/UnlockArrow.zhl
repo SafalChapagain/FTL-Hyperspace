@@ -1,6 +1,15 @@
 "5557565383ec2c8b6c24408b4424508b4c244c":
-cleanup __cdecl void UnlockArrow::constructor(UnlockArrow *this, Point pos, int unk1, int unk2);
+cleanup __cdecl void UnlockArrow::constructor(UnlockArrow* this, Point _position, int _status, int _direction);
 ".8b542404837a0403":
-cleanup __cdecl bool UnlockArrow::MouseMove(UnlockArrow *this, int x, int y);
+cleanup __cdecl bool UnlockArrow::MouseMove(UnlockArrow* this, int x, int y);
 ".57565383ec508b5c24608b0385c0":
-cleanup __cdecl void UnlockArrow::OnRender(UnlockArrow *this);
+cleanup __cdecl void UnlockArrow::OnRender(UnlockArrow* this);
+
+
+struct UnlockArrow
+{{
+    UnlockArrow(Point position, int status, int direction)
+    {
+        this->constructor(position, status, direction);
+    }
+}};

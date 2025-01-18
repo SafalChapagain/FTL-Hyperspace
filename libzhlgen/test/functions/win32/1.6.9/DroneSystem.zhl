@@ -1,12 +1,12 @@
 "5731c08d7c240883e4f0ff77fc5589e557565383ec4c8b1f85db0f88????????89ce":
-__thiscall void DroneSystem::RemoveDrone(DroneSystem *this, int slot);
+__thiscall void DroneSystem::RemoveDrone(DroneSystem* this, int slot);
 "578d7c240883e4f0ff77fc5589e557565383ec2c8b81700100008b91c0010000c745e4000000008945dc8b81c401000029d0c1f802":
-__thiscall void DroneSystem::UpdateBonusPower(DroneSystem *this);
+__thiscall void DroneSystem::UpdateBonusPower(DroneSystem* this);
 ".5589e556538b750889cb83e4f0e8????????39f089d90f4fc6898370010000":
-virtual __thiscall void DroneSystem::SetBonusPower(DroneSystem *this, int amount, int permanentPower);
+virtual __thiscall void DroneSystem::SetBonusPower(DroneSystem* this, int amount, int permanentPower);
 "578d7c240883e4f0ff77fc5589e557565389cf83ec5ce8????????89f9e8????????8bb7c00100008b87c4010000":
-__thiscall void DroneSystem::OnLoop(DroneSystem *this);
+__thiscall void DroneSystem::OnLoop(DroneSystem* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec2c807f04008b37":
-__thiscall bool DroneSystem::DePowerDrone(DroneSystem *this, Drone *drone, bool unk);
+__thiscall bool DroneSystem::DePowerDrone(DroneSystem* this, Drone* drone, bool userDriven);
 "8d4c240483e4f0ff71fc5589e5535183ec108b19c70424????????89d9e8????????83ec0485c0750a8d65f8595b5d8d61fcc3c70424????????89d9e8????????89c283ec04b80100000085d274da":
-static cleanup __cdecl int DroneSystem::StringToDrone(std::string &name);
+static cleanup __cdecl int DroneSystem::StringToDrone(std::string& name);

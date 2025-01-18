@@ -1,6 +1,6 @@
 "578d7c240883e4f0ff77fc5589f889e557565389cf83c14c81ec????????8b00c641b801":
-__thiscall void GameOver::OpenText(GameOver *this, const std::string& text);
+__thiscall void GameOver::OpenText(GameOver* this, const std::string& text);
 "578d7c240883e4f0ff77fc5589e557565389cf81ec????????80b9d0000000000f85????????807940000f85????????8b4728bb????????890424e8????????":
-__thiscall void GameOver::OnRender(GameOver *this);
+__thiscall void GameOver::OnRender(GameOver* this);
 "578d7c240883e4f0ff77fc5589e557565389ceb9????????83ec5ce8????????d95db4f30f1045b4":
-__thiscall void GameOver::OnLoop(GameOver *this);
+__thiscall void GameOver::OnLoop(GameOver* this);

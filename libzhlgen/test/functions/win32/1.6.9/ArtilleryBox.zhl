@@ -1,13 +1,13 @@
 "578d7c240883e4f0ff77fc5589e557565389cb83ec1c8b77088b078b5704c744240c0100000089742408":
-__thiscall void ArtilleryBox::constructor(ArtilleryBox *this, Point pos, ArtillerySystem* sys);
+__thiscall void ArtilleryBox::constructor(ArtilleryBox* this, Point _position, ArtillerySystem* _system);
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????0fb607890424e8????????83ec04e8????????660fefc0c744240800000000":
-__thiscall void ArtilleryBox::OnRender(ArtilleryBox *this, bool ignoreStatus);
+__thiscall void ArtilleryBox::OnRender(ArtilleryBox* this, bool ignoreStatus);
 
 
 struct ArtilleryBox
 {{
-	ArtilleryBox(Point pos, ArtillerySystem* sys)
+	ArtilleryBox(Point position, ArtillerySystem* system)
 	{
-		this->constructor(pos, sys);
+		this->constructor(position, system);
 	}
 }};

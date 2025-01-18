@@ -1,11 +1,12 @@
-"554889e54156534883ec??4989d64889fb31c9e8086a0300488d05????????488903":
-cleanup __amd64 void MindBox::constructor(MindBox *this, Point pos, MindSystem* sys);
+// Continue from MenuScreen::Open (hyper efficiency™)
+".554889e54156534883ec604989d64889fb31c9e8????0300488d05????????488903":
+cleanup __amd64 void MindBox::constructor(MindBox* this, Point _position, MindSystem* _system);
 
 
 struct MindBox
 {{
-	MindBox(Point pos, MindSystem* sys)
+	MindBox(Point position, MindSystem* system)
 	{
-		this->constructor(pos, sys);
+		this->constructor(position, system);
 	}
 }};

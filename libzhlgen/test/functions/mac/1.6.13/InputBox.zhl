@@ -1,4 +1,5 @@
-"554889e54157415653504989fe83fe03":
-cleanup __amd64 void InputBox::TextEvent(InputBox *this, CEvent::TextEvent event);
-"554889e5534883ec184889fb488d7b48":
-cleanup __amd64 void InputBox::StartInput(InputBox *this);
+// Continue from Global_InfoBox_detailsBarOn (hyper efficiency™)
+"!.554889e54157415653504989fe83fe03":
+cleanup __amd64 void InputBox::TextEvent(InputBox* this, CEvent::TextEvent event);
+".554889e5534883ec184889fb488d7b48":
+cleanup __amd64 void InputBox::StartInput(InputBox* this);

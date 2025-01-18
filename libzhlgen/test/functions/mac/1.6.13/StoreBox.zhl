@@ -1,19 +1,20 @@
-"554889e5807f7000":
-cleanup __amd64 void StoreBox::MouseClick(StoreBox *this, int x, int y);
-"488b8778":
-cleanup __amd64 void StoreBox::Activate(StoreBox *this);
-"554889e54156534883ec104889fb4889f248c1ea20488b43":
-cleanup __amd64 void StoreBox::SetPosition(StoreBox *this, Point pos);
-"554889e541574156534883ec184989f64889fb41":
-cleanup __amd64 void StoreBox::InitBlueprint(StoreBox *this, Blueprint* bp);
-"554889e54157415641554154534883ec??48894da8":
-cleanup __amd64 void StoreBox::constructor(StoreBox *this, const std::string& buttonImage, ShipManager *shopper, Equipment *equip);
-"554889e55350488d5f2883bf":
-cleanup __amd64 void StoreBox::OnLoop(StoreBox *this);
-"554889e5534883ec384889fb0f57c00f":
-cleanup __amd64 void StoreBox::Purchase(StoreBox *this);
-"554889e541574156534883ec284989ff418a9f90":
-cleanup __amd64 void StoreBox::OnRender(StoreBox *this);
+// Continue from Store::destructor (hyper efficiency™)
+".554889e54157415641554154534883ec??48894da8":
+cleanup __amd64 void StoreBox::constructor(StoreBox* this, const std::string& _buttonImage, ShipManager* _shopper, Equipment* _equip);
+".554889e54156534883ec104889fb4889f248c1ea20488b43":
+cleanup __amd64 void StoreBox::SetPosition(StoreBox* this, Point position);
+".554889e541574156534883ec184989f64889fb41":
+cleanup __amd64 void StoreBox::InitBlueprint(StoreBox* this, Blueprint* bp);
+"!.554889e55350488d5f2883bf":
+cleanup __amd64 void StoreBox::OnLoop(StoreBox* this);
+".554889e541574156534883ec284989ff418a9f90":
+cleanup __amd64 void StoreBox::OnRender(StoreBox* this);
+".554889e5807f7000":
+cleanup __amd64 void StoreBox::MouseClick(StoreBox* this, int mX, int mY);
+"!.488b8778":
+cleanup __amd64 void StoreBox::Activate(StoreBox* this);
+".554889e5534883ec384889fb0f57c00f":
+cleanup __amd64 void StoreBox::Purchase(StoreBox* this);
 
 
 struct StoreBox
@@ -22,9 +23,9 @@ struct StoreBox
 	{
 	}
 	
-	StoreBox(const std::string& buttonImage, ShipManager *shopper, Equipment *ship)
+	StoreBox(const std::string& buttonImage, ShipManager* ship, Equipment* equip)
 	{
-		this->constructor(buttonImage, shopper, ship);
+		this->constructor(buttonImage, ship, equip);
 	}
 	
 	void SetPosition(int x, int y)

@@ -1,14 +1,14 @@
 "5557565383ec2c8d44241a8b5c24408d7c241c8b74244c89442408":
 noHook void WeaponStoreBox::__DO_NOT_HOOK();
 ".5557565383ec2c8d44241a8b5c24408d7c241c8b74244c89442408":
-cleanup __cdecl void WeaponStoreBox::constructor(WeaponStoreBox *this, ShipManager *ship, Equipment *equip, const WeaponBlueprint *weaponBp);
+cleanup __cdecl void WeaponStoreBox::constructor(WeaponStoreBox* this, ShipManager* _ship, Equipment* _equipScreen, const WeaponBlueprint* _weaponBp);
 
 
 struct WeaponStoreBox
 {{
-	WeaponStoreBox(ShipManager *_ship, Equipment *_equip, const WeaponBlueprint *_bp)
+	WeaponStoreBox(ShipManager* ship, Equipment* equipScreen, const WeaponBlueprint* weaponBp)
 	{
-		this->constructor(_ship, _equip, _bp);
+		this->constructor(ship, equipScreen, weaponBp);
 	}
 	
 	WeaponStoreBox()

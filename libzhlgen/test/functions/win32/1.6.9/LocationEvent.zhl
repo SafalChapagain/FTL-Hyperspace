@@ -1,7 +1,7 @@
 "578d7c240883e4f0ff77fc5589e557565383ec4c83b910060000018b0775??":
-__thiscall void LocationEvent::ClearEvent(LocationEvent *this, bool force);
+__thiscall void LocationEvent::ClearEvent(LocationEvent* this, bool force);
 "558d410889e55389018d4128c7410400000000c6410800c6411801c6411c0089cb8941208d4140c7412400000000c6412800c7413c00000000":
-__thiscall void LocationEvent::constructor(LocationEvent *this);
+__thiscall void LocationEvent::constructor(LocationEvent* this);
 
 
 struct LocationEvent

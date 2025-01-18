@@ -1,7 +1,10 @@
-"554889e5415741564154534883ec204989ff4183":
-cleanup __amd64 void LocationEvent::ClearEvent(LocationEvent *this, bool force);
-"554889e553504889fb48c743100000000048c743080000000048c70300000000c6431801":
-cleanup __amd64 void LocationEvent::constructor(LocationEvent *this);
+// Continue from VTable_Targetable_LaserBlast (hyper efficiency™)
+".554889e553504889fb48c74310":
+noHook __amd64 void LocationEvent::DO_NOT_HOOK_FALSE_CONSTRUCTOR();
+".554889e553504889fb48c74310":
+cleanup __amd64 void LocationEvent::constructor(LocationEvent* this);
+".554889e5415741564154534883ec204989ff4183":
+cleanup __amd64 void LocationEvent::ClearEvent(LocationEvent* this, bool force);
 
 
 struct LocationEvent

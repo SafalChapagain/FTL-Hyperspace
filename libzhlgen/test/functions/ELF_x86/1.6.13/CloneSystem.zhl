@@ -1,2 +1,2 @@
 "5589e557565381ec4c0100008b4508890424":
-cleanup __cdecl void CloneSystem::OnLoop(CloneSystem *this);
+cleanup __cdecl void CloneSystem::OnLoop(CloneSystem* this);

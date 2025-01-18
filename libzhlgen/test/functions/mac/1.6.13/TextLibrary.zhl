@@ -1,5 +1,6 @@
-"554889e54157415641554154534883ec184989d74889f349":
-cleanup __amd64 std::string TextLibrary::GetText(TextLibrary *this, const std::string& name, const std::string& lang);
+// Continue from TextInput::Start (hyper efficiency™)
+".554889e54157415641554154534883ec184989d74889f349":
+cleanup __amd64 std::string TextLibrary::GetText(TextLibrary* this, const std::string& name, const std::string& lang);
 
 
 struct TextLibrary
@@ -7,5 +8,10 @@ struct TextLibrary
 	std::string GetText(const std::string& name)
 	{
 		return TextLibrary::GetText(name, currentLanguage);
+	}
+
+	void SetLanguage(const std::string& language)
+	{
+		currentLanguage = language;
 	}
 }};

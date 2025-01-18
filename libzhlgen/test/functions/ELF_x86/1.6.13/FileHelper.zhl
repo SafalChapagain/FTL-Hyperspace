@@ -49,7 +49,7 @@ static cleanup __cdecl float FileHelper::readFloat(int file);
 ".5557565383ec3c8b5c24508d7c242081fbfffeff7f":
 static cleanup __cdecl int FileHelper::readInteger(int file);
 "83ec1c8b442424c74424080000000089442404a3????????":
-static cleanup __cdecl bool FileHelper::seekPosition(int file, int pos);
+static cleanup __cdecl bool FileHelper::seekPosition(int file, int position);
 "5557565383ec2c8b6c24488b5c24448b742440":
 static cleanup __cdecl char* FileHelper::readBuffer(int file, int len, bool nullTerminate);
 "5557565383ec1c8b5c24308b7c24348b74243881fb????????":
@@ -60,7 +60,7 @@ struct FileHelper
 {{
 	static int fileLength(int fd)
 	{
-        FILE* fp = fdopen(dup(fd), "r"); // Duplicate file descriptor & then open the stream so that we can fclose correctly later on
+        FILE* fp = fdopen(dup(fd), "r"); // Duplicate file descriptor&  then open the stream so that we can fclose correctly later on
         rewind(fp); // TODO: Not sure if we have to rewind before but could it hurt?
         fseek(fp, 0, SEEK_END);
         int lengthOfFile = ftell(fp);

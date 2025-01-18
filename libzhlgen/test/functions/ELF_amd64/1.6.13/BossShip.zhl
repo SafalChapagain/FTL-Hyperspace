@@ -1,22 +1,22 @@
 "c7871402000000000000c7874c02000001000000":
-cleanup __amd64 void BossShip::Restart(BossShip *this);
+cleanup __amd64 void BossShip::Restart(BossShip* this);
 ".f30f108724020000":
-cleanup __amd64 bool BossShip::IncomingFire(BossShip *this);
+cleanup __amd64 bool BossShip::IncomingFire(BossShip* this);
 "!.53b9010000004889fb31d24883c330":
-cleanup __amd64 void BossShip::constructor(BossShip *this, SpaceManager *space);
+cleanup __amd64 void BossShip::constructor(BossShip* this, SpaceManager* _space);
 ".534889fb488b7f104885ff740e":
-cleanup __amd64 void BossShip::ClearLocation(BossShip *this);
+cleanup __amd64 void BossShip::ClearLocation(BossShip* this);
 ".31c083bf1402000003":
-cleanup __amd64 bool BossShip::Defeated(BossShip *this);
+cleanup __amd64 bool BossShip::Defeated(BossShip* this);
 ".415455534889fb4883ec30":
-cleanup __amd64 LocationEvent* BossShip::GetSubEvent(BossShip *this);
+cleanup __amd64 LocationEvent* BossShip::GetSubEvent(BossShip* this);
 ".415741564155415455534889fb488d7f304881ecd8010000":
-cleanup __amd64 void BossShip::StartStage(BossShip *this);
+cleanup __amd64 void BossShip::StartStage(BossShip* this);
 ".41544189f4554889fd538bb714020000":
-cleanup __amd64 void BossShip::SaveBoss(BossShip *this, int file);
+cleanup __amd64 void BossShip::SaveBoss(BossShip* this, int file);
 ".4883ec48488db74c020000":
-cleanup __amd64 LocationEvent* BossShip::GetEvent(BossShip *this);
+cleanup __amd64 LocationEvent* BossShip::GetEvent(BossShip* this);
 ".4156415541544189f455534889fb89f74883ec10":
-cleanup __amd64 void BossShip::LoadBoss(BossShip *this, int file);
+cleanup __amd64 void BossShip::LoadBoss(BossShip* this, int file);
 ".4155415455534889fb4883ec28c687d401000001":
-cleanup __amd64 void BossShip::OnLoop(BossShip *this);
+cleanup __amd64 void BossShip::OnLoop(BossShip* this);

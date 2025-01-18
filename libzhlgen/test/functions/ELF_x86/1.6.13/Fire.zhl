@@ -1,6 +1,6 @@
 "565383ec148b5c242080bb5c01000000":
-cleanup __cdecl void Fire::OnLoop(Fire *this);
+cleanup __cdecl void Fire::OnLoop(Fire* this);
 ".565383ec148b5c24208b7424248b03891c24ff502884c0":
-cleanup __cdecl void Fire::UpdateDeathTimer(Fire *this, int connectedFires);
+cleanup __cdecl void Fire::UpdateDeathTimer(Fire* this, int connectedFires);
 ".565383ec148b5c24208b7424248b03891c24ff502884c0":
-cleanup __cdecl void Fire::UpdateStartTimer(Fire *this, int doorLevel);
+cleanup __cdecl void Fire::UpdateStartTimer(Fire* this, int doorLevel);

@@ -1,7 +1,7 @@
 "534889fb4883ec20488b7f084885ff":
-cleanup __amd64 void CachedPrimitive::OnRender(CachedPrimitive *this, const GL_Color& color);
+cleanup __amd64 void CachedPrimitive::OnRender(CachedPrimitive* this, const GL_Color& color);
 "48c707????????488b7f08e9":
-cleanup __amd64 void CachedPrimitive::destructor(CachedPrimitive *this);
+cleanup __amd64 void CachedPrimitive::destructor(CachedPrimitive* this);
 
 
 struct CachedPrimitive

@@ -1,13 +1,13 @@
 "5e5f5d8d67f85fc20400908d742600e8????????89c1e9????????8d7426000f1040080f114308eb??":
 noHook void MantisAnimation::__DO_NOT_HOOK();
 ".578d7c240883e4f0ff77fc5589e557565389cb83ec3c803d??????????0f84????????e8????????89c189c8ba????????":
-__thiscall std::string MantisAnimation::GetShootingSound(MantisAnimation *this);
+__thiscall std::string MantisAnimation::GetShootingSound(MantisAnimation* this);
 "578d41088d7c240883e4f0ff77fc5589e5575389cb83ec108901":
 noHook void MantisAnimation::__DO_NOT_HOOK2();
 ".578d41088d7c240883e4f0ff77fc5589e5575389cb83ec108901":
-__thiscall std::string MantisAnimation::GetDeathSound(MantisAnimation *this);
+__thiscall std::string MantisAnimation::GetDeathSound(MantisAnimation* this);
 "578d7c240883e4f0ff77fc5589e5575389cb83ec208b41308b5108694938cc0000008d04408d04820308c70424????????83c120e8????????8b5308d95df48b45f4":
-__thiscall bool MantisAnimation::FireShot(MantisAnimation *this);
+__thiscall bool MantisAnimation::FireShot(MantisAnimation* this);
 
 
 struct MantisAnimation

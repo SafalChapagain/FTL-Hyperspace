@@ -1,28 +1,33 @@
 "4155415455534889fb4c8d63284881ec88000000":
-cleanup __amd64 void CrewManifest::constructor(CrewManifest *this);
+cleanup __amd64 void CrewManifest::constructor(CrewManifest* this);
 ".41554189f541544989fc5531ed5331db4883ec08":
-cleanup __amd64 void CrewManifest::OnKeyDown(CrewManifest *this, SDLKey key);
+cleanup __amd64 void CrewManifest::OnKeyDown(CrewManifest* this, SDLKey key);
 ".41554189f541544989fc5531ed5331db4883ec08":
-cleanup __amd64 void CrewManifest::OnKeyUp(CrewManifest *this, SDLKey key);
+cleanup __amd64 void CrewManifest::OnKeyUp(CrewManifest* this, SDLKey key);
 ".41554189f541544989fc5531ed5331db4883ec08":
-cleanup __amd64 void CrewManifest::OnTextInput(CrewManifest *this, SDLKey key);
+cleanup __amd64 void CrewManifest::OnTextInput(CrewManifest* this, SDLKey key);
 ".41554189f541544989fc5531ed5331db4883ec08":
-cleanup __amd64 void CrewManifest::OnTextEvent(CrewManifest *this, CEvent::TextEvent event);
+cleanup __amd64 void CrewManifest::OnTextEvent(CrewManifest* this, CEvent::TextEvent event);
 ".415431d231c9554889fd":
-cleanup __amd64 void CrewManifest::Update(CrewManifest *this);
+cleanup __amd64 void CrewManifest::Update(CrewManifest* this);
 ".4157415641554989f5415455534889fb4883ec38488b8fc0000000":
-cleanup __amd64 void CrewManifest::OnInit(CrewManifest *this, ShipManager *ship);
+cleanup __amd64 void CrewManifest::OnInit(CrewManifest* this, ShipManager* ship);
 "!.41544989fc5531ed53488b97b8000000":
-cleanup __amd64 void CrewManifest::Close(CrewManifest *this);
+cleanup __amd64 void CrewManifest::Close(CrewManifest* this);
 "!.55534889fb4883ec088b87a8010000":
-cleanup __amd64 void CrewManifest::MouseClick(CrewManifest *this, int mX, int mY);
+cleanup __amd64 void CrewManifest::MouseClick(CrewManifest* this, int mX, int mY);
 ".4155415455534889fb4883ec68":
-cleanup __amd64 void CrewManifest::OnRender(CrewManifest *this);
+cleanup __amd64 void CrewManifest::OnRender(CrewManifest* this);
 ".4157488d87d0000000415641554189d541544189f4554889fd4889c7534883ec18":
-cleanup __amd64 void CrewManifest::MouseMove(CrewManifest *this, int mX, int mY);
+cleanup __amd64 void CrewManifest::MouseMove(CrewManifest* this, int mX, int mY);
 
 
 struct CrewManifest
 {{
+	CrewManifest()
+	{
+		this->constructor();
+	}
+	
 	void _HS_MouseUp(int mX, int mY);
 }};

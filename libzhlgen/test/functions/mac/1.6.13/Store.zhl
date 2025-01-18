@@ -1,47 +1,51 @@
-"554889e54156534889fb83bbac070000":
-cleanup __amd64 bool Store::KeyDown(Store *this, SDLKey key);
-"554889e54156534989fe498b8668050000493986":
-cleanup __amd64 void Store::OnLoop(Store *this);
-"554889e553504889fbc64308":
-cleanup __amd64 void Store::Close(Store *this);
 "554889e553504889fbe8????????488d05????????48890348c74338????????48c74330????????48c74328????????c64340":
-cleanup __amd64 void Store::constructor(Store *this);
-"554889e5415741564155415453504189f64989fc418bb424":
-cleanup __amd64 void Store::SaveStore(Store *this, int file);
-"554889e5415741564154534989d64989f74989fc4d89bc24":
-cleanup __amd64 void Store::RelinkShip(Store *this, ShipManager *ship, Equipment *equip);
-"554889e539b7b007":
-cleanup __amd64 bool Store::HasType(Store *this, int type);
-"554889e54156534989fe498b8668050000498b8e":
-cleanup __amd64 void Store::Clear(Store *this);
-"554889e541574156534883ec584989fe4c63fe0f":
-cleanup __amd64 void Store::InitHeading(Store *this, int index, Point pos);
-"554889e541574156534883ec580f57c0":
+cleanup __amd64 void Store::constructor(Store* this);
+".554889e5415741564155415453504189f64989fc418bb424":
+cleanup __amd64 void Store::SaveStore(Store* this, int file);
+"!.554889e54157415641554154534881ec180100008955a089":
+cleanup __amd64 void Store::LoadStore(Store* this, int file, int worldLevel);
+".554889e54156534989fe498b8668050000498b8e":
+cleanup __amd64 void Store::Clear(Store* this);
+"!.554889e54157415641554154534881ecd80000004889fbc6":
+cleanup __amd64 void Store::SetPositions(Store* this);
+".554889e5415741564154534989d64989f74989fc4d89bc24":
+cleanup __amd64 void Store::RelinkShip(Store* this, ShipManager* ship, Equipment* equip);
+".554889e539b7b007":
+cleanup __amd64 bool Store::HasType(Store* this, int type);
+"!.554889e5415741564155415453504189cf488955":
+cleanup __amd64 void Store::OnInit(Store* this, ShipManager* shopper, Equipment* equip, int worldLevel);
+"!.554889e54157415641554154534881ece80000004989d489":
+cleanup __amd64 void Store::CreateStoreBoxes(Store* this, int type, Equipment* equip);
+"!.554889e553504889fbe8":
+cleanup __amd64 void Store::SetPosition(Store* this, Point position);
+".554889e541574156534883ec584989fe4c63fe0f":
+cleanup __amd64 void Store::InitHeading(Store* this, int index, Point position);
+"!.554889e553504889fbc64308":
+cleanup __amd64 void Store::Close(Store* this);
+".554889e54156534889fb83bbac070000":
+cleanup __amd64 bool Store::KeyDown(Store* this, SDLKey key);
+"!.554889e54157415641554154534883ec584189d74189f449":
+cleanup __amd64 void Store::MouseMove(Store* this, int x, int y);
+".554889e54157415641554154534883ec684189d6":
+cleanup __amd64 void Store::MouseClick(Store* this, int x, int y);
+".554889e54156534989fe498b8668050000493986":
+cleanup __amd64 void Store::OnLoop(Store* this);
+".554889e541574156534883ec580f57c0":
 static cleanup __amd64 void Store::DrawBuySellTabText();
-"554889e54157415641554154534881ecd80000004889fbc6":
-cleanup __amd64 void Store::SetPositions(Store *this);
-"554889e54157415641554154534881ec180100008955a089":
-cleanup __amd64 void Store::LoadStore(Store *this, int file, int worldLevel);
-"554889e54157415641554154534881ece80000004989d489":
-cleanup __amd64 void Store::CreateStoreBoxes(Store *this, int type, Equipment *equip);
-".554889e553504889fbe8????????4889df4883c4??5b5de9":
-cleanup __amd64 void Store::SetPosition(Store *this, Point pos);
-"554889e5415741564155415453504189cf488955":
-cleanup __amd64 void Store::OnInit(Store *this, ShipManager *shopper, Equipment *equip, int worldLevel);
-"554889e54157415641554154534883ec584189d74189f449":
-cleanup __amd64 void Store::MouseMove(Store *this, int x, int y);
-"554889e54157415641554154534883ec684189d6":
-cleanup __amd64 void Store::MouseClick(Store *this, int x, int y);
-"554889e54157415641554154534883ec684989ffe8c78e02":
-cleanup __amd64 void Store::OnRender(Store *this);
-"554889e54156534989fe488d05????????498906498b8668050000":
-cleanup __amd64 void Store::destructor(Store *this);
+".554889e54157415641554154534883ec684989ffe8c78e02":
+cleanup __amd64 void Store::OnRender(Store* this);
+"!.554889e54156534989fe488d05????????498906498b8668050000":
+cleanup __amd64 void Store::destructor(Store* this);
 
 
-struct Store
 {{
 	Store()
 	{
 		this->constructor();
+	}
+
+	~Store()
+	{
+		this->destructor();
 	}
 }};

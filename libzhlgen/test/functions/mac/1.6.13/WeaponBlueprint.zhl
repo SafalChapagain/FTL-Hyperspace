@@ -1,19 +1,16 @@
-"554889e5488db7b8":
-cleanup __amd64 void WeaponBlueprint::RenderIcon(WeaponBlueprint *this, float scale);
-"554889e54157415641554154534881ec68010000899544ff":
-cleanup __amd64 std::string WeaponBlueprint::GetDescription(WeaponBlueprint *this, bool tooltip);
-/* TODO: Unused, remove from windows and linux
-"NOT LISTED IN GHIDRA":
-cleanup __amd64 void WeaponBlueprint::constructor(WeaponBlueprint *this);
-*/
-"554889e54157415653504989fe488d05????????49890641f68638020000":
-cleanup __amd64 void WeaponBlueprint::destructor(WeaponBlueprint *this);
+// Continue from WeaponAnimation::Update (hyper efficiency™)
+"!.554889e54157415641554154534881ec????????8995????????4889f3":
+cleanup __amd64 std::string WeaponBlueprint::GetDescription(WeaponBlueprint* this, bool tooltip);
+"!.554889e5488db7b8":
+cleanup __amd64 void WeaponBlueprint::RenderIcon(WeaponBlueprint* this, float scale);
+"!.554889e54157415653504989fe488d05????????49890641f686":
+cleanup __amd64 void WeaponBlueprint::destructor(WeaponBlueprint* this);
 
 
 struct WeaponBlueprint
 {{
-	WeaponBlueprint()
+	~WeaponBlueprint()
 	{
-		this->constructor();
+		this->destructor();
 	}
 }};

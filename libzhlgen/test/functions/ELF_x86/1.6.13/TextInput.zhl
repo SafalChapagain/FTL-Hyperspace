@@ -1,23 +1,23 @@
 "57565383ec108b5c24208b44242c8b7424248b7c2428":
-cleanup __cdecl void TextInput::constructor(TextInput *this, int maxChars, TextInput::AllowedCharType allowedCharType, const std::string& prompt);
+cleanup __cdecl void TextInput::constructor(TextInput* this, int _maxChars, TextInput::AllowedCharType _allowedCharType, const std::string& _prompt);
 ".5589e557565383ec7c8b5d088b45108d75d0":
-cleanup __cdecl void TextInput::OnRender(TextInput *this, int font, Point pos);
+cleanup __cdecl void TextInput::OnRender(TextInput* this, int font, Point position);
 ".!5383ec188b4424208b501c395020":
-cleanup __cdecl void TextInput::OnLoop(TextInput *this);
+cleanup __cdecl void TextInput::OnLoop(TextInput* this);
 ".57565383ec108b5c24208b442424807b2400":
-cleanup __cdecl void TextInput::OnTextEvent(TextInput *this, CEvent::TextEvent event);
+cleanup __cdecl void TextInput::OnTextEvent(TextInput* this, CEvent::TextEvent event);
 ".8b4424040fb64024":
-cleanup __cdecl bool TextInput::GetActive(TextInput *this);
+cleanup __cdecl bool TextInput::GetActive(TextInput* this);
 ".5589e55383ec148b5d088b450c":
-cleanup __cdecl std::string TextInput::GetText(TextInput *this);
+cleanup __cdecl std::string TextInput::GetText(TextInput* this);
 ".5589e5565383ec208b5d088b43082b4304":
-cleanup __cdecl void TextInput::Start(TextInput *this);
+cleanup __cdecl void TextInput::Start(TextInput* this);
 ".!8b442404c6402400":
-cleanup __cdecl void TextInput::Stop(TextInput *this);
+cleanup __cdecl void TextInput::Stop(TextInput* this);
 ".57565383ec308b7424408d5c2410":
-cleanup __cdecl int TextInput::SetText(TextInput *this, const std::string& text);
+cleanup __cdecl int TextInput::SetText(TextInput* this, const std::string& text);
 ".5589e557565383ec5c8b5d08807b2400":
-cleanup __cdecl void TextInput::OnTextInput(TextInput *this, int asciiChar);
+cleanup __cdecl void TextInput::OnTextInput(TextInput* this, int asciiChar);
 
 
 struct TextInput depends (CEvent)
@@ -31,6 +31,7 @@ struct TextInput depends (CEvent)
 	
 	TextInput()
 	{
+		
 	}
 
 	TextInput(int maxChars, TextInput::AllowedCharType allowedCharType, const std::string& prompt)

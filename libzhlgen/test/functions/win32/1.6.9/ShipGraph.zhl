@@ -1,55 +1,55 @@
 "8d4c240483e4f0ff71fc5589e55756535181ec????????a1????????8b15????????8b1929c2":
 static cleanup __cdecl ShipGraph* ShipGraph::GetShipInfo(int shipId);
 "578d7c240883e4f0ff77fc5589f889e557565389cf83ec4c8b188b70048b40088945c08b01":
-__int64 ShipGraph::GetSlotRenderPosition_DO_NOT_USE_DIRECTLY(ShipGraph *this<ecx>, int slotId, int roomId, bool intruder);
+__int64 ShipGraph::GetSlotRenderPosition_DO_NOT_USE_DIRECTLY(ShipGraph* this<ecx>, int slotId, int roomId, bool intruder);
 ".538b411c8b59188b54240829d8c1f80239c27d??85d278??8b04935bc20400":
-__thiscall int ShipGraph::DoorCount(ShipGraph *this, int roomId);
+__thiscall int ShipGraph::DoorCount(ShipGraph* this, int roomId);
 ".578d7c240883e4f0ff77fc5589e557565383ec3c8b37c701????????c7410400000000":
-__thiscall std::vector<Door*> ShipGraph::GetDoors(ShipGraph *this, int roomId);
+__thiscall std::vector<Door*> ShipGraph::GetDoors(ShipGraph* this, int roomId);
 ".578d7c240883e4f0ff77fc5589e557565383ec2c8b1f8b7704bf????????":
-__thiscall bool ShipGraph::IsRoomConnected(ShipGraph *this, int room1, int room2);
+__thiscall bool ShipGraph::IsRoomConnected(ShipGraph* this, int room1, int room2);
 ".578d7c240883e4f0ff77fc5589f889e557565389cb8d4de083ec5c8b378b7f048b50088b400c":
-__thiscall Door* ShipGraph::ConnectingDoor(ShipGraph *this, int x1, int y1, int x2, int y2);
+__thiscall Door* ShipGraph::ConnectingDoor(ShipGraph* this, int x1, int y1, int x2, int y2);
 ".578d7c240883e4f0ff77fc5589e557565389ce8d4de083ec6c8b078b5f0889c28945a88b47048b7f0c":
-__thiscall int ShipGraph::ConnectedGridSquares(ShipGraph *this, int x1, int y1, int x2, int y2);
+__thiscall int ShipGraph::ConnectedGridSquares(ShipGraph* this, int x1, int y1, int x2, int y2);
 ".578d7c240883e4f0ff77fc5589e5575383ec108b5f088b078b5704":
-__thiscall int ShipGraph::ConnectedGridSquaresPoint(ShipGraph *this, Point p1, Point p2);
+__thiscall int ShipGraph::ConnectedGridSquaresPoint(ShipGraph* this, Point p1, Point p2);
 ".578d7c240883e4f0ff77fc5589e5575383ec108b5f088b078b57048b7f0c895c2408890424":
-__thiscall Door* ShipGraph::ConnectingDoor(ShipGraph *this, Point p1, Point p2);
+__thiscall Door* ShipGraph::ConnectingDoor(ShipGraph* this, Point p1, Point p2);
 ".8b5424048b018b04908b50348b421c2b4214c1f802c1e005":
-__thiscall int ShipGraph::GetNumSlots(ShipGraph *this, int room);
+__thiscall int ShipGraph::GetNumSlots(ShipGraph* this, int room);
 ".5589e557565383e4f083ec208b45088b388b450c8b0f8b0089442418f30f2c14888b45088b400489442410":
-__thiscall int ShipGraph::PopClosestDoor(ShipGraph *this, std::vector<int>& doors, std::vector<float>& distances);
+__thiscall int ShipGraph::PopClosestDoor(ShipGraph* this, std::vector<int>& doors, std::vector<float>& distances);
 ".578d7c240883e4f0ff77fc5589f889e557565381ec????????89bd70ffffff8b3f898d74ffffff8b5804":
-__thiscall Path ShipGraph::Dijkstra(ShipGraph *this, Point start, Point goal, int shipId);
+__thiscall Path ShipGraph::Dijkstra(ShipGraph* this, Point start, Point goal, int shipId);
 ".578d7c240883e4f0ff77fc5589f889e557565383ec6c8b500c":
-__thiscall Path ShipGraph::FindPath(ShipGraph *this, Point p1, Point p2, int shipId);
+__thiscall Path ShipGraph::FindPath(ShipGraph* this, Point p1, Point p2, int shipId);
 ".83ec04f30f10442408f30f584134f30f110424d9042483c404":
-__thiscall float ShipGraph::ConvertToWorldAngle(ShipGraph *this, float ang);
+__thiscall float ShipGraph::ConvertToWorldAngle(ShipGraph* this, float ang);
 ".83ec04f30f10442408f30f5c4134f30f110424d90424":
-__thiscall float ShipGraph::ConvertToLocalAngle(ShipGraph *this, float ang);
+__thiscall float ShipGraph::ConvertToLocalAngle(ShipGraph* this, float ang);
 ".57660feff6660fefff8d7c240883e4f0ff77fc5589e5575389cb83ec20f30f2a7124f30f2a7928660f7ef2660f7ef8":
-__int64 ShipGraph::ConvertToWorldPosition_DO_NOT_USE_DIRECTLY(ShipGraph *this<ecx>, Pointf local);
+__int64 ShipGraph::ConvertToWorldPosition_DO_NOT_USE_DIRECTLY(ShipGraph* this<ecx>, Pointf local);
 ".578d7c240883e4f0ff77fc5589e55783ec14807f0800f30f10692cf30f105930f30f10613474??":
-__int64 ShipGraph::ConvertToLocalPosition_DO_NOT_USE_DIRECTLY(ShipGraph *this<ecx>, Pointf world, bool past);
+__int64 ShipGraph::ConvertToLocalPosition_DO_NOT_USE_DIRECTLY(ShipGraph* this<ecx>, Pointf world, bool past);
 ".578d7c240883e4f0ff77fc5589e557565383ec4c8b79048b01":
-__thiscall void ShipGraph::ComputeCenter(ShipGraph *this);
+__thiscall void ShipGraph::ComputeCenter(ShipGraph* this);
 ".538b514431c08b5c240839da7f??03514c39d37f??":
-__thiscall bool ShipGraph::ContainsPoint(ShipGraph *this, int x, int y);
+__thiscall bool ShipGraph::ContainsPoint(ShipGraph* this, int x, int y);
 ".578d7c240883e4f0ff77fc5589e557565389fb89ce83ec2c8b43040fb6530831db":
-__thiscall int ShipGraph::GetSelectedRoom(ShipGraph *this, int x, int y, bool unk);
+__thiscall int ShipGraph::GetSelectedRoom(ShipGraph* this, int x, int y, bool bIncludeWalls);
 ".8b41042b01c1f802":
-__thiscall int ShipGraph::RoomCount(ShipGraph *this);
+__thiscall int ShipGraph::RoomCount(ShipGraph* this);
 ".5789c88d7c240883e4f0ff77fc5589e557565383ec2c8b178b7f04":
-__thiscall Globals::Rect ShipGraph::GetRoomShape(ShipGraph *this, int room);
+__thiscall Globals::Rect ShipGraph::GetRoomShape(ShipGraph* this, int room);
 ".53660fefc083ec048b54240c85d278??8b198b410429d8c1f80239c27d??8b0493":
-__thiscall float ShipGraph::GetRoomOxygen(ShipGraph *this, int room);
+__thiscall float ShipGraph::GetRoomOxygen(ShipGraph* this, int room);
 ".5653b8????????8b5c240c85db78??8b318b510429f2c1fa02":
-__thiscall bool ShipGraph::GetRoomBlackedOut(ShipGraph *this, int room);
+__thiscall bool ShipGraph::GetRoomBlackedOut(ShipGraph* this, int room);
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b078b7704898d6cffffff8b10894588":
-__thiscall Slot ShipGraph::GetClosestSlot(ShipGraph *this, Point pos, int shipId, bool intruder);
+__thiscall Slot ShipGraph::GetClosestSlot(ShipGraph* this, Point position, int shipId, bool intruder);
 "578d7c240883e4f0ff77fc5589e557565383ec3c8b57048b018d4dd88b1f8b0490890424":
-__thiscall Point ShipGraph::GetSlotWorldPosition(ShipGraph *this, int slotId, int roomId);
+__thiscall Point ShipGraph::GetSlotWorldPosition(ShipGraph* this, int slotId, int roomId);
 
 
 struct ShipGraph depends (Point, Pointf, Room) 
@@ -57,25 +57,25 @@ struct ShipGraph depends (Point, Pointf, Room)
 	Pointf ConvertToWorldPosition(Pointf local)
 	{
         __int64 ret = ConvertToWorldPosition_DO_NOT_USE_DIRECTLY(local);
-        return *((Pointf*) &ret);
+        return* ((Pointf*)& ret);
 	}
 	
 	Pointf ConvertToLocalPosition(Pointf world, bool past)
 	{
         __int64 ret = ConvertToLocalPosition_DO_NOT_USE_DIRECTLY(world, past);
-        return *((Pointf*) &ret);
+        return* ((Pointf*)& ret);
 	}
 	
     Point GetSlotRenderPosition(int slotId, int roomId, bool intruder)
     {
         __int64 ret = GetSlotRenderPosition_DO_NOT_USE_DIRECTLY(slotId, roomId, intruder);
-        return *((Point*) &ret);
+        return* ((Point*)& ret);
     }
 	
 	// TODO: This looks like it was re-implemented because they were unsure at the time how to hook it, we can totally hook it now like we do for GetSlotRenderPosition
 	static Point TranslateFromGrid(int xx, int yy)
 	{
-		return Point(xx * 35, yy * 35);
+		return Point(xx*  35, yy*  35);
 	}
 	
 	// TODO: This looks like it was re-implemented because they were unsure at the time how to hook it, we can totally hook it now like we do for GetSlotRenderPosition
@@ -85,13 +85,13 @@ struct ShipGraph depends (Point, Pointf, Room)
 	}
 	
 	// TODO: This looks like it was re-implemented because they were unsure at the time how to hook it, we can totally hook it now like we do for GetSlotRenderPosition
-	Point GetIntoRoom(int roomId, Point pos)
+	Point GetIntoRoom(int roomId, Point position)
 	{
 		Point ret;
 		if (roomId >= 0 && roomId < this->rooms.size())
 		{
 			auto room = this->rooms[roomId];
-			ret = room->GetIntoRoom(pos);
+			ret = room->GetIntoRoom(position);
 		}
 		else
 		{

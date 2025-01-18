@@ -1,2 +1,2 @@
 "554889e54156534989f64889fbc64320":
-cleanup __amd64 Damage IonDrone::GetRoomDamage(IonDrone *this);
+cleanup __amd64 Damage IonDrone::GetRoomDamage(IonDrone* this);

@@ -1,37 +1,33 @@
-"554889e54889f048c1e82089":
-virtual cleanup __amd64 void EquipmentBox::SetPosition(EquipmentBox *this, Point pos);
-"554889e58b477039":
-virtual cleanup __amd64 void EquipmentBox::MouseMove(EquipmentBox *this, int x, int y);
+"554889e5534883ec184889fb4889f048c1e820488d0d":
+cleanup __amd64 void EquipmentBox::constructor(EquipmentBox* this, Point _position, int _slot);
+"!.554889e553504889fb488d05????????488903488b7b38":
+virtual cleanup __amd64 void EquipmentBox::destructor(EquipmentBox* this);
+".554889e54889f048c1e82089":
+virtual cleanup __amd64 void EquipmentBox::SetPosition(EquipmentBox* this, Point position);
+"!.554889e541574156534883ec284189f64889fbe8":
+virtual cleanup __amd64 void EquipmentBox::OnRender(EquipmentBox* this, bool isEmpty);
+".554889e54156534883ec504989fe0f57":
+virtual cleanup __amd64 void EquipmentBox::RenderLabels(EquipmentBox* this, bool dragging);
+".554889e58b477039":
+virtual cleanup __amd64 void EquipmentBox::MouseMove(EquipmentBox* this, int x, int y);
+".554889e5415741564154534883ec504989ff0f57":
+virtual cleanup __amd64 void EquipmentBox::UpdateBoxImage(EquipmentBox* this, bool dragging);
+".554889e5488b87800000004885c0750c":
+cleanup __amd64 int EquipmentBox::GetItemValue(EquipmentBox* this);
+"!.554889e54157415653504189d64989f74889fb31":
+cleanup __amd64 void EquipmentBox::SetBlueprint(EquipmentBox* this, InfoBox* infoBox, bool detailedBox);
+".554889e5488b878800000048":
+cleanup __amd64 Blueprint* EquipmentBox::GetBlueprint(EquipmentBox* this);
 ".554889e548c78798000000":
-virtual cleanup __amd64 void EquipmentBox::Restart(EquipmentBox *this);
-"554889e5488b4528":
-virtual cleanup __amd64 void EquipmentBox::AddItem(EquipmentBox *this, EquipmentBoxItem item);
-"554889e5488b87800000004885c0750a":
-virtual cleanup __amd64 bool EquipmentBox::CanHoldWeapon(EquipmentBox *this);
-"554889e54883bf8000000000488b8788":
-virtual cleanup __amd64 bool EquipmentBox::CanHoldDrone(EquipmentBox *this);
-"554889e5488b8f800000004885c9750a":
-virtual cleanup __amd64 int EquipmentBox::GetType(EquipmentBox *this);
-"554889e541574156534883ec284189f64889fbe8":
-virtual cleanup __amd64 void EquipmentBox::OnRender(EquipmentBox *this, bool isEmpty); /* In case of a memory leak we can try to adjust the nohooks
-".554889e553504889fb488d05????????488903488b7b38":
-noHook __amd64 void EquipmentBox::FALSE_DESTRUCTOR_1();
-".554889e553504889fb488d05????????488903488b7b38":
-noHook __amd64 void EquipmentBox::FALSE_DESTRUCTOR_2(); */
-".554889e553504889fb488d05????????488903488b7b38":
-virtual cleanup __amd64 void EquipmentBox::destructor(EquipmentBox *this);
-"554889e5415741564154534883ec504989ff0f57":
-virtual cleanup __amd64 void EquipmentBox::UpdateBoxImage(EquipmentBox *this, bool unk);
-"554889e54156534883ec504989fe0f57":
-virtual cleanup __amd64 void EquipmentBox::RenderLabels(EquipmentBox *this, bool unk);
-"554889e5534883ec184889fb4889f048c1e820488d0d????":
-cleanup __amd64 void EquipmentBox::constructor(EquipmentBox *this, Point pos, int slot);
-"554889e5488b87800000004885c0750c":
-cleanup __amd64 int EquipmentBox::GetItemValue(EquipmentBox *this);
-"554889e54157415653504189d64989f74889fb31":
-cleanup __amd64 void EquipmentBox::SetBlueprint(EquipmentBox *this, InfoBox *infoBox, bool detailedBox);
-"554889e5488b878800000048":
-cleanup __amd64 Blueprint* EquipmentBox::GetBlueprint(EquipmentBox *this);
+virtual cleanup __amd64 void EquipmentBox::Restart(EquipmentBox* this);
+".554889e5488b4528":
+virtual cleanup __amd64 void EquipmentBox::AddItem(EquipmentBox* this, EquipmentBoxItem item);
+".554889e5488b87800000004885c0750a":
+virtual cleanup __amd64 bool EquipmentBox::CanHoldWeapon(EquipmentBox* this);
+".554889e54883bf8000000000488b8788":
+virtual cleanup __amd64 bool EquipmentBox::CanHoldDrone(EquipmentBox* this);
+".554889e5488b8f800000004885c9750a":
+virtual cleanup __amd64 int EquipmentBox::GetType(EquipmentBox* this);
 
 
 struct EquipmentBox depends (AugmentBlueprint)

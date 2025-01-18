@@ -1,9 +1,9 @@
 "5557565383ec5c8d7424408b5c2470c744240800000000":
-cleanup __cdecl void SystemControl::CreateSystemBoxes(SystemControl *this);
+cleanup __cdecl void SystemControl::CreateSystemBoxes(SystemControl* this);
 "5557565331db83ec1c8b6c24308b7424348b55088b450c29d0c1f80285c0751aeb468db6000000008b550883c3018b450c29d0c1f80239c373??8b049a8d3c9d000000008b404c8b10890424ff525039f075??8b45088b043883c41c":
-cleanup __cdecl SystemBox* SystemControl::GetSystemBox(SystemControl *this, int systemId);
+cleanup __cdecl SystemBox* SystemControl::GetSystemBox(SystemControl* this, int systemId);
 "5589e557565383ec4c8b7d088d45e08b0f890424894c2404":
-cleanup __cdecl void SystemControl::RenderPowerBar(SystemControl *this);
+cleanup __cdecl void SystemControl::RenderPowerBar(SystemControl* this);
 "5557565381ec9c0000008b8424b00000008b9c24b40000008b9424bc000000":
 static cleanup __cdecl SystemControl::PowerBars* SystemControl::GetPowerBars(int width, int height, int gap, bool useShieldGap);
 

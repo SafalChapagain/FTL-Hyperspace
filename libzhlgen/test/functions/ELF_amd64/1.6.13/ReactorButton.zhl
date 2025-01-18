@@ -1,8 +1,8 @@
 "55534889fb4883ec288b878c000000":
-cleanup __amd64 void ReactorButton::Accept(ReactorButton *this);
+cleanup __amd64 void ReactorButton::Accept(ReactorButton* this);
 "55534889fb4883ec28488bbf90000000":
-cleanup __amd64 void ReactorButton::OnClick(ReactorButton *this);
+cleanup __amd64 void ReactorButton::OnClick(ReactorButton* this);
 "534889fb4883ec208b878c000000":
-cleanup __amd64 void ReactorButton::OnRightClick(ReactorButton *this);
+cleanup __amd64 void ReactorButton::OnRightClick(ReactorButton* this);
 "415741564155415455534889fb4881ec3805000048897c2440":
-cleanup __amd64 void ReactorButton::OnRender(ReactorButton *this);
+cleanup __amd64 void ReactorButton::OnRender(ReactorButton* this);

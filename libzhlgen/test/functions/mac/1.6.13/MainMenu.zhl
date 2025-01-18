@@ -1,12 +1,22 @@
-"554889e54157415641554154534883ec??4889fb49be":
-cleanup __amd64 void MainMenu::constructor(MainMenu *this);
-"554889e54157415641554154534881ecd80000004989fc41":
-cleanup __amd64 void MainMenu::OnRender(MainMenu *this);
-"554889e54157415641554154534881ec38040000":
-cleanup __amd64 bool MainMenu::Open(MainMenu *this);
-"554889e5415741564154534883ec604189d64189f74889fb":
-cleanup __amd64 void MainMenu::MouseMove(MainMenu *this, int x, int y);
-"554889e54157415641554154534881ec????????4989fc4180bc2460400000??74??498dbc":
-cleanup __amd64 void MainMenu::OnLoop(MainMenu *this);
-"554889e541574156534883ec584889fb80bb????":
-cleanup __amd64 void MainMenu::MouseClick(MainMenu *this, int x, int y);
+// Continue from LockdownShard::Update (hyper efficiency™)
+"!.554889e54157415641554154534883ec??4889fb49be":
+cleanup __amd64 void MainMenu::constructor(MainMenu* this);
+"!.554889e54157415641554154534881ec????00004989??4180":
+cleanup __amd64 void MainMenu::OnRender(MainMenu* this);
+".554889e54157415641554154534881ec38040000":
+cleanup __amd64 bool MainMenu::Open(MainMenu* this);
+"!.554889e54157415641554154534881ec????00004989??4180":
+cleanup __amd64 void MainMenu::OnLoop(MainMenu* this);
+"!.554889e5415741564154534883ec604189d64189f74889fb":
+cleanup __amd64 void MainMenu::MouseMove(MainMenu* this, int x, int y);
+"!.554889e541574156534883ec584889fb80bb":
+cleanup __amd64 void MainMenu::MouseClick(MainMenu* this, int x, int y);
+
+
+struct MainMenu
+{{
+    MainMenu()
+    {
+        this->constructor();
+    }
+}};

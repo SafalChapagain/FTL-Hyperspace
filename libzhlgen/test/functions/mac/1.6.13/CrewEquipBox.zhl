@@ -1,27 +1,28 @@
-"554889e553504889fb488bbb900000004885ff74":
-cleanup __amd64 void CrewEquipBox::RemoveItem(CrewEquipBox *this);
-"554889e58a877003":
-cleanup __amd64 bool CrewEquipBox::GetConfirmDelete(CrewEquipBox *this);
-"554889e580bfea02":
-cleanup __amd64 void CrewEquipBox::CloseRename(CrewEquipBox *this);
-"554889e54156534883ec504889fb488b":
-cleanup __amd64 void CrewEquipBox::RenderLabels(CrewEquipBox *this, bool dragging, bool isNew);
-"554889e541574156534883ec384889fb4883bb80":
-cleanup __amd64 void CrewEquipBox::MouseClick(CrewEquipBox *this);
-".!554889e54156534189f64889fb4881c3":
-cleanup __amd64 void CrewEquipBox::OnTextInput(CrewEquipBox *this, SDLKey key);
-"!554889e54156534189f64889fb4881c3":
-cleanup __amd64 void CrewEquipBox::OnTextEvent(CrewEquipBox *this, CEvent::TextEvent event);
-"554889e54157415641554154534881ec880000004189ce4989d7":
-cleanup __amd64 void CrewEquipBox::constructor(CrewEquipBox *this, Point pos, ShipManager *ship, int slot);
-"554889e54157415641554154534883ec484189f64989fc4d":
-cleanup __amd64 void CrewEquipBox::OnRender(CrewEquipBox *this, bool unk);
+// Continue from CrewDrone::SetCurrentShip (hyper efficiency™)
+".554889e54157415641554154534881ec880000004189ce":
+cleanup __amd64 void CrewEquipBox::constructor(CrewEquipBox* this, Point _position, ShipManager* _shipManager, int _slot);
+".554889e553504889fb488bbb9000000048":
+cleanup __amd64 void CrewEquipBox::RemoveItem(CrewEquipBox* this);
+".554889e58a8770":
+cleanup __amd64 bool CrewEquipBox::GetConfirmDelete(CrewEquipBox* this);
+"!.554889e580bfea":
+cleanup __amd64 void CrewEquipBox::CloseRename(CrewEquipBox* this);
+".554889e54157415641554154534883ec484189f64989fc4d":
+cleanup __amd64 void CrewEquipBox::OnRender(CrewEquipBox* this, bool dragging);
+".554889e54156534883ec504889fb48":
+cleanup __amd64 void CrewEquipBox::RenderLabels(CrewEquipBox* this, bool dragging, bool isNew);
+"!.554889e541574156534883ec384889fb4883":
+cleanup __amd64 void CrewEquipBox::MouseClick(CrewEquipBox* this);
+"!.554889e54156534189f64889fb4881":
+cleanup __amd64 void CrewEquipBox::OnTextInput(CrewEquipBox* this, SDLKey key);
+"!.554889e54156534189f64889fb4881":
+cleanup __amd64 void CrewEquipBox::OnTextEvent(CrewEquipBox* this, CEvent::TextEvent event);
 
 
 struct CrewEquipBox depends (TextInput)
 {{
-	CrewEquipBox(Point pos_, ShipManager *ship_, int slot_)
+	CrewEquipBox(Point position, ShipManager* shipManager, int slot)
 	{
-		this->constructor(pos_, ship_, slot_);
+		this->constructor(position, shipManager, slot);
 	}
 }};

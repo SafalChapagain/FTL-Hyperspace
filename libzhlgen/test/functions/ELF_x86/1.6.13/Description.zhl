@@ -1,6 +1,6 @@
 "565383ec148b5c24208b742424891c2489742404e8????????0fb646048843048d4608894424048d4308890424e8????????0fb6460c88430c8d4610894424048d4310890424e8????????0fb646148843148b46188943188b461c89431c8b46208943208b46248943240fb646288843288d462c83c634894424048d432c890424":
-cleanup __cdecl Description& Description::copy_assign_2(Description *this, Description& other);
+cleanup __cdecl Description& Description::copy_assign_2(Description* this, Description& other);
 ".565383ec148b5c24208b742424891c2489742404e8????????0fb646048843048d4608894424048d4308890424e8????????0fb6460c88430c8d4610894424048d4310890424e8????????0fb646148843148b46188943188b461c89431c8b46208943208b46248943240fb646288843288d462c83c634894424048d432c890424":
-cleanup __cdecl Description& Description::copy_assign_1(Description *this, const Description& other);
+cleanup __cdecl Description& Description::copy_assign_1(Description* this, const Description& other);
 "565383ec248b5c24308b43348d50f4":
-cleanup __cdecl void Description::destructor(Description *this);
+cleanup __cdecl void Description::destructor(Description* this);

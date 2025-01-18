@@ -1,7 +1,7 @@
 "4157415641554154554889fd534883ec3883bfc404000001":
-cleanup __amd64 void LocationEvent::ClearEvent(LocationEvent *this, bool force);
+cleanup __amd64 void LocationEvent::ClearEvent(LocationEvent* this, bool force);
 "53be????????4889fb4883ec10488d54240fe8????????488d7b18":
-cleanup __amd64 void LocationEvent::constructor(LocationEvent *this);
+cleanup __amd64 void LocationEvent::constructor(LocationEvent* this);
 
 
 struct LocationEvent

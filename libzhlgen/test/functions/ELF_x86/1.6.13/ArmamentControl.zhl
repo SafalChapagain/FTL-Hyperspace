@@ -1,10 +1,10 @@
 "57565331db83ec108b7c24208b7424248b57108b471429d0c1f80285c0":
-cleanup __cdecl bool ArmamentControl::KeyDown(ArmamentControl *this, SDLKey key);
+cleanup __cdecl bool ArmamentControl::KeyDown(ArmamentControl* this, SDLKey key);
 ".5383ec188b5c2420837b70ff74??8b43688b536c894424048d436089542408890424":
-cleanup __cdecl bool ArmamentControl::Dragging(ArmamentControl *this);
+cleanup __cdecl bool ArmamentControl::Dragging(ArmamentControl* this);
 ".5589e557565383ec7c8b75088d45c88d7dd889442408":
-cleanup __cdecl void ArmamentControl::CreateHolderTab(ArmamentControl *this);
+cleanup __cdecl void ArmamentControl::CreateHolderTab(ArmamentControl* this);
 ".565383ec148b7424208b4424248b54242839461c74??89461c":
-cleanup __cdecl void ArmamentControl::SetPosition(ArmamentControl *this, Point loc);
+cleanup __cdecl void ArmamentControl::SetPosition(ArmamentControl* this, Point loc);
 ".5589e557565383ec6c8b5d088b450c8b4b148b531089430c89c829d0":
-cleanup __cdecl void ArmamentControl::LinkShip(ArmamentControl *this, ShipManager *ship);
+cleanup __cdecl void ArmamentControl::LinkShip(ArmamentControl* this, ShipManager* ship);

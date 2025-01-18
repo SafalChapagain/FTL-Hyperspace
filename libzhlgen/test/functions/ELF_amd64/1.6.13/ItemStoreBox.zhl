@@ -1,11 +1,11 @@
 "41544989f4554889d5534889fb4883ec20488b02":
-cleanup __amd64 void ItemStoreBox::constructor(ItemStoreBox *this, ShipManager *ship, const std::string& resourceName);
+cleanup __amd64 void ItemStoreBox::constructor(ItemStoreBox* this, ShipManager* _ship, const std::string& _resourceName);
 
 
 struct ItemStoreBox
 {{
-	ItemStoreBox(ShipManager *_ship, const std::string& _resourceName)
+	ItemStoreBox(ShipManager* ship, const std::string& resourceName)
 	{
-		this->constructor(_ship, _resourceName);
+		this->constructor(ship, resourceName);
 	}
 }};

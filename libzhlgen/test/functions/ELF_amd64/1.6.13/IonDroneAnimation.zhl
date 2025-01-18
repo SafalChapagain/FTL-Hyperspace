@@ -1,11 +1,11 @@
 "41574156415541544189d45589f5be":
-cleanup __amd64 void IonDroneAnimation::constructor(IonDroneAnimation *this, int iShipId, Pointf position, bool enemy);
+cleanup __amd64 void IonDroneAnimation::constructor(IonDroneAnimation* this, int _iShipId, Pointf _position, bool _enemy);
 
 
 struct IonDroneAnimation
 {{
-	IonDroneAnimation(int _shipId, Pointf _position, bool _hostile)
+	IonDroneAnimation(int iShipId, Pointf position, bool enemy)
 	{
-		this->constructor(_shipId, _position, _hostile);
+		this->constructor(iShipId, position, enemy);
 	}
 }};

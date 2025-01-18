@@ -1,18 +1,18 @@
 "5589e557565389cb83e4f083ec20c70424????????e8????????8d500cc70424????????89c789542414e8????????8d880002000089470cc703????????c7430800000000c7430c00000000":
-__thiscall void AsteroidGenerator::constructor(AsteroidGenerator *this);
+__thiscall void AsteroidGenerator::constructor(AsteroidGenerator* this);
 ".5589e55389cb8b550c8b451083e4f089918c00000089d1c1e91f01cad1fa":
-__thiscall float AsteroidGenerator::Initialize(AsteroidGenerator *this, int numberOfShips, int shieldCount, bool defense);
+__thiscall float AsteroidGenerator::Initialize(AsteroidGenerator* this, int numberOfShips, int shieldCount, bool defense);
 ".8b442404894170":
-__thiscall void AsteroidGenerator::SetNumShips(AsteroidGenerator *this, int ships);
+__thiscall void AsteroidGenerator::SetNumShips(AsteroidGenerator* this, int ships);
 ".8b41083b41180f84????????578d7c240883e4f0ff77fc5589e557":
-__thiscall Projectile* AsteroidGenerator::GetNextAsteroid(AsteroidGenerator *this);
+__thiscall Projectile* AsteroidGenerator::GetNextAsteroid(AsteroidGenerator* this);
 ".80b9880000000075??c38db600000000578d7c240883e4f0":
-__thiscall void AsteroidGenerator::OnLoop(AsteroidGenerator *this);
+__thiscall void AsteroidGenerator::OnLoop(AsteroidGenerator* this);
 ".5589e5538b417489cb83e4f085c075??803d??????????":
-__thiscall void AsteroidGenerator::GetNextState(AsteroidGenerator *this);
+__thiscall void AsteroidGenerator::GetNextState(AsteroidGenerator* this);
 ".5589e55389cbb9????????83e4f083ec10e8????????d95c240c":
-__thiscall void AsteroidGenerator::UpdateState(AsteroidGenerator *this);
+__thiscall void AsteroidGenerator::UpdateState(AsteroidGenerator* this);
 ".5589e5565389ce83e4f083ec108b5d08":
-__thiscall bool AsteroidGenerator::SaveAsteroids(AsteroidGenerator *this, void* file);
+__thiscall void AsteroidGenerator::SaveAsteroids(AsteroidGenerator* this, int fd);
 ".5589e5565389cb83e4f083ec108b7508":
-__thiscall void AsteroidGenerator::LoadAsteroids(AsteroidGenerator *this, void* file);
+__thiscall void AsteroidGenerator::LoadAsteroids(AsteroidGenerator* this, int fd);

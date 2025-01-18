@@ -1,12 +1,14 @@
 "554889e5534883ec184889fbbf20000000e8????1900488945f00f2805????19000f2945e048b9795f776561":
-cleanup __amd64 void WeaponStoreBox::constructor(WeaponStoreBox *this, ShipManager *ship, Equipment *equip, const WeaponBlueprint *weaponBp);
+noHook __amd64 void WeaponStoreBox::DO_NOT_HOOK_FALSE_CONSTRUCTOR();
+".554889e5534883ec184889fbbf20000000e8????1900488945f00f2805????19000f2945e048b9795f776561":
+cleanup __amd64 void WeaponStoreBox::constructor(WeaponStoreBox* this, ShipManager* _ship, Equipment* _equipScreen, const WeaponBlueprint* _weaponBp);
 
 
 struct WeaponStoreBox
 {{
-	WeaponStoreBox(ShipManager *_ship, Equipment *_equip, const WeaponBlueprint *_bp)
+	WeaponStoreBox(ShipManager* ship, Equipment* equipScreen, const WeaponBlueprint* weaponBp)
 	{
-		this->constructor(_ship, _equip, _bp);
+		this->constructor(ship, equipScreen, weaponBp);
 	}
 	
 	WeaponStoreBox()

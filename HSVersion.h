@@ -16,7 +16,7 @@ Change the version numbers here
 #include <boost/algorithm/string.hpp>
 #include <boost/format.hpp>
 
-#ifdef __linux__
+#ifdef __linux__ || defined(__APPLE__)
     #ifdef __i386__
         #define BUILD_TGT " x86"
     #else

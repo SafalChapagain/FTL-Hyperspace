@@ -1,5 +1,5 @@
 "415741564155415455534883ec6848897c2408":
-cleanup __amd64 Animation AnimationControl::GetAnimation(AnimationControl *this, const std::string& animName);
+cleanup __amd64 Animation AnimationControl::GetAnimation(AnimationControl* this, const std::string& animName);
 
 "!488d542460488d7c2470be(???????\?)e8????????488b442470":
 AnimationControl* Global_AnimationControl_Animations;

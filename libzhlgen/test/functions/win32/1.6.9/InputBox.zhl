@@ -1,4 +1,4 @@
 "578d7c240883e4f0ff77fc5589e557565383ec3c8b0783f8010f84????????89cb72??":
-__thiscall void InputBox::TextEvent(InputBox *this, CEvent::TextEvent event);
+__thiscall void InputBox::TextEvent(InputBox* this, CEvent::TextEvent event);
 ".578d7c240883e4f0ff77fc5589e5575653":
-__thiscall void InputBox::StartInput(InputBox *this);
+__thiscall void InputBox::StartInput(InputBox* this);

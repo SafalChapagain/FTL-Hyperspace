@@ -1,14 +1,14 @@
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b1f8b77048b47088b7f0cc744240c01000000898db0fdffff891c248974240483c324":
-__thiscall void CooldownSystemBox::constructor(CooldownSystemBox *this, Point pos, ShipSystem *sys, bool roundDown);
+__thiscall void CooldownSystemBox::constructor(CooldownSystemBox* this, Point _position, ShipSystem* _system, bool _roundDown);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec6c0fb607890424e8????????8b0383ec0489d9":
-__thiscall void CooldownSystemBox::OnRender(CooldownSystemBox *this, bool ignoreStatus);
+__thiscall void CooldownSystemBox::OnRender(CooldownSystemBox* this, bool ignoreStatus);
 
 
 struct CooldownSystemBox
 {{
-	CooldownSystemBox(Point pos, ShipSystem *sys, bool roundDown)
+	CooldownSystemBox(Point position, ShipSystem* system, bool roundDown)
 	{
-		this->constructor(pos, sys, roundDown);
+		this->constructor(position, system, roundDown);
 	}
 	
 	CooldownSystemBox() { }

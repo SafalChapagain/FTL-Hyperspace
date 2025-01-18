@@ -1,23 +1,30 @@
-"554889e553504889fb488d05????1e00488903f6":
-cleanup __amd64 void CachedImage::destructor(CachedImage *this);
-"554889e54156534889fb488d3d????1f":
-cleanup __amd64 void CachedImage::SetImagePath(CachedImage *this, const std::string& imagePath);
-"554889e54157415653504189d64189f74889fb44397b3075":
-cleanup __amd64 void CachedImage::SetPosition(CachedImage *this, int x, int y);
-"554889e54157415653504189ce4189d74889fb48c7430800000000":
-cleanup __amd64 void CachedImage::constructor1(CachedImage *this, const std::string& path, int x, int y);
-"!554889e553504889fb48c7430800000000488d05":
-cleanup __amd64 void CachedImage::constructor2(CachedImage *this, const std::string& path, CachedImage::Centered centered);
-"!554889e553504889fb48c7430800000000488d05":
-cleanup __amd64 void CachedImage::constructor_copy(CachedImage *this, const CachedImage &other);
-"554889e553504889fb0f2e4350742048":
-cleanup __amd64 void CachedImage::SetRotation(CachedImage *this, float _rotation);
-"554889e54156534189f64889fb410fb6":
-cleanup __amd64 void CachedImage::SetMirrored(CachedImage *this, bool _mirrored);
-"554889e553504889fb0f2e433875060f":
-cleanup __amd64 void CachedImage::SetScale(CachedImage *this, float wScale, float hScale);
-"554889e5415741564154534883ec504989fe4d8b":
-cleanup __amd64 void CachedImage::CreatePrimitive(CachedImage *this);
+// Continue from Button::SetLocation (hyper efficiency™)
+".554889e54157415653504189ce4189d74889fb48":
+noHook __amd64 void CachedImage::DO_NOT_HOOK_FALSE_CONSTRUCTOR_1();
+".554889e54157415653504189ce4189d74889fb48":
+cleanup __amd64 void CachedImage::constructor1(CachedImage* this, const std::string& _path, int _x, int _y);
+".554889e553504889fb48c7430800000000488d":
+noHook __amd64 void CachedImage::DO_NOT_HOOK_FALSE_CONSTRUCTOR_2();
+".554889e553504889fb48c7430800000000488d": 
+cleanup __amd64 void CachedImage::constructor2(CachedImage* this, const std::string& _path, CachedImage::Centered _centered);
+".554889e54156534989f64889fb48c7":
+noHook __amd64 void CachedImage::DO_NOT_HOOK_FALSE_CONSTRUCTOR_3();
+".554889e54156534989f64889fb48c7":
+cleanup __amd64 void CachedImage::constructor_copy(CachedImage* this, const CachedImage& _source);
+".554889e5415741564154534883ec504989fe4d":
+cleanup __amd64 void CachedImage::CreatePrimitive(CachedImage* this);
+".554889e54156534889fb488d3d????1f":
+cleanup __amd64 void CachedImage::SetImagePath(CachedImage* this, const std::string& imagePath);
+".554889e54157415653504189d64189f74889fb44397b30":
+cleanup __amd64 void CachedImage::SetPosition(CachedImage* this, int x, int y);
+".554889e553504889fb0f2e4338":
+cleanup __amd64 void CachedImage::SetScale(CachedImage* this, float wScale, float hScale);
+".554889e553504889fb0f2e4350":
+cleanup __amd64 void CachedImage::SetRotation(CachedImage* this, float rotation);
+".554889e54156534189f64889fb410f":
+cleanup __amd64 void CachedImage::SetMirrored(CachedImage* this, bool mirrored);
+"!.554889e553504889fb488d05????1e00488903f6":
+cleanup __amd64 void CachedImage::destructor(CachedImage* this);
 
 
 struct CachedImage
@@ -42,9 +49,9 @@ struct CachedImage
 		
 	}
 	
-	CachedImage(const CachedImage &other)
+	CachedImage(const CachedImage& source)
 	{
-		constructor_copy(other);
+		constructor_copy(source);
 	}
 }};
 

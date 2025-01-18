@@ -1,197 +1,201 @@
 "5557565381ec9c0000008bb424b00000008b9c24b4000000":
-cleanup __cdecl int ShipManager::constructor(ShipManager *this, int shipId);
+cleanup __cdecl int ShipManager::constructor(ShipManager* this, int _shipId);
 "5589e557565381ecfc0000008b7d088d9d38ffffff":
-cleanup __cdecl void ShipManager::AddInitialCrew(ShipManager *this, std::vector<CrewBlueprint>& blueprints);
+cleanup __cdecl void ShipManager::AddInitialCrew(ShipManager* this, std::vector<CrewBlueprint>& blueprints);
 "5383ec188b5c24208b93000400008b420483f8ff74??8b4b188b0c818b818001000085c07e??80b9840100000074??83f80174??31c0":
-cleanup __cdecl int ShipManager::GetDodgeFactor(ShipManager *this);
+cleanup __cdecl int ShipManager::GetDodgeFactor(ShipManager* this);
 "5589e557565381ecdc0000008b5d0c8b4510":
-cleanup __cdecl void ShipManager::OnRender(ShipManager *this, bool showInterior, bool doorControlMode);
+cleanup __cdecl void ShipManager::OnRender(ShipManager* this, bool showInterior, bool doorControlMode);
 "5557565383ec1c8b7c24300fb6442434":
-cleanup __cdecl int ShipManager::CountCrew(ShipManager *this, bool boarders);
+cleanup __cdecl int ShipManager::CountCrew(ShipManager* this, bool boarders);
 "5557565331db83ec1c0fb644243c":
-cleanup __cdecl std::vector<CrewMember*> ShipManager::TeleportCrew(ShipManager *this, int roomId, bool intruders);
+cleanup __cdecl std::vector<CrewMember*> ShipManager::TeleportCrew(ShipManager* this, int roomId, bool intruders);
 "5589e557565383ec6c8b7d088b450c8b7510":
-cleanup __cdecl int ShipManager::OnInit(ShipManager *this, ShipBlueprint *bp, int shipLevel);
+cleanup __cdecl int ShipManager::OnInit(ShipManager* this, ShipBlueprint* bp, int shipLevel);
 "8b44240883f81174??8b5424048b9200040000":
-cleanup __cdecl bool ShipManager::HasSystem(ShipManager *this, int systemId);
+cleanup __cdecl bool ShipManager::HasSystem(ShipManager* this, int systemId);
 "5557565331db83ec1c8b6c24308b7424348b55188b451c":
-cleanup __cdecl ShipSystem *ShipManager::GetSystemInRoom(ShipManager *this, int roomId);
+cleanup __cdecl ShipSystem* ShipManager::GetSystemInRoom(ShipManager* this, int roomId);
 "5589e5575689c65381ec1c010000":
 cleanup __regparm1 void ShipManager::OnLoop(ShipManager* this);
 "5383ec188b4424248b5424208b5c242883f811":
 noHook void ShipManager::DO_NOT_HOOK();
 ".5383ec188b4424248b5424208b5c242883f811":
-cleanup __cdecl void ShipManager::SetSystemPowerLoss(ShipManager *this, int systemId, int powerLoss);
+cleanup __cdecl void ShipManager::SetSystemPowerLoss(ShipManager* this, int systemId, int powerLoss);
 "5589e557565383ec4c8b5d088b83c4040000":
-cleanup __cdecl int ShipManager::CreateSystems(ShipManager *this);
+cleanup __cdecl int ShipManager::CreateSystems(ShipManager* this);
 "5589e557565381ecdc0000008b45088d98c0040000":
-cleanup __cdecl int ShipManager::AddSystem(ShipManager *this, int systemId);
+cleanup __cdecl int ShipManager::AddSystem(ShipManager* this, int systemId);
 "5589e557565331db81ecfc0000008b7d088b57188b471c":
-cleanup __cdecl void ShipManager::UpdateCrewMembers(ShipManager *this);
+cleanup __cdecl void ShipManager::UpdateCrewMembers(ShipManager* this);
 ".5557565383ec1c8b7424308b5c24348b7c243c8b":
-cleanup __cdecl bool ShipManager::PowerDrone(ShipManager *this, Drone *drone, int roomId, bool userDriven, bool force);
+cleanup __cdecl bool ShipManager::PowerDrone(ShipManager* this, Drone* drone, int roomId, bool userDriven, bool force);
 "5589e557565381ec9c0000008b7d088d4770":
-cleanup __cdecl void ShipManager::UpdateEnvironment(ShipManager *this);
+cleanup __cdecl void ShipManager::UpdateEnvironment(ShipManager* this);
 "5589e557565383ec6c8b4514c7442404????????8b7508":
-cleanup __cdecl CrewMember *ShipManager::AddCrewMemberFromBlueprint(ShipManager *this, CrewBlueprint* bp, int slot, bool init, int roomId, bool intruder);
+cleanup __cdecl CrewMember* ShipManager::AddCrewMemberFromBlueprint(ShipManager* this, CrewBlueprint* bp, int slot, bool init, int roomId, bool intruder);
 "5589e557565381ec6c0100008b75088b4d1c8b45148b5604":
-cleanup __cdecl CrewMember *ShipManager::AddCrewMemberFromString(ShipManager *this, const std::string& name, const std::string& race, bool intruder, int roomId, bool init, bool male);
+cleanup __cdecl CrewMember* ShipManager::AddCrewMemberFromString(ShipManager* this, const std::string& name, const std::string& race, bool intruder, int roomId, bool init, bool male);
 "8b4424048b9000040000837a08ff74??8b4024f30f1005????????":
-cleanup __cdecl int ShipManager::GetOxygenPercentage(ShipManager *this);
+cleanup __cdecl int ShipManager::GetOxygenPercentage(ShipManager* this);
 "5557565383ec1c807c246600":
-cleanup __cdecl bool ShipManager::DamageCrew(ShipManager *this, CrewMember *crew, Damage dmg);
+cleanup __cdecl bool ShipManager::DamageCrew(ShipManager* this, CrewMember* crew, Damage dmg);
 "5557565383ec3c8b442454894424048d44242c890424":
-cleanup __cdecl void ShipManager::RemoveItem(ShipManager *this, const std::string& name); 
+cleanup __cdecl void ShipManager::RemoveItem(ShipManager* this, const std::string& name); 
 "5589e557565381eccc0000008b45148b5d08":
-cleanup __cdecl bool ShipManager::DamageArea(ShipManager *this, Pointf location, Damage dmg, bool forceHit);
+cleanup __cdecl bool ShipManager::DamageArea(ShipManager* this, Pointf location, Damage dmg, bool forceHit);
 "5589e557565381ecdc0000008b7d088b5d0c8b7510":
-cleanup __cdecl bool ShipManager::DamageBeam(ShipManager *this, Pointf location1, Pointf location2, Damage dmg);
+cleanup __cdecl bool ShipManager::DamageBeam(ShipManager* this, Pointf location1, Pointf location2, Damage dmg);
 "5589e557565383ec6c8b45108b7d14":
-cleanup __cdecl CrewBlueprint ShipManager::SelectRandomCrew(ShipManager *this, int seed, const std::string& racePref);
+cleanup __cdecl CrewBlueprint ShipManager::SelectRandomCrew(ShipManager* this, int seed, const std::string& racePref);
 "565331db83ec148b7424208b56188b461c29d0c1f80285c074??8db6000000008b049a83c301":
-cleanup __cdecl void ShipManager::ClearStatusAll(ShipManager *this);
+cleanup __cdecl void ShipManager::ClearStatusAll(ShipManager* this);
 "5557565383ec7c8bbc24900000008b87ec050000":
-cleanup __cdecl void ShipManager::PrepareSuperDrones(ShipManager *this);
+cleanup __cdecl void ShipManager::PrepareSuperDrones(ShipManager* this);
 "5631c05383ec248b742430":
-cleanup __cdecl void ShipManager::JumpLeave(ShipManager *this);
+cleanup __cdecl void ShipManager::JumpLeave(ShipManager* this);
 "5557565383ec3c8b7424548b5c24508b442458":
-cleanup __cdecl void ShipManager::ModifyScrapCount(ShipManager *this, int scrap, bool income);
+cleanup __cdecl void ShipManager::ModifyScrapCount(ShipManager* this, int scrap, bool income);
 "8b4424048b4c24088b9000040000837a0cff":
-cleanup __cdecl void ShipManager::ModifyMissileCount(ShipManager *this, int missiles);
+cleanup __cdecl void ShipManager::ModifyMissileCount(ShipManager* this, int missiles);
 "8b4424048b9000040000837a0cff74108b40488b":
-cleanup __cdecl int ShipManager::GetMissileCount(ShipManager *this);
+cleanup __cdecl int ShipManager::GetMissileCount(ShipManager* this);
 "8b4424048b4c24088b9000040000837a10ff":
-cleanup __cdecl void ShipManager::ModifyDroneCount(ShipManager *this, int drones);
+cleanup __cdecl void ShipManager::ModifyDroneCount(ShipManager* this, int drones);
 "5383ec188b5424208b82000400008b401c":
-cleanup __cdecl bool ShipManager::DoSensorsProvide(ShipManager *this, int vision);
+cleanup __cdecl bool ShipManager::DoSensorsProvide(ShipManager* this, int vision);
 "5331c083ec188b5c24208b5304c70424????????85d2??????89442404e8????????b901000000":
-cleanup __cdecl bool ShipManager::IsCrewFull(ShipManager *this);
+cleanup __cdecl bool ShipManager::IsCrewFull(ShipManager* this);
 "5331c083ec188b5c24208b5304c70424????????85d2??????89442404e8????????837b0401":
-cleanup __cdecl bool ShipManager::IsCrewOverFull(ShipManager *this);
+cleanup __cdecl bool ShipManager::IsCrewOverFull(ShipManager* this);
 "565383ec248b5424348b5c24308b4240":
-cleanup __cdecl CrewDrone *ShipManager::CreateCrewDrone(ShipManager *this, const DroneBlueprint *bp);
+cleanup __cdecl CrewDrone* ShipManager::CreateCrewDrone(ShipManager* this, const DroneBlueprint* bp);
 "5589e557565383ec7c8b750c8b5d08c745b800000000":
-cleanup __cdecl SpaceDrone *ShipManager::CreateSpaceDrone(ShipManager *this, const DroneBlueprint *bp);
+cleanup __cdecl SpaceDrone* ShipManager::CreateSpaceDrone(ShipManager* this, const DroneBlueprint* bp);
 "83ec1c8b442428c744240c00000000c7442408ffffffff":
-cleanup __cdecl bool ShipManager::CommandCrewMoveRoom(ShipManager *this, CrewMember *crew, int roomId);
+cleanup __cdecl bool ShipManager::CommandCrewMoveRoom(ShipManager* this, CrewMember* crew, int roomId);
 "8b4424088b54240483f8ff74??8b8a000400008b048183f8ff74??8b52188b048285c074??8b1089442404":
-cleanup __cdecl int ShipManager::GetSystemRoom(ShipManager *this, int sysId);
+cleanup __cdecl int ShipManager::GetSystemRoom(ShipManager* this, int sysId);
 "5557565383ec1c8b4424348b5c24308b9000040000837a0cff":
-cleanup __cdecl std::vector<ProjectileFactory*> ShipManager::GetWeaponList(ShipManager *this);
+cleanup __cdecl std::vector<ProjectileFactory*> ShipManager::GetWeaponList(ShipManager* this);
 "57565383ec208b5c24308b7c24348b8300040000":
-cleanup __cdecl Drone* ShipManager::AddDrone(ShipManager *this, const DroneBlueprint *bp, int slot);
+cleanup __cdecl Drone* ShipManager::AddDrone(ShipManager* this, const DroneBlueprint* bp, int slot);
 "5557565383ec2c8b6c24408b450485c0":
-cleanup __cdecl void ShipManager::Restart(ShipManager *this);
+cleanup __cdecl void ShipManager::Restart(ShipManager* this);
 "8b5424048b4c24088b82000400008b048883f8ff74??8b52188b048289442404e9????????8d7600b8ffffffff":
-cleanup __cdecl int ShipManager::GetSystemPower(ShipManager *this, int systemId);
+cleanup __cdecl int ShipManager::GetSystemPower(ShipManager* this, int systemId);
 "5557565383ec1c8b4424308b50648b406889c129d1c1f90285c90f84????????":
-cleanup __cdecl int ShipManager::CountCrewShipId(ShipManager *this, int roomId, int shipId);
+cleanup __cdecl int ShipManager::CountCrewShipId(ShipManager* this, int roomId, int shipId);
 "8b4424088b54240483f8ff74??8b8a000400008b048183f8ff74??8b52188b0482c38db60000000031c0":
-cleanup __cdecl ShipSystem* ShipManager::GetSystem(ShipManager *this, int systemId);
+cleanup __cdecl ShipSystem* ShipManager::GetSystem(ShipManager* this, int systemId);
 ".5383ec188b5c24208b83000400008b4020":
-cleanup __cdecl bool ShipManager::DoorsFunction(ShipManager *this);
+cleanup __cdecl bool ShipManager::DoorsFunction(ShipManager* this);
 "5589e557565381ec1c0100008b45088b7d0c0594040000":
-cleanup __cdecl void ShipManager::ExportShip(ShipManager *this, int file);
+cleanup __cdecl void ShipManager::ExportShip(ShipManager* this, int file);
 ".5557565383ec1c8b7c2430":
-cleanup __cdecl void ShipManager::destructor(ShipManager *this);
-".5383ec188b5c2420891c24":
-cleanup __cdecl void ShipManager::destructor2(ShipManager *this);
+cleanup __cdecl void ShipManager::destructor(ShipManager* this);
 "5589e557565381ec7c0200008b7d0c8d8588feffff":
-cleanup __cdecl void ShipManager::ImportShip(ShipManager *this, int file);
+cleanup __cdecl void ShipManager::ImportShip(ShipManager* this, int file);
 "5557565383ec4c8b7c24608b870004000083781cff":
-cleanup __cdecl void ShipManager::CheckVision(ShipManager *this);
+cleanup __cdecl void ShipManager::CheckVision(ShipManager* this);
 "56538b5424108b4c240c83fa118b8100040000":
-cleanup __cdecl int ShipManager::IsSystemHacked(ShipManager *this, int systemId);
+cleanup __cdecl int ShipManager::IsSystemHacked(ShipManager* this, int systemId);
 "5589e557565383ec3c8b7d080fb645148b4f64":
-cleanup __cdecl CrewMember* ShipManager::GetSelectedCrewPoint(ShipManager *this, int x, int y, bool intruder);
+cleanup __cdecl CrewMember* ShipManager::GetSelectedCrewPoint(ShipManager* this, int x, int y, bool intruder);
 "5589e557565383ec6c8b75088d45b0890424":
-cleanup __cdecl void ShipManager::RenderWeapons(ShipManager *this);
+cleanup __cdecl void ShipManager::RenderWeapons(ShipManager* this);
 "83ec1c8b4424248b54242083f811":
-cleanup __cdecl void ShipManager::ClearStatusSystem(ShipManager *this, int system);
+cleanup __cdecl void ShipManager::ClearStatusSystem(ShipManager* this, int system);
 "a1????????8b54240483f801c7820c0400001e000000":
-cleanup __cdecl void ShipManager::ResetScrapLevel(ShipManager *this);
+cleanup __cdecl void ShipManager::ResetScrapLevel(ShipManager* this);
 "565383ec248b7424308b86f4030000c786c403000000000000":
-cleanup __cdecl void ShipManager::JumpArrive(ShipManager *this);
+cleanup __cdecl void ShipManager::JumpArrive(ShipManager* this);
 "5589e557565383ec5c8b7d08c745b000000000":
-cleanup __cdecl void ShipManager::CheckSpreadDamage(ShipManager *this);
+cleanup __cdecl void ShipManager::CheckSpreadDamage(ShipManager* this);
 "8b4424088b54240483f8ff74??8b8a000400008b048183f8ff74??8b52188b048285c074??8b10c744240801000000894424048b8284000000":
-cleanup __cdecl bool ShipManager::ForceDecreaseSystemPower(ShipManager *this, int sys);
+cleanup __cdecl bool ShipManager::ForceDecreaseSystemPower(ShipManager* this, int sys);
 "8b5424088b4424048b524485d2":
-cleanup __cdecl ShieldPower ShipManager::GetShieldPower(ShipManager *this);
+cleanup __cdecl ShieldPower ShipManager::GetShieldPower(ShipManager* this);
 "538b4424088b9000040000837a0cff":
-cleanup __cdecl int ShipManager::AddWeapon(ShipManager *this, const WeaponBlueprint* bp, int slot);
+cleanup __cdecl int ShipManager::AddWeapon(ShipManager* this, const WeaponBlueprint* bp, int slot);
 "5557565331db83ec3c8b4424548d74242c":
-cleanup __cdecl void ShipManager::AddEquipmentFromList(ShipManager *this, std::vector<std::string> *equipmentList);
+cleanup __cdecl void ShipManager::AddEquipmentFromList(ShipManager* this, std::vector<std::string>* equipmentList);
 "5589e557565383ec4c8b5d088b730485f6":
-cleanup __cdecl void ShipManager::RenderChargeBars(ShipManager *this);
+cleanup __cdecl void ShipManager::RenderChargeBars(ShipManager* this);
 "5557565383ec2c8b7c24408b7424448b8700040000":
-cleanup __cdecl void ShipManager::ExportBattleState(ShipManager *this, int file);
+cleanup __cdecl void ShipManager::ExportBattleState(ShipManager* this, int file);
 "5557565383ec3c8b7424508b5c24548b8600040000":
-cleanup __cdecl void ShipManager::ImportBattleState(ShipManager *this, int file);
+cleanup __cdecl void ShipManager::ImportBattleState(ShipManager* this, int file);
 "8b5424048b4c24088b82000400008b048883f8ff74??8b52188b04828b10894424048b422c":
-cleanup __cdecl bool ShipManager::SystemFunctions(ShipManager *this, int systemId);
+cleanup __cdecl bool ShipManager::SystemFunctions(ShipManager* this, int systemId);
 "57565383ec108b4424248b7c242083f805":
-cleanup __cdecl bool ShipManager::CanFitSystem(ShipManager *this, int systemId);
+cleanup __cdecl bool ShipManager::CanFitSystem(ShipManager* this, int systemId);
 "57565383ec108b7c24208b57188b471c":
-cleanup __cdecl bool ShipManager::CanFitSubsystem(ShipManager *this, int systemId);
+cleanup __cdecl bool ShipManager::CanFitSubsystem(ShipManager* this, int systemId);
 "565383ec148b5c24208b7424288b03891c24":
-cleanup __cdecl int ShipManager::DamageHull(ShipManager *this, int dmg, bool force);
+cleanup __cdecl int ShipManager::DamageHull(ShipManager* this, int dmg, bool force);
 "5589e557565383ec6c8b45248b7d088b5d10":
-cleanup __cdecl void ShipManager::DamageSystem(ShipManager *this, int systemId, Damage damage);
+cleanup __cdecl void ShipManager::DamageSystem(ShipManager* this, int systemId, Damage damage);
 "83ec1c8b442424c74424080200000089442404":
-cleanup __cdecl void ShipManager::StartFire(ShipManager *this, int roomId);
+cleanup __cdecl void ShipManager::StartFire(ShipManager* this, int roomId);
 "5557565383ec3c8d44242089442404c744240c00000000":
-cleanup __cdecl CrewMember* ShipManager::FindCrew(ShipManager *this, const CrewBlueprint *bp);
+cleanup __cdecl CrewMember* ShipManager::FindCrew(ShipManager* this, const CrewBlueprint* bp);
 "57565383ec208b5c2430807b1000":
-cleanup __cdecl bool ShipManager::GetDodged(ShipManager *this);
+cleanup __cdecl bool ShipManager::GetDodged(ShipManager* this);
 "5589e557565383ec7c8b7d088b87c0030000":
-cleanup __cdecl void ShipManager::PrepareSuperBarrage(ShipManager *this);
+cleanup __cdecl void ShipManager::PrepareSuperBarrage(ShipManager* this);
 "5589e5575631f65383ec3c8b7d0c":
-cleanup __cdecl std::string ShipManager::GetTooltip(ShipManager *this, int x, int y);
+cleanup __cdecl std::string ShipManager::GetTooltip(ShipManager* this, int x, int y);
 "5589e557565383ec6c8d45a8":
-cleanup __cdecl bool ShipManager::RestoreCrewPositions(ShipManager *this);
+cleanup __cdecl bool ShipManager::RestoreCrewPositions(ShipManager* this);
 "555731ff565331db83ec1c8b7424308b4e688b4664":
-cleanup __cdecl CrewMember* ShipManager::GetCrewmember(ShipManager *this, int slot, bool present);
+cleanup __cdecl CrewMember* ShipManager::GetCrewmember(ShipManager* this, int slot, bool present);
 "5589e55383ec148b550c8b4d0883fa11":
-cleanup __cdecl int ShipManager::CanUpgrade(ShipManager *this, int systemId, int amount);
+cleanup __cdecl int ShipManager::CanUpgrade(ShipManager* this, int systemId, int amount);
 "5589e557565383ec5c8b45108b5d08":
-cleanup __cdecl ShipBlueprint ShipManager::SaveToBlueprint(ShipManager *this, bool unk);
+cleanup __cdecl ShipBlueprint ShipManager::SaveToBlueprint(ShipManager* this, bool overwrite);
 "5589e557565331db83ec7c8d45c88d75d8":
-cleanup __cdecl void ShipManager::CheckCrystalAugment(ShipManager *this, Pointf pos);
+cleanup __cdecl void ShipManager::CheckCrystalAugment(ShipManager* this, Pointf position);
 "5589e557565381ec1c0100008b7d548b75188b5d1c":
-cleanup __cdecl CollisionResponse ShipManager::CollisionMoving(ShipManager *this, Pointf start, Pointf finish, Damage damage, bool raytrace);
+cleanup __cdecl CollisionResponse ShipManager::CollisionMoving(ShipManager* this, Pointf start, Pointf finish, Damage damage, bool raytrace);
 "8b5424048b4c24088b82000400008b048883f8ff74??8b52188b04828b4040":
-cleanup __cdecl int ShipManager::GetSystemPowerMax(ShipManager *this, int systemId);
+cleanup __cdecl int ShipManager::GetSystemPowerMax(ShipManager* this, int systemId);
 "5557565383ec1c8b4424348b5c24308b9000040000837a10ff":
-cleanup __cdecl std::vector<Drone*> ShipManager::GetDroneList(ShipManager *this);
+cleanup __cdecl std::vector<Drone*> ShipManager::GetDroneList(ShipManager* this);
 "8b4424048b9000040000837a10ff74??8b404c8b80a4010000":
-cleanup __cdecl int ShipManager::GetDroneCount(ShipManager *this);
+cleanup __cdecl int ShipManager::GetDroneCount(ShipManager* this);
 "5383ec188b5c24208b83000400008b00":
-cleanup __cdecl void ShipManager::InstantPowerShields(ShipManager *this);
+cleanup __cdecl void ShipManager::InstantPowerShields(ShipManager* this);
 "565331db83ec148b7424208b56188b461cc686d103000001":
-cleanup __cdecl void ShipManager::SetDestroyed(ShipManager *this);
+cleanup __cdecl void ShipManager::SetDestroyed(ShipManager* this);
 "8b44240483c07089442404":
-cleanup __cdecl int ShipManager::GetFireCount(ShipManager *this, int roomId);
+cleanup __cdecl int ShipManager::GetFireCount(ShipManager* this, int roomId);
 "5383ec188b5c24208b4304894424048b442424890424":
-cleanup __cdecl void ShipManager::AddCrewMember(ShipManager *this, CrewMember *crew, int roomId);
+cleanup __cdecl void ShipManager::AddCrewMember(ShipManager* this, CrewMember* crew, int roomId);
 "5557565331db83ec1c0fb6442438":
-cleanup __cdecl std::vector<CrewMember*> ShipManager::GetLeavingCrew(ShipManager *this, bool intruders);
+cleanup __cdecl std::vector<CrewMember*> ShipManager::GetLeavingCrew(ShipManager* this, bool intruders);
 "5589e557565383ec1c8b450c8b75088b5d10":
-cleanup __cdecl void ShipManager::UpgradeSystem(ShipManager *this, int id, int amount);
+cleanup __cdecl void ShipManager::UpgradeSystem(ShipManager* this, int id, int amount);
 "5589e557565381ecec0000008b45148b5d0c":
-cleanup __cdecl CollisionResponse ShipManager::CollisionShield(ShipManager *this, Pointf start, Pointf finish, Damage damage, bool raytrace);
+cleanup __cdecl CollisionResponse ShipManager::CollisionShield(ShipManager* this, Pointf start, Pointf finish, Damage damage, bool raytrace);
 "8b4424048b9000040000837a28ff":
-cleanup __cdecl bool ShipManager::IsCloaked(ShipManager *this);
+cleanup __cdecl bool ShipManager::IsCloaked(ShipManager* this);
 "5557565383ec1c8b4424308b50648b406889c129d1c1f90285c9747e":
-cleanup __cdecl int ShipManager::CountPlayerCrew(ShipManager *this);
+cleanup __cdecl int ShipManager::CountPlayerCrew(ShipManager* this);
 "565383ec148b5c24208b8300":
-cleanup __cdecl void ShipManager::Wait(ShipManager *this);
+cleanup __cdecl void ShipManager::Wait(ShipManager* this);
+
 
 struct ShipManager depends (PowerManager, ShieldPower)
 {{
 	ShipManager(int shipId) 
 	{
 		this->constructor(shipId);
+	}
+	
+	~ShipManager()
+	{
+		this->destructor();
 	}
 	
 	Pointf GetRandomRoomCenter()
@@ -207,16 +211,10 @@ struct ShipManager depends (PowerManager, ShieldPower)
 		return ship.GetRoomCenter(roomId);
 	}
 	
-	~ShipManager()
-	{
-		this->destructor2();
-	}
-	
 	std::pair<int, int> GetAvailablePower()
 	{
-		PowerManager *powerMan = PowerManager::GetPowerManager(iShipId);
+		PowerManager* powerMan = PowerManager::GetPowerManager(iShipId);
 		
 		return std::pair<int, int>(powerMan->currentPower.second, powerMan->currentPower.second - powerMan->currentPower.first);
 	}
-
 }};

@@ -1,4 +1,4 @@
 "4157be0100000041564155415455534889fb4881ecf8000000488bbf10010000":
-cleanup __amd64 void FTLButton::OnRender(FTLButton *this);
+cleanup __amd64 void FTLButton::OnRender(FTLButton* this);
 ".4157415641554189d541544189cc5589f531f6534889fb4883ec08":
-cleanup __amd64 void FTLButton::MouseMove(FTLButton *this, int mX, int mY, bool silent);
+cleanup __amd64 void FTLButton::MouseMove(FTLButton* this, int mX, int mY, bool silent);

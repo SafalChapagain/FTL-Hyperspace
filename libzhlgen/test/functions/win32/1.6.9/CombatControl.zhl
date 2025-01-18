@@ -1,52 +1,52 @@
 "578d7c240883e4f0ff77fc5589e557565389cf81ec????????8b81a400000085c074??8b401c83b8b8000000020f84????????8d8518ffffff":
-__thiscall void CombatControl::RenderTarget(CombatControl *this);
+__thiscall void CombatControl::RenderTarget(CombatControl* this);
 "8b815c07000085c074??8b4008c3669031c0c3908db6000000008dbf000000008b895c07000085c974??558b0189e583e4f0ff5010c9":
-__thiscall ShipManager *CombatControl::GetCurrentTarget(CombatControl *this);
+__thiscall ShipManager* CombatControl::GetCurrentTarget(CombatControl* this);
 "8b895c07000085c974??558b0189e583e4f0ff5010c9c389f68dbc270000000031c0c3908db6000000008dbf00000000578d7c240883e4f0ff77fc5589f889e5":
-__thiscall char CombatControl::CurrentTargetIsBoss(CombatControl *this);
+__thiscall char CombatControl::CurrentTargetIsBoss(CombatControl* this);
 "578d7c240883e4f0ff77fc5589e557565383ec5c8b81a400000085c074??8b401c83b8b80000000374??":
-__thiscall char CombatControl::CanTargetSelf(CombatControl *this);
+__thiscall char CombatControl::CanTargetSelf(CombatControl* this);
 "80b9a80e0000000f84????????578d7c240883e4f0ff77fc5589e557565389cb83ec6c8bb15c07000085f6":
-__thiscall void CombatControl::OnRenderCombat(CombatControl *this);
+__thiscall void CombatControl::OnRenderCombat(CombatControl* this);
 "578d7c240883e4f0ff77fc5589e557565383ec5c8b915c0700008b0785d274??c6816011000000":
-__thiscall void CombatControl::AddEnemyShip(CombatControl *this, CompleteShip *ship);	
+__thiscall void CombatControl::AddEnemyShip(CombatControl* this, CompleteShip* enemy);	
 "578d7c240883e4f0ff77fc5589e557565389cb83ec5c8b817007000083f8ff":
-__thiscall void CombatControl::UpdateAiming(CombatControl *this);
+__thiscall void CombatControl::UpdateAiming(CombatControl* this);
 "57660fefc98d7c240883e4f0ff77fc5589e557565389cb81ec????????f30f2a4908f30f1081c40e0000f30f5cc1":
-__thiscall bool CombatControl::UpdateTarget(CombatControl *this);
+__thiscall bool CombatControl::UpdateTarget(CombatControl* this);
 "578d7c240883e4f0ff77fc5589e55756538d5dd089ce83ec7c8b471089d9c744240400000000c70424????????8945b8e8????????8b86680700000345d4":
-__thiscall void CombatControl::DrawHostileBox(CombatControl *this, GL_Color color, int stencilBit);
+__thiscall void CombatControl::DrawHostileBox(CombatControl* this, GL_Color color, int stencilBit);
 "578d7c240883e4f0ff77fc5589e5575389cb83ec208b078b57048981640700008b816411000089916807000085c00f84????????8d8b68110000e8????????a1????????":
-__thiscall void CombatControl::OnInit(CombatControl *this, Point pos);
+__thiscall void CombatControl::OnInit(CombatControl* this, Point position);
 "578d7c240883e4f0ff77fc5589e557565331f689cb83ec2c8b91440700008b814807000029d0c1f80285c074??":
-__thiscall void CombatControl::OnLoop(CombatControl *this);
+__thiscall void CombatControl::OnLoop(CombatControl* this);
 "578d7c240883e4f0ff77fc5589e5575389cb83ec108b89a400000085c974??0fb683a8000000f30f1005????????3205????????8b93c00300000f2e83b40e00000fb6c0":
-__thiscall void CombatControl::SetMouseCursor(CombatControl *this);
+__thiscall void CombatControl::SetMouseCursor(CombatControl* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec1c8b915c07000085d274??8b4904c70424????????e8????????83ec0484c0":
-__thiscall void CombatControl::DisarmAll(CombatControl *this);
+__thiscall void CombatControl::DisarmAll(CombatControl* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec6c8b4904c70424????????e8????????83ec0484c0":
-__thiscall bool CombatControl::SelectTarget(CombatControl *this);
+__thiscall bool CombatControl::SelectTarget(CombatControl* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec2c8b81a40000008b378b7f0485c074??b8????????89d98845e7":
-__thiscall bool CombatControl::MouseRClick(CombatControl *this, int x, int y);
+__thiscall bool CombatControl::MouseRClick(CombatControl* this, int mX, int mY);
 "578d7c240883e4f0ff77fc5589e5575389cb83ec108b4904c70424????????e8????????83ec0484c075??8b83a400000085c0":
-__thiscall bool CombatControl::WeaponsArmed(CombatControl *this);
+__thiscall bool CombatControl::WeaponsArmed(CombatControl* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83c11483ec1c8b37893424e8????????83ec0484c074??8b4b04":
-__thiscall void CombatControl::KeyDown(CombatControl *this, SDLKey key);
+__thiscall void CombatControl::KeyDown(CombatControl* this, SDLKey key);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec1c8b4904c70424????????e8????????83ec0484c089c6":
-__thiscall void CombatControl::DisarmTeleporter(CombatControl *this);
+__thiscall void CombatControl::DisarmTeleporter(CombatControl* this);
 "578d7c240883e4f0ff77fc5589e557565389ce83c1088d5d9c81ec????????c741f800000000c741fc00000000e8????????8d4e14c7461000000000e8????????8d8ec4030000":
-__thiscall void CombatControl::constructor(CombatControl *this);
+__thiscall void CombatControl::constructor(CombatControl* this);
 "578d7c240883e4f0ff77fc5589e5575389cb83c11483ec30e8????????8b4b04c70424????????e8????????83ec0484c00f84????????8b4b04":
-__thiscall void CombatControl::OnRenderSelfAiming(CombatControl *this);
+__thiscall void CombatControl::OnRenderSelfAiming(CombatControl* this);
 "578d7c240883e4f0ff77fc5589f889e557565389cf81ec????????8b188b7004898564ffffffe8????????89742404891c248d75d0c744240800000000":
-__thiscall void CombatControl::RenderShipStatus(CombatControl *this, Pointf pos, GL_Color color);
+__thiscall void CombatControl::RenderShipStatus(CombatControl* this, Pointf position, GL_Color boxColor);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec1c8b178b4f048b77088b825c07000085c074??2bb2680700002bb27807000089742408":
-__thiscall std::string CombatControl::GetCrewTooltip(CombatControl *this, int x, int y);
+__thiscall std::string CombatControl::GetCrewTooltip(CombatControl* this, int mX, int mY);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec1cc7815c07000000000000c78160070000000000008b490485c9":
-__thiscall void CombatControl::Clear(CombatControl *this);
+__thiscall void CombatControl::Clear(CombatControl* this);
 "57660fefc08d7c240883e4f0ff77fc5589e557565383ec2c8b378b5f040fb681a80e0000":
-__thiscall bool CombatControl::MouseMove(CombatControl *this, int mX, int mY);
+__thiscall bool CombatControl::MouseMove(CombatControl* this, int mX, int mY);
 "578d7c240883e4f0ff77fc5589e557565389cb83c11483ec1c8b378b7f04c681b80e000001c744240800000000897c2404893424":
-__thiscall void CombatControl::MouseClick(CombatControl *this, int mX, int mY, bool shift);
+__thiscall void CombatControl::MouseClick(CombatControl* this, int mX, int mY, bool shift);
 "5589e55756538b815c07000089ce83e4f085c0":
-__thiscall std::pair<int,int> CombatControl::GetTeleportationCommand(CombatControl *this);
+__thiscall std::pair<int,int> CombatControl::GetTeleportationCommand(CombatControl* this);

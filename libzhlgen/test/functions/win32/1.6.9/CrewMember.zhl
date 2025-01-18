@@ -1,222 +1,221 @@
 ".0fb68198000000":
-virtual __thiscall bool CrewMember::CanSabotage(CrewMember *this);
+virtual __thiscall bool CrewMember::CanSabotage(CrewMember* this);
 "80b9980000000074??31c0c38d7426008b015589e55389cb8b8088000000":
-virtual __thiscall bool CrewMember::CanRepair(CrewMember *this);
+virtual __thiscall bool CrewMember::CanRepair(CrewMember* this);
 "0fb6819800000084c075??f30f1081080700000f2e05????????76??f3c3":
-virtual __thiscall bool CrewMember::CanMan(CrewMember *this);
+virtual __thiscall bool CrewMember::CanMan(CrewMember* this);
 "f30f1041280f2e412c7a??75??5589e55389cb83e4f080796c0075??8b8300020000":
-virtual __thiscall bool CrewMember::CanHeal(CrewMember *this);
+virtual __thiscall bool CrewMember::CanHeal(CrewMember* this);
 ".578d7c240883e4f0ff77fc5589e5575383ec3080b9fc010000008b3f74??8d65f85b5f5d8d67f8":
-__thiscall void CrewMember::OnRender(CrewMember *this, bool outlineOnly);
+__thiscall void CrewMember::OnRender(CrewMember* this, bool outlineOnly);
 "89c8c701????????c7410400000000c7410800000000c7410c00000000c7411000000000c7411400000000c7411800000000c7411c00000000c6412000":
-__thiscall Damage CrewMember::GetRoomDamage(CrewMember *this);
-
+__thiscall Damage CrewMember::GetRoomDamage(CrewMember* this);
 "578d7c240883e4f0ff77fc5589f889e557565389cf81ec????????8b308b5808":
-__thiscall void CrewMember::constructor(CrewMember *this, CrewBlueprint& blueprint, int shipId, bool intruder, CrewAnimation *animation);
+__thiscall void CrewMember::constructor(CrewMember* this, CrewBlueprint& _blueprint, int _shipId, bool _intruder, CrewAnimation* _animation);
 "8b81f00400005589e583e4f083400c018b01ff90cc000000":
-__thiscall void CrewMember::Jump(CrewMember *this);
+__thiscall void CrewMember::Jump(CrewMember* this);
 ".80b93d050000008b410475??398160010000":
-__thiscall bool CrewMember::GetIntruder(CrewMember *this);
+__thiscall bool CrewMember::GetIntruder(CrewMember* this);
 ".a1????????c681e001000001c681fc01000001c7810807000000000000":
-__thiscall void CrewMember::SetOutOfGame(CrewMember *this);
+__thiscall void CrewMember::SetOutOfGame(CrewMember* this);
 ".55660fefc989e583ec04f30f2a8990000000f30f1015????????f30f104108f30f5cc1":
-__thiscall float CrewMember::PositionShift(CrewMember *this);
+__thiscall float CrewMember::PositionShift(CrewMember* this);
 ".578d7c240883e4f0ff77fc5589f889e557565389cf31f683ec1c8b18f30f108108070000f30f11442404891c24e8????????":
-__thiscall void CrewMember::SaveState(CrewMember *this, int fileHelper);
+__thiscall void CrewMember::SaveState(CrewMember* this, int fileHelper);
 ".8b819c000000837838030f84????????55660fefc9":
-__thiscall bool CrewMember::CanTeleport(CrewMember *this);
+__thiscall bool CrewMember::CanTeleport(CrewMember* this);
 ".5589e5575653":
-__thiscall void CrewMember::destructor(CrewMember *this);
+__thiscall void CrewMember::destructor(CrewMember* this);
 ".5589e55389cb":
-__thiscall void CrewMember::Cleanup(CrewMember *this);
+__thiscall void CrewMember::Cleanup(CrewMember* this);
 ".578d7c240883e4f0ff77fc5589f889e557565389cf83ec2c8b30893424e8????????d95de48b45e4893424":
-__thiscall void CrewMember::LoadState(CrewMember *this, int fileHelper);
+__thiscall void CrewMember::LoadState(CrewMember* this, int fileHelper);
 ".578d7c240883e4f0ff77fc":
-__thiscall void CrewMember::SetCurrentSystem(CrewMember *this, ShipSystem *sys);
+__thiscall void CrewMember::SetCurrentSystem(CrewMember* this, ShipSystem* sys);
 ".83797c0b0f94c0":
-__thiscall bool CrewMember::IsManningArtillery(CrewMember *this);
+__thiscall bool CrewMember::IsManningArtillery(CrewMember* this);
 ".578d7c240883e4f0ff77fc55":
-__thiscall void CrewMember::IncreaseSkill(CrewMember *this, int skillId);
+__thiscall void CrewMember::IncreaseSkill(CrewMember* this, int skillId);
 ".578d7c240883e4f0ff77fc55":
-__thiscall void CrewMember::CheckSkills(CrewMember *this);
+__thiscall void CrewMember::CheckSkills(CrewMember* this);
 ".8b81140300008b5424048d04d08b5004":
-__thiscall void CrewMember::MasterSkill(CrewMember *this, int skillId);
+__thiscall void CrewMember::MasterSkill(CrewMember* this, int skillId);
 ".8b54240483fa0174??83fa0674??":
 static cleanup __cdecl int CrewMember::GetSkillFromSystem(int systemId);
 ".8b4424048881f4060000":
-__thiscall void CrewMember::SetResisted(CrewMember *this, bool resisted);
+__thiscall void CrewMember::SetResisted(CrewMember* this, bool resisted);
 ".0fb681f4060000c681f406000000":
-__thiscall bool CrewMember::GetResisted(CrewMember *this);
+__thiscall bool CrewMember::GetResisted(CrewMember* this);
 ".8b81140300008b5424048b4c2408":
-__thiscall void CrewMember::SetSkillProgress(CrewMember *this, int skillId, int skillLevel);
+__thiscall void CrewMember::SetSkillProgress(CrewMember* this, int skillId, int skillLevel);
 ".8b542404b8????????83fa0577??8b8114030000":
-__thiscall int CrewMember::GetSkillLevel(CrewMember *this, int skillId);
+__thiscall int CrewMember::GetSkillLevel(CrewMember* this, int skillId);
 ".558b811403000089e58b55085d8d14d08b02":
-__thiscall std::pair<int, int> CrewMember::GetSkillProgress(CrewMember *this, int skillId);
+__thiscall std::pair<int, int> CrewMember::GetSkillProgress(CrewMember* this, int skillId);
 ".55b8????????89e55383e4f083ec10":
-__thiscall float CrewMember::GetSkillModifier(CrewMember *this, int skillId);
+__thiscall float CrewMember::GetSkillModifier(CrewMember* this, int skillId);
 ".5589e55389cb83e4f083ec108b01":
-__thiscall bool CrewMember::BadAtCombat(CrewMember *this);
+__thiscall bool CrewMember::BadAtCombat(CrewMember* this);
 ".8b818800000085c00f88????????578d7c240883e4f0":
-__thiscall void CrewMember::EmptySlot(CrewMember *this);
+__thiscall void CrewMember::EmptySlot(CrewMember* this);
 ".0fb681fc01000084c075??83b98c000000ff74??":
-__thiscall bool CrewMember::NeedsSlot(CrewMember *this);
+__thiscall bool CrewMember::NeedsSlot(CrewMember* this);
 ".57660fefc98d7c240883e4f0ff77fc5589e557565383ec4cf30f1041280f2ec8f30f10170f83????????f30f2cf0f30f58c2":
-__thiscall bool CrewMember::DirectModifyHealth(CrewMember *this, float health);
+__thiscall bool CrewMember::DirectModifyHealth(CrewMember* this, float health);
 ".578d7c240883e4f0ff77fc5589e55753":
-__thiscall void CrewMember::ModifyHealth(CrewMember *this, float health);
+__thiscall void CrewMember::ModifyHealth(CrewMember* this, float health);
 ".578d7c240883e4f0ff77fc5589e5":
-__thiscall bool CrewMember::ApplyDamage(CrewMember *this, float damage);
+__thiscall bool CrewMember::ApplyDamage(CrewMember* this, float damage);
 ".8b516885d274??8b810002000085c0":
-__thiscall bool CrewMember::RepairingSystem(CrewMember *this);
+__thiscall bool CrewMember::RepairingSystem(CrewMember* this);
 ".8b416885c074??5589e5538b10":
-__thiscall bool CrewMember::Sabotaging(CrewMember *this);
+__thiscall bool CrewMember::Sabotaging(CrewMember* this);
 ".8b516831c085d274??8b9100020000":
-__thiscall bool CrewMember::RepairingFire(CrewMember *this);
+__thiscall bool CrewMember::RepairingFire(CrewMember* this);
 ".578d7c240883e4f0ff77fc5589e5":
-__thiscall Pointf CrewMember::SelectSabotageTarget(CrewMember *this);
+__thiscall Pointf CrewMember::SelectSabotageTarget(CrewMember* this);
 ".8b81880000008981f80600008b818c0000008981fc0600008b8190000000898100070000":
-__thiscall void CrewMember::SavePosition(CrewMember *this);
+__thiscall void CrewMember::SavePosition(CrewMember* this);
 ".c781fc060000ffffffffc781f8060000ffffffff":
-__thiscall void CrewMember::ClearPosition(CrewMember *this);
+__thiscall void CrewMember::ClearPosition(CrewMember* this);
 ".8b54240489c88b8af806000089088b8afc060000894804":
-__thiscall Slot CrewMember::GetSavedPosition(CrewMember *this);
+__thiscall Slot CrewMember::GetSavedPosition(CrewMember* this);
 ".8b4424048981f80600008b4424088981fc060000":
-__thiscall void CrewMember::SetSavePosition(CrewMember *this, Slot position);
+__thiscall void CrewMember::SetSavePosition(CrewMember* this, Slot position);
 ".8b416885c074??8b015589e5":
-__thiscall void CrewMember::StopRepairing(CrewMember *this);
+__thiscall void CrewMember::StopRepairing(CrewMember* this);
 ".8b416885c00f95c0":
-__thiscall bool CrewMember::Repairing(CrewMember *this);
+__thiscall bool CrewMember::Repairing(CrewMember* this);
 ".8b44240484c074??80b9a00100000074??8881a0010000":
-__thiscall void CrewMember::SetFrozen(CrewMember *this, bool frozen);
+__thiscall void CrewMember::SetFrozen(CrewMember* this, bool frozen);
 ".8b4424048881a1010000":
-__thiscall void CrewMember::SetFrozenLocation(CrewMember *this, bool frozenLocation);
+__thiscall void CrewMember::SetFrozenLocation(CrewMember* this, bool frozenLocation);
 ".8b4424048981a40100008b4424088981a8010000":
-__thiscall void CrewMember::SetTask(CrewMember *this, CrewTask task);
+__thiscall void CrewMember::SetTask(CrewMember* this, CrewTask task);
 ".578d7c240883e4f0ff77fc5589f889e557":
-__thiscall Slot CrewMember::FindSlot(CrewMember *this, int unk1, int roomId, bool unk2);
+__thiscall Slot CrewMember::FindSlot(CrewMember* this, int roomId, int slotId, bool closeEnough);
 ".578d7c240883e4f0ff77fc5589e55756":
-__thiscall bool CrewMember::CheckRoomPath(CrewMember *this, int roomId);
+__thiscall bool CrewMember::CheckRoomPath(CrewMember* this, int roomId);
 ".57660fefc9660fefc08d7c240883e4f0ff77fc5589e5":
-__thiscall void CrewMember::SetPosition(CrewMember *this, Point pos);
+__thiscall void CrewMember::SetPosition(CrewMember* this, Point position);
 ".8b4178c781ac010000ffffffffc781a401000004000000":
-__thiscall void CrewMember::ClearTask(CrewMember *this);
+__thiscall void CrewMember::ClearTask(CrewMember* this);
 ".578d7c240883e4f0ff77fc5589e5575653":
-__thiscall void CrewMember::ClearPath(CrewMember *this);
+__thiscall void CrewMember::ClearPath(CrewMember* this);
 ".578d7c240883e4f0ff77fc5589e5":
-__thiscall void CrewMember::SetRoom(CrewMember *this, int roomId);
+__thiscall void CrewMember::SetRoom(CrewMember* this, int roomId);
 ".8b5168b8????????85d274??f3c3":
-__thiscall bool CrewMember::IsBusy(CrewMember *this);
+__thiscall bool CrewMember::IsBusy(CrewMember* this);
 ".c741201e000000c7416400000000b8????????":
-__thiscall bool CrewMember::OnInit(CrewMember *this);
+__thiscall bool CrewMember::OnInit(CrewMember* this);
 ".f30f1005????????0f2e41547a??74??8b414c8b5150":
-__thiscall Point CrewMember::GetFinalGoal(CrewMember *this);
+__thiscall Point CrewMember::GetFinalGoal(CrewMember* this);
 ".578d7c240883e4f0ff77fc5589e55753":
-__thiscall Point CrewMember::GetNextGoal(CrewMember *this);
+__thiscall Point CrewMember::GetNextGoal(CrewMember* this);
 ".8b442404894164":
-__thiscall void CrewMember::CloseDoorBehind(CrewMember *this, Door *door);
+__thiscall void CrewMember::CloseDoorBehind(CrewMember* this, Door* door);
 ".578d7c240883e4f0ff77fc5589e55756":
-__thiscall float CrewMember::GetMoveSpeed(CrewMember *this);
+__thiscall float CrewMember::GetMoveSpeed(CrewMember* this);
 ".578d7c240883e4f0ff77fc5589e5575653":
-__thiscall void CrewMember::Restart(CrewMember *this);
+__thiscall void CrewMember::Restart(CrewMember* this);
 ".f30f10442404f30f1181ec060000":
-__thiscall void CrewMember::SetDamageBoost(CrewMember *this, float damageBoost);
+__thiscall void CrewMember::SetDamageBoost(CrewMember* this, float damageBoost);
 ".558b81e806000089e5538b550883e4f039d074??":
-__thiscall void CrewMember::SetHealthBoost(CrewMember *this, int healthBoost);
+__thiscall void CrewMember::SetHealthBoost(CrewMember* this, int healthBoost);
 ".578d7c240883e4f0ff77fc5589e557":
-__thiscall void CrewMember::InitializeSkills(CrewMember *this);
+__thiscall void CrewMember::InitializeSkills(CrewMember* this);
 ".578d7c240883e4f0ff77fc5589e557":
-__thiscall void CrewMember::SetCloneReady(CrewMember *this, bool cloneReady);
+__thiscall void CrewMember::SetCloneReady(CrewMember* this, bool cloneReady);
 ".578d7c240883e4f0ff77fc5589e557":
-__thiscall void CrewMember::Kill(CrewMember *this, bool noClone);
+__thiscall void CrewMember::Kill(CrewMember* this, bool noClone);
 ".0fb681a00100005589e584c074??660fefc9":
-__thiscall bool CrewMember::NeedFrozenLocation(CrewMember *this);
+__thiscall bool CrewMember::NeedFrozenLocation(CrewMember* this);
 ".8b4424048b919c000000898160010000":
-__thiscall void CrewMember::SetCurrentShip(CrewMember *this, int shipId);
+__thiscall void CrewMember::SetCurrentShip(CrewMember* this, int shipId);
 ".8b818801000085c00f958199000000":
-__thiscall void CrewMember::CheckFighting(CrewMember *this);
+__thiscall void CrewMember::CheckFighting(CrewMember* this);
 ".8b4424043b05????????898140050000":
-__thiscall void CrewMember::SetDeathNumber(CrewMember *this, int deathNum);
+__thiscall void CrewMember::SetDeathNumber(CrewMember* this, int deathNum);
 ".8b44240488813d050000":
-__thiscall void CrewMember::ForceMindControl(CrewMember *this, bool force);
+__thiscall void CrewMember::ForceMindControl(CrewMember* this, bool force);
 ".578d7c240883e4f0ff77fc5589e557565383ec7c8b17":
-__thiscall void CrewMember::RenderSkillUpAnimation(CrewMember *this, Point pos);
+__thiscall void CrewMember::RenderSkillUpAnimation(CrewMember* this, Point position);
 ".578d7c240883e4f0ff77fc5589e5":
-__thiscall void CrewMember::Clone(CrewMember *this);
+__thiscall void CrewMember::Clone(CrewMember* this);
 ".578d7c240883e4f0ff77fc55":
-__thiscall void CrewMember::UpdateHealth(CrewMember *this);
+__thiscall void CrewMember::UpdateHealth(CrewMember* this);
 ".8b410485c00f85????????660fefc9f30f104108f30f1015????????":
-__thiscall void CrewMember::OnRenderPath(CrewMember *this);
+__thiscall void CrewMember::OnRenderPath(CrewMember* this);
 ".578d7c240883e4f0ff77fc5589e557565389cb":
-__thiscall bool CrewMember::SetPath(CrewMember *this, Path *path);
+__thiscall bool CrewMember::SetPath(CrewMember* this, Path* path);
 ".578d7c240883e4f0ff77fc5589e55756":
-__thiscall void CrewMember::SetRoomPath(CrewMember *this, int slotId, int roomId);
+__thiscall void CrewMember::SetRoomPath(CrewMember* this, int slotId, int roomId);
 ".578d7c240883e4f0ff77fc5589e5575389cb83ec30":
-__thiscall Point CrewMember::GetLocation(CrewMember *this);
+__thiscall Point CrewMember::GetLocation(CrewMember* this);
 ".f30f104918f30f101d????????f30f10410855f30f5cc1f30f1015????????":
-__thiscall bool CrewMember::AtGoal(CrewMember *this);
+__thiscall bool CrewMember::AtGoal(CrewMember* this);
 ".660fefc9f30f1015????????f30f10410831c055f30f2a899000000089e5":
-__thiscall bool CrewMember::AtFinalGoal(CrewMember *this);
+__thiscall bool CrewMember::AtFinalGoal(CrewMember* this);
 ".80b9fc0100000074??f3c3908d7426008b819c000000837838030f84????????57":
-__thiscall void CrewMember::OnRenderHealth(CrewMember *this);
+__thiscall void CrewMember::OnRenderHealth(CrewMember* this);
 ".31c080b9fc0100000075??f30f2c4128ba????????85c00f4ec2":
-__thiscall int CrewMember::GetIntegerHealth(CrewMember *this);
+__thiscall int CrewMember::GetIntegerHealth(CrewMember* this);
 ".8b496885c974??558b01":
-__thiscall int CrewMember::GetRepairingId(CrewMember *this);
+__thiscall int CrewMember::GetRepairingId(CrewMember* this);
 ".538b4424108b5c24088b54241485c078??85d278??":
-__thiscall bool CrewMember::WithinRect(CrewMember *this, int x, int y, int w, int h);
+__thiscall bool CrewMember::WithinRect(CrewMember* this, int x, int y, int w, int h);
 ".578d7c240883e4f0ff77fc5589e557":
-__thiscall std::string CrewMember::GetLongName(CrewMember *this);
+__thiscall std::string CrewMember::GetLongName(CrewMember* this);
 ".578d7c240883e4f0ff77fc5589e55756":
-__thiscall void CrewMember::SetName(CrewMember *this, TextString *name, bool force);
+__thiscall void CrewMember::SetName(CrewMember* this, TextString* name, bool force);
 ".578d7c240883e4f0ff77fc5589e5575389cb83ec10":
-__thiscall std::string CrewMember::GetName(CrewMember *this);
+__thiscall std::string CrewMember::GetName(CrewMember* this);
 ".5589e55756538b0189cb8b75088b7d0c83e4f08b40643d????????75??":
-__thiscall void CrewMember::SetCurrentTarget(CrewMember *this, CrewTarget *target, bool unk);
+__thiscall void CrewMember::SetCurrentTarget(CrewMember* this, CrewTarget* target, bool force);
 ".578d7c240883e4f0ff77fc5589e557565383ec1c":
-__thiscall void CrewMember::CheckForTeleport(CrewMember *this);
+__thiscall void CrewMember::CheckForTeleport(CrewMember* this);
 ".578d7c240883e4f0ff77fc5589e557565389cb83ec4c8b496485c974??e8????????f30f1005????????":
-__thiscall bool CrewMember::GetNewGoal(CrewMember *this);
+__thiscall bool CrewMember::GetNewGoal(CrewMember* this);
 ".578d7c240883e4f0ff77fc5589e55756":
-__thiscall bool CrewMember::MoveToRoom(CrewMember *this, int roomId, int slotId, bool forceMove);
+__thiscall bool CrewMember::MoveToRoom(CrewMember* this, int roomId, int slotId, bool forceMove);
 ".578d7c240883e4f0ff77fc5589e55753":
-__thiscall void CrewMember::SetMindControl(CrewMember *this, bool controlled);
+__thiscall void CrewMember::SetMindControl(CrewMember* this, bool controlled);
 ".578d7c240883e4f0ff77fc5589e557":
-__thiscall bool CrewMember::RestorePosition(CrewMember *this);
+__thiscall bool CrewMember::RestorePosition(CrewMember* this);
 ".f30f1005????????f30f594114f30f104908660fefd20f28d9f30f2a542404":
-__thiscall bool CrewMember::ContainsPoint(CrewMember *this, int x, int y);
+__thiscall bool CrewMember::ContainsPoint(CrewMember* this, int x, int y);
 ".5589e55389cb83e4f083ec108b11":
-__thiscall void CrewMember::SetMedbay(CrewMember *this, float health);
+__thiscall void CrewMember::SetMedbay(CrewMember* this, float health);
 ".578d7c240883e4f0ff77fc5589e557":
-__thiscall void CrewMember::StartTeleport(CrewMember *this);
+__thiscall void CrewMember::StartTeleport(CrewMember* this);
 ".578d7c240883e4f0ff77fc5589e55753":
-__thiscall void CrewMember::StartTeleportArrive(CrewMember *this);
+__thiscall void CrewMember::StartTeleportArrive(CrewMember* this);
 ".57660fefc98d7c240883e4f0ff77fc5589e5575383ec308b3ff30f2a8990000000":
-__thiscall void CrewMember::StartRepair(CrewMember *this, Repairable* toRepair);
+__thiscall void CrewMember::StartRepair(CrewMember* this, Repairable* toRepair);
 ".57660fefc98d7c240883e4f0ff77fc5589e557":
-__thiscall void CrewMember::UpdateRepair(CrewMember *this);
+__thiscall void CrewMember::UpdateRepair(CrewMember* this);
 ".8b819c0000008b403883f8060f84????????660fefc00f2e41280f83????????578d7c2408":
-__thiscall void CrewMember::UpdateMovement(CrewMember *this);
+__thiscall void CrewMember::UpdateMovement(CrewMember* this);
 ".578d7c240883e4f0ff77fc5589e55756":
-__thiscall void CrewMember::OnLoop(CrewMember *this);
+__thiscall void CrewMember::OnLoop(CrewMember* this);
 ".5589e556538b750889cb8b899c00000083e4f089f08881c4090000e8????????89f08883100300008d65f85b":
-__thiscall void CrewMember::SetSex(CrewMember *this, bool male);
+__thiscall void CrewMember::SetSex(CrewMember* this, bool male);
 ".578d7c240883e4f0ff77fc5589e55756":
-__thiscall void CrewMember::CycleColorLayer(CrewMember *this, int unk);
+__thiscall void CrewMember::CycleColorLayer(CrewMember* this, int dir);
 "8b018b80880000003d????????75??0fb681fc01000083f001c38db6000000005589e583e4f0ffd0c9":
-__thiscall bool CrewMember::Functional(CrewMember *this);
+__thiscall bool CrewMember::Functional(CrewMember* this);
 ".8b4424043941780f94c0":
-__thiscall bool CrewMember::InsideRoom(CrewMember *this, int roomId);
+__thiscall bool CrewMember::InsideRoom(CrewMember* this, int roomId);
 "8b410485c074??31c0c38db6000000008b015589e55389cb8b808800000083e4f0":
-__thiscall bool CrewMember::GetControllable(CrewMember *this);
+__thiscall bool CrewMember::GetControllable(CrewMember* this);
 ".8d510889c8c7410872657061c7410406000000c6410e008911ba????????6689510c":
-__thiscall std::string CrewMember::GetUniqueRepairing(CrewMember *this);
+__thiscall std::string CrewMember::GetUniqueRepairing(CrewMember* this);
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b1f898d18ffffffc70424????????e8????????83ec0480bbe4020000008d45d0":
-__thiscall std::string CrewMember::GetTooltip(CrewMember *this);
+__thiscall std::string CrewMember::GetTooltip(CrewMember* this);
 ".8d4c240483e4f0ff71fc5589e55756535181ec280100008b790c8b018b59048b710889bde0feffff":
 static cleanup __cdecl std::string CrewMember::GetSkillTooltip(int skillId, int skillLevel, std::pair<int,int> progress, bool infoScreen);
 "8b015589e55389cb8b808800000083e4f03d????????75??0fb681fc01000084c075??8b939c000000":
-__thiscall bool CrewMember::CountForVictory(CrewMember *this);
+__thiscall bool CrewMember::CountForVictory(CrewMember* this);
 
 
 struct CrewMember depends (CrewAnimation, CrewBlueprint, ShipObject)
@@ -226,11 +225,10 @@ struct CrewMember depends (CrewAnimation, CrewBlueprint, ShipObject)
 
 	}
 
-	CrewMember(CrewBlueprint& bp, int shipId, bool enemy, CrewAnimation *animation)
+	CrewMember(CrewBlueprint& blueprint, int shipId, bool intruder, CrewAnimation* animation)
 	{
-
-		this->constructor(bp, shipId, enemy, animation);
-	}
+		this->constructor(blueprint, shipId, intruder, animation);
+	}	
 	
 	ShipObject* GetShipObject()
 	{

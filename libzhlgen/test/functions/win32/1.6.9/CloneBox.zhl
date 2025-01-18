@@ -1,11 +1,11 @@
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b5f088b078b570489cfc744240c00000000898d3cfeffff895c2408":
-__thiscall void CloneBox::constructor(CloneBox *this, Point pos, CloneSystem* sys);
+__thiscall void CloneBox::constructor(CloneBox* this, Point _position, CloneSystem* _cloneSystem);
 
 
 struct CloneBox
 {{
-	CloneBox(Point pos, CloneSystem* sys)
+	CloneBox(Point position, CloneSystem* cloneSystem)
 	{
-		this->constructor(pos, sys);
+		this->constructor(position, cloneSystem);
 	}
 }};

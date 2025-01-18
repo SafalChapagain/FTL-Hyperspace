@@ -1,150 +1,149 @@
 "8b4c24048b4424088b54240c89415c":
-cleanup __cdecl void StarMap::SetPosition(StarMap *this, Point unk0);
+cleanup __cdecl void StarMap::SetPosition(StarMap* this, Point position);
 "56538b74240c80be8406000000":
-cleanup __cdecl void StarMap::KeyDown(StarMap *this, int unk0);
+cleanup __cdecl void StarMap::KeyDown(StarMap* this, SDLKey key);
 "5631c0538b54240c83ba800000003b":
-cleanup __cdecl int StarMap::GetNextDangerMove(StarMap *this);
+cleanup __cdecl int StarMap::GetNextDangerMove(StarMap* this);
 "5383ec188b5c2420807b040074??83c418":
-cleanup __cdecl void StarMap::Open(StarMap *this);
+cleanup __cdecl void StarMap::Open(StarMap* this);
 "565383ec248b74243080be3406000000":
-cleanup __cdecl void StarMap::Close(StarMap *this);
+cleanup __cdecl void StarMap::Close(StarMap* this);
 "8b442404807c2408008b1075??":
-cleanup __cdecl void StarMap::SetOpen(StarMap *this, bool unk0);
+cleanup __cdecl void StarMap::SetOpen(StarMap* this, bool open);
 "5589e557565381ec8c0000008b45088d75d88d5dcc":
-cleanup __cdecl void StarMap::InitMapTitle(StarMap *this);
+cleanup __cdecl void StarMap::InitMapTitle(StarMap* this);
 "5557565383ec5c8b6c24708d5c24408d7c243f8b8568040000":
-cleanup __cdecl void StarMap::InitNoFuelText(StarMap *this);
+cleanup __cdecl void StarMap::InitNoFuelText(StarMap* this);
 "5589e557565383ec3c8b5d088bb3cc050000":
-cleanup __cdecl void StarMap::InitBossMessageBox(StarMap *this);
+cleanup __cdecl void StarMap::InitBossMessageBox(StarMap* this);
 "5383ec188b5c2420891c24e8????????891c24e8????????895c2420":
-cleanup __cdecl void StarMap::OnLanguageChange(StarMap *this);
+cleanup __cdecl void StarMap::OnLanguageChange(StarMap* this);
 "83ec0c803d????????0075??e8????????89c1":
-cleanup __cdecl int StarMap::GetRandomSectorChoice(StarMap *this);
+cleanup __cdecl int StarMap::GetRandomSectorChoice(StarMap* this);
 "5631c0538b5c24108b4c240c85db":
-cleanup __cdecl void StarMap::NeighboringSector(StarMap *this, int unk0);
+cleanup __cdecl void StarMap::NeighboringSector(StarMap* this, int potentialSector);
 "5557565383ec2c8b6c24408b5424488b4424448b5c244c":
-cleanup __cdecl void StarMap::GetSelectedSector(StarMap *this, int unk0, int unk1, int unk2);
+cleanup __cdecl void StarMap::GetSelectedSector(StarMap* this, int mX, int mY, int maxDist);
 "5383ec288b4424308d5c241c8b9080060000":
-cleanup __cdecl void StarMap::StartSecretSector(StarMap *this);
+cleanup __cdecl void StarMap::StartSecretSector(StarMap* this);
 "5557565383ec5c8b7c24748b442474":
-cleanup __cdecl void StarMap::ReachSector(StarMap *this, Sector * unk0);
+cleanup __cdecl void StarMap::ReachSector(StarMap* this, Sector* sector);
 "5756538b7c24148b74241085ff":
-cleanup __cdecl void StarMap::UpdateSectorMap(StarMap *this, Sector * unk0);
+cleanup __cdecl void StarMap::UpdateSectorMap(StarMap* this, Sector* fakeCurrent);
 "5557565383ec3c8b6c24508b5c24548b857c060000":
-cleanup __cdecl void StarMap::SaveGame(StarMap *this, int file);
+cleanup __cdecl void StarMap::SaveGame(StarMap* this, int file);
 ".f3c38db426000000008dbc2700000000f3c38db4":
-cleanup __cdecl void StarMap::InitStatistics(StarMap *this);
+cleanup __cdecl void StarMap::InitStatistics(StarMap* this);
 ".f3c38db426000000008dbc2700000000f3c38db4":
-cleanup __cdecl void StarMap::PrintStatistics(StarMap *this);
+cleanup __cdecl void StarMap::PrintStatistics(StarMap* this);
 ".f3c38db426000000008dbc27000000008b442404":
-cleanup __cdecl void StarMap::AnalyzeMap(StarMap *this);
+cleanup __cdecl void StarMap::AnalyzeMap(StarMap* this);
 "8b4424048b542408019020040000":
-cleanup __cdecl void StarMap::ModifyPursuit(StarMap *this, int unk0);
+cleanup __cdecl void StarMap::ModifyPursuit(StarMap* this, int amount);
 "8b4424048b40500fb64014":
-cleanup __cdecl void StarMap::AtBeacon(StarMap *this);
+cleanup __cdecl void StarMap::AtBeacon(StarMap* this);
 "8b44240480787c00":
-cleanup __cdecl void StarMap::GetWaitLocation(StarMap *this);
+cleanup __cdecl void StarMap::GetWaitLocation(StarMap* this);
 "5631c0538b54240c8b8a18040000":
-cleanup __cdecl void StarMap::StartBeacon(StarMap *this);
+cleanup __cdecl void StarMap::StartBeacon(StarMap* this);
 "538b44240c8b5c24108b48088b500c":
-cleanup __cdecl bool StarMap::LocationsConnected(StarMap *this, Location * unk0, Location * unk1);
+cleanup __cdecl bool StarMap::LocationsConnected(StarMap* this, Location* location1, Location* location2);
 "5383ec18f30f1005????????f30f104c242c":
-cleanup __cdecl Point StarMap::PointToGrid(StarMap *this, float x, float y);
+cleanup __cdecl Point StarMap::PointToGrid(StarMap* this, float x, float y);
 "538b44240c8b54240880787c00":
-cleanup __cdecl void StarMap::TravelToLocation(StarMap *this, Location * unk0);
+cleanup __cdecl void StarMap::TravelToLocation(StarMap* this, Location* location);
 "8b4424048b4050c6401401":
-cleanup __cdecl void StarMap::ForceExitBeacon(StarMap *this);
+cleanup __cdecl void StarMap::ForceExitBeacon(StarMap* this);
 ".f3c38db426000000008dbc27000000005631c0":
-cleanup __cdecl void StarMap::OnRenderFogEffect(StarMap *this);
+cleanup __cdecl void StarMap::OnRenderFogEffect(StarMap* this);
 "5631c0538b54240c8b742410":
-cleanup __cdecl void StarMap::LocationHasBoss(StarMap *this, Location * unk0);
+cleanup __cdecl void StarMap::LocationHasBoss(StarMap* this, Location* location);
 "56538b5424108b4c240c8b422085c0":
-cleanup __cdecl void StarMap::LocationHasStore(StarMap *this, Location * unk0);
+cleanup __cdecl void StarMap::LocationHasStore(StarMap* this, Location* location);
 "8b4424088b402085c0":
-cleanup __cdecl void StarMap::LocationHasShip(StarMap *this, Location * unk0);
+cleanup __cdecl void StarMap::LocationHasShip(StarMap* this, Location* location);
 "5557565383ec5c8b7424708b8618040000":
-cleanup __cdecl void StarMap::AdvanceWorldLevel(StarMap *this);
+cleanup __cdecl void StarMap::AdvanceWorldLevel(StarMap* this);
 "56538b5c240c8b8bc4070000":
-cleanup __cdecl void StarMap::ReverseBossPath(StarMap *this);
+cleanup __cdecl void StarMap::ReverseBossPath(StarMap* this);
 "5756538b5c241080bbbc07000000":
-cleanup __cdecl void StarMap::ForceBossJump(StarMap *this);
+cleanup __cdecl void StarMap::ForceBossJump(StarMap* this);
 "565331db83ec148b7424208b56208b4624c686cc07000000":
-cleanup __cdecl void StarMap::ClearBoss(StarMap *this);
+cleanup __cdecl void StarMap::ClearBoss(StarMap* this);
 "8b5424088b4424048990f4080000":
-cleanup __cdecl void StarMap::SetBossStage(StarMap *this, int stage);
+cleanup __cdecl void StarMap::SetBossStage(StarMap* this, int stage);
 "8b54240431c083bab807000004":
-cleanup __cdecl void StarMap::CheckGameOver(StarMap *this);
+cleanup __cdecl void StarMap::CheckGameOver(StarMap* this);
 "5589e557565381eccc0000008b7508e8????????":
-cleanup __cdecl void StarMap::RenderLabels(StarMap *this);
+cleanup __cdecl void StarMap::RenderLabels(StarMap* this);
 "5557565383ec2c8b7424408bbee8080000":
-cleanup __cdecl void StarMap::DeleteMap(StarMap *this);
+cleanup __cdecl void StarMap::DeleteMap(StarMap* this);
 "5557565383ec2c8b5c244080bb3005000000":
-cleanup __cdecl void StarMap::MouseClick(StarMap *this, int unk0, int unk1);
+cleanup __cdecl void StarMap::MouseClick(StarMap* this, int mX, int mY);
 "5589e557565381ecdc0000008b75088b9ee4070000":
-cleanup __cdecl void StarMap::AddSectorColumn(StarMap *this);
+cleanup __cdecl void StarMap::AddSectorColumn(StarMap* this);
 "5557565331db83ec1c8b7c24308b8f74060000":
-cleanup __cdecl void StarMap::PushSectorColumn(StarMap *this);
+cleanup __cdecl void StarMap::PushSectorColumn(StarMap* this);
 "57565383ec108b7424208b442424":
-cleanup __cdecl void StarMap::SelectNewSector(StarMap *this, int unk0);
+cleanup __cdecl void StarMap::SelectNewSector(StarMap* this, int choice);
 "5589e557565381ecbc0000008b5d088b8b74060000":
-cleanup __cdecl void StarMap::GenerateSectorMap(StarMap *this);
+cleanup __cdecl void StarMap::GenerateSectorMap(StarMap* this);
 "5589e557565381ec7c0100008b7d088d9d28ffffff":
-cleanup __cdecl void StarMap::constructor(StarMap *this);
+cleanup __cdecl void StarMap::constructor(StarMap* this);
 "5589e557565381ec2c0100008b450c80787000":
-cleanup __cdecl void StarMap::RenderSectorName(StarMap *this, Sector * unk0, GL_Color unk1);
+cleanup __cdecl void StarMap::RenderSectorName(StarMap* this, Sector* sector, GL_Color color);
 "565383ec448b5c245080bb3406000000":
-cleanup __cdecl void StarMap::UpdateDangerZone(StarMap *this);
+cleanup __cdecl void StarMap::UpdateDangerZone(StarMap* this);
 "5731c0565383ec108b7c2420807f7c00":
-cleanup __cdecl Location* StarMap::GetNewLocation(StarMap *this);
+cleanup __cdecl Location* StarMap::GetNewLocation(StarMap* this);
 ".5589e557565383ec3c8b7d08807f0400":
-cleanup __cdecl void StarMap::OnLoop(StarMap *this);
+cleanup __cdecl void StarMap::OnLoop(StarMap* this);
 "5557565381ecdc0000008b8424f400000089442420":
-cleanup __cdecl void StarMap::GenerateEvents(StarMap *this, bool tutorial);
+cleanup __cdecl void StarMap::GenerateEvents(StarMap* this, bool tutorial);
 "5589e557565383ec5c8b7d088d870c090000":
-cleanup __cdecl void StarMap::AddConnections(StarMap *this, Location * unk0);
+cleanup __cdecl void StarMap::AddConnections(StarMap* this, Location* location);
 "5383ec188b5c24208b831009000089442404":
-cleanup __cdecl void StarMap::MapConnected(StarMap *this);
+cleanup __cdecl void StarMap::MapConnected(StarMap* this);
 "5589e557565383ec3c8b75088d45e48d7d0c":
-cleanup __cdecl void StarMap::ConnectLocations(StarMap *this, Point unk0, Point unk1);
+cleanup __cdecl void StarMap::ConnectLocations(StarMap* this, Point grid1, Point grid2);
 "5589e557565383ec6c8b5d088d4d0c":
-cleanup __cdecl void StarMap::PopulateGrid(StarMap *this, Point unk0);
+cleanup __cdecl void StarMap::PopulateGrid(StarMap* this, Point grid);
 "5589e557565383ec5c8b750c8b46048b3e":
-cleanup __cdecl Location *StarMap::PopClosestLoc(StarMap *this, std::vector<Location*>& vec, std::map<Location*, int>& map);
+cleanup __cdecl Location* StarMap::PopClosestLoc(StarMap* this, std::vector<Location*>& vec, std::map<Location*, int>& map);
 "5557565383ec6c0fb68424880000008bb42480000000":
-cleanup __cdecl bool StarMap::AddQuest(StarMap *this, const std::string& questEvent, bool force);
+cleanup __cdecl bool StarMap::AddQuest(StarMap* this, const std::string& questEvent, bool force);
 "5589e557565381ecfc0000008b5d0c807d1000":
-cleanup __cdecl Location* StarMap::GenerateMap(StarMap *this, bool tutorial, bool seed);
+cleanup __cdecl Location* StarMap::GenerateMap(StarMap* this, bool tutorial, bool seed);
 "5589e557565383ec6c8b7d088b450c8b8f64060000":
-cleanup __cdecl Location* StarMap::NewGame(StarMap *this, bool unk0);
+cleanup __cdecl Location* StarMap::NewGame(StarMap* this, bool tutorial);
 "5589e557565381ecdc0000008b45088b7518":
-cleanup __cdecl std::vector<Location*> StarMap::Dijkstra(StarMap *this, Location * start, Location * finish, bool include_unknown);
+cleanup __cdecl std::vector<Location*> StarMap::Dijkstra(StarMap* this, Location*  start, Location*  finish, bool include_unknown);
 "5589e557565381ec8c0000008b45088b5d0c8b7510":
-cleanup __cdecl void StarMap::MouseMove(StarMap *this, int x, int y);
+cleanup __cdecl void StarMap::MouseMove(StarMap* this, int x, int y);
 "5589e557565381ec8c0000008b750880be6006000000":
-cleanup __cdecl void StarMap::OnTouch(StarMap *this, TouchAction unk0, int unk1, int unk2, int unk3, int unk4, int unk5);
+cleanup __cdecl void StarMap::OnTouch(StarMap* this, TouchAction action, int id, int x, int y, int initialX, int initialY);
 "5589e557565381ecac0200008b450c8b5d08":
-cleanup __cdecl Location* StarMap::LoadGame(StarMap *this, int fileHelper);
+cleanup __cdecl Location* StarMap::LoadGame(StarMap* this, int fileHelper);
 "5589e5565383ec708b75148b5d08":
-cleanup __cdecl void StarMap::RenderLeftInsetButton(StarMap *this, float unk0, float unk1, bool unk2);
+cleanup __cdecl void StarMap::RenderLeftInsetButton(StarMap* this, float rightX, float y, bool isWait);
 "5589e557565381eccc0000008b5d088d45b7":
-cleanup __cdecl void StarMap::RenderDistressButtons(StarMap *this);
+cleanup __cdecl void StarMap::RenderDistressButtons(StarMap* this);
 "5589e55789c7565381ec7c01000080b88406000000":
-cleanup __regparm1 void StarMap::OnRender(StarMap *this);
+cleanup __regparm1 void StarMap::OnRender(StarMap* this);
 "5589e557565381ec9c0000008b450c8b5d148b50048b00":
-cleanup __cdecl void StarMap::DrawConnection(StarMap *this, const Pointf& pos1, const Pointf& pos2, const GL_Color* color);
+cleanup __cdecl void StarMap::DrawConnection(StarMap* this, const Pointf& position1, const Pointf& position2, const GL_Color* color);
 "5589e557565383ec5c8b5d0c8b4320":
-cleanup __cdecl void StarMap::TurnIntoFleetLocation(StarMap *this, Location *loc);
+cleanup __cdecl void StarMap::TurnIntoFleetLocation(StarMap* this, Location* loc);
 "5589e557565383ec3c8b45088b5d0c":
-cleanup __cdecl std::string StarMap::GetLocationText(StarMap *this, const Location* loc);
+cleanup __cdecl std::string StarMap::GetLocationText(StarMap* this, const Location* location);
 "5589e557565381ec9c0000008b7d08837d0cff":
-cleanup __cdecl void StarMap::SetupNoFuel(StarMap *this, int seed, const std::string& forceEscape);
+cleanup __cdecl void StarMap::SetupNoFuel(StarMap* this, int seed, const std::string& forceEscape);
 "5589e557565381ecbc0000008b450c8b5004":
-cleanup __cdecl void StarMap::GenerateNebulas(StarMap *this, const std::vector<std::string>& names);
+cleanup __cdecl void StarMap::GenerateNebulas(StarMap* this, const std::vector<std::string>& names);
 "5557565389c383ec2c8b80b40700008b93c0070000":
-cleanup __regparm1 void StarMap::UpdateBoss(StarMap *this);
+cleanup __regparm1 void StarMap::UpdateBoss(StarMap* this);
 
 
 struct StarMap
 {{
-	
 }};

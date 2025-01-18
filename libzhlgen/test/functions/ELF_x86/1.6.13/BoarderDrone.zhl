@@ -4,8 +4,8 @@ struct BoarderDrone
 	{
 	}
 
-	BoarderDrone(const std::string& _type, const std::string& _name, int _shipId, const DroneBlueprint* _blueprint, CrewAnimation *_anim)
+	BoarderDrone(const std::string& type, const std::string& name, int shipId, const DroneBlueprint* blueprint, CrewAnimation* anim)
 	{
-		this->constructor(_type, _name, _shipId, _blueprint, _anim);
+		this->constructor(type, name, shipId, blueprint, anim);
 	}
 }};

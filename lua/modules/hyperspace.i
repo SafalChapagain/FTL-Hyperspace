@@ -1199,8 +1199,8 @@ playerVariableType playerVariables;
 %rename("%s") OuterHull::breach;
 %rename("%s") OuterHull::heal;
 
-%nodefaultctors PowerManager;
-%nodefaultdtors PowerManager;
+%nodefaultctor PowerManager;
+%nodefaultdtor PowerManager;
 %rename("%s") PowerManager;
 %rename("%s") PowerManager::GetAvailablePower;
 %rename("%s") PowerManager::GetMaxPower;
@@ -1215,8 +1215,8 @@ playerVariableType playerVariables;
 %rename("%s") PowerManager::iHacked;
 %rename("%s") PowerManager::batteryPower;
 
-%nodefaultctors OxygenSystem;
-%nodefaultdtors OxygenSystem;
+%nodefaultctor OxygenSystem;
+%nodefaultdtor OxygenSystem;
 %rename("%s") OxygenSystem;
 %rename("%s") OxygenSystem::EmptyOxygen;
 %rename("%s") OxygenSystem::GetRefillSpeed;
@@ -1227,8 +1227,8 @@ playerVariableType playerVariables;
 %immutable OxygenSystem::bLeakingO2;
 %rename("%s") OxygenSystem::bLeakingO2;
 
-%nodefaultctors TeleportSystem;
-%nodefaultdtors TeleportSystem;
+%nodefaultctor TeleportSystem;
+%nodefaultdtor TeleportSystem;
 %rename("%s") TeleportSystem;
 %rename("%s") TeleportSystem::CanReceive;
 %rename("%s") TeleportSystem::CanSend;
@@ -1247,21 +1247,21 @@ playerVariableType playerVariables;
 %rename("%s") TeleportSystem::iNumSlots;
 %rename("%s") TeleportSystem::bSuperShields;
 
-%nodefaultctors CloakingSystem;
-%nodefaultdtors CloakingSystem;
+%nodefaultctor CloakingSystem;
+%nodefaultdtor CloakingSystem;
 %rename("%s") CloakingSystem;
 %rename("%s") CloakingSystem::bTurnedOn;
 %rename("%s") CloakingSystem::timer;
 %rename("%s") CloakingSystem::soundeffect;
 
-%nodefaultctors BatterySystem;
-%nodefaultdtors BatterySystem;
+%nodefaultctor BatterySystem;
+%nodefaultdtor BatterySystem;
 %rename("%s") BatterySystem;
 %rename("%s") BatterySystem::bTurnedOn;
 %rename("%s") BatterySystem::soundeffect;
 
-%nodefaultctors MindSystem;
-%nodefaultdtors MindSystem;
+%nodefaultctor MindSystem;
+%nodefaultdtor MindSystem;
 %rename("%s") MindSystem;
 %rename("%s") MindSystem::SetArmed;
 %rename("%s") MindSystem::controlTimer;
@@ -1274,8 +1274,8 @@ playerVariableType playerVariables;
 %rename("%s") MindSystem::iQueuedShip;
 %rename("%s") MindSystem::queuedCrew;
 
-%nodefaultctors CloneSystem;
-%nodefaultdtors CloneSystem;
+%nodefaultctor CloneSystem;
+%nodefaultdtor CloneSystem;
 %rename("%s") CloneSystem;
 %rename("%s") CloneSystem::fTimeToClone;
 %rename("%s") CloneSystem::clone;
@@ -1286,8 +1286,8 @@ playerVariableType playerVariables;
 %rename("%s") CloneSystem::top;
 %rename("%s") CloneSystem::gas;
 
-%nodefaultctors HackingSystem;
-%nodefaultdtors HackingSystem;
+%nodefaultctor HackingSystem;
+%nodefaultdtor HackingSystem;
 %rename("%s") HackingSystem;
 %rename("%s") HackingSystem::BlowHackingDrone;
 %rename("%s") HackingSystem::bHacking;
@@ -1300,20 +1300,20 @@ playerVariableType playerVariables;
 %rename("%s") HackingSystem::queuedSystem;
 %rename("%s") HackingSystem::spendDrone;
 
-%nodefaultctors Shields;
-%nodefaultdtors Shields;
+%nodefaultctor Shields;
+%nodefaultdtor Shields;
 %rename("%s") Shields;
 
-%nodefaultctors Shields::Shield;
-%nodefaultdtors Shields::Shield;
+%nodefaultctor Shields::Shield;
+%nodefaultdtor Shields::Shield;
 %rename("%s") Shields::Shield;
 %rename("%s") Shields::Shield::charger;
 %rename("%s") Shields::Shield::power;
 %rename("%s") Shields::Shield::superTimer;
 
 /*
-%nodefaultctors Shields::ShieldAnimation;
-%nodefaultdtors Shields::ShieldAnimation;
+%nodefaultctor Shields::ShieldAnimation;
+%nodefaultdtor Shields::ShieldAnimation;
 %rename("%s") Shields::ShieldAnimation;
 %rename("%s") Shields::ShieldAnimation::location;
 %rename("%s") Shields::ShieldAnimation::current_size;
@@ -1354,8 +1354,8 @@ playerVariableType playerVariables;
 %rename("%s") Shields::superUpLoc;
 %rename("%s") Shields::bExcessChargeHack;
 
-%nodefaultctors WeaponSystem;
-%nodefaultdtors WeaponSystem;
+%nodefaultctor WeaponSystem;
+%nodefaultdtor WeaponSystem;
 %rename("%s") WeaponSystem;
 %rename("%s") WeaponSystem::RemoveWeapon;
 %rename("%s") WeaponSystem::SetBonusPower;
@@ -1371,8 +1371,8 @@ playerVariableType playerVariables;
 %rename("%s") WeaponSystem::iStartingBatteryPower;
 %rename("%s") WeaponSystem::repowerList;
 
-%nodefaultctors DroneSystem;
-%nodefaultdtors DroneSystem;
+%nodefaultctor DroneSystem;
+%nodefaultdtor DroneSystem;
 %rename("%s") DroneSystem;
 %rename("%s") DroneSystem::DePowerDrone;
 %rename("%s") DroneSystem::RemoveDrone;
@@ -1393,15 +1393,15 @@ playerVariableType playerVariables;
 %nodefaultdtor MedbaySystem;
 %rename("%s") MedbaySystem;
 
-%nodefaultctors ArtillerySystem;
-%nodefaultdtors ArtillerySystem;
+%nodefaultctor ArtillerySystem;
+%nodefaultdtor ArtillerySystem;
 %rename("%s") ArtillerySystem;
 %rename("%s") ArtillerySystem::projectileFactory;
 %rename("%s") ArtillerySystem::target;
 %rename("%s") ArtillerySystem::bCloaked;
 
-//%nodefaultctors ShipSystem;
-//%nodefaultdtors ShipSystem;
+//%nodefaultctor ShipSystem;
+//%nodefaultdtor ShipSystem;
 %rename("%s") ShipSystem;
 %rename("%s") ShipSystem::SetSelected;
 %rename("%s") ShipSystem::GetSelected;
@@ -1534,8 +1534,8 @@ playerVariableType playerVariables;
 %rename("%s") ShipSystem_Extend;
 %rename("%s") ShipSystem_Extend::additionalPowerLoss;
 
-%nodefaultctors ProjectileFactory;
-%nodefaultdtors ProjectileFactory;
+%nodefaultctor ProjectileFactory;
+%nodefaultdtor ProjectileFactory;
 %rename("%s") ProjectileFactory;
 %rename("%s") ProjectileFactory::Fire;
 %rename("%s") ProjectileFactory::FireNextShot;
@@ -1583,8 +1583,8 @@ playerVariableType playerVariables;
 %rename("%s") ProjectileFactory::goalChargeLevel;
 %rename("%s") ProjectileFactory::isArtillery;
 
-%nodefaultctors WeaponMount;
-%nodefaultdtors WeaponMount;
+%nodefaultctor WeaponMount;
+%nodefaultdtor WeaponMount;
 %rename("%s") WeaponMount;
 %rename("%s") WeaponMount::position;
 %rename("%s") WeaponMount::mirror;
@@ -1592,13 +1592,13 @@ playerVariableType playerVariables;
 %rename("%s") WeaponMount::slide;
 %rename("%s") WeaponMount::gib;
 
-%nodefaultctors AnimationControl;
-%nodefaultdtors AnimationControl;
+%nodefaultctor AnimationControl;
+%nodefaultdtor AnimationControl;
 %rename("%s") AnimationControl;
 %rename("%s") AnimationControl::GetAnimation;
 
-%nodefaultctors AnimationDescriptor;
-%nodefaultdtors AnimationDescriptor;
+%nodefaultctor AnimationDescriptor;
+%nodefaultdtor AnimationDescriptor;
 %rename("%s") AnimationDescriptor;
 %rename("%s") AnimationDescriptor::numFrames;
 %rename("%s") AnimationDescriptor::imageWidth;
@@ -1608,8 +1608,8 @@ playerVariableType playerVariables;
 %rename("%s") AnimationDescriptor::frameWidth;
 %rename("%s") AnimationDescriptor::frameHeight;
 
-%nodefaultctors WeaponAnimation;
-%nodefaultdtors WeaponAnimation;
+%nodefaultctor WeaponAnimation;
+%nodefaultdtor WeaponAnimation;
 %rename("%s") WeaponAnimation;
 %rename("%s") WeaponAnimation::GetSlide;
 %rename("%s") WeaponAnimation::SetFireTime;
@@ -1645,8 +1645,8 @@ playerVariableType playerVariables;
 %rename("%s") WeaponAnimation::hackSparks;
 %rename("%s") WeaponAnimation::playerShip;
 
-%nodefaultctors Animation;
-%nodefaultdtors Animation;
+%nodefaultctor Animation;
+%nodefaultdtor Animation;
 %rename("%s") Animation;
 %rename("%s") Animation::AddSoundQueue;
 %rename("%s") Animation::Done;
@@ -1688,8 +1688,8 @@ playerVariableType playerVariables;
 %rename("%s") Ship::DoorStateType;
 %rename("%s") Ship::GetRoomCenter;
 /*
-%nodefaultctors Ship::DoorState;
-%nodefaultdtors Ship::DoorState;
+%nodefaultctor Ship::DoorState;
+%nodefaultdtor Ship::DoorState;
 %rename("%s") Ship::DoorState;
 %rename("%s") Ship::DoorState::state;
 %rename("%s") Ship::DoorState::hacked;
@@ -1882,13 +1882,13 @@ playerVariableType playerVariables;
 
 // TODO: Make most if not all of ShipBlueprint immutable
 // Note: Making ShipBlueprint immutable would make it more difficult to create custom blueprints on the fly
-//%nodefaultctors ShipBlueprint;
-//%nodefaultdtors ShipBlueprint;
+//%nodefaultctor ShipBlueprint;
+//%nodefaultdtor ShipBlueprint;
 %rename("%s") ShipBlueprint;
 %copyctor ShipBlueprint;
 
-//%nodefaultctors ShipBlueprint::SystemTemplate;
-//%nodefaultdtors ShipBlueprint::SystemTemplate;
+//%nodefaultctor ShipBlueprint::SystemTemplate;
+//%nodefaultdtor ShipBlueprint::SystemTemplate;
 %rename("%s") ShipBlueprint::SystemTemplate;
 %rename("%s") ShipBlueprint::SystemTemplate::systemId;
 %rename("%s") ShipBlueprint::SystemTemplate::powerLevel;
@@ -1982,8 +1982,8 @@ playerVariableType playerVariables;
 %rename("%s") CrewBlueprint::colorLayers;
 %rename("%s") CrewBlueprint::colorChoices;
 
-//%nodefaultctors Blueprint;
-//%nodefaultdtors Blueprint;
+//%nodefaultctor Blueprint;
+//%nodefaultdtor Blueprint;
 %rename("%s") Blueprint;
 %rename("%s") Blueprint::GetNameLong;
 %rename("%s") Blueprint::GetNameShort;
@@ -3371,13 +3371,13 @@ playerVariableType playerVariables;
 %rename("%s") TimerHelper::loop;
 %rename("%s") TimerHelper::running;
 
-%nodefaultctors SoundControl;
-%nodefaultdtors SoundControl;
+%nodefaultctor SoundControl;
+%nodefaultdtor SoundControl;
 %rename("%s") SoundControl;
 %rename("%s") SoundControl::PlaySoundMix;
 
-%nodefaultctors SettingValues;
-%nodefaultdtors SettingValues;
+%nodefaultctor SettingValues;
+%nodefaultdtor SettingValues;
 %rename("%s") SettingValues;
 %rename("%s") SettingValues::fullscreen;
 %immutable SettingValues::fullscreen;
@@ -3469,8 +3469,8 @@ playerVariableType playerVariables;
     })
 }
 
-%nodefaultctors ResourceControl;
-%nodefaultdtors ResourceControl;
+%nodefaultctor ResourceControl;
+%nodefaultdtor ResourceControl;
 %rename("%s") ResourceControl;
 /*
 %rename("%s") ResourceControl::ImageSwappingMode;

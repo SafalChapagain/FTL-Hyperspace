@@ -1,34 +1,34 @@
 "4157415641554989fd415455534883ec78488b8770190000":
-cleanup __amd64 void CommandGui::Victory(CommandGui *this);
+cleanup __amd64 void CommandGui::Victory(CommandGui* this);
 ".415455534889fb4883ec50":
-cleanup __amd64 void CommandGui::CheckGameover(CommandGui *this);
+cleanup __amd64 void CommandGui::CheckGameover(CommandGui* this);
 ".803d????????00756753":
-cleanup __amd64 bool CommandGui::IsGameOver(CommandGui *this);
+cleanup __amd64 bool CommandGui::IsGameOver(CommandGui* this);
 ".415455488daf90040000534889fb4889ef4881eca0000000":
-cleanup __amd64 void CommandGui::OnInit(CommandGui *this);
+cleanup __amd64 void CommandGui::OnInit(CommandGui* this);
 ".4154554889f5534889fb488dbf880500004883ec30":
-cleanup __amd64 void CommandGui::AddEnemyShip(CommandGui *this, CompleteShip *ship);
+cleanup __amd64 void CommandGui::AddEnemyShip(CommandGui* this, CompleteShip* ship);
 ".41544189d4554889fd534889f34883ec204889e7":
-cleanup __amd64 Point CommandGui::GetWorldCoordinates(CommandGui *this, Point point, bool fromTarget);
+cleanup __amd64 Point CommandGui::GetWorldCoordinates(CommandGui* this, Point point, bool fromTarget);
 ".415431d2554889f531f6534889fb4883ec30":
-cleanup __amd64 void CommandGui::RenderPlayerShip(CommandGui *this, Point &shipCenter, float jumpScale);
+cleanup __amd64 void CommandGui::RenderPlayerShip(CommandGui* this, Point& shipCenter, float jumpScale);
 ".4154555380bf????????004889fb":
-cleanup __amd64 void CommandGui::LButtonUp(CommandGui *this, int mX, int mY, bool shiftHeld);
+cleanup __amd64 void CommandGui::LButtonUp(CommandGui* this, int mX, int mY, bool shiftHeld);
 ".415741564155415455534889d34881ec58020000":
-cleanup __amd64 void CommandGui::NewLocation(CommandGui *this, const std::string& mainText, std::vector<ChoiceText> *choices, ResourceEvent& resources, bool testingEvents);
+cleanup __amd64 void CommandGui::NewLocation(CommandGui* this, const std::string& mainText, std::vector<ChoiceText>* choices, ResourceEvent& resources, bool testingEvents);
 ".4157415641554989fd41544989f45531ed5331db4883ec58488b06":
-cleanup __amd64 void CommandGui::RunCommand(CommandGui *this, std::string& command);
+cleanup __amd64 void CommandGui::RunCommand(CommandGui* this, std::string& command);
 ".41554189f5415455534889fbbf580600004c8da3????0000":
-cleanup __amd64 Store* CommandGui::CreateNewStore(CommandGui *this, int sectorNumber);
+cleanup __amd64 Store* CommandGui::CreateNewStore(CommandGui* this, int sectorNumber);
 ".415541545589f5534889fb4883ec38":
-cleanup __amd64 void CommandGui::KeyDown(CommandGui *this, SDLKey key, bool shiftHeld);
+cleanup __amd64 void CommandGui::KeyDown(CommandGui* this, SDLKey key, bool shiftHeld);
 ".41564155415455534889fb4883ec40":
-cleanup __amd64 void CommandGui::RenderStatic(CommandGui *this);
+cleanup __amd64 void CommandGui::RenderStatic(CommandGui* this);
 ".415541544189d45589f5534889fb4883ec28":
-cleanup __amd64 void CommandGui::LButtonDown(CommandGui *this, int mX, int mY, bool shiftHeld);
+cleanup __amd64 void CommandGui::LButtonDown(CommandGui* this, int mX, int mY, bool shiftHeld);
 ".41544189d45589f5534889fb4883ec50":
-cleanup __amd64 void CommandGui::MouseMove(CommandGui *this, int mX, int mY);
+cleanup __amd64 void CommandGui::MouseMove(CommandGui* this, int mX, int mY);
 ".41564155415455534889fb4883ec20":
-cleanup __amd64 void CommandGui::OnLoop(CommandGui *this);
+cleanup __amd64 void CommandGui::OnLoop(CommandGui* this);
 ".41574156415541545548c7c5ffffffff534889fb":
-cleanup __amd64 void CommandGui::constructor(CommandGui *this);
+cleanup __amd64 void CommandGui::constructor(CommandGui* this);

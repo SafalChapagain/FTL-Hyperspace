@@ -1,6 +1,6 @@
 "80bf60020000007507f3c3":
-cleanup __amd64 void HackingSystem::BlowHackingDrone(HackingSystem *this);
+cleanup __amd64 void HackingSystem::BlowHackingDrone(HackingSystem* this);
 "55534889fb4883ec38e8????????80bb7002000000":
-cleanup __amd64 void HackingSystem::OnLoop(HackingSystem *this);
+cleanup __amd64 void HackingSystem::OnLoop(HackingSystem* this);
 "5380bf44020000004889fb75??31c05bc30f1f8000000000e8????????83f8ff":
-cleanup __amd64 bool HackingSystem::SoundLoop(HackingSystem *this);
+cleanup __amd64 bool HackingSystem::SoundLoop(HackingSystem* this);

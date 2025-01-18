@@ -1,7 +1,7 @@
 "5589e557565381ec2c0200000fb64510":
-cleanup __cdecl void WeaponBox::RenderBox(WeaponBox *this, bool dragging, bool flashPowerBox);
+cleanup __cdecl void WeaponBox::RenderBox(WeaponBox* this, bool dragging, bool flashPowerBox);
 "5589e557565383ec2c8b750c8b5d088b06":
-cleanup __cdecl std::string WeaponBox::GenerateTooltip(WeaponBox *this);
+cleanup __cdecl std::string WeaponBox::GenerateTooltip(WeaponBox* this);
 
 
 struct WeaponBox

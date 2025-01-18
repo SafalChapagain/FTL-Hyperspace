@@ -1,2 +1,2 @@
 "538b57684889fb488b4738":
-cleanup __amd64 void TabbedWindow::Close(TabbedWindow *this);
+cleanup __amd64 void TabbedWindow::Close(TabbedWindow* this);

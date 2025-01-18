@@ -1,27 +1,27 @@
 "534889fb488bbf800000004885ff":
-cleanup __amd64 void CrewEquipBox::RemoveItem(CrewEquipBox *this);
+cleanup __amd64 void CrewEquipBox::RemoveItem(CrewEquipBox* this);
 ".0fb68730030000c6873003000000":
-cleanup __amd64 bool CrewEquipBox::GetConfirmDelete(CrewEquipBox *this);
+cleanup __amd64 bool CrewEquipBox::GetConfirmDelete(CrewEquipBox* this);
 ".80bfba020000007507":
-cleanup __amd64 void CrewEquipBox::CloseRename(CrewEquipBox *this);
+cleanup __amd64 void CrewEquipBox::CloseRename(CrewEquipBox* this);
 ".4154554889fd534883ec60488b47704885c0":
-cleanup __amd64 void CrewEquipBox::RenderLabels(CrewEquipBox *this, bool dragging, bool isNew);
+cleanup __amd64 void CrewEquipBox::RenderLabels(CrewEquipBox* this, bool dragging, bool isNew);
 ".55534889fb4883ec3848837f7000":
-cleanup __amd64 void CrewEquipBox::MouseClick(CrewEquipBox *this);
+cleanup __amd64 void CrewEquipBox::MouseClick(CrewEquipBox* this);
 ".5589f553488d9fc00200004883ec084889df":
-cleanup __amd64 void CrewEquipBox::OnTextInput(CrewEquipBox *this, SDLKey key);
+cleanup __amd64 void CrewEquipBox::OnTextInput(CrewEquipBox* this, SDLKey key);
 ".5589f553488d9fc00200004883ec084889df":
-cleanup __amd64 void CrewEquipBox::OnTextEvent(CrewEquipBox *this, CEvent::TextEvent event);
+cleanup __amd64 void CrewEquipBox::OnTextEvent(CrewEquipBox* this, CEvent::TextEvent event);
 ".415741564189ce41554989d5ba4300000041544989f449c1fc20":
-cleanup __amd64 void CrewEquipBox::constructor(CrewEquipBox *this, Point pos, ShipManager *ship, int slot);
+cleanup __amd64 void CrewEquipBox::constructor(CrewEquipBox* this, Point _position, ShipManager* _shipManager, int _slot);
 ".415541545589f5534889fb":
-cleanup __amd64 void CrewEquipBox::OnRender(CrewEquipBox *this, bool unk);
+cleanup __amd64 void CrewEquipBox::OnRender(CrewEquipBox* this, bool dragging);
 
 
 struct CrewEquipBox depends (TextInput)
 {{
-	CrewEquipBox(Point pos_, ShipManager *ship_, int slot_)
+	CrewEquipBox(Point position, ShipManager* shipManager, int slot)
 	{
-		this->constructor(pos_, ship_, slot_);
+		this->constructor(position, shipManager, slot);
 	}
 }};

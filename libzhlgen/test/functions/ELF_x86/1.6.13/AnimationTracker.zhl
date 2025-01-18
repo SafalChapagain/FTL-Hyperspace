@@ -1,19 +1,19 @@
 "5383ec188b5c2420807b10000f84????????807b08000f84????????f30f104b180f57c00f2ec80f87????????807b11000f84????????0f2e430c7a??8d760075??":
-cleanup __cdecl void AnimationTracker::Update(AnimationTracker *this);
+cleanup __cdecl void AnimationTracker::Update(AnimationTracker* this);
 "8b4424048b542408f30f1044240cc7401800000000885008f30f114014":
-cleanup __cdecl void AnimationTracker::SetLoop(AnimationTracker *this, bool loop, float loopDelay);
+cleanup __cdecl void AnimationTracker::SetLoop(AnimationTracker* this, bool loop, float loopDelay);
 "8b54????0f57c08b44????84d2c640100074??f30f10400cf30f11400c":
-cleanup __cdecl void AnimationTracker::Stop(AnimationTracker *this, bool resetTime);
+cleanup __cdecl void AnimationTracker::Stop(AnimationTracker* this, bool resetTime);
 "8b44????f30f1044????c6401200c6401001f30f11400cc6401100":
-cleanup __cdecl void AnimationTracker::Start(AnimationTracker *this, float time);
+cleanup __cdecl void AnimationTracker::Start(AnimationTracker* this, float time);
 "8b44????0f57c9f30f1044????0f2ec8c6401200c640100176??f30f104004f30f11400cc6401101":
-cleanup __cdecl void AnimationTracker::StartReverse(AnimationTracker *this, float time);
+cleanup __cdecl void AnimationTracker::StartReverse(AnimationTracker* this, float time);
 "83ec040f57c08b44????f30f104c????8078100074??0f2ec10f28d077??f30f10400cf30f5ec10f2ec2":
-cleanup __cdecl float AnimationTracker::Progress(AnimationTracker *this, float speed);
+cleanup __cdecl float AnimationTracker::Progress(AnimationTracker* this, float speed);
 "8b442404f30f104004f30f59442408f30f11400c":
-cleanup __cdecl void AnimationTracker::SetProgress(AnimationTracker *this, float time);
+cleanup __cdecl void AnimationTracker::SetProgress(AnimationTracker* this, float time);
 "83ec048b44????f30f1005????????f30f1015????????807c????00f30f594004f30f10480cf30f5cc80f28d80f54caf30f5cd90f28cbf30f5ec8":
-cleanup __cdecl float AnimationTracker::GetAlphaLevel(AnimationTracker *this, bool reverse);
+cleanup __cdecl float AnimationTracker::GetAlphaLevel(AnimationTracker* this, bool reverse);
 
 struct AnimationTracker 
 {{

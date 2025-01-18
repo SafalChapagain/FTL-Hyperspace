@@ -1,2 +1,2 @@
 "5589e55383ec348b5d08c70424????????":
-cleanup __cdecl void LockdownShard::Update(LockdownShard *this);
+cleanup __cdecl void LockdownShard::Update(LockdownShard* this);

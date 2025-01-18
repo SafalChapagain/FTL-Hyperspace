@@ -1,18 +1,18 @@
 "5557565383ec1cc70424200000008b5c2430e8????????89c78d400c89c1894424048d471039c1":
-cleanup __cdecl void AsteroidGenerator::constructor(AsteroidGenerator *this);
+cleanup __cdecl void AsteroidGenerator::constructor(AsteroidGenerator* this);
 ".5383ec188b4424288b5c24208b54242c89c1c1e91f89838c00000001c8d1f883f801":
-cleanup __cdecl float AsteroidGenerator::Initialize(AsteroidGenerator *this, int numberOfShips, int shieldCount, bool defense);
+cleanup __cdecl float AsteroidGenerator::Initialize(AsteroidGenerator* this, int numberOfShips, int shieldCount, bool defense);
 ".8b5424088b442404895070":
-cleanup __cdecl void AsteroidGenerator::SetNumShips(AsteroidGenerator *this, int ships);
+cleanup __cdecl void AsteroidGenerator::SetNumShips(AsteroidGenerator* this, int ships);
 ".5557565381ecbc0100008b9c24d00100008b43083943180f84????????8b08":
-cleanup __cdecl Projectile* AsteroidGenerator::GetNextAsteroid(AsteroidGenerator *this);
+cleanup __cdecl Projectile* AsteroidGenerator::GetNextAsteroid(AsteroidGenerator* this);
 ".5589e557565383ec3c8b5d0880bb880000000075??8d65f45b5e5f5d":
-cleanup __cdecl void AsteroidGenerator::OnLoop(AsteroidGenerator *this);
+cleanup __cdecl void AsteroidGenerator::OnLoop(AsteroidGenerator* this);
 ".5383ec188b5c24208b437485c074??c743740000000031c0":
-cleanup __cdecl void AsteroidGenerator::GetNextState(AsteroidGenerator *this);
+cleanup __cdecl void AsteroidGenerator::GetNextState(AsteroidGenerator* this);
 ".5383ec18c70424????????8b5c2420e8????????f30f108380000000":
-cleanup __cdecl void AsteroidGenerator::UpdateState(AsteroidGenerator *this);
+cleanup __cdecl void AsteroidGenerator::UpdateState(AsteroidGenerator* this);
 ".565383ec148b742420f30f1005????????8b5c2424f30f598680000000891c24f30f2cc0":
-cleanup __cdecl bool AsteroidGenerator::SaveAsteroids(AsteroidGenerator *this, void* file);
+cleanup __cdecl void AsteroidGenerator::SaveAsteroids(AsteroidGenerator* this, int fd);
 ".565383ec148b7424248b5c2420893424":
-cleanup __cdecl void AsteroidGenerator::LoadAsteroids(AsteroidGenerator *this, void* file);
+cleanup __cdecl void AsteroidGenerator::LoadAsteroids(AsteroidGenerator* this, int fd);

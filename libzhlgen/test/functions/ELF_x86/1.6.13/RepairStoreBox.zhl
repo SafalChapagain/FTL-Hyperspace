@@ -1,10 +1,11 @@
 "5589e557565383ec7c8b45108d75e08b5d08":
-cleanup __cdecl void RepairStoreBox::constructor(RepairStoreBox *this, ShipManager *ship, bool repairAll, int price);
+cleanup __cdecl void RepairStoreBox::constructor(RepairStoreBox* this, ShipManager* _ship, bool _repairAll, int _price);
+
 
 struct RepairStoreBox
 {{
-	RepairStoreBox(ShipManager *_ship, bool _repairAll, int _price)
+	RepairStoreBox(ShipManager* ship, bool repairAll, int price)
 	{
-		this->constructor(_ship, _repairAll, _price);
+		this->constructor(ship, repairAll, price);
 	}
 }};

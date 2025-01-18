@@ -1,4 +1,5 @@
-"554889e54156534889fbe8d1":
-cleanup __amd64 void CloakingSystem::OnLoop(CloakingSystem *this);
-"554889e54156534883ec204989fe498d":
-cleanup __amd64 void CloakingSystem::FiredWeapon(CloakingSystem *this);
+// Continue from CloakingBox::constructor (hyper efficiency™)
+".554889e54156534883ec204989fe498d":
+cleanup __amd64 void CloakingSystem::FiredWeapon(CloakingSystem* this);
+".554889e54156534889fbe8d1":
+cleanup __amd64 void CloakingSystem::OnLoop(CloakingSystem* this);

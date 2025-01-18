@@ -1,4 +1,4 @@
 "5589e55389cb83e4f0e8????????8b839c0000008378380374??80bbfc0100000075??c6835907000000c6835a07000000":
-__thiscall void EnergyAlien::OnLoop(EnergyAlien *this);
+__thiscall void EnergyAlien::OnLoop(EnergyAlien* this);
 "8b54240489c880ba590700000074??80ba5a0700000074??c700????????c7400400000000c7400800000000c7400c00000000c7401000000000c7401400000000c7401800000000c7401c00000000c6402000c74024ffffffffc74028ffffffffc6402c00c6402d00":
-__thiscall Damage EnergyAlien::GetRoomDamage(EnergyAlien *this);
+__thiscall Damage EnergyAlien::GetRoomDamage(EnergyAlien* this);

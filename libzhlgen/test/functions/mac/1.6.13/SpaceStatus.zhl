@@ -1,0 +1,9 @@
+// Continue from SpaceManager::AddShip (hyper efficiency™)
+".554889e5415741564154534883ec504889fb48899390000000":
+cleanup __amd64 void SpaceStatus::OnInit(SpaceStatus* this, SpaceManager* space, Point position);
+".554889e541574156534881ec9800000089f3":
+cleanup __amd64 void SpaceStatus::RenderWarningText(SpaceStatus* this, int effect, int textOffset);
+".554889e54157415641554154534883ec184889fb488b7b58e8":
+cleanup __amd64 void SpaceStatus::OnRender(SpaceStatus* this);
+".554889e541574156534881ec????????4189d6":
+cleanup __amd64 void SpaceStatus::MouseMove(SpaceStatus* this, int mX, int mY);

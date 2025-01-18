@@ -1,13 +1,13 @@
 "5557565381ec1c0100008bac24300100008b9c24340100008bb424380100008b84243c0100008bbc2440010000":
-cleanup __cdecl void CooldownSystemBox::constructor(CooldownSystemBox *this, Point pos, ShipSystem *sys, bool roundDown);
+cleanup __cdecl void CooldownSystemBox::constructor(CooldownSystemBox* this, Point _position, ShipSystem* _system, bool _roundDown);
 "5589e557565383ec5c8b5d080fb6450c":
-cleanup __cdecl void CooldownSystemBox::OnRender(CooldownSystemBox *this, bool ignoreStatus);
+cleanup __cdecl void CooldownSystemBox::OnRender(CooldownSystemBox* this, bool ignoreStatus);
 
 struct CooldownSystemBox
 {{
-	CooldownSystemBox(Point pos, ShipSystem *sys, bool roundDown)
+	CooldownSystemBox(Point position, ShipSystem* system, bool roundDown)
 	{
-		this->constructor(pos, sys, roundDown);
+		this->constructor(position, system, roundDown);
 	}
 	
 	CooldownSystemBox() { }

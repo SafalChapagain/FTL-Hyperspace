@@ -1,7 +1,7 @@
 "578d7c240883e4f0ff77fc5589e5575389cb83ec4080b9b00000000074??8d8b4c010000":
-__thiscall void LaserBlast::OnUpdate(LaserBlast *this);
+__thiscall void LaserBlast::OnUpdate(LaserBlast* this);
 "5589e5538b417489cbc7413801000000c741400100000083e4f0394170c7414400000000c74108040000007463":
-__thiscall void LaserBlast::OnInit(LaserBlast *this);
+__thiscall void LaserBlast::OnInit(LaserBlast* this);
 
 "!660fefc989c3660fefd28b45b48b5598f30f2a4da4f30f2a55ac8b480489542410897c240c894da88b4d9c894c24148b4da8894c240889d90f28d9660f7ed0660f7e1c2489442404e8????????89f0ba????????83ec18f7ea660fefc089d9c703(???????\?)c74304(???????\?)c783a002000000000000c783a402000000000000":
 void** VTable_LaserBlast;
@@ -10,5 +10,5 @@ void** VTable_Targetable_LaserBlast;
 
 struct LaserBlast
 {{
-	LaserBlast(Pointf _position, int _ownerId, int _targetId, Pointf _target);
+	LaserBlast(Pointf position, int ownerId, int targetId, Pointf target);
 }};

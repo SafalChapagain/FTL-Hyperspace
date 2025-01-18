@@ -1,4 +1,4 @@
 "8079100075??c208008db426000000008b01c64110008b40103d????????75??c6410400c2080089f68dbc27000000005589e5":
-__thiscall void FocusWindow::MouseClick(FocusWindow *this, int x, int y);
+__thiscall void FocusWindow::MouseClick(FocusWindow* this, int x, int y);
 "578d7c240883e4f0ff77fc5589e5575383ec108b41088b1f8b7f0483f8ff":
-__thiscall void FocusWindow::MouseMove(FocusWindow *this, int x, int y);
+__thiscall void FocusWindow::MouseMove(FocusWindow* this, int x, int y);

@@ -1,10 +1,10 @@
 "5557565383ec6c8bbc2480000000":
-cleanup __cdecl void CloakingBox::constructor(CloakingBox *this, Point pos, CloakingSystem* sys);
+cleanup __cdecl void CloakingBox::constructor(CloakingBox* this, Point _position, CloakingSystem* _system);
 
 struct CloakingBox
 {{
-	CloakingBox(Point pos, CloakingSystem* sys)
+	CloakingBox(Point position, CloakingSystem* system)
 	{
-		this->constructor(pos, sys);
+		this->constructor(position, system);
 	}
 }};

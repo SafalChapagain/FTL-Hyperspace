@@ -1,8 +1,8 @@
 "5589e557565383ec7c8b7508e8????????c70424????????":
-cleanup __cdecl void CreditScreen::OnRender(CreditScreen *this);
+cleanup __cdecl void CreditScreen::OnRender(CreditScreen* this);
 "8b442404c74008????????c7400c????????":
-cleanup __cdecl void CreditScreen::constructor(CreditScreen *this);
+cleanup __cdecl void CreditScreen::constructor(CreditScreen* this);
 "5589e557565381ec0c0100008b5d08":
-cleanup __cdecl void CreditScreen::Start(CreditScreen *this, const std::string& shipName, const std::vector<std::string>& crewNames);
+cleanup __cdecl void CreditScreen::Start(CreditScreen* this, const std::string& shipName, const std::vector<std::string>& crewNames);
 "53baabaaaaaa83ec188b5c24208b431c2b4318":
-cleanup __cdecl bool CreditScreen::Done(CreditScreen *this);
+cleanup __cdecl bool CreditScreen::Done(CreditScreen* this);

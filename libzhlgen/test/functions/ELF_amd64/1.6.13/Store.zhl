@@ -1,47 +1,51 @@
 "5383bf2c060000024889fb":
-cleanup __amd64 bool Store::KeyDown(Store *this, SDLKey key);
+cleanup __amd64 bool Store::KeyDown(Store* this, SDLKey key);
 ".5531c94889fd5331db4883ec08488b9778040000":
-cleanup __amd64 void Store::OnLoop(Store *this);
+cleanup __amd64 void Store::OnLoop(Store* this);
 "!.534889fbc6470800488bbf48060000":
-cleanup __amd64 void Store::Close(Store *this);
+cleanup __amd64 void Store::Close(Store* this);
 ".415455534889fb488d6b284c8d63684883ec10":
-cleanup __amd64 void Store::constructor(Store *this);
+cleanup __amd64 void Store::constructor(Store* this);
 ".41574156415541545589f5534889fb4883ec18":
-cleanup __amd64 void Store::SaveStore(Store *this, int file);
+cleanup __amd64 void Store::SaveStore(Store* this, int file);
 ".41554989fd4531c041544989d4554889f55331db4883ec08":
-cleanup __amd64 void Store::RelinkShip(Store *this, ShipManager *ship, Equipment *equip);
+cleanup __amd64 void Store::RelinkShip(Store* this, ShipManager* ship, Equipment* equip);
 ".39b730060000":
-cleanup __amd64 bool Store::HasType(Store *this, int type);
+cleanup __amd64 bool Store::HasType(Store* this, int type);
 ".554889fd534883ec08488bb780040000":
-cleanup __amd64 void Store::Clear(Store *this);
+cleanup __amd64 void Store::Clear(Store* this);
 ".554863ee":
-cleanup __amd64 void Store::InitHeading(Store *this, int index, Point pos);
+cleanup __amd64 void Store::InitHeading(Store* this, int index, Point position);
 ".55be????????534883ec58488d54241f488d7c2440":
 static cleanup __amd64 void Store::DrawBuySellTabText();
 ".4157ba2a000000bec60000004156415541545531ed534889fb4883ec78":
-cleanup __amd64 void Store::SetPositions(Store *this);
+cleanup __amd64 void Store::SetPositions(Store* this);
 ".4157415641554189f5415455534889fb4883ec68":
-cleanup __amd64 void Store::LoadStore(Store *this, int file, int worldLevel);
+cleanup __amd64 void Store::LoadStore(Store* this, int file, int worldLevel);
 "!.534889fb":
-cleanup __amd64 void Store::SetPosition(Store *this, Point pos);
+cleanup __amd64 void Store::SetPosition(Store* this, Point position);
 ".4157415641554189f541544989fc55534881ec88000000":
-cleanup __amd64 void Store::CreateStoreBoxes(Store *this, int type, Equipment *equip);
+cleanup __amd64 void Store::CreateStoreBoxes(Store* this, int type, Equipment* equip);
 "!.415641554989d541544189cc554889f553":
-cleanup __amd64 void Store::OnInit(Store *this, ShipManager *shopper, Equipment *equip, int worldLevel);
+cleanup __amd64 void Store::OnInit(Store* this, ShipManager* shopper, Equipment* equip, int worldLevel);
 ".415741564189d641554189f5415455534889fb4883ec78":
-cleanup __amd64 void Store::MouseMove(Store *this, int x, int y);
+cleanup __amd64 void Store::MouseMove(Store* this, int x, int y);
 ".41564189d641554189f5415455534889fb4883ec40":
-cleanup __amd64 void Store::MouseClick(Store *this, int x, int y);
+cleanup __amd64 void Store::MouseClick(Store* this, int x, int y);
 ".415741564989fe4155415455534881ecd8010000":
-cleanup __amd64 void Store::OnRender(Store *this);
+cleanup __amd64 void Store::OnRender(Store* this);
 ".415531c94154554889fd5331db4883ec18":
-cleanup __amd64 void Store::destructor(Store *this);
+cleanup __amd64 void Store::destructor(Store* this);
 
 
-struct Store
 {{
 	Store()
 	{
 		this->constructor();
+	}
+
+	~Store()
+	{
+		this->destructor();
 	}
 }};

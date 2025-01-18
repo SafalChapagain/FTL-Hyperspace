@@ -1,28 +1,37 @@
 "578d7c240883e4f0ff77fc5589e557565389cb83ec1c8b3783fe01":
-__thiscall void TeleportSystem::SetHackingLevel(TeleportSystem *this, int hackingLevel);
+__thiscall void TeleportSystem::SetHackingLevel(TeleportSystem* this, int hackingLevel);
 "578d7c240883e4f0ff77fc5589e557565389cf83ec7c803d??????????0f84????????803d??????????0f84????????":
-__thiscall void TeleportSystem::OnRenderFloor(TeleportSystem *this);
+__thiscall void TeleportSystem::OnRenderFloor(TeleportSystem* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec1c8b77048b57088b078b4f0c8954240889742404894c240c890424":
-__thiscall void TeleportSystem::constructor(TeleportSystem *this, int systemId, int roomId, int shipId, int startingPower);
+__thiscall void TeleportSystem::constructor(TeleportSystem* this, int _systemId, int _roomId, int _shipId, int _startingPower);
 ".83ec04f30f1081c0010000f30f5e05????????f30f110424d9042483c404":
-__thiscall float TeleportSystem::GetChargedPercent(TeleportSystem *this);
+__thiscall float TeleportSystem::GetChargedPercent(TeleportSystem* this);
 ".5589e55389cb83e4f0e8????????31d284c075??8b03":
-__thiscall bool TeleportSystem::Charged(TeleportSystem *this);
+__thiscall bool TeleportSystem::Charged(TeleportSystem* this);
 "5589e557565383e4f083ec208b99e4010000c781e001000000000000894c241c8d7b1f89fec1ee05c1e602893424e8????????":
-__thiscall void TeleportSystem::ClearCrewLocations(TeleportSystem *this);
+__thiscall void TeleportSystem::ClearCrewLocations(TeleportSystem* this);
 ".5389ca8b4c24088b82cc01000089cbc1eb058d1c98b8????????d3e08b0b85c1":
-__thiscall void TeleportSystem::UpdateCrewLocation(TeleportSystem *this, int unk);
+__thiscall void TeleportSystem::UpdateCrewLocation(TeleportSystem* this, int slotId);
 ".578d7c240883e4f0ff77fc5589e557565389cb83ec3c8b07":
-__thiscall void TeleportSystem::SetArmed(TeleportSystem *this, int armed);
+__thiscall void TeleportSystem::SetArmed(TeleportSystem* this, int armed);
 ".578d7c240883e4f0ff77fc5589e55783ec14c781c00100000000c842c70424????????e8????????8b7dfc":
-__thiscall void TeleportSystem::ForceReady(TeleportSystem *this);
+__thiscall void TeleportSystem::ForceReady(TeleportSystem* this);
 ".578d7c240883e4f0ff77fc5589e557565389cb83ec3c8b490c85c975??80bbc401000000":
-__thiscall bool TeleportSystem::CanSend(TeleportSystem *this);
+__thiscall bool TeleportSystem::CanSend(TeleportSystem* this);
 ".5589e556538b750883e4f080b9c50100000075??8b410c85c074??8b0189cbff502c84c0":
-__thiscall bool TeleportSystem::CanReceive(TeleportSystem *this);
+__thiscall bool TeleportSystem::CanReceive(TeleportSystem* this);
 ".578d7c240883e4f0ff77fc5589e5575389cb83ec30e8????????83e80131d283f80277??":
-__thiscall void TeleportSystem::InitiateTeleport(TeleportSystem *this);
+__thiscall void TeleportSystem::InitiateTeleport(TeleportSystem* this);
 ".578d7c240883e4f0ff77fc5589e557565389cb83ec4ce8????????8b0389d9":
-__thiscall void TeleportSystem::OnLoop(TeleportSystem *this);
+__thiscall void TeleportSystem::OnLoop(TeleportSystem* this);
 ".5589e55389cb83e4f0e8????????c783c0010000000000008b5dfc":
-__thiscall void TeleportSystem::Jump(TeleportSystem *this);
+__thiscall void TeleportSystem::Jump(TeleportSystem* this);
+
+
+struct TeleportSystem
+{{
+    TeleportSystem(int systemId, int roomId, int shipId, int startingPower)
+    {
+        this->constructor(systemId, roomId, shipId, startingPower);
+    }
+}};

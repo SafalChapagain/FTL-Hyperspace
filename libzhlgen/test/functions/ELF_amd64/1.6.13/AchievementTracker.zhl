@@ -1,35 +1,35 @@
 "4157be????????41564989fe4155415455534881ece8020100":
-cleanup __amd64 void AchievementTracker::LoadAchievementDescriptions(AchievementTracker *this);
+cleanup __amd64 void AchievementTracker::LoadAchievementDescriptions(AchievementTracker* this);
 "4157b90200000041564989d631d241554989fd":
-cleanup __amd64 std::vector<CAchievement*> AchievementTracker::GetShipAchievements(AchievementTracker *this, const std::string& ship);
+cleanup __amd64 std::vector<CAchievement*> AchievementTracker::GetShipAchievements(AchievementTracker* this, const std::string& ship);
 ".41574863c64189f7":
-cleanup __amd64 void AchievementTracker::CheckShipAchievements(AchievementTracker *this, int shipId, bool hidePopups);
+cleanup __amd64 void AchievementTracker::CheckShipAchievements(AchievementTracker* this, int shipId, bool hidePopups);
 "415741564531f6415541545531ed534889fb4883ec68":
-cleanup __amd64 void AchievementTracker::SetAchievement(AchievementTracker *this, const std::string& achievement, bool noPopup, bool sendToServer);
+cleanup __amd64 void AchievementTracker::SetAchievement(AchievementTracker* this, const std::string& achievement, bool noPopup, bool sendToServer);
 "83fa0274434863f6488b4f184863d2":
-cleanup __amd64 void AchievementTracker::UnlockShip(AchievementTracker *this, int shipId, int shipType);
+cleanup __amd64 void AchievementTracker::UnlockShip(AchievementTracker* this, int shipId, int shipType);
 "4157be????????415641554154554889fd534883ec68488d542430":
-cleanup __amd64 void AchievementTracker::SetSectorEight(AchievementTracker *this);
+cleanup __amd64 void AchievementTracker::SetSectorEight(AchievementTracker* this);
 "4157415641554989f541544989d455534883ec28488b3a":
-cleanup __amd64 int AchievementTracker::GetShipMarker(AchievementTracker *this, const std::string& baseName, const std::string& thisName);
+cleanup __amd64 int AchievementTracker::GetShipMarker(AchievementTracker* this, const std::string& baseName, const std::string& thisName);
 "4157488d4f50488d4748415641554154554889fd4889c7534889cb4883ec38":
-cleanup __amd64 void AchievementTracker::SetFlag(AchievementTracker *this, const std::string& flagName);
+cleanup __amd64 void AchievementTracker::SetFlag(AchievementTracker* this, const std::string& flagName);
 "4157488d47484989f7415641554154554889fd4889c7534883ec38":
 noHook __amd64 void AchievementTracker::DO_NOT_HOOK_1();
 ".4157488d47484989f7415641554154554889fd4889c7534883ec38":
-cleanup __amd64 bool AchievementTracker::GetFlag(AchievementTracker *this, const std::string& flagName);
+cleanup __amd64 bool AchievementTracker::GetFlag(AchievementTracker* this, const std::string& flagName);
 "41564989fe415541544189f45553488b7f30":
-cleanup __amd64 void AchievementTracker::SaveProfile(AchievementTracker *this, int file);
+cleanup __amd64 void AchievementTracker::SaveProfile(AchievementTracker* this, int file);
 "41574989ff89f741564189d6415541544531e45589f5534883ec48":
-cleanup __amd64 void AchievementTracker::LoadProfile(AchievementTracker *this, int file, int version);
+cleanup __amd64 void AchievementTracker::LoadProfile(AchievementTracker* this, int file, int version);
 "554889fd53488d9fc00000004883ec38":
-cleanup __amd64 void AchievementTracker::SetVictoryAchievement(AchievementTracker *this);
+cleanup __amd64 void AchievementTracker::SetVictoryAchievement(AchievementTracker* this);
 "415741564989fe4155415455534881ecb8000000488b7738":
-cleanup __amd64 void AchievementTracker::OnLanguageChange(AchievementTracker *this);
+cleanup __amd64 void AchievementTracker::OnLanguageChange(AchievementTracker* this);
 "41574156415541544989f455534881ec48010000":
-cleanup __amd64 void AchievementTracker::SetTooltip(AchievementTracker *this, CAchievement *ach);
+cleanup __amd64 void AchievementTracker::SetTooltip(AchievementTracker* this, CAchievement* ach);
 "53488b77584889fb488d7f48":
-cleanup __amd64 void AchievementTracker::ResetFlags(AchievementTracker *this);
+cleanup __amd64 void AchievementTracker::ResetFlags(AchievementTracker* this);
 
 
 "!488d742420bf(???????\?)e8????????488b5424208b44240c":

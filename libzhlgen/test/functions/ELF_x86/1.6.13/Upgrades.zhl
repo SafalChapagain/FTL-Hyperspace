@@ -1,18 +1,18 @@
 "5557565381eccc0000008b9c24e00000008db424a0000000":
-cleanup __cdecl void Upgrades::OnInit(Upgrades *this, ShipManager *ship);
+cleanup __cdecl void Upgrades::OnInit(Upgrades* this, ShipManager* ship);
 "5557565383ec2c8b5c24408b4b248b532089c829d083f803":
-cleanup __cdecl void Upgrades::ClearUpgradeBoxes(Upgrades *this);
+cleanup __cdecl void Upgrades::ClearUpgradeBoxes(Upgrades* this);
 "5557565331db83ec1c8b6c24308b7424348b7c2438892c24":
-cleanup __cdecl void Upgrades::MouseMove(Upgrades *this, int mX, int mY);
+cleanup __cdecl void Upgrades::MouseMove(Upgrades* this, int mX, int mY);
 "5589e557565383ec6c8b7d08807f0400":
-cleanup __cdecl void Upgrades::OnLoop(Upgrades *this);
+cleanup __cdecl void Upgrades::OnLoop(Upgrades* this);
 "5589e557565331db83ec3c8b75088b450c8b7d10":
-cleanup __cdecl void Upgrades::MouseClick(Upgrades *this, int mX, int mY);
+cleanup __cdecl void Upgrades::MouseClick(Upgrades* this, int mX, int mY);
 "55575631f65383ec2c8b7c24408b6f24":
-cleanup __cdecl void Upgrades::MouseRightClick(Upgrades *this, int mX, int mY);
+cleanup __cdecl void Upgrades::MouseRightClick(Upgrades* this, int mX, int mY);
 ".5589e557565383ec3c8b7d08807f0400":
-cleanup __cdecl void Upgrades::Close(Upgrades *this);
+cleanup __cdecl void Upgrades::Close(Upgrades* this);
 "5589e557565383ec7c8b5d080f2805????????":
-cleanup __cdecl void Upgrades::OnRender(Upgrades *this);
+cleanup __cdecl void Upgrades::OnRender(Upgrades* this);
 "5589e5575631f65383ec3c8b7d088b4f248b4720":
-cleanup __cdecl void Upgrades::ConfirmUpgrades(Upgrades *this);
+cleanup __cdecl void Upgrades::ConfirmUpgrades(Upgrades* this);

@@ -1,28 +1,37 @@
 "565383ec148b7424248b5c242083fe017e??83bb80010000017e??89b38001000083c4145b5ec3??c783980100000000c842":
-cleanup __cdecl void TeleportSystem::SetHackingLevel(TeleportSystem *this, int hackingLevel);
+cleanup __cdecl void TeleportSystem::SetHackingLevel(TeleportSystem* this, int hackingLevel);
 ".5557565383ec6c":
-cleanup __cdecl void TeleportSystem::OnRenderFloor(TeleportSystem *this);
+cleanup __cdecl void TeleportSystem::OnRenderFloor(TeleportSystem* this);
 "565383ec248b4424408b5c24308b74243889442410":
-cleanup __cdecl void TeleportSystem::constructor(TeleportSystem *this, int systemId, int roomId, int shipId, int startingPower);
+cleanup __cdecl void TeleportSystem::constructor(TeleportSystem* this, int _systemId, int _roomId, int _shipId, int _startingPower);
 "83ec048b442408f30f108098010000":
-cleanup __cdecl float TeleportSystem::GetChargedPercent(TeleportSystem *this);
+cleanup __cdecl float TeleportSystem::GetChargedPercent(TeleportSystem* this);
 ".5383ec188b5c2420891c24e8????????84c0":
-cleanup __cdecl bool TeleportSystem::Charged(TeleportSystem *this);
+cleanup __cdecl bool TeleportSystem::Charged(TeleportSystem* this);
 "5557565383ec1c8b5c24308bbbbc010000c783b801000000000000":
-cleanup __cdecl void TeleportSystem::ClearCrewLocations(TeleportSystem *this);
+cleanup __cdecl void TeleportSystem::ClearCrewLocations(TeleportSystem* this);
 "538b5424088b4c240c8b82a4010000":
-cleanup __cdecl void TeleportSystem::UpdateCrewLocation(TeleportSystem *this, int unk);
+cleanup __cdecl void TeleportSystem::UpdateCrewLocation(TeleportSystem* this, int slotId);
 ".57565383ec208b4424348b5c243083f801":
-cleanup __cdecl void TeleportSystem::SetArmed(TeleportSystem *this, int armed);
+cleanup __cdecl void TeleportSystem::SetArmed(TeleportSystem* this, int armed);
 "83ec1c8b442420c780980100000000c842":
-cleanup __cdecl void TeleportSystem::ForceReady(TeleportSystem *this);
+cleanup __cdecl void TeleportSystem::ForceReady(TeleportSystem* this);
 "57565383ec208b5c24308b4b0c":
-cleanup __cdecl bool TeleportSystem::CanSend(TeleportSystem *this);
+cleanup __cdecl bool TeleportSystem::CanSend(TeleportSystem* this);
 "565383ec148b5c24208b74242480bb9d01000000":
-cleanup __cdecl bool TeleportSystem::CanReceive(TeleportSystem *this);
+cleanup __cdecl bool TeleportSystem::CanReceive(TeleportSystem* this);
 "5383ec288b5c2430891c24":
-cleanup __cdecl void TeleportSystem::InitiateTeleport(TeleportSystem *this);
+cleanup __cdecl void TeleportSystem::InitiateTeleport(TeleportSystem* this);
 "57565383ec308b5c2440891c24e8????????8b03891c24ff502c84c0":
-cleanup __cdecl void TeleportSystem::OnLoop(TeleportSystem *this);
+cleanup __cdecl void TeleportSystem::OnLoop(TeleportSystem* this);
 "5383ec188b5c2420891c24e8????????c7839801000000000000":
-cleanup __cdecl void TeleportSystem::Jump(TeleportSystem *this);
+cleanup __cdecl void TeleportSystem::Jump(TeleportSystem* this);
+
+
+struct TeleportSystem
+{{
+    TeleportSystem(int systemId, int roomId, int shipId, int startingPower)
+    {
+        this->constructor(systemId, roomId, shipId, startingPower);
+    }
+}};

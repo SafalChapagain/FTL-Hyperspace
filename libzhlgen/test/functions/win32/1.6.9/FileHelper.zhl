@@ -37,7 +37,7 @@ static cleanup __cdecl float FileHelper::readFloat(int file);
 ".8d4c240483e4f0ff71fc5589e55756535183ec48":
 static cleanup __cdecl int FileHelper::readInteger(int file);
 ".8d4c240483e4f0ff71fc5589e5535183ec10":
-static cleanup __cdecl bool FileHelper::seekPosition(int file, int pos);
+static cleanup __cdecl bool FileHelper::seekPosition(int file, int position);
 ".8d4c240483e4f0ff71fc5589e55756":
 static cleanup __cdecl char* FileHelper::readBuffer(int file, int len, bool nullTerminate);
 ".8d4c240483e4f0ff71fc5589e557565351":

@@ -1,24 +1,24 @@
 "534889fb4883ec30e8????????f30f100d":
-cleanup __amd64 void Shields::Jump(Shields *this);
+cleanup __amd64 void Shields::Jump(Shields* this);
 ".41564155415455534889fb4c8d6b104883ec30":
-cleanup __amd64 void Shields::OnLoop(Shields *this);
+cleanup __amd64 void Shields::OnLoop(Shields* this);
 ".4154554c89c54189c889d189f231f6534889fb4883ec40":
-cleanup __amd64 void Shields::constructor(Shields *this, int roomId, int shipId, int startingPower, const std::string& shieldFile);
+cleanup __amd64 void Shields::constructor(Shields* this, int _roomId, int _shipId, int _startingPower, const std::string& _shieldFile);
 ".55ba050000004889f5534889fb4883ec08":
-cleanup __amd64 void Shields::AddSuperShield(Shields *this, Point pos);
+cleanup __amd64 void Shields::AddSuperShield(Shields* this, Point position);
 ".660fd64424f8488b4424f84889b750020000":
-cleanup __amd64 void Shields::SetBaseEllipse(Shields *this, Globals::Ellipse ellipse);
+cleanup __amd64 void Shields::SetBaseEllipse(Shields* this, Globals::Ellipse ellipse);
 ".55534889fb488dabd00200004883ec38":
-cleanup __amd64 void Shields::InstantCharge(Shields *this);
+cleanup __amd64 void Shields::InstantCharge(Shields* this);
 ".41550f28f9415455534889fb4883ec68":
-cleanup __amd64 void Shields::RenderBase(Shields *this, float alpha, float superShieldOverwrite);
+cleanup __amd64 void Shields::RenderBase(Shields* this, float alpha, float superShieldOverwrite);
 ".554889f5534889fb488d7f044883ec18":
-cleanup __amd64 CollisionResponse Shields::CollisionTest(Shields *this, float x, float y, Damage damage);
+cleanup __amd64 CollisionResponse Shields::CollisionTest(Shields* this, float x, float y, Damage damage);
 ".415741564189d641554989f5415455534889fb488d7f04":
-cleanup __amd64 CollisionResponse Shields::CollisionReal(Shields *this, float x, float y, Damage damage, bool force);
+cleanup __amd64 CollisionResponse Shields::CollisionReal(Shields* this, float x, float y, Damage damage, bool force);
 
 "!f30fc2cf01488bbbf8020000f30f101d(???????\?)f30f5edd":
-offsetVariable GL_Color *Global_COLOR_GREEN;
+offsetVariable GL_Color* Global_COLOR_GREEN;
 
 
 struct Shields

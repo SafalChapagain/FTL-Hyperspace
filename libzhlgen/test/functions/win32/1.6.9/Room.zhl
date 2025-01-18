@@ -1,27 +1,39 @@
 "530fb65424088b41348b49288d1c928d1c988b43082b03c1f802c1e0052b430403430c2b0491":
-__thiscall int Room::GetEmptySlots(Room *this, bool intruder);
+__thiscall int Room::GetEmptySlots(Room* this, bool intruder);
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b57048b078b7714898d9cfeffffc7410400000000c701????????":
-__thiscall void Room::constructor(Room *this, int iShipId, int x, int y, int w, int h, int roomId);
+__thiscall void Room::constructor(Room* this, int _iShipId, int _x, int _y, int _w, int _h, int _roomId);
 "5589e55383e4f083ec308b517cf30f1005????????f30f5c4178f30f100d????????891424f30f5905????????f30f2cc0660fefc08d1c0005????????f30f2ac0b8????????":
-__thiscall void Room::OnRenderFloor(Room *this, float alpha, bool experimental);
+__thiscall void Room::OnRenderFloor(Room* this, float alpha, bool experimental);
 "8079400074??8079240074??c20400905589e55389cb83e4f083ec108b819c000000f30f105d08f30f115c2404":
-__thiscall void Room::OnRenderWalls(Room *this, float alpha);
+__thiscall void Room::OnRenderWalls(Room* this, float alpha);
 "890424e8????????89742404893c2489c1c744240800000000e8????????89433883ec0c8d65f45b5e5f5d":
 noHook void Room::__DO_NOT_HOOK();
 ".5589e557565389ce83e4f083ec20":
-__thiscall void Room::destructor(Room *this);
+__thiscall void Room::destructor(Room* this);
 "555756538b54241484d275??8b417083f8ff74??8b593489c5be????????c1ed0589c1d3e68b3b8534af75??":
-__thiscall int Room::GetEmptySlot(Room *this, bool intruder);
+__thiscall int Room::GetEmptySlot(Room* this, bool intruder);
 "530fb65424088b41348b49288d1c928d1c988b43082b03c1f802c1e0052b430403430c3b04915b0f94c0":
-__thiscall bool Room::Full(Room *this, bool intruder);
+__thiscall bool Room::Full(Room* this, bool intruder);
 "565389cb0fb64424108b73348b4c240c8d14850000000001d08d048689cec1ee058b008d34b0b801000000d3e08b0e85c175??03532809c88906830201":
-__thiscall void Room::FillSlot(Room *this, int slot, bool intruder);
+__thiscall void Room::FillSlot(Room* this, int slot, bool intruder);
 
-struct Room depends (Globals, Point) {{
-	Point GetIntoRoom(Point pos)
+
+struct Room depends (Globals, Point) 
+{{
+	Room(int iShipId, int x, int y, int w, int h, int roomId)
 	{
-		int posX = pos.x;
-		int posY = pos.y;
+		this->constructor(iShipId, x, y, w, h, roomId);
+	}
+
+	~Room()
+	{
+		this->destructor();
+	}
+
+	Point GetIntoRoom(Point position)
+	{
+		int posX = position.x;
+		int posY = position.y;
 		
 		int rectY = this->rect.y;
 		int rectH = this->rect.h;
@@ -38,14 +50,11 @@ struct Room depends (Globals, Point) {{
 				return Point(-1, -1);
 			}
 		}
-		
-		
-		
-		
+
 		Point center = Point(rectX + rectW / 2, rectY + rectH / 2);
 		
-		Point toGrid = Point((posX + 2 * (center.x > posX) - 1) / 35, (posY + 2 * (center.y > posY) - 1) / 35);
-		Point fromGrid = Point(toGrid.x * 35, toGrid.y * 35);
+		Point toGrid = Point((posX + 2*  (center.x > posX) - 1) / 35, (posY + 2*  (center.y > posY) - 1) / 35);
+		Point fromGrid = Point(toGrid.x*  35, toGrid.y*  35);
 		
 		return Point(fromGrid.x + 17, fromGrid.y + 17);
 	}

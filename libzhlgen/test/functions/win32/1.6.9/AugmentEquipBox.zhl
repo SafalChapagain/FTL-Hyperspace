@@ -1,6 +1,6 @@
 "578d7c240883e4f0ff77fc5589e5575389cb83ec10e8????????8b434c660fefc0c744240800000000f7d8f30f2ac0":
-__thiscall void AugmentEquipBox::RenderIcon(AugmentEquipBox *this);
+__thiscall void AugmentEquipBox::RenderIcon(AugmentEquipBox* this);
 "8b818400000085c074??578d7c240883e4f0ff77fc5589e557565389cb8d4dc4":
-__thiscall void AugmentEquipBox::CheckContents(AugmentEquipBox *this);
+__thiscall void AugmentEquipBox::CheckContents(AugmentEquipBox* this);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec4c8b818400000085c074??":
-__thiscall void AugmentEquipBox::RemoveItem(AugmentEquipBox *this);
+__thiscall void AugmentEquipBox::RemoveItem(AugmentEquipBox* this);

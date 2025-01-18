@@ -1,19 +1,19 @@
 "807910000f84????????5589e55389cb83e4f083ec1080790800":
-__thiscall void AnimationTracker::Update(AnimationTracker *this);
+__thiscall void AnimationTracker::Update(AnimationTracker* this);
 ".8b442404f30f10442408f30f114114c7411800000000884108":
-__thiscall void AnimationTracker::SetLoop(AnimationTracker *this, bool loop, float loopDelay);
+__thiscall void AnimationTracker::SetLoop(AnimationTracker* this, bool loop, float loopDelay);
 ".807c240400c6411000660fefc074??f30f10410cf30f11410c":
-__thiscall void AnimationTracker::Stop(AnimationTracker *this, bool resetTime);
+__thiscall void AnimationTracker::Stop(AnimationTracker* this, bool resetTime);
 ".f30f10442404c6411200c6411001f30f11410cc6411100":
-__thiscall void AnimationTracker::Start(AnimationTracker *this, float time);
+__thiscall void AnimationTracker::Start(AnimationTracker* this, float time);
 ".660fefc9c6411200f30f10442404c64110010f2ec876??f30f104104":
-__thiscall void AnimationTracker::StartReverse(AnimationTracker *this, float time);
+__thiscall void AnimationTracker::StartReverse(AnimationTracker* this, float time);
 ".83ec0480791000f30f104c2408660fefc074??0f2ec10f28d077??f30f10410cf30f5ec1":
-__thiscall float AnimationTracker::Progress(AnimationTracker *this, float speed);
+__thiscall float AnimationTracker::Progress(AnimationTracker* this, float speed);
 ".f30f104104f30f59442404f30f11410c":
-__thiscall void AnimationTracker::SetProgress(AnimationTracker *this, float time);
+__thiscall void AnimationTracker::SetProgress(AnimationTracker* this, float time);
 ".5589e583ec04f30f1005????????f30f1015????????807d0800f30f594104f30f10490cf30f5cc80f28d8":
-__thiscall float AnimationTracker::GetAlphaLevel(AnimationTracker *this, bool reverse);
+__thiscall float AnimationTracker::GetAlphaLevel(AnimationTracker* this, bool reverse);
 
 
 struct AnimationTracker 

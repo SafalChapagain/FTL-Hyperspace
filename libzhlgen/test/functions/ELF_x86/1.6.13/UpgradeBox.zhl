@@ -1,21 +1,21 @@
 "5557565383ec5c8b5c24708b7424748b7c24788b6c247c":
-cleanup __cdecl void UpgradeBox::constructorEmpty(UpgradeBox *this, Point pos, bool subsystem);
+cleanup __cdecl void UpgradeBox::constructorEmpty(UpgradeBox* this, Point _position, bool _isSubsystem);
 "5589e557565383ec5c8b45148b75088b7d10":
-cleanup __cdecl void UpgradeBox::constructorSystem(UpgradeBox *this, ShipManager *ship, ShipSystem *sys, Point pos, bool subsystem);
+cleanup __cdecl void UpgradeBox::constructorSystem(UpgradeBox* this, ShipManager* _ship, ShipSystem* _system, Point _position, bool _isSubsystem);
 "5383ec288b5c24308b83fc000000890424":
-cleanup __cdecl void UpgradeBox::destructor(UpgradeBox *this);
+cleanup __cdecl void UpgradeBox::destructor(UpgradeBox* this);
 "5589e557565381ec3c0100008b5d0880bbf900000000":
-cleanup __cdecl void UpgradeBox::OnRender(UpgradeBox *this);
+cleanup __cdecl void UpgradeBox::OnRender(UpgradeBox* this);
 "83ec1c8b4424208b1085d2":
-cleanup __cdecl void UpgradeBox::MouseMove(UpgradeBox *this, int mX, int mY);
+cleanup __cdecl void UpgradeBox::MouseMove(UpgradeBox* this, int mX, int mY);
 "5383ec288b5c24308b0385c0":
-cleanup __cdecl void UpgradeBox::MouseClick(UpgradeBox *this, int mX, int mY);
+cleanup __cdecl void UpgradeBox::MouseClick(UpgradeBox* this, int mX, int mY);
 ".565383ec248b5c24308b0385c0":
-cleanup __cdecl void UpgradeBox::MouseRightClick(UpgradeBox *this, int mX, int mY);
+cleanup __cdecl void UpgradeBox::MouseRightClick(UpgradeBox* this, int mX, int mY);
 "565383ec148b5c24208b431485c0":
-cleanup __cdecl void UpgradeBox::Undo(UpgradeBox *this);
+cleanup __cdecl void UpgradeBox::Undo(UpgradeBox* this);
 ".565383ec248b5c24308b0385c0":
-cleanup __cdecl void UpgradeBox::Accept(UpgradeBox *this);
+cleanup __cdecl void UpgradeBox::Accept(UpgradeBox* this);
 
 
 struct UpgradeBox
@@ -24,14 +24,14 @@ struct UpgradeBox
 	{
 	}
 	
-	UpgradeBox(Point pos, bool subsystem)
+	UpgradeBox(Point position, bool isSubsystem)
 	{
-		this->constructorEmpty(pos, subsystem);
+		this->constructorEmpty(position, isSubsystem);
 	}
 	
-	UpgradeBox(ShipManager *ship, ShipSystem *sys, Point pos, bool subsystem)
+	UpgradeBox(ShipManager* ship, ShipSystem* systen, Point position, bool isSubsystem)
 	{
-		this->constructorSystem(ship, sys, pos, subsystem);
+		this->constructorSystem(ship, systen, position, isSubsystem);
 	}
 	
 	~UpgradeBox()

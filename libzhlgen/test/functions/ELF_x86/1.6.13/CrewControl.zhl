@@ -1,24 +1,24 @@
 "5589e557565381ec8c0000008b5d088b4b3c8b4340":
-cleanup __cdecl void CrewControl::OnRender(CrewControl *this);
+cleanup __cdecl void CrewControl::OnRender(CrewControl* this);
 "5589e557565383ec4c8b5d088db388000000":
-cleanup __cdecl void CrewControl::OnLoop(CrewControl *this);
+cleanup __cdecl void CrewControl::OnLoop(CrewControl* this);
 "5557565383ec4c8b5c24608d442430":
-cleanup __cdecl void CrewControl::UpdateCrewBoxes(CrewControl *this);
+cleanup __cdecl void CrewControl::UpdateCrewBoxes(CrewControl* this);
 "5383ec188b5c24208b4424248903891c24":
-cleanup __cdecl void CrewControl::LinkShip(CrewControl *this, ShipManager *ship);
+cleanup __cdecl void CrewControl::LinkShip(CrewControl* this, ShipManager* ship);
 "5589e557565381ecac0000008b7d08837d0cff":
-cleanup __cdecl void CrewControl::MouseMove(CrewControl *this, int mX, int mY, int wX, int wY);
+cleanup __cdecl void CrewControl::MouseMove(CrewControl* this, int mX, int mY, int wX, int wY);
 "5589e557565383ec2c8b5d088b8380000000":
-cleanup __cdecl void CrewControl::LButton(CrewControl *this, int mX, int mY, int wX, int wY, bool shiftHeld);
+cleanup __cdecl void CrewControl::LButton(CrewControl* this, int mX, int mY, int wX, int wY, bool shiftHeld);
 "5557565331db83ec1c8b7424348b56048b0e":
-cleanup __cdecl void CrewControl::ClearDeadCrew(CrewControl *this, std::vector<CrewMember*> *crew);
+cleanup __cdecl void CrewControl::ClearDeadCrew(CrewControl* this, std::vector<CrewMember*>* crew);
 "57565383ec108b7c24208b4f408b573c":
-cleanup __cdecl void CrewControl::ClearCrewBoxes(CrewControl *this);
+cleanup __cdecl void CrewControl::ClearCrewBoxes(CrewControl* this); // this is actually half of the destructors code, could maybe be used to implement a custom one.
 "57565383ec108b4424248b5c24208b742428":
-cleanup __cdecl void CrewControl::SelectPotentialCrew(CrewControl *this, CrewMember *crew, bool allowTeleportLeaving);
+cleanup __cdecl void CrewControl::SelectPotentialCrew(CrewControl* this, CrewMember* crew, bool allowTeleportLeaving);
 "5557565381ec0c0100008d442430":
-cleanup __cdecl void CrewControl::KeyDown(CrewControl *this, SDLKey key);
+cleanup __cdecl void CrewControl::KeyDown(CrewControl* this, SDLKey key);
 "5557565383ec1c8b742430807e3000":
-cleanup __cdecl void CrewControl::RButton(CrewControl *this, int mX, int mY, bool shiftHeld);
+cleanup __cdecl void CrewControl::RButton(CrewControl* this, int mX, int mY, bool shiftHeld);
 "5557565383ec1c807c243400":
-cleanup __cdecl void CrewControl::SelectCrew(CrewControl *this, bool keep_current);
+cleanup __cdecl void CrewControl::SelectCrew(CrewControl* this, bool keep_current);

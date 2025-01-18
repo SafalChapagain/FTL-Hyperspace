@@ -1,7 +1,7 @@
 "5383ec288b44243c8b5c24300fb7d0c1e810":
-cleanup __cdecl void freetype::font_data::init(freetype::font_data *this, const void *buffer, int bufferSize, unsigned int h, bool glow);
+cleanup __cdecl void freetype::font_data::init(freetype::font_data* this, const void* buffer, int bufferSize, unsigned int h, bool glow);
 "!.8b4424048b400489442404":
-cleanup __cdecl void freetype::font_data::clean(freetype::font_data *this);
+cleanup __cdecl void freetype::font_data::clean(freetype::font_data* this);
 ".5589e5565383ec208b5d088d45f289442408":
 static cleanup __cdecl Pointf freetype::easy_measurePrintLines(int fontSize, float x, float y, int line_length, const std::string& text);
 "5589e5565383ec308d45f289442408":
@@ -24,7 +24,7 @@ cleanup __cdecl float font_height(int font_id, float size);
 cleanup __cdecl float font_baseline(int font_id, float size);
 
 "!.f30f5905(???????\?)c744240801000000f30f2dc0":
-float *Global_freetype_sil_freetype_outline;
+float* Global_freetype_sil_freetype_outline;
 
 struct freetype
 {{

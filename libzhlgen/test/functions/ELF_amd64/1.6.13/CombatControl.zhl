@@ -1,52 +1,52 @@
 "415741564989fe4155415455534881ec68020000488b87f8000000":
-cleanup __amd64 void CombatControl::RenderTarget(CombatControl *this);
+cleanup __amd64 void CombatControl::RenderTarget(CombatControl* this);
 "488b87c00700004885c0740c488b4010c3":
-cleanup __amd64 ShipManager *CombatControl::GetCurrentTarget(CombatControl *this);
+cleanup __amd64 ShipManager* CombatControl::GetCurrentTarget(CombatControl* this);
 ".488bbfc00700004885ff":
-cleanup __amd64 char CombatControl::CurrentTargetIsBoss(CombatControl *this);
+cleanup __amd64 char CombatControl::CurrentTargetIsBoss(CombatControl* this);
 "4154554889fd534883ec30488b87f80000004885c0":
-cleanup __amd64 char CombatControl::CanTargetSelf(CombatControl *this);
+cleanup __amd64 char CombatControl::CanTargetSelf(CombatControl* this);
 "534889fb4883ec3080bfb80e000000":
-cleanup __amd64 void CombatControl::OnRenderCombat(CombatControl *this);
+cleanup __amd64 void CombatControl::OnRenderCombat(CombatControl* this);
 "4155415455534889fb4883ec284883bfc007000000":
-cleanup __amd64 void CombatControl::AddEnemyShip(CombatControl *this, CompleteShip *ship);	
+cleanup __amd64 void CombatControl::AddEnemyShip(CombatControl* this, CompleteShip* enemy);	
 "415455534889fb4883ec1083bfdc070000ff":
-cleanup __amd64 void CombatControl::UpdateAiming(CombatControl *this);
+cleanup __amd64 void CombatControl::UpdateAiming(CombatControl* this);
 "41564155415455534889fb4881eca0000000f30f1087e00e0000":
-cleanup __amd64 bool CombatControl::UpdateTarget(CombatControl *this);
+cleanup __amd64 bool CombatControl::UpdateTarget(CombatControl* this);
 "415731d24156415541545589f531f6534889fb4883ec38488d7c2420":
-cleanup __amd64 void CombatControl::DrawHostileBox(CombatControl *this, GL_Color color, int stencilBit);
+cleanup __amd64 void CombatControl::DrawHostileBox(CombatControl* this, GL_Color color, int stencilBit);
 "55534889fb4883ec184883bf7011000000":
-cleanup __amd64 void CombatControl::OnInit(CombatControl *this, Point pos);
+cleanup __amd64 void CombatControl::OnInit(CombatControl* this, Point position);
 "415431c95531ed534889fb4883ec10488b9790070000":
-cleanup __amd64 void CombatControl::OnLoop(CombatControl *this);
+cleanup __amd64 void CombatControl::OnLoop(CombatControl* this);
 "534883bff8000000004889fb":
-cleanup __amd64 void CombatControl::SetMouseCursor(CombatControl *this);
+cleanup __amd64 void CombatControl::SetMouseCursor(CombatControl* this);
 "41545553488b87c0070000":
-cleanup __amd64 std::pair<int,int> CombatControl::GetTeleportationCommand(CombatControl *this);
+cleanup __amd64 std::pair<int,int> CombatControl::GetTeleportationCommand(CombatControl* this);
 "534883bfc0070000004889fb":
-cleanup __amd64 void CombatControl::DisarmAll(CombatControl *this);
+cleanup __amd64 void CombatControl::DisarmAll(CombatControl* this);
 "4157be0900000041564155415455534889fb4883ec58488b7f08":
-cleanup __amd64 bool CombatControl::SelectTarget(CombatControl *this);
+cleanup __amd64 bool CombatControl::SelectTarget(CombatControl* this);
 "415541544189d45589f5534889fb4883ec08":
-cleanup __amd64 bool CombatControl::MouseRClick(CombatControl *this, int x, int y);
+cleanup __amd64 bool CombatControl::MouseRClick(CombatControl* this, int mX, int mY);
 "534889fb488b7f08be09000000e8????????84c0751a":
-cleanup __amd64 bool CombatControl::WeaponsArmed(CombatControl *this);
+cleanup __amd64 bool CombatControl::WeaponsArmed(CombatControl* this);
 "5589f5534889fb488d7f204883ec08":
-cleanup __amd64 void CombatControl::KeyDown(CombatControl *this, SDLKey key);
+cleanup __amd64 void CombatControl::KeyDown(CombatControl* this, SDLKey key);
 "55be0900000031ed534889fb4883ec08488b7f08":
-cleanup __amd64 void CombatControl::DisarmTeleporter(CombatControl *this);
+cleanup __amd64 void CombatControl::DisarmTeleporter(CombatControl* this);
 "415741564155415455534889fb488d7f104c8da3a8090000":
-cleanup __amd64 void CombatControl::constructor(CombatControl *this);
+cleanup __amd64 void CombatControl::constructor(CombatControl* this);
 "534889fb488d7f204883ec20e8":
-cleanup __amd64 void CombatControl::OnRenderSelfAiming(CombatControl *this);
+cleanup __amd64 void CombatControl::OnRenderSelfAiming(CombatControl* this);
 "41574156415541544989fc55534881ecb8000000660fd60424":
-cleanup __amd64 void CombatControl::RenderShipStatus(CombatControl *this, Pointf pos, GL_Color color);
+cleanup __amd64 void CombatControl::RenderShipStatus(CombatControl* this, Pointf position, GL_Color boxColor);
 "534889fb4883ec10488b86c00700004885c0":
-cleanup __amd64 std::string CombatControl::GetCrewTooltip(CombatControl *this, int x, int y);
+cleanup __amd64 std::string CombatControl::GetCrewTooltip(CombatControl* this, int mX, int mY);
 "554889fd534883ec0848c787c007000000000000":
-cleanup __amd64 void CombatControl::Clear(CombatControl *this);
+cleanup __amd64 void CombatControl::Clear(CombatControl* this);
 "f30f2ac641554189f541544189d455534889fb4883ec08":
-cleanup __amd64 bool CombatControl::MouseMove(CombatControl *this, int mX, int mY);
+cleanup __amd64 bool CombatControl::MouseMove(CombatControl* this, int mX, int mY);
 "415431c94189d45589f553c687e80e0000014889fb":
-cleanup __amd64 void CombatControl::MouseClick(CombatControl *this, int mX, int mY, bool shift);
+cleanup __amd64 void CombatControl::MouseClick(CombatControl* this, int mX, int mY, bool shift);

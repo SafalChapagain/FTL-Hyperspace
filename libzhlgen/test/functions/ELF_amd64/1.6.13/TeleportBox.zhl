@@ -1,11 +1,11 @@
 "4155b9010000004989d5415455534889fb4c8da370020000488dab000300004883ec58":
-cleanup __amd64 void TeleportBox::constructor(TeleportBox *this, Point pos, TeleportSystem* sys);
+cleanup __amd64 void TeleportBox::constructor(TeleportBox* this, Point _position, TeleportSystem* _system);
 
 
 struct TeleportBox
 {{
-	TeleportBox(Point pos, TeleportSystem* sys)
+	TeleportBox(Point position, TeleportSystem* system)
 	{
-		this->constructor(pos, sys);
+		this->constructor(position, system);
 	}
 }};

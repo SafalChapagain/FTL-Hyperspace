@@ -1,8 +1,17 @@
 "5589e556538b750889cbc741040000000083e4f083c108e8????????8d4b74e8????????89f0c683a900000000":
-__thiscall void ShipAI::constructor(ShipAI *this, bool unk);
+__thiscall void ShipAI::constructor(ShipAI* this, bool _player);
 ".8b44240484c074??80b9ec0000000075??c781f0000000000000008881ec000000":
-__thiscall void ShipAI::SetStalemate(ShipAI *this, bool stalemate);
+__thiscall void ShipAI::SetStalemate(ShipAI* this, bool stalemate);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec4c8b3789f084c08b010f84????????8bb8cc000000":
-__thiscall void ShipAI::OnLoop(ShipAI *this, bool hostile);
+__thiscall void ShipAI::OnLoop(ShipAI* this, bool hostile);
 "8b410485c00f84????????8b0185c00f84????????578d7c240883e4f0ff77fc5589e5575389cb89c1":
-__thiscall std::pair<int, int> ShipAI::GetTeleportCommand(ShipAI *this);
+__thiscall std::pair<int, int> ShipAI::GetTeleportCommand(ShipAI* this);
+
+
+struct ShipAI
+{{
+    ShipAI(bool player)
+    {
+        this->constructor(player);
+    }
+}};

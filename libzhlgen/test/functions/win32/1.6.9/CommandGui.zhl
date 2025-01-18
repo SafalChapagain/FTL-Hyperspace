@@ -1,34 +1,34 @@
 "578d7c240883e4f0ff77fc5589e55756538d459081ec????????8b378945888d45a8898d7cffffff8d4d88c7458c00000000c6459000":
-__thiscall void CommandGui::RunCommand(CommandGui *this, std::string& command);
+__thiscall void CommandGui::RunCommand(CommandGui* this, std::string& command);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec2c8b178dbbdc380000c70424????????":
-__thiscall Store* CommandGui::CreateNewStore(CommandGui *this, int sectorNumber);
+__thiscall Store* CommandGui::CreateNewStore(CommandGui* this, int sectorNumber);
 "578d7c240883e4f0ff77fc5589e557565389cb8d4dd883ec3c8b078b77048b7f088945d4e8????????":
-__thiscall Point CommandGui::GetWorldCoordinates(CommandGui *this, Point point, bool fromTarget);
+__thiscall Point CommandGui::GetWorldCoordinates(CommandGui* this, Point point, bool fromTarget);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec5c80b984420000008b47048b378945b4":
-__thiscall void CommandGui::KeyDown(CommandGui *this, SDLKey key, bool shiftHeld);
+__thiscall void CommandGui::KeyDown(CommandGui* this, SDLKey key, bool shiftHeld);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec6c803d??????????0f85????????8b83081700008b4808c70424????????81c1????????e8????????":
-__thiscall void CommandGui::RenderStatic(CommandGui *this);
+__thiscall void CommandGui::RenderStatic(CommandGui* this);
 "578d7c240883e4f0ff77fc5589e557565389cb8d4dd883ec3c8b37f30f104704c744240400000000c7042400000000f30f1145d4":
-__thiscall void CommandGui::RenderPlayerShip(CommandGui *this, Point &shipCenter, float jumpScale);
+__thiscall void CommandGui::RenderPlayerShip(CommandGui* this, Point& shipCenter, float jumpScale);
 "578d7c240883e4f0ff77fc5589e557565389cb8db3881e00008dbb7c2e000081ec????????e8????????8d8b78010000e8????????8d8b20030000e8????????8d8bc8030000e8????????":
-__thiscall void CommandGui::constructor(CommandGui *this);
+__thiscall void CommandGui::constructor(CommandGui* this);
 "578d7c240883e4f0ff77fc5589e557565389cb81c1????????83ec5c8b378d7dc0":
-__thiscall void CommandGui::AddEnemyShip(CommandGui *this, CompleteShip *ship);
+__thiscall void CommandGui::AddEnemyShip(CommandGui* this, CompleteShip* ship);
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b8108170000898d7cffffff8b400880b868060000000f85????????":
-__thiscall void CommandGui::Victory(CommandGui *this);
+__thiscall void CommandGui::Victory(CommandGui* this);
 "578d7c240883e4f0ff77fc5589e55756538d992003000089cf8d75cc81ec????????898d54ffffff89d9e8????????ba????????8d8d5cffffffc70424????????":
-__thiscall void CommandGui::OnInit(CommandGui *this);
+__thiscall void CommandGui::OnInit(CommandGui* this);
 "578d7c240883e4f0ff77fc5589e557565389ceb9????????81ec????????8b1f8b7f04891c24897c2404e8????????8b960c1700008b8610170000":
-__thiscall void CommandGui::MouseMove(CommandGui *this, int mX, int mY);
+__thiscall void CommandGui::MouseMove(CommandGui* this, int mX, int mY);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec4c8b470480b984420000008b37":
-__thiscall void CommandGui::LButtonDown(CommandGui *this, int mX, int mY, bool shiftHeld);
+__thiscall void CommandGui::LButtonDown(CommandGui* this, int mX, int mY, bool shiftHeld);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec5c0fb6b18442000089f084c00f85????????8b81d83f000085c074??":
-__thiscall void CommandGui::OnLoop(CommandGui *this);
+__thiscall void CommandGui::OnLoop(CommandGui* this);
 "578d7c240883e4f0ff77fc5589e557565389cb8d45a883ec7c8b89081700008945a0c745a4000000008b7108c645a800":
-__thiscall void CommandGui::CheckGameover(CommandGui *this);
+__thiscall void CommandGui::CheckGameover(CommandGui* this);
 "803d??????????75??5589e55389cb8b890817000083e4f085c974??8b41088b108b524481fa????????75??80b8990400000075??e8????????84c0":
-__thiscall bool CommandGui::IsGameOver(CommandGui *this);
+__thiscall bool CommandGui::IsGameOver(CommandGui* this);
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b078b5f04898dd8fdffff8985d4fdffff8b47088985e4fdffff":
-__thiscall void CommandGui::NewLocation(CommandGui *this, const std::string& mainText, std::vector<ChoiceText> *choices, ResourceEvent& resources, bool testingEvents);
+__thiscall void CommandGui::NewLocation(CommandGui* this, const std::string& mainText, std::vector<ChoiceText>* choices, ResourceEvent& resources, bool testingEvents);
 "578d7c240883e4f0ff77fc5589e557565383ec2c8b0780b984420000008b77048945e48b47088945e075??8bb90c1700008b911017000089cb29fac1fa0285d2":
-__thiscall void CommandGui::LButtonUp(CommandGui *this, int mX, int mY, bool shiftHeld);
+__thiscall void CommandGui::LButtonUp(CommandGui* this, int mX, int mY, bool shiftHeld);

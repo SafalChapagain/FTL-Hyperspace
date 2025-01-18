@@ -1,20 +1,20 @@
 "41574156415541544989f45589d5534889fb4883ec18":
-cleanup __amd64 int CrewAI::PrioritizeIntruderRoom(CrewAI *this, CrewMember *crew, int roomId, int target);
+cleanup __amd64 int CrewAI::PrioritizeIntruderRoom(CrewAI* this, CrewMember* crew, int roomId, int target);
 ".415641554989fd4154554863ea5389f34883ec50":
-cleanup __amd64 int CrewAI::DangerRating(CrewAI *this, int roomId, int crewId);
+cleanup __amd64 int CrewAI::DangerRating(CrewAI* this, int roomId, int crewId);
 ".4156415541544531e45531ed534889fb4883ec20":
-cleanup __amd64 void CrewAI::CheckForHealing(CrewAI *this);
+cleanup __amd64 void CrewAI::CheckForHealing(CrewAI* this);
 ".415641554989fd41544189d4554863e95389f34883ec10":
-cleanup __amd64 int CrewAI::PrioritizeTask(CrewAI *this, CrewTask task, int crewId);
+cleanup __amd64 int CrewAI::PrioritizeTask(CrewAI* this, CrewTask task, int crewId);
 ".415631d241554531ed415449bcabaaaaaaaaaaaaaa5553":
-cleanup __amd64 void CrewAI::AssignCrewmembers(CrewAI *this);
+cleanup __amd64 void CrewAI::AssignCrewmembers(CrewAI* this);
 ".41574863f641564155415455534889fb4883ec38":
-cleanup __amd64 void CrewAI::UpdateCrewMember(CrewAI *this, int crewId);
+cleanup __amd64 void CrewAI::UpdateCrewMember(CrewAI* this, int crewId);
 ".415641554154554889fd534883ec10488b4730488b57284839d0":
-cleanup __amd64 void CrewAI::UpdateIntruders(CrewAI *this);
+cleanup __amd64 void CrewAI::UpdateIntruders(CrewAI* this);
 ".41574989ff41564d89fe4155415455534881ec88000000488b07":
-cleanup __amd64 void CrewAI::CheckForProblems(CrewAI *this);
+cleanup __amd64 void CrewAI::CheckForProblems(CrewAI* this);
 ".415741564531f6415541545531ed534889fb4881eca8000000488b5710":
-cleanup __amd64 void CrewAI::UpdateDrones(CrewAI *this);
+cleanup __amd64 void CrewAI::UpdateDrones(CrewAI* this);
 ".415741564155415455534889fb4883ec48488b37":
-cleanup __amd64 void CrewAI::OnLoop(CrewAI *this);
+cleanup __amd64 void CrewAI::OnLoop(CrewAI* this);

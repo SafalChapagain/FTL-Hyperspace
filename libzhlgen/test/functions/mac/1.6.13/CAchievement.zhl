@@ -1,7 +1,7 @@
-"554889e54157415641554154534883ec584189cf4189d449":
-cleanup __amd64 void CAchievement::OnRender(CAchievement *this, Point pos, int selected, bool showNew);
-"554889e5415741564154534883ec204889fb48c7433800000000":
-cleanup __amd64 void CAchievement::constructor(CAchievement *this);
+"554889e5415741564154534883ec204889fb48c7":
+cleanup __amd64 void CAchievement::constructor(CAchievement* this);
+".554889e54157415641554154534883ec584189cf41":
+cleanup __amd64 void CAchievement::OnRender(CAchievement* this, Point position, int selected, bool showNew);
 
 
 struct CAchievement 

@@ -1,17 +1,15 @@
 "!488db738010000":
-cleanup __amd64 void WeaponBlueprint::RenderIcon(WeaponBlueprint *this, float scale);
+cleanup __amd64 void WeaponBlueprint::RenderIcon(WeaponBlueprint* this, float scale);
 ".4157415641554989fd4154554889f5534881ec08010000":
-cleanup __amd64 std::string WeaponBlueprint::GetDescription(WeaponBlueprint *this, bool tooltip);
-".534889fb488d7f08be????????4883ec20":
-cleanup __amd64 void WeaponBlueprint::constructor(WeaponBlueprint *this);
+cleanup __amd64 std::string WeaponBlueprint::GetDescription(WeaponBlueprint* this, bool tooltip);
 ".4154554889fd534883ec10488b8788010000":
-cleanup __amd64 void WeaponBlueprint::destructor(WeaponBlueprint *this);
+cleanup __amd64 void WeaponBlueprint::destructor(WeaponBlueprint* this);
 
 
 struct WeaponBlueprint
 {{
-	WeaponBlueprint()
+	~WeaponBlueprint()
 	{
-		this->constructor();
+		this->destructor();
 	}
 }};

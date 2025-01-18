@@ -1,19 +1,19 @@
 "8b44240480785000":
-cleanup __cdecl void StoreBox::MouseClick(StoreBox *this, int x, int y);
+cleanup __cdecl void StoreBox::MouseClick(StoreBox* this, int mX, int mY);
 "5383ec288b4424308b90c0000000":
-cleanup __cdecl void StoreBox::Activate(StoreBox *this);
+cleanup __cdecl void StoreBox::Activate(StoreBox* this);
 "57565383ec208b7424348d7c241c":
-cleanup __cdecl void StoreBox::InitBlueprint(StoreBox *this, Blueprint* bp);
+cleanup __cdecl void StoreBox::InitBlueprint(StoreBox* this, Blueprint* bp);
 "5557565383ec3c8b5c24508d742428":
-cleanup __cdecl void StoreBox::constructor(StoreBox *this, const std::string& buttonImage, ShipManager *shopper, Equipment *equip);
+cleanup __cdecl void StoreBox::constructor(StoreBox* this, const std::string& _buttonImage, ShipManager* _shopper, Equipment* _equip);
 "565383ec248b4424308d70108b40108b580c8b442438":
-cleanup __cdecl void StoreBox::SetPosition(StoreBox *this, Point pos);
+cleanup __cdecl void StoreBox::SetPosition(StoreBox* this, Point position);
 "5589e557565381ec7c0300008b5d0880bbcc00000000":
-cleanup __cdecl void StoreBox::OnRender(StoreBox *this);
+cleanup __cdecl void StoreBox::OnRender(StoreBox* this);
 "5331c083ec188b5c24208b93b800000085d2":
-cleanup __cdecl void StoreBox::OnLoop(StoreBox *this);
+cleanup __cdecl void StoreBox::OnLoop(StoreBox* this);
 ".5557565383ec2c8d74241c8b5c24408d7c241a":
-cleanup __cdecl void StoreBox::Purchase(StoreBox *this);
+cleanup __cdecl void StoreBox::Purchase(StoreBox* this);
 
 
 struct StoreBox
@@ -22,9 +22,9 @@ struct StoreBox
 	{
 	}
 	
-	StoreBox(const std::string& buttonImage, ShipManager *shopper, Equipment *ship)
+	StoreBox(const std::string& buttonImage, ShipManager* ship, Equipment* equip)
 	{
-		this->constructor(buttonImage, shopper, ship);
+		this->constructor(buttonImage, ship, equip);
 	}
 	
 	void SetPosition(int x, int y)

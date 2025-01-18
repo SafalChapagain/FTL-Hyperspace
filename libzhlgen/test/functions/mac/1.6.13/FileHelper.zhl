@@ -1,71 +1,72 @@
-"554889e54156534889fb4c8d7301f60301488b7b10490f44fe31f6e8????160085c07405":
+// Continue from ExplosionAnimation::OnInit (hyper efficiency™)
+"!.554889e54156534889fb4c8d7301f60301488b7b10490f44fe31f6e8????160085c07405":
 static cleanup __amd64 void FileHelper::deleteFile(const std::string& fileName);
-"554889e54157415641554154534883ec??4989ffe8????????4989c6":
+"!.554889e54157415641554154534883ec??4989ffe8????????4989c6":
 static cleanup __amd64 std::string FileHelper::getResourceFile();
-"554889e5415741564155415453504989ffe8????":
+"!.554889e5415741564155415453504989ffe8":
 static cleanup __amd64 std::string FileHelper::getUserFolder();
-".554889e54157415641554154534883ec184989ffe8????0c":
+"!.554889e54157415641554154534883ec184989ffe8????0c":
 static cleanup __amd64 std::string FileHelper::getSaveFile();
-"554889e54157415641554154534883ec18e8????":
+"!.554889e54157415641554154534883ec18e8":
 static cleanup __amd64 void FileHelper::initFileHelper();
-"554889e5488d4701f60701480f45471031f64889":
+".554889e5488d4701f60701480f45471031f64889":
 static cleanup __amd64 bool FileHelper::fileExists(const std::string& fileName);
-"554889e5488d4701f60701480f454710488d4e01":
+"!.554889e5488d4701f60701480f454710488d4e01":
 static cleanup __amd64 void FileHelper::renameFile(const std::string& fileName, const std::string& newName);
-"554889e54156534889fb4c8d7301f60301488b7b10490f44fe31f6e8????160085c07510":
+"!.554889e54156534889fb4c8d7301f60301488b7b10490f44fe31f6e8????160085c07510":
 static cleanup __amd64 int FileHelper::createBinaryFile(const std::string& fileName);
-"554889e55350e825":
+".554889e55350e825":
 static cleanup __amd64 bool FileHelper::saveFileExists();
-"554889e5534883ec18488d3d????1800488d75e8488d55f4e8????0c0089c385db744689dfe8????0c0089dfe8????0c0085c074428b75f4":
+".554889e5534883ec18488d3d????1800488d75e8":
 static cleanup __amd64 int FileHelper::readSaveFile();
-"554889e5534883ec18488d3d????1800488d75e8488d55f4e8????0c0089c385db744689dfe8????0c0089dfe8????0c0085c0743d8b75f4":
-static cleanup __amd64 int FileHelper::readStatsFile();
-"554889e5488b05????1f00488905????1f00b801":
-static cleanup __amd64 int FileHelper::createSaveFile();
-"554889e5488b05????1f00488905????1f00b803":
-static cleanup __amd64 int FileHelper::createStatsFile();
-"554889e55350488d3d????18":
-static cleanup __amd64 void FileHelper::deleteSaveFile();
-"554889e541574156534883ec18488d7d":
-static cleanup __amd64 void FileHelper::deleteAllSaveFiles();
-"554889e58b05????1f005d":
-static cleanup __amd64 int FileHelper::getPosition(int file);
-"554889e5488d4f01":
-static cleanup __amd64 int FileHelper::readBinaryFile(const std::string& fileName);
-"554889e541574156535089f9":
-static cleanup __amd64 bool FileHelper::writeFloat(int file, float data);
-"554889e54157415653504189f789f944":
-static cleanup __amd64 bool FileHelper::writeInt(int file, int data);
-"554889e5415741564154534189d44989":
-static cleanup __amd64 bool FileHelper::writeData(int file, void* data, int len);
-"554889e5415741564155415453504189fd4c8d7e":
-static cleanup __amd64 bool FileHelper::writeString(int file, const std::string& data);
-"89f981f9":
+"!.89f981f9":
 static cleanup __amd64 void FileHelper::closeBinaryFile(int file);
-"554889e54157415641554154534883ec284189f44989fe41":
+".554889e5534883ec18488d3d????1800488d75e8":
+static cleanup __amd64 int FileHelper::readStatsFile();
+".554889e5488b05????1f00488905????1f00b801":
+static cleanup __amd64 int FileHelper::createSaveFile();
+".554889e5488b05????1f00488905????1f00b803":
+static cleanup __amd64 int FileHelper::createStatsFile();
+"!.554889e55350488d3d????18":
+static cleanup __amd64 void FileHelper::deleteSaveFile();
+".554889e541574156534883ec18488d7d":
+static cleanup __amd64 void FileHelper::deleteAllSaveFiles();
+".554889e58b05????1f005d":
+static cleanup __amd64 int FileHelper::getPosition(int file);
+".554889e5488d4f01":
+static cleanup __amd64 int FileHelper::readBinaryFile(const std::string& fileName);
+".554889e5415741564155415453504189fd4c8d7e":
+static cleanup __amd64 bool FileHelper::writeString(int file, const std::string& data);
+".554889e54157415653504189f789f944":
+static cleanup __amd64 bool FileHelper::writeInt(int file, int data);
+".554889e5415741564154534189d44989":
+static cleanup __amd64 bool FileHelper::writeData(int file, void* data, int len);
+".554889e541574156535089f9":
+static cleanup __amd64 bool FileHelper::writeFloat(int file, float data);
+"!.554889e54157415641554154534883ec284189f44989fe41":
 static cleanup __amd64 std::string FileHelper::readString(int file);
 ".554889e5415741564154534883ec10":
 static cleanup __amd64 int FileHelper::readInteger(int file);
+"!.554889e5415741564155415453504189d74989f64189fc41":
+static cleanup __amd64 void FileHelper::readData(int file, void* data, int len);
 ".554889e5415741564154534883ec10":
 static cleanup __amd64 float FileHelper::readFloat(int file);
-"554889e58935????":
-static cleanup __amd64 bool FileHelper::seekPosition(int file, int pos);
-"554889e54157415641554154534883ec1889d341":
+".554889e58935":
+static cleanup __amd64 bool FileHelper::seekPosition(int file, int position);
+".554889e54157415641554154534883ec1889d341":
 static cleanup __amd64 char* FileHelper::readBuffer(int file, int len, bool nullTerminate);
-"554889e5415741564155415453504189d74989f64189fc41":
-static cleanup __amd64 void FileHelper::readData(int file, void* data, int len);
 
 
 struct FileHelper
 {{
-	static int fileLength(int fd)
-	{
-        FILE* fp = fdopen(dup(fd), "r"); // Duplicate file descriptor & then open the stream so that we can fclose correctly later on
+    static int fileLength(int fd)
+    {
+        FILE* fp = fdopen(dup(fd), "r"); // Duplicate file descriptor&  then open the stream so that we can fclose correctly later on
         rewind(fp); // TODO: Not sure if we have to rewind before but could it hurt?
         fseek(fp, 0, SEEK_END);
         int lengthOfFile = ftell(fp);
         rewind(fp); // Rewind since the file index is shared and lets not screw with other people using the file descriptor that was opened by `open` in FTL's code
         fclose(fp);
         return lengthOfFile;
-	}
+    }
 }};

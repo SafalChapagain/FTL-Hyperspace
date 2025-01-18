@@ -1,17 +1,18 @@
+// Continue from ShipBuilder::ClearShipAchievements (hyper efficiency™)
 "554889e54157415641554154534883ec??89d34189f6":
-cleanup __amd64 void ShipButton::constructor(ShipButton *this, int shipType, int shipVariant);
-"554889e553504889fb4889d0":
-cleanup __amd64 void ShipButton::OnInit(ShipButton *this, const std::string& imgName, Point pos);
-"554889e5415741564155415453504189f64989fd41c785b8":
-cleanup __amd64 void ShipButton::MouseMove(ShipButton *this, int x, int y);
-"554889e541574156534883ec384989ff4180bf98":
-cleanup __amd64 void ShipButton::OnRender(ShipButton *this);
+cleanup __amd64 void ShipButton::constructor(ShipButton* this, int _shipId, int _type);
+".554889e553504889fb4889d0":
+cleanup __amd64 void ShipButton::OnInit(ShipButton* this, const std::string& imgName, Point position);
+"!.554889e5415741564155415453504189f64989fd41c785b8":
+cleanup __amd64 void ShipButton::MouseMove(ShipButton* this, int x, int y);
+".554889e541574156534883ec384989ff4180bf98":
+cleanup __amd64 void ShipButton::OnRender(ShipButton* this);
 
 
 struct ShipButton
 {{
-	ShipButton(int x, int y)
+	ShipButton(int shipId, int type)
 	{
-		this->constructor(x, y);
+		this->constructor(shipId, type);
 	}
 }};

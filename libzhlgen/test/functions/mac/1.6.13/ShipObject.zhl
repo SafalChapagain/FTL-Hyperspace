@@ -1,21 +1,22 @@
-"554889e531c0837f08000f94":
-cleanup __amd64 int ShipObject::GetAugmentationCount(ShipObject *this);
-"554889e541574156535031c0":
-cleanup __amd64 void ShipObject::ClearShipInfo(ShipObject *this);
-"554889e5415741564155415453504989fc31c083":
-cleanup __amd64 std::vector<std::string> ShipObject::GetAugmentationList(ShipObject *this);
-"554889e54156534883ec2031c0837f08000f94c0486bd83848031d89":
-cleanup __amd64 int ShipObject::HasAugmentation(ShipObject *this, const std::string& augment);
-"554889e54157415641554154534883ec684989f74989fe48":
-cleanup __amd64 int ShipObject::HasEquipment(ShipObject *this, const std::string& equip);
-"554889e54156534883ec2031c0837f08000f94c0486bd83848031d59":
-cleanup __amd64 float ShipObject::GetAugmentationValue(ShipObject *this, const std::string& augment);
-"554889e54157415641554154534883ec??488975a8":
-cleanup __amd64 bool ShipObject::AddAugmentation(ShipObject *this, const std::string& augment);
-"554889e54156534883ec2031c0837f08000f94c0486bd83848031dc9":
-cleanup __amd64 void ShipObject::RemoveAugmentation(ShipObject *this, const std::string& augment);
+// Continue from ShipManager::AddEquipmentFromList (hyper efficiency™)
+".554889e54156534883ec2031c0837f08000f94c0":
+cleanup __amd64 int ShipObject::HasAugmentation(ShipObject* this, const std::string& augment);
+".554889e54156534883ec2031c0837f08000f94c0":
+cleanup __amd64 bool ShipObject::AddAugmentation(ShipObject* this, const std::string& augment);
+".554889e54156534883ec2031c0837f08000f94c0":
+cleanup __amd64 void ShipObject::RemoveAugmentation(ShipObject* this, const std::string& augment);
+".554889e531c0837f08000f94":
+cleanup __amd64 int ShipObject::GetAugmentationCount(ShipObject* this);
+".554889e54156534883ec2031c0837f08000f94c0":
+cleanup __amd64 float ShipObject::GetAugmentationValue(ShipObject* this, const std::string& augment);
+".554889e5415741564155415453504989fc31c083":
+cleanup __amd64 std::vector<std::string> ShipObject::GetAugmentationList(ShipObject* this);
+".554889e541574156535031c0":
+cleanup __amd64 void ShipObject::ClearShipInfo(ShipObject* this);
+".554889e54157415641554154534883ec684989f74989fe48":
+cleanup __amd64 int ShipObject::HasEquipment(ShipObject* this, const std::string& equip);
 
-"!488905????????488d35(???????\?)488d4870":
+"!.488905????????488d35(???????\?)488d4870":
 offsetVariable ShipInfo** Global_ShipObject_ShipInfoList;
 
 struct ShipObject

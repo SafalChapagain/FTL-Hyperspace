@@ -1,33 +1,33 @@
 "5589e557565381ecfc0101008b4508????????????????89853cfefeff65a114000000":
-cleanup __cdecl void AchievementTracker::LoadAchievementDescriptions(AchievementTracker *this);
+cleanup __cdecl void AchievementTracker::LoadAchievementDescriptions(AchievementTracker* this);
 "5557565383ec3c8b442458c744240c02000000":
-cleanup __cdecl std::vector<CAchievement*> AchievementTracker::GetShipAchievements(AchievementTracker *this, const std::string& ship);
+cleanup __cdecl std::vector<CAchievement*> AchievementTracker::GetShipAchievements(AchievementTracker* this, const std::string& ship);
 ".5589e557565383ec5c8b450c0fb65d10":
-cleanup __cdecl void AchievementTracker::CheckShipAchievements(AchievementTracker *this, int shipId, bool hidePopups);
+cleanup __cdecl void AchievementTracker::CheckShipAchievements(AchievementTracker* this, int shipId, bool hidePopups);
 "5589e557565331db83ec4c0fb645108b7508":
-cleanup __cdecl void AchievementTracker::SetAchievement(AchievementTracker *this, const std::string& achievement, bool noPopup, bool sendToServer);
+cleanup __cdecl void AchievementTracker::SetAchievement(AchievementTracker* this, const std::string& achievement, bool noPopup, bool sendToServer);
 "538b4c24108b4424088b54240c83f902????8b580c8d14528d14938b128d1c8a":
-cleanup __cdecl void AchievementTracker::UnlockShip(AchievementTracker *this, int shipId, int shipType);
+cleanup __cdecl void AchievementTracker::UnlockShip(AchievementTracker* this, int shipId, int shipType);
 "5589e557565381ec8c0000008d45b88d7dd8":
-cleanup __cdecl void AchievementTracker::SetSectorEight(AchievementTracker *this);
+cleanup __cdecl void AchievementTracker::SetSectorEight(AchievementTracker* this);
 "5557565383ec2c8b7424448b5c24488b168b038b7af48b68f48954240489042439ef89e90f46cf894c2408":
-cleanup __cdecl int AchievementTracker::GetShipMarker(AchievementTracker *this, const std::string& baseName, const std::string& thisName);
+cleanup __cdecl int AchievementTracker::GetShipMarker(AchievementTracker* this, const std::string& baseName, const std::string& thisName);
 "5589e557565383ec5c8b5d088d532889d78955b88b550c8d43248945b4894424048d45c489042489542408":
-cleanup __cdecl void AchievementTracker::SetFlag(AchievementTracker *this, const std::string& flagName);
+cleanup __cdecl void AchievementTracker::SetFlag(AchievementTracker* this, const std::string& flagName);
 "5589e557565383ec5c8b5d088d432489c28945b48d432889c78945b88b450c89542404894424088d45c4890424??????????31c089fa83ec043b7dc4":
-cleanup __cdecl bool AchievementTracker::GetFlag(AchievementTracker *this, const std::string& flagName);
+cleanup __cdecl bool AchievementTracker::GetFlag(AchievementTracker* this, const std::string& flagName);
 "5557565383ec1c8b7c24308b6f188b5f1c29ebc1fb0285db":
-cleanup __cdecl void AchievementTracker::SaveProfile(AchievementTracker *this, int file);
+cleanup __cdecl void AchievementTracker::SaveProfile(AchievementTracker* this, int file);
 "5589e557565383ec4c8b750c8d7dd8893424":
-cleanup __cdecl void AchievementTracker::LoadProfile(AchievementTracker *this, int file, int version);
+cleanup __cdecl void AchievementTracker::LoadProfile(AchievementTracker* this, int file, int version);
 "57565383ec308b7424408d5c2420891c248d7e6c897c2404":
-cleanup __cdecl void AchievementTracker::SetVictoryAchievement(AchievementTracker *this);
+cleanup __cdecl void AchievementTracker::SetVictoryAchievement(AchievementTracker* this);
 "5589e557565381ec9c0000008b75088b45088b4e1c8b4018":
-cleanup __cdecl void AchievementTracker::OnLanguageChange(AchievementTracker *this);
+cleanup __cdecl void AchievementTracker::OnLanguageChange(AchievementTracker* this);
 "5589e557565381ecbc0000008b450c80781400":
-cleanup __cdecl void AchievementTracker::SetTooltip(AchievementTracker *this, CAchievement *ach);
+cleanup __cdecl void AchievementTracker::SetTooltip(AchievementTracker* this, CAchievement* ach);
 "565383ec148b7424208b462c894424048d4624890424":
-cleanup __cdecl void AchievementTracker::ResetFlags(AchievementTracker *this);
+cleanup __cdecl void AchievementTracker::ResetFlags(AchievementTracker* this);
 
 
 "!e8????????89742404c70424(???????\?)e8????????8b44242c8d50f4":

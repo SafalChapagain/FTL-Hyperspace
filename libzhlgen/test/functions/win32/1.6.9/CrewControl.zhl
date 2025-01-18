@@ -1,24 +1,24 @@
 "578d7c240883e4f0ff77fc5589e557565389cb83ec7c8b793c8b414029f8c1f80285c0":
-__thiscall void CrewControl::OnRender(CrewControl *this);
+__thiscall void CrewControl::OnRender(CrewControl* this);
 "578d7c240883e4f0ff77fc5589e557568db18c0000005389cb83ec6c89f1e8????????80bb9e000000000f85????????89d9":
-__thiscall void CrewControl::OnLoop(CrewControl *this);
+__thiscall void CrewControl::OnLoop(CrewControl* this);
 "578d7c240883e4f0ff77fc5589e55756538d45dc89cbb9????????83ec5cc745dc00000000c745e000000000890424c744240400000000":
-__thiscall void CrewControl::UpdateCrewBoxes(CrewControl *this);
+__thiscall void CrewControl::UpdateCrewBoxes(CrewControl* this);
 "5589e55389cb8b450883e4f08901e8????????c7432000000000c7431c000000008b5dfc":
-__thiscall void CrewControl::LinkShip(CrewControl *this, ShipManager *ship);
+__thiscall void CrewControl::LinkShip(CrewControl* this, ShipManager* ship);
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b57088b378b4704":
-__thiscall void CrewControl::MouseMove(CrewControl *this, int mX, int mY, int wX, int wY);
+__thiscall void CrewControl::MouseMove(CrewControl* this, int mX, int mY, int wX, int wY);
 "578d7c240883e4f0ff77fc5589f889e557565389cb83ec5c8b178b89840000008b7f048955b48b50088b400c":
-__thiscall void CrewControl::LButton(CrewControl *this, int mX, int mY, int wX, int wY, bool shiftHeld);
+__thiscall void CrewControl::LButton(CrewControl* this, int mX, int mY, int wX, int wY, bool shiftHeld);
 "5589e557565383e4f083ec208b45088b50048b3089d029f0c1f80285c00f84????????31db":
-__thiscall void CrewControl::ClearDeadCrew(CrewControl *this, std::vector<CrewMember*> *crew);
+__thiscall void CrewControl::ClearDeadCrew(CrewControl* this, std::vector<CrewMember*>* crew);
 "5589e557565389ce83e4f083ec108b513c8b494089c829d083f8037e??31db908b3c9a85ff":
-__thiscall void CrewControl::ClearCrewBoxes(CrewControl *this);
+__thiscall void CrewControl::ClearCrewBoxes(CrewControl* this); // this is actually half of the destructors code, could maybe be used to implement a custom one.
 "578d7c240883e4f0ff77fc5589e557565383ec2c8b1f8b570485db74??89ce8b0b":
-__thiscall void CrewControl::SelectPotentialCrew(CrewControl *this, CrewMember *crew, bool allowTeleportLeaving);
+__thiscall void CrewControl::SelectPotentialCrew(CrewControl* this, CrewMember* crew, bool allowTeleportLeaving);
 "578d7c240883e4f0ff77fc5589e557565389ce81ec????????8b07c78520ffffff6c6f636bc78524ffffff646f776ec7851cffffff08000000c68528ffffff008985bcfeffff8d8520ffffff898518ffffff8d8518ffffff890424":
-__thiscall void CrewControl::KeyDown(CrewControl *this, SDLKey key);
+__thiscall void CrewControl::KeyDown(CrewControl* this, SDLKey key);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec2c807930000f84a00000008b39":
-__thiscall void CrewControl::RButton(CrewControl *this, int mX, int mY, bool shiftHeld);
+__thiscall void CrewControl::RButton(CrewControl* this, int mX, int mY, bool shiftHeld);
 "5589e557565383e4f083ec20807d080075??8b59048b710831c029dec1fe0285f6":
-__thiscall void CrewControl::SelectCrew(CrewControl *this, bool keep_current);
+__thiscall void CrewControl::SelectCrew(CrewControl* this, bool keep_current);

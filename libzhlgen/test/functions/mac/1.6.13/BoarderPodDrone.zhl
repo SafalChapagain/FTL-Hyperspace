@@ -1,21 +1,19 @@
-"554889e5415653488d05????????488947b0":
-noHook __amd64 void BoarderPodDrone::DO_NOT_HOOK_1();
-".554889e553504889fb488bbb88010000":
-cleanup __amd64 bool BoarderPodDrone::CanBeDeployed(BoarderPodDrone *this);
-"554889e553504889fb4885f6":
-cleanup __amd64 void BoarderPodDrone::SetMovementTarget(BoarderPodDrone *this, Targetable *target);
-"554889e54156534189f64889fb807b18":
-cleanup __amd64 void BoarderPodDrone::SetDeployed(BoarderPodDrone *this, bool _deployed);
-"554889e5534883ec384889fb80be3805":
-cleanup __amd64 CollisionResponse BoarderPodDrone::CollisionMoving(BoarderPodDrone *this, Pointf start, Pointf finish, Damage damage, bool raytrace);
-".554889e54157415641554154534881ec????????4989ce4889fb":
-cleanup __amd64 void BoarderPodDrone::constructor(BoarderPodDrone *this, int _iShipId, int _selfId, const DroneBlueprint& _bp);
+"554889e54157415641554154534881ec680100004989ce":
+cleanup __amd64 void BoarderPodDrone::constructor(BoarderPodDrone* this, int _iShipId, int _selfId, const DroneBlueprint& _blueprint);
+".554889e553504889fb4885f6":
+cleanup __amd64 void BoarderPodDrone::SetMovementTarget(BoarderPodDrone* this, Targetable* target);
+".554889e5534883ec384889fb80be":
+cleanup __amd64 CollisionResponse BoarderPodDrone::CollisionMoving(BoarderPodDrone* this, Pointf start, Pointf finish, Damage damage, bool raytrace);
+".554889e553504889fb488bbb88010":
+cleanup __amd64 bool BoarderPodDrone::CanBeDeployed(BoarderPodDrone* this);
+".554889e54156534189f64889fb807b18":
+cleanup __amd64 void BoarderPodDrone::SetDeployed(BoarderPodDrone* this, bool deployed);
 
 
 struct BoarderPodDrone
 {{
-	BoarderPodDrone(int _iShipId, int _selfId, const DroneBlueprint& _bp)
+	BoarderPodDrone(int iShipId, int selfId, const DroneBlueprint& blueprint)
 	{
-		this->constructor(_iShipId, _selfId, _bp);
+		this->constructor(iShipId, selfId, blueprint);
 	}
 }};

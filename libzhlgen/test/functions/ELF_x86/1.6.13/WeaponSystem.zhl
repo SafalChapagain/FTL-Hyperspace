@@ -1,6 +1,6 @@
 "5531c057565383ec2c8b7c24448b5c244085ff":
-cleanup __cdecl void WeaponSystem::RemoveWeapon(WeaponSystem *this, int slot);
+cleanup __cdecl void WeaponSystem::RemoveWeapon(WeaponSystem* this, int slot);
 ".565383ec148b5c24208b742424891c24e8????????":
-virtual cleanup __cdecl void WeaponSystem::SetBonusPower(WeaponSystem *this, int amount, int permanentPower);
+virtual cleanup __cdecl void WeaponSystem::SetBonusPower(WeaponSystem* this, int amount, int permanentPower);
 "5557565383ec3c8b6c2450892c24e8????????8b8da0010000":
-cleanup __cdecl void WeaponSystem::OnLoop(WeaponSystem *this);
+cleanup __cdecl void WeaponSystem::OnLoop(WeaponSystem* this);

@@ -1,16 +1,13 @@
-"554889e548c7070000000048c747080000000048c7471000000000c6071248b8726f636b":
-cleanup __amd64 std::string RockAnimation::GetDeathSound(RockAnimation *this);
-"554889e54156534883ec??4889fb488d05????????":
-noHook __amd64 void RockAnimation::DO_NOT_HOOK_1();
-".554889e54156534883ec??4889fb488d05????????":
-noHook __amd64 void RockAnimation::DO_NOT_HOOK_2();
-".554889e548c707????????48c74708????????48c74710????????c607??48b8????????????????4889470166c74709????":
-noHook __amd64 void RockAnimation::DO_NOT_HOOK_3();
-".554889e54156534883ec??4889fb488d05????????":
-cleanup __amd64 std::string RockAnimation::GetShootingSound(RockAnimation *this);
 "554889e54157415641554154534883ec??89cb0f294590":
-cleanup __amd64 void RockAnimation::constructor(RockAnimation *this, const std::string& subRace, int iShipId, Pointf position, bool enemy);
-
+cleanup __amd64 void RockAnimation::constructor(RockAnimation* this, const std::string& _subRace, int _iShipId, Pointf _position, bool _enemy);
+".554889e548c7070000000048c747080000000048c7471000000000c6071248b8726f636b":
+cleanup __amd64 std::string RockAnimation::GetDeathSound(RockAnimation* this);
+".554889e54156534883":
+cleanup __amd64 std::string RockAnimation::GetShootingSound(RockAnimation* this);
+/*
+".554889e54157415653504889fb488b431041be900600004c8b384d01f748634b5848635360488d0c49488b04c84869caf0000000488d7c0828f30f1005????2500e8????0e004c89ffe8????0e00":
+cleanup __amd64 bool RockAnimation::FireShot(RockAnimation* this);
+*/
 
 struct RockAnimation depends (Pointf)
 {{

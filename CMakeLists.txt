@@ -3,8 +3,9 @@ project(Hyperspace CXX)
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
-find_package(Boost REQUIRED) # From vcpkg
-find_package(Lua REQUIRED) # From vcpkg
+find_package(Boost REQUIRED PATHS /Users/dino/vcpkg/installed/x64-osx/include)
+set(LUA_LIBRARIES "/Users/dino/vcpkg/installed/x64-osx/lib/liblua.a")
+set(LUA_INCLUDE_DIR "/Users/dino/vcpkg/installed/x64-osx/include")
 
 if(UNIX)
     find_package(SDL2 REQUIRED) # From system
@@ -34,6 +35,7 @@ set_property(SOURCE ${swigfiles} PROPERTY CPLUSPLUS ON)
 
 # Name the binary as Hyperspace.dll instead of libHyperspace.dll
 set(CMAKE_SHARED_LIBRARY_PREFIX_CXX "")
+set(BUILD_SHARED_LIBS OFF)
 
 swig_add_library(
     Hyperspace
@@ -61,7 +63,7 @@ target_include_directories(
 )
 target_link_libraries(
     Hyperspace PRIVATE
-    ${LUA_LIBRARIES}
+    /Users/dino/vcpkg/installed/x64-osx/lib/liblua.a
     Threads::Threads
 )
 
@@ -244,6 +246,7 @@ target_sources(
     TemporalSystem.cpp
     TemporalSystem.h
     TemporalSystemVTable.cpp
+    TextString.cpp
     TileBasedCrewMovement.cpp
     TileBasedCrewMovement.h
     TimerHelper.cpp

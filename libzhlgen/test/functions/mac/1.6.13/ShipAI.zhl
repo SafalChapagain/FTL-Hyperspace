@@ -1,8 +1,18 @@
-"554889e54156534189f64889fb48c74308":
-cleanup __amd64 void ShipAI::constructor(ShipAI *this, bool unk);
-"554889e54084f6741280bf70":
-cleanup __amd64 void ShipAI::SetStalemate(ShipAI *this, bool stalemate);
-"554889e541574156534883ec2889f349":
-cleanup __amd64 void ShipAI::OnLoop(ShipAI *this, bool hostile);
-"554889e54156534889fb49be":
-cleanup __amd64 std::pair<int, int> ShipAI::GetTeleportCommand(ShipAI *this);
+// Continue from Ship::GetAvailableRoom (hyper efficiency™)
+".554889e54156534189f64889fb48c74308":
+cleanup __amd64 void ShipAI::constructor(ShipAI* this, bool _player);
+".554889e54084f6741280bf70":
+cleanup __amd64 void ShipAI::SetStalemate(ShipAI* this, bool stalemate);
+".554889e54156534889fb49be":
+cleanup __amd64 std::pair<int, int> ShipAI::GetTeleportCommand(ShipAI* this);
+"!.554889e541574156534883ec2889f349":
+cleanup __amd64 void ShipAI::OnLoop(ShipAI* this, bool hostile);
+
+
+struct ShipAI
+{{
+    ShipAI(bool player)
+    {
+        this->constructor(player);
+    }
+}};

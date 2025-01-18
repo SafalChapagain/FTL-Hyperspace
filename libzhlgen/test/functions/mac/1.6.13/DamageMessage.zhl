@@ -1,25 +1,25 @@
-"554889e54157415641554154534883ec??4889fb488d05":
-cleanup __amd64 void DamageMessage::constructor(DamageMessage *this, float length, Pointf pos, DamageMessage::MessageType type);
-"554889e54157415641554154534881ec????????4189f54989fc":
-cleanup __amd64 void DamageMessage::constructor2(DamageMessage *this, float length, int amount, Pointf pos, bool unk);
+// Continue from CSurface::AddTexVertices (hyper efficiency™)
+"!554889e54157415641554154534881ec????????4189f54989fc":
+cleanup __amd64 void DamageMessage::constructor2(DamageMessage* this, float _length, int _amount, Pointf _position, bool _symbol);
+"!.554889e54157415641554154534883ec284889fb488d05":
+cleanup __amd64 void DamageMessage::constructor(DamageMessage* this, float _length, Pointf _position, DamageMessage::MessageType _type);
 
 
 struct DamageMessage 
 {{
-
 	enum MessageType
 	{
 	  MISS = 0x0,
 	  RESIST = 0x1,
 	};
 
-	DamageMessage(float length, Pointf pos, MessageType type)
+	DamageMessage(float length, Pointf position, MessageType type)
 	{
-		constructor(length, pos, type);
+		constructor(length, position, type);
 	}
 	
-	DamageMessage(float length, int amount, Pointf pos, bool unk)
+	DamageMessage(float length, int amount, Pointf position, bool symbol)
 	{
-		constructor2(length, amount, pos, unk);
+		constructor2(length, amount, position, symbol);
 	}
 }};

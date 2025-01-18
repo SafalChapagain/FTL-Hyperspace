@@ -1,26 +1,26 @@
 "5383ec188b5c24208b435485c0":
-cleanup __cdecl void CrewEquipBox::RemoveItem(CrewEquipBox *this);
+cleanup __cdecl void CrewEquipBox::RemoveItem(CrewEquipBox* this);
 "5557565383ec7c8b8424980000008d742448":
-cleanup __cdecl void CrewEquipBox::constructor(CrewEquipBox *this, Point pos, ShipManager *ship, int slot);
+cleanup __cdecl void CrewEquipBox::constructor(CrewEquipBox* this, Point _position, ShipManager* _shipManager, int _slot);
 "8b5424040fb68280020000c6828002000000":
-cleanup __cdecl bool CrewEquipBox::GetConfirmDelete(CrewEquipBox *this);
+cleanup __cdecl bool CrewEquipBox::GetConfirmDelete(CrewEquipBox* this);
 "5589e557565381ecac0000008b5d088b4d0c8b75108b434c":
-cleanup __cdecl void CrewEquipBox::RenderLabels(CrewEquipBox *this, bool dragging, bool isNew);
+cleanup __cdecl void CrewEquipBox::RenderLabels(CrewEquipBox* this, bool dragging, bool isNew);
 "5589e557565383ec2c8b5d08c70424????????8b750c":
-cleanup __cdecl void CrewEquipBox::OnRender(CrewEquipBox *this, bool unk);
+cleanup __cdecl void CrewEquipBox::OnRender(CrewEquipBox* this, bool dragging);
 "565383ec148b4424208b7424248d9834020000891c24":
-cleanup __cdecl void CrewEquipBox::OnTextInput(CrewEquipBox *this, SDLKey key);
+cleanup __cdecl void CrewEquipBox::OnTextInput(CrewEquipBox* this, SDLKey key);
 ".565383ec148b4424208b7424248d9834020000891c24":
-cleanup __cdecl void CrewEquipBox::OnTextEvent(CrewEquipBox *this, CEvent::TextEvent event);
+cleanup __cdecl void CrewEquipBox::OnTextEvent(CrewEquipBox* this, CEvent::TextEvent event);
 "5589e557565383ec2c8b5d088b734c85f6":
-cleanup __cdecl void CrewEquipBox::MouseClick(CrewEquipBox *this);
+cleanup __cdecl void CrewEquipBox::MouseClick(CrewEquipBox* this);
 "8b44240480b83202000000":
-cleanup __cdecl void CrewEquipBox::CloseRename(CrewEquipBox *this);
+cleanup __cdecl void CrewEquipBox::CloseRename(CrewEquipBox* this);
 
 struct CrewEquipBox depends (TextInput)
 {{
-	CrewEquipBox(Point pos_, ShipManager *ship_, int slot_)
+	CrewEquipBox(Point position, ShipManager* shipManager, int slot)
 	{
-		this->constructor(pos_, ship_, slot_);
+		this->constructor(position, shipManager, slot);
 	}
 }};

@@ -1,51 +1,54 @@
-"554889e553504889fb488b7b10e8????0800488b":
-virtual cleanup __amd64 void CompleteShip::Restart(CompleteShip *this);
-".554889e553504889fb488d05????????488903894b08":
-cleanup __amd64 void CompleteShip::constructor(CompleteShip *this, SpaceManager *space, bool unk, int unk2);
-"554889e548897710":
-cleanup __amd64 void CompleteShip::SetShip(CompleteShip *this, ShipManager *ship);
-"554889e5415741564154534189d64989f74889fbbff80b00":
-cleanup __amd64 void CompleteShip::OnInit(CompleteShip *this, const ShipBlueprint* blueprint, int unk);
-"554889e54157415641554154534881ec880000004189cf48":
-cleanup __amd64 void CompleteShip::AddBoarders(CompleteShip *this, int amount, const std::string& race, bool unk2);
-"554889e54157415641554154534881ecc80100004189d549":
-cleanup __amd64 CrewMember *CompleteShip::AddCrewMember(CompleteShip *this, const CrewBlueprint* blueprint, bool hostile);
-"554889e54157415641554154534883ec78894dd0":
-cleanup __amd64 CrewMember *CompleteShip::AddCrewMember1(CompleteShip *this, const std::string& race, const std::string& name, bool hostile);
-"554889e5415741564154534189d64989f44989ff":
-cleanup __amd64 Drone *CompleteShip::AddDrone(CompleteShip *this, const DroneBlueprint *blueprint, int unk);
-"554889e54157415653504189d64889f34989ff4885db":
-cleanup __amd64 CrewMember *CompleteShip::AddCrewMember2(CompleteShip *this, CrewMember *member, int unk);
-"554889e58b87e801000089f7":
-cleanup __amd64 void CompleteShip::SaveState(CompleteShip *this, int unk);
-"554889e54156534883ec204889fb89f7":
-cleanup __amd64 void CompleteShip::LoadState(CompleteShip *this, int unk);
-"554889e5415741564154534883ec604189d64189f74989fc498b8424":
-cleanup __amd64 void CompleteShip::InitiateTeleport(CompleteShip *this, int targetRoom, int command);
-"554889e5415741564155415453504989fc498b7c2410":
-virtual cleanup __amd64 void CompleteShip::OnLoop(CompleteShip *this);
-".!554889e5488b7f105de9????????":
-virtual cleanup __amd64 void CompleteShip::PauseLoop(CompleteShip *this);
-"554889e5415741564155415453504989fe4c8bbe":
-cleanup __amd64 std::vector<CrewMember*> CompleteShip::GetTeleportingParty(CompleteShip *this);
-"554889e54156534881eca0010000":
-cleanup __amd64 void CompleteShip::KillRandomCrew(CompleteShip *this);
-"554889e5488b7f10400fb6f6":
-cleanup __amd64 int CompleteShip::CountCrew(CompleteShip *this, bool boarders);
-"554889e5488b87b8":
-cleanup __amd64 void CompleteShip::Jump(CompleteShip *this);
-"554889e5488977204883c730":
-cleanup __amd64 void CompleteShip::SetEnemyShip(CompleteShip *this, CompleteShip *other);
-"554889e54156534889fb31f6":
-cleanup __amd64 bool CompleteShip::DeadCrew(CompleteShip *this);
-"554889e553504889fb488b76":
-cleanup __amd64 std::vector<CrewMember*> CompleteShip::TeleportCrew(CompleteShip *this, int roomId, bool intruders);
-"554889e553504889fb488b7b188b7308":
-cleanup __amd64 void CompleteShip::OnRender(CompleteShip *this);
-"554889e5488b7f18f30f1005":
-cleanup __amd64 void CompleteShip::OnRenderSpace(CompleteShip *this);
-"554889e54157415653504189d64189f74889fb488b7b188b":
-cleanup __amd64 void CompleteShip::OnRenderShip(CompleteShip *this, bool unk1, bool unk2);
+"554889e553504889fb488d05????320048890389":
+noHook __amd64 void CompleteShip::DO_NOT_HOOK_FALSE_CONSTRUCTOR();
+".554889e553504889fb488d05????320048890389": // Double decleration - we'll need to hook both and redirect to a custom function to replace the code
+cleanup __amd64 void CompleteShip::constructor(CompleteShip* this, SpaceManager* _space, bool _bPlayerShip, int _iShipId);
+"!.554889e548897710":
+cleanup __amd64 void CompleteShip::SetShip(CompleteShip* this, ShipManager* ship);
+"!.554889e5415741564154534189d64989f74889fbbf":
+cleanup __amd64 void CompleteShip::OnInit(CompleteShip* this, const ShipBlueprint* blueprint, int level);
+".554889e54157415641554154534881ec880000004189cf":
+cleanup __amd64 void CompleteShip::AddBoarders(CompleteShip* this, int amount, const std::string& race, bool breach);
+".554889e54157415641554154534881ecc80100004189d5":
+cleanup __amd64 CrewMember* CompleteShip::AddCrewMember(CompleteShip* this, const CrewBlueprint* blueprint, bool hostile);
+".554889e54157415641554154534883ec78894d":
+cleanup __amd64 CrewMember* CompleteShip::AddCrewMember1(CompleteShip* this, const std::string& race, const std::string& name, bool hostile);
+"!.554889e5488b7f105de9????07":
+cleanup __amd64 Drone* CompleteShip::AddDrone(CompleteShip* this, const DroneBlueprint* blueprint, int slot);
+"!.554889e54157415653504189d64889f34989ff48":
+cleanup __amd64 CrewMember* CompleteShip::AddCrewMember2(CompleteShip* this, CrewMember* crew, int roomId);
+"!.554889e58b87e801000089":
+cleanup __amd64 void CompleteShip::SaveState(CompleteShip* this, int fd);
+".554889e54156534883ec204889fb89f7":
+cleanup __amd64 void CompleteShip::LoadState(CompleteShip* this, int fd);
+".554889e5415741564154534883ec604189d64189f74989fc49":
+cleanup __amd64 void CompleteShip::InitiateTeleport(CompleteShip* this, int targetRoom, int command);
+".554889e553504889fb488b76":
+cleanup __amd64 std::vector<CrewMember*> CompleteShip::TeleportCrew(CompleteShip* this, int roomId, bool intruders);
+".554889e5415741564155415453504989fe4c":
+cleanup __amd64 std::vector<CrewMember*> CompleteShip::GetTeleportingParty(CompleteShip* this);
+"!.554889e5488b7f105de9????08":
+cleanup __amd64 void CompleteShip::KillRandomCrew(CompleteShip* this);
+"!.554889e5488b7f1040":
+cleanup __amd64 int CompleteShip::CountCrew(CompleteShip* this, bool boarders);
+".554889e5488b87b8":
+cleanup __amd64 void CompleteShip::Jump(CompleteShip* this);
+"!.554889e5488977204883":
+cleanup __amd64 void CompleteShip::SetEnemyShip(CompleteShip* this, CompleteShip* other);
+".554889e54156534889fb31":
+cleanup __amd64 bool CompleteShip::DeadCrew(CompleteShip* this);
+"!.554889e5415741564155415453504989fc498b7c":
+virtual cleanup __amd64 void CompleteShip::OnLoop(CompleteShip* this);
+"!.554889e5488b7f105de9":
+virtual cleanup __amd64 void CompleteShip::PauseLoop(CompleteShip* this);
+"!.554889e553504889fb488b7b188b":
+cleanup __amd64 void CompleteShip::OnRender(CompleteShip* this);
+"!.554889e54157415653504189d64189f74889fb488b7b":
+cleanup __amd64 void CompleteShip::OnRenderShip(CompleteShip* this, bool showInterior, bool doorControlMode);
+"!.554889e5488b7f18f3":
+cleanup __amd64 void CompleteShip::OnRenderSpace(CompleteShip* this);
+"!.554889e553504889fb488b7b10e8????08":
+virtual cleanup __amd64 void CompleteShip::Restart(CompleteShip* this);
+
 
 struct CompleteShip
 {{

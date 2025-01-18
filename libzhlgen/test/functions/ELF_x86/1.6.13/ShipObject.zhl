@@ -1,19 +1,19 @@
 "5589e557565383ec6c8b450c894424048d45c8890424e8????????8b45088b400485c00f94??0fb6c06bc0348945a8a1????????0145a88b55a8":
-cleanup __cdecl int ShipObject::HasAugmentation(ShipObject *this, const std::string& augment);
+cleanup __cdecl int ShipObject::HasAugmentation(ShipObject* this, const std::string& augment);
 "5589e557565383ec7c8b450c894424048d45b8890424":
-cleanup __cdecl float ShipObject::GetAugmentationValue(ShipObject *this, const std::string& augment);
+cleanup __cdecl float ShipObject::GetAugmentationValue(ShipObject* this, const std::string& augment);
 ".5589e557565383ec7c8b450c894424048d45b8890424":
-cleanup __cdecl void ShipObject::RemoveAugmentation(ShipObject *this, const std::string& augment);
+cleanup __cdecl void ShipObject::RemoveAugmentation(ShipObject* this, const std::string& augment);
 "5589e557565383ec7c8b5d0c8d45c8":
-cleanup __cdecl int ShipObject::HasEquipment(ShipObject *this, const std::string& equip);
+cleanup __cdecl int ShipObject::HasEquipment(ShipObject* this, const std::string& equip);
 "5557565383ec1c8b4424348b5c24308b4004":
-cleanup __cdecl std::vector<std::string> ShipObject::GetAugmentationList(ShipObject *this);
+cleanup __cdecl std::vector<std::string> ShipObject::GetAugmentationList(ShipObject* this);
 "5589e557565381ec8c0000008b450c894424048d45b8890424":
-cleanup __cdecl bool ShipObject::AddAugmentation(ShipObject *this, const std::string& augment);
+cleanup __cdecl bool ShipObject::AddAugmentation(ShipObject* this, const std::string& augment);
 "8b4424048b400485c00f94??0fb6c06bc034":
-cleanup __cdecl int ShipObject::GetAugmentationCount(ShipObject *this);
+cleanup __cdecl int ShipObject::GetAugmentationCount(ShipObject* this);
 "5331db83ec188b4424208b400485c0":
-cleanup __cdecl void ShipObject::ClearShipInfo(ShipObject *this);
+cleanup __cdecl void ShipObject::ClearShipInfo(ShipObject* this);
 
 "!6bc0340305(???????\?)8b4030c3":
 ShipInfo** Global_ShipObject_ShipInfoList;

@@ -1,11 +1,11 @@
 "5557565383ec2c8d44241a8b5c24408d7c241c8b742448":
-cleanup __cdecl void AugmentStoreBox::constructor(AugmentStoreBox *this, ShipManager *ship, const AugmentBlueprint* bp);
+cleanup __cdecl void AugmentStoreBox::constructor(AugmentStoreBox* this, ShipManager* _ship, const AugmentBlueprint* _augment);
 
 struct AugmentStoreBox
 {{
-	AugmentStoreBox(ShipManager *_ship, const AugmentBlueprint* _bp)
+	AugmentStoreBox(ShipManager* ship, const AugmentBlueprint* augment)
 	{
-		this->constructor(_ship, _bp);
+		this->constructor(ship, augment);
 	}
 	
 	AugmentStoreBox()

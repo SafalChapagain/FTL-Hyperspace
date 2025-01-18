@@ -1,6 +1,6 @@
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b8144050000898d74feffff85c00f84????????8d8570ffffffbf????????8d8d4cffffff6689bd7cffffff":
-__thiscall void ControlsScreen::OnInit(ControlsScreen *this);
+__thiscall void ControlsScreen::OnInit(ControlsScreen* this);
 "578d7c240883e4f0ff77fc5589e55756538d45a889ce83ec7c8b79108b59148945a089f801d874??85ff":
-__thiscall void ControlsScreen::OnLoop(ControlsScreen *this);
+__thiscall void ControlsScreen::OnLoop(ControlsScreen* this);
 "578d7c240883e4f0ff77fc5589e557565389cf81ec????????80b928010000000f85????????8d8520ffffff8d8d18ffffffc744240400000000c78500ffffff1d000000898518ffffff8d8500ffffff890424e8????????8b9500ffffff":
-__thiscall void ControlsScreen::OnRender(ControlsScreen *this);
+__thiscall void ControlsScreen::OnRender(ControlsScreen* this);

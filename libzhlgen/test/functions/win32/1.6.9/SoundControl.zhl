@@ -1,11 +1,11 @@
 "578d7c240883e4f0ff77fc5589e557565331db81ec????????8039008b07f30f104704f30f11458889458c74??80b9b80000000075??":
-__thiscall int SoundControl::PlaySoundMix(SoundControl *this, const std::string& soundName, float volume, bool loop);
+__thiscall int SoundControl::PlaySoundMix(SoundControl* this, const std::string& soundName, float volume, bool loop);
 "578d7c240883e4f0ff77fc5589e55783ec148039008b0774??890424e8????????83ec048b7dfcc98d67f8":
-__thiscall void SoundControl::StopPlaylist(SoundControl *this, int fadeOut);
+__thiscall void SoundControl::StopPlaylist(SoundControl* this, int fadeOut);
 "578d7c240883e4f0ff77fc5589e557565383ec5c8039008b078945b0":
-__thiscall void SoundControl::StartPlaylist(SoundControl *this, std::vector<std::string> &playlist);
+__thiscall void SoundControl::StartPlaylist(SoundControl* this, std::vector<std::string>& playlist);
 "578d????0883e4??ff????5589e557565383ec??8039??8b??f30f10????":
-__thiscall void SoundControl::UpdateSoundLoop(SoundControl *this, const std::string& loopId, float count);
+__thiscall void SoundControl::UpdateSoundLoop(SoundControl* this, const std::string& loopId, float count);
 
 "!8b4b08e8????????0fb6c0b9(???????\?)890424e8????????b9":
 SoundControl* Global_SoundControl_Sounds;

@@ -1,45 +1,45 @@
 "415641554154554889fd5380bf8c01000000":
-cleanup __amd64 bool ShipSystem::ForceDecreasePower(ShipSystem *this, int powerLoss);
+cleanup __amd64 bool ShipSystem::ForceDecreasePower(ShipSystem* this, int powerLoss);
 ".8b87740100008b977801000029f08b775439d00f4fc231c985c00f48c1":
-cleanup __amd64 void ShipSystem::AddDamage(ShipSystem *this, int amount);
+cleanup __amd64 void ShipSystem::AddDamage(ShipSystem* this, int amount);
 ".8b879c01000083f8ff0f94c285c00f9fc008d0":
-cleanup __amd64 bool ShipSystem::Ioned(ShipSystem *this, int num);
+cleanup __amd64 bool ShipSystem::Ioned(ShipSystem* this, int num);
 ".415441bc05000000554889fd534889eb4883ec10":
-cleanup __amd64 void ShipSystem::destructor(ShipSystem *this);
+cleanup __amd64 void ShipSystem::destructor(ShipSystem* this);
 "!.554889fd5389f34883ec088bb790010000":
-cleanup __amd64 void ShipSystem::SaveState(ShipSystem *this, int file);
+cleanup __amd64 void ShipSystem::SaveState(ShipSystem* this, int file);
 ".5589f5534889fb89f74883ec08":
-cleanup __amd64 void ShipSystem::LoadState(ShipSystem *this, int file);
+cleanup __amd64 void ShipSystem::LoadState(ShipSystem* this, int file);
 ".8b474831d285c0":
-cleanup __amd64 int ShipSystem::GetEffectivePower(ShipSystem *this);
+cleanup __amd64 int ShipSystem::GetEffectivePower(ShipSystem* this);
 ".4154555380bf8c010000004889fb":
-cleanup __amd64 void ShipSystem::SetBonusPower(ShipSystem *this, int amount, int permanentPower);
+cleanup __amd64 void ShipSystem::SetBonusPower(ShipSystem* this, int amount, int permanentPower);
 ".8b979001000031c083fa07":
-cleanup __amd64 int ShipSystem::GetPowerCap(ShipSystem *this);
+cleanup __amd64 int ShipSystem::GetPowerCap(ShipSystem* this);
 ".4084f6534889fb":
-cleanup __amd64 bool ShipSystem::BlockedBoosted(ShipSystem *this, bool countLimit);
+cleanup __amd64 bool ShipSystem::BlockedBoosted(ShipSystem* this, bool countLimit);
 ".8b474885c07e21":
-cleanup __amd64 int ShipSystem::IsMannedBoost(ShipSystem *this);
+cleanup __amd64 int ShipSystem::IsMannedBoost(ShipSystem* this);
 ".8b879c01000083f8ff":
-cleanup __amd64 bool ShipSystem::GetLocked(ShipSystem *this);
+cleanup __amd64 bool ShipSystem::GetLocked(ShipSystem* this);
 ".488b96a0":
-cleanup __amd64 TimerHelper ShipSystem::GetLockTimer(ShipSystem *this);
+cleanup __amd64 TimerHelper ShipSystem::GetLockTimer(ShipSystem* this);
 "!.488b07c6872402000000":
-cleanup __amd64 void ShipSystem::StopHacking(ShipSystem *this);
+cleanup __amd64 void ShipSystem::StopHacking(ShipSystem* this);
 ".5589f5534889fb4883ec08488b07":
-cleanup __amd64 bool ShipSystem::UpgradeSystem(ShipSystem *this, int amount);
+cleanup __amd64 bool ShipSystem::UpgradeSystem(ShipSystem* this, int amount);
 ".8b4f548b877401000031d2":
-cleanup __amd64 int ShipSystem::GetMaxPower(ShipSystem *this);
+cleanup __amd64 int ShipSystem::GetMaxPower(ShipSystem* this);
 ".4155415455534889fb4883ec0880bf8c01000000":
-cleanup __amd64 void ShipSystem::CheckMaxPower(ShipSystem *this);
+cleanup __amd64 void ShipSystem::CheckMaxPower(ShipSystem* this);
 ".41545589d5534889fb4883ec":
-cleanup __amd64 void ShipSystem::RenderSystemSymbol(ShipSystem *this, bool forPowerUI, int forceColor);
+cleanup __amd64 void ShipSystem::RenderSystemSymbol(ShipSystem* this, bool forPowerUI, int forceColor);
 ".4157b840":
 static cleanup __amd64 int ShipSystem::RenderPowerBoxesPlain(int x, int y, int width, int height, int gap, int current, int temp, int max);
 ".83ff0c741383ff06":
 static cleanup __amd64 bool ShipSystem::IsSubsystem(int systemType);
 "!.41574989ff41564189ce41554189f541544589c4554489cd5389d34881ec88000000":
-cleanup __amd64 int ShipSystem::RenderPowerBoxes(ShipSystem *this, int x, int y, int width, int height, int gap, int heightMod, bool flash);
+cleanup __amd64 int ShipSystem::RenderPowerBoxes(ShipSystem* this, int x, int y, int width, int height, int gap, int heightMod, bool flash);
 "!.488b3d(???????\?)":
 offsetVariable GL_Primitive** ShipSystem__glowWhite;
 "!.4c8b05(???????\?)":
@@ -71,27 +71,27 @@ offsetVariable GL_Primitive** ShipSystem__glowBlue;
 "!.488b3d(???????\?)":
 offsetVariable GL_Primitive** ShipSystem__glowRed;
 ".534889fb4883ec108b879c010000":
-cleanup __amd64 bool ShipSystem::IncreasePower(ShipSystem *this, int amount, bool force);
+cleanup __amd64 bool ShipSystem::IncreasePower(ShipSystem* this, int amount, bool force);
 ".55534889fb4883ec080fb6878c010000":
-cleanup __amd64 bool ShipSystem::DecreasePower(ShipSystem *this, bool force);
+cleanup __amd64 bool ShipSystem::DecreasePower(ShipSystem* this, bool force);
 ".55534889fb":
-cleanup __amd64 bool ShipSystem::DamageOverTime(ShipSystem *this, float unk);
+cleanup __amd64 bool ShipSystem::DamageOverTime(ShipSystem* this, float amount);
 ".415541544531e455534889fb4883ec08":
-cleanup __amd64 void ShipSystem::CheckForRepower(ShipSystem *this);
+cleanup __amd64 void ShipSystem::CheckForRepower(ShipSystem* this);
 ".83fe00751b8b879c010000":
-cleanup __amd64 void ShipSystem::LockSystem(ShipSystem *this, int lock);
+cleanup __amd64 void ShipSystem::LockSystem(ShipSystem* this, int lock);
 ".83bf9001000007":
-cleanup __amd64 void ShipSystem::ClearStatus(ShipSystem *this);
+cleanup __amd64 void ShipSystem::ClearStatus(ShipSystem* this);
 "!.53488b074889fb89b790010000":
-cleanup __amd64 void ShipSystem::SetPowerCap(ShipSystem *this, int cap);
+cleanup __amd64 void ShipSystem::SetPowerCap(ShipSystem* this, int cap);
 "!.53488b074889fb89b794010000":
-cleanup __amd64 int ShipSystem::SetPowerLoss(ShipSystem *this, int power);
+cleanup __amd64 int ShipSystem::SetPowerLoss(ShipSystem* this, int power);
 ".5531c0534889fb4883ec18":
-cleanup __amd64 bool ShipSystem::PartialRepair(ShipSystem *this, float speed, bool autoRepair);
+cleanup __amd64 bool ShipSystem::PartialRepair(ShipSystem* this, float speed, bool autoRepair);
 ".8b879c01000083f8ff":
-cleanup __amd64 void ShipSystem::AddLock(ShipSystem *this, int lock);
+cleanup __amd64 void ShipSystem::AddLock(ShipSystem* this, int lock);
 ".415455538b879c0100004889fb85c0":
-cleanup __amd64 void ShipSystem::OnLoop(ShipSystem *this);
+cleanup __amd64 void ShipSystem::OnLoop(ShipSystem* this);
 ".53be????????4889fb":
 static cleanup __amd64 int ShipSystem::NameToSystemId(const std::string& name);
 ".534889fb4883ec1083fe11488d54240f":
@@ -99,14 +99,18 @@ static cleanup __amd64 std::string ShipSystem::SystemIdToName(int systemId);
 ".4156415541544189d455534889fb4881ec10020000":
 static cleanup __amd64 std::string ShipSystem::GetLevelDescription(int systemId, int level, bool tooltip);
 ".41574989ff41564189f641554589c54154555389d389ca4881ecd8010000":
-cleanup __amd64 void ShipSystem::constructor(ShipSystem *this, int systemId, int roomId, int shipId, int startingPower);
+cleanup __amd64 void ShipSystem::constructor(ShipSystem* this, int _systemId, int _roomId, int _shipId, int _startingPower);
 
 "55534889fbbf????????4883ec18f30f1144240c":
-cleanup __amd64 bool ShipSystem::PartialDamage(ShipSystem *this, float amount); /* Thunk of ShipSystem::DamageOverTime, maybe it can be used instead? */
+cleanup __amd64 bool ShipSystem::PartialDamage(ShipSystem* this, float amount); /* Thunk of ShipSystem::DamageOverTime, maybe it can be used instead? */
+
 
 struct ShipSystem
 {{
-	ShipSystem() { }
+	ShipSystem()
+	{
+		
+	}
 	
 	ShipSystem(int systemId, int roomId, int shipId, int startingPower)
 	{

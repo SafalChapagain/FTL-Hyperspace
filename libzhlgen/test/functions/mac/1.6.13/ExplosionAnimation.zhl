@@ -1,2 +1,2 @@
-"554889e54157415641554154534881ec080100004989ce48":
-cleanup __amd64 void ExplosionAnimation::OnInit(ExplosionAnimation *this, rapidxml::xml_node<char>* node, const std::string& name, Point glowOffset);
+"!554889e54157415641554154534881ec080100004989ce48":
+cleanup __amd64 void ExplosionAnimation::OnInit(ExplosionAnimation* this, rapidxml::xml_node<char>* node, const std::string& name, Point glowOffset);

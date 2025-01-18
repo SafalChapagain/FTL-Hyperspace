@@ -1,13 +1,13 @@
 "55b9010000004889d5534889fb4883ec08":
-cleanup __amd64 void ArtilleryBox::constructor(ArtilleryBox *this, Point pos, ArtillerySystem* sys);
+cleanup __amd64 void ArtilleryBox::constructor(ArtilleryBox* this, Point _position, ArtillerySystem* _system);
 "4154400fb6f655534889fb4883ec70":
-cleanup __amd64 void ArtilleryBox::OnRender(ArtilleryBox *this, bool ignoreStatus);
+cleanup __amd64 void ArtilleryBox::OnRender(ArtilleryBox* this, bool ignoreStatus);
 
 
 struct ArtilleryBox
 {{
-	ArtilleryBox(Point pos, ArtillerySystem* sys)
+	ArtilleryBox(Point position, ArtillerySystem* system)
 	{
-		this->constructor(pos, sys);
+		this->constructor(position, system);
 	}
 }};

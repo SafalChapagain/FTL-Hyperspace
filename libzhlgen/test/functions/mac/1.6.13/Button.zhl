@@ -1,17 +1,18 @@
-".554889e54889f048c1e8208b5708":
-cleanup __amd64 void Button::SetLocation(Button *this, const Point pos);
-"554889e54157415641554154534883ec184989ce4989d749":
-cleanup __amd64 void Button::OnInit(Button *this, const std::string& img, Point pos);
-"554889e54156534889fb488d05????????488903488d7b08":
-cleanup __amd64 void Button::constructor(Button *this);
-"554889e553504889fb48837b6800741e":
-cleanup __amd64 void Button::OnRender(Button *this);
-"554889e548397750":
-cleanup __amd64 void Button::SetInactiveImage(Button *this, GL_Texture *texture);
-"554889e548397758":
-cleanup __amd64 void Button::SetActiveImage(Button *this, GL_Texture *texture);
-"554889e541574156534883ec184989f64889fb488d15????":
-cleanup __amd64 void Button::SetImageBase(Button *this, const std::string& imageBase);
+// Continue from BossShip::OnLoop (hyper efficiency™)
+".554889e54156534889fb488d052f??28":
+cleanup __amd64 void Button::constructor(Button* this); // Double decleration - we'll need to hook both and redirect to a custom function to replace the code
+".554889e54157415641554154534883ec184989d64989f74889fb488d":
+cleanup __amd64 void Button::OnInit(Button* this, const std::string& img, Point position);
+".554889e541574156534883ec184989f64889fb488d15":
+cleanup __amd64 void Button::SetImageBase(Button* this, const std::string& imageBase);
+".554889e548397750":
+cleanup __amd64 void Button::SetInactiveImage(Button* this, GL_Texture* texture);
+".554889e548397758":
+cleanup __amd64 void Button::SetActiveImage(Button* this, GL_Texture* texture);
+"!.554889e553504889fb48837b68":
+cleanup __amd64 void Button::OnRender(Button* this);
+"!.554889e54889f048c1e8208b57":
+cleanup __amd64 void Button::SetLocation(Button* this, const Point position);
 
 
 struct Button depends (CSurface)

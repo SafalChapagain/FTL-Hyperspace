@@ -1,25 +1,27 @@
-"554889e553504889fb80bb4c01000000":
-cleanup __amd64 void MouseControl::OnLoop(MouseControl *this);
-"554889e5c6876001":
-cleanup __amd64 void MouseControl::InstantTooltip(MouseControl *this);
-"554889e548c7471000000000c7471800":
-cleanup __amd64 void MouseControl::ResetArmed(MouseControl *this);
-"554889e541574156534883ec384189f64989ff48":
-cleanup __amd64 Point MouseControl::MeasureTooltip(MouseControl *this, int unk);
-"554889e54889b7a00100005d":
-cleanup __amd64 void MouseControl::QueueStaticTooltip(MouseControl *this, Point pos);
-"554889e54157415641554154534883ec684989f64989fc41":
-cleanup __amd64 void MouseControl::RenderTooltip(MouseControl *this, Point tooltipPoint, bool staticPos);
-"554889e54157415641554154534883ec784989fd488b05??":
-cleanup __amd64 void MouseControl::OnRender(MouseControl *this);
-"554889e54156534883ec104889fb66c7":
-cleanup __amd64 void MouseControl::Reset(MouseControl *this);
-"554889e5415741564154534989f74989fe418a07":
-cleanup __amd64 void MouseControl::SetTooltip(MouseControl *this, const std::string& tooltip);
-"0fb68768":
-cleanup __amd64 void MouseControl::SetTooltipTitle(MouseControl *this, const std::string& tooltip);
-"554889e541565389f34989fe83fb0274":
-cleanup __amd64 void MouseControl::SetDoor(MouseControl *this, int state);
-
-"!4c8b75??49895e18488d3d(???????\?)e8????????488d3d????????":
+"!4c8b75??49895e18488d3d(???????\?)e8????????488d3d":
 offsetVariable MouseControl* Global_MouseControl_Mouse;
+
+".554889e553504889fb80bb4c01000000":
+cleanup __amd64 void MouseControl::OnLoop(MouseControl* this);
+".554889e5c6876001":
+cleanup __amd64 void MouseControl::InstantTooltip(MouseControl* this);
+"!.554889e54157415641554154534883ec784989fd488b05":
+cleanup __amd64 void MouseControl::OnRender(MouseControl* this);
+".554889e54157415641554154534883ec684989f64989fc41":
+cleanup __amd64 void MouseControl::RenderTooltip(MouseControl* this, Point tooltipPoint, bool staticPos);
+".554889e548c7471000000000c7471800":
+cleanup __amd64 void MouseControl::ResetArmed(MouseControl* this);
+".554889e541565389f34989fe83fb0274":
+cleanup __amd64 void MouseControl::SetDoor(MouseControl* this, int state);
+".554889e541574156534883ec384189f64989ff48":
+cleanup __amd64 Point MouseControl::MeasureTooltip(MouseControl* this, int width);
+".554889e54889b7a00100005d":
+cleanup __amd64 void MouseControl::QueueStaticTooltip(MouseControl* this, Point position);
+".554889e54156534883ec104889fb66c7":
+cleanup __amd64 void MouseControl::Reset(MouseControl* this);
+".554889e5415741564154534883ec304889f04989ff":
+cleanup __amd64 void MouseControl::LoadTooltip(MouseControl* this, const std::string& tooltipName);
+".554889e5415741564154534989f74989fe418a07":
+cleanup __amd64 void MouseControl::SetTooltip(MouseControl* this, const std::string& tooltip);
+".0fb68768":
+cleanup __amd64 void MouseControl::SetTooltipTitle(MouseControl* this, const std::string& tooltip);

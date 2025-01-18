@@ -1,6 +1,7 @@
-"554889e580bf8002":
-cleanup __amd64 void HackingSystem::BlowHackingDrone(HackingSystem *this);
-"554889e54156534883ec204889fbe84db500004c":
-cleanup __amd64 void HackingSystem::OnLoop(HackingSystem *this);
-"554889e553504889fb80bb6402000000740d4889":
-cleanup __amd64 bool HackingSystem::SoundLoop(HackingSystem *this);
+// Continue from HackingDrone::OnLoop (hyper efficiency™)
+".554889e553504889fb80bb6402000000740d4889":
+cleanup __amd64 bool HackingSystem::SoundLoop(HackingSystem* this);
+".554889e54156534883ec204889fbe84db500004c":
+cleanup __amd64 void HackingSystem::OnLoop(HackingSystem* this);
+"!.554889e580bf8002":
+cleanup __amd64 void HackingSystem::BlowHackingDrone(HackingSystem* this);

@@ -1,17 +1,17 @@
 "565383ec048b4424148b5c241083f8ffc6431101":
-cleanup __cdecl void TimerHelper::Start(TimerHelper *this, int goal);
+cleanup __cdecl void TimerHelper::Start(TimerHelper* this, int goal);
 ".8b4424040fb64011":
-cleanup __cdecl bool TimerHelper::Running(TimerHelper *this);
+cleanup __cdecl bool TimerHelper::Running(TimerHelper* this);
 ".8b4424048b54240c8910":
-cleanup __cdecl void TimerHelper::ResetMinMax(TimerHelper *this, int min, int max);
+cleanup __cdecl void TimerHelper::ResetMinMax(TimerHelper* this, int min, int max);
 ".8b442404f30f104c2408":
-cleanup __cdecl void TimerHelper::SetMaxTime(TimerHelper *this, float max);
+cleanup __cdecl void TimerHelper::SetMaxTime(TimerHelper* this, float max);
 ".8b442404c6401100":
-cleanup __cdecl void TimerHelper::Stop(TimerHelper *this);
+cleanup __cdecl void TimerHelper::Stop(TimerHelper* this);
 ".5383ec188b5c2420807b1100":
-cleanup __cdecl void TimerHelper::Update(TimerHelper *this);
+cleanup __cdecl void TimerHelper::Update(TimerHelper* this);
 ".57565383ec108b5c24200fb6431184c0":
-cleanup __cdecl bool TimerHelper::Done(TimerHelper *this);
+cleanup __cdecl bool TimerHelper::Done(TimerHelper* this);
 
 
 struct TimerHelper

@@ -1,33 +1,33 @@
 "48897758897760":
-virtual cleanup __amd64 void EquipmentBox::SetPosition(EquipmentBox *this, Point pos);
+virtual cleanup __amd64 void EquipmentBox::SetPosition(EquipmentBox* this, Point position);
 ".8b476031c939c6":
-virtual cleanup __amd64 void EquipmentBox::MouseMove(EquipmentBox *this, int x, int y);
+virtual cleanup __amd64 void EquipmentBox::MouseMove(EquipmentBox* this, int x, int y);
 ".48c747700000000048c7477800000000":
-virtual cleanup __amd64 void EquipmentBox::Restart(EquipmentBox *this);
+virtual cleanup __amd64 void EquipmentBox::Restart(EquipmentBox* this);
 ".488b44240848894770":
-virtual cleanup __amd64 void EquipmentBox::AddItem(EquipmentBox *this, EquipmentBoxItem item);
+virtual cleanup __amd64 void EquipmentBox::AddItem(EquipmentBox* this, EquipmentBoxItem item);
 ".488b47704885c07407":
-virtual cleanup __amd64 bool EquipmentBox::CanHoldWeapon(EquipmentBox *this);
+virtual cleanup __amd64 bool EquipmentBox::CanHoldWeapon(EquipmentBox* this);
 ".48837f7000488b4778":
-virtual cleanup __amd64 bool EquipmentBox::CanHoldDrone(EquipmentBox *this);
+virtual cleanup __amd64 bool EquipmentBox::CanHoldDrone(EquipmentBox* this);
 ".48837f70007411":
-virtual cleanup __amd64 int EquipmentBox::GetType(EquipmentBox *this);
+virtual cleanup __amd64 int EquipmentBox::GetType(EquipmentBox* this);
 "!.41545589f54189ec534889fb4883ec30":
-virtual cleanup __amd64 void EquipmentBox::OnRender(EquipmentBox *this, bool isEmpty);
+virtual cleanup __amd64 void EquipmentBox::OnRender(EquipmentBox* this, bool isEmpty);
 ".534889fb4883ec1048c707????????488b7f28e8????????488b7b30e8????????488b7b38e8????????488b7b40e8????????488b7b08e8????????488b4320488d78e84881ff????????750e":
-virtual cleanup __amd64 void EquipmentBox::destructor(EquipmentBox *this);
+virtual cleanup __amd64 void EquipmentBox::destructor(EquipmentBox* this);
 ".41545589f5":
-virtual cleanup __amd64 void EquipmentBox::UpdateBoxImage(EquipmentBox *this, bool unk);
+virtual cleanup __amd64 void EquipmentBox::UpdateBoxImage(EquipmentBox* this, bool dragging);
 ".5589f5":
-virtual cleanup __amd64 void EquipmentBox::RenderLabels(EquipmentBox *this, bool unk);
+virtual cleanup __amd64 void EquipmentBox::RenderLabels(EquipmentBox* this, bool dragging);
 ".554889f048c1f820534889fb4883ec38":
-cleanup __amd64 void EquipmentBox::constructor(EquipmentBox *this, Point pos, int slot);
+cleanup __amd64 void EquipmentBox::constructor(EquipmentBox* this, Point _position, int _slot);
 ".488b47704885c0740f":
-cleanup __amd64 int EquipmentBox::GetItemValue(EquipmentBox *this);
+cleanup __amd64 int EquipmentBox::GetItemValue(EquipmentBox* this);
 ".5531c04889f5534889fb4883ec18":
-cleanup __amd64 void EquipmentBox::SetBlueprint(EquipmentBox *this, InfoBox *infoBox, bool detailedBox);
+cleanup __amd64 void EquipmentBox::SetBlueprint(EquipmentBox* this, InfoBox* infoBox, bool detailedBox);
 ".488b47784885c07407":
-cleanup __amd64 Blueprint* EquipmentBox::GetBlueprint(EquipmentBox *this);
+cleanup __amd64 Blueprint* EquipmentBox::GetBlueprint(EquipmentBox* this);
 
 
 struct EquipmentBox depends (AugmentBlueprint)

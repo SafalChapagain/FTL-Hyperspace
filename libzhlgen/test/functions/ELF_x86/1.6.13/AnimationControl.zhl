@@ -1,5 +1,5 @@
 "5589e557565381ec1c0100008b4510c7442404????????890424??????????85c0":
-cleanup __cdecl Animation AnimationControl::GetAnimation(AnimationControl *this, const std::string& animName);
+cleanup __cdecl Animation AnimationControl::GetAnimation(AnimationControl* this, const std::string& animName);
 
 "!89c6890424c7442404(???????\?)8985d4feffff":
 AnimationControl* Global_AnimationControl_Animations;

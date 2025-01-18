@@ -1,24 +1,35 @@
+/* PreSelect is inlined on Mac, luckily both unused - commented out for now
 "578d7c240883e4f0ff77fc5589e55756538d9d48f9ffff81ec????????8b07":
-__thiscall void ShipSelect::SelectShip(ShipSelect *this, int shipType);
-"578d7c240883e4f0ff77fc5589e5575389cb83ec10c74424046e000000c70424????????e8????????8d4b08":
-__thiscall void ShipSelect::constructor(ShipSelect *this);
-".5589e55756538b792089ce8b511c83e4f089f829d083f8037e??31db":
-__thiscall void ShipSelect::ClearShipButtons(ShipSelect *this);
-".578d7c240883e4f0ff77fc5589e557565381ec????????8b1780b94805000000":
-__thiscall void ShipSelect::MouseMove(ShipSelect *this, int x, int y);
-".80b9480500000075??f3c3908d742600578d7c240883e4f0ff77fc5589e557568db144050000":
-__thiscall void ShipSelect::OnLoop(ShipSelect *this);
-".5781c1????????8d7c240883e4f0ff77fc5589e55783ec148b07":
-__thiscall int ShipSelect::KeyDown(ShipSelect *this, SDLKey key);
-".578d7c240883e4f0ff77fc5589e5575389cb83ec1080b948050000000f85????????80b9bc01000000":
-__thiscall void ShipSelect::MouseClick(ShipSelect *this);
+__thiscall void ShipSelect::SelectShip(ShipSelect* this, int shipType);
 ".578d7c240883e4f0ff77fc5589e5575389cb83ec108b0785c078??83b9780100000274??89d9890424e8????????83ec048d65f8":
-__thiscall void ShipSelect::PreSelectShip(ShipSelect *this, int shipType);
+__thiscall void ShipSelect::PreSelectShip(ShipSelect* this, int shipType);
+*/
+"578d7c240883e4f0ff77fc5589e5575389cb83ec10c74424046e000000c70424????????e8????????8d4b08":
+__thiscall void ShipSelect::constructor(ShipSelect* this);
+".5589e55756538b792089ce8b511c83e4f089f829d083f8037e??31db":
+__thiscall void ShipSelect::ClearShipButtons(ShipSelect* this);
+".578d7c240883e4f0ff77fc5589e557565381ec????????8b1780b94805000000":
+__thiscall void ShipSelect::MouseMove(ShipSelect* this, int mX, int mY);
+".80b9480500000075??f3c3908d742600578d7c240883e4f0ff77fc5589e557568db144050000":
+__thiscall void ShipSelect::OnLoop(ShipSelect* this);
+".5781c1????????8d7c240883e4f0ff77fc5589e55783ec148b07":
+__thiscall int ShipSelect::KeyDown(ShipSelect* this, SDLKey key);
+".578d7c240883e4f0ff77fc5589e5575389cb83ec1080b948050000000f85????????80b9bc01000000":
+__thiscall void ShipSelect::MouseClick(ShipSelect* this);
 ".5581c1????????c681f0faffff0089e583e4f0":
-__thiscall void ShipSelect::Close(ShipSelect *this);
+__thiscall void ShipSelect::Close(ShipSelect* this);
 ".8b4138":
-__thiscall int ShipSelect::GetSelectedShip(ShipSelect *this);
+__thiscall int ShipSelect::GetSelectedShip(ShipSelect* this);
 ".578d7c240883e4f0ff77fc5589e5575653":
-__thiscall void ShipSelect::Open(ShipSelect *this, int currentId, int currentType);
+__thiscall void ShipSelect::Open(ShipSelect* this, int currentId, int currentType);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec6c80b948050000000f85????????807b34000f84????????8b7b148b731039f774??89f68dbc27000000008b06":
-__thiscall void ShipSelect::OnRender(ShipSelect *this);
+__thiscall void ShipSelect::OnRender(ShipSelect* this);
+
+
+struct ShipSelect
+{{
+    ShipSelect()
+    {
+        this->constructor();
+    }
+}};

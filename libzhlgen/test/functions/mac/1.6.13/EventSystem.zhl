@@ -1,7 +1,7 @@
-"554889e585f67819":
-cleanup __amd64 void EventSystem::AddEvent(EventSystem *this, int id);
-"554889e531c085f67818488b":
-cleanup __amd64 bool EventSystem::PollEvent(EventSystem *this, int id);
-
-"!4889dfe8????????488d3d(???????\?)e8????????4180bc24484100000074??":
+"!4889dfe8????????488d3d(???????\?)e8":
 offsetVariable EventSystem* Global_EventSystem_EventManager;
+
+".554889e531c085f67818488b":
+cleanup __amd64 bool EventSystem::PollEvent(EventSystem* this, int id);
+".554889e585f67819":
+cleanup __amd64 void EventSystem::AddEvent(EventSystem* this, int id);

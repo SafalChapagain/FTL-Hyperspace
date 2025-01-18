@@ -1,4 +1,5 @@
-"554889e5807f1400":
-cleanup __amd64 void FocusWindow::MouseClick(FocusWindow *this, int x, int y);
-"554889e58b4f0c83":
-cleanup __amd64 void FocusWindow::MouseMove(FocusWindow *this, int x, int y);
+// Continue from Fire::UpdateStartTimer (hyper efficiency™)
+"!.554889e58b4f0c83":
+cleanup __amd64 void FocusWindow::MouseMove(FocusWindow* this, int x, int y);
+".554889e5807f1400":
+cleanup __amd64 void FocusWindow::MouseClick(FocusWindow* this, int x, int y);

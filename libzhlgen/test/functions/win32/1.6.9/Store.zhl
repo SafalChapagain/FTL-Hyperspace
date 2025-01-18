@@ -1,47 +1,51 @@
 "578d7c240883e4f0ff77fc5589e557565389cb83ec2c8b078b918c0400008945e48b47048945dc8b4708":
-__thiscall void Store::OnInit(Store *this, ShipManager *shopper, Equipment *equip, int worldLevel);
+__thiscall void Store::OnInit(Store* this, ShipManager* shopper, Equipment* equip, int worldLevel);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec7c8b178b47048955a08945a4":
-__thiscall void Store::CreateStoreBoxes(Store *this, int type, Equipment *equip);
+__thiscall void Store::CreateStoreBoxes(Store* this, int type, Equipment* equip);
 "578d7c240883e4f0ff77fc5589e55783ec1483b964060000028b077e??83f83189cf":
-__thiscall bool Store::KeyDown(Store *this, SDLKey key);
+__thiscall bool Store::KeyDown(Store* this, SDLKey key);
 "8b918c0400008b819004000029d0c1f80285c074??5589e5565389ce31db83e4f08b0c9a83c301":
-__thiscall void Store::OnLoop(Store *this);
+__thiscall void Store::OnLoop(Store* this);
 "578d7c240883e4f0ff77fc5589e5575389cb83ec10c64104008b897c06000085c974??8b01c70424????????ff5030":
-__thiscall void Store::Close(Store *this);
+__thiscall void Store::Close(Store* this);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec1c8b378b7f04893424897c2404e8????????8b837c06000083ec0885c074??8d8b68010000897c2404893424":
-__thiscall void Store::MouseMove(Store *this, int x, int y);
+__thiscall void Store::MouseMove(Store* this, int x, int y);
 "5589e55389cb83e4f0e8????????8d43288d8b90000000c703????????c7432400000000c64328008943208d4344c6433801c7434000000000":
-__thiscall void Store::constructor(Store *this);
+__thiscall void Store::constructor(Store* this);
 "5589e557565389cb83e4f083ec208b8164060000894424048b4508890424e8????????8b836406000085c00f8e????????31f68b84b3680600008d3c76":
-__thiscall void Store::SaveStore(Store *this, int file);
+__thiscall void Store::SaveStore(Store* this, int file);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec2c8b47048b1f8945e48999a40400008b898c0400008b8690040000":
-__thiscall void Store::RelinkShip(Store *this, ShipManager *ship, Equipment *equip);
+__thiscall void Store::RelinkShip(Store* this, ShipManager* ship, Equipment* equip);
 "8b4424043b816806000074??3b816c06000074??3b817006000074??3981740600000f94c0c20400908db42600000000b8????????":
-__thiscall bool Store::HasType(Store *this, int type);
+__thiscall bool Store::HasType(Store* this, int type);
 "5589e55756538bb99004000089ce8b918c04000083e4f089f829d0c1f80285c074??31db8b0c9a85c9":
-__thiscall void Store::Clear(Store *this);
+__thiscall void Store::Clear(Store* this);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec7c8b1f8d7da4c745a000000000c645a400897d9c":
-__thiscall void Store::InitHeading(Store *this, int index, Point pos);
+__thiscall void Store::InitHeading(Store* this, int index, Point position);
 "8d4c240483e4f0ff71fc5589e5575653518d45d08d75a08d5dd881ec????????c745d873746f72c745dc655f746189442404":
 static __cdecl void Store::DrawBuySellTabText();
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????8b078b7f04890424897c2404894584e8????????8b837c06000083ec08":
-__thiscall void Store::MouseClick(Store *this, int x, int y);
+__thiscall void Store::MouseClick(Store* this, int x, int y);
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????e8????????8b837c06000085c074??0f2805????????c70424????????0f298518ffffff8b851cffffff89442404":
-__thiscall void Store::OnRender(Store *this);
+__thiscall void Store::OnRender(Store* this);
 "578d7c240883e4f0ff77fc5589e557565389cf31f683ec7cc64105018d4dd0c74424042a000000c70424????????e8????????83ec088b45d08b55d489f9":
-__thiscall void Store::SetPositions(Store *this);
+__thiscall void Store::SetPositions(Store* this);
 "578d7c240883e4f0ff77fc5589e557565389ce81ec????????8b078b918c040000898550ffffff8b47048bb990040000898538ffffff89f8":
-__thiscall void Store::LoadStore(Store *this, int file, int worldLevel);
+__thiscall void Store::LoadStore(Store* this, int file, int worldLevel);
 "578d7c240883e4f0ff77fc5589e5575389cb83ec108b078b570489042489542404e8????????":
-__thiscall void Store::SetPosition(Store *this, Point pos);
+__thiscall void Store::SetPosition(Store* this, Point position);
 "5589e557565331db89ce83e4f083ec108bb9900400008b918c040000c701????????89f829d0c1f80285c074??":
-__thiscall void Store::destructor(Store *this);
+__thiscall void Store::destructor(Store* this);
 
 
-struct Store
 {{
 	Store()
 	{
 		this->constructor();
+	}
+
+	~Store()
+	{
+		this->destructor();
 	}
 }};

@@ -1,18 +1,18 @@
-"554889e5415741564154534189d64189f74989fce8????fa":
-cleanup __amd64 void Upgrades::MouseMove(Upgrades *this, int mX, int mY);
-"554889e54156534989fe498b462849394630742dbb0100000031c90f1f440000488b3cc8e857f2ff":
-cleanup __amd64 void Upgrades::MouseRightClick(Upgrades *this, int mX, int mY);
-"554889e553504889fb807b0800745e48":
-cleanup __amd64 void Upgrades::Close(Upgrades *this);
-"554889e54157415641554154534881ec980000004989ff41":
-cleanup __amd64 void Upgrades::OnLoop(Upgrades *this);
-"554889e541574156534883ec184989ff498b4728":
-cleanup __amd64 void Upgrades::ConfirmUpgrades(Upgrades *this);
-"554889e5415741564154534883ec204989fee8??":
-cleanup __amd64 void Upgrades::MouseClick(Upgrades *this, int mX, int mY);
 "554889e54157415653504989fe498b4628498b4e304889ca":
-cleanup __amd64 void Upgrades::ClearUpgradeBoxes(Upgrades *this);
-"554889e54157415641554154534881ecc80000004889fbc6":
-cleanup __amd64 void Upgrades::OnInit(Upgrades *this, ShipManager *ship);
-"554889e54157415641554154534883ec484989fd498b7d20":
-cleanup __amd64 void Upgrades::OnRender(Upgrades *this);
+cleanup __amd64 void Upgrades::ClearUpgradeBoxes(Upgrades* this);
+"!.554889e54157415641554154534881ecc80000004889fbc6":
+cleanup __amd64 void Upgrades::OnInit(Upgrades* this, ShipManager* ship);
+"!.554889e553504889fb807b0800745e48":
+cleanup __amd64 void Upgrades::Close(Upgrades* this);
+".554889e541574156534883ec184989ff498b4728":
+cleanup __amd64 void Upgrades::ConfirmUpgrades(Upgrades* this);
+"!.554889e5415741564154534189d64189f74989fce8????fa":
+cleanup __amd64 void Upgrades::MouseMove(Upgrades* this, int mX, int mY);
+".554889e54157415641554154534881ec980000004989ff41":
+cleanup __amd64 void Upgrades::OnLoop(Upgrades* this);
+".554889e5415741564154534883ec204989fee8":
+cleanup __amd64 void Upgrades::MouseClick(Upgrades* this, int mX, int mY);
+"!.554889e54156534989fe498b462849394630742dbb0100000031c90f1f440000488b3cc8e857f2ff":
+cleanup __amd64 void Upgrades::MouseRightClick(Upgrades* this, int mX, int mY);
+".554889e54157415641554154534883ec484989fd498b7d20":
+cleanup __amd64 void Upgrades::OnRender(Upgrades* this);

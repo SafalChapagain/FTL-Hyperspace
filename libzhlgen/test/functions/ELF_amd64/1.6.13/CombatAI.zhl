@@ -1,4 +1,4 @@
 "41554154554889fd534883ec48488b4760488b58604885db":
-cleanup __amd64 void CombatAI::UpdateMindControl(CombatAI *this, bool unk);
+cleanup __amd64 void CombatAI::UpdateMindControl(CombatAI* this, bool hostile);
 "4154554889fd53e8????????488b7d60":
-cleanup __amd64 void CombatAI::OnLoop(CombatAI *this);
+cleanup __amd64 void CombatAI::OnLoop(CombatAI* this);

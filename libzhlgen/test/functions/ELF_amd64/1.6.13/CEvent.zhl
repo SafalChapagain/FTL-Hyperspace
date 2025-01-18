@@ -1,5 +1,5 @@
 "415741564155415455534889f34883ec288b4604":
-cleanup __amd64 void CEvent::OnEvent(CEvent *this, const InputEvent* event);
+cleanup __amd64 void CEvent::OnEvent(CEvent* this, const InputEvent* event);
 
 
 struct CEvent

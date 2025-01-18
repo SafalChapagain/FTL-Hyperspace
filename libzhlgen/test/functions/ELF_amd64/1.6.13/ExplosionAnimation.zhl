@@ -1,2 +1,2 @@
 "415741564989fe4155415455534889f34881ec380200008b7f28":
-cleanup __amd64 void ExplosionAnimation::OnInit(ExplosionAnimation *this, rapidxml::xml_node<char>* node, const std::string& name, Point glowOffset);
+cleanup __amd64 void ExplosionAnimation::OnInit(ExplosionAnimation* this, rapidxml::xml_node<char>* node, const std::string& name, Point glowOffset);

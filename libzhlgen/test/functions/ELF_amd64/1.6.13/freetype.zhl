@@ -1,7 +1,7 @@
 "89c9534889fbf3480f2ac14889f731c989d631d2":
-cleanup __amd64 void freetype::font_data::init(freetype::font_data *this, const void *buffer, int bufferSize, unsigned int h, bool glow);
+cleanup __amd64 void freetype::font_data::init(freetype::font_data* this, const void* buffer, int bufferSize, unsigned int h, bool glow);
 "!.8b7f04e9":
-cleanup __amd64 void freetype::font_data::clean(freetype::font_data *this);
+cleanup __amd64 void freetype::font_data::clean(freetype::font_data* this);
 ".554889d089fd5389f34883ec38":
 static cleanup __amd64 Pointf freetype::easy_measurePrintLines(int fontSize, float x, float y, int line_length, const std::string& text);
 ".5389fb4883ec30488b36488d54241e":

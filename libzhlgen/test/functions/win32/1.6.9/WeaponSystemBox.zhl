@@ -1,11 +1,11 @@
 "578d7c240883e4f0ff77fc5589e5575389cb83ec108b078b57048b4f088b7f0cc744240c0100000089042489542404894c2408":
-__thiscall void WeaponSystemBox::constructor(WeaponSystemBox *this, Point pos, ShipSystem* sys, WeaponControl *weapCtrl);
+__thiscall void WeaponSystemBox::constructor(WeaponSystemBox* this, Point _position, ShipSystem* _system, WeaponControl* _weapCtrl);
 
 
 struct WeaponSystemBox
 {{
-	WeaponSystemBox(Point pos, ShipSystem* sys, WeaponControl *weapCtrl)
+	WeaponSystemBox(Point position, ShipSystem* system, WeaponControl* weapCtrl)
 	{
-		this->constructor(pos, sys, weapCtrl);
+		this->constructor(position, system, weapCtrl);
 	}
 }};

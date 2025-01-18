@@ -1,23 +1,23 @@
 "578d7c240883e4f0ff77fc5589e557565389cb83ec3c8b078b4f088b57048945d48d43088b710489038b3989f901f174??85ff75??c70424????????e8????????83fe0f8975e40f87????????83fe010f84????????85f689c10f85????????8b45d4897304c60431008d4b44c7431800000000c7431c00000000c7432000000000":
-__thiscall void TextInput::constructor(TextInput *this, int maxChars, TextInput::AllowedCharType allowedCharType, const std::string& prompt);
+__thiscall void TextInput::constructor(TextInput* this, int _maxChars, TextInput::AllowedCharType _allowedCharType, const std::string& _prompt);
 "578d7c240883e4f0ff77fc5589e557565389ce81ec????????8b07898564ffffff8b4704":
-__thiscall void TextInput::OnRender(TextInput *this, int font, Point pos);
+__thiscall void TextInput::OnRender(TextInput* this, int font, Point position);
 ".5589e5538b413083e4f039413474??c7414c000000008d5944":
-__thiscall void TextInput::OnLoop(TextInput *this);
+__thiscall void TextInput::OnLoop(TextInput* this);
 ".8079380074??5589e557565383e4f083ec20837d080877??":
-__thiscall void TextInput::OnTextEvent(TextInput *this, CEvent::TextEvent event);
+__thiscall void TextInput::OnTextEvent(TextInput* this, CEvent::TextEvent event);
 ".0fb64138c3":
-__thiscall bool TextInput::GetActive(TextInput *this);
+__thiscall bool TextInput::GetActive(TextInput* this);
 "578d7c240883e4f0ff77fc5589e5575389cb83ec108b07c7442408ffffffffc744240400000000890424":
-__thiscall std::string TextInput::GetText(TextInput *this);
+__thiscall std::string TextInput::GetText(TextInput* this);
 ".578d7c240883e4f0ff77fc5589e5575383ec408b411c":
-__thiscall void TextInput::Start(TextInput *this);
+__thiscall void TextInput::Start(TextInput* this);
 ".55c641380089e583e4f0e8????????":
-__thiscall void TextInput::Stop(TextInput *this);
+__thiscall void TextInput::Stop(TextInput* this);
 "578d7c240883e4f0ff77fc5589e557565389ce8d5de083ec2c":
-__thiscall int TextInput::SetText(TextInput *this, const std::string& text);
+__thiscall int TextInput::SetText(TextInput* this, const std::string& text);
 ".8079380074??578d7c240883e4f0ff77fc5589e557565383ec6c":
-__thiscall void TextInput::OnTextInput(TextInput *this, int asciiChar);
+__thiscall void TextInput::OnTextInput(TextInput* this, int asciiChar);
 
 
 struct TextInput depends (CEvent)
@@ -31,6 +31,7 @@ struct TextInput depends (CEvent)
 	
 	TextInput()
 	{
+		
 	}
 
 	TextInput(int maxChars, TextInput::AllowedCharType allowedCharType, const std::string& prompt)

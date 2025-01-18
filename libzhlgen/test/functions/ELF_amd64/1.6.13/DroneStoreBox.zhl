@@ -1,12 +1,14 @@
 "41554989d541544989f4be":
-cleanup __amd64 void DroneStoreBox::constructor(DroneStoreBox *this, ShipManager *ship, Equipment *equip, const DroneBlueprint* bp);
+cleanup __amd64 void DroneStoreBox::constructor(DroneStoreBox* this, ShipManager* _ship, Equipment* _equipScreen, const DroneBlueprint* _blueprint);
+
+
 
 
 struct DroneStoreBox
 {{
-	DroneStoreBox(ShipManager *_ship, Equipment *_equip, const DroneBlueprint* _bp)
+	DroneStoreBox(ShipManager* ship, Equipment* equipScreen, const DroneBlueprint* blueprint)
 	{
-		this->constructor(_ship, _equip, _bp);
+		this->constructor(ship, equipScreen, blueprint);
 	}
 	
 	DroneStoreBox()

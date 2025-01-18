@@ -1,26 +1,38 @@
-"554889e54157415653504989fe488d05????????498906488d05????????49894610498bbec0000000":
-cleanup __amd64 void Room::destructor(Room *this);
-"554889e54157415641554154534881ec????????4489cb4589c6":
-cleanup __amd64 void Room::constructor(Room *this, int iShipId, int x, int y, int w, int h, int roomId);
-"554889e5400fb6ce":
-cleanup __amd64 int Room::GetEmptySlots(Room *this, bool intruder);
-"554889e5400fb6c6488b4f38488b5750":
-cleanup __amd64 bool Room::Full(Room *this, bool intruder);
-"554889e54084f67525486387":
-cleanup __amd64 int Room::GetEmptySlot(Room *this, bool intruder);
-"554889e5440fb6c2488b47504863ce4b8d14404c8b0cd04889ce48c1ee06b80100000048d3e080e13f498b14f10fb6c9480fa3ca73025dc3":
-cleanup __amd64 void Room::FillSlot(Room *this, int slot, bool intruder);
-"554889e5f30f100d????2400":
-cleanup __amd64 void Room::OnRenderFloor(Room *this, float alpha, bool experimental);
-"554889e553504889fb807b68":
-cleanup __amd64 void Room::OnRenderWalls(Room *this, float alpha);
+// Continue from RockAnimation::GetShootingSound (hyper efficiency™)
+"!.554889e54157415641554154534881ec????????4489cb4589c6":
+cleanup __amd64 void Room::constructor(Room* this, int _iShipId, int _x, int _y, int _w, int _h, int _roomId);
+"!.554889e54157415653504989fe488d05????????498906488d05????????49894610498bbec0000000":
+cleanup __amd64 void Room::destructor(Room* this);
+".554889e5400fb6ce":
+cleanup __amd64 int Room::GetEmptySlots(Room* this, bool intruder);
+".554889e5400fb6c6488b4f38488b5750":
+cleanup __amd64 bool Room::Full(Room* this, bool intruder);
+".554889e54084f67525486387":
+cleanup __amd64 int Room::GetEmptySlot(Room* this, bool intruder);
+".554889e5440fb6c2488b47504863ce4b8d14404c8b0cd04889ce48c1ee06b80100000048d3e080e13f498b14f10fb6c9480fa3ca73025dc3":
+cleanup __amd64 void Room::FillSlot(Room* this, int slot, bool intruder);
+"!.554889e5f30f100d????2400":
+cleanup __amd64 void Room::OnRenderFloor(Room* this, float alpha, bool experimental);
+"!.554889e553504889fb807b68":
+cleanup __amd64 void Room::OnRenderWalls(Room* this, float alpha);
 
 
-struct Room depends (Globals, Point) {{
-	Point GetIntoRoom(Point pos)
+struct Room depends (Globals, Point) 
+{{
+	Room(int iShipId, int x, int y, int w, int h, int roomId)
 	{
-		int posX = pos.x;
-		int posY = pos.y;
+		this->constructor(iShipId, x, y, w, h, roomId);
+	}
+
+	~Room()
+	{
+		this->destructor();
+	}
+
+	Point GetIntoRoom(Point position)
+	{
+		int posX = position.x;
+		int posY = position.y;
 		
 		int rectY = this->rect.y;
 		int rectH = this->rect.h;
@@ -37,14 +49,11 @@ struct Room depends (Globals, Point) {{
 				return Point(-1, -1);
 			}
 		}
-		
-		
-		
-		
+
 		Point center = Point(rectX + rectW / 2, rectY + rectH / 2);
 		
-		Point toGrid = Point((posX + 2 * (center.x > posX) - 1) / 35, (posY + 2 * (center.y > posY) - 1) / 35);
-		Point fromGrid = Point(toGrid.x * 35, toGrid.y * 35);
+		Point toGrid = Point((posX + 2*  (center.x > posX) - 1) / 35, (posY + 2*  (center.y > posY) - 1) / 35);
+		Point fromGrid = Point(toGrid.x*  35, toGrid.y*  35);
 		
 		return Point(fromGrid.x + 17, fromGrid.y + 17);
 	}

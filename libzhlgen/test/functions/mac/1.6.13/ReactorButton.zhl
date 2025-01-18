@@ -1,8 +1,9 @@
-"554889e54156534883ec204989fe4183":
-cleanup __amd64 void ReactorButton::Accept(ReactorButton *this);
-"554889e541574156534883ec184989ff498bbf90":
-cleanup __amd64 void ReactorButton::OnClick(ReactorButton *this);
-"554889e54156534883ec204889fb83bb8c000000":
-cleanup __amd64 void ReactorButton::OnRightClick(ReactorButton *this);
-"554889e54157415641554154534881ecb80000004989fee8":
-cleanup __amd64 void ReactorButton::OnRender(ReactorButton *this);
+// Continue from ProjectileFactory::destructor (hyper efficiency™)
+".554889e54156534883ec204989fe4183":
+cleanup __amd64 void ReactorButton::Accept(ReactorButton* this);
+".554889e54157415641554154534881ecb80000004989fee8":
+cleanup __amd64 void ReactorButton::OnRender(ReactorButton* this);
+".554889e541574156534883ec184989ff498bbf90":
+cleanup __amd64 void ReactorButton::OnClick(ReactorButton* this);
+".554889e54156534883ec204889fb83bb8c000000":
+cleanup __amd64 void ReactorButton::OnRightClick(ReactorButton* this);

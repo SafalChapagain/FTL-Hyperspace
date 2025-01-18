@@ -1,22 +1,23 @@
-"554889e54157415653504989fee8ee84":
-cleanup __amd64 void Equipment::Open(Equipment *this);
-".554889e5c64708??5d":
-cleanup __amd64 void Equipment::Close(Equipment *this);
-"554889e553504889fbe81281":
-cleanup __amd64 void Equipment::MouseClick(Equipment *this, int mX, int mY);
-"554889e5415741564154534989fc498b8424c802":
-cleanup __amd64 void Equipment::OnLoop(Equipment *this);
-"554889e5534883ec684889fb80bb1403":
-cleanup __amd64 void Equipment::MouseUp(Equipment *this, int mX, int mY);
-"554889e5415741564154534883ec704189cf4989":
-cleanup __amd64 void Equipment::AddDrone(Equipment *this, DroneBlueprint *bp, bool unk1, bool unk2);
-"554889e54157415641554154534883ec684989f64989fd4d":
-cleanup __amd64 void Equipment::AddAugment(Equipment *this, AugmentBlueprint *bp, bool unk1, bool unk2);
-"554889e5415741564154534989f74989fe49c746":
-cleanup __amd64 std::vector<std::string> Equipment::GetCargoHold(Equipment *this);
-"554889e54157415641554154534881ec9800000089cb4989":
-cleanup __amd64 void Equipment::AddWeapon(Equipment *this, WeaponBlueprint *bp, bool unk1, bool unk2);
-"554889e541574156534883ec484989f7":
-cleanup __amd64 void Equipment::AddToCargo(Equipment *this, std::string &name);
-"554889e54157415641554154534881ec280100004989f649":
-cleanup __amd64 void Equipment::OnInit(Equipment *this, ShipManager *ship);
+// Continue from EnergyAlien::GetRoomDamage (hyper efficiency™)
+"!.554889e54157415641554154534881ec280100004989f649":
+cleanup __amd64 void Equipment::OnInit(Equipment* this, ShipManager* ship);
+".554889e5415741564154534989fc498b8424c802":
+cleanup __amd64 void Equipment::OnLoop(Equipment* this);
+".554889e5415741564154534989f74989fe49c746":
+cleanup __amd64 std::vector<std::string> Equipment::GetCargoHold(Equipment* this);
+".554889e541574156534883ec484989f7":
+cleanup __amd64 void Equipment::AddToCargo(Equipment* this, std::string& name);
+"!.554889e54157415641554154534881ec9800000089cb4989":
+cleanup __amd64 void Equipment::AddWeapon(Equipment* this, WeaponBlueprint* bp, bool free, bool forceCargo);
+".554889e5415741564154534883ec704189cf4989":
+cleanup __amd64 void Equipment::AddDrone(Equipment* this, DroneBlueprint* bp, bool free, bool forceCargo);
+".554889e54157415641554154534883ec684989f64989fd4d":
+cleanup __amd64 void Equipment::AddAugment(Equipment* this, AugmentBlueprint* bp, bool free, bool forceCargo);
+".554889e54157415653504989fee8ee84":
+cleanup __amd64 void Equipment::Open(Equipment* this);
+".554889e553504889fbe81281":
+cleanup __amd64 void Equipment::MouseClick(Equipment* this, int mX, int mY);
+".554889e5534883ec684889fb80bb1403":
+cleanup __amd64 void Equipment::MouseUp(Equipment* this, int mX, int mY);
+"!.554889e5c64708??5d":
+cleanup __amd64 void Equipment::Close(Equipment* this);

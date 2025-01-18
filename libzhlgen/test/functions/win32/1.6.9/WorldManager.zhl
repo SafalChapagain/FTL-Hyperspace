@@ -1,48 +1,44 @@
 "578d7c240883e4f0ff77fc5589e5575389cb8d490883ec10c741f800000000c741fc00000000":
-__thiscall void WorldManager::constructor(WorldManager *this);
+__thiscall void WorldManager::constructor(WorldManager* this);
 "578d7c240883e4f0ff77fc5589e557568d71085389cb83ec1c89f1e8????????c70424????????e8????????":
-__thiscall int WorldManager::OnInit(WorldManager *this);
+__thiscall int WorldManager::OnInit(WorldManager* this);
 "578d7c240883e4f0ff77fc5589e557565389ce81ec????????807f04008b1f0f85????????c70424????????e8????????89c7":
-__thiscall CompleteShip *WorldManager::CreateShip(WorldManager *this, ShipEvent* shipEvent, bool boss);
+__thiscall CompleteShip* WorldManager::CreateShip(WorldManager* this, ShipEvent* shipEvent, bool boss);
 "578d7c240883e4f0ff77fc5589e557565389ce81ec????????898d54fbffffc6814612000000b9????????8b3f":
-__thiscall void WorldManager::CreateLocation(WorldManager *this, Location *loc);
+__thiscall void WorldManager::CreateLocation(WorldManager* this, Location* loc);
 "578d7c240883e4f0ff77fc5589e557565389cb83c10881ec5c030000":
-__thiscall void WorldManager::ClearLocation(WorldManager *this);
+__thiscall void WorldManager::ClearLocation(WorldManager* this);
 "578d7c240883e4f0ff77fc5589e557565389cf83ec3c8b89e40d0000e8????????84c074??8d65f45b5e5f5d":
-__thiscall void WorldManager::SaveGame(WorldManager *this);
+__thiscall void WorldManager::SaveGame(WorldManager* this);
 "5789c805????????8d7c240883e4f0ff77fc5589e557565389cb89c681ec????????8b3f":
-__thiscall void WorldManager::CreateChoiceBox(WorldManager *this, LocationEvent* event);
-"578d7c240883e4f0ff77fc5589e557565389cb83ec1c8b018b378b48088b018b40443d????????752a0fb6819904000084c0751185f6742889342489d9e8????????83ec04":
-__thiscall void WorldManager::CreateChoiceBox0(WorldManager *this, LocationEvent* event);
+__thiscall void WorldManager::CreateChoiceBox(WorldManager* this, LocationEvent* event);
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b3f898d70fbffff807f1c000f85????????8d85bcfbffff89ce898568fbffff8d85c4fbffff898564fbffff8d874406000089f1890424":
-__thiscall void WorldManager::UpdateLocation(WorldManager *this, LocationEvent* event);
-"578d7c240883e4f0ff77fc5589e557565389cb83ec1c8b018b378b48088b018b40443d????????75270fb6819904000084c0750d89342489d9e8????????83ec04":
-__thiscall void WorldManager::UpdateLocation0(WorldManager *this, LocationEvent* event);
+__thiscall void WorldManager::UpdateLocation(WorldManager* this, LocationEvent* event);
 "578d7c240883e4f0ff77fc5589e557565389ce8d8d2cfeffff81ec????????8b078985d8fcffff":
-__thiscall LocationEvent *WorldManager::ModifyResources(WorldManager *this, LocationEvent *event);
+__thiscall LocationEvent* WorldManager::ModifyResources(WorldManager* this, LocationEvent* event);
 "578d7c240883e4f0ff77fc5589e5575389cb83ec108b078b570483f801":
-__thiscall void WorldManager::ModifyEnvironment(WorldManager *this, int envFlag, int envTarget);
+__thiscall void WorldManager::ModifyEnvironment(WorldManager* this, int envFlag, int envTarget);
 "5789ca81c2????????8d7c240883e4f0ff77fc5589e5575653":
-__thiscall void WorldManager::CheckStatusEffects(WorldManager *this, std::vector<StatusEffect>& vec);
+__thiscall void WorldManager::CheckStatusEffects(WorldManager* this, std::vector<StatusEffect>& vec);
 "578d7c240883e4f0ff77fc5589f889e557565383ec5c8b70148b500c8b7f1039d6":
-__thiscall void WorldManager::ModifyStatusEffect(WorldManager *this, StatusEffect effect, ShipManager *target, int targetType);
+__thiscall void WorldManager::ModifyStatusEffect(WorldManager* this, StatusEffect effect, ShipManager* target, int targetType);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec4c8b098b3785c9":
-__thiscall void WorldManager::StartGame(WorldManager *this, ShipManager *ship);
+__thiscall void WorldManager::StartGame(WorldManager* this, ShipManager* ship);
 ".578d7c240883e4f0ff77fc5589e5575389cb83ec10e8????????e8????????":
-__thiscall void WorldManager::Restart(WorldManager *this);
+__thiscall void WorldManager::Restart(WorldManager* this);
 "578d7c240883e4f0ff77fc5589e557565389cb8db51cfeffff81ec????????8b07c7852cfeffff00000000c78530feffff00000000c78534feffff00000000c78538feffff00000000c7853cfeffff00000000":
-__thiscall void WorldManager::LoadGame(WorldManager *this, const std::string& fileName);
+__thiscall void WorldManager::LoadGame(WorldManager* this, const std::string& fileName);
 "578d7c240883e4f0ff77fc5589e557565389cf81ec????????c70424????????e8????????83ec0484c074??8d65f45b5e5f5d8d67f85f":
-__thiscall void WorldManager::OnLoop(WorldManager *this);
+__thiscall void WorldManager::OnLoop(WorldManager* this);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec5c8b098b01ff500c83be3408000001":
-__thiscall void WorldManager::PauseLoop(WorldManager *this);
+__thiscall void WorldManager::PauseLoop(WorldManager* this);
 "578d7c240883e4f0ff77fc5589e557565389ce8d5dd88d7dd083ec3c8b018b480881c1????????e8????????8b068b5008895dd08b8aa4060000":
-__thiscall void WorldManager::CreateNewGame(WorldManager *this);
+__thiscall void WorldManager::CreateNewGame(WorldManager* this);
 "5589e55389cb83c10883e4f0e8????????84c075??8b038b4808b8????????8b91f007000085d274??":
-__thiscall bool WorldManager::HostileEnvironment(WorldManager *this);
+__thiscall bool WorldManager::HostileEnvironment(WorldManager* this);
 "578d7c240883e4f0ff77fc5589e557565383ec4c8b018b1f8b500831c083baf00700000e7f??":
-__thiscall bool WorldManager::AddBoarders(WorldManager *this, BoardingEvent& boardingEvent);
+__thiscall bool WorldManager::AddBoarders(WorldManager* this, BoardingEvent& boardingEvent);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec1c8b378b961c06000085d274??0fb683451200008b89e40d0000891424":
-__thiscall void WorldManager::CreateStore(WorldManager *this, LocationEvent* event);
+__thiscall void WorldManager::CreateStore(WorldManager* this, LocationEvent* event);
 "578d7c240883e4f0ff77fc5589e557565383ec4c8b1f85db0f84120100000fb693d405000084d20f85030100008b834c04000085c00f880a010000":
-__thiscall bool WorldManager::CheckRequirements(WorldManager *this, LocationEvent* event, bool hidden);
+__thiscall bool WorldManager::CheckRequirements(WorldManager* this, LocationEvent* event, bool hidden);

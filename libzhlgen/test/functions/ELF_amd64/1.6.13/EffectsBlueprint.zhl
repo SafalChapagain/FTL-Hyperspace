@@ -7,6 +7,6 @@ struct EffectsBlueprint
 		hitShieldSounds = other.hitShieldSounds;
 		missSounds = other.missSounds;
 		image = other.image;
-		return *this;
+		return* this;
 	}
 }};

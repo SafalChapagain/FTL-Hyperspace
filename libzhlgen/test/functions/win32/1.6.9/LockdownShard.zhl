@@ -1,2 +1,2 @@
 "578d7c240883e4f0ff77fc5589e5575389cbb9????????83ec30e8????????d95df4f30f1045f4f30f5905????????f30f5883e4000000f30f1183e4000000f30f1083d40000000f2e83cc0000007a??":
-__thiscall void LockdownShard::Update(LockdownShard *this);
+__thiscall void LockdownShard::Update(LockdownShard* this);

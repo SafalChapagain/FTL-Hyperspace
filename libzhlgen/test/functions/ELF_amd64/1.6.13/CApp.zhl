@@ -1,58 +1,56 @@
 "!534889fb488b7f104885ff7428":
-cleanup __amd64 void CApp::OnRequestExit(CApp *this);
+cleanup __amd64 void CApp::OnRequestExit(CApp* this);
 ".534889fbe8":
-cleanup __amd64 void CApp::OnExit(CApp *this);
+cleanup __amd64 void CApp::OnExit(CApp* this);
 ".80bf????000000":
-cleanup __amd64 void CApp::OnMButtonDown(CApp *this, int x, int y);
+cleanup __amd64 void CApp::OnMButtonDown(CApp* this, int mX, int mY);
 ".80bf????000000":
-cleanup __amd64 void CApp::OnTextInput(CApp *this, int ch);
+cleanup __amd64 void CApp::OnTextInput(CApp* this, SDLKey key);
 ".80bf????000000":
-cleanup __amd64 void CApp::OnTextEvent(CApp *this, CEvent::TextEvent textEvent);
+cleanup __amd64 void CApp::OnTextEvent(CApp* this, CEvent::TextEvent textEvent);
 ".5380bf????000000":
-cleanup __amd64 void CApp::OnInputFocus(CApp *this);
+cleanup __amd64 void CApp::OnInputFocus(CApp* this);
 ".534889fbc687????000000":
-cleanup __amd64 void CApp::OnInputBlur(CApp *this);
+cleanup __amd64 void CApp::OnInputBlur(CApp* this);
 ".534889fb4883ec102bb7????0000":
-cleanup __amd64 void CApp::OnRButtonUp(CApp *this, int x, int y);
+cleanup __amd64 void CApp::OnRButtonUp(CApp* this, int mX, int mY);
 ".534889fb4883ec102bb7????0000":
-cleanup __amd64 void CApp::OnRButtonDown(CApp *this, int x, int y);
+cleanup __amd64 void CApp::OnRButtonDown(CApp* this, int mX, int mY);
 ".534889fb4883ec102bb7????0000":
-cleanup __amd64 void CApp::OnLButtonUp(CApp *this, int x, int y);
+cleanup __amd64 void CApp::OnLButtonUp(CApp* this, int mX, int mY);
 ".534889fb4883ec102bb7????0000":
-cleanup __amd64 void CApp::OnLButtonDown(CApp *this, int x, int y);
+cleanup __amd64 void CApp::OnLButtonDown(CApp* this, int mX, int mY);
 ".415455534889fb4883ec102bb7????0000":
-cleanup __amd64 void CApp::OnMouseMove(CApp *this, int x, int y, int xdiff, int ydiff, bool holdingLMB, bool holdingRMB, bool holdingMMB);
+cleanup __amd64 void CApp::OnMouseMove(CApp* this, int mX, int mY, int relX, int relY, bool holdingLeft, bool holdingRight, bool holdingMiddle);
 ".555389f34883ec3885f6":
-cleanup __amd64 void CApp::OnKeyUp(CApp *this, SDLKey key);
+cleanup __amd64 void CApp::OnKeyUp(CApp* this, SDLKey key);
 ".55be????????534889fb4883ec38":
-cleanup __amd64 void CApp::OnLanguageChange(CApp *this);
+cleanup __amd64 void CApp::OnLanguageChange(CApp* this);
 ".555389f34883ec4885f6":
-cleanup __amd64 void CApp::OnKeyDown(CApp *this, SDLKey key);
+cleanup __amd64 void CApp::OnKeyDown(CApp* this, SDLKey key);
 ".534889fbe8????????488d7b20":
-cleanup __amd64 void CApp::constructor(CApp *this);
-"!.f3c366666666662e0f1f840000000000":
-cleanup __amd64 void CApp::ParseArgs(CApp *this, int argc, const char** argv);
+cleanup __amd64 void CApp::constructor(CApp* this);
 ".55534889fb":
-cleanup __amd64 void CApp::OnLoop(CApp *this);
+cleanup __amd64 void CApp::OnLoop(CApp* this);
 ".53be0100000031c04889fb":
-cleanup __amd64 int CApp::SetupWindow(CApp *this);
+cleanup __amd64 int CApp::SetupWindow(CApp* this);
 "!.55534889fb4883ec08488b7f18":
-cleanup __amd64 void CApp::OnCleanup(CApp *this);
+cleanup __amd64 void CApp::OnCleanup(CApp* this);
 ".55534889fb4883ec08":
-cleanup __amd64 void CApp::GenInputEvents(CApp *this);
+cleanup __amd64 void CApp::GenInputEvents(CApp* this);
 ".534889fbe8????????488b7b10":
-cleanup __amd64 void CApp::OnSuspend(CApp *this);
+cleanup __amd64 void CApp::OnSuspend(CApp* this);
 ".5380bf????000000":
-cleanup __amd64 void CApp::OnResume(CApp *this);
+cleanup __amd64 void CApp::OnResume(CApp* this);
 ".4883ec182bb7????00002b97????0000":
-cleanup __amd64 Point CApp::TranslateMouse(CApp *this, int x, int y);
+cleanup __amd64 Point CApp::TranslateMouse(CApp* this, int mX, int mY);
 ".803d????????007407c3":
-cleanup __amd64 void CApp::UpdateFullScreen(CApp *this);
+cleanup __amd64 void CApp::UpdateFullScreen(CApp* this);
 ".80bf????000000c787????000000000000":
-cleanup __amd64 void CApp::UpdateWindowSettings(CApp *this);
+cleanup __amd64 void CApp::UpdateWindowSettings(CApp* this);
 ".534889fb4883ec30":
-cleanup __amd64 void CApp::OnRender(CApp *this);
+cleanup __amd64 void CApp::OnRender(CApp* this);
 ".534889fb31ff4883ec40":
-cleanup __amd64 int CApp::OnInit(CApp *this);
+cleanup __amd64 int CApp::OnInit(CApp* this);
 ".415731f641564155415455534889fb":
-cleanup __amd64 int CApp::OnExecute(CApp *this);
+cleanup __amd64 int CApp::OnExecute(CApp* this);

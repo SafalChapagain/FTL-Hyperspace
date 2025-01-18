@@ -1,23 +1,23 @@
 "534889fb4883ec10488b471048c707????????488d78e84881ff????????750e":
-cleanup __amd64 void CachedImage::destructor(CachedImage *this);
+cleanup __amd64 void CachedImage::destructor(CachedImage* this);
 "55534889fbbf????????4883ec08e8????????483b4318":
-cleanup __amd64 void CachedImage::SetImagePath(CachedImage *this, const std::string& imagePath);
+cleanup __amd64 void CachedImage::SetImagePath(CachedImage* this, const std::string& imagePath);
 ".41544189d45589f553397720":
-cleanup __amd64 void CachedImage::SetPosition(CachedImage *this, int x, int y);
+cleanup __amd64 void CachedImage::SetPosition(CachedImage* this, int x, int y);
 "41544189cc5589d5534889fb48c7470800000000":
-cleanup __amd64 void CachedImage::constructor1(CachedImage *this, const std::string& path, int x, int y);
+cleanup __amd64 void CachedImage::constructor1(CachedImage* this, const std::string& _path, int _x, int _y);
 "53??89fb??c74708??????????c707??????????c74710??????????????????":
-cleanup __amd64 void CachedImage::constructor2(CachedImage *this, const std::string& path, CachedImage::Centered centered);
+cleanup __amd64 void CachedImage::constructor2(CachedImage* this, const std::string& _path, CachedImage::Centered _centered);
 "554889f5488d7610534889fb488d7f104883ec0848c747f800000000":
-cleanup __amd64 void CachedImage::constructor_copy(CachedImage *this, const CachedImage &other);
+cleanup __amd64 void CachedImage::constructor_copy(CachedImage* this, const CachedImage& _source);
 "534889fb4883ec100f2e4740":
-cleanup __amd64 void CachedImage::SetRotation(CachedImage *this, float _rotation);
+cleanup __amd64 void CachedImage::SetRotation(CachedImage* this, float rotation);
 ".5589f5534889fb4883ec0840387744":
-cleanup __amd64 void CachedImage::SetMirrored(CachedImage *this, bool _mirrored);
+cleanup __amd64 void CachedImage::SetMirrored(CachedImage* this, bool mirrored);
 "534889fb4883ec100f2e4728":
-cleanup __amd64 void CachedImage::SetScale(CachedImage *this, float wScale, float hScale);
+cleanup __amd64 void CachedImage::SetScale(CachedImage* this, float wScale, float hScale);
 "415455534889fb4883ec50488b6f184885ed":
-cleanup __amd64 void CachedImage::CreatePrimitive(CachedImage *this);
+cleanup __amd64 void CachedImage::CreatePrimitive(CachedImage* this);
 
 
 struct CachedImage
@@ -42,9 +42,9 @@ struct CachedImage
 		
 	}
 	
-	CachedImage(const CachedImage &other)
+	CachedImage(const CachedImage& source)
 	{
-		constructor_copy(other);
+		constructor_copy(source);
 	}
 }};
 

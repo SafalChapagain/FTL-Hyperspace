@@ -1,11 +1,11 @@
 "578d7c240883e4f0ff77fc5589f889e557565389cf8d75d081ec????????8b58088b108b4804c744240c00000000895c2408891424":
-__thiscall void BatteryBox::constructor(BatteryBox *this, Point pos, BatterySystem* sys);
+__thiscall void BatteryBox::constructor(BatteryBox* this, Point position, BatterySystem* _system);
 
 
 struct BatteryBox
 {{
-	BatteryBox(Point pos, BatterySystem* sys)
+	BatteryBox(Point position, BatterySystem* system)
 	{
-		this->constructor(pos, sys);
+		this->constructor(position, system);
 	}
 }};

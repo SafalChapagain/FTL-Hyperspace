@@ -1,4 +1,4 @@
 "558d91a800000089e55389cb83e4f083ec108b81a0000000c701????????39d074??890424e8????????8b83840000008d938c00000039d074??890424":
-__thiscall void Blueprint::destructor(Blueprint *this);
+__thiscall void Blueprint::destructor(Blueprint* this);
 ".578d7c240883e4f0ff77fc5589e557565389cb83ec2c8b17807a500075??83c238":
 __thiscall std::string Blueprint::GetNameShort(Blueprint* this);

@@ -1,27 +1,27 @@
 "578d7c240883e4f0ff77fc5589e5575389cb83ec108b496885c974??80bb6e0200000075??c70424????????e8????????":
-__thiscall void CrewEquipBox::RemoveItem(CrewEquipBox *this);
+__thiscall void CrewEquipBox::RemoveItem(CrewEquipBox* this);
 "578d7c240883e4f0ff77fc5589e557565389cb8d4d9881ec????????8b77088b07":
-__thiscall void CrewEquipBox::constructor(CrewEquipBox *this, Point pos, ShipManager *ship, int slot);
+__thiscall void CrewEquipBox::constructor(CrewEquipBox* this, Point _position, ShipManager* _shipManager, int _slot);
 "0fb681d0020000c681d002000000":
-__thiscall bool CrewEquipBox::GetConfirmDelete(CrewEquipBox *this);
+__thiscall bool CrewEquipBox::GetConfirmDelete(CrewEquipBox* this);
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????8b51608b078b770485d20f84????????0fb68b6c02000083f10109c889f138c10f87????????f30f102d????????":
-__thiscall void CrewEquipBox::RenderLabels(CrewEquipBox *this, bool dragging, bool isNew);
+__thiscall void CrewEquipBox::RenderLabels(CrewEquipBox* this, bool dragging, bool isNew);
 "578d7c240883e4f0ff77fc5589e557565389ceb9????????83ec6c8b1fe8????????83f8018d968c0000000f9fc00fb6c089d1":
-__thiscall void CrewEquipBox::OnRender(CrewEquipBox *this, bool unk);
+__thiscall void CrewEquipBox::OnRender(CrewEquipBox* this, bool dragging);
 "578d7c240883e4f0ff77fc5589e55756538d997002000083ec1c89d98b37e8????????84c074??893424":
-__thiscall void CrewEquipBox::OnTextInput(CrewEquipBox *this, SDLKey key);
+__thiscall void CrewEquipBox::OnTextInput(CrewEquipBox* this, SDLKey key);
 ".578d7c240883e4f0ff77fc5589e55756538d997002000083ec1c89d98b37e8????????84c074??893424":
-__thiscall void CrewEquipBox::OnTextEvent(CrewEquipBox *this, CEvent::TextEvent event);
+__thiscall void CrewEquipBox::OnTextEvent(CrewEquipBox* this, CEvent::TextEvent event);
 "578d7c240883e4f0ff77fc5589e557565383ec6c8b716085f60f84????????80b96c0200000089cb74??80bbcc0000000074??":
-__thiscall void CrewEquipBox::MouseClick(CrewEquipBox *this);
+__thiscall void CrewEquipBox::MouseClick(CrewEquipBox* this);
 "80b96e0200000075??c38db6000000005581c1????????c641fe0089e583e4f0":
-__thiscall void CrewEquipBox::CloseRename(CrewEquipBox *this);
+__thiscall void CrewEquipBox::CloseRename(CrewEquipBox* this);
 
 
 struct CrewEquipBox depends (TextInput)
 {{
-	CrewEquipBox(Point pos_, ShipManager *ship_, int slot_)
+	CrewEquipBox(Point position, ShipManager* shipManager, int slot)
 	{
-		this->constructor(pos_, ship_, slot_);
+		this->constructor(position, shipManager, slot);
 	}
 }};

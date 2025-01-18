@@ -1,6 +1,6 @@
-"554889e5534883ec184889fb0f57c00f2945e048c745f000000000c645e01848":
-cleanup __amd64 TextString DroneControl::HolderLabel(DroneControl *this);
-"554889e5534883ec38ffc68975f4488d5dc0488d75f44889dfe822??":
-cleanup __amd64 SDLKey DroneControl::ArmamentHotkey(DroneControl *this, unsigned int i);
 "554889e5415741564154534883ec204989ff498b":
-cleanup __amd64 void DroneControl::OnLoop(DroneControl *this);
+cleanup __amd64 void DroneControl::OnLoop(DroneControl* this);
+".554889e5534883ec184889fb0f57c00f2945e048c745f000000000c645e01848":
+cleanup __amd64 TextString DroneControl::HolderLabel(DroneControl* this);
+".554889e5534883ec38ffc68975f4488d5dc0488d75f44889dfe822":
+cleanup __amd64 SDLKey DroneControl::ArmamentHotkey(DroneControl* this, unsigned int i);

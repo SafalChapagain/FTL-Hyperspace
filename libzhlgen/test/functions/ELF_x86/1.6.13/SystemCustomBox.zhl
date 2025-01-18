@@ -1,11 +1,11 @@
 "5557565383ec5c8b5c24708b7424788b6c24748b44247c":
-cleanup __cdecl void SystemCustomBox::constructor(SystemCustomBox *this, Point pos, ShipSystem *sys, ShipManager *ship);
+cleanup __cdecl void SystemCustomBox::constructor(SystemCustomBox* this, Point _position, ShipSystem* _system, ShipManager* _ship);
 
 
 struct SystemCustomBox
 {{
-	SystemCustomBox(Point pos, ShipSystem *sys, ShipManager *ship)
+	SystemCustomBox(Point position, ShipSystem* system, ShipManager* ship)
 	{
-		this->constructor(pos, sys, ship);
+		this->constructor(position, system, ship);
 	}
 }};

@@ -1,28 +1,33 @@
-"554889e5415741564154534881ec????????4889fbe8????????488d05????????4889??4c8d":
-cleanup __amd64 void CrewManifest::constructor(CrewManifest *this);
-"554889e5415741564154534189f64989ff498b870801000049398710010000744ebb010000004531e40f1f80000000004a8b3ce0e8778900":
-cleanup __amd64 void CrewManifest::OnKeyDown(CrewManifest *this, SDLKey key);
-"554889e5415741564154534189f64989ff498b870801000049398710010000744ebb010000004531e40f1f80000000004a8b3ce0e8f78800":
-cleanup __amd64 void CrewManifest::OnKeyUp(CrewManifest *this, SDLKey key);
-"554889e5415741564154534189f64989ff498b870801000049398710010000744ebb010000004531e40f1f80000000004a8b3ce0e8778800":
-cleanup __amd64 void CrewManifest::OnTextInput(CrewManifest *this, SDLKey key);
-"554889e5415741564154534189f64989ff498b870801000049398710010000744ebb010000004531e40f1f80000000004a8b3ce0e8f78700":
-cleanup __amd64 void CrewManifest::OnTextEvent(CrewManifest *this, CEvent::TextEvent event);
-"554889e541574156534883ec584989fe0f57c00f":
-cleanup __amd64 void CrewManifest::Update(CrewManifest *this);
-"554889e54157415641554154534883ec484989f4":
-cleanup __amd64 void CrewManifest::OnInit(CrewManifest *this, ShipManager *ship);
-"554889e54157415653504989fe498b8608010000":
-cleanup __amd64 void CrewManifest::Close(CrewManifest *this);
-"554889e54156534989fe4183be880200":
-cleanup __amd64 void CrewManifest::MouseClick(CrewManifest *this, int mX, int mY);
-"554889e54157415641554154534881ec980000004989ffe8":
-cleanup __amd64 void CrewManifest::OnRender(CrewManifest *this);
-"554889e5415741564155415453504189d64189f74989fd49":
-cleanup __amd64 void CrewManifest::MouseMove(CrewManifest *this, int mX, int mY);
+"!554889e5415741564154534881ecb000000048":
+cleanup __amd64 void CrewManifest::constructor(CrewManifest* this);
+".554889e54157415641554154534883ec484989f4":
+cleanup __amd64 void CrewManifest::OnInit(CrewManifest* this, ShipManager* ship);
+"!.554889e54157415653504989fe498b8608":
+cleanup __amd64 void CrewManifest::Close(CrewManifest* this);
+"!.554889e54156534989fe4183be88":
+cleanup __amd64 void CrewManifest::MouseClick(CrewManifest* this, int mX, int mY);
+".554889e541574156534883ec584989fe0f":
+cleanup __amd64 void CrewManifest::Update(CrewManifest* this);
+".554889e5415741564154534189f64989ff498b870801000049398710010000744ebb010000004531e40f1f80000000004a8b3ce0e87789":
+cleanup __amd64 void CrewManifest::OnKeyDown(CrewManifest* this, SDLKey key);
+".554889e5415741564154534189f64989ff498b870801000049398710010000744ebb010000004531e40f1f80000000004a8b3ce0e8f788":
+cleanup __amd64 void CrewManifest::OnKeyUp(CrewManifest* this, SDLKey key);
+".554889e5415741564154534189f64989ff498b870801000049398710010000744ebb010000004531e40f1f80000000004a8b3ce0e87788":
+cleanup __amd64 void CrewManifest::OnTextInput(CrewManifest* this, SDLKey key);
+".554889e5415741564154534189f64989ff498b870801000049398710010000744ebb010000004531e40f1f80000000004a8b3ce0e8f787":
+cleanup __amd64 void CrewManifest::OnTextEvent(CrewManifest* this, CEvent::TextEvent event);
+".554889e54157415641554154534881ec980000004989ffe8":
+cleanup __amd64 void CrewManifest::OnRender(CrewManifest* this);
+".554889e5415741564155415453504189d64189f74989fd":
+cleanup __amd64 void CrewManifest::MouseMove(CrewManifest* this, int mX, int mY);
 
 
 struct CrewManifest
 {{
+	CrewManifest()
+	{
+		this->constructor();
+	}
+	
 	void _HS_MouseUp(int mX, int mY);
 }};

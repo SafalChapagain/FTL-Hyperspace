@@ -1,23 +1,25 @@
-"554889e54157415641554154534881ec????????4189cd4189f7":
-cleanup __amd64 void WindowFrame::constructor(WindowFrame *this, int x, int y, int w, int h);
-"554889e553504889fb488b7b10e8????fdff488b":
-cleanup __amd64 void WindowFrame::destructor(WindowFrame *this);
-"554889e54157415653504189d789f34989fee8":
-cleanup __amd64 void WindowFrame::Draw(WindowFrame *this, int x, int y);
-"554889e553504889fbbf0100":
-cleanup __amd64 void WindowFrame::DrawMask(WindowFrame *this, int unk);
+// Continue from WeaponSystemBox::constructor (hyper efficiency™)
+".554889e54157415641554154534881ec????????4189cd4189f7":
+cleanup __amd64 void WindowFrame::constructor(WindowFrame* this, int _x, int _y, int _w, int _h);
+"!.554889e553504889fb488b7b10":
+noHook __amd64 void WindowFrame::DO_NOT_HOOK_FALSE_DESTRUCTOR();
+"!.554889e553504889fb488b7b10":
+cleanup __amd64 void WindowFrame::destructor(WindowFrame* this);
+"!.554889e54157415653504189d789f34989fee8":
+cleanup __amd64 void WindowFrame::Draw(WindowFrame* this, int x, int y);
+".554889e553504889fbbf0100":
+cleanup __amd64 void WindowFrame::DrawMask(WindowFrame* this, int stencilBits);
 
 
 struct WindowFrame
 {{
-	WindowFrame(int _x, int _y, int _w, int _h) 
+	WindowFrame(int x, int y, int w, int h) 
 	{
-		this->constructor(_x, _y, _w, _h);
+		this->constructor(x, y, w, h);
 	}
 	
 	~WindowFrame()
 	{
 		this->destructor();
 	}
-
 }};

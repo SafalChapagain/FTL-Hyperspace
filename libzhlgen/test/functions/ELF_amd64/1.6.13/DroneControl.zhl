@@ -1,8 +1,8 @@
 "!5589d55389f34883ec08488b7f18":
 noHook __amd64 void DroneControl::DO_NOT_HOOK();
 ".534889fb":
-cleanup __amd64 TextString DroneControl::HolderLabel(DroneControl *this);
+cleanup __amd64 TextString DroneControl::HolderLabel(DroneControl* this);
 ".4883ec5883c60189742420488d7c2430488d742420":
-cleanup __amd64 SDLKey DroneControl::ArmamentHotkey(DroneControl *this, unsigned int i);
+cleanup __amd64 SDLKey DroneControl::ArmamentHotkey(DroneControl* this, unsigned int i);
 ".4155be04000000415455534889fb4883ec28":
-cleanup __amd64 void DroneControl::OnLoop(DroneControl *this);
+cleanup __amd64 void DroneControl::OnLoop(DroneControl* this);

@@ -1,5 +1,5 @@
 "578d41088d7c240883e4f0ff77fc5589e557565389cb83ec3c8b3789018b16":
-__thiscall void TopScore::copy_constructor(TopScore *this, const TopScore& other);
+__thiscall void TopScore::copy_constructor(TopScore* this, const TopScore& other);
 
 
 struct TopScore

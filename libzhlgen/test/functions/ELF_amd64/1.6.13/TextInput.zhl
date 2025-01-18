@@ -1,23 +1,23 @@
 "!41544189d45589f54889ce534889fb":
-cleanup __amd64 void TextInput::constructor(TextInput *this, int maxChars, TextInput::AllowedCharType allowedCharType, const std::string& prompt);
+cleanup __amd64 void TextInput::constructor(TextInput* this, int _maxChars, TextInput::AllowedCharType _allowedCharType, const std::string& _prompt);
 ".4156b9ffffffff41554189f54889fe41544989d431d255534889fb4883ec70":
-cleanup __amd64 void TextInput::OnRender(TextInput *this, int font, Point pos);
+cleanup __amd64 void TextInput::OnRender(TextInput* this, int font, Point position);
 ".!538b473839473c":
-cleanup __amd64 void TextInput::OnLoop(TextInput *this);
+cleanup __amd64 void TextInput::OnLoop(TextInput* this);
 ".53807f40004889fb":
-cleanup __amd64 void TextInput::OnTextEvent(TextInput *this, CEvent::TextEvent event);
+cleanup __amd64 void TextInput::OnTextEvent(TextInput* this, CEvent::TextEvent event);
 ".!0fb64740c3":
-cleanup __amd64 bool TextInput::GetActive(TextInput *this);
+cleanup __amd64 bool TextInput::GetActive(TextInput* this);
 ".53b9ffffffff4889fb31d2":
-cleanup __amd64 std::string TextInput::GetText(TextInput *this);
+cleanup __amd64 std::string TextInput::GetText(TextInput* this);
 ".534883ec30488b4710482b4708":
-cleanup __amd64 void TextInput::Start(TextInput *this);
+cleanup __amd64 void TextInput::Start(TextInput* this);
 ".!c6474000":
-cleanup __amd64 void TextInput::Stop(TextInput *this);
+cleanup __amd64 void TextInput::Stop(TextInput* this);
 ".55488d6f08534889fb4883ec28":
-cleanup __amd64 int TextInput::SetText(TextInput *this, const std::string& text);
+cleanup __amd64 int TextInput::SetText(TextInput* this, const std::string& text);
 ".41564155415455534889fb4883ec30807f4000":
-cleanup __amd64 void TextInput::OnTextInput(TextInput *this, int asciiChar);
+cleanup __amd64 void TextInput::OnTextInput(TextInput* this, int asciiChar);
 
 
 struct TextInput depends (CEvent)
@@ -31,6 +31,7 @@ struct TextInput depends (CEvent)
 	
 	TextInput()
 	{
+		
 	}
 
 	TextInput(int maxChars, TextInput::AllowedCharType allowedCharType, const std::string& prompt)

@@ -1,34 +1,36 @@
-"554889e5534883ec184889fb0f57c00f2945e048c745f000000000c645e01a48b86e735f":
-cleanup __amd64 TextString WeaponControl::HolderLabel(WeaponControl *this);
-"554889e54157415641554154534883ec??4989febe????????e8128ff6ff488d05????????498906":
-cleanup __amd64 void WeaponControl::constructor(WeaponControl *this);
-"554889e541574156534883ec584189fe":
+// Continue from WeaponBox::RenderBox (hyper efficiency™)
+".554889e54157415641554154534883ec684989febe":
+cleanup __amd64 void WeaponControl::constructor(WeaponControl* this);
+".554889e54157415641554154534883ec684989fce8????f6":
+cleanup __amd64 void WeaponControl::OnLanguageChange(WeaponControl* this);
+"!.554889e54157415653504189f64989ff498b7f18":
+cleanup __amd64 void WeaponControl::OnRender(WeaponControl* this, bool front);
+".554889e541574156534883ec584189fe":
 static cleanup __amd64 void WeaponControl::RenderBeamAiming(Pointf one, Pointf two, bool bAutoFire);
-"554889e54157415641554154534883ec48488b77":
-cleanup __amd64 void WeaponControl::RenderAiming(WeaponControl *this);
-"554889e54157415641554154534883ec58488b77":
-cleanup __amd64 void WeaponControl::RenderSelfAiming(WeaponControl *this);
-"554889e5415741564154534883ec604189d64989":
-cleanup __amd64 void WeaponControl::SetAutofiring(WeaponControl *this, bool on, bool simple);
-"554889e54157415641554154534883ec384889f34989fc498bbc24d8":
-cleanup __amd64 void WeaponControl::Fire(WeaponControl *this, std::vector<Pointf>& points, int target, bool autoFire);
-"554889e5534883ec38ffc68975f4488d5dc0488d75f44889dfe8????efff488d":
-cleanup __amd64 SDLKey WeaponControl::ArmamentHotkey(WeaponControl *this, unsigned int i);
-"554889e54157415641554154534883ec684989fce8????f6":
-cleanup __amd64 void WeaponControl::OnLanguageChange(WeaponControl *this);
-"554889e54157415653504189f64989ff498b7f18":
-cleanup __amd64 void WeaponControl::OnRender(WeaponControl *this, bool unk);
-"80bf3001":
-cleanup __amd64 bool WeaponControl::LButton(WeaponControl *this, int x, int y, bool holdingShift);
-"554889e54157415653504189d64189f74889fbe8????f6ff":
-cleanup __amd64 void WeaponControl::MouseMove(WeaponControl *this, int x, int y);
-"554889e541574156534883ec184189f7":
-cleanup __amd64 bool WeaponControl::KeyDown(WeaponControl *this, SDLKey key);
-"554889e5534883ec484889fbe8????f6":
-cleanup __amd64 void WeaponControl::LinkShip(WeaponControl *this, ShipManager *ship);
+"!.554889e54157415641554154534883ec48488b77":
+cleanup __amd64 void WeaponControl::RenderAiming(WeaponControl* this);
+"!.554889e54157415641554154534883ec58488b77":
+cleanup __amd64 void WeaponControl::RenderSelfAiming(WeaponControl* this);
+"!.80bf3001000000742580bf31010000":
+cleanup __amd64 bool WeaponControl::LButton(WeaponControl* this, int x, int y, bool holdingShift);
+".554889e5415741564154534883ec604189d64989":
+cleanup __amd64 void WeaponControl::SetAutofiring(WeaponControl* this, bool on, bool simple);
+"!.554889e54157415653504189d64189f74889fbe8????f6ff":
+cleanup __amd64 void WeaponControl::MouseMove(WeaponControl* this, int x, int y);
+".554889e541574156534883ec184189f7":
+cleanup __amd64 bool WeaponControl::KeyDown(WeaponControl* this, SDLKey key);
+"!.554889e5534883ec484889fbe8????f6":
+cleanup __amd64 void WeaponControl::LinkShip(WeaponControl* this, ShipManager* ship);
+".554889e5534883ec184889fb0f57c00f2945e048c745f000000000c645e01a48b86e735f":
+cleanup __amd64 TextString WeaponControl::HolderLabel(WeaponControl* this);
+".554889e5534883ec38ffc68975f4488d5dc0488d75f44889dfe8????efff488d":
+cleanup __amd64 SDLKey WeaponControl::ArmamentHotkey(WeaponControl* this, unsigned int i);
+"!.554889e54157415641554154534883ec384889f34989fc498bbc24d8":
+cleanup __amd64 void WeaponControl::Fire(WeaponControl* this, std::vector<Pointf>& points, int target, bool autoFire);
+
 
 struct WeaponControl
 {{
 	void RenderAimingNew(bool player);
-	inline GL_Primitive *GetAimingPrimitive(ProjectileFactory *weapon, int i);
+	inline GL_Primitive* GetAimingPrimitive(ProjectileFactory* weapon, int i);
 }};

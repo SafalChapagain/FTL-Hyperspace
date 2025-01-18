@@ -1,16 +1,16 @@
-"554889e54883ec108bb7b00200008b97b4020000488d7df0":
-cleanup __amd64 Point Door::GetPosition(Door *this);
-"554889e553504889fb80bb4c02000000":
-cleanup __amd64 bool Door::ApplyDamage(Door *this, float amount);
-"554889e5c6472c01":
-cleanup __amd64 void Door::FakeOpen(Door *this);
-"554889e5c6472c00":
-cleanup __amd64 void Door::FakeClose(Door *this);
-"554889e58b4f0831":
-cleanup __amd64 bool Door::IsSealed(Door *this, int shipId);
-"554889e54156534889fb8b83":
-cleanup __amd64 void Door::OnLoop(Door *this);
-
+// Continue from DefenseDrone::OnLoop (hyper efficiency™)
+"!.554889e5c6472c01":
+cleanup __amd64 void Door::FakeOpen(Door* this);
+"!.554889e5c6472c00":
+cleanup __amd64 void Door::FakeClose(Door* this);
+".554889e58b4f0831":
+cleanup __amd64 bool Door::IsSealed(Door* this, int shipId);
+"!.554889e54156534889fb8b83":
+cleanup __amd64 void Door::OnLoop(Door* this);
+".554889e553504889fb80bb4c02000000":
+cleanup __amd64 bool Door::ApplyDamage(Door* this, float amount);
+".554889e54883ec108bb7b00200008b97b4020000488d7df0":
+cleanup __amd64 Point Door::GetPosition(Door* this);
 
 struct Door depends (Point, ShipGraph)
 {{
@@ -22,29 +22,29 @@ public:
 	}
 	Point GetEntryWay(int room)
 	{
-		Point pos1 = Point(this->x, this->y);
-		Point pos2;
+		Point position1 = Point(this->x, this->y);
+		Point position2;
 
 		if (this->bVertical)
 		{
-			pos2 = Point(pos1.x + 17, pos1.y);
-			pos1 = Point(this->x - 17, pos1.y);
+			position2 = Point(position1.x + 17, position1.y);
+			position1 = Point(this->x - 17, position1.y);
 		}
 		else
 		{
-			pos2 = Point(this->x, pos1.y + 17);
-			pos1 = Point(this->x, this->y - 18);
+			position2 = Point(this->x, position1.y + 17);
+			position1 = Point(this->x, this->y - 18);
 		}
 
 		auto shipInfo = ShipGraph::GetShipInfo(this->iShipId);
 
-		if (room == shipInfo->GetSelectedRoom(pos2.x, pos2.y, false))
+		if (room == shipInfo->GetSelectedRoom(position2.x, position2.y, false))
 		{
-			return pos2;
+			return position2;
 		}
 		else
 		{
-			return pos1;
+			return position1;
 		}
 	}
 }};

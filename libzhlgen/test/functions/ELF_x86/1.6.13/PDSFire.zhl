@@ -1,15 +1,15 @@
 "565383ec148b5c242080bbb000000000":
-cleanup __cdecl void PDSFire::OnUpdate(PDSFire *this);
+cleanup __cdecl void PDSFire::OnUpdate(PDSFire* this);
 ".565383ec648b7424748b5c24708b06":
-cleanup __cdecl void PDSFire::CollisionCheck(PDSFire *this, Collideable *other);
+cleanup __cdecl void PDSFire::CollisionCheck(PDSFire* this, Collideable* other);
 ".5589e557565381ecdc0000008b4d08":
-cleanup __cdecl void PDSFire::constructor(PDSFire *this, Point pos, int destinationSpace, Pointf destination);
+cleanup __cdecl void PDSFire::constructor(PDSFire* this, Point _position, int _destinationSpace, Pointf _destination);
 
 
 struct PDSFire
 {{
-	PDSFire(Point pos, int destinationSpace, Pointf destination) : LaserBlast(Pointf(pos.x, pos.y), 0, destinationSpace, destination)
+	PDSFire(Point position, int destinationSpace, Pointf destination) : LaserBlast(Pointf(position.x, position.y), 0, destinationSpace, destination)
 	{
-		this->constructor(pos, destinationSpace, destination);
+		this->constructor(position, destinationSpace, destination);
 	}
 }};

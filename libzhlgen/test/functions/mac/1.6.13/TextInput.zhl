@@ -1,25 +1,26 @@
-"554889e54157415653504189d74189f64889fb4889cee8":
-noHook __amd64 void TextInput::ALTERNATIVE_DESTRUCTOR(); /* If this one doesn't work we will need to remove the nohook */
-".554889e54157415653504189d74189f64889fb4889cee8":
-cleanup __amd64 void TextInput::constructor(TextInput *this, int maxChars, TextInput::AllowedCharType allowedCharType, const std::string& prompt);
-"554889e54157415641554154534881ec980000004889d341":
-cleanup __amd64 void TextInput::OnRender(TextInput *this, int font, Point pos);
-"554889e553504889fb8b4348":
-cleanup __amd64 void TextInput::OnLoop(TextInput *this);
-"554889e54157415653504889fb807b50":
-cleanup __amd64 void TextInput::OnTextEvent(TextInput *this, CEvent::TextEvent event);
-"554889e58a47505d":
-cleanup __amd64 bool TextInput::GetActive(TextInput *this);
-"554889e553504889fb31d2b9ffffffff":
-cleanup __amd64 std::string TextInput::GetText(TextInput *this);
-"554889e5534883ec184889fbc6435001":
-cleanup __amd64 void TextInput::Start(TextInput *this);
-"554889e5c6475000":
-cleanup __amd64 void TextInput::Stop(TextInput *this);
-"554889e54157415641554154534883ec184989ff498b4718":
-cleanup __amd64 int TextInput::SetText(TextInput *this, const std::string& text);
-"554889e54157415641554154534883ec284189f64889fb44":
-cleanup __amd64 void TextInput::OnTextInput(TextInput *this, int asciiChar);
+// Continue from TextButton::OnRender (hyper efficiency™)
+"!.554889e54157415653504189d74189f64889fb4889cee8":
+noHook __amd64 void TextInput::DO_NOT_HOOK_FALSE_CONSTRUCTOR();
+"!.554889e54157415653504189d74189f64889fb4889cee8":
+cleanup __amd64 void TextInput::constructor(TextInput* this, int _maxChars, TextInput::AllowedCharType _allowedCharType, const std::string& _prompt);
+"!.554889e54157415641554154534881ec980000004889d341":
+cleanup __amd64 void TextInput::OnRender(TextInput* this, int font, Point position);
+"!.554889e553504889fb8b4348":
+cleanup __amd64 void TextInput::OnLoop(TextInput* this);
+".554889e54157415641554154534883ec284189f64889fb44":
+cleanup __amd64 void TextInput::OnTextInput(TextInput* this, int asciiChar);
+".554889e54157415653504889fb807b50":
+cleanup __amd64 void TextInput::OnTextEvent(TextInput* this, CEvent::TextEvent event);
+"!.554889e5c6475000":
+cleanup __amd64 void TextInput::Stop(TextInput* this);
+".554889e58a47505d":
+cleanup __amd64 bool TextInput::GetActive(TextInput* this);
+".554889e553504889fb31d2b9ffffffff":
+cleanup __amd64 std::string TextInput::GetText(TextInput* this);
+"!.554889e54157415641554154534883ec184989ff498b4718":
+cleanup __amd64 int TextInput::SetText(TextInput* this, const std::string& text);
+".554889e5534883ec184889fbc6435001":
+cleanup __amd64 void TextInput::Start(TextInput* this);
 
 
 struct TextInput depends (CEvent)
@@ -33,6 +34,7 @@ struct TextInput depends (CEvent)
 	
 	TextInput()
 	{
+		
 	}
 
 	TextInput(int maxChars, TextInput::AllowedCharType allowedCharType, const std::string& prompt)

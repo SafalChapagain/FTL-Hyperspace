@@ -1,35 +1,35 @@
 "578d7c240883e4f0ff77fc5589f889e557565383ec3c8b91900000008b70048b3f8b400885d28975d00f84????????":
-__thiscall void WeaponControl::Fire(WeaponControl *this, std::vector<Pointf>& points, int target, bool autoFire);
+__thiscall void WeaponControl::Fire(WeaponControl* this, std::vector<Pointf>& points, int target, bool autoFire);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec2c8b490c8b37c70424????????e8????????83ec0484c00f84????????":
-__thiscall void WeaponControl::OnRender(WeaponControl *this, bool unk);
+__thiscall void WeaponControl::OnRender(WeaponControl* this, bool front);
 "578d7c240883e4f0ff77fc5589e557565383ec2c80b9d8000000008b1f8b77048b570874??0fb681d900000084c0":
-__thiscall bool WeaponControl::LButton(WeaponControl *this, int x, int y, bool holdingShift);
+__thiscall bool WeaponControl::LButton(WeaponControl* this, int x, int y, bool holdingShift);
 ".578d7c240883e4f0ff77fc5589e557565389cb83ec1c8b378b7f04893424897c2404":
-__thiscall void WeaponControl::MouseMove(WeaponControl *this, int x, int y);
+__thiscall void WeaponControl::MouseMove(WeaponControl* this, int x, int y);
 ".578d7c240883e4f0ff77fc5589e5575389cb83ec108b07890424e8????????8b0383ec04":
-__thiscall void WeaponControl::LinkShip(WeaponControl *this, ShipManager *ship);
+__thiscall void WeaponControl::LinkShip(WeaponControl* this, ShipManager* ship);
 "578d7c240883e4f0ff77fc5589e557565389cf8db518feffff81ec????????898d10fdffffc70424????????e8????????8d8f9800000083ec04c707????????c7878c00000000000000c7879000000000000000":
-__thiscall void WeaponControl::constructor(WeaponControl *this);
+__thiscall void WeaponControl::constructor(WeaponControl* this);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec5c8b078b7f04f30f101d????????84c08881940000000f84????????f30f1005????????f30f100d????????":
-__thiscall void WeaponControl::SetAutofiring(WeaponControl *this, bool on, bool simple);
+__thiscall void WeaponControl::SetAutofiring(WeaponControl* this, bool on, bool simple);
 "578d7c240883e4f0ff77fc5589e557565389ce83ec4c8b3f893c24e8????????83ec0484c0":
-__thiscall bool WeaponControl::KeyDown(WeaponControl *this, SDLKey key);
+__thiscall bool WeaponControl::KeyDown(WeaponControl* this, SDLKey key);
 "5589e557565383e4f083ec508b41148b79108944243029f8c1f80285c0":
-__thiscall void WeaponControl::RenderAiming(WeaponControl *this);
+__thiscall void WeaponControl::RenderAiming(WeaponControl* this);
 "5589e557565383e4f083ec308b41148b71108944242429f0c1f80285c0":
-__thiscall void WeaponControl::RenderSelfAiming(WeaponControl *this);
+__thiscall void WeaponControl::RenderSelfAiming(WeaponControl* this);
 "578d7c240883e4f0ff77fc5589e557565389cf8d75b48d5dd481ecac0000008b8188010000890424":
-__thiscall void WeaponControl::OnLanguageChange(WeaponControl *this);
+__thiscall void WeaponControl::OnLanguageChange(WeaponControl* this);
 "8d4c240483e4f0ff71fc5589e55756535189cb81ec880000008b018b7910f30f10410c":
 static cleanup __cdecl void WeaponControl::RenderBeamAiming(Pointf one, Pointf two, bool bAutoFire);
 
 "8d510883ec2089c8c7410877656170c7410c6f6e735f8911c741106c616265c641146cc741040d000000c6411500c641180083c420":
-__thiscall TextString WeaponControl::HolderLabel(WeaponControl *this);
+__thiscall TextString WeaponControl::HolderLabel(WeaponControl* this);
 ".578d7c240883e4f0ff77fc5589e55756538d8d60ffffff81ec4c0100008b1f":
-__thiscall SDLKey WeaponControl::ArmamentHotkey(WeaponControl *this, unsigned int i);
+__thiscall SDLKey WeaponControl::ArmamentHotkey(WeaponControl* this, unsigned int i);
 
 struct WeaponControl
 {{
 	void RenderAimingNew(bool player);
-	inline GL_Primitive *GetAimingPrimitive(ProjectileFactory *weapon, int i);
+	inline GL_Primitive* GetAimingPrimitive(ProjectileFactory* weapon, int i);
 }};

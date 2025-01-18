@@ -1,14 +1,28 @@
 "578d7c240883e4f0ff77fc5589e557565383ec3c8b178b7704f30f1089400100000f2e0d????????":
-__thiscall float SpaceDrone::UpdateAimingAngle(SpaceDrone *this, Pointf location, float percentage, float forceDesired);
+__thiscall float SpaceDrone::UpdateAimingAngle(SpaceDrone* this, Pointf location, float percentage, float forceDesired);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec1c8b018b378b5030":
-virtual __thiscall void SpaceDrone::SetDeployed(SpaceDrone *this, bool deployed);
+virtual __thiscall void SpaceDrone::SetDeployed(SpaceDrone* this, bool deployed);
 "5589e556538b750883e4f085f674??8b0689cb89f1ff501c89434c8b0689f1ff501c894348":
-virtual __thiscall void SpaceDrone::SetMovementTarget(SpaceDrone *this, Targetable *target);
+virtual __thiscall void SpaceDrone::SetMovementTarget(SpaceDrone* this, Targetable* target);
 "578d7c240883e4f0ff77fc5589e557565389cb83c10483ec3c8b378b4728c741fc00000000c7442404000000cfc70424000000cf8945e0":
-__thiscall CollisionResponse SpaceDrone::CollisionMoving(SpaceDrone *this, Pointf start, Pointf finish, Damage damage, bool raytrace);
+__thiscall CollisionResponse SpaceDrone::CollisionMoving(SpaceDrone* this, Pointf start, Pointf finish, Damage damage, bool raytrace);
 "578d7c240883e4f0ff77fc5589e557565389cb81ec8c0000008b01ff507c8b0389d9ff908000000084c0":
-virtual __thiscall Projectile* SpaceDrone::GetNextProjectile(SpaceDrone *this);
+virtual __thiscall Projectile* SpaceDrone::GetNextProjectile(SpaceDrone* this);
 "578d????0883e4f0ff????5589e557565389cb83c150":
-__thiscall void SpaceDrone::constructor(SpaceDrone* this, int iShipId, int selfId, DroneBlueprint *blueprint);
+__thiscall void SpaceDrone::constructor(SpaceDrone* this, int _iShipId, int _selfId, DroneBlueprint* _blueprint);
 "558d9118030000":
 __thiscall void SpaceDrone::destructor(SpaceDrone* this);
+
+
+struct SpaceDrone
+{{
+    SpaceDrone(int iShipId, int selfId, DroneBlueprint* blueprint)
+    {
+        this->constructor(iShipId, selfId, blueprint);
+    }
+
+    ~SpaceDrone()
+    {
+        this->destructor();
+    }
+}}

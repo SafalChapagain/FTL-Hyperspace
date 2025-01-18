@@ -17,6 +17,17 @@
     #else
         #error "Unknown processor architecture not supported."
     #endif // Architecture
+#elif defined(__APPLE__)
+	#include <mach-o/dyld.h>
+	#include <mach-o/loader.h>
+	#include <stdio.h>
+	#include <string.h>
+
+	#ifdef __amd64__
+		#define PTR_PRINT_F "0x%016" PRIxPTR
+	#else
+		#error "Processor architecture not supported. Only amd64!"
+	#endif // Architecture
 #else
     #error "Unsupported OS"
 #endif
@@ -281,5 +292,66 @@ void SigScan::Init()
     s_iBaseLen = segmentLength;
 	s_pLastAddress = s_pBase;
 }
+
+#elif defined(__APPLE__)
+
+void SigScan::Init()
+{
+    // Obtain Mach-O header information
+    const struct mach_header_64* header = reinterpret_cast<const struct mach_header_64*>(_dyld_get_image_header(0));
+    if (!header || header->magic != MH_MAGIC_64)
+    {
+        fprintf(stderr, "ERROR: Mach-O header not found or invalid!\n");
+        return;
+    }
+
+    // Pull ASLR slide amount
+    uintptr_t slide = _dyld_get_image_vmaddr_slide(0);
+
+    // Iterate through load commands to locate __TEXT.__text section
+    const struct load_command* lc = reinterpret_cast<const struct load_command*>(reinterpret_cast<uintptr_t>(header) + sizeof(struct mach_header_64));
+
+    const struct section_64* textSection = nullptr;
+    for (uint32_t i = 0; i < header->ncmds && !textSection; ++i)
+    {
+        if (lc->cmd == LC_SEGMENT_64)
+        {
+            const struct segment_command_64* segment = reinterpret_cast<const struct segment_command_64*>(lc);
+            if (strcmp(segment->segname, "__TEXT") == 0)
+            {
+                // Search within the __TEXT segment for the __text section
+                const struct section_64* section = reinterpret_cast<const struct section_64*>(reinterpret_cast<uintptr_t>(segment) + sizeof(struct segment_command_64));
+                for (uint32_t i = 0; i < segment->nsects; ++i, ++section)
+                {
+                    if (strcmp(section->sectname, "__text") == 0)
+                    {
+                        textSection = section;
+                        break;
+                    }
+                }
+            }
+        }
+        lc = reinterpret_cast<const struct load_command*>(reinterpret_cast<uintptr_t>(lc) + lc->cmdsize);
+    }
+
+    // Handle error if __TEXT.__text section is not found
+    if (!textSection)
+    {
+        fprintf(stderr, "FATAL ERROR: Segment __TEXT.__text not found!\n");
+        return;
+    }
+
+    // Calculate the base address and size of the binary
+    s_pBase = reinterpret_cast<unsigned char*>(textSection->addr + slide);
+    s_iBaseLen = textSection->size;
+    s_pLastAddress = s_pBase;
+
+    // Debug output
+    printf("ASLR slide amount: 0x%lx\n", slide);
+    printf("__TEXT.__text base address: %p\n", s_pBase);
+    printf("__TEXT.__text length: 0x%lx\n", s_iBaseLen);
+    printf("__TEXT.__text continue address: %p\n", s_pLastAddress);
+}
+
 #endif
 

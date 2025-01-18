@@ -1,55 +1,49 @@
-"554889e5534883ec1889f348":
-cleanup __amd64 Point ShipGraph::GetSlotWorldPosition(ShipGraph *this, int slotId, int roomId);
-"554889e5415741564154534883ec204189ce4189f74889fb":
-cleanup __amd64 Point ShipGraph::GetSlotRenderPosition(ShipGraph *this, int slotId, int roomId, bool intruder);
-"554889e531c085f67819488b":
-cleanup __amd64 int ShipGraph::DoorCount(ShipGraph *this, int roomId);
-"554889e54157415641554154534883ec??4589c44189cd4189d6":
-cleanup __amd64 Door* ShipGraph::ConnectingDoor(ShipGraph *this, int x1, int y1, int x2, int y2);
-".554889e54157415641554154534883ec??4589c6":
-cleanup __amd64 int ShipGraph::ConnectedGridSquares(ShipGraph *this, int x1, int y1, int x2, int y2);
-".554889e54889f048c1e820":
-cleanup __amd64 int ShipGraph::ConnectedGridSquaresPoint(ShipGraph *this, Point p1, Point p2);
-".554889e54157415641554154534883ec??4589c4":
-cleanup __amd64 Door* ShipGraph::ConnectingDoor(ShipGraph *this, Point p1, Point p2);
-"554889e54863c6488b0f488b":
-cleanup __amd64 int ShipGraph::GetNumSlots(ShipGraph *this, int room);
-"554889e5415741564155415453504889d04989f6":
-cleanup __amd64 int ShipGraph::PopClosestDoor(ShipGraph *this, std::vector<int>& doors, std::vector<float>& distances);
-"554889e5f30f5847":
-cleanup __amd64 float ShipGraph::ConvertToWorldAngle(ShipGraph *this, float ang);
-"554889e5f30f5c47":
-cleanup __amd64 float ShipGraph::ConvertToLocalAngle(ShipGraph *this, float ang);
-"554889e553504889fb0f1345":
-cleanup __amd64 Pointf ShipGraph::ConvertToWorldPosition(ShipGraph *this, Pointf local);
-"554889e54883ec104c8d4f50":
-cleanup __amd64 Pointf ShipGraph::ConvertToLocalPosition(ShipGraph *this, Pointf world, bool past);
-"554889e54157415641554154534883ec28488b07":
-cleanup __amd64 void ShipGraph::ComputeCenter(ShipGraph *this);
-"554889e58b476839":
-cleanup __amd64 bool ShipGraph::ContainsPoint(ShipGraph *this, int x, int y);
-"554889e5415741564155415453508955d44189f4":
-cleanup __amd64 int ShipGraph::GetSelectedRoom(ShipGraph *this, int x, int y, bool unk);
-"554889e5488b4708482b0748":
-cleanup __amd64 int ShipGraph::RoomCount(ShipGraph *this);
-"554889e553504889fb488b06":
-cleanup __amd64 Globals::Rect ShipGraph::GetRoomShape(ShipGraph *this, int room);
-"554889e50f57c085f67821488b07488b":
-cleanup __amd64 float ShipGraph::GetRoomOxygen(ShipGraph *this, int room);
-"554889e5b00185f6":
-cleanup __amd64 bool ShipGraph::GetRoomBlackedOut(ShipGraph *this, int room);
-"554889e54157415641554154534883ec284189d54889f34989fe49c7":
-cleanup __amd64 std::vector<Door*> ShipGraph::GetDoors(ShipGraph *this, int roomId);
-"554889e5415741564154534883ec204189d64189f44889f8":
-cleanup __amd64 bool ShipGraph::IsRoomConnected(ShipGraph *this, int room1, int room2);
 "554889e541574156534881ec9800000089fb488b":
 static cleanup __amd64 ShipGraph* ShipGraph::GetShipInfo(int shipId);
-"554889e54157415641554154534881ec38010000448945b0":
-cleanup __amd64 Path ShipGraph::Dijkstra(ShipGraph *this, Point start, Point goal, int shipId);
-"554889e54157415641554154534883ec584589c4":
-cleanup __amd64 Path ShipGraph::FindPath(ShipGraph *this, Point p1, Point p2, int shipId);
-"554889e54157415641554154534881ec880000004189cc89":
-cleanup __amd64 Slot ShipGraph::GetClosestSlot(ShipGraph *this, Point pos, int shipId, bool intruder);
+".554889e5534883ec1889f348":
+cleanup __amd64 Point ShipGraph::GetSlotWorldPosition(ShipGraph* this, int slotId, int roomId);
+".554889e5415741564154534883ec204189ce4189f74889fb":
+cleanup __amd64 Point ShipGraph::GetSlotRenderPosition(ShipGraph* this, int slotId, int roomId, bool intruder);
+".554889e54157415641554154534883ec??4589c6":
+cleanup __amd64 int ShipGraph::ConnectedGridSquares(ShipGraph* this, int x1, int y1, int x2, int y2);
+".554889e5415741564155415453508955d44189f4":
+cleanup __amd64 int ShipGraph::GetSelectedRoom(ShipGraph* this, int x, int y, bool bIncludeWalls);
+".554889e54157415641554154534883ec??4589c44189cd4189d6":
+cleanup __amd64 Door* ShipGraph::ConnectingDoor(ShipGraph* this, int x1, int y1, int x2, int y2);
+".554889e5415741564154534883ec204189d64189f44889f8":
+cleanup __amd64 bool ShipGraph::IsRoomConnected(ShipGraph* this, int room1, int room2);
+"!.554889e54157415641554154534883ec284189d54889f34989fe49c7":
+cleanup __amd64 std::vector<Door*> ShipGraph::GetDoors(ShipGraph* this, int roomId);
+".554889e531c085f67819488b":
+cleanup __amd64 int ShipGraph::DoorCount(ShipGraph* this, int roomId);
+".554889e54863c6488b0f488b":
+cleanup __amd64 int ShipGraph::GetNumSlots(ShipGraph* this, int room);
+".554889e54157415641554154534881ec880000004189cc89":
+cleanup __amd64 Slot ShipGraph::GetClosestSlot(ShipGraph* this, Point position, int shipId, bool intruder);
+".554889e54157415641554154534883ec584589c4":
+cleanup __amd64 Path ShipGraph::FindPath(ShipGraph* this, Point p1, Point p2, int shipId);
+"!.554889e54157415641554154534881ec38010000448945b0":
+cleanup __amd64 Path ShipGraph::Dijkstra(ShipGraph* this, Point start, Point goal, int shipId);
+".554889e5415741564155415453504889d04989f6":
+cleanup __amd64 int ShipGraph::PopClosestDoor(ShipGraph* this, std::vector<int>& doors, std::vector<float>& distances);
+".554889e5f30f5847":
+cleanup __amd64 float ShipGraph::ConvertToWorldAngle(ShipGraph* this, float ang);
+".554889e5f30f5c47":
+cleanup __amd64 float ShipGraph::ConvertToLocalAngle(ShipGraph* this, float ang);
+".554889e553504889fb0f1345":
+cleanup __amd64 Pointf ShipGraph::ConvertToWorldPosition(ShipGraph* this, Pointf local);
+".554889e54883ec104c8d4f50":
+cleanup __amd64 Pointf ShipGraph::ConvertToLocalPosition(ShipGraph* this, Pointf world, bool past);
+".554889e54157415641554154534883ec28488b07":
+cleanup __amd64 void ShipGraph::ComputeCenter(ShipGraph* this);
+".554889e58b476839":
+cleanup __amd64 bool ShipGraph::ContainsPoint(ShipGraph* this, int x, int y);
+".554889e5488b4708482b0748":
+cleanup __amd64 int ShipGraph::RoomCount(ShipGraph* this);
+".554889e50f57c085f67821488b07488b":
+cleanup __amd64 float ShipGraph::GetRoomOxygen(ShipGraph* this, int room);
+".554889e5b00185f6":
+cleanup __amd64 bool ShipGraph::GetRoomBlackedOut(ShipGraph* this, int room);
 
 
 struct ShipGraph depends (Point, Pointf, Room) 
@@ -57,7 +51,7 @@ struct ShipGraph depends (Point, Pointf, Room)
     // TODO: This looks like it was re-implemented because they were unsure at the time how to hook it, we can totally hook it now like we do for GetSlotRenderPosition
 	static Point TranslateFromGrid(int xx, int yy)
 	{
-		return Point(xx * 35, yy * 35);
+		return Point(xx*  35, yy*  35);
 	}
 	
 	// TODO: This looks like it was re-implemented because they were unsure at the time how to hook it, we can totally hook it now like we do for GetSlotRenderPosition
@@ -67,13 +61,13 @@ struct ShipGraph depends (Point, Pointf, Room)
 	}
 	
 	// TODO: This looks like it was re-implemented because they were unsure at the time how to hook it, we can totally hook it now like we do for GetSlotRenderPosition
-	Point GetIntoRoom(int roomId, Point pos)
+	Point GetIntoRoom(int roomId, Point position)
 	{
 		Point ret;
 		if (roomId >= 0 && roomId < this->rooms.size())
 		{
 			auto room = this->rooms[roomId];
-			ret = room->GetIntoRoom(pos);
+			ret = room->GetIntoRoom(position);
 		}
 		else
 		{
@@ -103,6 +97,34 @@ struct ShipGraph depends (Point, Pointf, Room)
 		}
 		
 		return Pointf(xx, yy);
+	}
+
+	// Redeclared because the actual ones also just calls the other function
+	int ConnectedGridSquaresPoint(Point p1, Point p2)
+	{
+		return ConnectedGridSquares(p1.x, p1.y, p2.x, p2.y);
+	}
+
+	// Redeclared because the actual one also just calls the other function
+	Door* ConnectingDoor(Point p1, Point p2)
+	{
+		return ConnectingDoor(p1.x, p1.y, p2.x, p2.y);
+	}
+	
+	// Use Redefinition from Linux to avoid hooking
+	Globals::Rect GetRoomShape(int roomId) 
+	{
+		auto rooms = this->rooms;
+		
+		for (auto const& x: rooms)
+		{
+			if (roomId == x->iRoomId)
+			{
+				return x->GetRect();
+			}
+		}
+		
+		return {-1, -1, 0, 0};
 	}
 	
 }};

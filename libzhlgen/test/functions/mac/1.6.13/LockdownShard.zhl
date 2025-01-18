@@ -1,2 +1,2 @@
-"554889e553504889fb488d3d70??2d00e8????0d00f30f5905????2400f30f5883080100":
-cleanup __amd64 void LockdownShard::Update(LockdownShard *this);
+"!554889e553504889fb488d3d70??2d00e8????0d00f30f5905????2400f30f5883080100":
+cleanup __amd64 void LockdownShard::Update(LockdownShard* this);

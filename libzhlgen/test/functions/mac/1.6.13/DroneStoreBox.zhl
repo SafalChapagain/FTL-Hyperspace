@@ -1,12 +1,15 @@
-"554889e5415741564154534883ec204989ce4989d74989f44889fbbf20000000e8????1900488945d00f2805????19000f2945c048b9795f64726f6e":
-cleanup __amd64 void DroneStoreBox::constructor(DroneStoreBox *this, ShipManager *ship, Equipment *equip, const DroneBlueprint* bp);
+// Continue from DroneControl::ArmamentHotkey (hyper efficiency™)
+".554889e5415741564154534883ec204989ce4989d74989f44889fbbf":
+noHook __amd64 void DroneStoreBox::DO_NOT_HOOK_FALSE_CONSTRUCTOR();
+".554889e5415741564154534883ec204989ce4989d74989f44889fbbf":
+cleanup __amd64 void DroneStoreBox::constructor(DroneStoreBox* this, ShipManager* _ship, Equipment* _equipScreen, const DroneBlueprint* _blueprint);
 
 
 struct DroneStoreBox
 {{
-	DroneStoreBox(ShipManager *_ship, Equipment *_equip, const DroneBlueprint* _bp)
+	DroneStoreBox(ShipManager* ship, Equipment* equipScreen, const DroneBlueprint* blueprint)
 	{
-		this->constructor(_ship, _equip, _bp);
+		this->constructor(ship, equipScreen, blueprint);
 	}
 	
 	DroneStoreBox()

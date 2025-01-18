@@ -1,14 +1,23 @@
 "f30f10442404f30f1101f30f10442408f30f114104c20800908db426000000005589e583ec04f30f1009f30f104104f30f5c4d08f30f5c450cf30f59c9f30f59c0f30f58c1f30f110424":
-__thiscall void Pointf::constructor(Pointf *this, float x, float y);
+__thiscall void Pointf::constructor(Pointf* this, float _x, float _y);
 "5589e583ec04f30f1009f30f104104f30f5c4d08f30f5c450cf30f59c9f30f59c0f30f58c1f30f110424":
-__thiscall float Pointf::RelativeDistance(Pointf *this, Pointf other);
+__thiscall float Pointf::RelativeDistance(Pointf* this, Pointf other);
 "5589e583e4f083ec20f30f1009f30f104104f30f59c9f30f59c0f30f58c1f30f51c80f2ec9":
-__thiscall Pointf Pointf::Normalize(Pointf *this);
+__thiscall Pointf Pointf::Normalize(Pointf* this);
 
 
-struct Pointf {{
-	Pointf() : x(0.f), y(0.f) {}
-	Pointf(float _x, float _y) : x(_x), y(_y) {}
+struct Pointf
+{{
+	Pointf()
+	{
+
+	}
+
+	Pointf(float x, float y)
+	{
+		this->x = x;
+		this->y = y;
+	}
 	
 	Pointf operator+(const Pointf& other)
 	{
@@ -27,7 +36,6 @@ struct Pointf {{
 	
 	Pointf operator*(float amount)
 	{		
-		return Pointf(x * amount, y * amount);
+		return Pointf(x*  amount, y*  amount);
 	}
-
 }};

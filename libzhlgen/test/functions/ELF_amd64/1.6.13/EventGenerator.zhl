@@ -1,15 +1,15 @@
 "415541544989d455488daec80100004889d6534889fb4889ef4883ec18":
-cleanup __amd64 std::string EventGenerator::GetImageFromList(EventGenerator *this, const std::string& listName);
+cleanup __amd64 std::string EventGenerator::GetImageFromList(EventGenerator* this, const std::string& listName);
 ".4156415541544989d455488dae98010000":
-cleanup __amd64 ShipEvent EventGenerator::GetShipEvent(EventGenerator *this, const std::string& event);
+cleanup __amd64 ShipEvent EventGenerator::GetShipEvent(EventGenerator* this, const std::string& event);
 ".41574189cf41564989f641554989fd415455498d6e48534889d34883ec58":
-cleanup __amd64 SectorDescription EventGenerator::GetSectorDescription(EventGenerator *this, const std::string& type, int level);
+cleanup __amd64 SectorDescription EventGenerator::GetSectorDescription(EventGenerator* this, const std::string& type, int level);
 ".4157415641554c8d6e1841544989d4554889f5534889fb4881ecd8000000":
-cleanup __amd64 SectorDescription EventGenerator::GetSpecificSector(EventGenerator *this, const std::string& name);
+cleanup __amd64 SectorDescription EventGenerator::GetSpecificSector(EventGenerator* this, const std::string& name);
 ".415741564155415455488d6f78534889f34881ec88020000":
-cleanup __amd64 LocationEvent *EventGenerator::CreateEvent(EventGenerator *this, const std::string& name, int worldLevel, bool ignoreUnique);
+cleanup __amd64 LocationEvent* EventGenerator::CreateEvent(EventGenerator* this, const std::string& name, int worldLevel, bool ignoreUnique);
 ".5589cd534889fb4883ec184183f8ff":
-cleanup __amd64 LocationEvent *EventGenerator::GetBaseEvent(EventGenerator *this, const std::string& name, int worldLevel, char ignoreUnique, int seed);
+cleanup __amd64 LocationEvent* EventGenerator::GetBaseEvent(EventGenerator* this, const std::string& name, int worldLevel, char ignoreUnique, int seed);
 
 "!.418b97e8090000458b87fc1400004d8da77814000031c9bf(???????\?)":
 EventGenerator* Global_EventGenerator_Generator;
@@ -29,7 +29,7 @@ struct EventGenerator depends (SectorDescription, Sector, LocationEvent)
 		}
 	}
 	
-	void ClearUsedEvent(LocationEvent *locEvent)
+	void ClearUsedEvent(LocationEvent* locEvent)
 	{
 		if (locEvent)
 		{

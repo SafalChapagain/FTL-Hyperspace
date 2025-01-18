@@ -1,5 +1,5 @@
 "565383ec148b5c2420891c24e8????????????????????890424":
-cleanup __cdecl void CloakingSystem::OnLoop(CloakingSystem *this);
+cleanup __cdecl void CloakingSystem::OnLoop(CloakingSystem* this);
 "57565383ec208b5c24308d44241a8d74241c89442408c7442404????????893424e8????????8d4308":
-cleanup __cdecl void CloakingSystem::FiredWeapon(CloakingSystem *this);
+cleanup __cdecl void CloakingSystem::FiredWeapon(CloakingSystem* this);
 

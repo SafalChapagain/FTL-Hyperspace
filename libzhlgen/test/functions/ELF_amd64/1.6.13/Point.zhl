@@ -1,14 +1,29 @@
 "8b178b470429f248c1fe2029f00fafd20fafc001d0":
-cleanup __amd64 int Point::RelativeDistance(Point *this, Point other);
+cleanup __amd64 int Point::RelativeDistance(Point* this, Point other);
 ".8b178b470429f248c1fe2029f00fafd20fafc001d0":
-cleanup __amd64 int Point::Distance(Point *this, Point other);
+cleanup __amd64 int Point::Distance(Point* this, Point other);
 
 
 struct Point 
 {{
-	Point(int xx, int yy) : x(xx), y(yy)  { }
-	Point() { }
+	Point()
+	{
+		
+	}
+
+	Point(int x, int y)
+	{
+		this->x = x;
+		this->y = y;
+	}
 	
-	friend bool operator==(const Point &a, const Point &b) {return a.x==b.x && a.y==b.y;}
-	friend bool operator!=(const Point &a, const Point &b) {return a.x!=b.x || a.y!=b.y;}
+	friend bool operator==(const Point& a, const Point& b)
+	{
+		return a.x==b.x && a.y==b.y;
+	}
+
+	friend bool operator!=(const Point& a, const Point& b)
+	{
+		return a.x!=b.x || a.y!=b.y;
+	}
 }};

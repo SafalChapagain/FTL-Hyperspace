@@ -1,12 +1,13 @@
-"554889e54156534883ec204989d64889f04889fb":
-cleanup __amd64 void AugmentStoreBox::constructor(AugmentStoreBox *this, ShipManager *ship, const AugmentBlueprint* bp);
+// Continue from AugmentEquipBox::CheckContents (hyper efficiency™)
+"!.554889e54156534883ec204989d64889f04889fb0f57c00f2945d048c745e000000000c645d02a48b95f776561706f6e7348894dde48b973746f72655f776548894dd948b973746f726555492f48894dd1c645e600488d75d031c94889c2e84df2":
+cleanup __amd64 void AugmentStoreBox::constructor(AugmentStoreBox* this, ShipManager* _ship, const AugmentBlueprint* _augment);
 
 
 struct AugmentStoreBox
 {{
-	AugmentStoreBox(ShipManager *_ship, const AugmentBlueprint* _bp)
+	AugmentStoreBox(ShipManager* ship, const AugmentBlueprint* augment)
 	{
-		this->constructor(_ship, _bp);
+		this->constructor(ship, augment);
 	}
 	
 	AugmentStoreBox()

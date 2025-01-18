@@ -1,17 +1,17 @@
 "5589e557565381ecbc0000008b5d0880bb6c0200":
-cleanup __cdecl void BeamWeapon::OnRenderSpecific(BeamWeapon *this, int spaceId);
+cleanup __cdecl void BeamWeapon::OnRenderSpecific(BeamWeapon* this, int spaceId);
 ".565383ec308b451c8b55208b75088b5d30":
-cleanup __cdecl void BeamWeapon::constructor(BeamWeapon *this, Pointf _position, int _ownerId, int _targetId, Pointf _target, Pointf _target2, int _length, Targetable *_targetable, float heading);
+cleanup __cdecl void BeamWeapon::constructor(BeamWeapon* this, Pointf _position, int _ownerId, int _targetId, Pointf _target, Pointf _target2, int _length, Targetable* _targetable, float heading);
 ".5589e557565383ec4c8b5d0880bb6c02000000":
-cleanup __cdecl void BeamWeapon::OnUpdate(BeamWeapon *this);
+cleanup __cdecl void BeamWeapon::OnUpdate(BeamWeapon* this);
 ".5589e557565381ec8c0100008b7d08":
-cleanup __cdecl void BeamWeapon::CollisionCheck(BeamWeapon *this, Collideable *other);
+cleanup __cdecl void BeamWeapon::CollisionCheck(BeamWeapon* this, Collideable* other);
 
 
 struct BeamWeapon
 {{
-	BeamWeapon(Pointf _position, int _ownerId, int _targetId, Pointf _target, Pointf _target2, int _length, Targetable *_targetable, float _heading = 0.0f)
+	BeamWeapon(Pointf position, int ownerId, int targetId, Pointf target, Pointf target2, int length, Targetable* targetable, float heading = 0.0f)
 	{
-		this->constructor(_position, _ownerId, _targetId, _target, _target2, _length, _targetable, _heading);
+		this->constructor(position, ownerId, targetId, target, target2, length, targetable, heading);
 	}
 }};

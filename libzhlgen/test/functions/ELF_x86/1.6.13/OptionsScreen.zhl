@@ -1,9 +1,9 @@
 "55660f76c089e557565381ec7c020000":
-cleanup __cdecl void OptionsScreen::Open(OptionsScreen *this, bool mainMenu);
+cleanup __cdecl void OptionsScreen::Open(OptionsScreen* this, bool mainMenu);
 ".5589e557565331db83ec4c":
-cleanup __cdecl void OptionsScreen::OnLoop(OptionsScreen *this);
+cleanup __cdecl void OptionsScreen::OnLoop(OptionsScreen* this);
 ".5557565383ec6c8b9c2480000000????????c70424":
-cleanup __cdecl void OptionsScreen::OnInit(OptionsScreen *this);
+cleanup __cdecl void OptionsScreen::OnInit(OptionsScreen* this);
 
 
 struct OptionsScreen {{

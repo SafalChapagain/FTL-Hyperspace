@@ -1,6 +1,7 @@
-"554889e54157415641554154534881ec280100004989ff41":
-cleanup __amd64 void GameOver::OpenText(GameOver *this, const std::string& text);
-"554889e54157415641554154534883ec684989fd4180bd08":
-cleanup __amd64 void GameOver::OnRender(GameOver *this);
-"554889e541574156534883ec384989fe488d3d59":
-cleanup __amd64 void GameOver::OnLoop(GameOver *this);
+// Continue from FTLButton::MouseMove (hyper efficiency™)
+".554889e541574156534883ec384989fe488d3d59":
+cleanup __amd64 void GameOver::OnLoop(GameOver* this);
+".554889e54157415641554154534883ec684989fd4180bd08":
+cleanup __amd64 void GameOver::OnRender(GameOver* this);
+"!.554889e54157415641554154534881ec280100004989ff41":
+cleanup __amd64 void GameOver::OpenText(GameOver* this, const std::string& text);

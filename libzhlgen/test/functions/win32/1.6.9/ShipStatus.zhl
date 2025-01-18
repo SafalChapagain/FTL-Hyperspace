@@ -1,12 +1,12 @@
 "578d7c240883e4f0ff77fc5589e557565381ec????????803f000f85????????89cb8b79148bb180000000":
-__thiscall void ShipStatus::RenderHealth(ShipStatus *this, bool unk);
+__thiscall void ShipStatus::RenderHealth(ShipStatus* this, bool renderText);
 "578d7c240883e4f0ff77fc5589e55756538db5c0feffff81ec????????8b078b5704f30f104708":
-__thiscall void ShipStatus::OnInit(ShipStatus *this, Point unk, float unk2);
+__thiscall void ShipStatus::OnInit(ShipStatus* this, Point location, float size);
 "578d7c240883e4f0ff77fc5589e557565389cb81ec????????803f008b490c0f84????????e8????????":
-__thiscall void ShipStatus::RenderEvadeOxygen(ShipStatus *this, bool unk);
+__thiscall void ShipStatus::RenderEvadeOxygen(ShipStatus* this, bool renderText);
 "578d7c240883e4f0ff77fc5589e5575389cb83ec10e8????????660fefc0c744240800000000f30f2a4304f30f11442404660fefc0f30f2a03":
-__thiscall void ShipStatus::OnRender(ShipStatus *this);
+__thiscall void ShipStatus::OnRender(ShipStatus* this);
 "578d7c240883e4f0ff77fc5589e557565389cf83ec5c8b410c8d4dc88b10890424ff52388b45cc8b4f0c":
-cleanup void ShipStatus::RenderShields(ShipStatus *this<ecx>, bool renderText);
+cleanup void ShipStatus::RenderShields(ShipStatus* this<ecx>, bool renderText);
 "578d7c240883e4f0ff77fc5589e557565331db89ce83ec7c8b91100100008b811401000029d0c1f80285c0":
-__thiscall void ShipStatus::OnLoop(ShipStatus *this);
+__thiscall void ShipStatus::OnLoop(ShipStatus* this);

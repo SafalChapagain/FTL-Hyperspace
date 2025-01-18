@@ -1,19 +1,19 @@
 "8079640075??c208008db426000000008079650074??8b015589e583e4f0":
-__thiscall void StoreBox::MouseClick(StoreBox *this, int x, int y);
+__thiscall void StoreBox::MouseClick(StoreBox* this, int mX, int mY);
 "578d7c240883e4f0ff77fc5589e5575383ec308b81380100008b80d40400003981e80000007e??b9????????c70424????????8d5de8e8????????8d45e083ec04":
-__thiscall void StoreBox::Activate(StoreBox *this);
+__thiscall void StoreBox::Activate(StoreBox* this);
 "578d7c240883e4f0ff77fc5589e557565389ce81c1????????83ec4c8b1f8b83b8000000898170ffffff8d431c890424e8????????":
-__thiscall void StoreBox::InitBlueprint(StoreBox *this, Blueprint* bp);
+__thiscall void StoreBox::InitBlueprint(StoreBox* this, Blueprint* bp);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec4c8b07c701????????c74104ffffffffc741080000000089c28945c48b47048945c08b470889d78b7704":
-__thiscall void StoreBox::constructor(StoreBox *this, const std::string& buttonImage, ShipManager *shopper, Equipment *equip);
+__thiscall void StoreBox::constructor(StoreBox* this, const std::string& _buttonImage, ShipManager* _shopper, Equipment* _equip);
 "5731c08d7c240883e4f0ff77fc5589e5575389cb83ec108b913001000085d27e??80b9f80000000074??":
-__thiscall void StoreBox::OnLoop(StoreBox *this);
+__thiscall void StoreBox::OnLoop(StoreBox* this);
 "578d7c240883e4f0ff77fc5589e5575389cb8d4df083ec208b078b570489042489542404e8????????8b45f08b55f483ec08":
-__thiscall void StoreBox::SetPosition(StoreBox *this, Point pos);
+__thiscall void StoreBox::SetPosition(StoreBox* this, Point position);
 "578d7c240883e4f0ff77fc5589e557565389cf8d492481ec????????80b920010000000f84????????e8????????":
-__thiscall void StoreBox::OnRender(StoreBox *this);
+__thiscall void StoreBox::OnRender(StoreBox* this);
 "57ba????????8d7c240883e4f0ff77fc5589e55756538d7dd08d75d889cbb9????????83ec3c8975d0":
-__thiscall void StoreBox::Purchase(StoreBox *this);
+__thiscall void StoreBox::Purchase(StoreBox* this);
 
 
 struct StoreBox
@@ -22,9 +22,9 @@ struct StoreBox
 	{
 	}
 	
-	StoreBox(const std::string& buttonImage, ShipManager *shopper, Equipment *ship)
+	StoreBox(const std::string& buttonImage, ShipManager* ship, Equipment* equip)
 	{
-		this->constructor(buttonImage, shopper, ship);
+		this->constructor(buttonImage, ship, equip);
 	}
 	
 	void SetPosition(int x, int y)

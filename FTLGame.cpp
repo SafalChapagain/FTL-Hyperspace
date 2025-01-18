@@ -8,6 +8,8 @@
     #else
         #error "Unsupported architecture"
     #endif
+#elif defined(__APPLE__)
+    #include "FTLGameMacOSAMD64.cpp"
 #else
     #error "Unsupported OS"
 #endif

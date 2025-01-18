@@ -1,2 +1,3 @@
-"554889e5534883ec684889fb8b436083":
-cleanup __amd64 void ControlButton::OnRender(ControlButton *this);
+// Continue from ConfirmWindow::MouseClick (hyper efficiency™)
+".554889e5534883ec684889fb8b":
+cleanup __amd64 void ControlButton::OnRender(ControlButton* this);

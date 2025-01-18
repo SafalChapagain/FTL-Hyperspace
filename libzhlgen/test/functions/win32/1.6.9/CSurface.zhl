@@ -61,21 +61,21 @@ static cleanup __cdecl bool CSurface::GL_DrawRect(float x1, float y1, float x2, 
 ".5589e583e4f081ec????????8b55108b4514f30f106520f30f11642424":
 static cleanup __cdecl bool CSurface::GL_DrawRectOutline(int x1, int y1, int x2, int y2, GL_Color color, float lineWidth);
 ".5589e5565383e4f081ec????????8b5520":
-static cleanup __cdecl bool CSurface::GL_BlitImage(GL_Texture *tex, float x, float y, float x2, float y2, float rotation, GL_Color color, bool mirror);
+static cleanup __cdecl bool CSurface::GL_BlitImage(GL_Texture* tex, float x, float y, float x2, float y2, float rotation, GL_Color color, bool mirror);
 ".5589e557565383e4f081ec????????8b5520":
-static cleanup __cdecl bool CSurface::GL_BlitPixelImage(GL_Texture *tex, float x, float y, float x2, float y2, float rotation, GL_Color color, bool mirror);
+static cleanup __cdecl bool CSurface::GL_BlitPixelImage(GL_Texture* tex, float x, float y, float x2, float y2, float rotation, GL_Color color, bool mirror);
 ".5589e557565383e4f083ec60807d4000":
-static cleanup __cdecl bool CSurface::GL_BlitImagePartial(GL_Texture *tex, float x, float y, float size_x, float size_y, float start_x, float end_x, float start_y, float end_y, float alpha, GL_Color color, bool mirror);
+static cleanup __cdecl bool CSurface::GL_BlitImagePartial(GL_Texture* tex, float x, float y, float size_x, float size_y, float start_x, float end_x, float start_y, float end_y, float alpha, GL_Color color, bool mirror);
 ".5589e557565383e4f081ec????????":
-static cleanup __cdecl bool CSurface::GL_BlitPixelImageWide(GL_Texture *tex, float x, float y, int x2, int y2, float opacity, GL_Color color, bool mirror);
+static cleanup __cdecl bool CSurface::GL_BlitPixelImageWide(GL_Texture* tex, float x, float y, int x2, int y2, float opacity, GL_Color color, bool mirror);
 ".5589e55383e4f083ec208b5d0885db0f84????????a1????????8b15????????39d00f84????????29d0":
-static cleanup __cdecl void CSurface::GL_RenderPrimitive(GL_Primitive *primitive);
+static cleanup __cdecl void CSurface::GL_RenderPrimitive(GL_Primitive* primitive);
 ".5589e55383e4f083ec208b5d0885db0f84????????a1????????8b15????????39d00f84????????":
-static cleanup __cdecl void CSurface::GL_RenderPrimitiveWithAlpha(GL_Primitive *primitive, float alpha);
+static cleanup __cdecl void CSurface::GL_RenderPrimitiveWithAlpha(GL_Primitive* primitive, float alpha);
 ".5589e55383e4f083ec208b5d08f30f10450cf30f105d1085dbf30f106d14f30f1065180f84????????a1????????8b15????????39d00f84????????":
-static cleanup __cdecl void CSurface::GL_RenderPrimitiveWithColor(GL_Primitive *primitive, GL_Color color);
+static cleanup __cdecl void CSurface::GL_RenderPrimitiveWithColor(GL_Primitive* primitive, GL_Color color);
 ".5589e55383e4f083ec108b5d0885db74??8b4324890424e8????????891c24e8????????":
-static cleanup __cdecl void CSurface::GL_DestroyPrimitive(GL_Primitive *primitive);
+static cleanup __cdecl void CSurface::GL_DestroyPrimitive(GL_Primitive* primitive);
 ".5589e55383e4f083ec50f30f10450cc70424????????f30f11442434f30f1144243cf30f584514f30f104d08f30f105510f30f58d1":
 static cleanup __cdecl GL_Primitive* CSurface::GL_CreateRectPrimitive(float x, float y, float w, float h, GL_Color color);
 "55660fefdb660fefc089e553660fefd2660fefed83e4f081ecb0000000f30f2a5d08f30f2a450cf30f2a6d14f30f2a5510f30f104d28f30f115c2430f30f114424340f28e0":
@@ -93,14 +93,14 @@ static cleanup __cdecl GL_Primitive* CSurface::GL_CreateMultiImagePrimitive(GL_T
 static cleanup __cdecl void CSurface::GL_PushStencilMode();
 
 "8d4c240483e4f0ff71fc5589e556535183ec5c8b31f30f105118f30f1035????????0f2ed6f30f10690cf30f106110f30f116dc0f30f1165c4":
-static cleanup __cdecl GL_Primitive* CSurface::GL_CreateImagePrimitive(GL_Texture *tex, float x, float y, float size_x, float size_y, float rotate, GL_Color color);
+static cleanup __cdecl GL_Primitive* CSurface::GL_CreateImagePrimitive(GL_Texture* tex, float x, float y, float size_x, float size_y, float rotate, GL_Color color);
 "8d4c240483e4f0ff71fc5589e556535183ec5c8b318b4128f30f106118f30f1015????????0f2ee2":
-static cleanup __cdecl GL_Primitive* CSurface::GL_CreatePixelImagePrimitive(GL_Texture *tex, float x, float y, float size_x, float size_y, float rotate, GL_Color color, bool unk);
+static cleanup __cdecl GL_Primitive* CSurface::GL_CreatePixelImagePrimitive(GL_Texture* tex, float x, float y, float size_x, float size_y, float rotate, GL_Color color, bool mirrored);
 
 "5589e557565383e4f083ec508b45108b15????????8b5d088b7d0c89442430a1????????39d00f84????????29d083e0f08d4402f0f30f1018f30f106804f30f106008f30f10500c8b47042b07":
-static cleanup __cdecl void CSurface::GL_BlitMultiColorImage(GL_Texture *tex, const std::vector<GL_ColorTexVertex>& texVertices, bool antialias);
+static cleanup __cdecl void CSurface::GL_BlitMultiColorImage(GL_Texture* tex, const std::vector<GL_ColorTexVertex>& texVertices, bool antialias);
 "5589e557565383e4f083ec508b45108b15????????8b5d088b750c89442420a1????????39d00f84????????29d083e0f08d4402f0f30f1020f30f106804f30f107008f30f10780cf30f1164242c":
-static cleanup __cdecl void CSurface::GL_BlitMultiImage(GL_Texture *tex, const std::vector<GL_TexVertex>& texVertices, bool antialias);
+static cleanup __cdecl void CSurface::GL_BlitMultiImage(GL_Texture* tex, const std::vector<GL_TexVertex>& texVertices, bool antialias);
 
 
 /* Could cause OpenGL issues
@@ -115,7 +115,7 @@ static cleanup __cdecl void CSurface::shader_pipeline_apply(int pipeline);
 "55b8????????89e557565383e4f0e8????????29c48b752085f674??8b5d1c85db0f84????????8d5c2420be????????31ff89d88b4d1085c97e??":
 static cleanup __cdecl char* CSurface::generate_fragment_shader_source(GraphicsPrimitiveType primitive_type, int position_count, int texcoord_count, GraphicsTextureColorType texcolor_type, int tex_offset, int color_count, int color_uniform, int fog, int alpha_test, GraphicsComparisonType alpha_comparison);
 "8d4c240483e4f0ff71fc5589e55756535181ec????????8b79088b018b5104897dcc8b790c897dc88b7910897dc48b7914897dc08b7918":
-static cleanup __cdecl int CSurface::opengl_select_shader(const void *primitive, const void *texture, int tex_offset, int color_uniform, int fog, int alpha_test, GraphicsComparisonType alpha_comparison);
+static cleanup __cdecl int CSurface::opengl_select_shader(const void* primitive, const void* texture, int tex_offset, int color_uniform, int fog, int alpha_test, GraphicsComparisonType alpha_comparison);
 */
 
 "5589e557565383e4f083ec508b7d08f30f10651c8b77042b3789f2c1fa040f2e25????????0f8a????????0f85????????8d0c95????????89d08954244c":
@@ -123,7 +123,7 @@ static cleanup __cdecl GL_Primitive* CSurface::GL_CreateMultiLinePrimitive(std::
 
 /*
 "8d4c240483e4f0ff71fc5589e55756535183ec78807938008b19f30f107910f30f117dc4f30f107924f30f106104f30f104108":
-static cleanup __cdecl GL_Primitive* CSurface::GL_CreateImagePartialPrimitive(GL_Texture *tex, float x, float y, float size_x, float size_y, float start_x, float end_x, float start_y, float end_y, float alpha, GL_Color color, bool mirror); 
+static cleanup __cdecl GL_Primitive* CSurface::GL_CreateImagePartialPrimitive(GL_Texture* tex, float x, float y, float size_x, float size_y, float start_x, float end_x, float start_y, float end_y, float alpha, GL_Color color, bool mirror); 
 */
 "5589e557565383e4f083ec408b75088b46042b06c1f8048d14c5????????89c78944243cc1e00581fa????????ba????????0f47c2":
 static cleanup __cdecl GL_Primitive* CSurface::GL_CreateMultiRectPrimitive(std::vector<Globals::Rect>& vec, GL_Color color);

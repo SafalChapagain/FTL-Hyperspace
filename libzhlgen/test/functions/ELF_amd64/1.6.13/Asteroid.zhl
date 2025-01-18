@@ -1,13 +1,13 @@
 "534889fb4883ec2080bfc4000000007417":
-cleanup __amd64 void Asteroid::OnUpdate(Asteroid *this);
+cleanup __amd64 void Asteroid::OnUpdate(Asteroid* this);
 ".4157baffffffff4156415541545589f589d6534889fb4881ecc8010000":
-cleanup __amd64 void Asteroid::constructor(Asteroid *this, Pointf pos, int destinationSpace);
+cleanup __amd64 void Asteroid::constructor(Asteroid* this, Pointf _position, int _destinationSpace);
 
 
 struct Asteroid
 {{
-	Asteroid(Pointf pos, int destinationSpace)
+	Asteroid(Pointf position, int destinationSpace)
 	{
-		this->constructor(pos, destinationSpace);
+		this->constructor(position, destinationSpace);
 	}
 }};

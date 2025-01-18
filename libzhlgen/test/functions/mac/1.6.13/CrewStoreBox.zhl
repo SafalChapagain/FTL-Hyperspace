@@ -1,18 +1,19 @@
-"488bbf78":
-cleanup __amd64 bool CrewStoreBox::CanHold(CrewStoreBox *this);
-"554889e54157415641554154534881ec????????4989cc4189d64889f0":
-cleanup __amd64 void CrewStoreBox::constructor(CrewStoreBox *this, ShipManager *ship, int worldLevel, const std::string& type);
-"554889e541574156534881ec88010000":
-cleanup __amd64 void CrewStoreBox::Purchase(CrewStoreBox *this);
-"554889e5534883ec384889fb488d7b2831c9e8????f8ff80":
-cleanup __amd64 void CrewStoreBox::MouseMove(CrewStoreBox *this, int mX, int mY);
+// Continue from Global_CrewMemberFactory_Factory (hyper efficiency™)
+".554889e54157415641554154534881ec????????4989cc4189d6":
+cleanup __amd64 void CrewStoreBox::constructor(CrewStoreBox* this, ShipManager* _ship, int _worldLevel, const std::string& _type);
+".488bbf78":
+cleanup __amd64 bool CrewStoreBox::CanHold(CrewStoreBox* this);
+".554889e5534883ec384889fb488d7b2831c9e8????f8ff80":
+cleanup __amd64 void CrewStoreBox::MouseMove(CrewStoreBox* this, int mX, int mY);
+".554889e541574156534881ec88010000":
+cleanup __amd64 void CrewStoreBox::Purchase(CrewStoreBox* this);
 
 
 struct CrewStoreBox
 {{
-	CrewStoreBox(ShipManager *_ship, int _worldLevel, const std::string& _type)
+	CrewStoreBox(ShipManager* ship, int worldLevel, const std::string& type)
 	{
-		this->constructor(_ship, _worldLevel, _type);
+		this->constructor(ship, worldLevel, type);
 	}
 	
 	CrewStoreBox()

@@ -1,11 +1,11 @@
 "415531d24989fd41545589f55331db4883ec08488b4f10488b47184829c848c1f8034885c07522eb57":
-cleanup __amd64 SystemBox* SystemControl::GetSystemBox(SystemControl *this, int systemId);
+cleanup __amd64 SystemBox* SystemControl::GetSystemBox(SystemControl* this, int systemId);
 ".41574189f24189d34189cf415641554c63ee41545589fd534863df4989d84889d84881ec88000000":
 static cleanup __amd64 SystemControl::PowerBars* SystemControl::GetPowerBars(int width, int height, int gap, bool useShieldGap);
 ".415741564989fe4155415455534883ec28488b3f":
-cleanup __amd64 void SystemControl::RenderPowerBar(SystemControl *this);
+cleanup __amd64 void SystemControl::RenderPowerBar(SystemControl* this);
 ".415731d231f641564155415455534889fb4883ec58488d7c2430":
-cleanup __amd64 void SystemControl::CreateSystemBoxes(SystemControl *this);
+cleanup __amd64 void SystemControl::CreateSystemBoxes(SystemControl* this);
 
 "!488b442430488d7c243031d231f6488905(???????\?)e8????????488b442430488b7318488b5310488905(???????\?)":
 offsetVariable Point* Global_SystemControl_weapon_position;

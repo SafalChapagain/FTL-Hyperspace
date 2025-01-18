@@ -1,16 +1,13 @@
 "554889e548c7070000000048c747080000000048c7471000000000c6071648b86d616e74":
-cleanup __amd64 std::string MantisAnimation::GetDeathSound(MantisAnimation *this);
-"554889e54156534883ec??4889fb488d05":
-noHook __amd64 void ShipManager::DO_NOT_HOOK_1();
-".554889e54157415653504889fb488b4310":
-noHook __amd64 void ShipManager::DO_NOT_HOOK_2();
-".554889e54157415653504889fb488b4310":
-cleanup __amd64 bool MantisAnimation::FireShot(MantisAnimation *this);
-".554889e54156534883ec??4889fb488d05dbaf2e008038007407e8":
-cleanup __amd64 std::string MantisAnimation::GetShootingSound(MantisAnimation *this);
+cleanup __amd64 std::string MantisAnimation::GetDeathSound(MantisAnimation* this);
+".554889e54156":
+cleanup __amd64 std::string MantisAnimation::GetShootingSound(MantisAnimation* this);
+".554889e54157415653504889fb488b431041be900600004c8b384d01f74863":
+noHook __amd64 void MantisAnimation::DO_NOT_HOOK_ROCK_FireShot();
+".554889e54157415653504889fb488b431041be900600004c8b384d01f74863":
+cleanup __amd64 bool MantisAnimation::FireShot(MantisAnimation* this);
 
 
 struct MantisAnimation
 {{
-
 }};

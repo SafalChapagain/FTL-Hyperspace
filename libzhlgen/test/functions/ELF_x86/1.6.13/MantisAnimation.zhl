@@ -1,15 +1,15 @@
 "565383ec148b7424208b5c2424893424895c2404e8????????f30f108640050000":
 noHook void MantisAnimation::__DO_NOT_HOOK();
 ".5557565381ec0c010000803d????????00":
-cleanup __cdecl std::string MantisAnimation::GetShootingSound(MantisAnimation *this);
+cleanup __cdecl std::string MantisAnimation::GetShootingSound(MantisAnimation* this);
 "8b44240431d280b8d108000000":
 noHook void MantisAnimation::__DO_NOT_HOOK2();
 ".5383ec288b5c24308d44241f89442408":
-cleanup __cdecl std::string MantisAnimation::GetDeathSound(MantisAnimation *this);
+cleanup __cdecl std::string MantisAnimation::GetDeathSound(MantisAnimation* this);
 "31c080bb9f0900000075??c6839f0900000183c418b8010000005b":
 noHook void MantisAnimation::__DO_NOT_HOOK3();
 ".5383ec188b5c2420c7442404000080bf":
-cleanup __cdecl bool MantisAnimation::FireShot(MantisAnimation *this);
+cleanup __cdecl bool MantisAnimation::FireShot(MantisAnimation* this);
 
 
 struct MantisAnimation

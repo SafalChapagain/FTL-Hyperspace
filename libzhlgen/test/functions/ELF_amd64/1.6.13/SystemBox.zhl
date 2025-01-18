@@ -1,21 +1,24 @@
 "4157b8010000004156415541545589f5534889fb4883ec58":
-cleanup __amd64 void SystemBox::OnRender(SystemBox *this, bool ignoreStatus);
+cleanup __amd64 void SystemBox::OnRender(SystemBox* this, bool ignoreStatus);
 ".41544189f4554889fd5331db4883ec20":
-cleanup __amd64 bool SystemBox::MouseClick(SystemBox *this, bool shift);
+cleanup __amd64 bool SystemBox::MouseClick(SystemBox* this, bool shift);
 ".4157415641be01000000415541544189cc55534889fb":
-cleanup __amd64 void SystemBox::constructor(SystemBox *this, Point pos, ShipSystem *sys, bool playerUI);
+cleanup __amd64 void SystemBox::constructor(SystemBox* this, Point _position, ShipSystem* _system, bool _playerUI);
 ".415541544189d45589f5534889fb4883ec38":
-cleanup __amd64 void SystemBox::KeyDown(SystemBox *this, SDLKey key, bool shift);
+cleanup __amd64 void SystemBox::KeyDown(SystemBox* this, SDLKey key, bool shift);
 ".5589f5534889fb4883ec388b87ac010000":
-cleanup __amd64 void SystemBox::MouseMove(SystemBox *this, int x, int y);
+cleanup __amd64 void SystemBox::MouseMove(SystemBox* this, int x, int y);
 
 
 struct SystemBox
 {{
-	SystemBox() { }
+	SystemBox()
+	{ 
+		
+	}
 	
-	SystemBox(Point pos, ShipSystem *sys, bool playerUI)
+	SystemBox(Point position, ShipSystem* system, bool playerUI)
 	{
-		this->constructor(pos, sys, playerUI);
+		this->constructor(position, system, playerUI);
 	}
 }};

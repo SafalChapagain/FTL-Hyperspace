@@ -1,24 +1,24 @@
 "5557565381ec9c0000008b8424c00000008bac24b0000000":
-cleanup __cdecl CollisionResponse Shields::CollisionReal(Shields *this, float x, float y, Damage damage, bool force);
+cleanup __cdecl CollisionResponse Shields::CollisionReal(Shields* this, float x, float y, Damage damage, bool force);
 "57565383ec508b44246c8b5c2460c744240400000000":
-cleanup __cdecl void Shields::constructor(Shields *this, int roomId, int shipId, int startingPower, const std::string& shieldFile);
+cleanup __cdecl void Shields::constructor(Shields* this, int _roomId, int _shipId, int _startingPower, const std::string& _shieldFile);
 "8b4c2404f30f10442410f30f104c2414":
-cleanup __cdecl void Shields::SetBaseEllipse(Shields *this, Globals::Ellipse ellipse);
+cleanup __cdecl void Shields::SetBaseEllipse(Shields* this, Globals::Ellipse ellipse);
 "57565383ec208b5c2430891c248db310020000":
-cleanup __cdecl void Shields::InstantCharge(Shields *this);
+cleanup __cdecl void Shields::InstantCharge(Shields* this);
 "57565383ec208b5c24308d74241c891c24":
-cleanup __cdecl void Shields::Jump(Shields *this);
+cleanup __cdecl void Shields::Jump(Shields* this);
 "5557565383ec3c8b5c24508d74242c891c24e8????????8d44242a":
-cleanup __cdecl void Shields::OnLoop(Shields *this);
+cleanup __cdecl void Shields::OnLoop(Shields* this);
 "57ba05000000565383ec108b5c24208b7424248b7c2428":
-cleanup __cdecl void Shields::AddSuperShield(Shields *this, Point pos);
+cleanup __cdecl void Shields::AddSuperShield(Shields* this, Point position);
 "5557565381ec8c0000008b9c24a00000008b83c4010000":
-cleanup __cdecl void Shields::RenderBase(Shields *this, float alpha, float superShieldOverwrite);
+cleanup __cdecl void Shields::RenderBase(Shields* this, float alpha, float superShieldOverwrite);
 "565383ec148b5c24208b7424248d4304c70300000000c7442408000000cf":
-cleanup __cdecl CollisionResponse Shields::CollisionTest(Shields *this, float x, float y, Damage damage);
+cleanup __cdecl CollisionResponse Shields::CollisionTest(Shields* this, float x, float y, Damage damage);
 
 "!f30f101d(???????\?)f30f1025????????f30f1015":
-GL_Color *Global_COLOR_GREEN;
+GL_Color* Global_COLOR_GREEN;
 
 
 struct Shields

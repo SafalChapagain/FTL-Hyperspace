@@ -1,13 +1,13 @@
 "578d7c240883e4f0ff77fc5589f889e557565389cf81ec????????8b70048b088b580c89b574feffff8b70088b4010899d5cfeffff8b5904":
-__thiscall void CrewDrone::constructor(CrewDrone *this, const std::string& type, const std::string& name, int shipId, const DroneBlueprint* blueprint, CrewAnimation *anim);
+__thiscall void CrewDrone::constructor(CrewDrone* this, const std::string& _type, const std::string& _name, int _iShipId, const DroneBlueprint* _blueprint, CrewAnimation* _animation);
 "578d7c240883e4f0ff77fc5589e557568db15c0700005389cb83ec4c89f1e8????????80bbfc0100000074??80bb7007000000":
-virtual __thiscall void CrewDrone::OnLoop(CrewDrone *this);
+virtual __thiscall void CrewDrone::OnLoop(CrewDrone* this);
 "8b410485c074??0fb6813d05000084c074??8b815c0700008d915c0700008b40303d????????75??0fb68170070000c3f3c35589d1":
-virtual __thiscall bool CrewDrone::ProvidesVision(CrewDrone *this);
+virtual __thiscall bool CrewDrone::ProvidesVision(CrewDrone* this);
 ".578d7c240883e4f0ff77fc5589e55783ec148b07890424e8????????8b7dfc83ec04c98d67f85f":
-__thiscall void CrewDrone::SetCurrentShip(CrewDrone *this, int shipId);
+__thiscall void CrewDrone::SetCurrentShip(CrewDrone* this, int shipId);
 "558d910809000089e557565383e4f083ec208b8100090000c701????????894c2":
-__thiscall void CrewDrone::destructor(CrewDrone *this);
+__thiscall void CrewDrone::destructor(CrewDrone* this);
 
 
 struct CrewDrone depends (CrewMember, DroneBlueprint)
@@ -21,9 +21,9 @@ struct CrewDrone depends (CrewMember, DroneBlueprint)
 	{
 	}
 
-	CrewDrone(const std::string& type, const std::string& name, int shipId, const DroneBlueprint* blueprint, CrewAnimation *anim)
+	CrewDrone(const std::string& type, const std::string& name, int iShipId, const DroneBlueprint* blueprint, CrewAnimation* animation)
 	{
-		this->constructor(type, name, shipId, blueprint, anim);
+		this->constructor(type, name, iShipId, blueprint, animation);
 	}
 	
 	inline std::string& GetRace();

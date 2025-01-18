@@ -49,7 +49,7 @@ static cleanup __amd64 float FileHelper::readFloat(int file);
 ".41554154555389fb4883ec18":
 static cleanup __amd64 int FileHelper::readInteger(int file);
 ".4883ec0831d2":
-static cleanup __amd64 bool FileHelper::seekPosition(int file, int pos);
+static cleanup __amd64 bool FileHelper::seekPosition(int file, int position);
 ".4157415641554189d541545589fd0fb6fa534863de01df4883ec08":
 static cleanup __amd64 char* FileHelper::readBuffer(int file, int len, bool nullTerminate);
 ".41554889f141545589d55389fb4883ec08":
@@ -60,7 +60,7 @@ struct FileHelper
 {{
 	static int fileLength(int fd)
 	{
-        FILE* fp = fdopen(dup(fd), "r"); // Duplicate file descriptor & then open the stream so that we can fclose correctly later on
+        FILE* fp = fdopen(dup(fd), "r"); // Duplicate file descriptor&  then open the stream so that we can fclose correctly later on
         rewind(fp); // TODO: Not sure if we have to rewind before but could it hurt?
         fseek(fp, 0, SEEK_END);
         int lengthOfFile = ftell(fp);

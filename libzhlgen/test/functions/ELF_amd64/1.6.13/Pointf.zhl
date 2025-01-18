@@ -1,14 +1,23 @@
 "f30f1107f30f114f04c3":
-cleanup __amd64 void Pointf::constructor(Pointf *this, float x, float y);
+cleanup __amd64 void Pointf::constructor(Pointf* this, float _x, float _y);
 "660fd64424f0488b4424f0f30f1007":
-cleanup __amd64 float Pointf::RelativeDistance(Pointf *this, Pointf other);
+cleanup __amd64 float Pointf::RelativeDistance(Pointf* this, Pointf other);
 "4883ec28f30f100ff30f104704":
-cleanup __amd64 Pointf Pointf::Normalize(Pointf *this);
+cleanup __amd64 Pointf Pointf::Normalize(Pointf* this);
 
 
-struct Pointf {{
-	Pointf() : x(0.f), y(0.f) {}
-	Pointf(float _x, float _y) : x(_x), y(_y) {}
+struct Pointf
+{{
+	Pointf()
+	{
+
+	}
+
+	Pointf(float x, float y)
+	{
+		this->x = x;
+		this->y = y;
+	}
 	
 	Pointf operator+(const Pointf& other)
 	{
@@ -27,7 +36,6 @@ struct Pointf {{
 	
 	Pointf operator*(float amount)
 	{		
-		return Pointf(x * amount, y * amount);
+		return Pointf(x*  amount, y*  amount);
 	}
-
 }};

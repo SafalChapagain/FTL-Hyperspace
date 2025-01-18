@@ -1,13 +1,13 @@
 "41564155415455488daf48070000534889fb4889ef":
-virtual cleanup __amd64 void CrewDrone::OnLoop(CrewDrone *this);
+virtual cleanup __amd64 void CrewDrone::OnLoop(CrewDrone* this);
 ".41574989d7415641554189cd41544d89c4554c89cd534889fb4881ec58010000":
-cleanup __amd64 void CrewDrone::constructor(CrewDrone *this, const std::string& type, const std::string& name, int shipId, const DroneBlueprint* blueprint, CrewAnimation *anim);
+cleanup __amd64 void CrewDrone::constructor(CrewDrone* this, const std::string& _type, const std::string& _name, int _iShipId, const DroneBlueprint* _blueprint, CrewAnimation* _animation);
 ".8b57084889f885d2":
-virtual cleanup __amd64 bool CrewDrone::ProvidesVision(CrewDrone *this);
+virtual cleanup __amd64 bool CrewDrone::ProvidesVision(CrewDrone* this);
 ".415641554154554889fd534883ec10488b87e808000048c707????????48c78748070000????????488d78e84881ff????????0f8526030000":
-cleanup __amd64 void CrewDrone::destructor(CrewDrone *this);
+cleanup __amd64 void CrewDrone::destructor(CrewDrone* this);
 ".488b87c000000089b78c010000":
-cleanup __amd64 void CrewDrone::SetCurrentShip(CrewDrone *this, int shipId);
+cleanup __amd64 void CrewDrone::SetCurrentShip(CrewDrone* this, int shipId);
 
 
 struct CrewDrone depends (CrewMember, DroneBlueprint)
@@ -21,9 +21,9 @@ struct CrewDrone depends (CrewMember, DroneBlueprint)
 	{
 	}
 
-	CrewDrone(const std::string& type, const std::string& name, int shipId, const DroneBlueprint* blueprint, CrewAnimation *anim)
+	CrewDrone(const std::string& type, const std::string& name, int iShipId, const DroneBlueprint* blueprint, CrewAnimation* animation)
 	{
-		this->constructor(type, name, shipId, blueprint, anim);
+		this->constructor(type, name, iShipId, blueprint, animation);
 	}
 
 	inline std::string& GetRace();

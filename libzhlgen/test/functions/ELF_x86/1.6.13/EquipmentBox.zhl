@@ -1,33 +1,33 @@
 "8b4424048b4c24088b54240c894834":
-virtual cleanup __cdecl void EquipmentBox::SetPosition(EquipmentBox *this, Point pos);
+virtual cleanup __cdecl void EquipmentBox::SetPosition(EquipmentBox* this, Point position);
 "538b44240831db8b54240c8b483c":
-virtual cleanup __cdecl void EquipmentBox::MouseMove(EquipmentBox *this, int x, int y);
+virtual cleanup __cdecl void EquipmentBox::MouseMove(EquipmentBox* this, int x, int y);
 ".8b442404660fefc0f30f7f404c":
-virtual cleanup __cdecl void EquipmentBox::Restart(EquipmentBox *this);
+virtual cleanup __cdecl void EquipmentBox::Restart(EquipmentBox* this);
 "8b4424048b54240889504c8b54240c":
-virtual cleanup __cdecl void EquipmentBox::AddItem(EquipmentBox *this, EquipmentBoxItem item);
+virtual cleanup __cdecl void EquipmentBox::AddItem(EquipmentBox* this, EquipmentBoxItem item);
 "8b5424048b424c85c074??85c0":
-virtual cleanup __cdecl bool EquipmentBox::CanHoldWeapon(EquipmentBox *this);
+virtual cleanup __cdecl bool EquipmentBox::CanHoldWeapon(EquipmentBox* this);
 "8b4424048b504c85d28b5050":
-virtual cleanup __cdecl bool EquipmentBox::CanHoldDrone(EquipmentBox *this);
+virtual cleanup __cdecl bool EquipmentBox::CanHoldDrone(EquipmentBox* this);
 "8b5424048b4c24088b424c85c0":
-virtual cleanup __cdecl int EquipmentBox::GetType(EquipmentBox *this);
+virtual cleanup __cdecl int EquipmentBox::GetType(EquipmentBox* this);
 "57565383ec408b5c24508b742454":
-virtual cleanup __cdecl void EquipmentBox::OnRender(EquipmentBox *this, bool isEmpty);
+virtual cleanup __cdecl void EquipmentBox::OnRender(EquipmentBox* this, bool isEmpty);
 ".565383ec248b5c24308b431c":
-virtual cleanup __cdecl void EquipmentBox::destructor(EquipmentBox *this);
+virtual cleanup __cdecl void EquipmentBox::destructor(EquipmentBox* this);
 "5557565383ec6c8bb42484000000":
-virtual cleanup __cdecl void EquipmentBox::UpdateBoxImage(EquipmentBox *this, bool unk);
+virtual cleanup __cdecl void EquipmentBox::UpdateBoxImage(EquipmentBox* this, bool dragging);
 "5589e557565383ec5c8b5d088b450c8d7dd8":
-virtual cleanup __cdecl void EquipmentBox::RenderLabels(EquipmentBox *this, bool unk);
+virtual cleanup __cdecl void EquipmentBox::RenderLabels(EquipmentBox* this, bool dragging);
 "565383ec548b0d????????8b5c24608d74243c8b4424688b542464894b088b0d????????8943388943408b44246c":
-cleanup __cdecl void EquipmentBox::constructor(EquipmentBox *this, Point pos, int slot);
+cleanup __cdecl void EquipmentBox::constructor(EquipmentBox* this, Point _position, int _slot);
 "8b5424048b424c85c074??8b401c":
-cleanup __cdecl int EquipmentBox::GetItemValue(EquipmentBox *this);
+cleanup __cdecl int EquipmentBox::GetItemValue(EquipmentBox* this);
 "5731c0565383ec208b5c24308b7424348b7c2438":
-cleanup __cdecl void EquipmentBox::SetBlueprint(EquipmentBox *this, InfoBox *infoBox, bool detailedBox);
+cleanup __cdecl void EquipmentBox::SetBlueprint(EquipmentBox* this, InfoBox* infoBox, bool detailedBox);
 "8b5424048b425085c0":
-cleanup __cdecl Blueprint* EquipmentBox::GetBlueprint(EquipmentBox *this);
+cleanup __cdecl Blueprint* EquipmentBox::GetBlueprint(EquipmentBox* this);
 
 
 struct EquipmentBox depends (AugmentBlueprint)

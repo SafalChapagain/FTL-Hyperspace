@@ -1,223 +1,221 @@
-"554889e539b79c00":
-cleanup __amd64 bool CrewMember::InsideRoom(CrewMember *this, int roomId);
-"554889e5c647200048c74718":
-cleanup __amd64 Damage CrewMember::GetRoomDamage(CrewMember *this);
-"554889e548c747100000000048c7470800000000c6070c66c7470569":
-cleanup __amd64 std::string CrewMember::GetUniqueRepairing(CrewMember *this);
-"554889e553504889fb488b83c0000000":
-cleanup __amd64 bool CrewMember::CanTeleport(CrewMember *this);
-"554889e5488b8708060000ff":
-cleanup __amd64 void CrewMember::Jump(CrewMember *this);
-"554889e58b??????????3b47080f94c10f":
-noHook __amd64 void CrewMember::DO_NOT_HOOK_1();
-".554889e58b??????????3b47080f94c10f":
-cleanup __amd64 bool CrewMember::GetIntruder(CrewMember *this);
-"554889e5c6874002":
-cleanup __amd64 void CrewMember::SetOutOfGame(CrewMember *this);
-"554889e5f30f104f0cf30f2a":
-cleanup __amd64 float CrewMember::PositionShift(CrewMember *this);
-"554889e54156534883ec104189f64889fb80bb60":
-cleanup __amd64 void CrewMember::OnRender(CrewMember *this, bool outlineOnly);
-"554889e54156534889fbf30f10432c41":
-virtual cleanup __amd64 bool CrewMember::CanHeal(CrewMember *this);
-"554889e541565389f34989fef3410f10":
-cleanup __amd64 void CrewMember::SaveState(CrewMember *this, int fileHelper);
-"554889e54157415641554154534883ec??4989ff488d05":
-cleanup __amd64 void CrewMember::destructor(CrewMember *this);
-"554889e54157415641554154534881ec????????4d89c64189cf":
-cleanup __amd64 void CrewMember::Cleanup(CrewMember *this);
-"554889e541574156535089f34989fe89dfe8????0f00f341":
-cleanup __amd64 void CrewMember::LoadState(CrewMember *this, int fileHelper);
-"554889e54157415653504889f34989ff41c68768":
-cleanup __amd64 void CrewMember::SetCurrentSystem(CrewMember *this, ShipSystem *sys);
-"554889e583bfa000":
-cleanup __amd64 bool CrewMember::IsManningArtillery(CrewMember *this);
-"554889e5415741564154534883ec204189f64889":
-cleanup __amd64 void CrewMember::IncreaseSkill(CrewMember *this, int skillId);
-"554889e54156534989fe498bbe700200":
-cleanup __amd64 void CrewMember::CheckSkills(CrewMember *this);
-"554889e54863c6488b8fb80300008b54":
-cleanup __amd64 void CrewMember::MasterSkill(CrewMember *this, int skillId);
-"554889e583ff0677":
-static cleanup __amd64 int CrewMember::GetSkillFromSystem(int systemId);
-"554889e54088b77c":
-cleanup __amd64 void CrewMember::SetResisted(CrewMember *this, bool resisted);
-"554889e58a877c08":
-cleanup __amd64 bool CrewMember::GetResisted(CrewMember *this);
-"554889e54863c6488b8fb80300008914":
-cleanup __amd64 void CrewMember::SetSkillProgress(CrewMember *this, int skillId, int skillLevel);
-"554889e5b80100000083fe0577??4863c6488b97b8030000":
-cleanup __amd64 int CrewMember::GetSkillLevel(CrewMember *this, int skillId);
-".554889e5b80100000083fe0577??4863c6488b97b8030000":
-cleanup __amd64 float CrewMember::GetSkillModifier(CrewMember *this, int skillId);
-"554889e54863ce488b??????????8b04??8b4c????89ca":
-cleanup __amd64 std::pair<int, int> CrewMember::GetSkillProgress(CrewMember *this, int skillId);
-"554889e553504889fb488b03ff905001":
-cleanup __amd64 bool CrewMember::BadAtCombat(CrewMember *this);
-"8b97ac00":
-cleanup __amd64 void CrewMember::EmptySlot(CrewMember *this);
-"554889e580bf60020000??75":
-cleanup __amd64 bool CrewMember::NeedsSlot(CrewMember *this);
-"NOT LISTED IN GHIDRA":
-cleanup __amd64 bool CrewMember::DirectModifyHealth(CrewMember *this, float health); /* Not listed in Ghidra */
-"554889e55350f30f1145f44889fb488d":
-cleanup __amd64 void CrewMember::ModifyHealth(CrewMember *this, float health);
-"554889e553504889fbf30f104b2cf30f":
-cleanup __amd64 bool CrewMember::ApplyDamage(CrewMember *this, float damage);
-"554889e553504889fb4883bb8800000000742583":
-cleanup __amd64 bool CrewMember::RepairingSystem(CrewMember *this);
-"554889e553504889fb488bbb88000000":
-cleanup __amd64 bool CrewMember::Sabotaging(CrewMember *this);
-"554889e54883bf8800000000741683bf":
-cleanup __amd64 bool CrewMember::RepairingFire(CrewMember *this);
-"554889e5534883ec184889fb488bbb88":
-cleanup __amd64 Pointf CrewMember::SelectSabotageTarget(CrewMember *this);
-"554889e5488b87ac000000488b8fb400":
-cleanup __amd64 void CrewMember::SavePosition(CrewMember *this);
-"554889e548c78780":
-cleanup __amd64 void CrewMember::ClearPosition(CrewMember *this);
-"554889e5488b878008000048":
-cleanup __amd64 Slot CrewMember::GetSavedPosition(CrewMember *this);
-"554889e54889b78008000048":
-cleanup __amd64 void CrewMember::SetSavePosition(CrewMember *this, Slot position);
-"554889e553504889fb4883bb8800000000742548":
-cleanup __amd64 void CrewMember::StopRepairing(CrewMember *this);
-"554889e54883bf88000000000f95c05d":
-cleanup __amd64 bool CrewMember::Repairing(CrewMember *this);
-"554889e58a87f401":
-cleanup __amd64 void CrewMember::SetFrozen(CrewMember *this, bool frozen);
-"554889e54088b7f5":
-cleanup __amd64 void CrewMember::SetFrozenLocation(CrewMember *this, bool frozenLocation);
-"554889e54889b7f8":
-cleanup __amd64 void CrewMember::SetTask(CrewMember *this, CrewTask task);
-"554889e5415741564154534883ec204189cc4189":
-cleanup __amd64 Slot CrewMember::FindSlot(CrewMember *this, int unk1, int roomId, bool unk2);
-"554889e5415741564154534883ec3041":
-cleanup __amd64 bool CrewMember::CheckRoomPath(CrewMember *this, int roomId);
-"554889e54156534883ec104889fb4889f248c1ea20f30f2a":
-cleanup __amd64 void CrewMember::SetPosition(CrewMember *this, Point pos);
-"554889e58b879c00":
-cleanup __amd64 void CrewMember::ClearTask(CrewMember *this);
-"554889e541574156534883ec384889fb8bbbac01":
-cleanup __amd64 void CrewMember::ClearPath(CrewMember *this);
-"554889e54157415641554154534883ec384189f64889fb48":
-cleanup __amd64 void CrewMember::SetRoom(CrewMember *this, int roomId);
-"554889e5b0014883":
-cleanup __amd64 bool CrewMember::IsBusy(CrewMember *this);
-"554889e5c747241e":
-cleanup __amd64 bool CrewMember::OnInit(CrewMember *this);
-"554889e54883ec10f30f1005":
-cleanup __amd64 Point CrewMember::GetFinalGoal(CrewMember *this);
-"554889e5534883ec18f30f10471cf30f":
-cleanup __amd64 Point CrewMember::GetNextGoal(CrewMember *this);
-"554889e54889b7800000005d":
-cleanup __amd64 void CrewMember::CloseDoorBehind(CrewMember *this, Door *door);
-"554889e541574156534881ec880000004889fb0f":
-cleanup __amd64 float CrewMember::GetMoveSpeed(CrewMember *this);
-"554889e5415741564154534883ec104989fe498b06ff9008":
-cleanup __amd64 void CrewMember::Restart(CrewMember *this);
-"554889e5f30f118774080000":
-cleanup __amd64 void CrewMember::SetDamageBoost(CrewMember *this, float damageBoost);
-"554889e553504889fb8b8370":
-cleanup __amd64 void CrewMember::SetHealthBoost(CrewMember *this, int healthBoost);
-"554889e553504889fb488b8b":
-cleanup __amd64 void CrewMember::InitializeSkills(CrewMember *this);
-"554889e54156534883ec204889fb4088":
-cleanup __amd64 void CrewMember::SetCloneReady(CrewMember *this, bool cloneReady);
-"554889e541574156534883ec284189f64889fbc7":
-cleanup __amd64 void CrewMember::Kill(CrewMember *this, bool noClone);
-"554889e580bff401":
-cleanup __amd64 bool CrewMember::NeedFrozenLocation(CrewMember *this);
-"554889e541574156534883ec184989ff498b9fc0":
-cleanup __amd64 void CrewMember::CheckForTeleport(CrewMember *this);
-"NOT LISTED IN GHIDRA":
-cleanup __amd64 void CrewMember::SetCurrentShip(CrewMember *this, int shipId); /* Not listed in Ghidra */
-"554889e54883bfd8":
-cleanup __amd64 void CrewMember::CheckFighting(CrewMember *this);
-"554889e589b77406":
-cleanup __amd64 void CrewMember::SetDeathNumber(CrewMember *this, int deathNum);
-"554889e54088b771":
-cleanup __amd64 void CrewMember::ForceMindControl(CrewMember *this, bool force);
-"554889e54157415641554154534883ec484989ff498b8758":
-cleanup __amd64 void CrewMember::RenderSkillUpAnimation(CrewMember *this, Point pos);
-"554889e541574156534883ec184989fe41c68640":
-cleanup __amd64 void CrewMember::Clone(CrewMember *this);
-"554889e54156534883ec604889fb83bb":
-cleanup __amd64 void CrewMember::UpdateHealth(CrewMember *this);
-"554889e5534883ec184889fb837b0800":
-cleanup __amd64 void CrewMember::OnRenderPath(CrewMember *this);
-"554889e5415741564154534883ec104889f34989":
-cleanup __amd64 bool CrewMember::SetPath(CrewMember *this, Path *path);
-"554889e541574156534883ec384189d6":
-cleanup __amd64 void CrewMember::SetRoomPath(CrewMember *this, int slotId, int roomId);
-"554889e5534883ec18f30f10470cf30f":
-cleanup __amd64 Point CrewMember::GetLocation(CrewMember *this);
-"554889e5f30f104f0cf30f10":
-cleanup __amd64 bool CrewMember::AtGoal(CrewMember *this);
-"554889e5f30f10470cf30f2a8fb4000000f30f5cc10f5405????2600":
-cleanup __amd64 bool CrewMember::AtFinalGoal(CrewMember *this);
-"554889e54157415641554154534881ec980000004989fc41":
-cleanup __amd64 void CrewMember::OnRenderHealth(CrewMember *this);
-"554889e531c080bf60020000":
-cleanup __amd64 int CrewMember::GetIntegerHealth(CrewMember *this);
-"554889e5488bbf88":
-cleanup __amd64 int CrewMember::GetRepairingId(CrewMember *this);
-"554889e54589c141":
-cleanup __amd64 bool CrewMember::WithinRect(CrewMember *this, int x, int y, int w, int h);
-"554889e553504889fb80be90":
-cleanup __amd64 std::string CrewMember::GetLongName(CrewMember *this);
-"554889e541574156534883ec584189d7":
-cleanup __amd64 void CrewMember::SetName(CrewMember *this, TextString *name, bool force);
-"554889e553504889fb80be70":
-cleanup __amd64 std::string CrewMember::GetName(CrewMember *this);
-"554889e54157415653504189d74989f64889fb488b03ff90":
-cleanup __amd64 void CrewMember::SetCurrentTarget(CrewMember *this, CrewTarget *target, bool unk);
-"554889e54157415641554154534883ec184889fb488bbb80":
-cleanup __amd64 bool CrewMember::GetNewGoal(CrewMember *this);
-"554889e54157415641554154534883ec484189cd":
-cleanup __amd64 bool CrewMember::MoveToRoom(CrewMember *this, int roomId, int slotId, bool forceMove);
-"554889e541574156534883ec184189f64889fb0f":
-cleanup __amd64 void CrewMember::SetMindControl(CrewMember *this, bool controlled);
-"554889e58bb78008":
-cleanup __amd64 bool CrewMember::RestorePosition(CrewMember *this);
-"554889e5f30f10470cf30f10":
-cleanup __amd64 bool CrewMember::ContainsPoint(CrewMember *this, int x, int y);
-"554889e5534883ec180f2945":
-cleanup __amd64 void CrewMember::SetMedbay(CrewMember *this, float health);
-"554889e55350488b9fc00000":
-cleanup __amd64 void CrewMember::StartTeleport(CrewMember *this);
-"554889e54156534c8bb7c000":
-cleanup __amd64 void CrewMember::StartTeleportArrive(CrewMember *this);
-"554889e54156534883ec104989f64889fbf30f10":
-cleanup __amd64 void CrewMember::StartRepair(CrewMember *this, Repairable* toRepair);
-"554889e54156534883ec304889fb488bbb880000":
-cleanup __amd64 void CrewMember::UpdateRepair(CrewMember *this);
-"554889e54156534883ec304889fb488b83c00000":
-cleanup __amd64 void CrewMember::UpdateMovement(CrewMember *this);
-"554889e54157415641554154534881ec280100004989fc41":
-cleanup __amd64 void CrewMember::OnLoop(CrewMember *this);
-"554889e54157415641554154534883ec484989f7":
-cleanup __amd64 std::string CrewMember::GetTooltip(CrewMember *this);
-"554889e54157415641554154534881ec680100004589c749":
+"554889e539b79c":
+cleanup __amd64 bool CrewMember::InsideRoom(CrewMember* this, int roomId);
+".554889e548c747100000000048c7470800000000c6070c66c7470569":
+cleanup __amd64 std::string CrewMember::GetUniqueRepairing(CrewMember* this);
+".554889e5c647200048":
+cleanup __amd64 Damage CrewMember::GetRoomDamage(CrewMember* this);
+".554889e54157415641554154534881ec280100004d89c6":
+cleanup __amd64 void CrewMember::constructor(CrewMember* this, CrewBlueprint& _blueprint, int _shipId, bool _intruder, CrewAnimation* _animation);
+".554889e541574156534883ec584189d7":
+cleanup __amd64 void CrewMember::SetName(CrewMember* this, TextString* name, bool force);
+".554889e54156534189f64889fb488bbbc0":
+cleanup __amd64 void CrewMember::SetSex(CrewMember* this, bool male);
+".554889e58b879c":
+cleanup __amd64 void CrewMember::ClearTask(CrewMember* this);
+".554889e5c747241e":
+cleanup __amd64 bool CrewMember::OnInit(CrewMember* this);
+"!.554889e541565389f34989fef3":
+cleanup __amd64 void CrewMember::SaveState(CrewMember* this, int fileHelper);
+".554889e541574156535089f34989fe89dfe8????0f":
+cleanup __amd64 void CrewMember::LoadState(CrewMember* this, int fileHelper);
+".554889e54157415641554154534883ec484189f64989fc0f":
+cleanup __amd64 void CrewMember::CycleColorLayer(CrewMember* this, int dir);
+".554889e553504889fb488b83c0":
+cleanup __amd64 bool CrewMember::CanTeleport(CrewMember* this);
+".554889e5f30f10470cf30f2a8fb4000000f30f5cc10f5405????26":
+cleanup __amd64 bool CrewMember::AtFinalGoal(CrewMember* this);
+".554889e54157415641554154534881ec6801000045":
 static cleanup __amd64 std::string CrewMember::GetSkillTooltip(int skillId, int skillLevel, std::pair<int,int> progress, bool infoScreen);
-"554889e54156534189f64889fb488bbbc0000000":
-cleanup __amd64 void CrewMember::SetSex(CrewMember *this, bool male);
-"554889e54157415641554154534883ec484189f64989fc0f":
-cleanup __amd64 void CrewMember::CycleColorLayer(CrewMember *this, int unk);
-"554889e54157415641554154534881ec????????4d89c64189cf4889":
-cleanup __amd64 void CrewMember::constructor(CrewMember *this, CrewBlueprint& blueprint, int shipId, bool intruder, CrewAnimation *animation);
-"554889e5488b07ff90100100":
-cleanup __amd64 bool CrewMember::Functional(CrewMember *this);
-"554889e553504889fb488b03ff901001":
-cleanup __amd64 bool CrewMember::CountForVictory(CrewMember *this);
-"554889e580bfbc00":
-virtual cleanup __amd64 bool CrewMember::CanMan(CrewMember *this);
-"554889e553504889fb80bbbc":
-virtual cleanup __amd64 bool CrewMember::CanRepair(CrewMember *this);
-".554889e58a87bc000000":
-virtual cleanup __amd64 bool CrewMember::CanSabotage(CrewMember *this);
-"554889e553504889fb837b08":
-cleanup __amd64 bool CrewMember::GetControllable(CrewMember *this);
+".554889e54157415653504889f34989ff41c6":
+cleanup __amd64 void CrewMember::SetCurrentSystem(CrewMember* this, ShipSystem* sys);
+".554889e5b00148":
+cleanup __amd64 bool CrewMember::IsBusy(CrewMember* this);
+".554889e5b80100000083":
+cleanup __amd64 int CrewMember::GetSkillLevel(CrewMember* this, int skillId);
+".554889e583ff06":
+static cleanup __amd64 int CrewMember::GetSkillFromSystem(int systemId);
+".554889e583bfa000":
+cleanup __amd64 bool CrewMember::IsManningArtillery(CrewMember* this);
+".554889e54156534989fe498bbe":
+cleanup __amd64 void CrewMember::CheckSkills(CrewMember* this);
+".554889e54883bf88000000000f":
+cleanup __amd64 bool CrewMember::Repairing(CrewMember* this);
+".554889e5415741564154534883ec204189f64889fb":
+cleanup __amd64 void CrewMember::IncreaseSkill(CrewMember* this, int skillId);
+".554889e54863c6488b8fb80300008b":
+cleanup __amd64 void CrewMember::MasterSkill(CrewMember* this, int skillId);
+".554889e54088b77c": 
+cleanup __amd64 void CrewMember::SetResisted(CrewMember* this, bool resisted);
+".554889e58a877c":
+cleanup __amd64 bool CrewMember::GetResisted(CrewMember* this);
+".554889e54863c6488b8fb803000089":
+cleanup __amd64 void CrewMember::SetSkillProgress(CrewMember* this, int skillId, int skillLevel);
+".554889e54863ce48":
+cleanup __amd64 std::pair<int, int> CrewMember::GetSkillProgress(CrewMember* this, int skillId);
+"!.554889e5b80100000083":
+cleanup __amd64 float CrewMember::GetSkillModifier(CrewMember* this, int skillId);
+".554889e553504889fb488b03ff9050":
+cleanup __amd64 bool CrewMember::BadAtCombat(CrewMember* this);
+".554889e54157415641554154534883ec184989ff488d05":
+cleanup __amd64 void CrewMember::destructor(CrewMember* this);
+"!.554889e553504889fbe812fd":
+cleanup __amd64 void CrewMember::Cleanup(CrewMember* this); // I think thats the secondary destructor? doesnt really matter as it's unused. 
+".8b97ac00000085d27878":
+cleanup __amd64 void CrewMember::EmptySlot(CrewMember* this);
+"!.554889e580bf600200000075":
+cleanup __amd64 bool CrewMember::NeedsSlot(CrewMember* this);
+".554889e54156534883ec304889fb488bbb88":
+cleanup __amd64 void CrewMember::UpdateRepair(CrewMember* this);
+".554889e553504889fb488bbb8800":
+cleanup __amd64 bool CrewMember::Sabotaging(CrewMember* this);
+".554889e5534883ec184889fb488bbb88":
+cleanup __amd64 Pointf CrewMember::SelectSabotageTarget(CrewMember* this);
+".554889e54883bf880000000074":
+cleanup __amd64 bool CrewMember::RepairingFire(CrewMember* this);
+".554889e553504889fb4883bb8800000000742548":
+cleanup __amd64 void CrewMember::StopRepairing(CrewMember* this);
+"!.554889e5488b870806":
+cleanup __amd64 void CrewMember::Jump(CrewMember* this);
+"!.554889e55350f30f1145f44889fb48":
+cleanup __amd64 void CrewMember::ModifyHealth(CrewMember* this, float health);
+".554889e541574156534883ec384889fbf3":
+cleanup __amd64 bool CrewMember::DirectModifyHealth(CrewMember* this, float health);
+".554889e553504889fb4883bb8800000000742583":
+cleanup __amd64 bool CrewMember::RepairingSystem(CrewMember* this);
+".554889e54156534883ec104989f64889fbf30f10":
+cleanup __amd64 void CrewMember::StartRepair(CrewMember* this, Repairable* toRepair);
+".554889e5488b87ac000000488b8f":
+cleanup __amd64 void CrewMember::SavePosition(CrewMember* this);
+".554889e548c78780":
+cleanup __amd64 void CrewMember::ClearPosition(CrewMember* this);
+".554889e5488b878008":
+cleanup __amd64 Slot CrewMember::GetSavedPosition(CrewMember* this);
+"!.554889e58bb7":
+cleanup __amd64 bool CrewMember::RestorePosition(CrewMember* this);
+"!.554889e54157415641554154534883ec484189cd":
+cleanup __amd64 bool CrewMember::MoveToRoom(CrewMember* this, int roomId, int slotId, bool forceMove);
+".554889e54889b78008":
+cleanup __amd64 void CrewMember::SetSavePosition(CrewMember* this, Slot position);
+".554889e58a87f401":
+cleanup __amd64 void CrewMember::SetFrozen(CrewMember* this, bool frozen);
+".554889e54088b7f5":
+cleanup __amd64 void CrewMember::SetFrozenLocation(CrewMember* this, bool frozenLocation);
+".554889e54889b7f8":
+cleanup __amd64 void CrewMember::SetTask(CrewMember* this, CrewTask task);
+".554889e5415741564154534883ec204189cc":
+cleanup __amd64 Slot CrewMember::FindSlot(CrewMember* this, int roomId, int slotId, bool closeEnough);
+".554889e5415741564154534883ec3041":
+cleanup __amd64 bool CrewMember::CheckRoomPath(CrewMember* this, int roomId);
+".554889e54157415653504189d74989f64889fb488b":
+cleanup __amd64 void CrewMember::SetCurrentTarget(CrewMember* this, CrewTarget* target, bool force);
+".554889e541574156534883ec384189d6":
+cleanup __amd64 void CrewMember::SetRoomPath(CrewMember* this, int slotId, int roomId);
+".554889e58b87ac0100003b":
+cleanup __amd64 bool CrewMember::GetIntruder(CrewMember* this);
+".554889e54156534883ec104889fb4889f248c1ea20f3":
+cleanup __amd64 void CrewMember::SetPosition(CrewMember* this, Point position);
+".554889e5415741564154534883ec104889f3":
+cleanup __amd64 bool CrewMember::SetPath(CrewMember* this, Path* path);
+".554889e54157415641554154534883ec384189f648":
+cleanup __amd64 void CrewMember::SetRoom(CrewMember* this, int roomId);
+".554889e541574156534883ec384889fb8b":
+cleanup __amd64 void CrewMember::ClearPath(CrewMember* this);
+".554889e54883ec10f30f10":
+cleanup __amd64 Point CrewMember::GetFinalGoal(CrewMember* this);
+".554889e5534883ec18f30f10471c":
+cleanup __amd64 Point CrewMember::GetNextGoal(CrewMember* this);
+".554889e54889b78000":
+cleanup __amd64 void CrewMember::CloseDoorBehind(CrewMember* this, Door* door);
+".554889e541574156534881ec880000004889fb0f":
+cleanup __amd64 float CrewMember::GetMoveSpeed(CrewMember* this);
+".554889e54157415641554154534883ec184889fb488bbb":
+cleanup __amd64 bool CrewMember::GetNewGoal(CrewMember* this);
+".554889e5f30f104f0cf30f10":
+cleanup __amd64 bool CrewMember::AtGoal(CrewMember* this);
+".554889e54156534883ec304889fb488b83":
+cleanup __amd64 void CrewMember::UpdateMovement(CrewMember* this);
+".554889e5415741564154534883ec104989fe498b06":
+cleanup __amd64 void CrewMember::Restart(CrewMember* this);
+".554889e5f30f118774":
+cleanup __amd64 void CrewMember::SetDamageBoost(CrewMember* this, float damageBoost);
+".554889e553504889fb8b8370":
+cleanup __amd64 void CrewMember::SetHealthBoost(CrewMember* this, int healthBoost);
+"!.554889e553504889fb488b8b":
+cleanup __amd64 void CrewMember::InitializeSkills(CrewMember* this);
+".554889e54156534883ec204889fb40":
+cleanup __amd64 void CrewMember::SetCloneReady(CrewMember* this, bool cloneReady);
+".554889e541574156534883ec284189f64889fbc7":
+cleanup __amd64 void CrewMember::Kill(CrewMember* this, bool noClone);
+".554889e580bff4":
+cleanup __amd64 bool CrewMember::NeedFrozenLocation(CrewMember* this);
+".554889e541574156534883ec184989ff498b9f":
+cleanup __amd64 void CrewMember::CheckForTeleport(CrewMember* this);
+".554889e54157415641554154534881ec280100004989fc":
+cleanup __amd64 void CrewMember::OnLoop(CrewMember* this);
+".554889e54156534883ec604889fb83":
+cleanup __amd64 void CrewMember::UpdateHealth(CrewMember* this);
+".554889e553504889fb80be90":
+cleanup __amd64 std::string CrewMember::GetLongName(CrewMember* this);
+".554889e589b7ac010000":
+cleanup __amd64 void CrewMember::SetCurrentShip(CrewMember* this, int shipId);
+".554889e54883bfd8":
+cleanup __amd64 void CrewMember::CheckFighting(CrewMember* this);
+".554889e553504889fbf30f104b":
+cleanup __amd64 bool CrewMember::ApplyDamage(CrewMember* this, float damage);
+".554889e5c68740":
+cleanup __amd64 void CrewMember::SetOutOfGame(CrewMember* this);
+".554889e589b774":
+cleanup __amd64 void CrewMember::SetDeathNumber(CrewMember* this, int deathNum);
+".554889e541574156534883ec184189f64889fb0f":
+cleanup __amd64 void CrewMember::SetMindControl(CrewMember* this, bool controlled);
+".554889e54088b771":
+cleanup __amd64 void CrewMember::ForceMindControl(CrewMember* this, bool force);
+".554889e54157415641554154534883ec484989ff49":
+cleanup __amd64 void CrewMember::RenderSkillUpAnimation(CrewMember* this, Point position);
+".554889e541574156534883ec184989fe41":
+cleanup __amd64 void CrewMember::Clone(CrewMember* this);
+"!.554889e54156534c8bb7":
+cleanup __amd64 void CrewMember::StartTeleportArrive(CrewMember* this);
+".554889e5534883ec184889fb837b":
+cleanup __amd64 void CrewMember::OnRenderPath(CrewMember* this);
+".554889e5534883ec18f30f10470c":
+cleanup __amd64 Point CrewMember::GetLocation(CrewMember* this);
+".554889e5f30f104f0cf30f2a87":
+cleanup __amd64 float CrewMember::PositionShift(CrewMember* this);
+".554889e54156534883ec104189f64889fb80":
+cleanup __amd64 void CrewMember::OnRender(CrewMember* this, bool outlineOnly);
+".554889e54157415641554154534881ec980000004989fc":
+cleanup __amd64 void CrewMember::OnRenderHealth(CrewMember* this);
+".554889e531c080bf60":
+cleanup __amd64 int CrewMember::GetIntegerHealth(CrewMember* this);
+".554889e54157415641554154534883ec484989f7":
+cleanup __amd64 std::string CrewMember::GetTooltip(CrewMember* this);
+".554889e5488bbf88":
+cleanup __amd64 int CrewMember::GetRepairingId(CrewMember* this);
+".554889e54589":
+cleanup __amd64 bool CrewMember::WithinRect(CrewMember* this, int x, int y, int w, int h);
+".554889e553504889fb80be70":
+cleanup __amd64 std::string CrewMember::GetName(CrewMember* this);
+".554889e54156534889fbf30f1043":
+virtual cleanup __amd64 bool CrewMember::CanHeal(CrewMember* this);
+".554889e5f30f10470cf30f10":
+cleanup __amd64 bool CrewMember::ContainsPoint(CrewMember* this, int x, int y);
+".554889e5534883ec180f29":
+cleanup __amd64 void CrewMember::SetMedbay(CrewMember* this, float health);
+"!.554889e55350488b9fc0":
+cleanup __amd64 void CrewMember::StartTeleport(CrewMember* this);
+".554889e5488b07ff9010":
+cleanup __amd64 bool CrewMember::Functional(CrewMember* this);
+".554889e553504889fb488b03ff9010":
+cleanup __amd64 bool CrewMember::CountForVictory(CrewMember* this);
+".554889e553504889fb837b08":
+cleanup __amd64 bool CrewMember::GetControllable(CrewMember* this);
+".554889e553504889fb80bbbc":
+virtual cleanup __amd64 bool CrewMember::CanRepair(CrewMember* this);
+".554889e58a87bc":
+virtual cleanup __amd64 bool CrewMember::CanSabotage(CrewMember* this);
+".554889e580bfbc00":
+virtual cleanup __amd64 bool CrewMember::CanMan(CrewMember* this);
 
 
 struct CrewMember depends (CrewAnimation, CrewBlueprint, ShipObject)
@@ -227,11 +225,10 @@ struct CrewMember depends (CrewAnimation, CrewBlueprint, ShipObject)
 
 	}
 
-	CrewMember(CrewBlueprint& bp, int shipId, bool enemy, CrewAnimation *animation)
+	CrewMember(CrewBlueprint& blueprint, int shipId, bool intruder, CrewAnimation* animation)
 	{
-
-		this->constructor(bp, shipId, enemy, animation);
-	}
+		this->constructor(blueprint, shipId, intruder, animation);
+	}	
 	
 	ShipObject* GetShipObject()
 	{

@@ -1,5 +1,5 @@
 "53807e08004889fb":
-cleanup __amd64 std::string TextString::GetText(TextString *this);
+cleanup __amd64 std::string TextString::GetText(TextString* this);
 
 
 struct TextString depends (TextLibrary)

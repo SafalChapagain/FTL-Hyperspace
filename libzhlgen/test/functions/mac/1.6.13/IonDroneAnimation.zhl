@@ -1,11 +1,12 @@
-"554889e54157415641554154534881ecd80100004889fb0f":
-cleanup __amd64 void IonDroneAnimation::constructor(IonDroneAnimation *this, int iShipId, Pointf position, bool enemy);
+// Continue from IonDrone::GetRoomDamage (hyper efficiency™)
+"!.554889e54157415641554154534881ecd80100004889fb0f":
+cleanup __amd64 void IonDroneAnimation::constructor(IonDroneAnimation* this, int _iShipId, Pointf _position, bool _enemy);
 
 
 struct IonDroneAnimation
 {{
-	IonDroneAnimation(int _shipId, Pointf _position, bool _hostile)
+	IonDroneAnimation(int iShipId, Pointf position, bool enemy)
 	{
-		this->constructor(_shipId, _position, _hostile);
+		this->constructor(iShipId, position, enemy);
 	}
 }};

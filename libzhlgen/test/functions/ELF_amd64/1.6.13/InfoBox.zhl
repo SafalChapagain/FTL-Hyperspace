@@ -1,44 +1,39 @@
 "5331d24889fb31f64883ec10e8????????488d7b10":
-cleanup __amd64 void InfoBox::constructor(InfoBox *this);
+cleanup __amd64 void InfoBox::constructor(InfoBox* this);
 ".41574589c7415641554189d531d24154554889f5534889fb4c8d63304883ec58":
-cleanup __amd64 void InfoBox::SetBlueprintWeapon(InfoBox *this, const WeaponBlueprint* bp, int status, bool hasWeaponSystem, int yShift); 
+cleanup __amd64 void InfoBox::SetBlueprintWeapon(InfoBox* this, const WeaponBlueprint* bp, int status, bool hasWeaponSystem, int yShift); 
 ".41574156415541544989f4488d761055534889fb488d7f104c8d73304881ec18020000":
-cleanup __amd64 void InfoBox::SetBlueprintDrone(InfoBox *this, const DroneBlueprint* bp, int status, bool hasDroneSystem, int yShift); 
+cleanup __amd64 void InfoBox::SetBlueprintDrone(InfoBox* this, const DroneBlueprint* bp, int status, bool hasDroneSystem, int yShift); 
 "!.4154554889f5488d7610534889fb":
-cleanup __amd64 void InfoBox::SetBlueprint(InfoBox *this, const ItemBlueprint* bp);
+cleanup __amd64 void InfoBox::SetBlueprint(InfoBox* this, const ItemBlueprint* bp);
 ".415741564c8d771041554989f54154554889fd53488d5e104881ecc8000000":
-cleanup __amd64 void InfoBox::SetBlueprintCrew(InfoBox *this, const CrewBlueprint* bp, int yShift, bool detailedCrew);
+cleanup __amd64 void InfoBox::SetBlueprintCrew(InfoBox* this, const CrewBlueprint* bp, int yShift, bool detailedCrew);
 ".4154554889f5488d7610534889fb":
-cleanup __amd64 void InfoBox::SetBlueprintAugment(InfoBox *this, const AugmentBlueprint* bp);
+cleanup __amd64 void InfoBox::SetBlueprintAugment(InfoBox* this, const AugmentBlueprint* bp);
 ".55534889fb4883ec28837f7cff":
-cleanup __amd64 bool InfoBox::IsEmpty(InfoBox *this);
+cleanup __amd64 bool InfoBox::IsEmpty(InfoBox* this);
 ".4156415541544989fc55534881eca0000000837f7401":
-cleanup __amd64 int InfoBox::CalcBoxHeight(InfoBox *this);
+cleanup __amd64 int InfoBox::CalcBoxHeight(InfoBox* this);
 ".4157415641554589cd41544189f455534889fb4883ec2883feff":
-cleanup __amd64 void InfoBox::SetSystemId(InfoBox *this, int systemId, int maxPower, int currentLevel, int upgrade, int yShift, int forceSystemWidth);
+cleanup __amd64 void InfoBox::SetSystemId(InfoBox* this, int systemId, int maxPower, int currentLevel, int upgrade, int yShift, int forceSystemWidth);
 ".41564589c641554189d541544189cc554889f5534889fb":
-cleanup __amd64 void InfoBox::SetDescription(InfoBox *this, Description *desc, int width, int height, InfoBox::ExpandDir dir); 
+cleanup __amd64 void InfoBox::SetDescription(InfoBox* this, Description* desc, int width, int height, InfoBox::ExpandDir dir); 
 ".41574989ff41564589ce41554d8d6f1041545589cd534489c34881eca8000000":
-cleanup __amd64 void InfoBox::SetText(InfoBox *this, const std::string& title, const std::string& text, int width, int height, InfoBox::ExpandDir dir); 
+cleanup __amd64 void InfoBox::SetText(InfoBox* this, const std::string& title, const std::string& text, int width, int height, InfoBox::ExpandDir dir); 
 ".4157415641554154554889f5534889fb4883ec384885f6":
-cleanup __amd64 void InfoBox::SetSystem(InfoBox *this, ShipSystem *system, int upgrade, int yShift, int forceSystemWidth);
+cleanup __amd64 void InfoBox::SetSystem(InfoBox* this, ShipSystem* system, int upgrade, int yShift, int forceSystemWidth);
 ".55be????????534889fb4883ec28":
-cleanup __amd64 void InfoBox::Clear(InfoBox *this);
+cleanup __amd64 void InfoBox::Clear(InfoBox* this);
 ".4157415641554989fd415455534881ec68020000":
-cleanup __amd64 void InfoBox::OnRender(InfoBox *this);
+cleanup __amd64 void InfoBox::OnRender(InfoBox* this);
 
 "!f30f2a8424b0000000443b642420ba(???????\?)b8(???????\?)":
-GL_Color *Global_InfoBox_detailsBarOff;
-GL_Color *Global_InfoBox_detailsBarOn;
+GL_Color* Global_InfoBox_detailsBarOff;
+GL_Color* Global_InfoBox_detailsBarOn;
 
 
 struct InfoBox 
 {{
-	InfoBox()
-	{
-		this->constructor();
-	}
-
 	enum ExpandDir
 	{
 	  EXPAND_UP = -1,
@@ -46,4 +41,8 @@ struct InfoBox
 	  EXPAND_DOWN = 1,
 	};
 
+	InfoBox()
+	{
+		this->constructor();
+	}
 }};

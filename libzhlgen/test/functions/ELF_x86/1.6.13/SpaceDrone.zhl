@@ -1,15 +1,28 @@
 "5589e5565383ec408b5d088b450c8b5510f30f105d14":
-cleanup __cdecl float SpaceDrone::UpdateAimingAngle(SpaceDrone *this, Pointf location, float percentage, float forceDesired);
+cleanup __cdecl float SpaceDrone::UpdateAimingAngle(SpaceDrone* this, Pointf location, float percentage, float forceDesired);
 "565383ec148b5c24208b7424248b03891c24ff503084c074??":
-virtual cleanup __cdecl void SpaceDrone::SetDeployed(SpaceDrone *this, bool deployed);
+virtual cleanup __cdecl void SpaceDrone::SetDeployed(SpaceDrone* this, bool deployed);
 "565383ec148b7424248b5c242085f674??8b06":
-virtual cleanup __cdecl void SpaceDrone::SetMovementTarget(SpaceDrone *this, Targetable *target);
+virtual cleanup __cdecl void SpaceDrone::SetMovementTarget(SpaceDrone* this, Targetable* target);
 "5557565383ec2c8b5c24408b6c24448b74246c8d4304":
-cleanup __cdecl CollisionResponse SpaceDrone::CollisionMoving(SpaceDrone *this, Pointf start, Pointf finish, Damage damage, bool raytrace);
+cleanup __cdecl CollisionResponse SpaceDrone::CollisionMoving(SpaceDrone* this, Pointf start, Pointf finish, Damage damage, bool raytrace);
 "5589e557565383ec7c8b5d088b03891c24":
-virtual cleanup __cdecl Projectile* SpaceDrone::GetNextProjectile(SpaceDrone *this);
+virtual cleanup __cdecl Projectile* SpaceDrone::GetNextProjectile(SpaceDrone* this);
 "5589e557565381ecdc0000008b7d088b75148b55":
-cleanup __cdecl void SpaceDrone::constructor(SpaceDrone* this, int iShipId, int selfId, DroneBlueprint *blueprint);
+cleanup __cdecl void SpaceDrone::constructor(SpaceDrone* this, int _iShipId, int _selfId, DroneBlueprint* _blueprint);
 "5557565383ec2c8b7424408d86fc0100":
 cleanup __cdecl void SpaceDrone::destructor(SpaceDrone* this);
 
+
+struct SpaceDrone
+{{
+    SpaceDrone(int iShipId, int selfId, DroneBlueprint* blueprint)
+    {
+        this->constructor(iShipId, selfId, blueprint);
+    }
+
+    ~SpaceDrone()
+    {
+        this->destructor();
+    }
+}}

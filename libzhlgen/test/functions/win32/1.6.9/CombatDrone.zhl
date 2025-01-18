@@ -1,14 +1,14 @@
 "578d7c240883e4f0ff77fc5589e557565389cb83ec7c8b57048b078b77088d7da889542404890424":
-__thiscall void CombatDrone::constructor(CombatDrone *this, int iShipId, int selfId, const DroneBlueprint* bp);
+__thiscall void CombatDrone::constructor(CombatDrone* this, int _iShipId, int _selfId, const DroneBlueprint* _blueprint);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec1c8b3785f6":
-__thiscall void CombatDrone::SetWeaponTarget(CombatDrone *this, Targetable *target);
+__thiscall void CombatDrone::SetWeaponTarget(CombatDrone* this, Targetable* target);
 "578d7c240883e4f0ff77fc5589e5575389cb83ec108b01ff908000000084c0":
-__thiscall void CombatDrone::PickTarget(CombatDrone *this);
+__thiscall void CombatDrone::PickTarget(CombatDrone* this);
 
 struct CombatDrone depends (DroneBlueprint)
 {{
-	CombatDrone(int shipId, int self, const DroneBlueprint* bp)
+	CombatDrone(int iShipId, int selfId, const DroneBlueprint* blueprint)
 	{
-		this->constructor(shipId, self, bp);
+		this->constructor(iShipId, selfId, blueprint);
 	}
 }};

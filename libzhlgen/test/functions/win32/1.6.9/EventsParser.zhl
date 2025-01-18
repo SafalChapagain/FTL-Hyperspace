@@ -1,19 +1,19 @@
 "578d7c240883e4f0ff77fc5589e557565389cb8d4da083ec7c8b47088b7704c70424????????894594e8????????":
-__thiscall RandomAmount EventsParser::PullMinMax(EventsParser *this, rapidxml::xml_node<char>* node, const std::string& name);
+__thiscall RandomAmount EventsParser::PullMinMax(EventsParser* this, rapidxml::xml_node<char>* node, const std::string& name);
 "578d7c240883e4f0ff77fc5589e557565389ce81ec????????8b07898d2cfeffff8b5f08898528feffff8b4704c70424????????89c1898524feffffe8????????83ec0485c074??":
-__thiscall std::string EventsParser::ProcessEvent(EventsParser *this, rapidxml::xml_node<char>* node, const std::string& eventName);
+__thiscall std::string EventsParser::ProcessEvent(EventsParser* this, rapidxml::xml_node<char>* node, const std::string& eventName);
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b078b7704c70424????????89cf898d50fbffff898540fbffffe8????????8d8dbcfbffff83ec04c6471800":
-__thiscall ShipTemplate EventsParser::ProcessShipEvent(EventsParser *this, rapidxml::xml_node<char> *node);
+__thiscall ShipTemplate EventsParser::ProcessShipEvent(EventsParser* this, rapidxml::xml_node<char>* node);
 "578d7c240883e4f0ff77fc5589f889e55756538d55d889cf83ec6c8b308b58048955d08975a48b70088b400c":
-__thiscall ResourcesTemplate EventsParser::ProcessModifyItem(EventsParser *this, ResourcesTemplate& resources, rapidxml::xml_node<char> *node, const std::string& unk);
+__thiscall ResourcesTemplate EventsParser::ProcessModifyItem(EventsParser* this, ResourcesTemplate& resources, rapidxml::xml_node<char>* node, const std::string& origin);
 "578d7c240883e4f0ff77fc5589e55756538d75d08d7dd883ec5c894db4b9????????":
-__thiscall void EventsParser::AddAllEvents(EventsParser *this);
+__thiscall void EventsParser::AddAllEvents(EventsParser* this);
 "57b8????????8d7c240883e4f0ff77fc5589e5575653e8????????29c48b77048b4708898d80fffeff8b1f85f6898578fffeff0f84????????":
-__thiscall void EventsParser::AddEvents(EventsParser *this, EventGenerator& generator, char* file, const std::string& fileName);
+__thiscall void EventsParser::AddEvents(EventsParser* this, EventGenerator& generator, char* file, const std::string& fileName);
 "5789c88d7c240883e4f0ff77fc5589e557565383ec5c8b1f894db08b4f04c700????????c7400400000000c7400800000000":
-__thiscall std::vector<std::string> EventsParser::ProcessEventList(EventsParser *this, rapidxml::xml_node<char>* node, const std::string& listName);
+__thiscall std::vector<std::string> EventsParser::ProcessEventList(EventsParser* this, rapidxml::xml_node<char>* node, const std::string& listName);
 "578d7c240883e4f0ff77fc5589e5575653bb????????81ec7c0100008b378b4704898dc4feffff8d8dd4feffff":
-__thiscall void EventsParser::ProcessBaseNode(EventsParser *this, rapidxml::xml_node<char>* node, EventGenerator& generator);
+__thiscall void EventsParser::ProcessBaseNode(EventsParser* this, rapidxml::xml_node<char>* node, EventGenerator& generator);
 
 "!b9(???????\?)8974240889442404":
 EventsParser* Global_EventsParser_Parser;

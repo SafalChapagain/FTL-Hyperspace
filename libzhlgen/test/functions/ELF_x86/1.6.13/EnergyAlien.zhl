@@ -1,4 +1,4 @@
 "5383ec188b5c2420891c24e8????????8b839c000000":
-cleanup __cdecl void EnergyAlien::OnLoop(EnergyAlien *this);
+cleanup __cdecl void EnergyAlien::OnLoop(EnergyAlien* this);
 "8b5424088b44240480ba3d05000000":
-cleanup __cdecl Damage EnergyAlien::GetRoomDamage(EnergyAlien *this);
+cleanup __cdecl Damage EnergyAlien::GetRoomDamage(EnergyAlien* this);

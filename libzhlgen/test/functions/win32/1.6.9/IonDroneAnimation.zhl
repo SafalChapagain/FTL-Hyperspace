@@ -1,11 +1,11 @@
 "578d7c240883e4f0ff77fc5589f889e557565389cf8db524ffffff81ec4c0100008b48048b108b58088b400c89b51cffffff":
-__thiscall void IonDroneAnimation::constructor(IonDroneAnimation *this, int iShipId, Pointf position, bool enemy);
+__thiscall void IonDroneAnimation::constructor(IonDroneAnimation* this, int _iShipId, Pointf _position, bool _enemy);
 
 
 struct IonDroneAnimation
 {{
-	IonDroneAnimation(int _shipId, Pointf _position, bool _hostile)
+	IonDroneAnimation(int iShipId, Pointf position, bool enemy)
 	{
-		this->constructor(_shipId, _position, _hostile);
+		this->constructor(iShipId, position, enemy);
 	}
 }};

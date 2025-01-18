@@ -1,28 +1,40 @@
-"554889e553504889fbe802ca":
-cleanup __amd64 void TeleportSystem::Jump(TeleportSystem *this);
-"554889e54156534189f64889fb4183fe027c1d83":
-cleanup __amd64 void TeleportSystem::SetHackingLevel(TeleportSystem *this, int hackingLevel);
-"554889e54157415641554154534883ec284989fe8a05????":
-cleanup __amd64 void TeleportSystem::OnRenderFloor(TeleportSystem *this);
-"554889e54156534189d64889fbe8????????488d05????????":
-cleanup __amd64 void TeleportSystem::constructor(TeleportSystem *this, int systemId, int roomId, int shipId, int startingPower);
-"554889e5f30f108764020000f30f5905":
-cleanup __amd64 float TeleportSystem::GetChargedPercent(TeleportSystem *this);
-"554889e553504889fbe8c2b6":
-cleanup __amd64 bool TeleportSystem::Charged(TeleportSystem *this);
-"554889e54157415641554154534883ec184989fe41c78688":
-cleanup __amd64 void TeleportSystem::ClearCrewLocations(TeleportSystem *this);
-"554889e54863ce4c":
-cleanup __amd64 void TeleportSystem::UpdateCrewLocation(TeleportSystem *this, int unk);
-"554889e54156534889fb4531f683fe02":
-cleanup __amd64 void TeleportSystem::SetArmed(TeleportSystem *this, int armed);
-"554889e5c7876402":
-cleanup __amd64 void TeleportSystem::ForceReady(TeleportSystem *this);
-"554889e54156534883ec204889fb837b":
-cleanup __amd64 bool TeleportSystem::CanSend(TeleportSystem *this);
-"554889e54156534189f64889fb80bb69":
-cleanup __amd64 bool TeleportSystem::CanReceive(TeleportSystem *this);
-"554889e54156534883ec204889fbe84dd0ffff48":
-cleanup __amd64 void TeleportSystem::OnLoop(TeleportSystem *this);
-"554889e5534883ec184889fbe8bfaeff":
-cleanup __amd64 void TeleportSystem::InitiateTeleport(TeleportSystem *this);
+// Continue from TeleportBox::constructor (hyper efficiency™)
+".554889e54156534189d64889fbe8":
+noHook __amd64 void TeleportSystem::DO_NOT_HOOK_FALSE_CONSTRUCTOR();
+".554889e54156534189d64889fbe8":
+cleanup __amd64 void TeleportSystem::constructor(TeleportSystem* this, int _systemId, int _roomId, int _shipId, int _startingPower);
+".554889e54156534883ec204889fbe84dd0ffff48":
+cleanup __amd64 void TeleportSystem::OnLoop(TeleportSystem* this);
+".554889e54156534889fb4531f683fe02":
+cleanup __amd64 void TeleportSystem::SetArmed(TeleportSystem* this, int armed);
+".554889e54156534189f64889fb4183fe027c1d83":
+cleanup __amd64 void TeleportSystem::SetHackingLevel(TeleportSystem* this, int hackingLevel);
+"!.554889e5c7876402":
+cleanup __amd64 void TeleportSystem::ForceReady(TeleportSystem* this);
+".554889e5f30f108764020000f30f5905":
+cleanup __amd64 float TeleportSystem::GetChargedPercent(TeleportSystem* this);
+"!.554889e553504889fbe8c2b6":
+cleanup __amd64 bool TeleportSystem::Charged(TeleportSystem* this);
+"!.554889e54157415641554154534883ec184989fe41c78688":
+cleanup __amd64 void TeleportSystem::ClearCrewLocations(TeleportSystem* this);
+".554889e54863ce4c":
+cleanup __amd64 void TeleportSystem::UpdateCrewLocation(TeleportSystem* this, int slotId);
+".554889e553504889fbe802ca":
+cleanup __amd64 void TeleportSystem::Jump(TeleportSystem* this);
+".554889e54156534883ec204889fb837b":
+cleanup __amd64 bool TeleportSystem::CanSend(TeleportSystem* this);
+".554889e54156534189f64889fb80bb69":
+cleanup __amd64 bool TeleportSystem::CanReceive(TeleportSystem* this);
+".554889e54157415641554154534883ec284989fe8a05":
+cleanup __amd64 void TeleportSystem::OnRenderFloor(TeleportSystem* this);
+".554889e5534883ec184889fbe8bfaeff":
+cleanup __amd64 void TeleportSystem::InitiateTeleport(TeleportSystem* this);
+
+
+struct TeleportSystem
+{{
+    TeleportSystem(int systemId, int roomId, int shipId, int startingPower)
+    {
+        this->constructor(systemId, roomId, shipId, startingPower);
+    }
+}};

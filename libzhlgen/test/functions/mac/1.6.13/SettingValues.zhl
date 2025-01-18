@@ -1,0 +1,3 @@
+// Continue from Settings::LoadSettings (hyper efficiency™)
+"!.31d283f8020f4ed18915(???????\?)":
+offsetVariable SettingValues* Global_Settings_Settings;
