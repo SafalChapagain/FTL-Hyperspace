@@ -35,3 +35,19 @@ To potentially fix a corrupted save:
 5. Move your original `hs_mv_prof.sav` back where it was before, replacing the one that was created by the game
 6. If this still doesn't work, delete the entire `~/.local/share/FasterThanLight/` folder
 7. ALso disable Steam Cloud Sync if you are using a version of FTL from steam, it'll frequently break the save files.
+
+#### Running FTL gives an error along the lines of "Failed to install hook"
+Launching FTL may give this error:  
+`Fatal Error Failed to install hook for WeaponControl::RenderAiming: Failed to make copy of original code executable:`  
+If you get this error, it's likely that SELinux is preventing the Hyperspace library from being linked. SELinux is common on Fedora Linux. To fix SELinux's interference:
+1. Verify that SELinux is running:  
+```$ sestatus```
+2. If it's enabled, verify that it's in Enforcing mode:  
+```$ getenforce```
+3. If it is in Enforcing mode, we need to add an exception in SELinux. We do that using `ausearch` to find the SELinux error message, `audit2allow` to generate the exception rule, and `semodule` to install the rule. (If your architecture is not `amd64`, change the `amd64` to the FTL executable your architecture runs.) If there are no search results for the error, you need to launch FTL again to generate the error so `ausearch` can grab it.  
+```$ sudo ausearch -c "FTL.amd64" --raw | audit2allow -M FTLMultiverse && sudo semodule -i FTLMultiverse.pp```
+4. Verify that the rule loaded correctly:  
+```$ sudo semanage module -l | grep FTLMultiverse```  
+You should see something along the lines of:  
+```FTLMultiverse             400       pp```  
+Then, try running FTL again. It should load with Hyperspace/Multiverse/whatever you have installed.
