@@ -53,7 +53,7 @@ HOOK_METHOD(IonDrone, constructor, (int iShipId, DroneBlueprint *blueprint) -> v
     LOG_HOOK("HOOK_METHOD -> IonDrone::constructor -> Begin (Balance.cpp)\n")
     super(iShipId, blueprint);
     
-    if (g_controllableIonDroneFix && iShipId == 0)
+    if (g_controllableIonDroneFix && this->CrewMember::iShipId == 0)
     {
         int delay = g_controllableIonDroneFix_Delay*1000;
         auto ex = CMA_EX(crewAnim);
@@ -70,7 +70,7 @@ HOOK_METHOD(BoarderPodDrone, OnLoop, () -> void)
     super();
     
     CrewAnimation_Extend* ex;
-    if (g_controllableIonDroneFix && !bDeliveredDrone && boarderDrone && boarderDrone->iShipId == 0 && (ex = CMA_EX(boarderDrone->crewAnim), ex->isIonDrone))
+    if (g_controllableIonDroneFix && !bDeliveredDrone && boarderDrone && boarderDrone->CrewMember::iShipId == 0 && (ex = CMA_EX(boarderDrone->crewAnim), ex->isIonDrone))
     {   // Initialize timer if the drone hasn't yet reached the ship
         ex->ionTimer.currTime = std::max(0.f, g_controllableIonDroneFix_Delay - g_controllableIonDroneFix_DelayInitial);
     }
@@ -82,7 +82,7 @@ HOOK_METHOD(CrewDrone, OnLoop, () -> void)
     super();
 
     CrewAnimation_Extend* ex;
-    if (g_controllableIonDroneFix && iShipId == 0 && (ex = CMA_EX(crewAnim), ex->isIonDrone))
+    if (g_controllableIonDroneFix && this->CrewMember::iShipId == 0 && (ex = CMA_EX(crewAnim), ex->isIonDrone))
     {
         IonDroneAnimation* ionAnim = (IonDroneAnimation*)crewAnim;
         if (!ionAnim->ionAnimation.tracker.running)

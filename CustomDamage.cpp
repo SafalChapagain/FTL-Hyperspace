@@ -781,7 +781,7 @@ HOOK_METHOD_PRIORITY(SpaceDrone, CollisionMoving, 9999, (Pointf start, Pointf fi
     {
         // push everything to the lua stack: Drone, Projectile, Damage, CollisionResponse
         auto context = Global::GetInstance()->getLuaContext();
-        SWIG_NewPointerObj(context->GetLua(), this, context->getLibScript()->types.pSpaceDroneTypes[this->type], 0);
+        SWIG_NewPointerObj(context->GetLua(), this, context->getLibScript()->types.pSpaceDroneTypes[this->Drone::type], 0);
         CustomDamageManager::lua_PushCurrentProjectile(context);
         SWIG_NewPointerObj(context->GetLua(), &damage, context->getLibScript()->types.pDamage, 0);
         SWIG_NewPointerObj(context->GetLua(), &ret, context->getLibScript()->types.pCollisionResponse, 0);

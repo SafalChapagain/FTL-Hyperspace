@@ -11,7 +11,7 @@ bool isTelepathicMindControl = false;
 
 bool CrewMember::_HS_ValidTarget(int shipId)
 {
-    if (bDead || crewAnim->status == 3 || currentShipId != shipId) return false;
+    if (this->CrewMember::bDead || crewAnim->status == 3 || currentShipId != shipId) return false;
 
     auto ex = CM_EX(this);
     auto def = CustomCrewManager::GetInstance()->GetDefinition(this->species);
@@ -22,11 +22,11 @@ bool CrewMember::_HS_ValidTarget(int shipId)
 
 bool CrewMember::_HS_GetControllable()
 {
-    if (this->bDead) return false;
+    if (this->CrewMember::bDead) return false;
 
-    bool ret = this->iShipId == 0 && !this->bMindControlled;
+    bool ret = this->CrewMember::iShipId == 0 && !this->CrewMember::bMindControlled;
 
-    if (!ret && this->iShipId == 1 && this->bMindControlled)
+    if (!ret && this->CrewMember::iShipId == 1 && this->CrewMember::bMindControlled)
     {
         ShipManager *ship = G_->GetShipManager(0);
         if (ship) ret = ship->HasAugmentation("MIND_ORDER");

@@ -418,9 +418,16 @@ for _,v in pairs(structs) do
         end
     end
     
+    -- track indices of fields to remove
+    local removeIndices = {}
+
     for k,f in pairs(v.fields) do
+
+
+
         local cname = f:cname()
-        if not f:isPointer() and structs[cname] and (f.name == "_entity" or f.name == "_base") then
+        if not f:isPointer() and structs[cname] and 
+        (f.name == "_entity" or f.name == "_base" or f.name == "_collideable" or f.name == "_drone" or f.name == "_selectable" --[[ or f.name == "_shipObj" --]] or f.name == "_shipObject" or f.name == "_targetable") then 
             -- inheritance
             if v.inherits == nil then
                 v.inherits = {}
@@ -428,6 +435,9 @@ for _,v in pairs(structs) do
             table.insert(v.inherits, f)
             addDependency(v, cname, false)
             hasFuncDef[cname] = true
+
+            -- store the index for later removal
+            table.insert(removeIndices, k)
         end
         processField(f, v)
     end
@@ -438,10 +448,12 @@ for _,v in pairs(structs) do
         end
     end
     
-    if v.inherits then
-        for i = 1,#v.inherits do
-            table.remove(v.fields, 1)
-        end
+    -- sort indices in descending order before removing, so we don't mess up the positions
+    table.sort(removeIndices, function(a, b) return a > b end)
+
+    -- remove fields at the specific indices
+    for _, index in ipairs(removeIndices) do
+        table.remove(v.fields, index)
     end
 end
 
