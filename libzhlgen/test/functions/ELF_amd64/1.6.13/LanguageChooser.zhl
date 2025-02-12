@@ -1,4 +1,7 @@
-"!4889ee480335(???????\?)":
+"415741564189d6415541544531e4":
+cleanup __amd64 void LanguageChooser::OnTouch(LanguageChooser* this, TouchAction action, int id, int x, int y, int initialX, int initialY);
+
+"!.4889ee480335(???????\?)":
 offsetVariable std::vector<std::string>* Global_OptionsScreen_languageList;
 
 ".4157bef001000041564155":

@@ -3236,6 +3236,7 @@ struct TextButton;
 struct LanguageChooser : FocusWindow
 {
 	LIBZHL_API void OnRender();
+	LIBZHL_API void OnTouch(TouchAction action, int id, int x, int y, int initialX, int initialY);
 	
 	std::vector<TextButton*> buttons;
 	int iChoice;
@@ -3781,6 +3782,7 @@ struct MainMenu
 	LIBZHL_API void MouseMove(int x, int y);
 	LIBZHL_API void OnLoop();
 	LIBZHL_API void OnRender();
+	LIBZHL_API void OnTouch(TouchAction action, int id, int x, int y, int initialX, int initialY);
 	LIBZHL_API bool Open();
 	LIBZHL_API void constructor();
 	
@@ -3840,6 +3842,10 @@ struct CApp : CEvent
 	LIBZHL_API void OnSuspend();
 	LIBZHL_API void OnTextEvent(CEvent::TextEvent textEvent);
 	LIBZHL_API void OnTextInput(int ch);
+	LIBZHL_API void OnTouchCancel(int id, int x, int y, int initialX, int initialY);
+	LIBZHL_API void OnTouchDown(int id, int x, int y);
+	LIBZHL_API void OnTouchMove(int id, int x, int y, int initialX, int initialY);
+	LIBZHL_API void OnTouchUp(int id, int x, int y, int initialX, int initialY);
 	LIBZHL_API void ParseArgs(int argc, const char **argv);
 	LIBZHL_API int SetupWindow();
 	LIBZHL_API Point TranslateMouse(int x, int y);
@@ -4663,6 +4669,7 @@ struct CommandGui
 	LIBZHL_API void NewLocation(const std::string &mainText, std::vector<ChoiceText> *choices, ResourceEvent &resources, bool testingEvents);
 	LIBZHL_API void OnInit();
 	LIBZHL_API void OnLoop();
+	LIBZHL_API void OnTouch(TouchAction action, int id, int x, int y, int initialX, int initialY);
 	LIBZHL_API void RenderPlayerShip(Point &shipCenter, float jumpScale);
 	LIBZHL_API void RenderStatic();
 	LIBZHL_API void Restart();
