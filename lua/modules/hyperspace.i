@@ -1408,6 +1408,42 @@ We can expose them once the root cause is identified and the crash is fixed.
 %rename("%s") ShipManager::StartFire; // TODO: add this to examples for fun Hyperspace.ships.player:StartFire(1)
 %rename("%s") ShipManager::SystemFunctions;
 %rename("%s") ShipManager::TeleportCrew; // Teleport crew & get back the list of CrewMembers.
+//Potential fix for fireSpreader indexing issue
+%rename("%s") ShipManager::GetFireAtPoint;
+%rename("%s") ShipManager::GetFire;
+%extend ShipManager {
+    //Or some similar helper method, because indexing the fireSpreader grid in lua returns vectors and fires by value and not by reference, meaning the relevant Fire objects cannot be edited
+
+    //Possible Methods
+
+    //Get fire at spacial coordinates
+    Fire& GetFireAtPoint(float x, float y)
+    {
+        Point fireCoordinates = ShipGraph::TranslateToGrid(x, y);
+        return $self->fireSpreader.grid[fireCoordinates.x][fireCoordinates.y];
+    }
+
+    //Get fire at spacial coordintes (Point form)
+    Fire& GetFireAtPoint(Point p)
+    {
+        Point fireCoordinates = ShipGraph::TranslateToGrid(p.x, p.y);
+        return $self->fireSpreader.grid[fireCoordinates.x][fireCoordinates.y];
+    }
+
+    //Get fire at spacial coordinates (Pointf form)
+    Fire& GetFireAtPoint(Pointf p)
+    {
+        Point fireCoordinates = ShipGraph::TranslateToGrid(p.x, p.y);
+        return $self->fireSpreader.grid[fireCoordinates.x][fireCoordinates.y];
+    }
+
+    //Indexing function, grid coordinates
+    Fire& GetFire(int x, int y)
+    {
+        return $self->fireSpreader.grid[x][y];
+    }
+}
+
 %immutable ShipManager::vSystemList;
 %rename("%s") ShipManager::vSystemList;
 %immutable ShipManager::oxygenSystem;
@@ -1522,42 +1558,7 @@ We can expose them once the root cause is identified and the crash is fixed.
 
 %nodefaultctor ShipManager_Extend;
 %rename("%s") ShipManager_Extend;
-//Potential fix for fireSpreader indexing issue
-%rename("%s") ShipManager::GetFireAtPoint;
-%rename("%s") ShipManager::GetFire;
-%extend ShipManager {
-    //Or some similar helper method, because indexing the fireSpreader grid in lua returns vectors and fires by value and not by reference, meaning the relevant Fire objects cannot be edited
-
-    //Possible Methods
-
-    //Get fire at spacial coordinates
-    Fire& GetFireAtPoint(float x, float y)
-    {
-        Point fireCoordinates = ShipGraph::TranslateToGrid(x, y);
-        return $self->fireSpreader.grid[fireCoordinates.x][fireCoordinates.y];
-    }
-
-    //Get fire at spacial coordintes (Point form)
-    Fire& GetFireAtPoint(Point p)
-    {
-        Point fireCoordinates = ShipGraph::TranslateToGrid(p.x, p.y);
-        return $self->fireSpreader.grid[fireCoordinates.x][fireCoordinates.y];
-    }
-
-    //Get fire at spacial coordinates (Pointf form)
-    Fire& GetFireAtPoint(Pointf p)
-    {
-        Point fireCoordinates = ShipGraph::TranslateToGrid(p.x, p.y);
-        return $self->fireSpreader.grid[fireCoordinates.x][fireCoordinates.y];
-    }
-
-    //Indexing function, grid coordinates
-    Fire& GetFire(int x, int y)
-    {
-        return $self->fireSpreader.grid[x][y];
-    }
-}
-
+%rename("%s") ShipManager_Extend::CreateRoomStatBoost;
 
 %rename("%s") Spreader_Fire;
 %rename("%s") Spreader_Fire::count;
@@ -3849,6 +3850,24 @@ We can expose them once the root cause is identified and the crash is fixed.
 %rename("%s") StatBoostManager;
 %rename("%s") StatBoostManager::GetInstance;
 %rename("%s") StatBoostManager::CreateTimedAugmentBoost;
+
+%rename("%s") RoomAnimDef;
+%rename("%s") RoomAnimDef::RoomAnimType;
+%rename("%(regex:/^(\\w+::\\w+::(.*))$/\\u\\2/)s", regextarget=1, fullname=1) "RoomAnimDef::RoomAnimType::.*";
+%luacode {
+    --Create RoomAnimDef enum table
+    Hyperspace.RoomAnimDef.RoomAnimType = {}
+
+    for key, value in pairs(Hyperspace.RoomAnimDef) do
+        CreateEnumTable("RoomAnimType_", Hyperspace.RoomAnimDef.RoomAnimType, key, value)
+    end
+}
+%rename("%s") RoomAnimDef::renderLayer;
+%rename("%s") RoomAnimDef::animType;
+%rename("%s") RoomAnimDef::animBorder;
+%rename("%s") RoomAnimDef::animName;
+%rename("%s") RoomAnimDef::tileAnim;
+%rename("%s") RoomAnimDef::wallAnim;
 
 %rename("%s") ShipGenerator;
 %newobject ShipGenerator::CreateShip;
