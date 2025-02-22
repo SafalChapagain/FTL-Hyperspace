@@ -407,7 +407,7 @@ If the chance attribute is set to 1 or above, every time the main menu is loaded
 
 <!-- Allows for the existence of additional tabs in the upgrade menu, be wary that they are to be used with lua to have any utility 
 name: name of the tab, will be used to find the icon_[name] for the tab in the img\upgradeUI\Equipment\tabButtons folder
-windowPath: path for the background of the new tab, do not include the extension
+windowPath: path for the background of the new tab, do not include the extension, no need to include the selected button in the background, it will be added automatically
 hasUndo: whether the tab has an undo button or not, this button will call the event TABBED_WINDOW_UNDO when pressed
 
 You can use the RenderEvent TABBED_WINDOW for your lua rendering

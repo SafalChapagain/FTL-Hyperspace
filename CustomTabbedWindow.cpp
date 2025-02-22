@@ -87,9 +87,11 @@ HOOK_METHOD(TabbedWindow, OnRender, () -> void)
     
     if (idx >= 0)
     {
-        
+        if (currentTab > 2) // should never be true outside of CustomTabbedWindow being enabled
+            G_->GetResources()->RenderImage(CustomTabbedWindow::GetInstance()->GetTab(currentTab).background, 0, 0, 0, COLOR_WHITE, 1.f, false);
         CSurface::GL_Translate(-position.x, -(position.y - 7));
         super();
+        
         if (CustomTabbedWindow::GetInstance()->enabled && G_->GetWorld()->commandGui->shipScreens.bOpen)
         {
             for (int i = 0; i < buttons.size(); ++i)
@@ -100,18 +102,19 @@ HOOK_METHOD(TabbedWindow, OnRender, () -> void)
                         buttons[i]->primitives[j]->textureAntialias = true;
                 }
 
-                if (i == currentTab) continue;
+                if (i == currentTab && i > 2)
+                {
+                    bool isLast = i == buttons.size() - 1;
+                    std::string buttonBack = isLast ? "upgradeUI/Equipment/tabButtons/select_button_end.png" : "upgradeUI/Equipment/tabButtons/select_button.png";
+                    G_->GetResources()->RenderImageString(buttonBack, isLast ? buttons[i]->position.x - 17: buttons[i]->position.x + 2, buttons[i]->position.y, 0, COLOR_WHITE, 1.f, false);
+                }
                 std::string buttonIcon = "upgradeUI/Equipment/tabButtons/icon_"+names[i]+".png";
                 G_->GetResources()->RenderImageString(buttonIcon, i == buttons.size() -1 ? buttons[i]->position.x - 10 : buttons[i]->position.x , buttons[i]->position.y, 0, COLOR_WHITE, 1.f, false);
             }
 
             if (currentTab > 2 && CustomTabbedWindow::GetInstance()->GetTab(currentTab).hasUndo)
-                CustomTabbedWindow::GetInstance()->undoButton->OnRender();
+                    CustomTabbedWindow::GetInstance()->undoButton->OnRender();
         }
-        CSurface::GL_Translate(position.x, position.y - 7);
-        if (currentTab > 2) // should never be true outside of CustomTabbedWindow being enabled
-            G_->GetResources()->RenderImage(CustomTabbedWindow::GetInstance()->GetTab(currentTab).background, 0, 0, 0, COLOR_WHITE, 1.f, false);
-    
     }
 
     context->getLibScript()->call_on_render_event_post_callbacks(RenderEvents::TABBED_WINDOW, std::abs(idx), 1);
