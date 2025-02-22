@@ -985,6 +985,7 @@ struct GenericButton
   bool bRenderOff;
   bool bRenderSelected;
   bool bFlashing;
+  uint8_t gap_ex_gb[3];
   AnimationTracker flashing;
   bool bActive;
   bool bHover;
@@ -1001,6 +1002,7 @@ struct Button
   GL_Primitive *primitives[3];
   Point imageSize;
   bool bMirror;
+  uint8_t gap_ex[3];
 };
 
 /* 573 */

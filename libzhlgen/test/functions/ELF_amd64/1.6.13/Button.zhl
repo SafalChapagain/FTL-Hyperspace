@@ -21,10 +21,5 @@ struct Button depends (CSurface)
 		this->constructor();
 	}
 	
-	~Button()
-	{
-		CSurface::GL_DestroyPrimitive(primitives[0]);
-		CSurface::GL_DestroyPrimitive(primitives[1]);
-		CSurface::GL_DestroyPrimitive(primitives[2]);
-	}
+	~Button();
 }};

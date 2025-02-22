@@ -805,6 +805,11 @@
 		<Unit filename="Blueprint_Extend.h">
 			<Option virtualFolder="Core/Blueprints/" />
 		</Unit>
+		<Unit filename="Button_Extend.cpp">
+			<Option virtualFolder="Content/Misc/" />
+		</Unit>
+		<Unit filename="Button_Extend.h">
+			<Option virtualFolder="Content/Misc/" />
 		<Unit filename="Colors.cpp">
 			<Option virtualFolder="Core/" />
 		</Unit>
