@@ -90,6 +90,39 @@ HOOK_METHOD(SystemBox, MouseMove, (int x, int y) -> void)
     }
 }
 
+void CombatControl::ArmArtillery(ArtillerySystem* artillerySystem)
+{
+    ProjectileFactory* artilleryWeapon = artillerySystem->projectileFactory;
+    artilleryWeapon->ClearAiming();
+    weapControl.armedWeapon = artilleryWeapon;
+    weapControl.armedSlot = -1;
+    UpdateAiming();
+}
+
+HOOK_METHOD(CombatControl, KeyDown, (SDLKey key) -> void)
+{
+    LOG_HOOK("HOOK_METHOD -> CombatControl::KeyDown -> Begin (ArtillerySystem.cpp)\n")
+    super(key);
+    const auto& artillerySystems = shipManager->artillerySystems;
+    bool targetableArtillery = CustomOptionsManager::GetInstance()->targetableArtillery.currentValue || shipManager->HasAugmentation("ARTILLERY_ORDER");
+    if (key == Settings::GetHotkey("artillery1") && artillerySystems.size() >= 1 && targetableArtillery)
+    {
+        ArmArtillery(artillerySystems[0]);
+    }
+    else if (key == Settings::GetHotkey("artillery2") && artillerySystems.size() >= 2 && targetableArtillery)
+    {
+        ArmArtillery(artillerySystems[1]);
+    }
+    else if (key == Settings::GetHotkey("artillery3") && artillerySystems.size() >= 3 && targetableArtillery)
+    {
+        ArmArtillery(artillerySystems[2]);
+    }
+    else if (key == Settings::GetHotkey("artillery4") && artillerySystems.size() >= 4 && targetableArtillery)
+    {
+        ArmArtillery(artillerySystems[3]);
+    }
+}
+
 HOOK_METHOD(SystemBox, MouseClick, (bool shift) -> bool)
 {
     LOG_HOOK("HOOK_METHOD -> SystemBox::MouseClick -> Begin (ArtillerySystem.cpp)\n")
@@ -99,12 +132,8 @@ HOOK_METHOD(SystemBox, MouseClick, (bool shift) -> bool)
     SystemBox_Extend* extend = SB_EX(this);
     if (extend->isArtillery && targetableArtillery && extend->artilleryButton.Hovering())
     {  
-        auto& combatControl = G_->GetCApp()->gui->combatControl;
-        ProjectileFactory* artilleryWeapon = static_cast<ArtillerySystem*>(pSystem)->projectileFactory;
-        artilleryWeapon->ClearAiming();
-        combatControl.weapControl.armedWeapon = artilleryWeapon;
-        combatControl.weapControl.armedSlot = -1;
-        combatControl.UpdateAiming();
+        ArtillerySystem* artillerySystem = static_cast<ArtillerySystem*>(pSystem);
+        G_->GetCApp()->gui->combatControl.ArmArtillery(artillerySystem);
     }
     return ret;
 }

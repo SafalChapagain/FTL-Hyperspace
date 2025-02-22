@@ -208,7 +208,10 @@
 <text name="hotkey_un_temporal">De-Power Temporal Manipulator</text>
 <text name="hotkey_temporal_speed">Temporal Speed Up</text>
 <text name="hotkey_temporal_slow">Temporal Slow Down</text>
-
+<text name="hotkey_artillery1">Target Artillery 1</text>
+<text name="hotkey_artillery2">Target Artillery 2</text>
+<text name="hotkey_artillery3">Target Artillery 3</text>
+<text name="hotkey_artillery4">Target Artillery 4</text>
 <!-- Custom systems -->
 
 <!--

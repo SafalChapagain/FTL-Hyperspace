@@ -50,3 +50,8 @@ __thiscall bool CombatControl::MouseMove(CombatControl *this, int mX, int mY);
 __thiscall void CombatControl::MouseClick(CombatControl *this, int mX, int mY, bool shift);
 "5589e55756538b815c07000089ce83e4f085c0":
 __thiscall std::pair<int,int> CombatControl::GetTeleportationCommand(CombatControl *this);
+
+struct CombatControl 
+{{
+    void ArmArtillery(ArtillerySystem* artillerySystem);
+}};
