@@ -911,6 +911,12 @@ void CustomEventsParser::ParseCustomSector(rapidxml::xml_node<char> *node, Custo
             sector->removeFirstBeaconNebula = true;
         }
 
+        if (strcmp(sectorNode->name(), "priorityEventsOverrideNebula") == 0)
+        {
+            isDefault = false;
+            sector->priorityEventsOverrideNebula = true;
+        }
+
         if (strcmp(sectorNode->name(), "noExit") == 0)
         {
             isDefault = false;
@@ -5007,9 +5013,30 @@ HOOK_METHOD(StarMap, GenerateNebulas, (std::vector<std::string>& names) -> void)
         names.resize(locations.size());
     }
 
-    super(names);
-
     CustomSector* customSector = CustomEventsParser::GetInstance()->GetCurrentCustomSector(this);
+
+    if (customSector && customSector->priorityEventsOverrideNebula)
+    {
+        int pEventCount = 0;
+        for (PriorityEvent pEvent : customSector->priorityEventCounts)
+        {
+            // Only count priority events that aren't nebulas and
+            // that have their requirement met if they have one
+            int reqLvl;
+            if (pEvent.event.first.rfind("NEBULA", 0) != 0 && (pEvent.req.empty() || (reqLvl = G_->GetShipManager(0)->HasEquipment(pEvent.req), (reqLvl >= pEvent.lvl && reqLvl <= pEvent.max_lvl))))
+            {
+                pEventCount += pEvent.event.second.min;
+            }
+        }
+        int availableLocations = locations.size() - 2; // Subtract 2 to account for start and exit beacons
+        int nonNebulaLocations = availableLocations - names.size();
+        if (nonNebulaLocations < pEventCount)
+        {
+            names.resize(names.size() - (pEventCount - nonNebulaLocations));
+        }
+    }
+
+    super(names);
 
     if (customSector && customSector->removeFirstBeaconNebula)
     {
