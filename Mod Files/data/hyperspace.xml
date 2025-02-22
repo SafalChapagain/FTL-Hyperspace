@@ -1460,6 +1460,17 @@ Syntax ->
 	-->
 </customSystems>
 
+<!--Custom hotkeys-->
+<customHotkeys>
+	<!--
+		<hotkey name="my_hotkey" page="3" default="SPACE" position="-1"/>
+		name: The name of the hotkey. Requires a corresponding <text> node.
+		page: A number 0-3 indicating the page on which the hotkey is placed in the options menu.
+		default: An optional default for the hotkey. 
+		position: An optional index for the hotkey on the given page. Defaults to -1, indicating the end of the page. 
+	-->
+</customHotkeys>
+
 <!-- Stat boosts
 
 NOTE:

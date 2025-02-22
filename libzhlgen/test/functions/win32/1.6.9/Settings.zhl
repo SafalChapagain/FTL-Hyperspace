@@ -8,7 +8,7 @@ static cleanup __cdecl std::string Settings::GetHotkeyName(const std::string& na
 static cleanup __cdecl SDLKey Settings::GetHotkey(const std::string& hotkeyName);
 ".8d4c240483e4f0ff71fc5589e5575653":
 static cleanup __cdecl void Settings::SetHotkey(const std::string& hotkeyName, SDLKey key);
-".8d4c240483e4f0ff71fc5589e557565351":
+".8d????0483e4f0ff????5589e5575653518d??60ffffff8d??20ffffff81ec38010000":
 static cleanup __cdecl void Settings::SaveSettings();
 ".8d4c240483e4f0ff71fc5589e557565351be????????83ec688b465c8b5e6039d88945a489c774??90":
 static cleanup __cdecl void Settings::ResetHotkeys();
@@ -17,3 +17,8 @@ static cleanup __cdecl void Settings::LoadSettings();
 
 "!5756535183ec588b01c745a8(???????\?)":
 SettingValues* Global_Settings_Settings;
+
+struct Settings
+{{
+    static void RegenerateHotkeys();
+}};
