@@ -1,8 +1,11 @@
 #include "CustomStore.h"
 #include "CustomEvents.h"
+#include "CustomOptions.h"
 #include "CustomShipSelect.h"
+#include "CustomSystems.h"
 #include "Store_Extend.h"
 #include <boost/lexical_cast.hpp>
+#include <boost/algorithm/string/replace.hpp>
 #include <array>
 
 CustomStore* CustomStore::instance = new CustomStore();
@@ -1944,12 +1947,13 @@ HOOK_METHOD(Store, CreateStoreBoxes, (int category, Equipment* equip) -> void)
 
     return super(category, equip);
 }
-
+static int newSystem = -1;
+static int replaceSystem = -1;
 HOOK_METHOD(SystemStoreBox, Activate, () -> void)
 {
     LOG_HOOK("HOOK_METHOD -> SystemStoreBox::Activate -> Begin (CustomStore.cpp)\n")
     if (shopper->currentScrap < desc.cost) return super(); // Not enough scrap
-    if (itemId == 5 && shopper->HasSystem(13) || itemId == 13 && shopper->HasSystem(5)) return super(); // Change medical system
+    if ((itemId == SYS_MEDBAY && shopper->HasSystem(SYS_CLONEBAY) || itemId == SYS_CLONEBAY && shopper->HasSystem(SYS_MEDBAY)) && !CustomOptionsManager::GetInstance()->duelMedical.currentValue) return super(); // Change medical system
     bool isSubsystem = ShipSystem::IsSubsystem(itemId);
 
     auto custom = CustomShipSelect::GetInstance();
@@ -1972,8 +1976,34 @@ HOOK_METHOD(SystemStoreBox, Activate, () -> void)
         bConfirming = true;
         confirmString = "confirm_buy_last_system";
     }
+
+    if (shopper->SystemWillReplace(itemId) != SYS_INVALID)
+    {
+        newSystem = itemId;
+        replaceSystem = shopper->SystemWillReplace(itemId);
+        bConfirming = true;
+    }
+
     if (!bConfirming)
     {
         Purchase();
     }
+}
+
+HOOK_METHOD(SystemStoreBox, GetConfirmText, () -> TextString)
+{
+    LOG_HOOK("HOOK_METHOD -> SystemStoreBox::GetConfirmText -> Begin (CustomStore.cpp)\n")
+    if (newSystem == -1 || replaceSystem == -1) return super();
+
+    std::string newSystemName = G_->GetBlueprints()->GetSystemBlueprint(ShipSystem::SystemIdToName(newSystem))->GetNameLong();
+    std::string replaceSystemName = G_->GetBlueprints()->GetSystemBlueprint(ShipSystem::SystemIdToName(replaceSystem))->GetNameLong();
+    
+    std::string confirmText = G_->GetTextLibrary()->GetText("confirm_buy_custom");
+    boost::algorithm::replace_all(confirmText, "\\1", newSystemName);
+    boost::algorithm::replace_all(confirmText, "\\2", replaceSystemName);
+
+    newSystem = -1;
+    replaceSystem = -1;
+
+    return TextString(confirmText, true);
 }

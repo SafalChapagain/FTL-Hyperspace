@@ -255,4 +255,7 @@ struct ShipManager depends (PowerManager, ShieldPower)
 	void RemoveDummyOxygen();
 	bool DummyOxygenInstalled();
 
+	void RemoveSystem(int systemId);
+
+	int SystemWillReplace(int systemId);
 }};

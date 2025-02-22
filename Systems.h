@@ -18,6 +18,12 @@ enum SystemId
     SYS_CLONEBAY = 13,   
     SYS_MIND = 14,       
     SYS_HACKING = 15,    
+    
+    SYS_ALL = 16,
+    SYS_REACTOR = 17,
+    SYS_RANDOM = 18,
+    SYS_ROOM = 19,
+
     SYS_TEMPORAL = 20,
     SYS_CUSTOM_FIRST = 21,
 };

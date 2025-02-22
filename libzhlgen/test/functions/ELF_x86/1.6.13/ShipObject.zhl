@@ -10,6 +10,8 @@ cleanup __cdecl int ShipObject::HasEquipment(ShipObject *this, const std::string
 cleanup __cdecl std::vector<std::string> ShipObject::GetAugmentationList(ShipObject *this);
 "5589e557565381ec8c0000008b450c894424048d45b8890424":
 cleanup __cdecl bool ShipObject::AddAugmentation(ShipObject *this, const std::string& augment);
+".5589e557565381ec8c0000008b????89????8b????8944????":
+cleanup __cdecl void ShipObject::RemoveEquipment(ShipObject* this, const std::string& blueName, bool completely);
 "8b4424048b400485c00f94??0fb6c06bc034":
 cleanup __cdecl int ShipObject::GetAugmentationCount(ShipObject *this);
 "5331db83ec188b4424208b400485c0":

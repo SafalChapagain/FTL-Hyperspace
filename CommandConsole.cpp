@@ -4,6 +4,7 @@
 #include "CustomOptions.h"
 #include "CustomEvents.h"
 #include "CustomScoreKeeper.h"
+#include "CustomSystems.h"
 #include "CustomAchievements.h"
 #include "CustomShips.h"
 #include "CustomSystems.h"
@@ -151,21 +152,25 @@ bool CommandConsole::RunCommand(CommandGui *commandGui, const std::string& cmd)
     {
         ShipManager *ship = commandGui->shipComplete->shipManager;
         
-        for (int systemId = 0; systemId< 17; systemId++) {
-            if (systemId == 16)
+        //Vanilla Systems
+        for (int systemId = 0; systemId < 16; ++systemId) 
+        {
+            if (!ship->HasSystem(systemId) && ship->SystemWillReplace(systemId) == SYS_INVALID)
             {
-                ship->AddSystem(20);
-            } 
-            else
-            {
-            if (!ship->HasSystem(systemId) && !(systemId == 13 && ship->HasSystem(5)) && !(systemId == 5 && ship->HasSystem(13)))
                 ship->AddSystem(systemId);
             } 
         }
 
+        //Temporal system
+        if (!ship->HasSystem(SYS_TEMPORAL) && ship->SystemWillReplace(SYS_TEMPORAL) == SYS_INVALID)
+        {
+            ship->AddSystem(SYS_TEMPORAL);
+        }
+        
+        //Custom systems
         for (int systemId = SYS_CUSTOM_FIRST; systemId <= CustomUserSystems::GetLastSystemId(); ++systemId)
         {
-            if (!ship->HasSystem(systemId))
+            if (!ship->HasSystem(systemId) && ship->SystemWillReplace(systemId) == SYS_INVALID)
             {
                 ship->AddSystem(systemId);
             } 
@@ -181,6 +186,12 @@ bool CommandConsole::RunCommand(CommandGui *commandGui, const std::string& cmd)
             sys->healthState.first = 0;
         }
 
+        return true;
+    }
+    if (cmdName == "REMOVESYS" && command.length() > 9)
+    {
+        commandGui->shipComplete->shipManager->RemoveSystem(ShipSystem::NameToSystemId(boost::trim_copy(command.substr(10))));
+        
         return true;
     }
     if (cmdName == "DEBUG")

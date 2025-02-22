@@ -2,6 +2,8 @@
 __thiscall int ShipObject::HasAugmentation(ShipObject *this, const std::string& augment);
 "5789ca8d7c240883e4f0ff77fc5589e55756538d4d9081ec????????8b07894d888b308b5804":
 __thiscall float ShipObject::GetAugmentationValue(ShipObject *this, const std::string& augment);
+".5789ca8d????0883e4f0ff????5589e557565383ec7c8b??8b????8b30":
+__thiscall void ShipObject::RemoveEquipment(ShipObject* this, const std::string& blueName, bool completely);
 ".5789ca8d7c240883e4f0ff77fc5589e55756538d4d9081ec????????8b07894d888b308b580489f001d874??85f675??c70424????????e8????????8d74260083fb0f895dd00f87????????":
 __thiscall void ShipObject::RemoveAugmentation(ShipObject *this, const std::string& augment);
 "578d7c240883e4f0ff77fc5589e55756538d75a881ec????????8b3f898d70ffffff8975a0":

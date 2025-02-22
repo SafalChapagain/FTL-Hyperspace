@@ -54,4 +54,12 @@ private:
     static void AddSystemName(const std::string& systemName);
     static std::vector<std::string> systemNames;
     static std::unordered_map<std::string, int> systemIds; //For quicker NameToSystemId;
+
+//System exclusivity
+public:
+    static bool AreSystemsExclusive(int sysId_1, int sysId_2);
+    static void ParseExclusivityNode(rapidxml::xml_node<char>* node);
+private:
+    static int currentExclusivityIndex;
+    static std::unordered_map<int, int> exclusivityGroups;
 };

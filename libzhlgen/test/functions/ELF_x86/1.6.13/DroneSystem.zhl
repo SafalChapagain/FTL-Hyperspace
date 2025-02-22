@@ -1,5 +1,5 @@
 "5731c0565383ec108b4c24248b5c242085c9":
-cleanup __cdecl void DroneSystem::RemoveDrone(DroneSystem *this, int slot);
+cleanup __cdecl Drone* DroneSystem::RemoveDrone(DroneSystem *this, int slot);
 ".554889e54156534989fe":
 cleanup __cdecl void DroneSystem::Jump(DroneSystem *this);
 "555731ff565383ec2c8b6c24408b85480100008b959c010000":

@@ -5,7 +5,7 @@ cleanup __amd64 void DroneSystem::Jump(DroneSystem *this);
 ".53be????????4889fb":
 static cleanup __amd64 int DroneSystem::StringToDrone(std::string &name);
 ".31c085f60f888e00000041545553488b8f48020000":
-cleanup __amd64 void DroneSystem::RemoveDrone(DroneSystem *this, int slot);
+cleanup __amd64 Drone* DroneSystem::RemoveDrone(DroneSystem *this, int slot);
 ".415741564531f6415541545531ed534889fb4883ec18488b9748020000":
 cleanup __amd64 void DroneSystem::UpdateBonusPower(DroneSystem *this);
 ".41574989ff41564155415455534883ec38":

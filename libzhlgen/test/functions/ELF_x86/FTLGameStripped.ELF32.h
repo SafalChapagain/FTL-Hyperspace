@@ -2858,7 +2858,10 @@ struct std__vector_12ShipSystemZ1
 struct EngineSystem;
 
 /* 409 */
-struct MedbaySystem;
+struct MedbaySystem
+{
+    ShipSystem _base;
+};
 
 /* 815 */
 struct std__vector_17ArtillerySystemZ1

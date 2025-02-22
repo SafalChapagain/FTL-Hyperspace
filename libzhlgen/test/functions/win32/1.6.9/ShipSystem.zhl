@@ -14,6 +14,8 @@ __thiscall void ShipSystem::OnLoop(ShipSystem *this);
 __thiscall bool ShipSystem::Ioned(ShipSystem *this, int num);
 "578d7c240883e4f0ff77fc5589e557565389cb83ec1c8b338b0f8b8680000000898b200100003d????????0f85????????":
 __thiscall int ShipSystem::SetPowerLoss(ShipSystem *this, int power);
+".578d????0883e4f0ff????5589e557565389cb83ec1c8b410c":
+__thiscall bool ShipSystem::RawDecreasePower(ShipSystem *this);
 "578d7c240883e4f0ff77fc5589e557565381ec????????8b078b5f048b770c898d24feffff898504feffff8b4708":
 __thiscall void ShipSystem::constructor(ShipSystem *this, int systemId, int roomId, int shipId, int startingPower);
 "8b811c01000083f8077f??85c0ba????????0f48c2c38d76008dbc27000000008b415485c0":

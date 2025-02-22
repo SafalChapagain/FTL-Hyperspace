@@ -10,7 +10,8 @@ __thiscall void SystemStoreBox::MouseMove(SystemStoreBox *this, int mX, int mY);
 __thiscall void SystemStoreBox::Activate(SystemStoreBox *this);
 "578d7c240883e4f0ff77fc5589e557565389cb8d75d883ec4c":
 __thiscall void SystemStoreBox::Purchase(SystemStoreBox *this);
-
+".578d41088d????0883e4f0ff????5589e557565389ce83ec2c8b??89018bba60010000":
+__thiscall TextString SystemStoreBox::GetConfirmText(SystemStoreBox *this);
 
 struct SystemStoreBox
 {{
