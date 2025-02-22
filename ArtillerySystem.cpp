@@ -122,6 +122,13 @@ void ArtillerySystem::OnLoop_HS_ManualTarget()
     int iHacked = bUnderAttack ? iHackEffect : 0;
     projectileFactory->SetHacked(iHacked);
     projectileFactory->isArtillery = true;
+
+    // Clear aiming if the target is destroyed
+    if (G_->GetShipManager(1) && G_->GetShipManager(1)->bDestroyed)
+    {
+        projectileFactory->ClearAiming();
+        projectileFactory->ClearProjectiles();
+    }
     /*
     if (projectileFactory->ReadyToFire()) 
     {
