@@ -59,4 +59,5 @@ ScoreKeeper* Global_ScoreKeeper_Keeper;
 
 struct ScoreKeeper
 {{
+    int CountUnlockedShips(int variant);
 }};
