@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/FTL-Hyperspace/fr/assets/css/style.css?v=">
+    <link rel="stylesheet" type="text/css" media="screen" href="/FTL-Hyperspace/fr/assets/css/custom-styles.css?v=">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.4/css/flag-icons.min.css" integrity="sha512-uvXdJud8WaOlQFjlz9B15Yy2Au/bMAvz79F7Xa6OakCl2jvQPdHD0hb3dEqZRdSwG4/sknePXlE7GiarwA/9Wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SteamDeck Steam Hyperspace Install | FTL Hyperspace</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="SteamDeck Steam Hyperspace Install" />
+<meta property="og:locale" content="fr" />
+<meta name="description" content="A binary mod for FTL: Faster Than Light" />
+<meta property="og:description" content="A binary mod for FTL: Faster Than Light" />
+<link rel="canonical" href="https://github.com/FTL-Hyperspace/fr/install-guides/linux/steamdeck/steam-install.html" />
+<meta property="og:url" content="https://github.com/FTL-Hyperspace/fr/install-guides/linux/steamdeck/steam-install.html" />
+<meta property="og:site_name" content="FTL Hyperspace" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SteamDeck Steam Hyperspace Install" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"A binary mod for FTL: Faster Than Light","headline":"SteamDeck Steam Hyperspace Install","url":"https://github.com/FTL-Hyperspace/fr/install-guides/linux/steamdeck/steam-install.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/FTL-Hyperspace/fr/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+    <style type="text/css">
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+        }
+        nav.selector-list {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+        }
+        nav.selector-list > * {
+            display: block;
+            color: white;
+            padding: 0.2em 1em;
+        }
+        nav.selector-list > a:hover {
+            text-decoration: none;
+            background-color: #575757;
+        }
+        nav.selector-list > .active {
+            background-color: #f2f2f2;
+            color: #222222;
+            margin-bottom: -1px;
+        }
+        img.banner {
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+            border: none;
+            display: block;
+            max-width: 100%;
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          
+            <a id="forkme_banner" href="https://github.com/FTL-Hyperspace/FTL-Hyperspace">View on GitHub</a>
+          
+
+          <img class="banner" src="/FTL-Hyperspace/fr/assets/img/hyperspace_banner.png" alt="FTL Hyperspace" />
+          <!-- <h1 id="project_title">FTL Hyperspace</h1> -->
+          <!-- <h2 id="project_tagline">A binary mod for FTL: Faster Than Light</h2> -->
+
+          
+        </header>
+        <div class="nav-bar">
+            <nav class="selector-list nav-selector">
+                
+                    <a href="/FTL-Hyperspace/fr/">Accueil</a>
+                
+            </nav>
+            <nav class="selector-list language-selector">
+                
+                    
+                    
+                    
+                    
+                        <a href="/FTL-Hyperspace/install-guides/linux/steamdeck/steam-install.html"><span class="fi fi-us"></span> English</a>
+                    
+                
+                    
+                    
+                    
+                    
+                        <a href="/FTL-Hyperspace/de/install-guides/linux/steamdeck/steam-install.html"><span class="fi fi-de"></span> Deutsch</a>
+                    
+                
+                    
+                    
+                    
+                    
+                        <a href="/FTL-Hyperspace/ko/install-guides/linux/steamdeck/steam-install.html"><span class="fi fi-kr"></span> 한국어</a>
+                    
+                
+                    
+                    
+                    
+                    
+                        <span class="active">
+                            <span class="fi fi-fr"></span> Français
+                        </span>
+                    
+                
+            </nav>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <script>
+fetch('https://api.github.com/repos/FTL-Hyperspace/FTL-Hyperspace/releases/latest')
+    .then((res) => res.json())
+    .then((data) => data.assets[0].browser_download_url)
+    .then(downloadUrl => {
+        document.getElementById('hyperspace-download-link').href=downloadUrl
+    })
+</script>
+
+<h1 id="avant-de-commencer">Avant de commencer</h1>
+<p><strong>Désinstallez tous les autres mods FTL avant de commencer !</strong></p>
+
+<ol>
+  <li>Lancez FTL pour vous assurer que vous utilisez la bonne version
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/steamdeck_0.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steamdeck_1.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steamdeck_2.png" alt="image" /></li>
+  <li>Assurez-vous que la version indique <code class="language-plaintext highlighter-rouge">1.6.13</code> en bas à droite, si elle indique 1.6.14 ou 1.6.9 vous utilisez accidentellement la version Windows sous proton et devez désactiver la compatibilité Steam play pour utiliser la version native.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/check_ftl_version.png" alt="image" /></li>
+  <li>Passez le SteamDeck en mode bureau
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/steamdeck_3.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steamdeck_5.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steamdeck_6.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steamdeck_7.png" alt="image" /></li>
+  <li>Naviguez vers ce guide d’installation depuis votre Steam Deck si vous ne l’avez pas déjà fait afin de télécharger les fichiers des étapes suivantes.</li>
+  <li>Téléchargez Hyperspace <a id="hyperspace-download-link" href="https://github.com/FTL-Hyperspace/FTL-Hyperspace/releases/latest"><code class="language-plaintext highlighter-rouge">FTL-Hyperspace.x.x.x.zip</code> à partir d’ici</a> dans le dossier <code class="language-plaintext highlighter-rouge">Downloads</code> de la plate-forme.
+<strong><em>Ne pas extraire ce ZIP pour l’instant</em></strong></li>
+  <li>Téléchargez [Slipstream packagé pour le SteamDeck, ici] (https://github.com/Nasa62/slipstream-deck-temporary/blob/main/SlipstreamModManager_1.9.1-SteamDeck.tar.xz?raw=true) dans le dossier <code class="language-plaintext highlighter-rouge">Downloads</code> de la console.
+<strong><em>Ne pas extraire ce tar.xz pour l’instant</em></strong></li>
+  <li>Lancez la bibliothèque Steam
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/steamdeck_8.png" alt="image" /></li>
+  <li>Recherchez les fichiers locaux de FTL en faisant un clic droit sur le jeu dans Steam et en allant dans <code class="language-plaintext highlighter-rouge">Manage</code> puis <code class="language-plaintext highlighter-rouge">Browse local files</code>
+<img src="/FTL-Hyperspace/fr/assets/img/install/browse_local_files_steam.png" alt="image" /></li>
+  <li>Naviguez jusqu’au dossier <code class="language-plaintext highlighter-rouge">data</code> <em>(si vous voyez <code class="language-plaintext highlighter-rouge">FTLGame.exe</code> alors vous devez arrêter et aller désactiver la compatibilité SteamPlay sur le titre car vous avez la version Windows installée)</em>
+<img src="/FTL-Hyperspace/fr/assets/img/install/genericlinux/steam_navigate_to_data_folder.png" alt="image" /></li>
+  <li>Cela devrait ressembler <strong><em>exactement</em></strong> à ceci, pour une installation vanilla non modifiée
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/steamdeck_12.png" alt="image" /></li>
+  <li>Ouvrez le dossier Downloads dans une nouvelle fenêtre où nous avons précédemment téléchargé Hyperspace &amp; Slipstream.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/steamdeck_13.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steamdeck_14.png" alt="image" /></li>
+  <li>Faites un clic droit sur le fichier zip Hyperspace et <code class="language-plaintext highlighter-rouge">Ouvrir avec Ark</code> car nous avons besoin d’extraire seulement quelques fichiers et pas tout
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/steamdeck_15.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steamdeck_16.png" alt="image" /></li>
+  <li>Développez le dossier <code class="language-plaintext highlighter-rouge">Linux</code> dans Ark en cliquant sur la petite flèche à sa gauche.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/steamdeck_17.png" alt="image" /></li>
+  <li>Sélectionnez seulement <code class="language-plaintext highlighter-rouge">Hyperspace.1.6.13.amd64.so</code> et <code class="language-plaintext highlighter-rouge">liblua5.3.so.0</code> et glissez-les dans le dossier data pour les extraire.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/steamdeck_18.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steamdeck_19.png" alt="image" /></li>
+  <li>Votre dossier de données devrait maintenant ressembler à ceci
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/steamdeck_20.png" alt="image" /></li>
+  <li>Cliquez avec le bouton droit de la souris sur le fichier <code class="language-plaintext highlighter-rouge">FTL</code> et <code class="language-plaintext highlighter-rouge">Ouvrir avec KWrite</code>
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/steamdeck_21.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steamdeck_22.png" alt="image" /></li>
+  <li>Modifiez les dernières lignes du fichier pour qu’elles ressemblent <strong><em>EXACTEMENT</em></strong> à ceci
+Vous devez ajouter ces deux lignes avant la ligne <code class="language-plaintext highlighter-rouge">exec</code> mais après les autres lignes <code class="language-plaintext highlighter-rouge">export</code>.
+``sh
+export LD_LIBRARY_PATH=”$here”:${LD_LIBRARY_PATH}
+export LD_PRELOAD=Hyperspace.1.6.13.amd64.so
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Pour référence, ***Avant*** cela ressemblera à ceci :
+```sh
+export LANG="${LC_ALL:-$LANG}"
+export LC_ALL=
+export LC_NUMERIC=C
+exec "$here/$command.$arch" "$@"
+</code></pre></div>    </div>
+    <p><strong><em>APRES</em></strong> cela doit ressembler exactement à ceci à la fin du fichier :</p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">LANG</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">LC_ALL</span><span class="k">:-</span><span class="nv">$LANG</span><span class="k">}</span><span class="s2">"</span>
+<span class="nb">export </span><span class="nv">LC_ALL</span><span class="o">=</span>
+<span class="nb">export </span><span class="nv">LC_NUMERIC</span><span class="o">=</span>C
+<span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$here</span><span class="s2">"</span>:<span class="k">${</span><span class="nv">LD_LIBRARY_PATH</span><span class="k">}</span>
+<span class="nb">export </span><span class="nv">LD_PRELOAD</span><span class="o">=</span>Hyperspace.1.6.13.amd64.so
+<span class="nb">exec</span> <span class="s2">"</span><span class="nv">$here</span><span class="s2">/</span><span class="nv">$command</span><span class="s2">.</span><span class="nv">$arch</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$@</span><span class="s2">"</span>
+</code></pre></div>    </div>
+    <p>Pour être clair, vous ajoutez juste ces deux lignes mais il est <strong><em>très important</em></strong> de les ajouter avant la dernière ligne du fichier qui contient <code class="language-plaintext highlighter-rouge">exec</code>
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/steamdeck_23.png" alt="image" /></p>
+  </li>
+  <li>Sauvegarder le fichier et fermer KWrite
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steamdeck_24.png" alt="image" />
+    <h4 id="slipstream">Slipstream</h4>
+  </li>
+  <li>Retournez dans le dossier des téléchargements</li>
+  <li>Faites un clic droit sur <code class="language-plaintext highlighter-rouge">SlipstreamModManager_1.9.1-SteamDeck.tar.xz</code> et descendez jusqu’à <code class="language-plaintext highlighter-rouge">Extract</code> et sélectionnez <code class="language-plaintext highlighter-rouge">Extract archive here</code>
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/downloads_extract_slipstream.png" alt="image" /></li>
+  <li>Naviguez dans le dossier <code class="language-plaintext highlighter-rouge">SlipstreamModManager_1.9.1-SteamDeck</code>.
+<strong><em>NOTE</em></strong> A ce stade, nous en avons fini avec la fenêtre Ark pour Slipstream (mais pas avec l’autre fenêtre Ark qui a ouvert Hyperspace.zip), nous en avons aussi fini avec toute utilisation de <code class="language-plaintext highlighter-rouge">SlipstreamModManager_1.9.1-SteamDeck.tar.xz</code> donc vous pouvez l’effacer maintenant si vous voulez libérer de l’espace.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/steamdeck_27.png" alt="image" /></li>
+  <li>Naviguez dans le dossier <code class="language-plaintext highlighter-rouge">mods</code>.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/steamdeck_29.png" alt="image" />
+Cela devrait ressembler à ceci sans aucun ajout de mods
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/steamdeck_30.png" alt="image" /></li>
+  <li>Retournez dans la fenêtre Ark qui a le fichier zip Hyperspace ouvert et sélectionnez <code class="language-plaintext highlighter-rouge">Hyperspace.ftl</code></li>
+  <li>Glissez <code class="language-plaintext highlighter-rouge">Hyperspace.ftl</code> dans le dossier <code class="language-plaintext highlighter-rouge">mods</code> de Slipstream
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/steamdeck_32.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steamdeck_33.png" alt="image" />
+<strong><em>NOTE</em></strong> Vous pouvez maintenant fermer la fenêtre Ark d’Hyperspace et supprimer <code class="language-plaintext highlighter-rouge">Hyperspace.x.x.x.zip</code> de vos téléchargements si vous le souhaitez, nous en avons fini avec lui pour de bon.</li>
+  <li>Naviguez à nouveau vers le dossier slipstream (vous pouvez cliquer sur <code class="language-plaintext highlighter-rouge">SlipstreamModManager</code> dans la barre de titre comme je le montre ici)
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/35.png" alt="image" /></li>
+  <li>Lancez Slipstream en faisant un clic droit sur <code class="language-plaintext highlighter-rouge">modman.command</code> et en sélectionnant <code class="language-plaintext highlighter-rouge">Run In Konsole</code>
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/37.png" alt="image" /></li>
+  <li>Slipstream vous posera plusieurs questions, elles devraient toutes correspondre à ce que vous voyez ici et vous pouvez simplement répondre oui à ces questions
+<strong><em>NOTE</em></strong> Si vous avez installé FTL sur la sdcard ou un autre stockage externe sur le Deck, Slipstream pourrait vous demander où se trouve le fichier FTL.dat, si c’est le cas, vous pourriez voir une boîte de dialogue de sélection de fichier.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/38.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/39.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/40.png" alt="image" /></li>
+  <li>Vous voudrez probablement sélectionner <code class="language-plaintext highlighter-rouge">Steam</code> dans cette option.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/41.png" alt="image" /></li>
+  <li>Votre choix, oui/non si vous voulez qu’il vérifie les mises à jour
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/slipstream_update_prompt.png" alt="image" /></li>
+  <li>Slipstream fonctionne, cochez la case à côté de <code class="language-plaintext highlighter-rouge">Hyperspace</code> et appuyez sur <code class="language-plaintext highlighter-rouge">Patch</code>
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/slipstream_checkhyperspace_hit_patch.png" alt="image" /></li>
+  <li>Say <strong><em>NO</em></strong> to run the game right now, we need to stop here and go disable steam cloud saves &amp; delete the save files to ensure a successful start.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/51.png" alt="image" />
+    <h4 id="désactiver-la-synchronisation-steam-cloud-et-supprimer-les-anciennes-sauvegardes">Désactiver la synchronisation Steam Cloud et supprimer les anciennes sauvegardes</h4>
+  </li>
+  <li>Retourner dans la bibliothèque Steam</li>
+  <li>Faites un clic droit sur FTL : Faster Than Light et sélectionnez <code class="language-plaintext highlighter-rouge">Properties</code>
+<img src="/FTL-Hyperspace/fr/assets/img/install/steam_properties.png" alt="image" /></li>
+  <li>Décochez <code class="language-plaintext highlighter-rouge">Keep games saves in the Steam Cloud for FTL : Faster Than Light</code> (Conserver les sauvegardes des jeux dans le Steam Cloud pour FTL : Faster Than Light)
+*C’est très important car sinon le jeu ne se chargera pas correctement.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steam_properties_uncheck_cloud_saves.png" alt="image" /></li>
+  <li>Retournez dans votre navigateur de fichiers (Dolphin) et sélectionnez “Home” sur le côté gauche.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/56.png" alt="image" /></li>
+  <li>Sélectionnez le menu hamburger en haut à droite et cochez la case “Afficher les fichiers cachés”.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/57.png" alt="image" /></li>
+  <li>Naviguez dans le dossier <code class="language-plaintext highlighter-rouge">.local</code>.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/58.png" alt="image" /></li>
+  <li>Et ensuite le dossier <code class="language-plaintext highlighter-rouge">share</code>
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/59.png" alt="image" /></li>
+  <li>Trouvez le dossier <code class="language-plaintext highlighter-rouge">FasterThanLight</code>, vous pouvez le sauvegarder quelque part à ce stade si vous voulez sauvegarder votre sauvegarde vanilla.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/60.png" alt="image" /></li>
+  <li>Faites un clic droit sur <code class="language-plaintext highlighter-rouge">FasterThanLight</code> et sélectionnez <code class="language-plaintext highlighter-rouge">Move to Trash</code>
+<strong><em>Il est très important de supprimer ce dossier</em></strong> avant le premier démarrage du jeu moddé, et après avoir désactivé la synchronisation cloud, car celle-ci produit un fichier de sauvegarde qu’Hyperspace ne peut pas lire et qui entraîne le blocage du jeu à la fin de la barre de chargement
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/61.png" alt="image" /></li>
+  <li>Lancer FTL depuis Steam
+<img src="/FTL-Hyperspace/fr/assets/img/install/genericlinux/steam_FTL_launch.png" alt="image" /></li>
+  <li>Vous devriez voir un sélecteur de langue si vous avez supprimé les sauvegardes correctement.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/63.png" alt="image" /></li>
+  <li>Vous devriez remarquer qu’il est écrit <code class="language-plaintext highlighter-rouge">HS-x.x.x x64</code> dans le coin supérieur droit, ce qui indique que le fichier Hyperspace.so est en cours d’exécution
+Le <code class="language-plaintext highlighter-rouge">1.6.13 (Hyperspace x.x.x)</code> en bas à droite indique un patching réussi de Hyperspace.ftl avec Slipstream.
+Vous devriez voir <strong>LES DEUX</strong> indicateurs montrant qu’Hyperspace fonctionne correctement.
+<img src="/FTL-Hyperspace/fr/assets/img/install/steamdeck/steam/64.png" alt="image" /></li>
+</ol>
+
+<h1 id="installation-du-multiverse">Installation du Multiverse</h1>
+<ol>
+  <li>Téléchargez les “RAW Files” pour Multiverse et non l’installeur
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv1.png" alt="image" /></li>
+  <li>Ouvrez votre dossier de téléchargements
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv2.png" alt="image" /></li>
+  <li>Ouvrez le dossier de Slipstream dans une nouvelle fenêtre
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv3.png" alt="image" /></li>
+  <li>Ouvrez le dossier des mods de Slipstream
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv4.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv5.png" alt="image" /></li>
+  <li>Déplacer les deux zips du mod Multiverse
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv6.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv7.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv8.png" alt="image" /></li>
+  <li>Retournez dans le dossier de Slipstream et faites un clic droit sur <code class="language-plaintext highlighter-rouge">modman.command</code> et <code class="language-plaintext highlighter-rouge">Run in Konsole</code> pour relancer Slipstream.
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv9.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv10.png" alt="image" /></li>
+  <li>Vous devriez voir quelque chose comme ceci, avec les fichiers Multiverse manquants, <em>ne paniquez pas</em> nous devons dire à Slipstream de voir les fichiers zip comme des mods
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv11.png" alt="image" /></li>
+  <li>Allez dans les préférences de Slipstream
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv12.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv13.png" alt="image" /></li>
+  <li>Vérifiez <code class="language-plaintext highlighter-rouge">allow_zip</code>
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv14.png" alt="image" /></li>
+  <li>Appliquer
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv15.png" alt="image" /></li>
+  <li>Maintenant nous devons dire à Slipstream de <code class="language-plaintext highlighter-rouge">Re-Scan mods/</code> dans le menu fichier
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv16.png" alt="image" /></li>
+  <li>Multiverse apparaît maintenant dans la liste des mods
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv17.png" alt="image" /></li>
+  <li>Vérifiez les deux fichiers multiverse <strong><em>mais ne sélectionnez pas <code class="language-plaintext highlighter-rouge">Hyperspace</code></em></strong> exactement comme indiqué ici
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv18.png" alt="image" /></li>
+  <li>Appuyez sur <code class="language-plaintext highlighter-rouge">Patch</code>
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv19.png" alt="image" />
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv20.png" alt="image" /></li>
+  <li>Si le patching s’est terminé sans erreur, vous pouvez lancer le jeu ici ou depuis Steam (si vous avez eu une erreur dans le patching, téléchargez à nouveau les fichiers zip, il se peut que le téléchargement ait été corrompu)
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv21.png" alt="image" /></li>
+  <li>Le chargement du jeu devrait d’abord ressembler à ceci
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv22.png" alt="image" /></li>
+  <li>Après un court laps de temps, vous devriez voir <code class="language-plaintext highlighter-rouge">HS-x.x.x x64</code> en haut à droite, indiquant la version d’Hyperspace qui est chargée correctement.
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv23.png" alt="image" /></li>
+  <li>Profitez du jeu
+<img src="/FTL-Hyperspace/fr/assets/img/install/mv24.png" alt="image" /></li>
+</ol>
+
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">FTL Hyperspace maintained by <a href="https://github.com/FTL-Hyperspace">FTL-Hyperspace</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <p>Site last updated: 23 February 2025</p>
+      </footer>
+    </div>
+  </body>
+</html>

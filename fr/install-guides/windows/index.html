@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/FTL-Hyperspace/fr/assets/css/style.css?v=">
+    <link rel="stylesheet" type="text/css" media="screen" href="/FTL-Hyperspace/fr/assets/css/custom-styles.css?v=">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.4/css/flag-icons.min.css" integrity="sha512-uvXdJud8WaOlQFjlz9B15Yy2Au/bMAvz79F7Xa6OakCl2jvQPdHD0hb3dEqZRdSwG4/sknePXlE7GiarwA/9Wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Windows Hyperspace Install Instructions | FTL Hyperspace</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Windows Hyperspace Install Instructions" />
+<meta property="og:locale" content="fr" />
+<meta name="description" content="A binary mod for FTL: Faster Than Light" />
+<meta property="og:description" content="A binary mod for FTL: Faster Than Light" />
+<link rel="canonical" href="https://github.com/FTL-Hyperspace/fr/install-guides/windows/" />
+<meta property="og:url" content="https://github.com/FTL-Hyperspace/fr/install-guides/windows/" />
+<meta property="og:site_name" content="FTL Hyperspace" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Windows Hyperspace Install Instructions" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"A binary mod for FTL: Faster Than Light","headline":"Windows Hyperspace Install Instructions","url":"https://github.com/FTL-Hyperspace/fr/install-guides/windows/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/FTL-Hyperspace/fr/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+    <style type="text/css">
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+        }
+        nav.selector-list {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+        }
+        nav.selector-list > * {
+            display: block;
+            color: white;
+            padding: 0.2em 1em;
+        }
+        nav.selector-list > a:hover {
+            text-decoration: none;
+            background-color: #575757;
+        }
+        nav.selector-list > .active {
+            background-color: #f2f2f2;
+            color: #222222;
+            margin-bottom: -1px;
+        }
+        img.banner {
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+            border: none;
+            display: block;
+            max-width: 100%;
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          
+            <a id="forkme_banner" href="https://github.com/FTL-Hyperspace/FTL-Hyperspace">View on GitHub</a>
+          
+
+          <img class="banner" src="/FTL-Hyperspace/fr/assets/img/hyperspace_banner.png" alt="FTL Hyperspace" />
+          <!-- <h1 id="project_title">FTL Hyperspace</h1> -->
+          <!-- <h2 id="project_tagline">A binary mod for FTL: Faster Than Light</h2> -->
+
+          
+        </header>
+        <div class="nav-bar">
+            <nav class="selector-list nav-selector">
+                
+                    <a href="/FTL-Hyperspace/fr/">Accueil</a>
+                
+            </nav>
+            <nav class="selector-list language-selector">
+                
+                    
+                    
+                    
+                    
+                        <a href="/FTL-Hyperspace/install-guides/windows/"><span class="fi fi-us"></span> English</a>
+                    
+                
+                    
+                    
+                    
+                    
+                        <a href="/FTL-Hyperspace/de/install-guides/windows/"><span class="fi fi-de"></span> Deutsch</a>
+                    
+                
+                    
+                    
+                    
+                    
+                        <a href="/FTL-Hyperspace/ko/install-guides/windows/"><span class="fi fi-kr"></span> 한국어</a>
+                    
+                
+                    
+                    
+                    
+                    
+                        <span class="active">
+                            <span class="fi fi-fr"></span> Français
+                        </span>
+                    
+                
+            </nav>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2 id="mise-à-jour">Mise à jour</h2>
+
+<p>Remplacez simplement <code class="language-plaintext highlighter-rouge">Hyperspace.dll</code> (et toutes les autres DLLs incluses dans le ZIP d’hyperspace) par la nouvelle version dans votre répertoire d’installation FTL.
+La mise à jour de <code class="language-plaintext highlighter-rouge">Hyperspace.dll</code> est <strong>cruciale</strong> pour les mises à jour du Multiverse car elles sont toujours construites avec la dernière version d’hyperspace</p>
+
+<p>Patchez le nouveau <code class="language-plaintext highlighter-rouge">Hyperspace.ftl</code> avec Slipstream si vous utilisez un mod qui le nécessite (<em>ne patchez pas <code class="language-plaintext highlighter-rouge">Hyperspace.ftl</code> pour Multiverse</em>).</p>
+
+<h2 id="première-installation">Première installation</h2>
+
+<p>Hyperspace ne fonctionne qu’avec FTL 1.6.9, ce qui suit vous guidera à la fois pour l’installation et la mise à jour de votre installation de FTL en fonction de l’endroit où vous avez acheté FTL :</p>
+
+<h3 id="quelle-est-votre-installation-de-ftl-">Quelle est votre installation de FTL ?</h3>
+
+<ul>
+  <li><a href="./steam-install">Steam</a></li>
+  <li><a href="./gog-install">GoG</a></li>
+  <li><a href="./humble-install">Humble Bundle</a></li>
+  <li><a href="./autre-installation#epic">Epic Games</a></li>
+  <li><a href="./autre-installation#origin">Origin</a></li>
+  <li><a href="./autre-installation#microsoft-storexbox-game-pass">Microsoft Store/Xbox Game Pass</a></li>
+</ul>
+
+<h2 id="dépannage">Dépannage</h2>
+
+<h4 id="mon-jeu-se-plaint-de--opengl">Mon jeu se plaint de <code class="language-plaintext highlighter-rouge">-opengl</code></h4>
+<ul>
+  <li>Arrêtez d’utiliser le flag <code class="language-plaintext highlighter-rouge">-opengl</code>, il a été supprimé dans Hyperspace 1.5.0 et n’est plus nécessaire.</li>
+</ul>
+
+<h4 id="mon-jeu-se-plante-avant-le-chargement-du-multiverse">Mon jeu se plante avant le chargement du Multiverse</h4>
+<ul>
+  <li>Assurez-vous que vous êtes sur la dernière version d’Hyperspace, l’installateur de Multiverse n’est souvent pas à jour !</li>
+  <li>Ce problème devrait être pratiquement éliminé à moins que votre fichier de sauvegarde ne soit corrompu, mais il y a quelques cas où cela peut encore se produire sur les <strong><em>ordinateurs portables uniquement</em></strong></li>
+  <li>Si vous n’utilisez pas d’ordinateur portable, <strong>votre fichier de sauvegarde est corrompu</strong> et c’est la raison pour laquelle le jeu ne se lance pas, voir ci-dessous.</li>
+  <li>Si votre ordinateur portable n’a pas de carte graphique dédiée (c’est-à-dire un GPU AMD ou Nvidia, pas celui intégré dans le CPU), <strong>votre fichier de sauvegarde est corrompu</strong> et c’est là le problème.</li>
+  <li>Si votre ordinateur portable <strong>A EFFECTIVEMENT</strong> un GPU dédié, vous devrez peut-être forcer FTL à fonctionner soit sur le GPU dédié, soit sur le GPU interne, car l’un d’entre eux peut être à l’origine du problème.</li>
+</ul>
+
+<h4 id="mon-jeu-se-bloque-au-chargement-du-dernier-e-de-multiverse">Mon jeu se bloque au chargement du dernier <code class="language-plaintext highlighter-rouge">E</code> de multiverse</h4>
+<ul>
+  <li><a href="#resolving-a-corrupt-save-file">Vous avez un fichier de sauvegarde corrompu</a></li>
+</ul>
+
+<h4 id="mon-jeu-se-bloque-au-chargement-mais-ne-plante-pas-et-jentends-de-la-musique">Mon jeu se bloque au chargement mais ne plante pas et j’entends de la musique.</h4>
+<ul>
+  <li><a href="#resolving-a-corrupt-save-file">Vous avez un fichier de sauvegarde corrompu</a></li>
+</ul>
+
+<h4 id="réparer-un-fichier-de-sauvegarde-corrompu">Réparer un fichier de sauvegarde corrompu</h4>
+<p>Pour éventuellement réparer une sauvegarde corrompue :</p>
+<ol>
+  <li>Allez dans <code class="language-plaintext highlighter-rouge">Documents/Mes Jeux/FasterThanLight</code>, vous devriez avoir un <code class="language-plaintext highlighter-rouge">hs_mv_prof.sav</code> et un <code class="language-plaintext highlighter-rouge">hs_mv_version.sav</code>.</li>
+  <li>Supprimez le <code class="language-plaintext highlighter-rouge">hs_mv_version.sav</code></li>
+  <li>Déplacez le <code class="language-plaintext highlighter-rouge">hs_mv_prof.sav</code> dans un autre dossier (<strong>ne le supprimez pas</strong>)</li>
+  <li>Lancez le jeu et une fois qu’il s’est chargé sur le menu principal, fermez-le à nouveau.</li>
+  <li>Déplacez votre <code class="language-plaintext highlighter-rouge">hs_mv_prof.sav</code> original là où il était avant, en remplaçant celui qui a été créé par le jeu.</li>
+</ol>
+
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">FTL Hyperspace maintained by <a href="https://github.com/FTL-Hyperspace">FTL-Hyperspace</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <p>Site last updated: 23 February 2025</p>
+      </footer>
+    </div>
+  </body>
+</html>

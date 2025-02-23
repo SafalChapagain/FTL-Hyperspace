@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/FTL-Hyperspace/assets/css/style.css?v=">
+    <link rel="stylesheet" type="text/css" media="screen" href="/FTL-Hyperspace/assets/css/custom-styles.css?v=">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.4/css/flag-icons.min.css" integrity="sha512-uvXdJud8WaOlQFjlz9B15Yy2Au/bMAvz79F7Xa6OakCl2jvQPdHD0hb3dEqZRdSwG4/sknePXlE7GiarwA/9Wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Windows Hyperspace Install Instructions | FTL Hyperspace</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Windows Hyperspace Install Instructions" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="A binary mod for FTL: Faster Than Light" />
+<meta property="og:description" content="A binary mod for FTL: Faster Than Light" />
+<link rel="canonical" href="https://github.com/FTL-Hyperspace/install-guides/windows/" />
+<meta property="og:url" content="https://github.com/FTL-Hyperspace/install-guides/windows/" />
+<meta property="og:site_name" content="FTL Hyperspace" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Windows Hyperspace Install Instructions" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"A binary mod for FTL: Faster Than Light","headline":"Windows Hyperspace Install Instructions","url":"https://github.com/FTL-Hyperspace/install-guides/windows/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/FTL-Hyperspace/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+    <style type="text/css">
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+        }
+        nav.selector-list {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+        }
+        nav.selector-list > * {
+            display: block;
+            color: white;
+            padding: 0.2em 1em;
+        }
+        nav.selector-list > a:hover {
+            text-decoration: none;
+            background-color: #575757;
+        }
+        nav.selector-list > .active {
+            background-color: #f2f2f2;
+            color: #222222;
+            margin-bottom: -1px;
+        }
+        img.banner {
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+            border: none;
+            display: block;
+            max-width: 100%;
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          
+            <a id="forkme_banner" href="https://github.com/FTL-Hyperspace/FTL-Hyperspace">View on GitHub</a>
+          
+
+          <img class="banner" src="/FTL-Hyperspace/assets/img/hyperspace_banner.png" alt="FTL Hyperspace" />
+          <!-- <h1 id="project_title">FTL Hyperspace</h1> -->
+          <!-- <h2 id="project_tagline">A binary mod for FTL: Faster Than Light</h2> -->
+
+          
+        </header>
+        <div class="nav-bar">
+            <nav class="selector-list nav-selector">
+                
+                    <a href="/FTL-Hyperspace/">Home</a>
+                
+            </nav>
+            <nav class="selector-list language-selector">
+                
+                    
+                    
+                    
+                    
+                        <span class="active">
+                            <span class="fi fi-us"></span> English
+                        </span>
+                    
+                
+                    
+                    
+                    
+                    
+                        <a href="/FTL-Hyperspace/de/install-guides/windows/"><span class="fi fi-de"></span> Deutsch</a>
+                    
+                
+                    
+                    
+                    
+                    
+                        <a href="/FTL-Hyperspace/ko/install-guides/windows/"><span class="fi fi-kr"></span> 한국어</a>
+                    
+                
+                    
+                    
+                    
+                    
+                        <a href="/FTL-Hyperspace/fr/install-guides/windows/"><span class="fi fi-fr"></span> Français</a>
+                    
+                
+            </nav>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2 id="updating">Updating</h2>
+
+<p>Simply replace <code class="language-plaintext highlighter-rouge">Hyperspace.dll</code> (and any other DLLs included in the hyperspace ZIP) with the new one in your FTL installation directory.
+Updating the <code class="language-plaintext highlighter-rouge">Hyperspace.dll</code> is <strong>crucial</strong> for Multiverse updates as they always build for the latest hyperspace.</p>
+
+<p>Patch the new <code class="language-plaintext highlighter-rouge">Hyperspace.ftl</code> with slipstream if you are using a mod that requires it (<em>do not patch <code class="language-plaintext highlighter-rouge">Hyperspace.ftl</code> for Multiverse</em>)</p>
+
+<h2 id="first-time-installs">First time Installs</h2>
+
+<p>Hyperspace only works with FTL 1.6.9, the following will guide you on both installation &amp; downgrading for your install of FTL depending on where you bought FTL from:</p>
+
+<h3 id="what-ftl-installation-do-you-have">What FTL installation do you have?</h3>
+
+<ul>
+  <li><a href="./steam-install">Steam</a></li>
+  <li><a href="./gog-install">GoG</a></li>
+  <li><a href="./humble-install">Humble Bundle</a></li>
+  <li><a href="./other-install#epic">Epic Games</a></li>
+  <li><a href="./other-install#origin">Origin</a></li>
+  <li><a href="./other-install#microsoft-storexbox-game-pass">Microsoft Store/Xbox Game Pass</a></li>
+</ul>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<h4 id="my-game-complains-about--opengl">My game complains about <code class="language-plaintext highlighter-rouge">-opengl</code></h4>
+<ul>
+  <li>Stop using <code class="language-plaintext highlighter-rouge">-opengl</code> flag, it was removed in Hyperspace 1.5.0 and is no longer needed</li>
+</ul>
+
+<h4 id="my-game-crashes-before-loading-multiverse">My game crashes before loading Multiverse</h4>
+<ul>
+  <li><strong><em>Ensure you’re on the latest version of Hyperspace, the Multiverse installer is frequently not up to date!</em></strong></li>
+  <li>This problem should be pretty much eliminated unless your save file is corrupt but there are some instances where this can still occur on <strong><em>laptops only</em></strong></li>
+  <li>If you’re not using a laptop, <strong>your save file is corrupt</strong> and that’s why it’s not launching, see below.</li>
+  <li>If your laptop does not have dedicated graphics (i.e. AMD or Nvidia GPU, not the one built into the CPU) then <strong>your save file is corrupt</strong> and that’s the problem.</li>
+  <li>If your laptop <strong>DOES</strong> actually have a dedicated GPU, you may need to force FTL to run on either the dedicated or internal GPU, one of them might be causing you a problem.</li>
+</ul>
+
+<h4 id="my-game-hangs-on-loading-the-last-e-in-multiverse">My game hangs on loading the last <code class="language-plaintext highlighter-rouge">E</code> in multiverse</h4>
+<ul>
+  <li><a href="#resolving-a-corrupt-save-file">You have a corrupt save file</a></li>
+</ul>
+
+<h4 id="my-game-hangs-on-loading-but-doesnt-crash-and-i-hear-music">My game hangs on loading but doesn’t crash and I hear music</h4>
+<ul>
+  <li><a href="#resolving-a-corrupt-save-file">You have a corrupt save file</a></li>
+</ul>
+
+<h4 id="resolving-a-corrupt-save-file">Resolving a corrupt save file</h4>
+<p>To potentially fix a corrupted save:</p>
+<ol>
+  <li>Go to <code class="language-plaintext highlighter-rouge">Documents/My Games/FasterThanLight</code>, you should have a <code class="language-plaintext highlighter-rouge">hs_mv_prof.sav</code> and <code class="language-plaintext highlighter-rouge">hs_mv_version.sav</code></li>
+  <li>Delete the <code class="language-plaintext highlighter-rouge">hs_mv_version.sav</code></li>
+  <li>Move the <code class="language-plaintext highlighter-rouge">hs_mv_prof.sav</code> to another folder (<strong>do not delete it</strong>)</li>
+  <li>Run the game and once it loads to the main menu close it again</li>
+  <li>Move your original <code class="language-plaintext highlighter-rouge">hs_mv_prof.sav</code> back where it was before, replacing the one that was created by the game</li>
+</ol>
+
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">FTL Hyperspace maintained by <a href="https://github.com/FTL-Hyperspace">FTL-Hyperspace</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <p>Site last updated: 23 February 2025</p>
+      </footer>
+    </div>
+  </body>
+</html>
