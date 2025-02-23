@@ -12,6 +12,7 @@
 #include "CustomScoreKeeper.h"
 #include "CustomBackgroundObject.h"
 #include "EventButtons.h"
+#include <algorithm>
 #include <boost/lexical_cast.hpp>
 #include <boost/algorithm/string.hpp>
 
@@ -909,6 +910,12 @@ void CustomEventsParser::ParseCustomSector(rapidxml::xml_node<char> *node, Custo
         {
             isDefault = false;
             sector->removeFirstBeaconNebula = true;
+        }
+
+        if (strcmp(sectorNode->name(), "priorityEventsOverrideNebula") == 0)
+        {
+            isDefault = false;
+            sector->priorityEventsOverrideNebula = true;
         }
 
         if (strcmp(sectorNode->name(), "noExit") == 0)
@@ -5007,9 +5014,101 @@ HOOK_METHOD(StarMap, GenerateNebulas, (std::vector<std::string>& names) -> void)
         names.resize(locations.size());
     }
 
-    super(names);
-
     CustomSector* customSector = CustomEventsParser::GetInstance()->GetCurrentCustomSector(this);
+
+    if (customSector && customSector->priorityEventsOverrideNebula)
+    {
+        int pEventCount = 0;
+        for (PriorityEvent pEvent : customSector->priorityEventCounts)
+        {
+            // Only count priority events that aren't nebulas and
+            // that have their requirement met if they have one
+            int reqLvl;
+            if (pEvent.event.first.rfind("NEBULA", 0) != 0 && (pEvent.req.empty() || (reqLvl = G_->GetShipManager(0)->HasEquipment(pEvent.req), (reqLvl >= pEvent.lvl && reqLvl <= pEvent.max_lvl))))
+            {
+                pEventCount += pEvent.event.second.min;
+            }
+        }
+        int availableLocations = locations.size() - 2; // Subtract 2 to account for start and exit beacons
+        int nonNebulaLocations = availableLocations - names.size();
+        
+        // Starting at the end of the names list, remove nebulas until there's space for all priority events
+        if (nonNebulaLocations < pEventCount)
+        {
+            int nebulasToRemoveCount = pEventCount - nonNebulaLocations;
+            
+            // First pass - remove non-priority nebulas over the minimum
+            int nameIndexLast = names.size() - 1;
+            while (nameIndexLast >= 0 && nebulasToRemoveCount > 0)
+            {
+                // Find where the instances of this event start in the name list
+                std::string name = names[nameIndexLast];
+                int nameIndexFirst = nameIndexLast - 1;
+                while (nameIndexFirst >= 0 && name == names[nameIndexFirst]) --nameIndexFirst;
+                
+                // Make sure this isn't a priority event
+                std::vector<PriorityEvent> pEvents = customSector->priorityEventCounts;
+                std::vector<PriorityEvent>::iterator pEventsIt = std::find_if(pEvents.begin(), pEvents.end(), [name](PriorityEvent pEvent)
+                {
+                    return pEvent.event.first == name;
+                });
+                if (pEventsIt == pEvents.end())
+                {
+                    // Find the minimum count for this event
+                    std::vector<std::pair<std::string, RandomAmount>> eventCounts = currentSector->description.eventCounts;
+                    std::vector<std::pair<std::string, RandomAmount>>::iterator it = std::find_if(eventCounts.begin(), eventCounts.end(), [name](std::pair<std::string, RandomAmount> eventCount)
+                    {
+                        return eventCount.first == name;
+                    });
+                    if (it != eventCounts.end())
+                    {
+                        // If current count exceeds minimum, remove instances until it meets the minimum
+                        int currentCount = nameIndexLast - nameIndexFirst;
+                        int minCount = (*it).second.min;
+                        if (currentCount > minCount)
+                        {
+                            int removeAmount = std::min(nebulasToRemoveCount, currentCount - minCount);
+                            names.erase(std::next(names.begin(), nameIndexLast + 1 - removeAmount), std::next(names.begin(), nameIndexLast + 1));
+                            nebulasToRemoveCount -= removeAmount;
+                        }
+                    }
+                }
+                
+                // Move on to the last instance of the next different event name
+                nameIndexLast = nameIndexFirst;
+            }
+
+            // Second pass - remove any non-priority nebulas
+            nameIndexLast = names.size() - 1;
+            while (nameIndexLast >= 0 && nebulasToRemoveCount > 0)
+            {
+                // Find where the instances of this event start in the name list
+                std::string name = names[nameIndexLast];
+                int nameIndexFirst = nameIndexLast - 1;
+                while (nameIndexFirst >= 0 && name == names[nameIndexFirst]) --nameIndexFirst;
+                
+                // Make sure this isn't a priority event
+                std::vector<PriorityEvent> pEvents = customSector->priorityEventCounts;
+                std::vector<PriorityEvent>::iterator pEventsIt = std::find_if(pEvents.begin(), pEvents.end(), [name](PriorityEvent pEvent)
+                {
+                    return pEvent.event.first == name;
+                });
+                if (pEventsIt == pEvents.end())
+                {
+                    // Remove all instances needed to meet quota
+                    int currentCount = nameIndexLast - nameIndexFirst;
+                    int removeAmount = std::min(nebulasToRemoveCount, currentCount);
+                    names.erase(std::next(names.begin(), nameIndexLast + 1 - removeAmount), std::next(names.begin(), nameIndexLast + 1));
+                    nebulasToRemoveCount -= removeAmount;
+                }
+                
+                // Move on to the last instance of the next different event name
+                nameIndexLast = nameIndexFirst;
+            }
+        }
+    }
+
+    super(names);
 
     if (customSector && customSector->removeFirstBeaconNebula)
     {
