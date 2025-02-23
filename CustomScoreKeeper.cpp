@@ -174,36 +174,26 @@ void CustomScoreKeeper::WipeProfile()
     customShipScores.clear();
 }
 
-HOOK_METHOD(ScoreKeeper, CycleLeft, () -> void)
+HOOK_METHOD_PRIORITY(ScoreKeeper, CycleLeft, 9999, () -> void)
 {
-    LOG_HOOK("HOOK_METHOD -> ScoreKeeper::CycleLeft -> Begin (CustomScoreKeeper.cpp)\n")
-    if (selectedShip >= 100)
-    {
-        auto customSel = CustomShipSelect::GetInstance();
-
-        selectedShip = customSel->CycleShipPrevious(selectedShip, selectedLayout);
-        SetupTopShip(selectedLayout);
-
-        return;
-    }
-
-    super();
+    LOG_HOOK("HOOK_METHOD_PRIORITY -> ScoreKeeper::CycleLeft -> Begin (CustomScoreKeeper.cpp)\n")
+    auto customSel = CustomShipSelect::GetInstance();
+    
+    int prevShipId = customSel->CycleShipPrevious(selectedShip, selectedLayout);
+    if (selectedShip >= 100 && prevShipId < 100) customSel->SwitchPage(0);
+    selectedShip = prevShipId;
+    SetupTopShip(selectedLayout);
 }
 
-HOOK_METHOD(ScoreKeeper, CycleRight, () -> void)
+HOOK_METHOD_PRIORITY(ScoreKeeper, CycleRight, 9999, () -> void)
 {
-    LOG_HOOK("HOOK_METHOD -> ScoreKeeper::CycleRight -> Begin (CustomScoreKeeper.cpp)\n")
-    if (selectedShip >= 100)
-    {
-        auto customSel = CustomShipSelect::GetInstance();
-
-        selectedShip = customSel->CycleShipNext(selectedShip, selectedLayout);
-        SetupTopShip(selectedLayout);
-
-        return;
-    }
-
-    super();
+    LOG_HOOK("HOOK_METHOD_PRIORITY -> ScoreKeeper::CycleRight -> Begin (CustomScoreKeeper.cpp)\n")
+    auto customSel = CustomShipSelect::GetInstance();
+    
+    int nextShipId = customSel->CycleShipNext(selectedShip, selectedLayout);
+    if (selectedShip >= 100 && nextShipId < 100) customSel->SwitchPage(0);
+    selectedShip = nextShipId;
+    SetupTopShip(selectedLayout);
 }
 
 HOOK_METHOD(ScoreKeeper, SetupTopShip, (int variant) -> void)
@@ -251,10 +241,10 @@ HOOK_METHOD(ScoreKeeper, AddTopScoreType, (TopScore& topScore, int type) -> void
 HOOK_METHOD(ScoreKeeper, CheckTypes, () -> void)
 {
     LOG_HOOK("HOOK_METHOD -> ScoreKeeper::CheckTypes -> Begin (CustomScoreKeeper.cpp)\n")
+    auto customSel = CustomShipSelect::GetInstance();
+
     if (selectedShip >= 100)
     {
-        auto customSel = CustomShipSelect::GetInstance();
-
         ShipButtonDefinition def = customSel->GetShipButtonDefinition(selectedShip - 100);
 
         if (!def.typeA || !CustomShipUnlocks::instance->GetCustomShipUnlocked(def.name))
@@ -304,16 +294,15 @@ HOOK_METHOD(ScoreKeeper, CheckTypes, () -> void)
 
         Point typeCPos(typeCLoc.x, typeCLoc.y);
         typeC.SetLocation(typeCPos);
-
-        bool buttonsActive = customSel->CountUnlockedShips(selectedLayout) > 1;
-        leftButton.SetActive(buttonsActive);
-        rightButton.SetActive(buttonsActive);
-
-        return;
+    }
+    else
+    {
+        super();
     }
 
-
-    super();
+    bool buttonsActive = customSel->CountUnlockedShips(selectedLayout) + (customSel->hideFirstPage ? 0 : CountUnlockedShips(selectedLayout)) > 1;
+    leftButton.SetActive(buttonsActive);
+    rightButton.SetActive(buttonsActive);
 }
 
 HOOK_METHOD(ScoreKeeper, MouseClick, (int x, int y) -> void)
