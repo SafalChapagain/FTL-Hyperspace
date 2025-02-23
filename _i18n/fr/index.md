@@ -27,7 +27,7 @@ Utilisez un hyperspace.xml.append et ajoutez les tags xml dont vous avez besoin 
 Idéalement, l'utilisateur devrait télécharger Hyperspace ainsi que votre mod, et installer Hyperspace.ftl d'abord, puis votre mod.
 Pour une compatibilité maximale avec d'autres mods, ne redistribuez pas les fichiers de ressources ou les binaires d'Hyperspace et indiquez simplement à l'utilisateur de télécharger Hyperspace dans votre message sur le forum.
 
-L'API Lua pour les versions 1.2.0 et supérieures est documentée dans le [wiki] (https://github.com/FTL-Hyperspace/FTL-Hyperspace/wiki).
+L'API Lua pour les versions 1.2.0 et supérieures est documentée dans le [wiki](https://github.com/FTL-Hyperspace/FTL-Hyperspace/wiki).
 
 Une documentation supplémentaire est/sera disponible dans le [wiki](https://github.com/FTL-Hyperspace/FTL-Hyperspace/wiki).
 Si vous souhaitez suggérer des améliorations au wiki, vous pouvez créer une issue sur github et donner un lien vers un clone du dépôt wiki ou fournir un extrait en markdown à ajouter/modifier.

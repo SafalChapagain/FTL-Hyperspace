@@ -1,4 +1,4 @@
-## Autres façons de downgrade
+## Autres étapes de downgrade
 
 ### Epic
 1. Démarrer FTL et vérifier que la version est 1.6.12
