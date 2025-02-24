@@ -1,3 +1,11 @@
+"f3c36666":
+forceDetour cleanup __amd64 void CApp::OnTouchDown(CApp* this, int id, int x, int y);
+".f3c36666":
+forceDetour cleanup __amd64 void CApp::OnTouchMove(CApp* this, int id, int x, int y, int initialX, int initialY);
+".f3c36666":
+forceDetour cleanup __amd64 void CApp::OnTouchUp(CApp* this, int id, int x, int y, int initialX, int initialY);
+".f3c36666":
+forceDetour cleanup __amd64 void CApp::OnTouchCancel(CApp *this,int id,int x,int y,int initialX,int initialY);
 "!534889fb488b7f104885ff7428":
 cleanup __amd64 void CApp::OnRequestExit(CApp *this);
 ".534889fbe8":

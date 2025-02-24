@@ -10,3 +10,5 @@ cleanup __amd64 void MainMenu::MouseMove(MainMenu *this, int x, int y);
 cleanup __amd64 void MainMenu::OnLoop(MainMenu *this);
 ".534889fb4883ec5080bf????000000":
 cleanup __amd64 void MainMenu::MouseClick(MainMenu *this, int x, int y);
+".41574589cb41564189ce41554589c541544189d4":
+cleanup __amd64 void MainMenu::OnTouch(MainMenu* this, TouchAction action, int id, int x, int y, int initialX, int initialY);

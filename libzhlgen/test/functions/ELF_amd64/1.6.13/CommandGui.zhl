@@ -34,5 +34,7 @@ cleanup __amd64 void CommandGui::LButtonDown(CommandGui *this, int mX, int mY, b
 cleanup __amd64 void CommandGui::MouseMove(CommandGui *this, int mX, int mY);
 ".41564155415455534889fb4883ec20":
 cleanup __amd64 void CommandGui::OnLoop(CommandGui *this);
+".41574589cf415641554589c541544189cc5589f5":
+cleanup __amd64 void CommandGui::OnTouch(CommandGui* this, TouchAction action, int id, int x, int y, int initialX, int initialY);
 ".41574156415541545548c7c5ffffffff534889fb":
 cleanup __amd64 void CommandGui::constructor(CommandGui *this);

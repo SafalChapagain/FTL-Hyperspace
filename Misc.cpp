@@ -1795,6 +1795,84 @@ HOOK_METHOD(MouseControl, OnRender, () -> void)
     Global::GetInstance()->getLuaContext()->getLibScript()->call_on_render_event_post_callbacks(RenderEvents::MOUSE_CONTROL, std::abs(idx), 0);
 }
 
+// Attempt to enable touch screen inputs
+
+HOOK_METHOD(CApp, OnTouchDown, (int id, int x, int y) -> void)
+{
+    LOG_HOOK("HOOK_METHOD -> CApp::OnTouchDown -> Begin (Misc.cpp)\n")
+
+    hs_log_file("OnTouchDown: Id = %d - x = %d - y = %d\n", id, x, y);
+
+    if (this->langChooser.bOpen)
+    {
+        this->langChooser.OnTouch(TOUCH_DOWN, id, x, y, x, y);
+        return;
+    }
+    if (!this->menu.bOpen)
+    {
+        this->gui->OnTouch(TOUCH_DOWN, id, x, y, x, y);
+        return;
+    }
+    this->menu.OnTouch(TOUCH_DOWN, id, x, y, x, y);
+}
+
+HOOK_METHOD(CApp, OnTouchUp, (int id, int x, int y, int initialX, int initialY) -> void)
+{
+    LOG_HOOK("HOOK_METHOD -> CApp::OnTouchUp -> Begin (Misc.cpp)\n")
+
+    hs_log_file("OnTouchUp: Id = %d - x = %d - y = %d - initialX = %d - initialY = %d\n", id, x, y, initialX, initialY);
+
+    if (this->langChooser.bOpen)
+    {
+        this->langChooser.OnTouch(TOUCH_UP, id, x, y, initialX, initialY);
+        return;
+    }
+    if (!this->menu.bOpen)
+    {
+        this->gui->OnTouch(TOUCH_UP, id, x, y, initialX, initialY);
+        return;
+    }
+    this->menu.OnTouch(TOUCH_UP, id, x, y, initialX, initialY);
+}
+
+HOOK_METHOD(CApp, OnTouchMove, (int id, int x, int y, int initialX, int initialY) -> void)
+{
+    LOG_HOOK("HOOK_METHOD -> CApp::OnTouchMove -> Begin (Misc.cpp)\n")
+
+    hs_log_file("OnTouchMove: Id = %d - x = %d - y = %d - initialX = %d - initialY = %d\n", id, x, y, initialX, initialY);
+
+    if (this->langChooser.bOpen)
+    {
+        this->langChooser.OnTouch(TOUCH_MOVE, id, x, y, initialX, initialY);
+        return;
+    }
+    if (!this->menu.bOpen)
+    {
+        this->gui->OnTouch(TOUCH_MOVE, id, x, y, initialX, initialY);
+        return;
+    }
+    this->menu.OnTouch(TOUCH_MOVE, id, x, y, initialX, initialY);
+}
+
+HOOK_METHOD(CApp, OnTouchCancel, (int id, int x, int y, int initialX, int initialY) -> void)
+{
+    LOG_HOOK("HOOK_METHOD -> CApp::OnTouchCancel -> Begin (Misc.cpp)\n")
+
+    hs_log_file("OnTouchCancel: Id = %d - x = %d - y = %d - initialX = %d - initialY = %d\n", id, x, y, initialX, initialY);
+
+    if (this->langChooser.bOpen)
+    {
+        this->langChooser.OnTouch(TOUCH_CANCEL, id, x, y, initialX, initialY);
+        return;
+    }
+    if (!this->menu.bOpen)
+    {
+        this->gui->OnTouch(TOUCH_CANCEL, id, x, y, initialX, initialY);
+        return;
+    }
+    this->menu.OnTouch(TOUCH_CANCEL, id, x, y, initialX, initialY);
+}
+
 //Priority so this is blocked by the one in CustomBoss.cpp
 //Translated so that rendering happens in the reference frame of the SystemBox.
 HOOK_METHOD_PRIORITY(SystemBox, OnRender, 100, (bool ignoreStatus) -> void)
