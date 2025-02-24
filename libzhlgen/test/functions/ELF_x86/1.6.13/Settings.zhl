@@ -17,3 +17,8 @@ static cleanup __cdecl void Settings::LoadSettings();
 
 "!89c557565383ec2cc744241c(???????\?)":
 SettingValues* Global_Settings_Settings;
+
+struct Settings
+{{
+    static void RegenerateHotkeys();
+}};

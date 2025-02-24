@@ -28,6 +28,7 @@
 #include "CustomTutorial.h"
 #include "TemporalSystem.h"
 #include "Misc.h"
+#include "CustomHotkeys.h"
 %}
 
 %feature("flatnested");
@@ -4002,6 +4003,12 @@ We can expose them once the root cause is identified and the crash is fixed.
 %immutable SettingValues::openedList;
 %rename("%s") SettingValues::beamTutorial;
 %immutable SettingValues::beamTutorial;
+
+//NOTE: Hyperspace.Settings refers to Global_Settings_Settings, an instance of SettingValues so it may be a good idea to rename this?
+%rename("%s") Settings;
+%rename("%s") Settings::GetHotkey;
+%rename("%s") Settings::GetHotkeyName;
+
 
 //Access PrintHelper singleton through Hyperspace.PrintHelper.GetInstance()
 %nodefaultctor PrintHelper;

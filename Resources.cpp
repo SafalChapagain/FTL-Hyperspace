@@ -38,6 +38,7 @@
 #include "CustomUpgrades.h"
 #include "CustomEquipment.h"
 #include "CustomTabbedWindow.h"
+#include "CustomHotkeys.h"
 #include "ArtillerySystem.h"
 
 #include <boost/lexical_cast.hpp>
@@ -879,6 +880,10 @@ void Global::InitializeResources(ResourceControl *resources)
             {
                 ParseSystemsNode(node);
             }
+            if (strcmp(node->name(), "customHotkeys") == 0)
+            {
+                CustomHotkeyManager::ParseCustomHotkeyNode(node);
+            }
             if (strcmp(node->name(), "scripts") == 0)
             {
                 for (auto child = node->first_node(); child; child = child->next_sibling())
@@ -972,10 +977,14 @@ void Global::InitializeResources(ResourceControl *resources)
     }
 
     delete [] hyperspacetext;
+    Settings::LoadSettings(); //Second load after custom hotkey parsing
     //G_->lua = new LuaState;
 }
 
-
-
-
+//Block SaveSettings call in initial load so that saved values for custom hotkeys aren't overwritten
+HOOK_STATIC(Settings, SaveSettings, () -> void)
+{
+    LOG_HOOK("HOOK_STATIC -> Settings::SaveSettings -> Begin (Resources.cpp)\n")
+    if (G_->AreResourcesInitialized()) super();
+}
 

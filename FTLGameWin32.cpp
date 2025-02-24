@@ -12617,7 +12617,7 @@ namespace _func915
 {
     static void *func = 0;
 	static const short *argdata = NULL;
-	static FunctionDefinition funcObj("Settings::SaveSettings", typeid(void (*)()), ".8d4c240483e4f0ff71fc5589e557565351", argdata, 0, 6, &func);
+	static FunctionDefinition funcObj("Settings::SaveSettings", typeid(void (*)()), ".8d????0483e4f0ff????5589e5575653518d??60ffffff8d??20ffffff81ec38010000", argdata, 0, 6, &func);
 }
 
 void Settings::SaveSettings()

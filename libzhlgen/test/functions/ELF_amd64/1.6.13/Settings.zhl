@@ -17,3 +17,8 @@ static cleanup __amd64 void Settings::LoadSettings();
 
 "!4155415441bc(???????\?)55534883ec30":
 SettingValues* Global_Settings_Settings;
+
+struct Settings
+{{
+    static void RegenerateHotkeys();
+}};

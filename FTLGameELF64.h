@@ -6860,6 +6860,8 @@ struct SettingValues
 
 struct Settings
 {
+    static void RegenerateHotkeys();
+
 	LIBZHL_API static char __stdcall GetCommandConsole();
 	LIBZHL_API static bool __stdcall GetDlcEnabled();
 	LIBZHL_API static SDLKey __stdcall GetHotkey(const std::string &hotkeyName);
