@@ -689,9 +689,9 @@ HOOK_METHOD(ShipManager, ImportShip, (int file) -> void)
 }
 
 
-HOOK_METHOD(CombatControl, KeyDown, (SDLKey key) -> void)
+HOOK_METHOD_PRIORITY(CombatControl, KeyDown, 9999, (SDLKey key) -> void)
 {
-    LOG_HOOK("HOOK_METHOD -> CombatControl::KeyDown -> Begin (CustomSystems.cpp)\n")
+    LOG_HOOK("HOOK_METHOD_PRIORITY -> CombatControl::KeyDown -> Begin (CustomSystems.cpp)\n")
     bool isWeaponKey = weapControl.KeyDown(key);
     if (isWeaponKey || droneControl.KeyDown(key))
     {

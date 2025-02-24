@@ -15,7 +15,11 @@ static std::vector<CustomHotkey> customHotkeys =
     {"temporal", SDLKey::SDLK_SEMICOLON, 2, 11},
     {"un_temporal", SDLKey::SDLK_UNKNOWN, 2, -1},
     {"temporal_speed", SDLKey::SDLK_PERIOD, 1, 8},
-    {"temporal_slow", SDLKey::SDLK_COMMA, 1, 9}
+    {"temporal_slow", SDLKey::SDLK_COMMA, 1, 9},
+    {"artillery1", SDLKey::SDLK_UNKNOWN, 3, 8},
+    {"artillery2", SDLKey::SDLK_UNKNOWN, 3, 9},
+    {"artillery3", SDLKey::SDLK_UNKNOWN, 3, -1},
+    {"artillery4", SDLKey::SDLK_UNKNOWN, 3, -1}
 };
 
 HOOK_METHOD(ControlsScreen, OnInit, () -> void)
@@ -29,7 +33,7 @@ HOOK_METHOD(ControlsScreen, OnInit, () -> void)
     super();
 
     Point origin = Point(480, 130);
-    int btnsPerColumn = 8;
+    int btnsPerColumn = 10;
     for (int page = 0; page < 3; page++)
     {
         if (page == 0)

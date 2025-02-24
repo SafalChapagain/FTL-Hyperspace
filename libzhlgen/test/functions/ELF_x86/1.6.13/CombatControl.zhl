@@ -50,3 +50,8 @@ cleanup __cdecl void CombatControl::Clear(CombatControl *this);
 cleanup __cdecl bool CombatControl::MouseMove(CombatControl *this, int mX, int mY);
 "57565383ec108b5c24208b7424248b7c24288d4314c683480b000001":
 cleanup __cdecl void CombatControl::MouseClick(CombatControl *this, int mX, int mY, bool shift);
+
+struct CombatControl 
+{{
+    void ArmArtillery(ArtillerySystem* artillerySystem);
+}};
