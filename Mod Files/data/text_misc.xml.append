@@ -232,6 +232,7 @@ For: "temporal_tooltip", "temporal_arm_speed", "temporal_arm_slow"
 <text name="temporal_button_speed">Speed up everything that occurs in a room for a short duration.\nHotkey: \1</text> <!-- key name -->
 <text name="temporal_button_slow">Slow down everything that occurs in a room for a short duration.\nHotkey: \1</text> <!-- key name -->
 
+<text name="confirm_buy_custom">Are you sure?\nThe \1 will replace your \2.</text>  <!-- Displayed when attempting to buy a system that replaces another system. -->
 <!-- More Info Button -->
 
 <text name="tooltip_more_info">Toggle advanced information, which provides extra info for:

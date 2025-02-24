@@ -1720,6 +1720,18 @@ bool CustomEventsParser::ParseCustomEvent(rapidxml::xml_node<char> *node, Custom
             isDefault = false;
             customEvent->removeItems.push_back(child->value());
         }
+        if (nodeName == "removeSystem")
+        {
+            isDefault = false;
+            std::pair<bool, int> removeSys;
+            removeSys.first = true;
+            if (child->first_attribute("player"))
+            {
+                removeSys.first = EventsParser::ParseBoolean(child->first_attribute("player")->value());
+            }
+            removeSys.second = ShipSystem::NameToSystemId(child->value());
+            customEvent->removeSystems.push_back(removeSys);
+        }
         if (nodeName == "variable" || nodeName == "metaVariable" || nodeName == "tempVariable")
         {
             isDefault = false;
@@ -5237,6 +5249,19 @@ HOOK_METHOD(WorldManager, ModifyResources, (LocationEvent *event) -> LocationEve
         for (auto i : customEvent->removeItems)
         {
             playerShip->shipManager->RemoveItem(i);
+        }
+
+        for (std::pair<bool, int> system : customEvent->removeSystems)
+        {
+            if (system.first)
+            {
+                playerShip->shipManager->RemoveSystem(system.second);
+            }
+            else if (G_->GetShipManager(1) != nullptr)
+            {
+                G_->GetShipManager(1)->RemoveSystem(system.second);
+            }
+            
         }
 
         if (!customEvent->variables.empty())

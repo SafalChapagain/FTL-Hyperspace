@@ -397,6 +397,10 @@ If the chance attribute is set to 1 or above, every time the main menu is loaded
 
 <cloakRenderFix enabled="false"/>
 
+<!--Causes medbay and clonebay systems to no longer be mutually exclusive.-->
+
+<duelMedical enabled="false"/>
+
 <!-- Insert newline between each crew description in a tooltip when mouse over a tile where multiple crews are fighting -->
   
 <insertNewlineForMultipleCrewTooltips enabled="false"/>
@@ -452,6 +456,7 @@ SKILL              Grants full skills to all of your crew  Usage: SKILL
 DELETECREW         Kills everyone on the enemy ship        Usage: DELETECREW
 SPEED              Changes game speed                      Usage: SPEED <speed>           Example: SPEED 3 (any integer from -2 to 3)
 DAMAGESYS          Damages a system                        Usage: DAMAGESYS <system_name> Example: DAMAGESYS medbay
+REMOVESYS          Removes a system                        Usage: REMOVESYS <system_name> Example: REMOVESYS medbay
 HULL          	   Heals/Damages your ship's hull          Usage: HULL <num_to_heal> 	  Example: HULL 10 (Negative numbers damages the hull instead)
 SHIP_CUSTOM        Unlocks a customs ship (permanently)    Usage: SHIP_CUSTOM <ship_name> Example: SHIP_CUSTOM PLAYER_SHIP_CUSTOM
 SHIP_CUSTOM_LOCK   Locks a customs ship (permanently)      Usage: SHIP_CUSTOM_LOCK <ship_name> Example: SHIP_CUSTOM_LOCK PLAYER_SHIP_CUSTOM
@@ -577,6 +582,7 @@ maxLevel attribute sets the maximum level you can upgrade to
 <hideHullDuringExplosion> hides the hull of this ship if not already enabled globally
 <augSlots> sets the number of augment slots for custom ship
 <cargoSlots> sets the number of cargo slots for custom ship
+<exclusivityOverride> defines groups of mutually exclusive systems for the ship. If present, ignores all global <exclusivityGroup> tags and <duelMedical>. 
 
 
 <empty> in shipOrder means that the slot that the ship would take up is empty instead
@@ -738,6 +744,18 @@ Syntax ->
 		<hideHullDuringExplosion/>
 		<augSlots>5</augSlots>
 		<cargoSlots>8</cargoSlots>
+		<exclusivityOverride>
+			<exclusivityGroup>
+				<clonebay/>
+				<medbay/>
+			</exclusivityGroup>
+			
+			<exclusivityGroup>
+				<hacking/>
+				<cloaking/>
+			</exclusivityGroup>
+
+		</exclusivityOverride>
 	</customShip>
 	
 	<customShip name="ENEMY_SHIP">
@@ -1457,6 +1475,16 @@ Syntax ->
 	<!--
 	Add customSystem nodes for customSystems. Requires a systemBlueprint in blueprints.xml as well.
 	<customSystem id="newSystem"/>
+	-->
+
+	<!--
+	Define exclusive systems here. Each system can only be part of one exclusivity group, and if it is defined in multiple groups it will only register as being part of the last group.
+	Some systems do not work as exclusive systems. These are the same systems that cannot be removed using the removeSystem event tag.
+	<exclusivityGroup>
+		<clonebay/>
+		<medbay/>
+	</exclusivityGroup>
+	
 	-->
 </customSystems>
 
@@ -2313,6 +2341,8 @@ Syntax ->
 		<removeItem>ITEM_ID</removeItem>                                                        Removes the item with the specified name. Unlike vanilla's <remove> tag, this can be repeated, but it also does not display
 		                                                                                          a "removed" message. Hidden augments can be removed by giving the name "HIDDEN AUG_ID", replacing AUG_ID with the normal
 		                                                                                          augment's id.
+		<removeSystem player="true">systemName</removeSystem>									Removes a system from the player ship. If player attribute is false, removes the system from the enemy ship instead, if present. Applies to the player ship if no attribute is provided.
+																								Some systems cannot be removed at present, such as the engine system.
 		<variable name="varname" op="set" val="0" min="0" max="0" var="_var_req_"/>             Sets or changes a custom variable. Operation can be "set", "add", "mul", "div", "min", or "max".
 		                                                                                          Value can either be a fixed value (using val) or a random value (using min and max).
 		                                                                                          The "var" attribute lets you apply a variable or equipment req to another variable, instead of a constant.

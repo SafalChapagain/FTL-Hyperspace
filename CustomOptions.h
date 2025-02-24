@@ -88,6 +88,8 @@ public:
     Setting<bool> droneSelectHotkeys;
 
     Setting<bool> cloakRenderFix;
+
+    Setting<bool> duelMedical;
     
     Defaults defaults;
 

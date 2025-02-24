@@ -1,5 +1,7 @@
 "57565383ec208b5c24308b442434837b0404":
 cleanup __cdecl void SystemStoreBox::SetExtraData(SystemStoreBox *this, int droneChoice);
+".5383ec188b44????8b5c????05e80000008944????891c??":
+cleanup __cdecl TextString SystemStoreBox::GetConfirmText(SystemStoreBox *this);
 "5589e557565383ec6c8b75148b7d088d46fa":
 cleanup __cdecl void SystemStoreBox::constructor(SystemStoreBox *this, ShipManager *shopper, Equipment *equip, int sys);
 "5383ec188b5c24208b83c000000085c0":

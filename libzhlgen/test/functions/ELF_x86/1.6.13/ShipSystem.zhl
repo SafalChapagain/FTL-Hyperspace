@@ -66,6 +66,8 @@ cleanup __cdecl bool ShipSystem::DecreasePower(ShipSystem *this, bool force);
 cleanup __cdecl bool ShipSystem::PartialRepair(ShipSystem *this, float speed, bool autoRepair);
 "5557565381ec8c0000008bac24a00000000fb68424bc000000":
 cleanup __cdecl int ShipSystem::RenderPowerBoxes(ShipSystem *this, int x, int y, int width, int height, int gap, int heightMod, bool flash);
+".565383ec148b5c????8b430c8b73448904??e8????????":
+cleanup __cdecl bool ShipSystem::RawDecreasePower(ShipSystem *this);
 "56538b44240c8b88f00000008b90ec000000":
 cleanup __cdecl void ShipSystem::AddDamage(ShipSystem *this, int amount);
 "57bf05000000565383ec208b7424308b464c89f3":

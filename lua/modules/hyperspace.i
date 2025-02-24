@@ -1350,6 +1350,7 @@ We can expose them once the root cause is identified and the crash is fixed.
 //%rename("%s") ShipManager::AddEquipmentFromList; // Might prefer via event?
 %rename("%s") ShipManager::AddInitialCrew;
 %rename("%s") ShipManager::AddSystem;
+%rename("%s") ShipManager::RemoveSystem;
 %rename("%s") ShipManager::AddWeapon;
 %rename("%s") ShipManager::CanFitSubsystem;
 %rename("%s") ShipManager::CanFitSystem;

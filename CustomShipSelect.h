@@ -3,6 +3,7 @@
 #include "ToggleValue.h"
 #include "Room_Extend.h"
 #include "CustomAchievements.h"
+#include "CustomSystems.h"
 #include <array>
 #include <algorithm>
 #include <boost/algorithm/string/predicate.hpp>
@@ -106,6 +107,9 @@ struct CustomShipDefinition
     std::string shipGenerator = "";
 
     std::vector<std::string> artilleryRoomImages;
+
+    bool hasExclusivityOverride = false;
+    SystemExclusivityManager exclusivityOverride;
 
     CustomShipDefinition()
     {

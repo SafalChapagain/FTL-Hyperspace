@@ -42,6 +42,10 @@ static cleanup __amd64 int ShipSystem::RenderPowerBoxesPlain(int x, int y, int w
 static cleanup __amd64 bool ShipSystem::IsSubsystem(int systemType);
 "!.41574989ff41564189ce41554189f541544589c4554489cd5389d34881ec88000000":
 cleanup __amd64 int ShipSystem::RenderPowerBoxes(ShipSystem *this, int x, int y, int width, int height, int gap, int heightMod, bool flash);
+"!.5553??89fb??83ec088b6f588b7f18e8????????":
+cleanup __amd64 bool ShipSystem::RawDecreasePower(ShipSystem *this);
+
+
 "!.488b3d(???????\?)":
 offsetVariable GL_Primitive** ShipSystem__glowWhite;
 "!.4c8b05(???????\?)":

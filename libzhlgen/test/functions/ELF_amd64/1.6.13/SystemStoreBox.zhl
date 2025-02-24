@@ -2,6 +2,8 @@
 cleanup __amd64 bool SystemStoreBox::CanHold(SystemStoreBox *this);
 ".55534889fb4883ec38837f0804":
 cleanup __amd64 void SystemStoreBox::SetExtraData(SystemStoreBox *this, int droneChoice);
+".53??81c650010000??89fbe8????????":
+cleanup __amd64 TextString SystemStoreBox::GetConfirmText(SystemStoreBox *this);
 ".534889fb4883ec20488bbf180100008b83e0000000":
 cleanup __amd64 void SystemStoreBox::Activate(SystemStoreBox *this);
 ".41568d41fa41554989d541544989f45589cd534889fb4883ec5083f802":

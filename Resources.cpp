@@ -264,6 +264,14 @@ void Global::PreInitializeResources(ResourceControl *resources)
                         CustomUserSystems::ParseSystemNode(child);
                     }  
                 }
+                //After system ids are mapped, generate exclusivity groups
+                for (auto child = node->first_node(); child; child = child->next_sibling())
+                {
+                    if (strcmp(child->name(), "exclusivityGroup") == 0)
+                    {
+                        SystemExclusivityManager::GetGlobalManager()->ParseExclusivityNode(child);
+                    }  
+                }
             }
 
             // Perform custom text color registration before event parsing.
@@ -606,6 +614,13 @@ void Global::InitializeResources(ResourceControl *resources)
                 auto enabled = node->first_attribute("enabled")->value();
                 customOptions->cloakRenderFix.defaultValue = EventsParser::ParseBoolean(enabled);
                 customOptions->cloakRenderFix.currentValue = EventsParser::ParseBoolean(enabled);
+            }
+
+            if (strcmp(node->name(), "duelMedical") == 0)
+            {
+                auto enabled = node->first_attribute("enabled")->value();
+                customOptions->duelMedical.defaultValue = EventsParser::ParseBoolean(enabled);
+                customOptions->duelMedical.currentValue = EventsParser::ParseBoolean(enabled);
             }
             
             if (strcmp(node->name(), "insertNewlineForMultipleCrewTooltips") == 0)

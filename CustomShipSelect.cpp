@@ -707,6 +707,15 @@ bool CustomShipSelect::ParseCustomShipNode(rapidxml::xml_node<char> *node, Custo
             }
             if (def.artilleryRoomImages.size() > 1) isCustom = true; //Only qualify for a custom definition if multiple artillery systems are present
         }
+        if (name == "exclusivityOverride")
+        {
+            isCustom = true;
+            def.hasExclusivityOverride = true;
+            for (auto exclusivityGroup = shipNode->first_node("exclusivityGroup"); exclusivityGroup; exclusivityGroup = exclusivityGroup->next_sibling("exclusivityGroup"))
+            {
+                def.exclusivityOverride.ParseExclusivityNode(exclusivityGroup);
+            }
+        }
 
     }
 

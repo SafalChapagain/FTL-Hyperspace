@@ -31,7 +31,7 @@ __thiscall void CrewMember::destructor(CrewMember *this);
 __thiscall void CrewMember::Cleanup(CrewMember *this);
 ".578d7c240883e4f0ff77fc5589f889e557565389cf83ec2c8b30893424e8????????d95de48b45e4893424":
 __thiscall void CrewMember::LoadState(CrewMember *this, int fileHelper);
-".578d7c240883e4f0ff77fc":
+".578d7c240883e4f0ff77fc5589e557565389cb83ec1c":
 __thiscall void CrewMember::SetCurrentSystem(CrewMember *this, ShipSystem *sys);
 ".83797c0b0f94c0":
 __thiscall bool CrewMember::IsManningArtillery(CrewMember *this);
