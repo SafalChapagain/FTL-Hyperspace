@@ -290,19 +290,21 @@ target_sources(
 	lua/swigluarun.h
 )
 
-add_custom_command(
-	OUTPUT ${CMAKE_CURRENT_SOURCE_DIR}/lua/swigluarun.h.temp1 ${CMAKE_CURRENT_SOURCE_DIR}/lua/swigluarun.h
-	COMMAND swig -c++ -lua -external-runtime lua/swigluarun.h.temp1
-	COMMAND bash ./processSwigRuntime.sh
-	WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+add_custom_target(
+    SWIGRuntime
+    "${SWIG_EXECUTABLE}" -c++ -lua -external-runtime lua/swigluarun.h.temp1
+    COMMAND bash ./processSwigRuntime.sh
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 # TODO: https://stackoverflow.com/a/61814218/3567518
-add_custom_command(
-    OUTPUT ${CMAKE_CURRENT_SOURCE_DIR}/Version.autogen.hpp.temp ${CMAKE_CURRENT_SOURCE_DIR}/Version.autogen.hpp
-    COMMAND bash ./generateVersion.sh
+add_custom_target(
+    HyperspaceVersion
+    bash ./generateVersion.sh
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 )
+
+add_dependencies(Hyperspace SWIGRuntime HyperspaceVersion)
 
 target_compile_options(
     Hyperspace PRIVATE
