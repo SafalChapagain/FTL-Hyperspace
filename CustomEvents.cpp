@@ -5124,7 +5124,9 @@ HOOK_METHOD(StarMap, SaveGame, (int file) -> void)
 HOOK_METHOD(StarMap, LoadGame, (int file) -> Location*)
 {
     LOG_HOOK("HOOK_METHOD -> StarMap::LoadGame -> Begin (CustomEvents.cpp)\n")
-    sectorChange = FileHelper::readString(file);
+    std::string sectorName = FileHelper::readString(file);
+    sectorChange = sectorName;
+    forceSectorChoice = sectorName;
     Location* ret = super(file);
     sectorChange = "";
     return ret;

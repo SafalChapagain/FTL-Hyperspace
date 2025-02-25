@@ -1566,23 +1566,25 @@ void StoreComplete::LoadStore(int file, int worldLevel)
 
                     CustomStoreBox* box = new CustomStoreBox();
 
+                    ShipManager* ship = G_->GetShipManager(0);
+
                     switch (sec.category)
                     {
                     case CategoryType::WEAPONS:
 
-                        box->orig = new WeaponStoreBox(nullptr, nullptr, G_->GetBlueprints()->GetWeaponBlueprint(blueprintName));
+                        box->orig = new WeaponStoreBox(ship, nullptr, G_->GetBlueprints()->GetWeaponBlueprint(blueprintName));
                         break;
                     case CategoryType::DRONES:
-                        box->orig = new DroneStoreBox(nullptr, nullptr, G_->GetBlueprints()->GetDroneBlueprint(blueprintName));
+                        box->orig = new DroneStoreBox(ship, nullptr, G_->GetBlueprints()->GetDroneBlueprint(blueprintName));
                         break;
                     case CategoryType::AUGMENTS:
-                        box->orig = new AugmentStoreBox(nullptr, G_->GetBlueprints()->GetAugmentBlueprint(blueprintName));
+                        box->orig = new AugmentStoreBox(ship, G_->GetBlueprints()->GetAugmentBlueprint(blueprintName));
                         break;
                     case CategoryType::CREW:
-                        box->orig = new CrewStoreBox(nullptr, worldLevel, blueprintName);
+                        box->orig = new CrewStoreBox(ship, worldLevel, blueprintName);
                         break;
                     case CategoryType::SYSTEMS:
-                        box->orig = new SystemStoreBox(nullptr, nullptr, ShipSystem::NameToSystemId(blueprintName));
+                        box->orig = new SystemStoreBox(ship, nullptr, ShipSystem::NameToSystemId(blueprintName));
                         break;
                     }
 
