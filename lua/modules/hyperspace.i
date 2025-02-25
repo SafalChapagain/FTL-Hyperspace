@@ -201,6 +201,8 @@ namespace std {
     %template(vector_Sector) vector<Sector*>;
     %template(vector_LockdownShard) vector<LockdownShard>;
     %template(vector_p_LockdownShard) vector<LockdownShard*>;
+    %template(unordered_multimap_string_AugmentFunction) unordered_multimap<string, AugmentFunction>;
+    %template(vector_AugmentCrystalShard) vector<AugmentCrystalShard>;
 }
 /*
 OBSOLETE METHOD FOR DOWNCASTING:
@@ -1969,6 +1971,73 @@ We can expose them once the root cause is identified and the crash is fixed.
 %rename("%s") SystemBox_Extend::orig;
 %rename("%s") SystemBox_Extend::xOffset;
 %rename("%s") SystemBox_Extend::offset;
+
+%nodefaultctor CustomAugmentManager;
+%nodefaultdtor CustomAugmentManager;
+%rename("%s") CustomAugmentManager;
+%rename("%s") CustomAugmentManager::GetInstance;
+%rename("%s") CustomAugmentManager::GetAugmentDefinition;
+
+%nodefaultctor AugmentFunction;
+%nodefaultdtor AugmentFunction;
+%rename("%s") AugmentFunction;
+%rename("%s") AugmentFunction::value;
+%immutable AugmentFunction::value;
+%rename("%s") AugmentFunction::preferHigher;
+%immutable AugmentFunction::preferHigher;
+%rename("%s") AugmentFunction::useForReqs;
+%immutable AugmentFunction::useForReqs;
+%rename("%s") AugmentFunction::warning;
+%immutable AugmentFunction::warning;
+%rename("%s") AugmentFunction::sys;
+%immutable AugmentFunction::sys;
+%rename("%s") AugmentFunction::modifyChoiceTextScrap;
+%immutable AugmentFunction::modifyChoiceTextScrap;
+%rename("%s") AugmentFunction::Functional;
+
+%nodefaultctor AugmentSuperShield;
+%nodefaultdtor AugmentSuperShield;
+%rename("%s") AugmentSuperShield;
+%rename("%s") AugmentSuperShield::value;
+%immutable AugmentSuperShield::value;
+%rename("%s") AugmentSuperShield::add;
+%immutable AugmentSuperShield::add;
+%rename("%s") AugmentSuperShield::customRender;
+%immutable AugmentSuperShield::customRender;
+%rename("%s") AugmentSuperShield::present;
+%immutable AugmentSuperShield::present;
+%rename("%s") AugmentSuperShield::shieldTexture;
+%immutable AugmentSuperShield::shieldTexture;
+%rename("%s") AugmentSuperShield::shieldColor;
+%immutable AugmentSuperShield::shieldColor;
+
+%nodefaultctor AugmentCrystalShard;
+%nodefaultdtor AugmentCrystalShard;
+%rename("%s") AugmentCrystalShard;
+%rename("%s") AugmentCrystalShard::weapon;
+%immutable AugmentCrystalShard::weapon;
+%rename("%s") AugmentCrystalShard::chance;
+%immutable AugmentCrystalShard::chance;
+%rename("%s") AugmentCrystalShard::stacking;
+%immutable AugmentCrystalShard::stacking;
+
+%nodefaultctor AugmentDefinition;
+%nodefaultdtor AugmentDefinition;
+%rename("%s") AugmentDefinition;
+%rename("%s") AugmentDefinition::name;
+%immutable AugmentDefinition::name;
+%rename("%s") AugmentDefinition::functions;
+%immutable AugmentDefinition::functions;
+%rename("%s") AugmentDefinition::superShield;
+%immutable AugmentDefinition::superShield;
+%rename("%s") AugmentDefinition::crystalShard;
+%immutable AugmentDefinition::crystalShard;
+%rename("%s") AugmentDefinition::locked;
+%immutable AugmentDefinition::locked;
+%rename("%s") AugmentDefinition::statBoosts;
+%immutable AugmentDefinition::statBoosts;
+%rename("%s") AugmentDefinition::iconShipId;
+%immutable AugmentDefinition::iconShipId;
 
 %nodefaultctor ProjectileFactory;
 %nodefaultdtor ProjectileFactory;

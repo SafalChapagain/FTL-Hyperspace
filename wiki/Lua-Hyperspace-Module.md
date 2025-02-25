@@ -2836,6 +2836,60 @@ Accessed via `Hyperspace.CustomShipUnlocks.instance`
 - `int` `.iHacked`
 - `std::pair<int, int>` `.batteryPower`
 
+## CustomAugmentManager
+
+Accessed via `Hyperspace.CustomAugmentManager.GetInstance()`
+
+### Methods
+- `static` [`CustomAugmentManager*`](#CustomAugmentManager) `.GetInstance()`
+- [`AugmentDefinition*`](#AugmentDefinition) `CustomAugmentManager::GetAugmentDefinition(const std::string &name)`
+
+## AugmentFunction
+
+### Methods
+- `bool :Functional(int iShipId)`
+
+### Fields
+**All fields are read-only**
+- `float` `.value`
+- `bool` `.preferHigher`
+- `bool` `.useForReqs`
+- `bool` `.warning`
+- `int` `.sys`
+- `bool` `.modifyChoiceTextScrap`
+
+## AugmentSuperShield
+
+### Fields
+**All fields are read-only**
+- `int` `.value`
+- `int` `.add`
+- `bool` `.customRender`
+- `bool` `.present`
+- `std::string[2]` `.shieldTexture`
+- [`GL_Color`](#GL_Color) `.shieldColor`
+
+## AugmentCrystalShard
+
+### Fields
+**All fields are read-only**
+- `std::string` `.weapon`
+- `float` `.chance`
+- `int` `.stacking`
+
+## AugmentDefinition
+
+### Fields
+**All fields are read-only**
+- `std::string` `.name`
+- [`std::unordered_multimap<std::string, AugmentFunction>`](#AugmentFunction) `.functions`
+- [`AugmentSuperShield`](#AugmentSuperShield) `.superShield`
+- [`std::vector<AugmentCrystalShard>`](#AugmentCrystalShard) `.crystalShard`
+- `bool` `.locked`
+- [`std::vector<StatBoostDefinition*>`](#StatBoostDefinition) `.statBoosts`
+- `std::string` `.icon`
+- `int` `.iconShipId`
+
 ## ProjectileFactory
 
 **Extends [ShipObject](#ShipObject)**
