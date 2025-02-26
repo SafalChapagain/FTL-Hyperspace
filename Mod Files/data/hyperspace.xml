@@ -2171,6 +2171,7 @@ Syntax ->
 		<sectorEight>false</sectorEight>         Allows quests to spawn in sector 8 when not playing in infinite mode. Default is same as <lastStand>.
 		<lastStand>false</lastStand>             Allows quests to spawn in the last stand.
 		<createNebula>true</createNebula>        Adds the nebula environment to the event if a nebula beacon is selected. Default is true if and only if nonNebulaBeacon is true AND nebulaEvent is not given.
+		<removeNebula>false</removeNebula>       Removes the nebula environment to the event if a nebula beacon is selected. Default is false. Overrides createNebula if true.
 		<nebulaEvent>NEBULA_EVENT</nebulaEvent>  Specifies a different event to override the quest event if a nebula beacon is selected.
 		<aggressive>0</aggressive>               Aggressive spawning flag. Ignores usual spawning restrictions based on player/fleet position. 0 is default. 1 will enable aggressive spawning if the quest would otherwise not
 	</quest>                                       spawn at all. 2 will enable aggressive spawning if the quest would otherwise not spawn in the current sector.
