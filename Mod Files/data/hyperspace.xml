@@ -2303,9 +2303,9 @@ Syntax ->
 		<removeHazards/>                                                                        Removes all hazards (asteroids, pulsar, ASB, sun, and plasma storm). Nebula status is preserved.
 		<removeNebula/>                                                                         Removes nebula and plasma storm.
 		<customFleet right="false" firing="false" autoDarkening="false">FLEET_ID</customFleet>  Adds a custom fleet. If right is true, fleet comes from the right, otherwise it comes from the left. If firing is true, the
-		                                                                                          fleet's bigShip will be drawn and be the source of the ASB. If autoDarkening is true, the tint will be automatically adjusted
-		                                                                                          by layer.
+		                                                                                          fleet's bigShip will be drawn and be the source of the ASB, and no planet will be rendered. If autoDarkening is true, the tint will be automatically adjusted.
 		<clearCustomFleet/>                                                                     Removes a custom fleet if one is present.
+		<noASBPlanet/>																			If this event creates an ASB, it does not render a planet.
 		<disableScrapScore/>                                                                    Any scrap gained from this event is not added to the player's score.
 		<disableScrapAugments/>                                                                 Any scrap gained from this event is not affected by augments (scrap recovery or repair arm).
 		<checkCargo/>                                                                           Choice requirements will check the ship's cargo in addition to equipment. Can put value of true or false, no value means true.

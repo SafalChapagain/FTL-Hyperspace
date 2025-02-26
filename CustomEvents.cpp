@@ -1761,6 +1761,8 @@ bool CustomEventsParser::ParseCustomEvent(rapidxml::xml_node<char> *node, Custom
                 autoDarkening = EventsParser::ParseBoolean(child->first_attribute("autoDarkening")->value());
             }
 
+            if (firing) customEvent->noASBPlanet = true;
+
             if (!right)
             {
                 customEvent->leftFleet.fleetDefName = child->value();
