@@ -2859,7 +2859,7 @@ HOOK_METHOD_PRIORITY(ShipBuilder, OnRender, 1000, () -> void)
             CSurface::GL_PushMatrix();
             CSurface::GL_Translate(box->location.x, box->location.y);
             box->UpdateBoxImage(false);
-            CSurface::GL_RenderPrimitiveWithColor(box->empty, GL_Color(1.f, 1.f, 1.f, 0.2f));
+            CSurface::GL_RenderPrimitiveWithColor(box->empty, GL_Color(1.f, 1.f, 1.f, g_dummyEquipmentSlotsOpacity));
             CSurface::GL_PopMatrix();
         }
     }

@@ -943,6 +943,10 @@ void Global::InitializeResources(ResourceControl *resources)
             {
                 auto enabled = node->first_attribute("enabled")->value();
                 g_showDummyEquipmentSlots = EventsParser::ParseBoolean(enabled);
+                if (node->first_attribute("opacity"))
+                {
+                    g_dummyEquipmentSlotsOpacity = boost::lexical_cast<float>(node->first_attribute("opacity")->value());
+                }
             }
         }
 

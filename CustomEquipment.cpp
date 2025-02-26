@@ -6,6 +6,7 @@
 
 bool g_multipleOverCapacity = false;
 bool g_showDummyEquipmentSlots = false;
+float g_dummyEquipmentSlotsOpacity = 0.2f;
 
 HOOK_METHOD(InfoBox, SetBlueprintWeapon, (const WeaponBlueprint* bp, int status, bool hasWeaponSystem, int yShift) -> void)
 {
@@ -570,7 +571,7 @@ void CustomEquipment::OnRender()
                 CSurface::GL_PushMatrix();
                 CSurface::GL_Translate(box->location.x, box->location.y);
                 box->UpdateBoxImage(false);
-                CSurface::GL_RenderPrimitiveWithColor(box->empty, GL_Color(1.f, 1.f, 1.f, 0.2f));
+                CSurface::GL_RenderPrimitiveWithColor(box->empty, GL_Color(1.f, 1.f, 1.f, g_dummyEquipmentSlotsOpacity));
                 CSurface::GL_PopMatrix();
             }
             continue;
@@ -583,7 +584,7 @@ void CustomEquipment::OnRender()
                 CSurface::GL_PushMatrix();
                 CSurface::GL_Translate(box->location.x, box->location.y);
                 box->UpdateBoxImage(false);
-                CSurface::GL_RenderPrimitiveWithColor(box->empty, GL_Color(1.f, 1.f, 1.f, 0.2f));
+                CSurface::GL_RenderPrimitiveWithColor(box->empty, GL_Color(1.f, 1.f, 1.f, g_dummyEquipmentSlotsOpacity));
                 CSurface::GL_PopMatrix();
             }
             continue;
