@@ -2154,6 +2154,7 @@ Syntax ->
         <exitBeacon event="EVENT_NAME" rebelEvent="EVENT_NAME" nebulaEvent="EVENT_NAME"/>  Changes the default exit beacon event. nebulaEvent is used for nebula exits; rebelEvent is used if the rebels overtake the exit.
         <rebelBeacon event="EVENT_NAME" nebulaEvent="EVENT_NAME"/>                         Changes the default rebel fleet events. nebulaEvent is used for nebula fleet events.
         <removeFirstBeaconNebula/>                                                         Removes the nebula from the starting beacon.
+        <priorityEventsOverrideNebula/>                                                    If a priorityEvent would not normally generate because the sector has too many nebula beacons, nebulas will be removed to make room for it.
         <nebulaSector>false</nebulaSector>                                                 Overrides whether the sector is a nebula sector, affecting the fleet pursuit when the player is in nebula. Useful for secret sectors.
 		<noExit/>                                                                          Removes the exit beacon, preventing normal travel to the next sector. Still creates an exit beacon event where the exit would be.
 		<priorityEvent name="EVENT_LIST" min="0" max="0" priority="0"                      Like <event> in sector_data.xml but adds priority for sorting (high to low). >=0 goes above normal events.
