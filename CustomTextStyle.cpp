@@ -1,14 +1,17 @@
 #include "CustomTextStyle.h"
 #include <sstream>
 #include <boost/algorithm/string.hpp>
+#define TS CustomTextStyleManager::GetInstance()
 
 bool TextMultiLineCalculator::measureLines_is_busy = false;
+bool TextMultiLineCalculator::easyPrint_is_busy = false;
 
 // calculate where line breaks will occur when passing a text to freetype::easy_printAutoNewlines
 TextMultiLineCalculator::TextMultiLineCalculator(const std::string &_text, int _fontSize, int _line_length) : text(_text), fontSize(_fontSize), line_length(_line_length)
 {
     line_height = G_->GetResources()->GetFontData(fontSize, false).lineHeight;
-    ParseText();
+    if (line_length > 0) ParseText();
+    else ParseText_Simple();
 }
 
 int TextMultiLineCalculator::MeasureLines(const std::string &text)
@@ -34,7 +37,10 @@ The condition for line break is "the pixel length from the start x to the x of t
 */
 int TextMultiLineCalculator::MeasureWidth(const std::string &text)
 {
-    return static_cast<int>(freetype::easy_print(fontSize, 0, 0, text).x);
+    easyPrint_is_busy = true;
+    int ret = static_cast<int>(freetype::easy_print(fontSize, 0, 0, text).x);
+    easyPrint_is_busy = false;
+    return ret;
 }
 
 // long word means a word potentially divided by line breaks
@@ -49,6 +55,10 @@ std::string TextMultiLineCalculator::ProcessLongWord(const std::string &word, in
         else if ((c & 0xE0) == 0xC0) d = 2; // c is the first byte of 2 byte character
         else if ((c & 0xF0) == 0xE0) d = 3; // c is the first byte of 3 byte character
         else if ((c & 0xF8) == 0xF0) d = 4; // c is the first byte of 4 byte character
+        else
+        {
+            throw std::runtime_error("Invalid UTF-8 character while processing custom text style.");
+        }
         
         if (MeasureWidth(word.substr(break_point, i + d - break_point)) > line_length)
         {
@@ -100,7 +110,7 @@ void TextMultiLineCalculator::ParseText()
             }
             else
             {
-                ProcessWord(line_length);
+                ProcessWord(text_length);
             }
         }
         else if (text[i] == ' ')
@@ -152,6 +162,40 @@ void TextMultiLineCalculator::ParseText()
             previous = normal;
         }
     }
+}
+
+void TextMultiLineCalculator::ParseText_Simple()
+{
+    for (int i = 0; i < text.length(); ++i)
+    {
+        if (text[i] == '\n')
+        {
+            linePositions.push_back(i);
+        }
+    }
+}
+
+void TextMultiLineCalculator::GetLineWidths(std::vector<int> &widths)
+{
+    for (int i = 0; i + 1 < linePositions.size(); ++i)
+    {
+        widths.push_back(MeasureWidth(text.substr(linePositions[i], linePositions[i + 1] - linePositions[i])));
+    }
+    widths.push_back(MeasureWidth(text.substr(linePositions[linePositions.size() - 1])));
+}
+
+void TextMultiLineCalculator::GetLineVisualWidths(std::vector<int> &widths)
+{
+    std::string t;
+    for (int i = 0; i + 1 < linePositions.size(); ++i)
+    {
+        t = text.substr(linePositions[i], linePositions[i + 1] - linePositions[i]);
+        boost::algorithm::trim(t);
+        widths.push_back(freetype::easy_measurePrintLines(fontSize, 0.f, 0.f, line_length, t).x);
+    }
+    t = text.substr(linePositions[linePositions.size() - 1]);
+    boost::algorithm::trim(t);
+    widths.push_back(freetype::easy_measurePrintLines(fontSize, 0.f, 0.f, line_length, t).x);
 }
 
 // Custom Text Style Cell Primitive
@@ -291,7 +335,7 @@ Pointf CustomTextStyleCache::Print(float base_x, float base_y)
     }
 
     CSurface::GL_SetColor(originalColor);
-    return Pointf(ret_x + base_x, ret_y + base_y);
+    return Pointf(ret_x + (printType == PrintType::CenterAlinged ? base_x : 0.f), ret_y + base_y);
 }
 
 // Custom Text Style Manager
@@ -304,14 +348,14 @@ bool CustomTextStyleManager::IsFlagExist(const std::string &text)
     return text.find("[style[") != std::string::npos;
 }
 
-std::string CustomTextStyleManager::GetKey(const std::string &text, int fontSize, int line_length)
+std::string CustomTextStyleManager::GetKey(const std::string &text, int fontSize, int line_length, PrintType printType)
 {
     std::stringstream stream;
-    stream << text << ";" << fontSize << ";" << line_length;
+    stream << text << ';' << fontSize << ';' << line_length << ';' << static_cast<int>(printType);
     return stream.str();
 }
 
-void CustomTextStyleManager::CreateCustomTextStyle(const int fontSize, const int line_length, const std::string &originalText)
+void CustomTextStyleManager::CreateCustomTextStyle(const int fontSize, const int line_length, const std::string &originalText, PrintType printType)
 {
     const GL_Color originalColor = CSurface::GL_GetColor();
     CSurface::GL_SetColor(GL_Color(0.f, 0.f, 0.f, 0.f));
@@ -389,9 +433,22 @@ void CustomTextStyleManager::CreateCustomTextStyle(const int fontSize, const int
 
     // step 3: set text and position
     int height = calculator.GetLineHeight();
+    std::vector<int> lineWidths;
+    switch (printType)
+    {
+        default:
+            break;
+        case PrintType::RightAligned:
+            calculator.GetLineWidths(lineWidths);
+            break;
+        case PrintType::CenterAlinged:
+        case PrintType::CenterAlingedWithNewlines:
+            calculator.GetLineVisualWidths(lineWidths);
+            break;
+    }
+    int row = -1;
     float next_x = 0.f;
     float next_y = -height;
-    float last_measured_x;
     for (int i = 0; i < dividedPrimitiveCells.size(); i++)
     {
         auto &cell = dividedPrimitiveCells[i];
@@ -400,14 +457,44 @@ void CustomTextStyleManager::CreateCustomTextStyle(const int fontSize, const int
         {
             next_x = 0.f;
             next_y += height;
+            ++row;
         }
         cell.x = next_x;
-        cell.y = next_y;
-        if (i == dividedPrimitiveCells.size() - 1)
+        switch (printType)
         {
-            last_measured_x = next_x + freetype::easy_measureWidth(fontSize, cell.text);
+            default:
+                break;
+            case PrintType::RightAligned:
+                cell.x -= lineWidths[row];
+                break;
+            case PrintType::CenterAlinged:
+            case PrintType::CenterAlingedWithNewlines:
+                cell.x -= std::floor(lineWidths[row] / 2.f);
+                break;
         }
+        cell.y = next_y;
         next_x += freetype::easy_print(fontSize, 0.f, 0.f, cell.text).x;
+    }
+
+    float return_x = next_x;
+    float return_y = next_y + height;
+    float measured_x = freetype::easy_measurePrintLines(fontSize, 0.f, 0.f, line_length, sanitizedText).x;
+
+    switch (printType)
+    {
+        default:
+            break;
+        case PrintType::RightAligned:
+            return_x = 0.f; // somehow the return x is fixed to 0 when the text is right aligned
+            break;
+        case PrintType::CenterAlinged:
+        case PrintType::CenterAlingedWithNewlines:
+            { // not sure how to calculate the return x when the text is center aligned so I just let the original function do the job
+                Pointf ret = freetype::easy_printNewlinesCentered(fontSize, 0.f, 0.f, line_length, sanitizedText);
+                return_x = ret.x + 1.f;
+                return_y = ret.y;
+            }
+            break;
     }
 
     // step 4: sort cells by color for reducing color switching
@@ -426,32 +513,42 @@ void CustomTextStyleManager::CreateCustomTextStyle(const int fontSize, const int
     }
 
     // step 6: store cache
-    std::string key = GetKey(originalText, fontSize, line_length);
-    cache[key] = CustomTextStyleCache(cacheCells, next_x, next_y + height, last_measured_x);
+    std::string key = GetKey(originalText, fontSize, line_length, printType);
+    cache[key] = CustomTextStyleCache(cacheCells, return_x, return_y, measured_x, printType);
 
     CSurface::GL_SetColor(originalColor);
 }
 
-// for freetype::easy_measurePrintLines
 Pointf CustomTextStyleManager::Measure(int fontSize, int line_length, const std::string &text)
 {
+    bool orig = easyPrint_is_busy;
+    easyPrint_is_busy = true;
+
     std::string key = GetKey(text, fontSize, line_length);
     if (cache.count(key) == 0)
     {
         CreateCustomTextStyle(fontSize, line_length, text);
     }
-    return cache[key].Measure();
+    Pointf ret = cache[key].Measure();
+
+    easyPrint_is_busy = orig;
+    return ret;
 }
 
-// for freetype::easy_printAutoNewlines
-Pointf CustomTextStyleManager::Print(int fontSize, float x, float y, int line_length, const std::string &text)
+Pointf CustomTextStyleManager::Print(int fontSize, float x, float y, int line_length, const std::string &text, PrintType printType)
 {
-    std::string key = GetKey(text, fontSize, line_length);
+    bool orig = easyPrint_is_busy;
+    easyPrint_is_busy = true;
+
+    std::string key = GetKey(text, fontSize, line_length, printType);
     if (cache.count(key) == 0)
     {
-        CreateCustomTextStyle(fontSize, line_length, text);
+        CreateCustomTextStyle(fontSize, line_length, text, printType);
     }
-    return cache[key].Print(x, y);
+    Pointf ret = cache[key].Print(x, y);
+
+    easyPrint_is_busy = orig;
+    return ret;
 }
 
 void CustomTextStyleManager::AgeCache()
@@ -484,27 +581,79 @@ void CustomTextStyleManager::ClearCache()
 HOOK_METHOD(CApp, OnLanguageChange, () -> void)
 {
     LOG_HOOK("HOOK_METHOD -> CApp::OnLanguageChange -> Begin (CustomTextStyle.cpp)\n")
-    if (CustomTextStyleManager::GetInstance()->enabled) CustomTextStyleManager::GetInstance()->ClearCache();
+    if (TS->enabled) TS->ClearCache();
     return super();
 }
 
 HOOK_STATIC(freetype, easy_measurePrintLines, (int fontSize, float x, float y, int line_length, const std::string &text) -> Pointf)
 {
     LOG_HOOK("HOOK_STATIC -> freetype::easy_measurePrintLines -> Begin (CustomTextStyle.cpp)\n")
-    if(!CustomTextStyleManager::GetInstance()->enabled ||
+    if (!TS->enabled ||
      TextMultiLineCalculator::measureLines_is_busy ||
      !CustomTextStyleManager::IsFlagExist(text)) return super(fontSize, x, y, line_length, text);
 
-    return CustomTextStyleManager::GetInstance()->Measure(fontSize, line_length, text);
+    return TS->Measure(fontSize, line_length, text);
 }
 
 HOOK_STATIC(freetype, easy_printAutoNewlines, (int fontSize, float x, float y, int line_length, const std::string &text) -> Pointf)
 {
     LOG_HOOK("HOOK_STATIC -> freetype::easy_printAutoNewlines -> Begin (CustomTextStyle.cpp)\n")
-    if (!CustomTextStyleManager::GetInstance()->enabled) return super(fontSize, x, y, line_length, text);
+    if (!TS->enabled) return super(fontSize, x, y, line_length, text);
 
-    CustomTextStyleManager::GetInstance()->AgeCache();
+    TS->AgeCache();
     if (!CustomTextStyleManager::IsFlagExist(text)) return super(fontSize, x, y, line_length, text);
 
-    return CustomTextStyleManager::GetInstance()->Print(fontSize, x, y, line_length, text);
+    return TS->Print(fontSize, x, y, line_length, text);
+}
+
+HOOK_STATIC_PRIORITY(freetype, easy_measureWidth, 1000, (int fontSize, const std::string &text) -> int)
+{
+    LOG_HOOK("HOOK_STATIC_PRIORITY -> freetype::easy_measureWidth -> Begin (CustomTextStyle.cpp)\n")
+    if (!TS->enabled || TS->easyPrint_is_busy || !CustomTextStyleManager::IsFlagExist(text)) return super(fontSize, text);
+
+    return static_cast<int>(TS->Measure(fontSize, 0, text).x);
+}
+
+HOOK_STATIC_PRIORITY(freetype, easy_print, 1000, (int fontSize, float x, float y, const std::string &text) -> Pointf)
+{
+    LOG_HOOK("HOOK_STATIC_PRIORITY -> freetype::easy_print -> Begin (CustomTextStyle.cpp)\n")
+    if (!TS->enabled || TS->easyPrint_is_busy || TextMultiLineCalculator::easyPrint_is_busy) return super(fontSize, x, y, text);
+
+    TS->AgeCache();
+    if (!CustomTextStyleManager::IsFlagExist(text)) return super(fontSize, x, y, text);
+
+    return TS->Print(fontSize, x, y, 0, text);
+}
+
+HOOK_STATIC_PRIORITY(freetype, easy_printRightAlign, 1000, (int fontSize, float x, float y, const std::string &text) -> Pointf)
+{
+    LOG_HOOK("HOOK_STATIC_PRIORITY -> freetype::easy_printRightAlign -> Begin (CustomTextStyle.cpp)\n")
+    if (!TS->enabled) return super(fontSize, x, y, text);
+
+    TS->AgeCache();
+    if (!CustomTextStyleManager::IsFlagExist(text)) return super(fontSize, x, y, text);
+
+    return TS->Print(fontSize, x, y, 0, text, PrintType::RightAligned);
+}
+
+HOOK_STATIC_PRIORITY(freetype, easy_printCenter, 1000, (int fontSize, float x, float y, const std::string &text) -> Pointf)
+{
+    LOG_HOOK("HOOK_STATIC_PRIORITY -> freetype::easy_printCenter -> Begin (CustomTextStyle.cpp)\n")
+    if (!TS->enabled || TS->easyPrint_is_busy) return super(fontSize, x, y, text);
+
+    TS->AgeCache();
+    if (!CustomTextStyleManager::IsFlagExist(text)) return super(fontSize, x, y, text);
+
+    return TS->Print(fontSize, x, y, 0, text, PrintType::CenterAlinged);
+}
+
+HOOK_STATIC_PRIORITY(freetype, easy_printNewlinesCentered, 1000, (int fontSize, float x, float y, int line_length, const std::string &text) -> Pointf)
+{
+    LOG_HOOK("HOOK_STATIC_PRIORITY -> freetype::easy_printNewlinesCentered -> Begin (CustomTextStyle.cpp)\n")
+    if (!TS->enabled || TS->easyPrint_is_busy) return super(fontSize, x, y, line_length, text);
+
+    TS->AgeCache();
+    if (!CustomTextStyleManager::IsFlagExist(text)) return super(fontSize, x, y, line_length, text);
+
+    return TS->Print(fontSize, x, y, line_length, text, PrintType::CenterAlingedWithNewlines);
 }
