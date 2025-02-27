@@ -10,6 +10,7 @@ public:
     void MouseMove(int mX, int mY);
     void MouseClick(int mX, int mY);
 
+    void OnScrollWheel(float direction);
     void AddOverCapacityItem(const EquipmentBoxItem &item);
 
     CustomEquipment(Equipment *equipment)
@@ -28,6 +29,8 @@ public:
     }
 
     std::vector<std::pair<EquipmentBoxItem, bool>> overCapacityItems; // second is true if item is augment
+    int currentAugPage = 0;
+    int currentCargoPage = 0;
     int currentOverCapacityPage = 0;
     
 private:
@@ -36,13 +39,11 @@ private:
     Button *augLeftButton = nullptr;
     Button *augRightButton = nullptr;
     int augNumber = 3;
-    int currentAugPage = 0;
     int maxAugPage = 0;
 
     Button *cargoLeftButton = nullptr;
     Button *cargoRightButton = nullptr;
     int cargoNumber = 4;
-    int currentCargoPage = 0;
     int maxCargoPage = 0;
 
     Button *overCapacityLeftButton = nullptr;

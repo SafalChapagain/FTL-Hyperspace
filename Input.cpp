@@ -1,6 +1,7 @@
 #include "Global.h"
 #include "CustomCommandGui.h"
 #include "CustomCrewManifest.h"
+#include "Equipment_Extend.h"
 #include "ShipZoom.h"
 #include "ScrollingChoiceBox.h"
 #include "RedesignedTooltips.h"
@@ -24,6 +25,10 @@ static void OnScrollWheel(float direction)
             else if (cApp->gui->crewScreen.bOpen)
             {
                 CustomCrewManifest::GetInstance()->OnScrollWheel(direction);
+            }
+            else if (cApp->gui->equipScreen.bOpen)
+            {
+                EQ_EX(&(cApp->gui->equipScreen))->customEquipment->OnScrollWheel(direction);
             }
             else
             {
